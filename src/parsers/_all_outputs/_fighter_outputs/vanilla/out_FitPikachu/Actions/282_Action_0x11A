@@ -1,0 +1,26 @@
+Action 0x11A: ENTRY {
+  ChangeAction(283, R(Compare(RA-Int[0x01] <= 0.0)))
+  ChangeAction(283, R(Animation End()))
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x166A8)
+  BitVariableClear(LA-Bool[0x3D])
+  BasicVariableSet(466, LA-Int[0x40])
+  BasicVariableSet(471, LA-Int[0x41])
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0x16298)
+    if (R(On Ground())) {
+      SetAirGround(6)
+      SetAerialOrOnstage(1)
+      Module0900(0)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAirGround(10)
+      SetAerialOrOnstage(5)
+      Module0900(2)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x11A : EXIT {
+}

@@ -1,0 +1,4 @@
+[hsr_134C]
+hidden_subroutine_0x134C {
+  GraphicEffect(94, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.65, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}

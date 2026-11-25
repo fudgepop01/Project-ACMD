@@ -1,0 +1,6 @@
+[hsr_30]
+hidden_subroutine_0x30 {
+  ChangeAction(6, R(In walljump situation()), 255)
+  ChangeAction(6, R(Bit is Set(RA-Bool[0x03])))
+  Return()
+}

@@ -1,0 +1,81 @@
+Action 0x112: ENTRY {
+  BitVariableClear(RA-Bool[0x10])
+  BasicVariableSet(0, RA-Int[0x00])
+  BasicVariableSet(-1, RA-Int[0x01])
+  FloatVariableSet(IC-Int[0x5DC0], LA-Float[0x00])
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+
+  if (R(Compare(IC-Int[0x5DC0] > 0.0))) {
+    ChangeAction(16, R(Animation End()))
+    AdditionalRequirement(R(In Air()))
+
+    ChangeActionStatus(10002, 16, R(In Air()))
+    DisableActionStatusId(10002)
+  } else {
+
+    ChangeAction(14, R(Animation End()))
+    AdditionalRequirement(R(In Air()))
+
+    ChangeActionStatus(10002, 14, R(In Air()))
+    DisableActionStatusId(10002)
+  }
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1C670)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(2)
+      SetAirGround(6)
+      PreventSpecificInterrupt(AIR_LANDING)
+      EnableActionStatusId(10002)
+      Switch(10000, RA-Int[0x00])
+        Case(0)
+          ChangeSubAction(462)
+          SetRequirement(R(Animation End()))
+        Case(1)
+          ChangeSubAction(463)
+          SetRequirement(R(Animation End()))
+        Case(2)
+          ChangeSubAction(464)
+      EndSwitch()
+    } else {
+      SetAerialOrOnstage(5)
+      SetAirGround(10)
+      AllowSpecificInterrupt(AIR_LANDING)
+      DisableActionStatusId(10002)
+      Switch(10000, RA-Int[0x00])
+        Case(0)
+          ChangeSubAction(465)
+          SetRequirement(R(Animation End()))
+        Case(1)
+          ChangeSubAction(466)
+          SetRequirement(R(Animation End()))
+        Case(2)
+          ChangeSubAction(467)
+      EndSwitch()
+    }
+    LoadRest()
+    Switch(10000, RA-Int[0x00])
+      Case(1)
+        if (R(Animation End())) {
+          if (R(NOT Bit is Set(RA-Bool[0x12]))) {
+            BasicVariableSet(2, RA-Int[0x00])
+          } else {
+            SetStalingId(2, 19, true)
+          }
+          BitVariableClear(RA-Bool[0x12])
+        }
+      DefaultCase()
+        if (R(Animation End())) {
+          BasicVariableIncrement(RA-Int[0x00])
+        }
+    EndSwitch()
+  }
+}
+
+Action 0x112 : EXIT {
+  if (R(Article Exists())) {
+    OnlyArticleEvent(0)
+  }
+}

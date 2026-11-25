@@ -1,0 +1,25 @@
+// Status_Jump_Aerial
+Action 0xC {
+  ChangeAction(9, R(In Air()))
+  ChangeSubAction(4, true)
+  FloatVariableSet(0.0, LA-Float[0x00])
+  FloatVariableSetAbsolute(0.0, LA-Float[0x01])
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false, false, true)
+  if (R(Bit is Set(LA-Bool[0x01]))) {
+    (undef: Sp_base) 65_0E_03_00(4, RA-Float[0x00], RA-Float[0x01])
+    FloatVariableSubtract(Variable_Float_Posture_Pos_X, RA-Float[0x00])
+    FloatVariableSetAbsolute(RA-Float[0x00], RA-Float[0x02])
+    if (R(Compare(RA-Float[0x00] < 0.0))) {
+      FloatVariableSet(1.7, RA-Float[0x00])
+    } else {
+      FloatVariableSet(-1.7, RA-Float[0x00])
+    }
+    (undef: Sp_Kinetic) 66_00_0D_00(RA-Float[0x00], 0.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.05, 0.0, false, false, true)
+  }
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  (undef: Sp_base) 65_1E_01_00(2)
+  FrameSpeedModifier(0.0)
+  ChangeAction(4, R(On Ground()))
+}
+

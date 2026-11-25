@@ -1,0 +1,38 @@
+[SpecialHiLoop] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1E4: MAIN {
+  OffensiveCollision(Sp(6, 0), 9, 30, Sp(0, 60), Sp(0, 90), 7.0, 0.0, 0.0, 4.0, 0.0, 1.0, 1.0, 545457794)
+  AsynchronousTimer(7.0)
+  OffensiveCollision(Sp(6, 0), 5, 361, Sp(0, 80), Sp(0, 30), 3.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 545457730)
+  EnableDisableLedgegrab(2)
+  AsynchronousTimer(35.0)
+  BitVariableSet(RA-Bool[0x10])
+}
+
+Subaction 0x1E4: GFX {
+  SwordGlow(0, 0, 40, 0.0, 0.0, 0.0, 40, 0.0, 0.0, 0.0, true, 1507341, 40, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  AsynchronousTimer(1.0)
+  GraphicEffect(1507352, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GraphicEffect(17, 0, 0.0, 20.0, 18.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(29.0)
+  TerminateSwordGlow(1)
+}
+
+Subaction 0x1E4: SOUND {
+  AsynchronousTimer(48.0)
+  VictorySoundEffect(797)
+}
+
+Subaction 0x1E4: OTHER {
+  ModelChangerPermanent(2, 1)
+}
+

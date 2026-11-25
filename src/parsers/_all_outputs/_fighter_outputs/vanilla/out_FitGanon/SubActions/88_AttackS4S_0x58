@@ -1,0 +1,41 @@
+[AttackS4S] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x58: MAIN {
+  AsynchronousTimer(11.0)
+  OffensiveCollision(Sp(30, 0), 24, 40, Sp(0, 83), Sp(0, 30), 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 960696467)
+  OffensiveCollision(Sp(31, 1), 24, 40, Sp(0, 75), Sp(0, 30), 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 960696467)
+  SynchronousTimer(6.0)
+  TerminateCollisions()
+  AsynchronousTimer(50.0)
+  AllowInterrupt()
+}
+
+Subaction 0x58: GFX {
+  AsynchronousTimer(12.0)
+  GraphicEffectLanding(40, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x58: SOUND {
+  AsynchronousTimer(10.0)
+  StopSoundEffect(105)
+  SoundEffect(1864)
+  SoundEffect(168)
+  SynchronousTimer(1.0)
+  SoundEffect(4772)
+}
+
+Subaction 0x58: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(10.0)
+  Rumble(18, 0)
+}
+

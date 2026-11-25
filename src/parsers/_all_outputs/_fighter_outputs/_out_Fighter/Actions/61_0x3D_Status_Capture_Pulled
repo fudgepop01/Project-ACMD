@@ -1,0 +1,8 @@
+// Status_Capture_Pulled
+Action 0x3D: ENTRY {
+  ChangeActionStatus(10035, 62, R(Animation End()))
+  SubRoutine(hidden_subroutine_0x102F4)
+}
+
+Action 0x3D : EXIT {
+}

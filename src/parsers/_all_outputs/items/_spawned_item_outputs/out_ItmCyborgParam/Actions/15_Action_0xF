@@ -1,0 +1,12 @@
+// Status_Fall_Aerial
+Action 0xF {
+  SubRoutine(hidden_subroutine_0x68)
+  ChangeActionStatus(4, 4, R(On Ground()))
+  ChangeSubAction(11)
+  (undef: Sp_Kinetic) 66_02_02_00(0.04, 0.04)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  SubRoutine(hidden_subroutine_0x1B0)
+  SubRoutine(hidden_subroutine_0x2B8)
+}
+

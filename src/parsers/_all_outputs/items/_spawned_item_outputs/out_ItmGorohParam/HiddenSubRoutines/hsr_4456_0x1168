@@ -1,0 +1,11 @@
+[hsr_1168]
+hidden_subroutine_0x1168 {
+  if (R(Is within footstool range())) {
+    ChangeActionStatus(11, 11, R(On Ground()))
+  } elif (R(Is within footstool range())) {
+    ChangeActionStatus(8, 8, R(On Ground()))
+  } else {
+    ChangeActionStatus(14, 14, R(On Ground()))
+  }
+  Return()
+}

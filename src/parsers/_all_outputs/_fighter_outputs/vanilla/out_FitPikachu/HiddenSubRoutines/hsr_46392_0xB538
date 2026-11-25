@@ -1,0 +1,4 @@
+[hsr_B538]
+hidden_subroutine_0xB538 {
+  Rumble(13, 10)
+}

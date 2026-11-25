@@ -1,0 +1,53 @@
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x8 (Status_Turn_Run) @ 1 : 1
+
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 3 : 1
+LA-Int[0x00] in Action 0x9 (Status_Turn_Run_Brake) @ 16 : 1
+LA-Int[0x00] in Action 0x9 (Status_Turn_Run_Brake) @ 18 : 1
+LA-Int[0x00] in Action 0x9 (Status_Turn_Run_Brake) @ 19 : 1
+
+LA-Int[0x01] in Action 0x9 (Status_Turn_Run_Brake) @ 3 : 1
+LA-Int[0x01] in Action 0x9 (Status_Turn_Run_Brake) @ 5 : 1
+LA-Int[0x01] in Action 0x9 (Status_Turn_Run_Brake) @ 8 : 1
+LA-Int[0x01] in Action 0x9 (Status_Turn_Run_Brake) @ 15 : 0
+LA-Int[0x01] in Action 0xB (Status_Jump) @ 2 : 1
+LA-Int[0x01] in hsr_26C @ 2 : 1
+LA-Int[0x01] in hsr_26C @ 8 : 1
+LA-Int[0x01] in hsr_334 @ 0 : 1
+
+LA-Int[0x02] in Action 0x9 (Status_Turn_Run_Brake) @ 8 : 3
+LA-Int[0x02] in Action 0x9 (Status_Turn_Run_Brake) @ 15 : 1
+LA-Int[0x02] in hsr_26C @ 3 : 1
+LA-Int[0x02] in hsr_26C @ 9 : 1
+
+LA-Int[0x03] in hsr_164 @ 4 : 1
+LA-Int[0x03] in hsr_164 @ 8 : 1
+LA-Int[0x03] in hsr_164 @ 12 : 1
+
+LA-Int[0x1B] in Subaction 0x2 : SOUND @ 1 : 1
+
+LA-Float[0x00] in Action 0xB (Status_Jump) @ 1 : 1
+LA-Float[0x00] in Action 0xB (Status_Jump) @ 3 : 1
+LA-Float[0x00] in Action 0xB (Status_Jump) @ 5 : 1
+LA-Float[0x00] in hsr_164 @ 17 : 2
+
+LA-Float[0x01] in Action 0xB (Status_Jump) @ 1 : 2
+LA-Float[0x01] in Action 0xB (Status_Jump) @ 7 : 1
+LA-Float[0x01] in hsr_164 @ 17 : 3
+
+LA-Float[0x02] in Action 0x1 (Status_Walk) @ 4 : 1
+LA-Float[0x02] in hsr_164 @ 0 : 1
+LA-Float[0x02] in hsr_164 @ 1 : 0
+LA-Float[0x02] in hsr_164 @ 5 : 3
+LA-Float[0x02] in hsr_164 @ 6 : 0
+LA-Float[0x02] in hsr_164 @ 13 : 1
+LA-Float[0x02] in hsr_164 @ 15 : 1
+LA-Float[0x02] in hsr_164 @ 17 : 5
+
+LA-Float[0x03] in hsr_164 @ 1 : 1
+LA-Float[0x03] in hsr_164 @ 2 : 1
+LA-Float[0x03] in hsr_164 @ 3 : 1
+LA-Float[0x03] in hsr_164 @ 6 : 1
+LA-Float[0x03] in hsr_164 @ 7 : 1
+LA-Float[0x03] in hsr_164 @ 10 : 1
+LA-Float[0x03] in hsr_164 @ 13 : 0
+LA-Float[0x03] in hsr_164 @ 15 : 0

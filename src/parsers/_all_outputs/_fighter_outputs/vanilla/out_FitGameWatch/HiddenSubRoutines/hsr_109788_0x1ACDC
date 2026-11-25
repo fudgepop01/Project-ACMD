@@ -1,0 +1,33 @@
+[hsr_1ACDC]
+hidden_subroutine_0x1ACDC {
+  if (R(Bit is Set(RA-Bool[0x11]))) {
+    GenerateArticle(0)
+    BasicVariableIncrement(RA-Int[0x00])
+    BitVariableClear(RA-Bool[0x11])
+  }
+  if (R(Button Release(Special))) {
+    BitVariableSet(RA-Bool[0x14])
+  }
+  if (R(Compare(RA-Int[0x00] < IC-Int[0x5DC0]))) {
+    if (R(Bit is Set(RA-Bool[0x13])) && R(NOT Bit is Set(RA-Bool[0x14]))) {
+      SetAnimationFrame(IC-Int[0xFA0])
+      ChangeSubAction(Variable_Int_Motion_Kind, true)
+      if (R(On Ground())) {
+        SetRequirement(R(In Air()))
+      } else {
+        SetRequirement(R(On Ground()))
+      }
+      BitVariableClear(RA-Bool[0x13])
+    }
+    if (R(Bit is Set(RA-Bool[0x12])) && R(Button Press(Special))) {
+      SetAnimationFrame(IC-Int[0xFA0])
+      ChangeSubAction(Variable_Int_Motion_Kind, true)
+      if (R(On Ground())) {
+        SetRequirement(R(In Air()))
+      } else {
+        SetRequirement(R(On Ground()))
+      }
+      BitVariableClear(RA-Bool[0x12])
+    }
+  }
+}

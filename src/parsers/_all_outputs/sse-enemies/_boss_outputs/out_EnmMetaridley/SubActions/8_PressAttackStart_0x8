@@ -1,0 +1,42 @@
+[PressAttackStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x8: MAIN {
+}
+
+Subaction 0x8: MAIN EXIT {
+}
+
+Subaction 0x8: MAIN INIT {
+}
+
+Subaction 0x8: GFX {
+}
+
+Subaction 0x8: GFX EXIT {
+}
+
+Subaction 0x8: GFX INIT {
+}
+
+Subaction 0x8: SFX {
+  SynchronousTimer(13.0)
+  SoundEffect(9797)
+  SynchronousTimer(34.0)
+  SoundEffect(9797)
+}
+
+Subaction 0x8: SFX EXIT {
+}
+
+Subaction 0x8: SFX INIT {
+}
+

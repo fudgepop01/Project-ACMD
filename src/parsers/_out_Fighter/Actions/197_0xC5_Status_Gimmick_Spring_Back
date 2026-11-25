@@ -1,0 +1,9 @@
+// Status_Gimmick_Spring_Back
+Action 0xC5: ENTRY {
+  ChangeSubAction(157)
+  ChangeAction(73, R(In Air()))
+  ChangeAction(0, R(Animation End()))
+}
+
+Action 0xC5 : EXIT {
+}

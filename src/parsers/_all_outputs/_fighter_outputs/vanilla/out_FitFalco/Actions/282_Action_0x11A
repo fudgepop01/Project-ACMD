@@ -1,0 +1,6 @@
+Action 0x11A: ENTRY {
+  SetGimmickEffectFlag(false)
+}
+
+Action 0x11A : EXIT {
+}

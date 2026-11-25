@@ -1,0 +1,12 @@
+[hsr_3D5C]
+hidden_subroutine_0x3D5C {
+  SWITCH_3ARG(1000, IC-Int[0xABE3], 3)
+    Case(0)
+      SubRoutine(hidden_subroutine_0x1468)
+    Case(1)
+      SubAction09(1)
+    Case(2)
+      SubAction09(2)
+  EndSwitch()
+  Return()
+}

@@ -1,0 +1,77 @@
+[SpecialAirHi] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D5: MAIN {
+  AsynchronousTimer(5.0)
+  BitVariableSet(RA-Bool[0x14])
+  OffensiveCollision(Sp(0, 0), 10, 80, Sp(0, 60), Sp(3, 80), 22.0, 0.0, 22.0, 0.0, 0.0, 1.0, 1.0, 994249856)
+  AsynchronousTimer(6.0)
+  BitVariableSet(RA-Bool[0x13])
+  AsynchronousTimer(7.0)
+  BitVariableSet(RA-Bool[0x12])
+  TerminateCollisions()
+  EnableDisableLedgegrab(1)
+  SetLoop(5) {
+    OffensiveCollision(Sp(0, 0), 3, 84, Sp(0, 20), Sp(0, 50), 20.0, 0.0, 22.0, 0.0, 0.0, 1.0, 1.0, 994248194)
+    SynchronousTimer(4.0)
+    TerminateCollisions()
+  }
+  SetLoop(5) {
+    OffensiveCollision(Sp(0, 0), 2, 84, Sp(0, 20), Sp(0, 50), 18.0, 0.0, 22.0, 0.0, 0.0, 1.0, 1.0, 994248194)
+    SynchronousTimer(4.0)
+    TerminateCollisions()
+  }
+  EnableDisableLedgegrab(2)
+  AsynchronousTimer(50.0)
+  BitVariableClear(RA-Bool[0x14])
+  BitVariableClear(RA-Bool[0x13])
+  BitVariableSet(RA-Bool[0x10])
+  AsynchronousTimer(81.0)
+  BitVariableClear(RA-Bool[0x12])
+}
+
+Subaction 0x1D5: GFX {
+  GraphicEffectAttached(786435, 0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 2.5, true)
+}
+
+Subaction 0x1D5: SOUND {
+  AsynchronousTimer(5.0)
+  SoundEffect(6627)
+  SynchronousTimer(5.0)
+  SoundEffect(6628)
+  SynchronousTimer(5.0)
+  SoundEffect(6629)
+  SynchronousTimer(5.0)
+  SoundEffect(6630)
+  SynchronousTimer(5.0)
+  SoundEffect(6631)
+  SynchronousTimer(5.0)
+  SoundEffect(6631)
+  SynchronousTimer(5.0)
+  SoundEffect(6630)
+  SynchronousTimer(5.0)
+  SoundEffect(6629)
+  SynchronousTimer(5.0)
+  SoundEffect(6628)
+}
+
+Subaction 0x1D5: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(4.0)
+  RumbleLoop(2, 50)
+  AsynchronousTimer(6.0)
+  HeldItemsVisibility(false)
+  AsynchronousTimer(8.0)
+  WearableItemsVisibility(false)
+  AsynchronousTimer(80.0)
+  HeldItemsVisibility(true)
+}
+

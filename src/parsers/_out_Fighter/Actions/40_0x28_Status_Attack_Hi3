@@ -1,0 +1,12 @@
+// Status_Attack_Hi3
+Action 0x28: ENTRY {
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeSubAction(84)
+}
+
+Action 0x28 : EXIT {
+}

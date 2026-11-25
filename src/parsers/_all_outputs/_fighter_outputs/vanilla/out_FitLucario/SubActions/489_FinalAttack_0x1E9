@@ -1,0 +1,40 @@
+[FinalAttack] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1E9: MAIN {
+  AsynchronousTimer(3.0)
+  SpecialOffensiveCollision(Sp(8, 256), 2, 90, Sp(7, 100), Sp(0, 0), 22.0, 0.0, -1500.0, 0.0, 0.0, 0.2, 0.2, 69781, 6, 1048528)
+  SpecialOffensiveCollision(Sp(8, 257), 2, 90, Sp(4, 100), Sp(0, 0), 22.0, 0.0, -1500.0, 0.0, 0.0, 0.2, 0.2, 135317, 6, 1048528)
+  AsynchronousTimer(189.0)
+  TerminateCollisions()
+  AsynchronousTimer(190.0)
+  SpecialOffensiveCollision(Sp(8, 256), 10, 60, Sp(0, 120), Sp(0, 85), 34.0, 0.0, -1500.0, 0.0, 0.0, 2.0, 0.0, 197781, 0, 1048528)
+  SynchronousTimer(1.0)
+  TerminateCollisions()
+}
+
+Subaction 0x1E9: GFX {
+  GraphicEffectAttached(16515073, 8, 0.0, 7.0, 0.0, 0.0, 0.0, 0.0, 2.0, false)
+}
+
+Subaction 0x1E9: SOUND {
+  AsynchronousTimer(3.0)
+  SoundEffect(2320)
+  SoundEffect(5783)
+}
+
+Subaction 0x1E9: OTHER {
+  AsynchronousTimer(1.0)
+  RumbleLoop(8, 189)
+  AsynchronousTimer(3.0)
+  Screenshake(2)
+}
+

@@ -1,0 +1,9 @@
+[hsr_28]
+hidden_subroutine_0x28 {
+  if (R(NOT 2714(1))) {
+    LeftDirection()
+    DecideDirection()
+    CharacterSpecific01()
+  }
+  Return()
+}

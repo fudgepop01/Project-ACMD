@@ -1,0 +1,16 @@
+// Status_Fall_Special
+Action 0x10 {
+  ChangeAction(3, R(In Air()))
+  ChangeSubAction(10)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeSubAction(3)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ReverseDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  BasicVariableSet(6, LA-Int[0x00])
+  ChangeAction(14, R(Button Tap?()))
+}
+

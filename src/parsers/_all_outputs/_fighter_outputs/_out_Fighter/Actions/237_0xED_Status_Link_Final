@@ -1,0 +1,25 @@
+// Status_Link_Final
+Action 0xED: ENTRY {
+  SetGimmickEffectFlag(false)
+  BitVariableSet(LA-Bool[0x01])
+  Module0900(2)
+  SetAerialOrOnstage(0)
+  SetAirGround(10)
+  FrameSpeedModifier(0.0)
+  SetRequirement(R(Bit is Set(RA-Bool[0x10])))
+  LoadRest()
+  Switch(10000, RA-Int[0x00])
+    Case(3)
+      ChangeSubAction(RA-Int[0x01])
+      Break()
+    Case(4)
+      ChangeSubAction(165)
+      FrameSpeedModifier(0.4)
+      Break()
+    DefaultCase()
+      Break()
+  EndSwitch()
+}
+
+Action 0xED : EXIT {
+}

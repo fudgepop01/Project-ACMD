@@ -1,0 +1,10 @@
+// Status_Walk_Brake
+Action 0x2 {
+  BodyCollision(3)
+  SynchronousTimer(1.0)
+  ChangeSubAction(2)
+  StartMashing3(280.0, 1.0, 6.0)
+  ChangeAction(5, R(Button Mashable Status Expired()))
+  ChangeAction(5, R(NOT 0x271F()))
+}
+

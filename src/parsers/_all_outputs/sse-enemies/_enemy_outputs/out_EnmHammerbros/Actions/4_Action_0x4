@@ -1,0 +1,16 @@
+Action 0x4: MAIN {
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonBulletProc)
+}
+
+Action 0x4: EXIT {
+}
+
+Action 0x4: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_03_00_00()
+  SubAction09(0)
+  (undef: Sp_base) 65_04_01_00(0)
+  (undef: Sp_base) 65_09_02_00(IC-Int[0xABE4], LA-Float[0x05])
+  BasicVariableSet(0, LA-Int[0x05])
+}
+

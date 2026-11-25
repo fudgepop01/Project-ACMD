@@ -1,0 +1,7 @@
+// @ 0x3C10
+CommonAICheckDamageAir {
+  if (R(Bit is Set(RA-Bool[0x02])) && R(Bit is Set(RA-Bool[0x01]))) {
+    BitVariableSet(RA-Bool[0x04])
+  }
+  Return()
+}

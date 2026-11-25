@@ -1,0 +1,8 @@
+// Status_Capture_Damage_Yoshi
+Action 0x109: ENTRY {
+  ChangeActionStatus(10035, 264, R(Animation End()))
+  ChangeActionStatus(10036, 64, R(Button Mashable Status Expired()))
+}
+
+Action 0x109 : EXIT {
+}

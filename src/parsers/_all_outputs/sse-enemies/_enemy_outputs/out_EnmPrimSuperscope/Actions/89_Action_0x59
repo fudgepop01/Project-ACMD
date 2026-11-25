@@ -1,0 +1,14 @@
+Action 0x59: MAIN {
+}
+
+Action 0x59: EXIT {
+}
+
+Action 0x59: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(17)
+  SubAction09(81)
+  (undef: Sp_Kinetic) 66_0B_02_00(3, 44)
+  SubRoutine(hidden_subroutine_0x1270)
+}
+

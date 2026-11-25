@@ -1,0 +1,8 @@
+// Status_Bitten_Wario_End
+Action 0xCE: ENTRY {
+  (undef: StageObject) 0C_29_00_00()
+  WearableItemsVisibility(false)
+}
+
+Action 0xCE : EXIT {
+}

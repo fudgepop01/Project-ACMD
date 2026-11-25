@@ -1,0 +1,8 @@
+[hsr_57C4]
+hidden_subroutine_0x57C4 {
+  if (R(On Ground())) {
+    SetAerialOrOnstage(2)
+  } else {
+    SetAerialOrOnstage(5)
+  }
+}

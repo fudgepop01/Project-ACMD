@@ -1,0 +1,4 @@
+[hsr_DE90]
+hidden_subroutine_0xDE90 {
+  GraphicEffectAttached(1572879, 44, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+}

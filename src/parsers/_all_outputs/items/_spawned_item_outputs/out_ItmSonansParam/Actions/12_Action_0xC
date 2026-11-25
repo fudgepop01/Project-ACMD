@@ -1,0 +1,14 @@
+// Status_Jump_Aerial
+Action 0xC {
+  ChangeAction(6, R(Compare(LA-Int[0x0B] == 0.0)))
+  SubRoutine(hidden_subroutine_0x70)
+  DisableActionStatusId(12)
+  ChangeAction(3, R(In Air()))
+  ChangeSubAction(2)
+  SynchronousTimer(1.0)
+  BitVariableSet(LA-Bool[0x00])
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(13, R(Button Tap?()))
+}
+

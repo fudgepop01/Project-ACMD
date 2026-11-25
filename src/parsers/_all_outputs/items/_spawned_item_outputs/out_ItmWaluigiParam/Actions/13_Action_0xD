@@ -1,0 +1,22 @@
+// Status_Fly
+Action 0xD {
+  ChangeAction(3, R(In Air()))
+  (undef: Sp_Kinetic) 66_02_02_00(0.1, 0.0)
+  (undef: Sp_base) 65_07_01_00(2)
+  SubRoutine(hidden_subroutine_0xB4)
+  BasicVariableRandom(1, 2, LA-Int[0x01])
+  SetLoop(2) {
+    ChangeSubAction(13)
+    SetRequirement(R(Animation has looped?()))
+    LoadRest()
+    BasicVariableDecrement(LA-Int[0x01])
+    if (R(Compare(LA-Int[0x01] == 0.0))) {
+      LoopBreak()
+    }
+    if (R(NOT Bit is Set(RA-Bool[0x03]))) {
+      LoopBreak()
+    }
+  }
+  ChangeAction(4, R(On Ground()))
+}
+

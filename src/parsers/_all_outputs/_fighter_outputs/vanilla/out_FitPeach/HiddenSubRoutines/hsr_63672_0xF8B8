@@ -1,0 +1,11 @@
+[hsr_F8B8]
+hidden_subroutine_0xF8B8 {
+  OffensiveCollision(Sp(72, 0), 18, 80, Sp(0, 68), Sp(0, 30), 3.0, 0.0, 3.0, 0.0, 0.0, 1.0, 1.0, 977479168)
+  OffensiveCollision(Sp(72, 1), 18, 80, Sp(0, 68), Sp(0, 30), 2.0, 0.0, -2.0, 0.0, 0.0, 1.0, 1.0, 977479168)
+  OffensiveCollision(Sp(80, 2), 18, 80, Sp(0, 68), Sp(0, 30), 2.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 977479168)
+  SynchronousTimer(1.0)
+  OffensiveCollision(Sp(0, 3), 18, 80, Sp(0, 68), Sp(0, 30), 6.0, 0.0, 8.0, 10.0, 0.0, 1.0, 1.0, 977479168)
+  SynchronousTimer(1.0)
+  DeleteHitbox(3)
+  Return()
+}

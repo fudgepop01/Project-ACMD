@@ -1,0 +1,10 @@
+// Status_Swallowed
+Action 0xD0: ENTRY {
+  SetGimmickEffectFlag(false)
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+  ChangeSubAction(41)
+}
+
+Action 0xD0 : EXIT {
+}

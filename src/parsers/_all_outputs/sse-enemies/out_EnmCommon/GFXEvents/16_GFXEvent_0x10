@@ -1,0 +1,11 @@
+// @ 0x1390
+GFXEvent_0x10 {
+  SetLoop(4) {
+    GraphicEffect(48, -1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+    SubRoutine(hidden_subroutine_0x1130)
+  }
+  SetLoop(2) {
+    SubRoutine(hidden_subroutine_0x11C8)
+  }
+  Return()
+}

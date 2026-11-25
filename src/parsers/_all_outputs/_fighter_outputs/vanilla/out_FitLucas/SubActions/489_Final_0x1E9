@@ -1,0 +1,65 @@
+[Final] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1E9: MAIN {
+  CameraCloseup(10, 0, 1.0, 0.0, 0.0)
+  SetSlowEffectEnemyFighter(2, 30)
+  AsynchronousTimer(40.0)
+  NormalCamera()
+  SetCameraBoundaries(50.0, -50.0, 50.0, -10.0)
+  ScreenTint(0, 50, 0, 0, 32, 96, 0)
+  AsynchronousTimer(50.0)
+  BitVariableSet(LA-Bool[0x3D])
+  AsynchronousTimer(296.0)
+  EndScreenTint(0, 80)
+}
+
+Subaction 0x1E9: GFX {
+}
+
+Subaction 0x1E9: SOUND {
+  AsynchronousTimer(4.0)
+  SoundEffect(2070)
+}
+
+Subaction 0x1E9: OTHER {
+  HeldItemsVisibility(false)
+  SlopeContourStand(6)
+  AsynchronousTimer(15.0)
+  Rumble(14, 0)
+  AsynchronousTimer(41.0)
+  SlopeContourStand02(0, 3)
+  AsynchronousTimer(70.0)
+  Rumble(15, 0)
+  AsynchronousTimer(115.0)
+  Rumble(15, 0)
+  AsynchronousTimer(140.0)
+  Rumble(15, 0)
+  AsynchronousTimer(160.0)
+  Rumble(15, 0)
+  AsynchronousTimer(180.0)
+  Rumble(15, 0)
+  AsynchronousTimer(210.0)
+  Rumble(15, 0)
+  AsynchronousTimer(228.0)
+  Rumble(15, 0)
+  AsynchronousTimer(250.0)
+  Rumble(15, 0)
+  AsynchronousTimer(251.0)
+  SlopeContourStand02(6, 7)
+  AsynchronousTimer(265.0)
+  Rumble(15, 0)
+  AsynchronousTimer(280.0)
+  Rumble(15, 0)
+  AsynchronousTimer(299.0)
+  Rumble(15, 0)
+}
+

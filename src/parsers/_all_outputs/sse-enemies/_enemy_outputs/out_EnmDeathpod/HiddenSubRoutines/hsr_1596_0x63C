@@ -1,0 +1,6 @@
+[hsr_63C]
+hidden_subroutine_0x63C {
+  (undef: Sp_base) 65_04_01_00(0)
+  (undef: Sp_base) 65_07_02_00(IC-Int[0xABE4], LA-Float[0x05])
+  Return()
+}

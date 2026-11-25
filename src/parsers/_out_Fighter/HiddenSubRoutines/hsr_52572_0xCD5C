@@ -1,0 +1,8 @@
+[hsr_CD5C]
+hidden_subroutine_0xCD5C {
+
+  ChangeActionStatus(10008, 72, R(In Air()))
+  AdditionalRequirement(R(Touching a Floor, Wall, or Ceiling(1)))
+  AdditionalRequirement(R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed_Y > Common_Param_Float_Damage_Fly_Reflect_Speed)))
+  AdditionalRequirement(R(Compare(LA-Int[0x3D] <= IC-Int[0x5A35])))
+}

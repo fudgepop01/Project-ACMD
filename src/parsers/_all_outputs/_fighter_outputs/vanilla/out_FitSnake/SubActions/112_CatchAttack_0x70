@@ -1,0 +1,35 @@
+[CatchAttack] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x70: MAIN {
+  AsynchronousTimer(1.0)
+  SpecialOffensiveCollision(Sp(0, 0), 2, 361, Sp(40, 100), Sp(0, 0), 5.0, 0.0, 15.0, 3.0, 0.0, 1.0, 1.0, 805502976, 0, 139460547)
+  SynchronousTimer(1.0)
+  TerminateCollisions()
+  AsynchronousTimer(17.0)
+  BitVariableSet(RA-Bool[0x10])
+}
+
+Subaction 0x70: GFX {
+  AsynchronousTimer(2.0)
+  GraphicEffectAttached(3080209, 0, 0.0, 18.0, 8.0, -20.0, 0.0, 0.0, 1.0, false)
+}
+
+Subaction 0x70: SOUND {
+  SoundEffect(6398)
+}
+
+Subaction 0x70: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(2.0)
+  Rumble(13, 0)
+}
+

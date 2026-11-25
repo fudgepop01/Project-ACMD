@@ -1,0 +1,9 @@
+// Status_Walk_Brake
+Action 0x2 {
+  ChangeSubAction(1)
+  BasicVariableSet(-1, LA-Int[0x0B])
+  BasicVariableSet(-1, LA-Int[0x0C])
+  BitVariableClear(LA-Bool[0x0C])
+  BodyCollision(3)
+}
+

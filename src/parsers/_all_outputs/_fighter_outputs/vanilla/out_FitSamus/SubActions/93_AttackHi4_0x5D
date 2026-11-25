@@ -1,0 +1,88 @@
+[AttackHi4] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x5D: MAIN {
+  OffensiveCollision(Sp(43, 0), 4, 130, Sp(0, 50), Sp(0, 50), 3.88, 2.72, 0.0, 0.0, 0.0, 1.0, 1.2, 990056517)
+  OffensiveCollision(Sp(43, 1), 4, 130, Sp(0, 50), Sp(0, 50), 8.18, -7.6, 0.0, 0.0, 0.0, 1.0, 1.2, 990056517)
+  SynchronousTimer(3.0)
+  TerminateCollisions()
+  SynchronousTimer(1.0)
+  OffensiveCollision(Sp(43, 0), 4, 120, Sp(0, 50), Sp(0, 35), 3.88, 2.72, 0.0, 0.0, 0.0, 1.0, 1.2, 990056517)
+  OffensiveCollision(Sp(43, 1), 4, 120, Sp(0, 50), Sp(0, 35), 8.18, -7.6, 0.0, 0.0, 0.0, 1.0, 1.2, 990056517)
+  SynchronousTimer(3.0)
+  TerminateCollisions()
+  SynchronousTimer(1.0)
+  OffensiveCollision(Sp(43, 0), 4, 90, Sp(0, 50), Sp(0, 25), 3.88, 2.72, 0.0, 0.0, 0.0, 1.0, 1.2, 990056517)
+  OffensiveCollision(Sp(43, 1), 4, 90, Sp(0, 50), Sp(0, 25), 8.18, -7.6, 0.0, 0.0, 0.0, 1.0, 1.2, 990056517)
+  SynchronousTimer(3.0)
+  TerminateCollisions()
+  SynchronousTimer(1.0)
+  OffensiveCollision(Sp(43, 0), 5, 85, Sp(0, 50), Sp(0, 30), 3.88, 2.72, 0.0, 0.0, 0.0, 1.0, 1.2, 990056517)
+  OffensiveCollision(Sp(43, 1), 5, 85, Sp(0, 50), Sp(0, 30), 8.18, -7.6, 0.0, 0.0, 0.0, 1.0, 1.2, 990056517)
+  SynchronousTimer(3.0)
+  TerminateCollisions()
+  SynchronousTimer(1.0)
+  OffensiveCollision(Sp(43, 0), 6, 80, Sp(0, 120), Sp(0, 50), 4.08, 2.72, 0.0, 0.0, 0.0, 1.0, 1.2, 990056581)
+  OffensiveCollision(Sp(43, 1), 6, 80, Sp(0, 120), Sp(0, 50), 8.64, -7.6, 0.0, 0.0, 0.0, 1.0, 1.2, 990056581)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+  AsynchronousTimer(46.0)
+  AllowInterrupt()
+}
+
+Subaction 0x5D: GFX {
+  AsynchronousTimer(1.0)
+  GraphicEffect(262146, 43, -5.4, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(4.0)
+  GraphicEffectLanding(37, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(5.0)
+  GraphicEffect(262146, 43, -5.4, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(8.0)
+  GraphicEffect(15, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(9.0)
+  GraphicEffect(262146, 43, -5.4, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(13.0)
+  GraphicEffect(262146, 43, -5.4, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(17.0)
+  GraphicEffect(262146, 43, -5.4, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x5D: SOUND {
+  AsynchronousTimer(0.0)
+  StopSoundEffect(105)
+  SynchronousTimer(4.0)
+  SoundEffect(2808)
+  SynchronousTimer(4.0)
+  SoundEffect(2808)
+  SynchronousTimer(4.0)
+  SoundEffect(2808)
+  SynchronousTimer(4.0)
+  SoundEffect(2808)
+  SynchronousTimer(4.0)
+  SoundEffect(2808)
+}
+
+Subaction 0x5D: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(1.0)
+  Rumble(0, 0)
+  AsynchronousTimer(5.0)
+  Rumble(0, 0)
+  AsynchronousTimer(8.0)
+  Rumble(0, 0)
+  AsynchronousTimer(9.0)
+  Rumble(0, 0)
+  AsynchronousTimer(13.0)
+  Rumble(0, 0)
+  AsynchronousTimer(19.0)
+  Rumble(0, 0)
+}
+

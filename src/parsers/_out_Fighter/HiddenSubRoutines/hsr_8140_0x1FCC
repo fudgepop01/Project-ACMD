@@ -1,0 +1,5 @@
+[hsr_1FCC]
+hidden_subroutine_0x1FCC {
+  GraphicEffectAttached_UNDOC12ARGS(20, 300, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, false, 0, Variable_Int_Player_Color_Kind)
+  GraphicEffectAttached2(21, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+}

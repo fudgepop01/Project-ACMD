@@ -1,0 +1,19 @@
+[hsr_1498]
+hidden_subroutine_0x1498 {
+  if (R(Compare(Variable_Int_Controller_Flick_X_Dir == 23.0))) {
+    SubAction09(0)
+  } elif (R(Compare(Variable_Int_Controller_Flick_X_Dir == 28.0))) {
+    SubAction09(47)
+  } elif (R(Compare(Variable_Int_Controller_Flick_X_Dir == 31.0))) {
+    SubAction09(44)
+  } elif (R(Compare(Variable_Int_Controller_Flick_X_Dir == 32.0))) {
+    SubAction09(45)
+  } elif (R(Compare(Variable_Int_Controller_Flick_X_Dir == 33.0))) {
+    SubAction09(46)
+  } elif (R(Compare(Variable_Int_Controller_Flick_X_Dir == 34.0))) {
+    SubAction09(48)
+  } elif (R(Compare(Variable_Int_Controller_Flick_X_Dir == 35.0))) {
+    SubAction09(49)
+  }
+  Return()
+}

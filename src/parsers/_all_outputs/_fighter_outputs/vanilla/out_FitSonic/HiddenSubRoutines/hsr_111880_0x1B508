@@ -1,0 +1,4 @@
+[hsr_1B508]
+hidden_subroutine_0x1B508 {
+  AllowInterrupt()
+}

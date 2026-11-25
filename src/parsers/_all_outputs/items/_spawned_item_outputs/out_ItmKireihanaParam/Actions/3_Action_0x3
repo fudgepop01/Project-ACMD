@@ -1,0 +1,20 @@
+// Status_Dash
+Action 0x3 {
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 1.0))) {
+    ChangeAction(4, R(On Ground()))
+  } else {
+    ChangeAction(8, R(On Ground()))
+    SetRequirement(R(Animation has looped?()))
+    LoadRest()
+    while (R(Compare(LA-Int[0x00] > 0.0))) {
+      BasicVariableDecrement(LA-Int[0x00])
+      ChangeSubAction(1)
+      SetRequirement(R(Animation has looped?()))
+      LoadRest()
+      EndWhile()
+      (undef: status) 02_0E_00_00()
+      ChangeAction(9, R(In Air()))
+      ChangeAction(10, R(On Ground()))
+    }
+}
+

@@ -1,0 +1,17 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 1.0))) {
+    ChangeSubAction(0, true)
+  } else {
+    TerminateCollisions()
+    ChangeSubAction(0)
+  }
+  if (R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv < 0.0))) {
+    ChangeAction(10, R(In walljump situation()), 82)
+  } else {
+    ChangeAction(10, R(In walljump situation()), 164)
+  }
+  ChangeAction(10, R(In walljump situation()), 200)
+  ChangeSubAction(0)
+}
+

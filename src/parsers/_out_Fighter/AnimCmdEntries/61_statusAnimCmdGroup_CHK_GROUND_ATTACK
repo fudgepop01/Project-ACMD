@@ -1,0 +1,6 @@
+// @ 0x23A6C
+CHK_GROUND_ATTACK {
+  ClearPreventInterrupt(GROUND_ATTACK)
+  SubRoutine(hidden_subroutine_0x32BC)
+  ClearPreventInterrupt(ALL?)
+}

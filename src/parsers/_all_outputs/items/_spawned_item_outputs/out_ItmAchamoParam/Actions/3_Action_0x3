@@ -1,0 +1,10 @@
+// Status_Dash
+Action 0x3 {
+  ChangeAction(4, R(On Ground()))
+  if (R(Compare(Variable_Int_Motion_Kind == 1.0))) {
+    ChangeSubAction(1, true)
+    SetAnimationFrame(40.0)
+    FrameSpeedModifier(0.0)
+  }
+}
+

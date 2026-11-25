@@ -1,0 +1,7 @@
+[hsr_7874]
+hidden_subroutine_0x7874 {
+  SubRoutine(statusAnimCmd_ItemShootWait_Common)
+  SubRoutine(statusAnimCmd_AllowThrowItem)
+  SubRoutine(hidden_subroutine_0xC894)
+  SubRoutine(hidden_subroutine_0xC944)
+}

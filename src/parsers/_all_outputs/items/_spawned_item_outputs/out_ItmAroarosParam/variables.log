@@ -1,0 +1,8 @@
+LA-Int[0x0E] in Action 0x1 (Status_Walk) @ 0 : 1
+LA-Int[0x0E] in Action 0x2 (Status_Walk_Brake) @ 0 : 1
+LA-Int[0x0E] in Action 0x5 (Status_Run_Brake) @ 0 : 1
+LA-Int[0x0E] in Action 0x8 (Status_Turn_Run) @ 0 : 1
+
+LA-Bool[0x00] in Action 0x2 (Status_Walk_Brake) @ 1 : 0
+LA-Bool[0x00] in Action 0x3 (Status_Dash) @ 0 : 1
+LA-Bool[0x00] in Action 0x4 (Status_Run) @ 0 : 1

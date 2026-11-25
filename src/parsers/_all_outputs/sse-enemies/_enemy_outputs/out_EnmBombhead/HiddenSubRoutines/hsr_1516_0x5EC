@@ -1,0 +1,21 @@
+[hsr_5EC]
+hidden_subroutine_0x5EC {
+  (undef: targetSearch) 16_00_00_00()
+  if (R(Successfully tethered ledge())) {
+    (undef: Sp_Area) 69_02_05_00(Variable_Int_Controller_Flick_No_Reset_Y, 0.0, 0.0, LA-Float[0x04], true)
+  } else {
+    FloatVariableSet(45.0, LA-Float[0x04])
+  }
+  FloatVariableSet(IC-Int[0xFA0], LA-Float[0x05])
+  if (R(Compare(LA-Float[0x04] < LA-Float[0x05])) || R(Compare(LA-Float[0x04] >= 270.0))) {
+    FloatVariableSet(LA-Float[0x05], LA-Float[0x04])
+  }
+  FloatVariableSet(IC-Int[0xFA1], LA-Float[0x05])
+  if (R(Compare(LA-Float[0x04] > LA-Float[0x05]))) {
+    FloatVariableSet(LA-Float[0x05], LA-Float[0x04])
+  }
+  (undef: Sp_base) 65_0E_02_00(IC-Int[0xABE4], 1)
+  (undef: Sp_Link) 6E_00_03_00(1, 5103, 47)
+  SubRoutine(hidden_subroutine_0x49C)
+  (undef: Sp_Link) 6E_03_02_00(1, O(0x000003B4))
+}

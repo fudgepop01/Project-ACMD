@@ -1,0 +1,16 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  ChangeAction(3, R(In Air()))
+  if (R(Compare(LA-Int[0x0B] == 0.0))) {
+    (undef: Sp_base) 65_07_01_00(10)
+    ChangeAction(10, R(Button Tap?()))
+  } else {
+    if (R(Compare(LA-Int[0x01] == 0.0))) {
+      ChangeSubAction(7)
+      BasicVariableSet(1, LA-Int[0x01])
+    }
+    SynchronousTimer(10.0)
+    ChangeAction(8, R(Button Tap?()))
+  }
+}
+

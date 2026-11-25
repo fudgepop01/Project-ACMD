@@ -1,0 +1,44 @@
+[StepJumpLanding] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x59: MAIN {
+  AsynchronousTimer(0.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 5, 10, 3.6, 361, 35, 0.0, 0, 0.0, 60, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 1.0, 1.0, false, true, 5, 1, 2, 3, true, 0, 311, false, 15, false, true, false, false, 70, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(43.0)
+  TerminateCollisions()
+}
+
+Subaction 0x59: MAIN EXIT {
+}
+
+Subaction 0x59: MAIN INIT {
+}
+
+Subaction 0x59: GFX {
+  GraphicEffectAttached(7, 0, 0.0, 0.0, 2.5, 0.0, 0.0, 0.0, 1.0, false)
+}
+
+Subaction 0x59: GFX EXIT {
+}
+
+Subaction 0x59: GFX INIT {
+}
+
+Subaction 0x59: SFX {
+  SoundEffect(9543)
+}
+
+Subaction 0x59: SFX EXIT {
+}
+
+Subaction 0x59: SFX INIT {
+}
+

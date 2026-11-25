@@ -1,0 +1,18 @@
+Action 0x114: ENTRY {
+  ChangeAction(285, R(Animation End()))
+  BasicVariableSet(IC-Int[0x5DC2], RA-Int[0x00])
+  if (R(On Ground())) {
+    ChangeActionStatus(10002, 14, R(In Air()))
+    SetAirGround(6)
+    SetAerialOrOnstage(1)
+    ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1BD88)
+    ChangeSubAction(484)
+  } else {
+    SetAirGround(102)
+    SetAerialOrOnstage(5)
+    ChangeSubAction(488)
+  }
+}
+
+Action 0x114 : EXIT {
+}

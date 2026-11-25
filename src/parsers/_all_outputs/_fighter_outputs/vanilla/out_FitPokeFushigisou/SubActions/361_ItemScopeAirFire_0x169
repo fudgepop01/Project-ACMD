@@ -1,0 +1,31 @@
+[ItemScopeAirFire] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x169: MAIN {
+  ModelChanger(1, 1)
+  ChangeItemBoneId(52)
+  AsynchronousTimer(2.0)
+  FireProjectile(RA-Int[0x0E])
+}
+
+Subaction 0x169: GFX {
+  SubRoutine(EXTERNAL: effectAnimCmd_ScopeAirFireCommon)
+}
+
+Subaction 0x169: SOUND {
+}
+
+Subaction 0x169: OTHER {
+  AsynchronousTimer(2.0)
+  Screenshake(0)
+  Rumble(13, 0)
+}
+

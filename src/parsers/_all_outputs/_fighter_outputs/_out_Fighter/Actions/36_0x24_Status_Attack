@@ -1,0 +1,70 @@
+// Status_Attack
+Action 0x24: ENTRY {
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+
+  if (R(Compare(Info_Param_Int_Attack_100_Type != 0.0))) {
+    ChangeAction(37, R(Hitbox has Connected()))
+    AdditionalRequirement(R(Bit is Set(RA-Bool[0x14])))
+    AdditionalRequirement(R(Button Pressed(Attack)))
+    AdditionalRequirement(R(Compare(Variable_Int_Combo_Count >= Info_Param_Int_Attack_Combo_Max)))
+    AdditionalRequirement(R(Bit is Set(RA-Bool[0x10])))
+    AdditionalRequirement(R(On Ground()))
+
+    ChangeActionStatus(10082, 37, R(Bit is Set(RA-Bool[0x14])))
+    AdditionalRequirement(R(Compare(RA-Int[0x01] >= IC-Int[0x59DD])))
+    AdditionalRequirement(R(On Ground()))
+
+  }
+  if (R(Compare(Variable_Int_Combo_Count >= Info_Param_Int_Attack_Combo_Max))) {
+    (undef: combo) 13_01_00_00()
+  }
+  Switch(10000, Info_Param_Int_Attack_Combo_Type)
+    Case(0)
+      ChangeActionStatus(10081, 36, R(Bit is Set(RA-Bool[0x1D])))
+      ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x11FDC)
+    Case(1)
+      ChangeActionStatus(10081, 36, R(Bit is Set(RA-Bool[0x1D])))
+      ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x120B4)
+    Case(2)
+      ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x120B4)
+  EndSwitch()
+  SetLoop(-1) {
+    ResetButtonPress()
+    TerminateCollisions()
+    Collisions2D()
+    DisallowInterrupt()
+    ClearBuffer()
+    BitVariableClear(RA-Bool[0x15])
+    BitVariableClear(RA-Bool[0x16])
+    BitVariableClear(RA-Bool[0x10])
+    BitVariableClear(RA-Bool[0x11])
+    BitVariableClear(RA-Bool[0x13])
+    BitVariableClear(RA-Bool[0x1C])
+    BitVariableClear(RA-Bool[0x1D])
+    (undef: combo) 13_00_01_00(1)
+    Switch(10000, Variable_Int_Combo_Count)
+      Case(1)
+        ChangeSubAction(72)
+        SetStalingId(2, 1, true)
+      Case(2)
+        ChangeSubAction(73)
+        SetStalingIdWith0(2, 2)
+        ResetCertainMomentum(0)
+        CharacterSpecific27()
+      Case(3)
+        ChangeSubAction(74)
+        SetStalingIdWith0(2, 3)
+        CharacterSpecific27()
+    EndSwitch()
+    SetRequirement(R(Compare(Variable_Int_Combo_Count < Info_Param_Int_Attack_Combo_Max)))
+    SetExtraRequirement(R(Bit is Set(RA-Bool[0x15])))
+    LoadRest()
+  }
+}
+
+Action 0x24 : EXIT {
+}

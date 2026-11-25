@@ -1,0 +1,9 @@
+Action 0x11D: ENTRY {
+  ChangeAction(14, R(In Air()))
+  ChangeAction(0, R(Animation End()))
+  ChangeSubAction(476)
+  SetAirGround(6)
+}
+
+Action 0x11D : EXIT {
+}

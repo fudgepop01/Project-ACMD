@@ -1,0 +1,30 @@
+// Status_Walk
+Action 0x1 {
+  BasicVariableSet(0, LA-Int[0x00])
+  BasicVariableSet(8, LA-Int[0x01])
+  (undef: Sp_base) 65_04_01_00(1400)
+  BodyCollision(2)
+  (undef: Sp_base) 65_03_03_00(0.0, -270.0, 0.0)
+  DecideDirection()
+  CharacterSpecific01()
+  SubRoutine(hidden_subroutine_0x10)
+  DisableActionStatusId(1)
+  (undef: motion) 04_10_02_00(0, 2)
+  ChangeSubAction(0)
+  DisableSpecifiedMovement(2)
+  SetLoop(45) {
+    if (R(Compare(Variable_Int_Controller_Flick_X_Dir == -1.0))) {
+      LoopBreak()
+    } else {
+      (undef: Sp_base) 65_0A_04_00(6, 0.0, 4.3, 0.0)
+      SynchronousTimer(1.0)
+    }
+  }
+  EnableSpecifiedMovement(2)
+  (undef: Sp_Kinetic) 66_00_0B_00(0.0, 1.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  SynchronousTimer(10.0)
+  (undef: Sp_Kinetic) 66_05_01_00(0)
+  ChangeAction(3, R(In Air()))
+  ChangeAction(4, R(On Ground()))
+}
+

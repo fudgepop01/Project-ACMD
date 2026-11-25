@@ -1,0 +1,8 @@
+// Status_Dash
+Action 0x3 {
+  SubRoutine(hidden_subroutine_0xF8)
+  ChangeAction(8, R(Touching a Floor, Wall, or Ceiling(6)))
+  ChangeAction(9, R(Touching a Floor, Wall, or Ceiling(1)))
+  ChangeAction(4, R(On Ground()))
+}
+

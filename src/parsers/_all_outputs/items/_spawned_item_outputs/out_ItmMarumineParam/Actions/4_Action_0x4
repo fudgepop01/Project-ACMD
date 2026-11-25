@@ -1,0 +1,20 @@
+// Status_Run
+Action 0x4 {
+  SubRoutine(hidden_subroutine_0x58)
+  DisableActionStatusId(4)
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 5.0))) {
+    ChangeAction(5, R(In Air()))
+    ChangeAction(5, R(Bit is Set(LA-Bool[0x05])))
+  } else {
+    ChangeAction(3, R(In Air()))
+    ChangeAction(3, R(Bit is Set(LA-Bool[0x05])))
+  }
+  if (R(Compare(LA-Int[0x00] <= 1.0))) {
+    ChangeSubAction(1, true)
+    SynchronousTimer(120.0)
+    (undef: Sp_base) 65_1E_01_00(2)
+  } elif (R(Compare(LA-Int[0x00] == 2.0))) {
+    ChangeSubAction(4)
+  }
+}
+

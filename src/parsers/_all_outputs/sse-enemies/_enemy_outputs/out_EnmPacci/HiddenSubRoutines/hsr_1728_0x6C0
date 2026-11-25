@@ -1,0 +1,17 @@
+[hsr_6C0]
+hidden_subroutine_0x6C0 {
+  if (R(Compare(IC-Int[0x5209] >= LA-Float[0x05]))) {
+    if (R(Bit is Set(LA-Bool[0x06]))) {
+      SetBoneMotionOverride(0, 9, 29)
+      BitVariableClear(LA-Bool[0x06])
+      BitVariableClear(LA-Bool[0x07])
+    } else {
+      SetBoneMotionOverride(0, 10, 29)
+      BitVariableSet(LA-Bool[0x06])
+      BitVariableSet(LA-Bool[0x07])
+    }
+    (undef: Sp_base) 65_07_02_00(IC-Int[0xABE3], LA-Float[0x05])
+    (undef: Sp_base) 65_04_01_00(1)
+  }
+  Return()
+}

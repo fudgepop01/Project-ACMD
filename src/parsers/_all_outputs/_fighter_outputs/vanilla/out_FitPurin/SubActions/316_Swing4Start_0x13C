@@ -1,0 +1,24 @@
+[Swing4Start] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x13C: MAIN {
+}
+
+Subaction 0x13C: GFX {
+}
+
+Subaction 0x13C: SOUND {
+}
+
+Subaction 0x13C: OTHER {
+  SlopeContourStand02(1, 3)
+}
+

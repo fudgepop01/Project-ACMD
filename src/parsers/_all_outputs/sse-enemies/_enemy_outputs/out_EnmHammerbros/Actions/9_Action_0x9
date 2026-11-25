@@ -1,0 +1,23 @@
+Action 0x9: MAIN {
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0x408)
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x9: EXIT {
+}
+
+Action 0x9: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(11)
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 0.0))) {
+    (undef: Sp_AI) 6A_00_01_00(26)
+  } else {
+    (undef: Sp_AI) 6A_00_01_00(25)
+  }
+  (undef: Sp_AI) 6A_00_01_00(28)
+  SubAction09(8)
+  ReverseDirection()
+}
+

@@ -1,0 +1,7 @@
+[hsr_B7FC]
+hidden_subroutine_0xB7FC {
+  ResetFlickY()
+  PassThroughFloorIfPossible_UNDOC0ARGS()
+  SetStateAerial()
+  AddSubtractMomentum(0.0, Common_Param_Float_Pass_Speed_Y)
+}

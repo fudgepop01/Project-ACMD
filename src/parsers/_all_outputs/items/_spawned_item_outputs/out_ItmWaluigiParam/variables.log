@@ -1,0 +1,24 @@
+IC-Int[0x08] ("Variable_Float_Posture_Lr") in hsr_B4 @ 1 : 1
+IC-Int[0x08] ("Variable_Float_Posture_Lr") in hsr_B4 @ 10 : 1
+
+IC-Int[0x3EF] ("Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv") in Action 0x8 (Status_Turn_Run) @ 16 : 2
+IC-Int[0x3EF] ("Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv") in Action 0x8 (Status_Turn_Run) @ 17 : 1
+
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x4 (Status_Run) @ 2 : 1
+
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 1 : 1
+LA-Int[0x00] in Action 0x4 (Status_Run) @ 9 : 1
+LA-Int[0x00] in Action 0x4 (Status_Run) @ 13 : 1
+
+LA-Int[0x01] in Action 0xD (Status_Fly) @ 4 : 2
+LA-Int[0x01] in Action 0xD (Status_Fly) @ 9 : 0
+LA-Int[0x01] in Action 0xD (Status_Fly) @ 10 : 1
+
+LA-Int[0x0B] in Action 0x8 (Status_Turn_Run) @ 1 : 1
+
+LA-Int[0x1B] in Subaction 0x0 : SOUND @ 0 : 1
+
+LA-Bool[0x05] in Action 0x4 (Status_Run) @ 4 : 2
+LA-Bool[0x05] in Action 0x4 (Status_Run) @ 7 : 2
+
+RA-Bool[0x03] in Action 0xD (Status_Fly) @ 13 : 1

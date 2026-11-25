@@ -1,0 +1,21 @@
+Action 0x118: ENTRY {
+  SetGimmickEffectFlag(false)
+  BitVariableSet(LA-Bool[0x01])
+  BitVariableClear(LA-Bool[0x19])
+  ChangeSubAction(472)
+  DetachAttachCameraFar(true)
+}
+
+Action 0x118 : EXIT {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(281)
+      Break()
+    DefaultCase()
+      ExitFinalSmashState()
+      (undef: link) 0F_02_00_00()
+      (undef: link) 0F_01_00_00()
+      RemoveArticle(1)
+      BitVariableClear(LA-Bool[0x01])
+      EnableCameraZoom()
+  EndSwitch()
+}

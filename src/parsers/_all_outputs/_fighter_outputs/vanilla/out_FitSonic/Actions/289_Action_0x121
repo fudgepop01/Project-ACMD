@@ -1,0 +1,7 @@
+Action 0x121: ENTRY {
+  ChangeAction(14, R(In Air()))
+  ChangeAction(0, R(Animation End()))
+}
+
+Action 0x121 : EXIT {
+}

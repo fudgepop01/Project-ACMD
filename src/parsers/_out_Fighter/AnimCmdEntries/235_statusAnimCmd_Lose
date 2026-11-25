@@ -1,0 +1,10 @@
+// @ 0x1B7BC
+Lose {
+  BitVariableSet(LA-Bool[0x01])
+  NothingDueToBug(false)
+  if (R(NOT Subaction Exists())) {
+    ChangeSubAction(229)
+  } else {
+    ChangeSubAction(458)
+  }
+}

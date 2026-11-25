@@ -1,0 +1,31 @@
+[EatR] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x3 : GAME {
+  AsynchronousTimer(24.0)
+  Screenshake(0)
+}
+
+Subaction 0x3 : GFX {
+  GraphicEffectAttached(17039407, 14, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  AsynchronousTimer(15.0)
+  GraphicEffectAttached(17039395, 0, 0.0, 6.0, 0.0, 180.0, 0.0, 15.0, 2.0, true)
+  AsynchronousTimer(35.0)
+  GraphicEffect(17039409, 0, 0.0, 5.0, 0.0, 0.0, 180.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x3 : SOUND {
+  AsynchronousTimer(34.0)
+  SoundEffect(7945)
+  AsynchronousTimer(69.0)
+  VictorySoundEffect(7946)
+}
+

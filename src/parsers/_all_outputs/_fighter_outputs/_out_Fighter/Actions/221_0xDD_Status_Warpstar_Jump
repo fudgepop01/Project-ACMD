@@ -1,0 +1,11 @@
+// Status_Warpstar_Jump
+Action 0xDD: ENTRY {
+  SubRoutine(statusAnimCmd_AIRChkFallCommon)
+  SubRoutine(statusAnimCmd_AIRChkStopCeil)
+  ChangeAction(14, R(Animation End()))
+  ChangeSubAction(23)
+  ConcurrentInfiniteLoop(I(9), statusAnimCmd_FALLCommonUniq)
+}
+
+Action 0xDD : EXIT {
+}

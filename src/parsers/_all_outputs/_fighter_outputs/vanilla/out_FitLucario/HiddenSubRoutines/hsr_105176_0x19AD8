@@ -1,0 +1,7 @@
+[hsr_19AD8]
+hidden_subroutine_0x19AD8 {
+  if (R(Animation End())) {
+    Visibility(false)
+  }
+  BasicVariableDecrement(RA-Int[0x00])
+}

@@ -1,0 +1,19 @@
+Action 0x6: MAIN {
+}
+
+Action 0x6: EXIT {
+}
+
+Action 0x6: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(9)
+  SubAction09(3)
+  if (R(Compare(LA-Int[0x06] == 5.0))) {
+    (undef: Sp_Kinetic) 66_02_04_00(5, 16, IC-Int[0xA028], false)
+  } else {
+    (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+  }
+  (undef: Sp_Kinetic) 66_00_04_00(3, 18, 35791.0, 8)
+  SubRoutine(hidden_subroutine_0x320)
+}
+

@@ -1,0 +1,32 @@
+Action 0x130: ENTRY {
+  UnkRaBit27(false)
+  SetTagDisplay(false)
+  ChangeAction(305, R(Animation End()))
+  BitVariableSet(LA-Bool[0x01])
+  (undef: color_blend) 21_0B_01_00(Variable_Int_Stage_Default_Light_Set_Index)
+  GenerateArticle(7)
+  SetArticleAction(7, 0)
+  GenerateArticle(8)
+  ArticleVisibility(8, false)
+  ChangeSubAction(499)
+  BitVariableClear(LA-Bool[0x19])
+  DisableCameraZoom()
+  SetGimmickEffectFlag(false)
+  DetachAttachCameraFar(false)
+}
+
+Action 0x130 : EXIT {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(305)
+      Break()
+    DefaultCase()
+      BitVariableClear(LA-Bool[0x01])
+      DetachAttachCameraFar(true)
+      ExitFinalSmashState()
+      (undef: color_blend) 21_0C_00_00()
+      EnableCameraZoom()
+      OnlyArticleEvent(7)
+      OnlyArticleEvent(8)
+      SetGimmickEffectFlag(true)
+  EndSwitch()
+}

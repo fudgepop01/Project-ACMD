@@ -1,0 +1,6 @@
+[hsr_1CEE8]
+hidden_subroutine_0x1CEE8 {
+  if (R(Button Press(Special))) {
+    BitVariableSet(RA-Bool[0x10])
+  }
+}

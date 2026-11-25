@@ -1,0 +1,64 @@
+Action 0xB: MAIN {
+  SetLoop(-1) {
+    if (R(Successfully tethered ledge())) {
+      if [IF_REQ_UNKNOWN_3ARG] (R(0x12()), 0, Variable_Int_Controller_Flick_No_Reset_Y) {
+        (undef: Sp_Area) 69_00_01_00(Variable_Int_Controller_Flick_No_Reset_Y)
+      }
+    }
+    (undef: Sp_Area) 69_08_02_00(Variable_Int_Controller_Flick_No_Reset_Y, LA-Float[0x07])
+    FloatVariableSubtract(Variable_Float_Posture_Pos_X, LA-Float[0x07])
+    } else {
+    if (R(Compare(LA-Float[0x07] <= 8.0)) && R(Compare(LA-Float[0x07] >= -8.0))) {
+      if (R(NOT Bit is Set(LA-Bool[0x07]))) {
+        if [IF_REQ_UNKNOWN_3ARG] (R(Can Pick Up Another Item()), Variable_Int_Controller_Flick_No_Reset_Y, 3) {
+          (undef: Sp_Kinetic) 66_0E_01_00(5)
+          BitVariableSet(LA-Bool[0x07])
+        }
+      } else {
+        if [IF_REQ_UNKNOWN_3ARG] (R(Can Pick Up Another Item()), Variable_Int_Controller_Flick_No_Reset_Y, 2) {
+          (undef: Sp_Kinetic) 66_0E_01_00(5)
+          BitVariableClear(LA-Bool[0x07])
+        }
+      }
+    }
+    if (R(Bit is Set(LA-Bool[0x08]))) {
+      if [IF_REQ_UNKNOWN_3ARG] (R(NOT Tap Jump On & C-Stick not Held()), 3, 17) {
+        (undef: Sp_Kinetic) 66_07_01_00(4)
+        (undef: Sp_Kinetic) 66_00_02_00(5, 15)
+        (undef: Sp_Kinetic) 66_00_02_00(3, 17)
+        SetAerialOrOnstage(5)
+      }
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0xB: EXIT {
+  (undef: Sp_Kinetic) 66_07_01_00(3)
+  if (R(Compare(Variable_Int_Status_Kind != 12.0)) && R(Compare(Variable_Int_Status_Kind != 8.0)) && R(Compare(Variable_Int_Status_Kind != 0.0))) {
+    SetAerialOrOnstage(0)
+    SetAerialOrOnstage(5)
+  }
+}
+
+Action 0xB: INIT {
+  if (R(NOT Successfully tethered ledge())) {
+    (undef: unk_procedures) 1B_02_01_00(F(0x00000D04))
+  }
+  if [IF_REQ_UNKNOWN_3ARG] (R(Can Pick Up Another Item()), Variable_Int_Controller_Flick_No_Reset_Y, 3) {
+    ReverseDirection()
+    DecideDirection()
+  }
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(16)
+  SubAction09(1)
+  if (R(Successfully tethered ledge())) {
+    (undef: Sp_Area) 69_00_01_00(Variable_Int_Controller_Flick_No_Reset_Y)
+  }
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 21)
+  (undef: Sp_Kinetic) 66_00_02_00(5, 22)
+  BitVariableClear(LA-Bool[0x07])
+  BitVariableClear(LA-Bool[0x08])
+}
+

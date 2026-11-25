@@ -1,0 +1,4 @@
+[hsr_38]
+hidden_subroutine_0x38 {
+  VictorySoundEffect(8830)
+}

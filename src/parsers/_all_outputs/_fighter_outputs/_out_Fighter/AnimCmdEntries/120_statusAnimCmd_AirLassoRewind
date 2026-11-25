@@ -1,0 +1,7 @@
+// @ 0x23098
+AirLassoRewind {
+  AllowSpecificInterrupt(AIR_LANDING)
+  SetArticleAction07(RA-Int[0x00], RA-Int[0x01])
+  ChangeAction(14, R(Bit is Set(RA-Bool[0x15])))
+  ChangeAction(14, R(NOT Hasn't Tethered 3 Times()))
+}

@@ -1,0 +1,12 @@
+[hsr_23C58]
+hidden_subroutine_0x23C58 {
+  FloatVariableSet(LA-Float[0x1B], LA-Float[0x36])
+  FloatVariableMultiply(0.0, LA-Float[0x06])
+  FloatVariableMultiply(1.0, LA-Float[0x07])
+  FloatVariableAdd(LA-Float[0x06], LA-Float[0x1B])
+  FloatVariableAdd(LA-Float[0x07], LA-Float[0x1B])
+  SubRoutine(hidden_subroutine_0x28808)
+  if (R(Compare(LA-Float[0x1B] > 130.0))) {
+    FloatVariableSet(130.0, LA-Float[0x1B])
+  }
+}

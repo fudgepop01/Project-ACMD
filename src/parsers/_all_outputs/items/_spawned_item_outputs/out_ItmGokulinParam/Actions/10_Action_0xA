@@ -1,0 +1,10 @@
+// Status_Jump_Squat
+Action 0xA {
+  BodyCollision(3)
+  StartMashing3(320.0, 1.0, 4.0)
+  ChangeAction(11, R(Button Mashable Status Expired()))
+  BasicVariableSet(15, LA-Int[0x0C])
+  ChangeAction(7, R(In Air()))
+  ChangeSubAction(4)
+}
+

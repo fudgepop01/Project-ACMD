@@ -1,0 +1,5 @@
+[hsr_7A0C]
+hidden_subroutine_0x7A0C {
+  SynchronousTimer(4.0)
+  TerminateCollisions()
+}

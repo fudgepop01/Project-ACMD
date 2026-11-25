@@ -1,0 +1,30 @@
+[FinalMove] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1EE: MAIN {
+  BodyCollision(2)
+  ModelChanger(2, 1)
+}
+
+Subaction 0x1EE: GFX {
+  GraphicEffectAttached(16580615, 26, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+}
+
+Subaction 0x1EE: SOUND {
+  VictorySoundEffect(5872)
+  SynchronousTimer(5.0)
+  VictorySoundEffect(167)
+}
+
+Subaction 0x1EE: OTHER {
+  HeldItemsVisibility(false)
+}
+

@@ -1,0 +1,7 @@
+// @ 0x3B18
+CommonAICheckNotMotionEnd {
+  if (R(NOT Animation End())) {
+    BitVariableClear(RA-Bool[0x04])
+  }
+  Return()
+}

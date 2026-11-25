@@ -1,0 +1,12 @@
+// @ 0x24D84
+SquatCommon {
+  AllowSpecificInterrupt(GROUND_SPECIAL)
+  AllowSpecificInterrupt(GROUND_ITEM)
+  AllowSpecificInterrupt(GROUND_ATTACK)
+  AllowSpecificInterrupt(GROUND_GUARD)
+  AllowSpecificInterrupt(GROUND)
+  InvertActionStatusId(8, 10046)
+  InvertActionStatusId(8, 10048)
+  InvertActionStatusId(8, 10051)
+  AllowSpecificInterrupt(GROUND_JUMP)
+}

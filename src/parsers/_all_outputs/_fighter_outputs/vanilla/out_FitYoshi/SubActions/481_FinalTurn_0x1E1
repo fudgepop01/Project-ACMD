@@ -1,0 +1,27 @@
+[FinalTurn] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1E1: MAIN {
+  BodyCollision(2)
+}
+
+Subaction 0x1E1: GFX {
+  Goto(Subaction_0x1E0 : GFX)
+}
+
+Subaction 0x1E1: SOUND {
+  SoundEffect(2960)
+}
+
+Subaction 0x1E1: OTHER {
+  HeldItemsVisibility(false)
+}
+

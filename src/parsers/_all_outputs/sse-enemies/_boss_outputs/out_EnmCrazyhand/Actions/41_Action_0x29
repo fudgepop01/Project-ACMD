@@ -1,0 +1,17 @@
+Action 0x29: MAIN {
+}
+
+Action 0x29: EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 42.0)) && R(Compare(Variable_Int_Status_Kind != 43.0))) {
+    SubRoutine(EXTERNAL: statusAnimCmd_CommonCatchProcExit [Action 0x28: EXIT])
+  }
+}
+
+Action 0x29: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(8)
+  BasicVariableSet(42, LA-Int[0x06])
+  SubAction09(10)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+}
+

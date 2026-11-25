@@ -1,0 +1,8 @@
+[hsr_1C6C0]
+hidden_subroutine_0x1C6C0 {
+  if (R(Facing Right())) {
+    SubRoutine(hidden_subroutine_0x1C228)
+  } else {
+    SubRoutine(hidden_subroutine_0x1C658)
+  }
+}

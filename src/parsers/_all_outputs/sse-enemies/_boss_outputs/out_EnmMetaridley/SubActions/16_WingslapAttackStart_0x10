@@ -1,0 +1,48 @@
+[WingslapAttackStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x10: MAIN {
+}
+
+Subaction 0x10: MAIN EXIT {
+}
+
+Subaction 0x10: MAIN INIT {
+}
+
+Subaction 0x10: GFX {
+}
+
+Subaction 0x10: GFX EXIT {
+}
+
+Subaction 0x10: GFX INIT {
+}
+
+Subaction 0x10: SFX {
+  SynchronousTimer(30.0)
+  SoundEffect(9797)
+  SynchronousTimer(16.0)
+  SoundEffect(9808)
+  SynchronousTimer(8.0)
+  SoundEffect(9797)
+  SynchronousTimer(34.0)
+  SoundEffect(9797)
+  SynchronousTimer(30.0)
+  SoundEffect(9797)
+}
+
+Subaction 0x10: SFX EXIT {
+}
+
+Subaction 0x10: SFX INIT {
+}
+

@@ -1,0 +1,40 @@
+[Run] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x9: MAIN {
+}
+
+Subaction 0x9: MAIN EXIT {
+}
+
+Subaction 0x9: MAIN INIT {
+  (undef: Sp_CollisionHit) 6D_00_01_00(2)
+}
+
+Subaction 0x9: GFX {
+  GraphicEffectAttached(10878977, 17, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+}
+
+Subaction 0x9: GFX EXIT {
+}
+
+Subaction 0x9: GFX INIT {
+}
+
+Subaction 0x9: SFX {
+}
+
+Subaction 0x9: SFX EXIT {
+}
+
+Subaction 0x9: SFX INIT {
+}
+

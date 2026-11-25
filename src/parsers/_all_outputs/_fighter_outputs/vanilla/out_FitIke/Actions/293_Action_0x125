@@ -1,0 +1,10 @@
+Action 0x125: ENTRY {
+  BitVariableClear(RA-Bool[0x13])
+  SetGimmickEffectFlag(false)
+  ChangeAction(294, R(On Ground()))
+  ChangeSubAction(496)
+}
+
+Action 0x125 : EXIT {
+  SubRoutine(hidden_subroutine_0x20DDC)
+}

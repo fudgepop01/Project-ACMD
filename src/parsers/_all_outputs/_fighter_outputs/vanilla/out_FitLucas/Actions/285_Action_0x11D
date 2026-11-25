@@ -1,0 +1,12 @@
+Action 0x11D: ENTRY {
+  ChangeAction(74, R(On Ground()))
+  if (R(Compare(IC-Int[0xFB1] > 0.0))) {
+    ChangeAction(16, R(Animation End()))
+  } else {
+    ChangeAction(14, R(Animation End()))
+  }
+  ChangeSubAction(479)
+}
+
+Action 0x11D : EXIT {
+}

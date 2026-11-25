@@ -1,0 +1,12 @@
+// Status_Rebound
+Action 0x23: ENTRY {
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeSubAction(71, false, RA-Float[0x03])
+}
+
+Action 0x23 : EXIT {
+}

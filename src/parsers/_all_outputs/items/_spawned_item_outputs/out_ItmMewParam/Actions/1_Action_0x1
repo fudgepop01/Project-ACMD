@@ -1,0 +1,31 @@
+// Status_Walk
+Action 0x1 {
+  (undef: Sp_base) 65_04_01_00(1400)
+  DisableSpecifiedMovement(2)
+  DisableActionStatusId(1)
+  (undef: Sp_base) 65_03_03_00(0.0, 270.0, 0.0)
+  DecideDirection()
+  CharacterSpecific01()
+  (undef: Sp_base) 65_06_01_00(2)
+  ChangeSubAction(0)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeSubAction(1)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  if (R(Is within footstool range())) {
+    ChangeSubAction(3)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    (undef: Sp_Kinetic) 66_00_0D_00(0.2, 0.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.036, 0.0, 0.0, true, false, true)
+    ChangeSubAction(5, true)
+  } else {
+    ChangeSubAction(2)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    (undef: Sp_Kinetic) 66_00_0D_00(-0.2, 0.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.036, 0.0, 0.0, true, false, true)
+    ChangeSubAction(4, true)
+  }
+  ChangeAction(7, R(Button Tap?()))
+}
+

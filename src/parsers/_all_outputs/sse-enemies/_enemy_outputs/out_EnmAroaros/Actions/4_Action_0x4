@@ -1,0 +1,42 @@
+Action 0x4: MAIN {
+  SetLoop(-1) {
+    SetLoop(-1) {
+      if (R(Distance from Floor())) {
+        (undef: Sp_Kinetic) 66_0B_02_00(4, 21)
+        LoopBreak()
+      }
+      SynchronousTimer(1.0)
+    }
+    SetLoop(-1) {
+      if (R(NOT Distance from Floor())) {
+        (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+        LoopBreak()
+      }
+      SynchronousTimer(1.0)
+    }
+  }
+}
+
+Action 0x4: EXIT {
+  (undef: Sp_base) 65_10_01_00(1)
+  BitVariableSet(LA-Bool[0x06])
+}
+
+Action 0x4: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(9)
+  (undef: Sp_AI) 6A_00_01_00(10)
+  SubAction09(2)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 15)
+  if (R(Bit is Set(LA-Bool[0x06]))) {
+    (undef: Sp_base) 65_11_01_00(1)
+    BitVariableClear(LA-Bool[0x06])
+  }
+  if (R(Bit is Set(LA-Bool[0x07]))) {
+    FloatVariableSet(IC-Int[0xFA1], LA-Float[0x05])
+    (undef: Sp_base) 65_04_01_00(1)
+    BitVariableClear(LA-Bool[0x07])
+  }
+}
+

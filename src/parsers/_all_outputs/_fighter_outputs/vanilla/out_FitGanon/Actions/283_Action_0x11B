@@ -1,0 +1,13 @@
+Action 0x11B: ENTRY {
+  ChangeSubAction(471)
+  SubRoutine(hidden_subroutine_0x1B1E0)
+  SetAirGround(6)
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(In Air()))
+}
+
+Action 0x11B : EXIT {
+}

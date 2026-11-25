@@ -1,0 +1,26 @@
+Action 0x5: MAIN {
+  SetLoop(-1) {
+    if (R(2714(ERRVALUE)) && R(In Air())) {
+      (undef: Sp_Kinetic) 66_09_02_00(4, 37)
+      (undef: Sp_Kinetic) 66_00_02_00(3, 36)
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x5: EXIT {
+}
+
+Action 0x5: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(9)
+  SubAction09(6)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 37)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 36)
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 11.0))) {
+    BitVariableSet(LA-Bool[0x06])
+  } else {
+    BitVariableClear(LA-Bool[0x06])
+  }
+}
+

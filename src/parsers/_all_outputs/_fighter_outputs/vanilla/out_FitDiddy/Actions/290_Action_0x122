@@ -1,0 +1,10 @@
+Action 0x122: ENTRY {
+  ChangeActionStatus(10146, 291, R(On Ground()))
+  DisableActionStatusId(10146)
+  ChangeAction(14, R(Animation End()))
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1AC10)
+  ChangeSubAction(481)
+}
+
+Action 0x122 : EXIT {
+}

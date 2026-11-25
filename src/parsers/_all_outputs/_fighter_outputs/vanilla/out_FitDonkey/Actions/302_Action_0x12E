@@ -1,0 +1,56 @@
+Action 0x12E: ENTRY {
+  ChangeAction(304, R(Button Press(Special)))
+
+  ChangeAction(303, R(Bit is Set(RA-Bool[0x11])))
+  AdditionalRequirement(R(Animation has looped?()))
+
+  ChangeAction(0, R(Compare(LA-Int[0x40] >= IC-Int[0x5DC0])))
+  AdditionalRequirement(R(Animation has looped?()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Compare(LA-Int[0x40] >= IC-Int[0x5DC0])))
+  AdditionalRequirement(R(Animation has looped?()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeAction(31, R(Compare(Variable_Float_Controller_Stick_X_Lr >= Common_Param_Float_Escape_Fb_Stick_X)))
+  AdditionalRequirement(R(Compare(IC-Int[0x5209] < Common_Param_Int_Escape_Fb_Flick_X)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(32, R(Compare(Variable_Float_Controller_Stick_X_Lr_Rv >= Common_Param_Float_Escape_Fb_Stick_X)))
+  AdditionalRequirement(R(Compare(IC-Int[0x5209] < Common_Param_Int_Escape_Fb_Flick_X)))
+  AdditionalRequirement(R(On Ground()))
+
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1F948)
+  BitVariableSet(RA-Bool[0x10])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      SetCliffCheck(0)
+      SetAirGround(6)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(485, false)
+      } else {
+        ChangeSubAction(485, true)
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetCliffCheck(4)
+      SetAirGround(10)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(490, false)
+      } else {
+        ChangeSubAction(490, true)
+      }
+      SetRequirement(R(On Ground()))
+    }
+    BitVariableClear(RA-Bool[0x10])
+    LoadRest()
+  }
+}
+
+Action 0x12E : EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 0.0)) && R(Compare(Variable_Int_Status_Kind != 14.0)) && R(Compare(Variable_Int_Status_Kind != 31.0)) && R(Compare(Variable_Int_Status_Kind != 32.0)) && R(Compare(Variable_Int_Status_Kind != 304.0)) && R(Compare(Variable_Int_Status_Kind != 303.0))) {
+    BasicVariableSet(0, LA-Int[0x40])
+  }
+}

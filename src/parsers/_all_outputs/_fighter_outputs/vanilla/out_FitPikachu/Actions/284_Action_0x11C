@@ -1,0 +1,31 @@
+Action 0x11C: ENTRY {
+  ChangeActionStatus(10146, 0, R(Animation End()))
+  ChangeActionStatus(10147, 14, R(Animation End()))
+  BitVariableClear(LA-Bool[0x3D])
+  BasicVariableSet(468, LA-Int[0x40])
+  BasicVariableSet(472, LA-Int[0x41])
+  BasicVariableSet(2, RA-Int[0x02])
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x168E8)
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0x16298)
+    if (R(On Ground())) {
+      SetAirGround(6)
+      SetAerialOrOnstage(1)
+      Module0900(0)
+      EnableActionStatusId(10146)
+      DisableActionStatusId(10147)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAirGround(10)
+      SetAerialOrOnstage(5)
+      Module0900(2)
+      EnableActionStatusId(10147)
+      DisableActionStatusId(10146)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x11C : EXIT {
+}

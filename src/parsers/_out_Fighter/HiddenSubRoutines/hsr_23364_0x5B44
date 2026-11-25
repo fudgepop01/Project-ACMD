@@ -1,0 +1,11 @@
+[hsr_5B44]
+hidden_subroutine_0x5B44 {
+  if (R(Compare(RA-Int[0x00] > 0.0))) {
+    BasicVariableDecrement(RA-Int[0x00])
+    if (R(Compare(RA-Int[0x00] == 0.0))) {
+      SubRoutine(statusAnimCmd_AIRChkFallCommon)
+      SetAirGround(37)
+      FrameSpeedModifier(1.0)
+    }
+  }
+}

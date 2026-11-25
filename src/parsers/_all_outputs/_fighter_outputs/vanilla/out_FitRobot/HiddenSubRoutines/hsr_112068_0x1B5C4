@@ -1,0 +1,14 @@
+[hsr_1B5C4]
+hidden_subroutine_0x1B5C4 {
+  if (R(Bit is Set(RA-Bool[0x13]))) {
+    if (R(Compare(LA-Float[0x13] > IC-Int[0xFA5]))) {
+      GenerateArticle(1)
+      SubRoutine(hidden_subroutine_0x11540)
+      AddIntStatToLog(1, 29)
+    } else {
+      SubRoutine(hidden_subroutine_0x11550)
+    }
+    BitVariableClear(RA-Bool[0x13])
+    FloatVariableSet(0.0, LA-Float[0x13])
+  }
+}

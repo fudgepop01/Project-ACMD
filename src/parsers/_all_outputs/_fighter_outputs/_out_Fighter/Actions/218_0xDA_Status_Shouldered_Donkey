@@ -1,0 +1,10 @@
+// Status_Shouldered_Donkey
+Action 0xDA: ENTRY {
+  (undef: StageObject) 0C_29_00_00()
+  (undef: motion) 04_1A_01_00(459)
+  ChangeSubAction(420)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1DA64)
+}
+
+Action 0xDA : EXIT {
+}

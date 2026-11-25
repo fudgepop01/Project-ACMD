@@ -1,0 +1,14 @@
+[hsr_1709C]
+hidden_subroutine_0x1709C {
+  if (R(Bit is Set(RA-Bool[0x13]))) {
+    GenerateArticle(3)
+    BitVariableClear(RA-Bool[0x13])
+  }
+  if (R(Bit is Set(RA-Bool[0x11]))) {
+    if (R(In Air())) {
+      SetAirGround(101)
+    }
+    BitVariableClear(RA-Bool[0x11])
+    BitVariableSet(RA-Bool[0x12])
+  }
+}

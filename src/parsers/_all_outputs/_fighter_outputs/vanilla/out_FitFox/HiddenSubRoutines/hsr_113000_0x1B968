@@ -1,0 +1,7 @@
+[hsr_1B968]
+hidden_subroutine_0x1B968 {
+  BasicVariableIncrement(RA-Int[0x01])
+  if (R(Compare(RA-Int[0x01] > IC-Int[0x5DC6]))) {
+    SetPassableCheck(true)
+  }
+}

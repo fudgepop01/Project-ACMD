@@ -1,0 +1,59 @@
+[CannonAttack] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x2: MAIN {
+  AsynchronousTimer(8.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 15, 1, 0.0, 10, 55, 0.0, 0, 0.0, 0, 0.0, 6.5, 0.0, 0.0, 0.0, 470.0, 3, 0.0, 1.0, 3.0, false, true, 30, 2, 7, 3, true, 0, 311, false, 9, false, true, false, false, 60, true, true, 3, false, false, false, false, false, 1, LA-Float[0x0C])
+  AsynchronousTimer(10.0)
+  SpecialOffensiveCollisionEnemyHitbox(1, 1, 15, 33, 3.0, 35, 75, 0.0, 0, 0.0, 40, -3.0, 6.5, 0.0, 0.0, 0.0, 470.0, 3, 0.0, 1.0, 3.0, false, true, 30, 2, 7, 3, true, 0, 311, false, 9, false, true, false, false, 60, false, false, 3, false, false, false, false, false, 1, LA-Float[0x0C])
+  AsynchronousTimer(48.0)
+  TerminateCollisions()
+}
+
+Subaction 0x2: MAIN EXIT {
+}
+
+Subaction 0x2: MAIN INIT {
+}
+
+Subaction 0x2: GFX {
+  Screenshake(2)
+  GraphicEffectAttached(12648453, 17, 0.0, -10.0, 15.0, 0.0, 0.0, 0.0, 2.0, true)
+  GraphicEffect(12648480, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(10.0)
+  Screenshake(2)
+  AsynchronousTimer(30.0)
+  Screenshake(1)
+  GraphicEffect(12648481, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(60.0)
+  Screenshake(0)
+}
+
+Subaction 0x2: GFX EXIT {
+}
+
+Subaction 0x2: GFX INIT {
+}
+
+Subaction 0x2: SFX {
+  SoundEffectTransient(9836)
+  SynchronousTimer(44.0)
+  StopTransientSoundEffect()
+  AsynchronousTimer(40.0)
+  SoundEffect(9837)
+}
+
+Subaction 0x2: SFX EXIT {
+}
+
+Subaction 0x2: SFX INIT {
+}
+

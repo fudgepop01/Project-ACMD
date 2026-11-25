@@ -1,0 +1,4 @@
+[hsr_8]
+hidden_subroutine_0x8 {
+  Return()
+}

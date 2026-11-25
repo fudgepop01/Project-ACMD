@@ -1,0 +1,7 @@
+[hsr_398]
+hidden_subroutine_0x398 {
+  (undef: Sp_AI) 6A_00_01_00(20)
+  (undef: Sp_AI) 6A_00_01_00(21)
+  (undef: Sp_AI) 6A_00_01_00(16)
+  Return()
+}

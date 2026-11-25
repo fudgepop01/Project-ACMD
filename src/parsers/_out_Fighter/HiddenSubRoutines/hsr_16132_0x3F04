@@ -1,0 +1,13 @@
+[hsr_3F04]
+hidden_subroutine_0x3F04 {
+  if (R(NOT Bit is Set(RA-Bool[0x14])) && R(Bit is Set(RA-Bool[0x13]))) {
+    PreventSpecificInterrupt(GROUND_SPECIAL)
+    DisableActionStatusId(10113)
+    DisableActionStatusId(10111)
+    DisableActionStatusId(10115)
+    DisableActionStatusId(10122)
+    DisableActionStatusId(10083)
+    BitVariableSet(RA-Bool[0x14])
+  }
+  BasicVariableIncrement(RA-Int[0x00])
+}

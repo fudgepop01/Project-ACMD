@@ -1,0 +1,112 @@
+[SpecialAirHi] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1DD: MAIN {
+  AsynchronousTimer(7.0)
+  OffensiveCollision(Sp(25, 0), 4, 92, Sp(90, 100), Sp(0, 0), 5.0, 8.0, 0.0, 0.0, 0.0, 1.0, 0.5, 847447042)
+  OffensiveCollision(Sp(25, 1), 4, 75, Sp(100, 100), Sp(0, 0), 5.0, 2.0, 0.0, 0.0, 0.0, 1.0, 0.5, 847447042)
+  OffensiveCollision(Sp(18, 2), 4, 38, Sp(50, 100), Sp(0, 0), 4.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.5, 847447042)
+  OffensiveCollision(Sp(15, 3), 4, 70, Sp(78, 100), Sp(0, 0), 4.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.5, 847447042)
+  SynchronousTimer(3.0)
+  TerminateCollisions()
+  AsynchronousTimer(15.0)
+  OffensiveCollision(Sp(25, 0), 2, 92, Sp(88, 100), Sp(0, 0), 6.0, 8.0, 0.0, 0.0, 0.0, 1.0, 0.5, 847447042)
+  OffensiveCollision(Sp(25, 1), 2, 75, Sp(100, 100), Sp(0, 0), 4.0, 2.0, 0.0, 0.0, 0.0, 1.0, 0.5, 847447042)
+  OffensiveCollision(Sp(18, 2), 2, 38, Sp(50, 100), Sp(0, 0), 4.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.5, 847447042)
+  OffensiveCollision(Sp(15, 3), 2, 70, Sp(78, 100), Sp(0, 0), 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.5, 847447042)
+  SynchronousTimer(3.0)
+  TerminateCollisions()
+  EnableDisableLedgegrab(1)
+  AsynchronousTimer(21.0)
+  OffensiveCollision(Sp(25, 0), 2, 92, Sp(77, 100), Sp(0, 0), 6.0, 8.0, 0.0, 0.0, 0.0, 1.0, 0.5, 847447106)
+  OffensiveCollision(Sp(25, 1), 2, 75, Sp(90, 100), Sp(0, 0), 4.0, 2.0, 0.0, 0.0, 0.0, 1.0, 0.5, 847447106)
+  OffensiveCollision(Sp(18, 2), 2, 40, Sp(40, 100), Sp(0, 0), 4.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.5, 847447106)
+  OffensiveCollision(Sp(15, 3), 2, 70, Sp(55, 100), Sp(0, 0), 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.5, 847447106)
+  SynchronousTimer(3.0)
+  TerminateCollisions()
+  AsynchronousTimer(29.0)
+  OffensiveCollision(Sp(0, 0), 2, 92, Sp(60, 100), Sp(0, 0), 6.0, 0.0, 14.0, 10.5, 0.0, 1.0, 0.5, 847447106)
+  OffensiveCollision(Sp(0, 1), 2, 75, Sp(70, 100), Sp(0, 0), 4.0, 0.0, 11.0, 8.0, 0.0, 1.0, 0.5, 847447106)
+  OffensiveCollision(Sp(0, 2), 2, 40, Sp(40, 100), Sp(0, 0), 4.0, 0.0, 9.0, 5.0, 0.0, 1.0, 0.5, 847447106)
+  OffensiveCollision(Sp(0, 3), 2, 70, Sp(43, 100), Sp(0, 0), 5.0, 0.0, 7.0, 2.0, 0.0, 1.0, 0.5, 847447106)
+  SynchronousTimer(3.0)
+  TerminateCollisions()
+  EnableDisableLedgegrab(2)
+  AsynchronousTimer(46.0)
+  OffensiveCollision(Sp(25, 0), 4, 361, Sp(0, 163), Sp(0, 40), 7.0, 8.0, 0.0, 0.0, 0.0, 1.4, 1.0, 847447170)
+  OffensiveCollision(Sp(25, 1), 4, 361, Sp(0, 163), Sp(0, 40), 4.0, 2.0, 0.0, 0.0, 0.0, 1.4, 1.0, 847447170)
+  OffensiveCollision(Sp(18, 2), 4, 361, Sp(0, 163), Sp(0, 40), 4.0, 0.0, 0.0, 0.0, 0.0, 1.4, 1.0, 847447170)
+  OffensiveCollision(Sp(15, 3), 4, 361, Sp(0, 163), Sp(0, 40), 6.0, 0.0, 0.0, 0.0, 0.0, 1.4, 1.0, 847447170)
+  SynchronousTimer(5.0)
+  TerminateCollisions()
+}
+
+Subaction 0x1DD: GFX {
+  GraphicEffect(11, 0, 0.0, 10.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GraphicEffectAttached(2752518, 22, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(2.0)
+  GraphicEffect(29, 22, 12.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  FlashOverlayEffect(255, 170, 0, 60)
+  AsynchronousTimer(7.0)
+  SwordGlow(124, 4, 22, 1.5, 0.0, 0.0, 22, 9.2, 0.0, 0.0, true, 2752513, 22, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  AsynchronousTimer(36.0)
+  TerminateSwordGlow(1)
+  AsynchronousTimer(43.0)
+  SwordGlow(124, 4, 22, 1.5, 0.0, 0.0, 22, 9.2, 0.0, 0.0, true, 2752513, 22, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  AsynchronousTimer(50.0)
+  GraphicEffect(16, 22, 10.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(53.0)
+  TerminateSwordGlow(1)
+  ChangeFlashOverlayColor(20, 0, 0, 0, 0)
+  AsynchronousTimer(73.0)
+  TerminateFlashEffect()
+}
+
+Subaction 0x1DD: SOUND {
+  AsynchronousTimer(7.0)
+  SoundEffectTransient(2528)
+  SoundEffect(6149)
+  SynchronousTimer(7.0)
+  SoundEffect(6150)
+  SynchronousTimer(7.0)
+  SoundEffect(6151)
+  SynchronousTimer(7.0)
+  SoundEffect(6152)
+  SynchronousTimer(7.0)
+  SoundEffect(6152)
+  SynchronousTimer(7.0)
+  SoundEffect(6153)
+  SynchronousTimer(7.0)
+  SoundEffect(6154)
+  SynchronousTimer(2.0)
+  SoundEffect(6160)
+  SoundEffect(6162)
+}
+
+Subaction 0x1DD: OTHER {
+  AsynchronousTimer(2.0)
+  RumbleLoop(0, 0)
+  AsynchronousTimer(8.0)
+  RumbleLoop(0, 0)
+  AsynchronousTimer(13.0)
+  RumbleLoop(0, 0)
+  AsynchronousTimer(18.0)
+  RumbleLoop(0, 0)
+  AsynchronousTimer(18.0)
+  RumbleLoop(0, 0)
+  AsynchronousTimer(23.0)
+  RumbleLoop(0, 0)
+  AsynchronousTimer(31.0)
+  RumbleLoop(0, 0)
+  AsynchronousTimer(47.0)
+  RumbleLoop(12, 0)
+}
+

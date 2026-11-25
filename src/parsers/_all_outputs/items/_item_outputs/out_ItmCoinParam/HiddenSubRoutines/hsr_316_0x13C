@@ -1,0 +1,6 @@
+[hsr_13C]
+hidden_subroutine_0x13C {
+  ChangeActionStatus(4, 4, R(On Ground()))
+  SubRoutine(hidden_subroutine_0xF4)
+  Return()
+}

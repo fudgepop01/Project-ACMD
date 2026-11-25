@@ -1,0 +1,13 @@
+Action 0x11D: ENTRY {
+  SetDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  ChangeSubAction(473)
+  SetAerialOrOnstage(5)
+  SetAirGround(10)
+  ChangeAction(14, R(On Ground()))
+  ChangeAction(14, R(Animation End()))
+}
+
+Action 0x11D : EXIT {
+}

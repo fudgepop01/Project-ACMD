@@ -1,0 +1,10 @@
+[hsr_507C]
+hidden_subroutine_0x507C {
+  if (R(Successfully tethered ledge())) {
+    if [IF_REQ_UNKNOWN_3ARG] (R(0x2718()), Variable_Int_Controller_Flick_No_Reset_Y, 3) {
+      ReverseDirection()
+      DecideDirection()
+    }
+  }
+  Return()
+}

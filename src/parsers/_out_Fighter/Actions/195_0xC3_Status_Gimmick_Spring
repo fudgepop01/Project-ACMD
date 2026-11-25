@@ -1,0 +1,10 @@
+// Status_Gimmick_Spring
+Action 0xC3: ENTRY {
+  ChangeSubAction(20)
+  BitVariableSet(RA-Bool[0x0C])
+  SetAnimationFrame(1.0)
+  FrameSpeedModifier(0.0)
+}
+
+Action 0xC3 : EXIT {
+}

@@ -1,0 +1,26 @@
+[ItemDragoonRide] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x14D: MAIN {
+}
+
+Subaction 0x14D: GFX {
+}
+
+Subaction 0x14D: SOUND {
+  SoundEffect(218)
+}
+
+Subaction 0x14D: OTHER {
+  AsynchronousTimer(8.0)
+  Rumble(12, 0)
+}
+

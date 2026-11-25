@@ -1,0 +1,17 @@
+// Status_Item_Shoot_Jump
+Action 0xAC: ENTRY {
+  SubRoutine(hidden_subroutine_0x1BB0C)
+  Switch(10000, Variable_Int_Have_Item_Kind)
+    Case(24)
+      SubRoutine(hidden_subroutine_0x1B154)
+    Case(44)
+      SubRoutine(hidden_subroutine_0x1AF74)
+    Case(61)
+      SubRoutine(hidden_subroutine_0x1B38C)
+    Case(13)
+      SubRoutine(hidden_subroutine_0x1B5F4)
+  EndSwitch()
+}
+
+Action 0xAC : EXIT {
+}

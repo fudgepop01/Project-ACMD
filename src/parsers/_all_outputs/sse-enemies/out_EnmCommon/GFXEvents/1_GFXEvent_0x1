@@ -1,0 +1,6 @@
+// @ 0x318
+GFXEvent_0x1 {
+  SubRoutine(hidden_subroutine_0x8)
+  SubRoutine(GfxEvent_0x0)
+  Return()
+}

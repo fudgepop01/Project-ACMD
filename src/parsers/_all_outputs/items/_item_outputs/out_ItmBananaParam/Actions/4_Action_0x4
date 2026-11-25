@@ -1,0 +1,13 @@
+// Status_Run
+Action 0x4 {
+  SubRoutine(hidden_subroutine_0x2EC)
+  DisableActionStatusId(4)
+  ChangeAction(3, R(In Air()))
+  ChangeSubAction(6)
+  if (R(Bit is Set(LA-Bool[0x01]))) {
+    if (R(Compare(LA-Int[0x0B] <= 0.0))) {
+      SubRoutine(hidden_subroutine_0x228)
+    }
+  }
+}
+

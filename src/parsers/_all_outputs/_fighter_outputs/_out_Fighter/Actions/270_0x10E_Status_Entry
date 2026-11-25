@@ -1,0 +1,30 @@
+// Status_Entry
+[statusAnimCmd_Entry]
+Action 0x10E: ENTRY {
+  BodyCollision(3)
+  NothingDueToBug(false)
+  SetGimmickEffectFlag(false)
+  DisableMagifyingGlass()
+  UnkRaBit27(true)
+  if (R(Facing Left()) && R(Subaction Exists())) {
+    ChangeSubAction(451)
+  } elif (R(Facing Right()) && R(Subaction Exists())) {
+    ChangeSubAction(450)
+  } else {
+    ChangeAction(0, R(Button Tap?()))
+  }
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(2)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x10E : EXIT {
+  BroadcastStageEnterEnd()
+}

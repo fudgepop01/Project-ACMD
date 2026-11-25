@@ -1,0 +1,23 @@
+Action 0x116: ENTRY {
+  EnterFinalSmashState()
+
+  ChangeAction(304, R(Animation End()))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x10])))
+
+  if (R(On Ground())) {
+    ChangeSubAction(497)
+  } else {
+    ChangeSubAction(498)
+  }
+  BitVariableClear(LA-Bool[0x19])
+}
+
+Action 0x116 : EXIT {
+  Visibility(true)
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(304)
+      Break()
+    DefaultCase()
+      ExitFinalSmashState()
+  EndSwitch()
+}

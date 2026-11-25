@@ -1,0 +1,43 @@
+Action 0x11: MAIN {
+}
+
+Action 0x11: EXIT {
+  (undef: motion) 04_10_02_00(0, 18)
+  (undef: motion) 04_13_02_00(0, 0.0)
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    if (R(Compare(LA-Float[0x04] == IC-Int[0xFA4]))) {
+      ChangeModelSize(IC-Int[0xFA2])
+      (undef: motion) 04_12_02_00(0, 1.0)
+      FloatVariableSet(IC-Int[0xFA5], LA-Float[0x04])
+      (undef: collision) 06_21_01_00(false)
+    } elif (R(Compare(LA-Float[0x04] == IC-Int[0xFA5]))) {
+      ChangeModelSize(IC-Int[0xFA3])
+      (undef: motion) 04_12_02_00(0, 2.0)
+      FloatVariableSet(IC-Int[0xFA6], LA-Float[0x04])
+      (undef: collision) 06_21_01_00(false)
+    }
+  } elif (R(Bit is Set(LA-Bool[0x07]))) {
+    ChangeModelSize(IC-Int[0xFA2])
+    (undef: motion) 04_12_02_00(0, 1.0)
+    FloatVariableSet(IC-Int[0xFA5], LA-Float[0x04])
+    (undef: collision) 06_21_01_00(false)
+  }
+}
+
+Action 0x11: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(15)
+  (undef: motion) 04_11_01_00(0)
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    if (R(Compare(LA-Float[0x04] == IC-Int[0xFA4]))) {
+      SubAction09(4)
+    } elif (R(Compare(LA-Float[0x04] == IC-Int[0xFA5]))) {
+      SubAction09(5)
+    }
+  } elif (R(Bit is Set(LA-Bool[0x07]))) {
+    SubAction09(4)
+  }
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+  BasicVariableSet(8, LA-Int[0x06])
+}
+

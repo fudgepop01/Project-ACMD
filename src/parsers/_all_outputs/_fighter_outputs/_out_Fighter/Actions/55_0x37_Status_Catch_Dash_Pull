@@ -1,0 +1,11 @@
+// Status_Catch_Dash_Pull
+Action 0x37: ENTRY {
+  SubRoutine(statusAnimCmd_CatchPull)
+}
+
+[statusAnimCmdExit_CatchPull]
+Action 0x37 : EXIT {
+  if (R(Compare(Variable_Int_Status_Kind == 57.0))) {
+    SubRoutine(hidden_subroutine_0x351C)
+  }
+}

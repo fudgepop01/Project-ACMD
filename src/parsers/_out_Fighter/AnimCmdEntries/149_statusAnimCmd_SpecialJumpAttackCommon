@@ -1,0 +1,12 @@
+// @ 0xA394
+SpecialJumpAttackCommon {
+  FloatVariableSet(RA-Float[0x0A], LA-Float[0x01])
+  BasicVariableSet(LA-Float[0x00], RA-Int[0x03])
+  BitVariableSet(LA-Bool[0x03])
+
+  ChangeActionStatus(10029, 25, R(On Ground()))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x10])))
+  AdditionalRequirement(R(Compare(Variable_Float_Motion_Trans_Move_Speed_Y < 0.0)))
+
+  ChangeAction(RA-Int[0x02], R(Animation End()))
+}

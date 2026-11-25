@@ -1,0 +1,7 @@
+[hsr_63CC]
+hidden_subroutine_0x63CC {
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+}

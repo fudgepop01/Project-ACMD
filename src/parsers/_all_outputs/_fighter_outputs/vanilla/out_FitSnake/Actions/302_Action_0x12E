@@ -1,0 +1,9 @@
+Action 0x12E: ENTRY {
+  ChangeAction(14, R(In Air()))
+  ChangeAction(0, R(Animation End()))
+  ChangeSubAction(481)
+  AllowInterrupt()
+}
+
+Action 0x12E : EXIT {
+}

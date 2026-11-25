@@ -1,0 +1,9 @@
+// @ 0x21138
+SwordSwing1Common {
+  SpecialOffensiveCollision(Sp(305, 2), 4, 30, Sp(0, 80), Sp(2, 10), 5.0, 0.0, 19.0, -2.0, 0.0, 1.0, 1.0, 641926658, 0, 5242819)
+  SpecialOffensiveCollision(Sp(305, 1), 4, 361, Sp(0, 80), Sp(2, 10), 5.0, 0.0, 9.3, -2.0, 0.0, 1.0, 1.0, 1044579842, 0, 5242819)
+  SpecialOffensiveCollision(Sp(305, 0), 5, 361, Sp(0, 80), Sp(2, 10), 4.099983333333333, 0.0, 2.0, -2.0, 0.0, 1.0, 1.0, 1044579842, 0, 5242819)
+  SpecialOffensiveCollision(Sp(305, 3), 5, 361, Sp(0, 80), Sp(2, 10), 3.0, 0.0, -4.0, -2.0, 0.0, 1.0, 1.0, 1044579842, 0, 5242819)
+  SoundEffect(8065)
+  WeaponOperation(100)
+}

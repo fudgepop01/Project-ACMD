@@ -1,0 +1,14 @@
+// Status_Fly
+Action 0xD {
+  EnableSpecifiedMovement(2)
+  if (R(Compare(LA-Float[0x06] == 0.0))) {
+    SetAerialOrOnstage(0)
+    ChangeSubAction(2)
+  } else {
+    ChangeSubAction(1)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ChangeAction(3, R(Button Tap?()))
+  }
+}
+

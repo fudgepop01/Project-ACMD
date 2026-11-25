@@ -1,0 +1,45 @@
+[JumpKick] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x5: MAIN {
+  SynchronousTimer(1.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 5, 2, 1.4, 25, 28, 0.5, 0, 0.0, 90, 1.6, 1.5, 0.05, 5.5, 1.0, 0.0, 0, 0.2, 1.0, 1.0, false, false, 5, 1, 2, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+  SynchronousTimer(20.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 5, 2, 1.0, 25, 28, 0.5, 0, 0.0, 90, 1.0, 1.5, 0.05, 5.5, 1.0, 0.0, 0, 0.2, 1.0, 1.0, false, false, 5, 1, 2, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+  SynchronousTimer(40.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 5, 2, 0.7, 25, 28, 0.5, 0, 0.0, 90, 0.0, 1.5, 0.05, 5.5, 1.0, 0.0, 0, 0.2, 1.0, 1.0, false, false, 5, 1, 2, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+}
+
+Subaction 0x5: MAIN EXIT {
+}
+
+Subaction 0x5: MAIN INIT {
+}
+
+Subaction 0x5: GFX {
+}
+
+Subaction 0x5: GFX EXIT {
+}
+
+Subaction 0x5: GFX INIT {
+}
+
+Subaction 0x5: SFX {
+  SoundEffect(9413)
+}
+
+Subaction 0x5: SFX EXIT {
+}
+
+Subaction 0x5: SFX INIT {
+}
+

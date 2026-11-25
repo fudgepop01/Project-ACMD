@@ -1,0 +1,17 @@
+Action 0x16: MAIN {
+}
+
+Action 0x16: EXIT {
+}
+
+Action 0x16: INIT {
+  SubRoutine(hidden_subroutine_0x1A58)
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(27)
+  (undef: Sp_AI) 6A_00_01_00(30)
+  SubAction09(11)
+  (undef: Sp_Kinetic) 66_07_01_00(-1)
+  SubRoutine(hidden_subroutine_0x19B0)
+  ToggleFighterAreaFrames_UNDOC1ARG(10)
+}
+

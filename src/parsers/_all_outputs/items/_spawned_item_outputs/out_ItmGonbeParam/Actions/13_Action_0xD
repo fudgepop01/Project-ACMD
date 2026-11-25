@@ -1,0 +1,14 @@
+// Status_Fly
+Action 0xD {
+  DisableActionStatusId(13)
+  (undef: Sp_base) 65_07_01_00(13)
+  ChangeAction(3, R(In Air()))
+  ChangeAction(14, R(Compare(Variable_Float_Controller_Stick_Y <= 12.0)))
+  if (R(On a Passable Floor())) {
+    ChangeAction(12, R(Compare(LA-Float[0x08] <= Variable_Float_Posture_Pos_Y)))
+  }
+  (undef: Sp_Kinetic) 66_00_0D_00(0.8, 0.0, 1.8, 1.0, 0.0, 0.0, 0.01, 0.0, 0.0, 0.0, true, false, true)
+  SynchronousTimer(60.0)
+  ChangeAction(11, R(Button Tap?()))
+}
+

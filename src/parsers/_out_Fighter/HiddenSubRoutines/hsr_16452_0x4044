@@ -1,0 +1,12 @@
+[hsr_4044]
+hidden_subroutine_0x4044 {
+  if (R(Button Pressed(Jump))) {
+    BasicVariableIncrement(RA-Int[0x00])
+  } else {
+    BasicVariableSet(0, RA-Int[0x00])
+  }
+  SubRoutine(statusAnimCmd_FALLCommonUniq)
+  if (R(Bit is Set(RA-Bool[0x12]))) {
+    SubRoutine(hidden_subroutine_0xA9C4)
+  }
+}

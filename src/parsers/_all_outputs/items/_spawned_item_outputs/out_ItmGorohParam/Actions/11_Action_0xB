@@ -1,0 +1,25 @@
+// Status_Jump
+Action 0xB {
+  ChangeActionStatus(3, 3, R(In Air()))
+  ChangeSubAction(7)
+  (undef: Sp_Kinetic) 66_00_0B_00(1.7, 0.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  SynchronousTimer(10.0)
+
+  ChangeActionStatus(12, 12, R(NOT 0x2715()), 20.0)
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus(112, 12, R(In walljump situation()), 6)
+  AdditionalRequirement(R(On Ground()))
+
+  if (R(Is within footstool range())) {
+    SynchronousTimer(35.0)
+  } else {
+    SynchronousTimer(10.0)
+  }
+  SubRoutine(hidden_subroutine_0x1098)
+  DisableActionStatusId(11)
+  SubRoutine(hidden_subroutine_0x1168)
+  DisableActionStatusId(11)
+  ChangeAction(11, R(On Ground()))
+}
+

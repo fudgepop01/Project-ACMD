@@ -1,0 +1,46 @@
+Action 0x11B: ENTRY {
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  FloatVariableSet(0.0, LA-Float[0x13])
+  FloatVariableSet(0.0, LA-Float[0x14])
+  GenerateArticle(4)
+  SubRoutine(hidden_subroutine_0x1785C)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      SetAirGround(6)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(488, true)
+        SetAnchoredArticleAction(4, 1, true)
+      } else {
+        ChangeSubAction(488, false)
+        SetAnchoredArticleAction(4, 1, false)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetAirGround(10)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(492, true)
+        SetAnchoredArticleAction(4, 2, true)
+      } else {
+        ChangeSubAction(492, false)
+        SetAnchoredArticleAction(4, 2, false)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    (undef: motion) 04_05_01_00(24)
+    LoadRest()
+  }
+}
+
+Action 0x11B : EXIT {
+  OnlyArticleEvent(4)
+}

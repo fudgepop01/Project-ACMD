@@ -1,0 +1,32 @@
+[CliffCatch] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xD5: MAIN {
+  BodyCollision(2)
+}
+
+Subaction 0xD5: GFX {
+  AsynchronousTimer(1.0)
+  GraphicEffect(31, 34, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0xD5: SOUND {
+  AsynchronousTimer(2.0)
+  SoundEffect(83)
+  SynchronousTimer(2.0)
+  if (R(Roll A Die())) {
+    SoundEffect(2131)
+  }
+}
+
+Subaction 0xD5: OTHER {
+}
+

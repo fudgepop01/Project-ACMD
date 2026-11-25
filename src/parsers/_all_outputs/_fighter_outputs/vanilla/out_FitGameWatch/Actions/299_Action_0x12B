@@ -1,0 +1,11 @@
+Action 0x12B: ENTRY {
+  SetGimmickEffectFlag(false)
+  SetShapeFlag(3)
+  ChangeAction(296, R(In Air()))
+
+  ChangeAction(285, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+}
+
+Action 0x12B : EXIT {
+}

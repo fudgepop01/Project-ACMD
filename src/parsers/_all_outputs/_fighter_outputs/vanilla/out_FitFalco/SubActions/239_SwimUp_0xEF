@@ -1,0 +1,30 @@
+[SwimUp] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xEF: MAIN {
+}
+
+Subaction 0xEF: GFX {
+}
+
+Subaction 0xEF: SOUND {
+  AsynchronousTimer(5.0)
+  SoundEffect(1834)
+  SoundEffect(177)
+  SynchronousTimer(2.0)
+  SoundEffect(179)
+  SynchronousTimer(2.0)
+  SoundEffect(180)
+}
+
+Subaction 0xEF: OTHER {
+}
+

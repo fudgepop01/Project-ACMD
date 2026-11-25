@@ -1,0 +1,14 @@
+// @ 0x2419C
+SpecialJumpAttack {
+  SubRoutine(statusAnimCmd_SpecialJumpAttackCommon)
+  if (R(On Ground())) {
+    SetAirGround(63)
+    ChangeSubAction(RA-Int[0x00])
+  } else {
+    SetStateAerial()
+    SetAirGround(64)
+    ChangeSubAction(RA-Int[0x01])
+    DisableActionStatusId(10002)
+  }
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x7E34)
+}

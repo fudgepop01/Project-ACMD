@@ -1,0 +1,11 @@
+// Status_Dash
+Action 0x3 {
+  BasicVariableSet(IC-Int[0x5B7A], LA-Int[0x15])
+  FloatVariableSet(Variable_Float_Kinetic_Energy_Damage_Speed_Y_Rv, RA-Float[0x00])
+  FloatVariableMultiply(3.0, RA-Float[0x00])
+  FloatVariableMultiply(Variable_Float_Posture_Lr, RA-Float[0x00])
+  (undef: Sp_Kinetic) 66_00_0D_00(RA-Float[0x00], IC-Int[0x3F2], 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+  ChangeSubAction(1)
+  ChangeAction(4, R(On Ground()))
+}
+

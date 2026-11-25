@@ -1,0 +1,41 @@
+[Final] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1E7: MAIN {
+  CameraCloseup(60, 0, 1.5, 0.0, 0.0)
+  AsynchronousTimer(16.0)
+  SpecialOffensiveCollision(Sp(0, 0), 0, 90, Sp(80, 100), Sp(0, 0), 7.0, 0.0, -35.0, 0.0, 0.0, 0.5, 1.0, 105057795, 4, 542072784)
+  SpecialOffensiveCollision(Sp(0, 1), 0, 160, Sp(50, 100), Sp(0, 0), 50.0, 0.0, 16.0, 0.0, 0.0, 0.5, 1.0, 105057795, 4, -1605369920)
+  AsynchronousTimer(68.0)
+  TerminateCollisions()
+  SpecialOffensiveCollision(Sp(0, 0), 25, 361, Sp(0, 105), Sp(0, 20), 15.0, 0.0, 16.0, 0.0, 0.0, 1.0, 1.0, 105058435, 0, 537919424)
+  AsynchronousTimer(70.0)
+  TerminateCollisions()
+  TerminateArticleFtTransform()
+}
+
+Subaction 0x1E7: GFX {
+  GraphicEffect(16121857, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x1E7: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffectTransient(4947)
+  SynchronousTimer(50.0)
+  VictorySoundEffect(4926)
+}
+
+Subaction 0x1E7: OTHER {
+  HeldItemsVisibility(false)
+  Rumble(13, 0)
+  RumbleLoop(2, 60)
+}
+

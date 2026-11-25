@@ -1,0 +1,21 @@
+// Status_Damage_Air
+Action 0x44: ENTRY {
+
+  ChangeActionStatus(10002, 14, R(In Air()))
+  AdditionalRequirement(R(Animation End()))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x11])))
+
+  ChangeActionStatus(10012, 74, R(On Ground()))
+  AdditionalRequirement(R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed >= IC-Int[0xC69])))
+  AdditionalRequirement(R(NOT 0x2723()))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x11])))
+
+  ChangeActionStatus(10026, 22, R(On Ground()))
+  AdditionalRequirement(R(NOT 0x2723()))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x11])))
+
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x138C4)
+}
+
+Action 0x44 : EXIT {
+}

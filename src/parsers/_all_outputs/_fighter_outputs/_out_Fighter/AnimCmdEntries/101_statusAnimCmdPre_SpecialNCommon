@@ -1,0 +1,4 @@
+// @ 0x24078
+SpecialNCommon {
+  SubRoutine(statusAnimCmdPre_SpecialN)
+}

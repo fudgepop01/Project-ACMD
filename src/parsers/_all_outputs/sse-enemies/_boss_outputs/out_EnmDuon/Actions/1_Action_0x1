@@ -1,0 +1,19 @@
+Action 0x1: MAIN {
+}
+
+Action 0x1: EXIT {
+}
+
+Action 0x1: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_01_01_00(1)
+  if (R(Bit is Set(LA-Bool[0x07]))) {
+    SubAction09(0)
+  } else {
+    SubAction09(38)
+  }
+  (undef: Sp_Kinetic) 66_07_01_00(-1)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+  BodyCollision(2)
+}
+

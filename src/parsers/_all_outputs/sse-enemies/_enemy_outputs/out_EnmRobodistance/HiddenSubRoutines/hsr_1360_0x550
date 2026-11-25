@@ -1,0 +1,11 @@
+[hsr_550]
+hidden_subroutine_0x550 {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(18)
+  } else {
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 12.0)) || R(Compare(Variable_Int_Status_Prev_Kind == 15.0))) {
+    BasicVariableSet(Variable_Int_Status_Prev_Kind, LA-Int[0x06])
+  }
+  SubAction09(11)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 19)
+}

@@ -1,0 +1,6 @@
+[hsr_48]
+hidden_subroutine_0x48 {
+  (undef: team) 22_02_01_00(20)
+  ChangeActionStatus(4, 4, R(On Ground()))
+  Return()
+}

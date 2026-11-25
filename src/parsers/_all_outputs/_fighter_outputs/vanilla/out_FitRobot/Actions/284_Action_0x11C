@@ -1,0 +1,39 @@
+Action 0x11C: ENTRY {
+  BitVariableClear(RA-Bool[0x10])
+  ChangeAction(285, R(Button Not Pressed(Special)))
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1AC54)
+
+  ChangeAction(0, R(Button Pressed(Shield)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Button Pressed(Shield)))
+  AdditionalRequirement(R(In Air()))
+
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(6)
+      SetAerialOrOnstage(2)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(477, true)
+      } else {
+        ChangeSubAction(477)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAirGround(10)
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(483, true)
+      } else {
+        ChangeSubAction(483)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x11C : EXIT {
+}

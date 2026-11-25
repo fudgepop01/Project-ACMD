@@ -1,0 +1,9 @@
+Action 0x11D: ENTRY {
+  ChangeAction(16, R(Animation End()))
+  PreventSpecificInterrupt(AIR_CLIFF)
+  SubRoutine(EXTERNAL: statusAnimCmd_AIRChkCliffForce)
+  ChangeSubAction(480)
+}
+
+Action 0x11D : EXIT {
+}

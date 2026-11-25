@@ -1,0 +1,4 @@
+[hsr_CCB0]
+hidden_subroutine_0xCCB0 {
+  GraphicEffectAttached(65547, 57, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+}

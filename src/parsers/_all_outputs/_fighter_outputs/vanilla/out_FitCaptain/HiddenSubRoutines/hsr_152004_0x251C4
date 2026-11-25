@@ -1,0 +1,7 @@
+[hsr_251C4]
+hidden_subroutine_0x251C4 {
+  BitVariableClear(LA-Bool[0x3D])
+  BasicVariableIncrement(RA-Int[0x0A])
+  BasicVariableIncrement(RA-Int[0x0B])
+  BasicVariableIncrement(RA-Int[0x0C])
+}

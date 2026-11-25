@@ -1,0 +1,17 @@
+Action 0x114: ENTRY {
+  AllowSpecificInterrupt(AIR_CLIFF)
+
+  ChangeActionStatus(10029, 25, R(On Ground()))
+  AdditionalRequirement(R(Compare(Variable_Float_Motion_Trans_Move_Speed_Y < 0.0)))
+
+  ChangeActionStatus(0, 16, R(Animation End()))
+  if (R(On Ground())) {
+    ChangeSubAction(472)
+  } else {
+    SetAerialOrOnstage(5)
+    ChangeSubAction(473)
+  }
+}
+
+Action 0x114 : EXIT {
+}

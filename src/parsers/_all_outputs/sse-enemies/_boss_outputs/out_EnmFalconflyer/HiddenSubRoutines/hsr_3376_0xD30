@@ -1,0 +1,4 @@
+[hsr_D30]
+hidden_subroutine_0xD30 {
+  SpecialOffensiveCollisionEnemyHitbox(3, 3, 0, 0, 0.0, 180, 60, 0.0, 1, 0.0, 0, 0.0, 600.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0.0, false, true, 0, 0, 0, 1, false, 0, 1, false, 15, false, false, false, false, 8, true, false, 3, false, false, true, true, true, 0, LA-Float[0x0C])
+}

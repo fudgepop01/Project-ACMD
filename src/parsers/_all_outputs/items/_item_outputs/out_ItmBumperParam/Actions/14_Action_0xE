@@ -1,0 +1,12 @@
+// Status_Fall
+Action 0xE {
+  BitVariableClear(LA-Bool[0x08])
+  (undef: Sp_Kinetic) 66_06_01_00(3)
+  ChangeAction(5, R(In Air()))
+  ChangeSubAction(7)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  TerminateCollisions()
+  ChangeAction(13, R(On Ground()))
+}
+

@@ -1,0 +1,48 @@
+[Attack2] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x6 : GAME {
+  Screenshake(0)
+  OffensiveCollision(Sp(2, 0), 2, 90, Sp(50, 100), Sp(0, 0), 13.0, 0.0, 9.0, 16.0, 0.0, 1.0, 1.0, 402850304)
+  OffensiveCollision(Sp(2, 1), 2, 80, Sp(50, 100), Sp(0, 0), 13.0, 0.0, 9.0, 5.0, 0.0, 1.0, 1.0, 402850304)
+  AsynchronousTimer(3.0)
+  TerminateCollisions()
+  AsynchronousTimer(7.0)
+  OffensiveCollision(Sp(2, 0), 20, 80, Sp(0, 100), Sp(0, 90), 10.0, 0.0, 5.0, 16.0, 0.0, 1.0, 1.0, 402850437)
+  OffensiveCollision(Sp(2, 1), 20, 80, Sp(0, 100), Sp(0, 90), 10.0, 0.0, 5.0, 5.0, 0.0, 1.0, 1.0, 402850437)
+  AsynchronousTimer(10.0)
+  OffensiveCollision(Sp(5, 0), 20, 80, Sp(0, 100), Sp(0, 90), 10.0, -16.0, 5.0, 0.0, 0.0, 1.0, 1.0, 402850437)
+  OffensiveCollision(Sp(5, 1), 20, 80, Sp(0, 100), Sp(0, 90), 10.0, -5.0, 5.0, 0.0, 0.0, 1.0, 1.0, 402850437)
+  AsynchronousTimer(25.0)
+  TerminateCollisions()
+}
+
+Subaction 0x6 : GFX {
+  GraphicEffectAttached2(13041668, 26, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(8.0)
+  GraphicEffect(42, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(13041666, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffectAttached2(13041667, 6, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+}
+
+Subaction 0x6 : SOUND {
+  AsynchronousTimer(1.0)
+  if (R(Is within footstool range())) {
+    SoundEffect(7667)
+  } else {
+    SoundEffect(7666)
+  }
+  SynchronousTimer(2.0)
+  SoundEffect(55)
+  SynchronousTimer(1.0)
+  VictorySoundEffect(7659)
+}
+

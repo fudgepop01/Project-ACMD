@@ -1,0 +1,45 @@
+Action 0x119: ENTRY {
+  ChangeAction(279, R(Animation End()))
+  ReverseDirection()
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(6)
+      SetAerialOrOnstage(1)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(467, true)
+        SetAnchoredArticleAction(0, 5, true)
+      } else {
+        ChangeSubAction(467)
+        SetArticleAction(0, 5)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      EnableActionStatusId(10000)
+      DisableActionStatusId(10002)
+      SetRequirement01(0, R(In Air()))
+    } else {
+      SetAirGround(100)
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(475, true)
+        SetAnchoredArticleAction(0, 13, true)
+      } else {
+        ChangeSubAction(475)
+        SetArticleAction(0, 13)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      EnableActionStatusId(10002)
+      DisableActionStatusId(10000)
+      SetRequirement01(1, R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x119 : EXIT {
+  } else {
+  if (R(Compare(Variable_Int_Status_Kind == 279.0)) || R(Compare(Variable_Int_Status_Kind == 280.0)) || R(Compare(Variable_Int_Status_Kind == 281.0)) || R(Compare(Variable_Int_Status_Kind == 282.0))) {
+    OnlyArticleEvent(0)
+    ModelChangerPermanent(1, 2)
+    RemoveArticle(1)
+  }
+}

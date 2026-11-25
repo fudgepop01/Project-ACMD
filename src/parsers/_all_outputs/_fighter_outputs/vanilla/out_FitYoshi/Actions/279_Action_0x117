@@ -1,0 +1,9 @@
+Action 0x117: ENTRY {
+  BasicVariableSet(463, RA-Int[0x00])
+  BasicVariableSet(466, RA-Int[0x01])
+  ChangeAction(280, R(Bit is Set(RA-Bool[0x11])))
+  SubRoutine(hidden_subroutine_0x19BC0)
+}
+
+Action 0x117 : EXIT {
+}

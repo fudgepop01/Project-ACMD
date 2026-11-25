@@ -1,0 +1,10 @@
+[hsr_518]
+hidden_subroutine_0x518 {
+  ChangeSubAction(3)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  DisableActionStatusId(3)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 1.8, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+  ChangeAction(9, R(Button Tap?()))
+  Return()
+}

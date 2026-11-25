@@ -1,0 +1,8 @@
+Action 0x12C: ENTRY {
+  SubRoutine(EXTERNAL: statusAnimCmd_ItemShootLanding_Common)
+  SubRoutine(hidden_subroutine_0x1B62C)
+}
+
+Action 0x12C : EXIT {
+  SubRoutine(hidden_subroutine_0x1B0F4)
+}

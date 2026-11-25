@@ -1,0 +1,34 @@
+Action 0x8: MAIN {
+}
+
+Action 0x8: EXIT {
+}
+
+Action 0x8: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(8)
+  BasicVariableSet(2, LA-Int[0x06])
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 13.0))) {
+    if (R(Facing Left())) {
+      (undef: Sp_base) 65_1E_01_00(IC-Int[0xABE5])
+    } else {
+      (undef: Sp_base) 65_1E_01_00(IC-Int[0xABE6])
+    }
+  } else {
+    (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE7], LA-Float[0x05])
+    (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE8], LA-Float[0x07])
+    FloatVariableSubtract(LA-Float[0x07], LA-Float[0x05])
+    FloatVariableMultiply(0.5, LA-Float[0x05])
+    FloatVariableAdd(LA-Float[0x07], LA-Float[0x05])
+    if (R(Compare(Variable_Float_Posture_Pos_X < LA-Float[0x05]))) {
+      (undef: Sp_base) 65_1E_01_00(IC-Int[0xABE6])
+    } else {
+      (undef: Sp_base) 65_1E_01_00(IC-Int[0xABE5])
+    }
+    DecideDirection()
+  }
+  CharacterSpecific01()
+  SubAction09(9)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 15)
+}
+

@@ -1,0 +1,16 @@
+// Status_Miss_Foot
+[statusAnimCmd_MissFoot]
+Action 0x7E: ENTRY {
+  DisallowCertainMovements(2)
+  ChangeSubAction(212)
+
+  ChangeAction(73, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeActionStatus(10012, 74, R(On Ground()))
+  SynchronousTimer(8.0)
+  ReallowCertainMovements(2)
+}
+
+Action 0x7E : EXIT {
+}

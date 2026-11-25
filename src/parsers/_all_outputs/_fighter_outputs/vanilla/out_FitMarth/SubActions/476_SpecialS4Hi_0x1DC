@@ -1,0 +1,47 @@
+[SpecialS4Hi] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1DC: MAIN {
+  AsynchronousTimer(10.0)
+  SpecialOffensiveCollision(Sp(65, 0), 6, 80, Sp(0, 130), Sp(1, 60), 4.0, 2.0, 0.0, 1.0, 0.0, 1.0, 1.0, 847450242, 0, 5242819)
+  SpecialOffensiveCollision(Sp(65, 1), 8, 80, Sp(0, 130), Sp(1, 60), 5.0, 2.0, 0.0, 6.0, 0.0, 1.0, 1.0, 847450242, 0, 5242819)
+  SpecialOffensiveCollision(Sp(61, 2), 6, 80, Sp(0, 130), Sp(1, 60), 3.5, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 847450114, 0, 5242819)
+  SpecialOffensiveCollision(Sp(34, 3), 6, 80, Sp(0, 130), Sp(1, 60), 2.5, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 847450114, 0, 5242819)
+  AsynchronousTimer(15.0)
+  TerminateCollisions()
+}
+
+Subaction 0x1DC: GFX {
+  AsynchronousTimer(8.0)
+  SwordGlow(25, 4, 65, 0.0, 0.0, 1.6, 65, 0.0, 0.0, 10.75, true, 1179649, 65, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  AsynchronousTimer(11.0)
+  GraphicEffectLanding(40, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(22.0)
+  TerminateSwordGlow(1)
+}
+
+Subaction 0x1DC: SOUND {
+  AsynchronousTimer(10.0)
+  SoundEffect(169)
+  SoundEffect(4442)
+  SoundEffect(1702)
+}
+
+Subaction 0x1DC: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(9.0)
+  Rumble(18, 0)
+  AsynchronousTimer(12.0)
+  SlopeContourStand(2)
+  AsynchronousTimer(45.0)
+  SlopeContourStand02(6, 2)
+}
+

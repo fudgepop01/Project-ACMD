@@ -1,0 +1,9 @@
+[hsr_16220]
+hidden_subroutine_0x16220 {
+  if (R(NOT Bit is Set(LA-Bool[0x3D]))) {
+    ChangeSubAction(LA-Int[0x40])
+    BitVariableSet(LA-Bool[0x3D])
+  } else {
+    ChangeSubAction(LA-Int[0x40], true)
+  }
+}

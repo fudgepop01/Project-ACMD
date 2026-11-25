@@ -1,0 +1,47 @@
+[GunJumpAttack] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x7: MAIN {
+  SubRoutine(hidden_subroutine_0x5608)
+}
+
+Subaction 0x7: MAIN EXIT {
+  TerminateCollisions()
+}
+
+Subaction 0x7: MAIN INIT {
+}
+
+Subaction 0x7: GFX {
+  GraphicEffectAttached(12517378, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12517379, 7, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  Screenshake(1)
+  AsynchronousTimer(65.0)
+  GraphicEffectAttached(12517380, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12517381, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+}
+
+Subaction 0x7: GFX EXIT {
+}
+
+Subaction 0x7: GFX INIT {
+}
+
+Subaction 0x7: SFX {
+  SoundEffect(9761)
+}
+
+Subaction 0x7: SFX EXIT {
+}
+
+Subaction 0x7: SFX INIT {
+}
+

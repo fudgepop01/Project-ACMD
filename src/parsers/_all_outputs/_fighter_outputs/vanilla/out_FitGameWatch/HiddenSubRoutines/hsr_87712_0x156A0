@@ -1,0 +1,5 @@
+[hsr_156A0]
+hidden_subroutine_0x156A0 {
+  AsynchronousTimer(23.0)
+  TerminateCollisions()
+}

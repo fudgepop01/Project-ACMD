@@ -1,0 +1,55 @@
+[Playguitar] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x4 : GAME {
+  SetLoop(7) {
+    SynchronousTimer(7.0)
+    OffensiveCollision(Sp(0, 0), 5, 130, Sp(0, 100), Sp(0, 60), 16.0, 0.0, -5.0, 17.0, 0.0, 1.0, 1.0, 200323)
+    OffensiveCollision(Sp(0, 1), 5, 130, Sp(0, 100), Sp(0, 60), 16.0, 0.0, -5.0, -17.0, 0.0, 1.0, 1.0, 200323)
+    OffensiveCollision(Sp(0, 2), 5, 160, Sp(40, 80), Sp(0, 0), 16.0, 0.0, 22.0, -17.0, 0.0, 1.0, 1.0, 200323)
+    OffensiveCollision(Sp(0, 3), 5, 160, Sp(40, 80), Sp(0, 0), 16.0, 0.0, 22.0, 17.0, 0.0, 1.0, 1.0, 200323)
+    SynchronousTimer(2.0)
+    TerminateCollisions()
+    SynchronousTimer(21.0)
+  }
+}
+
+Subaction 0x4 : GFX {
+  AsynchronousTimer(5.0)
+  GraphicEffectAttached(14417922, 0, 0.0, 7.385, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  GraphicEffectAttached(14417927, 0, 0.0, 7.385, 0.0, 0.0, 0.0, 0.0, 1.2, true)
+  AsynchronousTimer(25.0)
+  GraphicEffect(11, 0, 1.63, 0.0, 2.565, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(35.0)
+  GraphicEffectAttached(14417927, 0, 0.0, 7.385, 0.0, 0.0, 0.0, 0.0, 1.2, true)
+  AsynchronousTimer(55.0)
+  GraphicEffect(11, 0, 2.057, 0.0, 4.457, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(65.0)
+  GraphicEffectAttached(14417927, 0, 0.0, 7.385, 0.0, 0.0, 0.0, 0.0, 1.2, true)
+  AsynchronousTimer(85.0)
+  GraphicEffect(11, 0, 0.59, 0.0, 3.22, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(95.0)
+  GraphicEffectAttached(14417927, 0, 0.0, 7.385, 0.0, 0.0, 0.0, 0.0, 1.2, true)
+  AsynchronousTimer(125.0)
+  GraphicEffectAttached(14417927, 0, 0.0, 7.385, 0.0, 0.0, 0.0, 0.0, 1.2, true)
+  AsynchronousTimer(155.0)
+  GraphicEffectAttached(14417927, 0, 0.0, 7.385, 0.0, 0.0, 0.0, 0.0, 12.0, true)
+  AsynchronousTimer(175.0)
+  GraphicEffect(11, 0, 1.9, 0.0, 2.59, 0.0, 0.0, 0.0, 0.65, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(185.0)
+  GraphicEffectAttached(14417927, 0, 0.0, 7.385, 0.0, 0.0, 0.0, 0.0, 1.2, true)
+}
+
+Subaction 0x4 : SOUND {
+  AsynchronousTimer(6.0)
+  SoundEffect(8313)
+}
+

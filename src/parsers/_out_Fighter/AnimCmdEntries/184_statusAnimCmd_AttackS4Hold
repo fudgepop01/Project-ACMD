@@ -1,0 +1,12 @@
+// @ 0x10E3C
+AttackS4Hold {
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(44, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(44, R(Button Not Pressed(Attack)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeSubAction(91)
+}

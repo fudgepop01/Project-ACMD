@@ -1,0 +1,18 @@
+[hsr_B78]
+hidden_subroutine_0xB78 {
+  (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE8], LA-Float[0x0A])
+  (undef: Sp_base) 65_20_02_00(IC-Int[0xABE8], LA-Float[0x0B])
+  FloatVariableSet(100.0, LA-Float[0x05])
+  FloatVariableSubtract(Variable_Float_Controller_Stick_Prev_Y, LA-Float[0x05])
+  FloatVariableSet(LA-Float[0x05], LA-Float[0x07])
+  FloatVariableMultiply(IC-Int[0xFA3], LA-Float[0x05])
+  FloatVariableMultiply(IC-Int[0xFA4], LA-Float[0x07])
+  FloatVariableAdd(LA-Float[0x05], LA-Float[0x0A])
+  FloatVariableAdd(LA-Float[0x07], LA-Float[0x0B])
+  FloatVariableSet(LA-Float[0x0C], LA-Float[0x05])
+  FloatVariableSet(LA-Float[0x0C], LA-Float[0x07])
+  FloatVariableMultiply(IC-Int[0xFA5], LA-Float[0x05])
+  FloatVariableMultiply(IC-Int[0xFA6], LA-Float[0x07])
+  FloatVariableAdd(LA-Float[0x05], LA-Float[0x0A])
+  FloatVariableAdd(LA-Float[0x07], LA-Float[0x0B])
+}

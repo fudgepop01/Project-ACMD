@@ -1,0 +1,23 @@
+Action 0xF: MAIN {
+}
+
+Action 0xF: EXIT {
+  (undef: Sp_Kinetic) 66_07_01_00(3)
+  (undef: Sp_Kinetic) 66_07_01_00(5)
+  SubRoutine(hidden_subroutine_0x458)
+}
+
+Action 0xF: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(27)
+  if (R(Compare(Variable_Int_Motion_Kind == 15.0))) {
+    SubAction09(16)
+  } else {
+    SubAction09(7)
+  }
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+  (undef: Sp_Kinetic) 66_00_04_00(3, 22, 35791.0, 13)
+  (undef: Sp_Kinetic) 66_00_04_00(5, 22, 35791.0, 19)
+  (undef: Sp_Link) 6E_00_04_00(0, 5103, 62, 1)
+}
+

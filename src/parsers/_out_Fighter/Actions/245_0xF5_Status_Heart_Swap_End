@@ -1,0 +1,7 @@
+// Status_Heart_Swap_End
+Action 0xF5: ENTRY {
+  SubRoutine(Action_0xF4 : ENTRY)
+}
+
+Action 0xF5 : EXIT {
+}

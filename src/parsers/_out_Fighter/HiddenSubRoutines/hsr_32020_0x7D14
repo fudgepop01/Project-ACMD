@@ -1,0 +1,16 @@
+[hsr_7D14]
+hidden_subroutine_0x7D14 {
+  FloatVariableAdd(1.0, RA-Float[0x06])
+  if (R(Compare(RA-Float[0x06] >= Common_Param_Float_Damage_Bury_Jump_No_Attack_Frame_Value))) {
+    AllowSpecificInterrupt(AIR_LANDING)
+    AllowSpecificInterrupt(AIR_SPECIAL)
+    AllowSpecificInterrupt(AIR_ITEM_THROW)
+    AllowSpecificInterrupt(AIR_LASSO)
+    AllowSpecificInterrupt(AIR_ESCAPE)
+    AllowSpecificInterrupt(AIR_ATTACK)
+    AllowSpecificInterrupt(AIR_TREAD_JUMP)
+    AllowSpecificInterrupt(AIR_WALL_JUMP)
+    AllowSpecificInterrupt(AIR_JUMP_AERIAL)
+    EnableDisableLedgegrab(4)
+  }
+}

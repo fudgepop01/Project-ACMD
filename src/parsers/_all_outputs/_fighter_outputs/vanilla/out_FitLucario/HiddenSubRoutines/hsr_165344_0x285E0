@@ -1,0 +1,8 @@
+[hsr_285E0]
+hidden_subroutine_0x285E0 {
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 33.0))) {
+    SetAddMomentum(0.0, 0.0, 1, 1)
+    AddSubtractMomentum(LA-Float[0x09], LA-Float[0x0A])
+  }
+  NoEvent()
+}

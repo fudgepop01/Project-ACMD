@@ -1,0 +1,14 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  ChangeSubAction(1)
+  SubRoutine(hidden_subroutine_0x11C)
+  DisableActionStatusId(9)
+  FloatVariableRandom(0.0, 190.0, RA-Float[0x00])
+  SetAnimationFrame(RA-Float[0x00])
+  FloatVariableRandom(0.7, 1.2, RA-Float[0x00])
+  FrameSpeedModifier(RA-Float[0x00])
+  Visibility(false)
+  SynchronousTimer(1.0)
+  Visibility(true)
+}
+

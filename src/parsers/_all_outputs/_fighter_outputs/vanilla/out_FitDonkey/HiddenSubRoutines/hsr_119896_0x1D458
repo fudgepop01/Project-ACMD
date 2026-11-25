@@ -1,0 +1,12 @@
+[hsr_1D458]
+hidden_subroutine_0x1D458 {
+  if (R(Bit is Set(RA-Bool[0x15])) && R(Animation End())) {
+    ChangeSubAction(505)
+    SetBoneMotionOverride(2, 506, 18)
+    SetBoneMotionOverride(3, 506, 42)
+    (undef: generateArticleManage) 10_0B_02_00(0, 0.0)
+    ArticleFrameSpeed(0, 1.0)
+    BitVariableClear(RA-Bool[0x15])
+    BitVariableSet(RA-Bool[0x16])
+  }
+}

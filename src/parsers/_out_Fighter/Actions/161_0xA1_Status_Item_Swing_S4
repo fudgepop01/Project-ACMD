@@ -1,0 +1,39 @@
+// Status_Item_Swing_S4
+[statusAnimCmd_ItemSwingS4]
+Action 0xA1: ENTRY {
+  ResetButtonPress()
+  SubRoutine(hidden_subroutine_0x63CC)
+  BasicVariableSet(Variable_Int_Item_Swing_4_Motion_Kind, RA-Int[0x00])
+  ChangeSubAction(RA-Int[0x00], false, Variable_Float_Item_Swing_Motion_Rate)
+  ConcurrentInfiniteLoop(I(9), statusAnimCmd_ItemSwingS4Uniq)
+  Switch(10000, Variable_Int_Item_Swing_4_Motion_Kind)
+    Case(292)
+      SubRoutine(hidden_subroutine_0x2274)
+    Case(298)
+      SetStalingId(2, 84, true)
+    Case(310)
+      SubRoutine(hidden_subroutine_0x28A4)
+    Case(317)
+      SubRoutine(hidden_subroutine_0x2AE4)
+    Case(303)
+      SubRoutine(hidden_subroutine_0x2664)
+  EndSwitch()
+  if (R(Compare(Variable_Int_Item_Swing_4_Motion_Kind != 298.0))) {
+    BasicVariableAdd(1, RA-Int[0x00])
+    if (R(Subaction Exists())) {
+      SetRequirement(R(Bit is Set(RA-Bool[0x10])))
+      SetExtraRequirement(R(NOT Bit is Set(RA-Bool[0x11])))
+      SetRequirement(R(Bit is Set(RA-Bool[0x10])))
+      SetExtraRequirement(R(Bit is Set(RA-Bool[0x12])))
+      LoadRest()
+      ChangeSubAction(RA-Int[0x00], false, Variable_Float_Item_Swing_Motion_Rate)
+    }
+  }
+}
+
+Action 0xA1 : EXIT {
+  SubRoutine(Action_0x9E : EXIT)
+  if (R(Compare(Variable_Int_Have_Item_Kind == 33.0))) {
+    AttachItemHoldAnim_UNDOC1ARGS(2)
+  }
+}

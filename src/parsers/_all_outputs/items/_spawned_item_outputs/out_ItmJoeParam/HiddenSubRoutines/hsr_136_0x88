@@ -1,0 +1,11 @@
+[hsr_88]
+hidden_subroutine_0x88 {
+  if (R(2714(1))) {
+    RightDirection()
+  } else {
+    LeftDirection()
+  }
+  DecideDirection()
+  CharacterSpecific01()
+  Return()
+}

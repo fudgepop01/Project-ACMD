@@ -1,0 +1,15 @@
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 3 : 1
+
+LA-Int[0x0C] in Action 0x1 (Status_Walk) @ 1 : 1
+LA-Int[0x0C] in hsr_D4 @ 0 : 1
+
+LA-Int[0x1B] in Subaction 0x0 : SOUND @ 0 : 1
+
+RA-Float[0x00] in Action 0x3 (Status_Dash) @ 3 : 2
+RA-Float[0x00] in Action 0x3 (Status_Dash) @ 4 : 0
+RA-Float[0x00] in Action 0x9 (Status_Turn_Run_Brake) @ 3 : 2
+RA-Float[0x00] in Action 0x9 (Status_Turn_Run_Brake) @ 4 : 0
+RA-Float[0x00] in Action 0x9 (Status_Turn_Run_Brake) @ 5 : 2
+RA-Float[0x00] in Action 0x9 (Status_Turn_Run_Brake) @ 6 : 0
+
+RA-Bool[0x05] in hsr_D4 @ 2 : 3

@@ -1,0 +1,32 @@
+Action 0x115: ENTRY {
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x17F88)
+  BitVariableClear(RA-Bool[0x10])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      SetAirGround(6)
+      if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(480, false)
+      } else {
+        ChangeSubAction(480, true)
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetAirGround(103)
+      if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(481, false)
+      } else {
+        ChangeSubAction(481, true)
+      }
+      SetRequirement(R(On Ground()))
+    }
+    BitVariableSet(RA-Bool[0x10])
+    LoadRest()
+  }
+}
+
+Action 0x115 : EXIT {
+  (undef: item_manage) 1F_11_01_00(2)
+  Visibility(true)
+}

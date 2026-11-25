@@ -1,0 +1,21 @@
+[hsr_220]
+hidden_subroutine_0x220 {
+  if (R(Compare(Variable_Int_Motion_Kind != 1.0))) {
+    BitVariableClear(LA-Bool[0x0C])
+    (undef: Sp_Kinetic) 66_06_01_00(0)
+    BitVariableSet(LA-Bool[0x08])
+    ChangeAction(3, R(In Air()))
+    ChangeActionStatus(4, 4, R(On Ground()))
+    (undef: Sp_base) 65_1E_01_00(2)
+    ChangeSubAction(1)
+  } else {
+    ChangeSubAction(1)
+    SetAnimationFrame(1.0)
+    FrameSpeedModifier(0.0)
+    ChangeSubAction(1, true)
+  }
+  if (R(0x3E())) {
+    DetachFromSurface()
+  }
+  Return()
+}

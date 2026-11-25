@@ -1,0 +1,17 @@
+// Status_Fly
+Action 0xD {
+  ChangeAction(3, R(In Air()))
+  (undef: Sp_base) 65_07_01_00(2)
+  BasicVariableSet(1, LA-Int[0x01])
+  if (R(2714(0))) {
+    ChangeAction(9, R(Button Tap?()))
+  } elif (R(Compare(IC-Int[0x3F8] < 5.0))) {
+    ChangeAction(9, R(Button Tap?()))
+  } elif (R(Is within footstool range())) {
+    ChangeAction(9, R(Button Tap?()))
+  } else {
+    SubRoutine(hidden_subroutine_0x170)
+    ChangeAction(4, R(Button Tap?()))
+  }
+}
+

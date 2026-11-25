@@ -1,0 +1,10 @@
+// Status_Walk
+Action 0x1 {
+  (undef: Sp_base) 65_04_01_00(1400)
+  ChangeSubAction(3)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(3, R(In Air()))
+  ChangeAction(4, R(On Ground()))
+}
+

@@ -1,0 +1,6 @@
+[hsr_E0]
+hidden_subroutine_0xE0 {
+  (undef: motion) 04_10_02_00(0, 7)
+  (undef: motion) 04_13_02_00(0, 0.0)
+  (undef: motion) 04_12_02_00(0, 1.0)
+}

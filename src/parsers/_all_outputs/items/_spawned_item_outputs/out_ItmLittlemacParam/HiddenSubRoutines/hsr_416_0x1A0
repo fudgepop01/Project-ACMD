@@ -1,0 +1,7 @@
+[hsr_1A0]
+hidden_subroutine_0x1A0 {
+  ChangeSubAction(1)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  Return()
+}

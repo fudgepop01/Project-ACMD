@@ -1,0 +1,7 @@
+[hsr_10740]
+hidden_subroutine_0x10740 {
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+  AsynchronousTimer(36.0)
+  AllowInterrupt()
+}

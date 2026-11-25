@@ -1,0 +1,4 @@
+[hsr_16B60]
+hidden_subroutine_0x16B60 {
+  SoundEffect(3243)
+}

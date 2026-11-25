@@ -1,0 +1,13 @@
+Action 0x119: ENTRY {
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+  if (R(On Ground())) {
+    ChangeSubAction(469)
+  } else {
+    ChangeSubAction(472)
+  }
+  FrameSpeedModifier(0.0)
+}
+
+Action 0x119 : EXIT {
+}

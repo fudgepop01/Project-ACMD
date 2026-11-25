@@ -1,0 +1,25 @@
+[hsr_1D388]
+hidden_subroutine_0x1D388 {
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(2)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(RA-Int[0x00], true)
+      } else {
+        ChangeSubAction(RA-Int[0x00])
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(RA-Int[0x01], true)
+      } else {
+        ChangeSubAction(RA-Int[0x01])
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}

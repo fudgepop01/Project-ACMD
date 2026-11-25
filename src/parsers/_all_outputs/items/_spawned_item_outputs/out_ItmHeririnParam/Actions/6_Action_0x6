@@ -1,0 +1,10 @@
+// Status_Turn
+Action 0x6 {
+  SetGrCollisionMode(false)
+  ChangeSubAction(2)
+  SynchronousTimer(1.0)
+  Visibility(false)
+  SynchronousTimer(60.0)
+  (undef: Sp_base) 65_00_00_00()
+}
+

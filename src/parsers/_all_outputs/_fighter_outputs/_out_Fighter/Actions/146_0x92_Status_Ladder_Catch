@@ -1,0 +1,65 @@
+// Status_Ladder_Catch
+Action 0x92: ENTRY {
+
+  ChangeAction(14, R(In Air()))
+  AdditionalRequirement(R(Touching a Floor, Wall, or Ceiling(6)))
+
+  ChangeAction(0, R(On Ground()))
+  AdditionalRequirement(R(Touching a Floor, Wall, or Ceiling(6)))
+
+  ChangeAction(148, R(Compare(Variable_Float_Controller_Stick_Y_Abs >= Common_Param_Float_Ladder_Stick_Y)))
+  AdditionalRequirement(R(Compare(Variable_Float_Motion_Frame >= Common_Param_Float_Ladder_Cancel_Frame)))
+
+  ChangeAction(148, R(Animation End()))
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      SetRequirement(R(In Air()))
+      AllowSpecificInterrupt(GROUND_SPECIAL)
+      AllowSpecificInterrupt(GROUND_ITEM)
+      AllowSpecificInterrupt(GROUND_ATTACK)
+      PreventSpecificInterrupt(AIR_LANDING)
+      if (R(Compare(Variable_Float_Posture_Lr == 1.0))) {
+        if (R(Bit is Set(RA-Bool[0x05]))) {
+          ChangeSubAction(386, true)
+        } else {
+          ChangeSubAction(386)
+          BitVariableSet(RA-Bool[0x05])
+        }
+      } else {
+        if (R(Bit is Set(RA-Bool[0x05]))) {
+          ChangeSubAction(387, true)
+        } else {
+          ChangeSubAction(387)
+          BitVariableSet(RA-Bool[0x05])
+        }
+      }
+    } else {
+      SetAerialOrOnstage(5)
+      SetRequirement(R(On Ground()))
+      PreventSpecificInterrupt(GROUND_SPECIAL)
+      PreventSpecificInterrupt(GROUND_ITEM)
+      PreventSpecificInterrupt(GROUND_ATTACK)
+      AllowSpecificInterrupt(AIR_LANDING)
+      if (R(Compare(Variable_Float_Posture_Lr == 1.0))) {
+        if (R(Bit is Set(RA-Bool[0x05]))) {
+          ChangeSubAction(388, true)
+        } else {
+          ChangeSubAction(388)
+          BitVariableSet(RA-Bool[0x05])
+        }
+      } else {
+        if (R(Bit is Set(RA-Bool[0x05]))) {
+          ChangeSubAction(389, true)
+        } else {
+          ChangeSubAction(389)
+          BitVariableSet(RA-Bool[0x05])
+        }
+      }
+    }
+    LoadRest()
+  }
+}
+
+Action 0x92 : EXIT {
+}

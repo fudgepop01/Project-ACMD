@@ -1,0 +1,13 @@
+// Status_Damage_Fly_Roll
+Action 0x46: ENTRY {
+  ChangeActionStatus(10005, 73, R(Bit is Set(RA-Bool[0x11])))
+  SubRoutine(hidden_subroutine_0x53DC)
+  SubRoutine(hidden_subroutine_0x3C34)
+  SubRoutine(hidden_subroutine_0x3D24)
+  SubRoutine(gameAnimCmd_DamageFlyIndirectNoReactionCommon)
+  AsynchronousTimer(3.0)
+  SubRoutine(gameAnimCmd_DamageFlyIndirectCommon)
+}
+
+Action 0x46 : EXIT {
+}

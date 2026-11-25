@@ -1,0 +1,7 @@
+[hsr_21250]
+hidden_subroutine_0x21250 {
+  ArticleVisibility(0, true)
+  ArticleVisibility(1, true)
+  ArticleEvent02(1)
+  AddIntStatToLog(1, 29)
+}

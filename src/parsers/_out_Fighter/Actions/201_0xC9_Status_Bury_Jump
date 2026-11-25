@@ -1,0 +1,10 @@
+// Status_Bury_Jump
+Action 0xC9: ENTRY {
+  ChangeSubAction(21)
+  ChangeAction(14, R(Animation End()))
+  SuperHeavyArmor(0, 0.0)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x7D14)
+}
+
+Action 0xC9 : EXIT {
+}

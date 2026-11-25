@@ -1,0 +1,24 @@
+Action 0x17: MAIN {
+}
+
+Action 0x17: EXIT {
+}
+
+Action 0x17: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(8)
+  BasicVariableSet(16, LA-Int[0x06])
+  SubAction09(26)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+  SubRoutine(hidden_subroutine_0x784)
+  (undef: Sp_Area) 69_08_02_00(Variable_Int_Controller_Flick_No_Reset_Y, LA-Float[0x05])
+  (undef: Sp_Area) 69_0A_02_00(Variable_Int_Controller_Flick_No_Reset_Y, LA-Float[0x07])
+  FloatVariableAdd(IC-Int[0xFA6], LA-Float[0x07])
+  TeleportationStageBased(LA-Float[0x05], LA-Float[0x07], Variable_Float_Posture_Pos_Z)
+  if [IF_REQ_UNKNOWN_3ARG] (R(Can Pick Up Another Item()), Variable_Int_Controller_Flick_No_Reset_Y, 3) {
+    ReverseDirection()
+  }
+  SubRoutine(hidden_subroutine_0x14AC)
+  SubRoutine(hidden_subroutine_0x1D14)
+}
+

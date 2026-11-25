@@ -1,0 +1,17 @@
+Action 0x128: ENTRY {
+
+  ChangeAction(73, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeAction(25, R(On Ground()))
+  BasicVariableSet(1, RA-Int[0x02])
+  if (R(Bit is Set(RA-Bool[0x12]))) {
+    if (R(Article Available())) {
+      GenerateArticle(1)
+    }
+  }
+  ChangeSubAction(494)
+}
+
+Action 0x128 : EXIT {
+}

@@ -1,0 +1,38 @@
+Action 0x125: ENTRY {
+  BitVariableClear(RA-Bool[0x10])
+  ChangeAction(295, R(Button Not Pressed(Special)))
+  ChangeAction(295, R(Animation End()))
+  SuperHeavyArmor(2, IC-Int[0xFAE])
+  if (R(On Ground())) {
+    ChangeSubAction(486)
+    BitVariableSet(RA-Bool[0x10])
+    BitVariableClear(RA-Bool[0x11])
+  } else {
+    ChangeSubAction(487)
+    BitVariableSet(RA-Bool[0x10])
+    BitVariableSet(RA-Bool[0x11])
+  }
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(6)
+      SetAerialOrOnstage(2)
+      if (R(Bit is Set(RA-Bool[0x11]))) {
+        ChangeSubAction(486, true)
+        BitVariableClear(RA-Bool[0x11])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(NOT Bit is Set(RA-Bool[0x11]))) {
+        ChangeSubAction(487, true)
+        BitVariableSet(RA-Bool[0x11])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x125 : EXIT {
+  SuperHeavyArmor(0, 0.0)
+}

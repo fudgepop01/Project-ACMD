@@ -1,0 +1,10 @@
+// Status_Run
+Action 0x4 {
+  SubRoutine(hidden_subroutine_0x40)
+  DisableActionStatusId(4)
+  ChangeSubAction(2)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(7, R(Button Tap?()))
+}
+

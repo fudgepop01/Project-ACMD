@@ -1,0 +1,17 @@
+// Status_Walk_Brake
+Action 0x2 {
+  ChangeAction(7, R(Bit is Set(RA-Bool[0x01])))
+  BitVariableSet(LA-Bool[0x01])
+  if (R(Bit is Set(LA-Bool[0x00]))) {
+    ChangeSubAction(9, true)
+    FrameSpeedModifier(1.0)
+  } else {
+    (undef: Sp_base) 65_05_01_00(16777215)
+    ChangeSubAction(1)
+    FrameSpeedModifier(5.0)
+  }
+
+  ChangeActionStatus(7, 7, R(Compare(LA-Int[0x0B] == 0.0)))
+  AdditionalRequirement(R(Bit is Set(LA-Bool[0x00])))
+}
+

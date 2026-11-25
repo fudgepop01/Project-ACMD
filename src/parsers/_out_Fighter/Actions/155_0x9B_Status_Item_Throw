@@ -1,0 +1,57 @@
+// Status_Item_Throw
+[statusAnimCmd_ItemThrow]
+Action 0x9B: ENTRY {
+  FloatVariableSet(Variable_Float_Posture_Lr, RA-Float[0x04])
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  if (R(Compare(Variable_Int_Have_Item_Kind == 72.0))) {
+    RemoveItemHoldAnim()
+    if (R(On Ground())) {
+      SubRoutine(hidden_subroutine_0x652C)
+    } else {
+      SubRoutine(hidden_subroutine_0x670C)
+    }
+  } elif (R(Compare(RA-Int[0x00] == 0.0))) {
+    if (R(On Ground())) {
+      SubRoutine(hidden_subroutine_0x6ADC)
+    } else {
+      SubRoutine(hidden_subroutine_0x6EE4)
+    }
+  }
+  ResetFlickX()
+  ResetFlickY()
+  ResetButtonPress()
+  SetLoop(-1) {
+    if (R(Bit is Set(RA-Bool[0x10]))) {
+      ChangeSubAction(RA-Int[0x00], true)
+    } else {
+      ChangeSubAction(RA-Int[0x00])
+      BitVariableSet(RA-Bool[0x10])
+    }
+    if (R(On Ground())) {
+      SetAerialOrOnstage(2)
+      SetAirGround(15)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetAirGround(0)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+    BasicVariableSet(RA-Int[0x00], RA-Int[0x02])
+    BasicVariableSet(RA-Int[0x01], RA-Int[0x00])
+    BasicVariableSet(RA-Int[0x02], RA-Int[0x01])
+  }
+}
+
+Action 0x9B : EXIT {
+  if (R(Compare(Variable_Int_Have_Item_Kind == 72.0))) {
+    AttachItemHoldAnim_UNDOC1ARGS(3)
+  }
+  BitVariableClear(LA-Bool[0x2A])
+}

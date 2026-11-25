@@ -1,0 +1,16 @@
+// Status_Walk
+Action 0x1 {
+  (undef: Sp_base) 65_05_01_00(38)
+  ChangeSubAction(0)
+  DisableSpecifiedMovement(2)
+  SynchronousTimer(1.0)
+  if (R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv < 0.0))) {
+    LeftDirection()
+  } else {
+    RightDirection()
+  }
+  DecideDirection()
+  CharacterSpecific01()
+  SubRoutine(hidden_subroutine_0x78)
+}
+

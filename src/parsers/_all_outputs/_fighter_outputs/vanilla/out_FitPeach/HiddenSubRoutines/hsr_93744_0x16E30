@@ -1,0 +1,9 @@
+[hsr_16E30]
+hidden_subroutine_0x16E30 {
+  if (R(Compare(Variable_Int_Controller_Flick_X <= Common_Param_Int_Special_Smash_Flick_X))) {
+    BitVariableSet(RA-Bool[0x10])
+    AddIntStatToLog(1, 25)
+    TerminateConcurrentInfiniteLoop(9)
+    Return()
+  }
+}

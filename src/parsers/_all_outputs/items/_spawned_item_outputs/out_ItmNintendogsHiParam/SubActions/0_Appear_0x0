@@ -1,0 +1,26 @@
+[Appear] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x0 : GAME {
+}
+
+Subaction 0x0 : GFX {
+}
+
+Subaction 0x0 : SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(7690)
+  SynchronousTimer(71.0)
+  SoundEffect(7691)
+  SynchronousTimer(102.0)
+  SoundEffect(7692)
+}
+

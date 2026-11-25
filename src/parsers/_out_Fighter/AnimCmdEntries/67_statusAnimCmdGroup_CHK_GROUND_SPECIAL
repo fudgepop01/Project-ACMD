@@ -1,0 +1,6 @@
+// @ 0x23BBC
+CHK_GROUND_SPECIAL {
+  ClearPreventInterrupt(GROUND_SPECIAL)
+  SubRoutine(hidden_subroutine_0x2D34)
+  ClearPreventInterrupt(ALL?)
+}

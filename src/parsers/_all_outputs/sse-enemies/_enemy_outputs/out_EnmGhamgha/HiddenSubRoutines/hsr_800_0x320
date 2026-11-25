@@ -1,0 +1,7 @@
+[hsr_320]
+hidden_subroutine_0x320 {
+  if [IF_REQ_UNKNOWN_3ARG] (R(0x2744()), Variable_Int_Controller_Trigger_1_Count, -1 && R(NOT Bit is Set(LA-Bool[0x08]))) {
+    SubRoutine(hidden_subroutine_0x308)
+  }
+  Return()
+}

@@ -1,0 +1,9 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  SubRoutine(hidden_subroutine_0xF8)
+  FloatVariableSet(-1.7, LA-Float[0x01])
+  SynchronousTimer(10.0)
+  ChangeSubAction(1)
+  ChangeAction(10, R(Button Tap?()))
+}
+

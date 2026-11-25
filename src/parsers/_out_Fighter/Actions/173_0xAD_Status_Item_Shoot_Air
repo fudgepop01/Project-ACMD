@@ -1,0 +1,23 @@
+// Status_Item_Shoot_Air
+Action 0xAD: ENTRY {
+  ResetFlickX()
+  SubRoutine(hidden_subroutine_0x7A9C)
+  if (R(On Ground())) {
+    SubRoutine(hidden_subroutine_0x3DAC)
+  }
+  SetStateAerial()
+  SetAirGround(19)
+  Switch(10000, Variable_Int_Have_Item_Kind)
+    Case(24)
+      SubRoutine(hidden_subroutine_0x7384)
+    Case(44)
+      SubRoutine(hidden_subroutine_0x71A4)
+    Case(61)
+      SubRoutine(hidden_subroutine_0x758C)
+    Case(13)
+      SubRoutine(hidden_subroutine_0x7814)
+  EndSwitch()
+}
+
+Action 0xAD : EXIT {
+}

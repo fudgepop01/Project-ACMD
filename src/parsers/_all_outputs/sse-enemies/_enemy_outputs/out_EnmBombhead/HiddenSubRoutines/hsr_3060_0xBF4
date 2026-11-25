@@ -1,0 +1,4 @@
+[hsr_BF4]
+hidden_subroutine_0xBF4 {
+  GraphicEffect(16973834, 7, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.72, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}

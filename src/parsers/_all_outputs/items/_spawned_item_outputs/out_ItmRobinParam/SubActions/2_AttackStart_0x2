@@ -1,0 +1,36 @@
+[AttackStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x2 : GAME {
+}
+
+Subaction 0x2 : GFX {
+  GraphicEffectAttached(14483472, 37, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(14483461, 0, 0.0, 13.0, 6.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(45.0)
+  GraphicEffectAttached(51, 0, 0.0, 0.0, 3.5, 0.0, 0.0, 0.0, 0.9, true)
+}
+
+Subaction 0x2 : SOUND {
+  AsynchronousTimer(3.0)
+  SoundEffect(7824)
+  SynchronousTimer(22.0)
+  if (R(Is within footstool range())) {
+    SynchronousTimer(1.0)
+  } else {
+    if (R(Is within footstool range())) {
+      SoundEffect(7827)
+    } else {
+      SoundEffect(7828)
+    }
+  }
+}
+

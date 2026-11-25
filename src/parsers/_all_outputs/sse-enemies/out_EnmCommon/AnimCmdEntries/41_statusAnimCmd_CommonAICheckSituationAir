@@ -1,0 +1,7 @@
+// @ 0x3D68
+CommonAICheckSituationAir {
+  if (R(In Air())) {
+    BitVariableSet(RA-Bool[0x04])
+  }
+  Return()
+}

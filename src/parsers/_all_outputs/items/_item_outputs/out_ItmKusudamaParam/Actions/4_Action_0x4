@@ -1,0 +1,9 @@
+// Status_Run
+Action 0x4 {
+  (undef: team) 22_00_01_00(-1)
+  SubRoutine(hidden_subroutine_0x88)
+  DisableActionStatusId(4)
+  ChangeAction(3, R(In Air()))
+  ChangeSubAction(6)
+}
+

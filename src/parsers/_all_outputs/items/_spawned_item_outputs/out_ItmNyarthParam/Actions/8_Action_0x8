@@ -1,0 +1,10 @@
+// Status_Turn_Run
+Action 0x8 {
+  ChangeAction(6, R(Compare(LA-Int[0x0B] == 0.0)))
+  ChangeAction(12, R(On Ground()))
+  ChangeSubAction(1)
+  SetLoop(1000) {
+    SubRoutine(hidden_subroutine_0x2B0)
+  }
+}
+

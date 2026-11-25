@@ -1,0 +1,7 @@
+// Status_Dash
+Action 0x3 {
+  SubRoutine(hidden_subroutine_0x60)
+  BitVariableSet(LA-Bool[0x0C])
+  ChangeSubAction(2)
+}
+

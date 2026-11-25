@@ -1,0 +1,11 @@
+Action 0x132: ENTRY {
+  ChangeSubAction(500)
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(In Air()))
+}
+
+Action 0x132 : EXIT {
+}

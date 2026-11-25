@@ -1,0 +1,46 @@
+[Bullet] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xD: MAIN {
+  BodyCollision(2)
+  SetAnimationFrame(1.0)
+  FrameSpeedModifier(0.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 3, 20, -0.8, 363, 100, 0.0, 35, 0.0, 0, 0.0, 8.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 1.0, 1.0, false, false, 0, 2, 1, 3, true, 0, 311, false, 15, false, false, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+}
+
+Subaction 0xD: MAIN EXIT {
+}
+
+Subaction 0xD: MAIN INIT {
+  Module1901()
+}
+
+Subaction 0xD: GFX {
+  GraphicEffectReoccursWhenMove(0, 16973878, 3, 12.0, true)
+  (undef: animCmd) 0D_03_02_00(5, 1)
+}
+
+Subaction 0xD: GFX EXIT {
+  (undef: animCmd) 0D_04_01_00(5)
+}
+
+Subaction 0xD: GFX INIT {
+}
+
+Subaction 0xD: SFX {
+}
+
+Subaction 0xD: SFX EXIT {
+}
+
+Subaction 0xD: SFX INIT {
+}
+

@@ -1,0 +1,23 @@
+Action 0x13: MAIN {
+}
+
+Action 0x13: EXIT {
+}
+
+Action 0x13: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(9)
+  BasicVariableSet(18, LA-Int[0x06])
+  if (R(Compare(Variable_Int_Motion_Kind == 7.0))) {
+    SubAction09(12)
+  } elif (R(Compare(Variable_Int_Motion_Kind == 8.0))) {
+    SubAction09(13)
+  } elif (R(Compare(Variable_Int_Motion_Kind == 9.0))) {
+    SubAction09(14)
+  } elif (R(Compare(Variable_Int_Motion_Kind == 10.0))) {
+    SubAction09(11)
+    BasicVariableSet(2, LA-Int[0x06])
+  }
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 20)
+}
+

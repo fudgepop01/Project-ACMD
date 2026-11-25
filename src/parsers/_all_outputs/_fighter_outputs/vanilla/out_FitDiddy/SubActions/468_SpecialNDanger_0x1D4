@@ -1,0 +1,31 @@
+[SpecialNDanger] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D4: MAIN {
+}
+
+Subaction 0x1D4: GFX {
+  SetLoop(-1) {
+    GraphicEffectLanding(10, 0, 0.0, 0.0, -5.0, 0.0, 0.0, 0.0, 0.8, 4.0, 0.0, 10.0, 0.0, 0.0, 0.0, true)
+    SynchronousTimer(8.0)
+  }
+}
+
+Subaction 0x1D4: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffectTransient(5300)
+}
+
+Subaction 0x1D4: OTHER {
+  SlopeContourStand(6)
+  RumbleLoop(2, 0)
+}
+

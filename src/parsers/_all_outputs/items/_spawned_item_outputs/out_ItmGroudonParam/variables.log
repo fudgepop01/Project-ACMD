@@ -1,0 +1,14 @@
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x4 (Status_Run) @ 1 : 1
+
+LA-Int[0x00] in Action 0xF (Status_Fall_Aerial) @ 3 : 0
+LA-Int[0x00] in Action 0xF (Status_Fall_Aerial) @ 4 : 1
+LA-Int[0x00] in Action 0xF (Status_Fall_Aerial) @ 5 : 0
+LA-Int[0x00] in Action 0xF (Status_Fall_Aerial) @ 7 : 0
+LA-Int[0x00] in Action 0xF (Status_Fall_Aerial) @ 8 : 1
+
+LA-Int[0x01] in Action 0xF (Status_Fall_Aerial) @ 4 : 3
+LA-Int[0x01] in Action 0xF (Status_Fall_Aerial) @ 7 : 1
+
+LA-Int[0x0B] in Action 0xF (Status_Fall_Aerial) @ 0 : 1
+
+LA-Int[0x1B] in Subaction 0x0 : SOUND @ 1 : 1

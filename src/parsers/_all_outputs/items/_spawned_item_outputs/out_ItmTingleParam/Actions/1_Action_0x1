@@ -1,0 +1,24 @@
+// Status_Walk
+Action 0x1 {
+  (undef: Sp_base) 65_04_01_00(1400)
+  SubRoutine(Action_0x3)
+  DisableActionStatusId(1)
+  BasicVariableSet(-1, LA-Int[0x00])
+  BitVariableSet(LA-Bool[0x01])
+  (undef: Sp_base) 65_06_01_00(2)
+  ChangeSubAction(0)
+  FloatVariableSet(Variable_Float_Controller_Stick_Prev_Y_Abs, RA-Float[0x00])
+  FloatVariableMultiply(0.1, RA-Float[0x00])
+  AddSubtractMomentum_UNDOC3ARGS(0.0, 0.0, RA-Float[0x00])
+  SetLoop(-1) {
+    SynchronousTimer(1.0)
+    if (R(Compare(Variable_Float_Posture_Pos_Z <= Variable_Float_Controller_Stick_Prev_Y_Abs))) {
+      LoopBreak()
+    }
+  }
+  ResetMomentum()
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(4, R(On Ground()))
+}
+

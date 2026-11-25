@@ -1,0 +1,6 @@
+// @ 0x240FC
+Walk {
+  if (R(Bit is Set(LA-Bool[0x0A]))) {
+    ChangeReadingAction(4)
+  }
+}

@@ -1,0 +1,5 @@
+// Status_Run_Brake
+Action 0x5 {
+  ChangeActionStatus(6, 6, R(Successfully tethered ledge()), true)
+}
+

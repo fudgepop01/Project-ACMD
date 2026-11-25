@@ -1,0 +1,7 @@
+Action 0x120: ENTRY {
+  SetGimmickEffectFlag(false)
+}
+
+Action 0x120 : EXIT {
+  SetGimmickEffectFlag(true)
+}

@@ -1,0 +1,9 @@
+// Status_Turn_Dash
+Action 0x7 {
+  BasicVariableSet(-1, LA-Int[0x0C])
+  ChangeSubAction(5)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(6, R(Button Tap?()))
+}
+

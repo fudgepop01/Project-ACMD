@@ -1,0 +1,81 @@
+[hsr_B3C]
+hidden_subroutine_0xB3C {
+  if (R(Compare(Variable_Int_Motion_Kind != 4.0)) && R(NOT Animation End()) && R(NOT Animation has looped?())) {
+    Return()
+  }
+  BasicVariableSet(1, LA-Int[0x06])
+  if (R(Compare(Variable_Float_Motion_Trans_Move_Speed_X >= IC-Int[0x5DC4])) && R(Compare(Variable_Float_Motion_Trans_Move_Speed_X <= IC-Int[0x5DC3]))) {
+    BasicVariableSet(2, LA-Int[0x06])
+  } else {
+    if (R(Compare(Variable_Float_Motion_Trans_Move_Speed_X >= IC-Int[0x5DC6])) && R(Compare(Variable_Float_Motion_Trans_Move_Speed_X <= IC-Int[0x5DC5]))) {
+      BasicVariableSet(2, LA-Int[0x06])
+    }
+  }
+  if (R(Compare(LA-Int[0x06] != 2.0))) {
+    Switch(1001, -1)
+      Case(-1)
+        BasicVariableSet(2, LA-Int[0x06])
+      Case(3)
+        BasicVariableSet(3, LA-Int[0x06])
+      Case(2)
+        BasicVariableSet(4, LA-Int[0x06])
+      DefaultCase()
+        (undef: unk_procedures) 1B_02_01_00(F(0x00000774))
+    EndSwitch()
+  }
+  if (R(Compare(LA-Int[0x06] == 2.0))) {
+    if (R(Compare(Variable_Int_Motion_Kind != 4.0))) {
+      if (R(Compare(Variable_Int_Motion_Kind == 6.0))) {
+        SubAction09(8)
+      } elif (R(Compare(Variable_Int_Motion_Kind == 3.0))) {
+        SubAction09(8)
+      } elif (R(Compare(Variable_Int_Motion_Kind == 7.0))) {
+        SubAction09(9)
+      } elif (R(Compare(Variable_Int_Motion_Kind == 5.0))) {
+        SubAction09(9)
+      } elif (R(Compare(Variable_Int_Motion_Kind == 8.0))) {
+        SubAction09(4)
+      } elif (R(Compare(Variable_Int_Motion_Kind == 9.0))) {
+        SubAction09(4)
+      } else {
+        SubAction09(4)
+      }
+    }
+  } elif (R(Compare(LA-Int[0x06] == 3.0))) {
+    if (R(Compare(Variable_Int_Motion_Kind != 3.0))) {
+      if (R(Compare(Variable_Int_Motion_Kind == 6.0))) {
+        SubAction09(3)
+      } elif (R(Compare(Variable_Int_Motion_Kind == 8.0))) {
+        SubAction09(6)
+      } elif (R(Compare(Variable_Int_Motion_Kind == 7.0))) {
+        SubAction09(9)
+      } elif (R(Compare(Variable_Int_Motion_Kind == 5.0))) {
+        SubAction09(9)
+      } elif (R(Compare(Variable_Int_Motion_Kind == 9.0))) {
+        SubAction09(6)
+      } elif (R(Compare(Variable_Int_Motion_Kind == 4.0))) {
+        SubAction09(6)
+      } else {
+        SubAction09(3)
+      }
+    }
+  } elif (R(Compare(LA-Int[0x06] == 4.0))) {
+    if (R(Compare(Variable_Int_Motion_Kind != 5.0))) {
+      if (R(Compare(Variable_Int_Motion_Kind == 7.0))) {
+        SubAction09(5)
+      } elif (R(Compare(Variable_Int_Motion_Kind == 9.0))) {
+        SubAction09(7)
+      } elif (R(Compare(Variable_Int_Motion_Kind == 6.0))) {
+        SubAction09(8)
+      } elif (R(Compare(Variable_Int_Motion_Kind == 3.0))) {
+        SubAction09(8)
+      } elif (R(Compare(Variable_Int_Motion_Kind == 8.0))) {
+        SubAction09(7)
+      } elif (R(Compare(Variable_Int_Motion_Kind == 4.0))) {
+        SubAction09(7)
+      } else {
+        SubAction09(5)
+      }
+    }
+  }
+}

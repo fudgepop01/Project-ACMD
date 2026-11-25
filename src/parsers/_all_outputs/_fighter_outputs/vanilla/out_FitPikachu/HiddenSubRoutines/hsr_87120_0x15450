@@ -1,0 +1,6 @@
+[hsr_15450]
+hidden_subroutine_0x15450 {
+  if (R(Article Available())) {
+    GenerateArticle(0)
+  }
+}

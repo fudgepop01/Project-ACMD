@@ -1,0 +1,13 @@
+[hsr_16068]
+hidden_subroutine_0x16068 {
+  Switch(10000, RA-Int[0x00])
+    Case(0)
+      SetAirGround(10)
+      Break()
+    Case(1)
+      Break()
+    Case(2)
+      SetAirGround(0)
+      Break()
+  EndSwitch()
+}

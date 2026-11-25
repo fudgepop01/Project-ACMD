@@ -1,0 +1,20 @@
+[hsr_5294]
+hidden_subroutine_0x5294 {
+  if (R(NOT 0x2723())) {
+    if (R(Bit is Set(RA-Bool[0x11])) && R(NOT Bit is Set(LA-Bool[0x0B]))) {
+      if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+        AllowInterrupt()
+        SetAirGround(0)
+        AllowSpecificInterrupt(AIR_SPECIAL)
+        EnableDisableLedgegrab(4)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      if (R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed_Y <= 0.0))) {
+        AllowSpecificInterrupt(AIR_TREAD_JUMP)
+        AllowSpecificInterrupt(AIR_WALL_JUMP)
+        AllowSpecificInterrupt(AIR_JUMP_AERIAL)
+      }
+      SubRoutine(statusAnimCmd_FALLCommonUniq)
+    }
+  }
+}

@@ -1,0 +1,17 @@
+// Status_Walk
+Action 0x1 {
+  (undef: Sp_base) 65_06_01_00(2)
+  ChangeActionStatus(4, 4, R(On Ground()))
+  SubRoutine(hidden_subroutine_0x28)
+  ChangeSubAction(0)
+  DisableSpecifiedMovement(2)
+  SynchronousTimer(20.0)
+  EnableSpecifiedMovement(2)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 1.5, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  SubRoutine(hidden_subroutine_0x8)
+  DisableActionStatusId(1)
+  ChangeActionStatus(3, 3, R(In Air()))
+}
+

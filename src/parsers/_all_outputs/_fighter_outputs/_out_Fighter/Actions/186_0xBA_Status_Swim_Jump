@@ -1,0 +1,17 @@
+// Status_Swim_Jump
+Action 0xBA: ENTRY {
+  ResetFlickY()
+  ResetButtonPress()
+  BasicVariableSet(0, RA-Int[0x01])
+  if (R(Compare(LA-Int[0x13] < Common_Param_Int_Swim_Jump_Speed_Y_Dec_Count))) {
+    BasicVariableIncrement(LA-Int[0x13])
+  }
+  BitVariableSet(RA-Bool[0x0B])
+  ChangeSubAction(21)
+  FrameSpeedModifier(0.0)
+  ChangeAction(11, R(Compare(RA-Int[0x01] > Common_Param_Int_Swim_Jump_Charge_Frame)))
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1C8A4)
+}
+
+Action 0xBA : EXIT {
+}

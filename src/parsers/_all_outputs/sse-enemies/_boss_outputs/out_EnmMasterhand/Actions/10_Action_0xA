@@ -1,0 +1,29 @@
+Action 0xA: MAIN {
+  SubRoutine(hidden_subroutine_0x151C)
+}
+
+Action 0xA: EXIT {
+  (undef: Sp_Kinetic) 66_07_01_00(-1)
+  (undef: Sp_base) 65_16_00_00()
+}
+
+Action 0xA: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(11)
+  if (R(NOT Bit is Set(LA-Bool[0x08]))) {
+    SubAction09(31)
+    BasicVariableSet(2, LA-Int[0x06])
+    (undef: Sp_Kinetic) 66_00_03_00(3, 16, 0.0)
+  } else {
+    SubAction09(13)
+    BasicVariableSet(47, LA-Int[0x06])
+    BitVariableClear(LA-Bool[0x08])
+    (undef: Sp_Kinetic) 66_00_03_00(3, 54, 0.0)
+  }
+  (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE4], LA-Float[0x08])
+  (undef: Sp_base) 65_20_02_00(IC-Int[0xABE4], LA-Float[0x0D])
+  (undef: Sp_base) 65_16_00_00()
+  (undef: Sp_base) 65_14_01_00(LA-Float[0x08])
+  (undef: Sp_base) 65_15_01_00(LA-Float[0x0D])
+}
+

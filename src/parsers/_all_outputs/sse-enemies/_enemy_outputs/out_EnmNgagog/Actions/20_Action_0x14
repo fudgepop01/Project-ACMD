@@ -1,0 +1,24 @@
+Action 0x14: MAIN {
+}
+
+Action 0x14: EXIT {
+  if (R(0x11())) {
+    (undef: territory) 15_00_00_00()
+  }
+}
+
+Action 0x14: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(15)
+  SubAction09(1)
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    (undef: Sp_Kinetic) 66_00_02_00(5, 47)
+  } elif (R(Bit is Set(LA-Bool[0x07]))) {
+    (undef: Sp_Kinetic) 66_00_02_00(5, 46)
+  } else {
+    (undef: Sp_Kinetic) 66_00_02_00(5, 45)
+  }
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 48)
+  BasicVariableSet(8, LA-Int[0x06])
+}
+

@@ -1,0 +1,47 @@
+[Run] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xF: MAIN {
+}
+
+Subaction 0xF: GFX {
+  GraphicEffectAttached(2359298, 96, 0.0, 0.0, 0.0, 0.0, 0.0, -90.0, 1.0, true)
+  AsynchronousTimer(4.0)
+  SetLoop(-1) {
+    GraphicEffect(38, 0, 2.0, 1.0, 4.0, 0.0, 30.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+    GraphicEffect(38, 0, 2.0, 1.0, -4.0, 0.0, -30.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+    GraphicEffect(2359297, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+    GraphicEffectStepping(26, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+    SynchronousTimer(7.0)
+  }
+}
+
+Subaction 0xF: SOUND {
+  SoundEffectTransient(5945)
+}
+
+Subaction 0xF: OTHER {
+  SlopeContourStand03(9, 5, true)
+  AsynchronousTimer(2.0)
+  Rumble(22, 0)
+  AsynchronousTimer(12.0)
+  Rumble(22, 0)
+  AsynchronousTimer(22.0)
+  Rumble(22, 0)
+  AsynchronousTimer(32.0)
+  Rumble(22, 0)
+  AsynchronousTimer(42.0)
+  Rumble(22, 0)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0xF : OTHER)
+}
+

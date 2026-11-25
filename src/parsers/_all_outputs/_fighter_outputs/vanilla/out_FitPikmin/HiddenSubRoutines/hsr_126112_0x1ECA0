@@ -1,0 +1,8 @@
+[hsr_1ECA0]
+hidden_subroutine_0x1ECA0 {
+  if (R(Compare(Variable_Int_Controller_Flick_X <= IC-Int[0x5DC0]))) {
+    BitVariableSet(RA-Bool[0x11])
+    TerminateConcurrentInfiniteLoop(9)
+    Return()
+  }
+}

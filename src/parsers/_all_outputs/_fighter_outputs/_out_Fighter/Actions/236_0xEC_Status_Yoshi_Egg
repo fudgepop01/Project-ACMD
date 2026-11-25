@@ -1,0 +1,12 @@
+// Status_Yoshi_Egg
+Action 0xEC: ENTRY {
+  SetGimmickEffectFlag(false)
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+  UnkRaBit27(true)
+  BroadcastYoshiEggStartOrEnd(true)
+}
+
+Action 0xEC : EXIT {
+  BroadcastYoshiEggStartOrEnd(false)
+}

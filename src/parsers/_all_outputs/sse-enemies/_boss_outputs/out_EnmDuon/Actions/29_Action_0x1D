@@ -1,0 +1,18 @@
+Action 0x1D: MAIN {
+}
+
+Action 0x1D: EXIT {
+}
+
+Action 0x1D: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(14)
+  BasicVariableSet(30, LA-Int[0x06])
+  if (R(Bit is Set(LA-Bool[0x07]))) {
+    SubAction09(20)
+  } else {
+    SubAction09(2)
+  }
+  (undef: Sp_Kinetic) 66_00_02_00(3, 23)
+}
+

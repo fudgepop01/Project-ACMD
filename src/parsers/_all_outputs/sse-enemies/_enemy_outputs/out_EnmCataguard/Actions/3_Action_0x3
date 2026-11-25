@@ -1,0 +1,41 @@
+Action 0x3: MAIN {
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonDamageProc [Action 0x2: MAIN])
+}
+
+Action 0x3: EXIT {
+  if (R(Bit is Set(LA-Bool[0x04])) && R(Compare(Variable_Int_Status_Kind != 2.0)) && R(Compare(Variable_Int_Status_Kind != 3.0))) {
+    SubRoutine(EXTERNAL: statusAnimCmd_CommonDamageCancel [Action 0x2: EXIT])
+  }
+}
+
+Action 0x3: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_03_00_00()
+  (undef: Sp_AI) 6A_00_02_00(11, 7)
+  if (R(Bit is Set(LA-Bool[0x06]))) {
+    if (R(Bit is Set(LA-Bool[0x0B]))) {
+      SubAction09(8)
+      (undef: Sp_AI) 6A_00_01_00(28)
+      (undef: Sp_Link) 6E_00_03_00(1, 5104, 8)
+      (undef: Sp_Link) 6E_00_03_00(2, 5104, 8)
+    } else {
+      SubAction09(7)
+      (undef: Sp_Link) 6E_00_03_00(1, 5104, 7)
+      (undef: Sp_Link) 6E_00_03_00(2, 5104, 7)
+    }
+  } else {
+    if (R(Bit is Set(LA-Bool[0x0B]))) {
+      SubAction09(0)
+      (undef: Sp_AI) 6A_00_01_00(28)
+      (undef: Sp_AI) 6A_00_01_00(31)
+      (undef: Sp_Link) 6E_00_03_00(1, 5104, 0)
+      (undef: Sp_Link) 6E_00_03_00(2, 5104, 0)
+    } else {
+      SubAction09(7)
+      (undef: Sp_Link) 6E_00_03_00(1, 5104, 7)
+      (undef: Sp_Link) 6E_00_03_00(2, 5104, 7)
+    }
+  }
+  SubRoutine(hidden_subroutine_0x5A0)
+}
+

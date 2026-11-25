@@ -1,0 +1,28 @@
+[SpecialSSquat] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1DE: MAIN {
+}
+
+Subaction 0x1DE: GFX {
+  GraphicEffect(52, 67, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x1DE: SOUND {
+  StopSoundEffect(6693)
+  SoundEffect(6694)
+}
+
+Subaction 0x1DE: OTHER {
+  SlopeContourStand(6)
+  Rumble(4, 0)
+}
+

@@ -1,0 +1,12 @@
+[hsr_81BC]
+hidden_subroutine_0x81BC {
+  if (R(Bit is Set(RA-Bool[0x11])) && R(NOT Bit is Set(RA-Bool[0x12]))) {
+    SetTagDisplay(true)
+    BitVariableSet(RA-Bool[0x12])
+  } else {
+    if (R(NOT Bit is Set(RA-Bool[0x11])) && R(Bit is Set(RA-Bool[0x12]))) {
+      SetTagDisplay(false)
+      BitVariableClear(RA-Bool[0x12])
+    }
+  }
+}

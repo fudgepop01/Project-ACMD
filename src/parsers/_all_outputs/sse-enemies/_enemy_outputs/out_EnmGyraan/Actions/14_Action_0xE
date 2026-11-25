@@ -1,0 +1,20 @@
+Action 0xE: MAIN {
+}
+
+Action 0xE: EXIT {
+  (undef: Sp_Kinetic) 66_07_01_00(3)
+  (undef: Sp_Kinetic) 66_07_01_00(5)
+}
+
+Action 0xE: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(26)
+  if (R(Compare(Variable_Int_Motion_Kind == 14.0))) {
+    SubAction09(15)
+  } else {
+    SubAction09(8)
+  }
+  (undef: Sp_base) 65_09_02_00(IC-Int[0xABE4], LA-Float[0x02])
+  BitVariableSet(LA-Bool[0x08])
+}
+

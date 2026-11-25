@@ -1,0 +1,15 @@
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in Action 0x5 (Status_Run_Brake) @ 4 : 3
+
+LA-Float[0x00] in Action 0x1 (Status_Walk) @ 2 : 1
+
+LA-Float[0x01] in Action 0x1 (Status_Walk) @ 3 : 1
+
+LA-Float[0x02] in Action 0x1 (Status_Walk) @ 4 : 1
+
+RA-Int[0x00] in Action 0x5 (Status_Run_Brake) @ 0 : 1
+RA-Int[0x00] in Action 0x5 (Status_Run_Brake) @ 3 : 2
+RA-Int[0x00] in Action 0x5 (Status_Run_Brake) @ 4 : 1
+RA-Int[0x00] in Action 0x5 (Status_Run_Brake) @ 5 : 1
+RA-Int[0x00] in Action 0x5 (Status_Run_Brake) @ 6 : 1
+RA-Int[0x00] in Action 0x5 (Status_Run_Brake) @ 8 : 0
+RA-Int[0x00] in Action 0x5 (Status_Run_Brake) @ 11 : 1

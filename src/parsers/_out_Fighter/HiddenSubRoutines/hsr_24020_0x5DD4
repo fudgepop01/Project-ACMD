@@ -1,0 +1,6 @@
+[hsr_5DD4]
+hidden_subroutine_0x5DD4 {
+  if (R(Compare(Variable_Float_Controller_Stick_Y < Common_Param_Float_Jump_Neutral_Y))) {
+    BitVariableSet(RA-Bool[0x11])
+  }
+}

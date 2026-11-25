@@ -1,0 +1,78 @@
+[SpecialSThrow] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1C: MAIN {
+  VictorySoundEffect(5821)
+  AsynchronousTimer(21.0)
+  BitVariableSet(RA-Bool[0x10])
+  SpecialOffensiveCollision(Sp(0, 0), 10, 65, Sp(0, 60), Sp(0, 40), 5.5, 0.0, 8.0, 9.0, 0.0, 0.5, 1.0, 805514261, 0, 139460547)
+  if (R(Bit is Set(RA-Bool[0x06]))) {
+    ThrowAttackCollision(0, 0, 5, 65, 219, 0, 65, 21, 0.0, 1.0, 0.0, 2, 22, 3, true, true, 8)
+  } else {
+    ThrowAttackCollision(0, 0, 3, 65, 212, 0, 40, 21, 0.0, 1.0, 0.0, 2, 22, 3, true, true, 8)
+    BitVariableSet(RA-Bool[0x06])
+  }
+  ThrowAttackCollision(1, 0, 3, 45, 100, 0, 60, 0, 0.0, 1.0, 1.0, 0, 0, 3, true, true, 8)
+  AsynchronousTimer(22.0)
+  TerminateCollisions()
+  ThrowCollision(0, 55, RA-Int[0x02], RA-Int[0x03], RA-Int[0x04])
+  FrameSpeedModifier(1.4286)
+  AsynchronousTimer(42.0)
+  AllowInterrupt()
+}
+
+Subaction 0x1C: GFX {
+  GraphicEffect(52, 31, 0.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.6, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(19.0)
+  GraphicEffectAttached(2228226, 29, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, true)
+  GraphicEffectAttached(2228227, 49, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, true)
+  AsynchronousTimer(21.0)
+  if (R(NOT Bit is Set(RA-Bool[0x06]))) {
+    SubRoutine(hidden_subroutine_0x23C58)
+    SubRoutine(Subaction_0x3 : MAIN)
+  }
+  GraphicEffect(2228235, 0, 0.0, 6.0, 8.0, 0.0, 0.0, 0.0, 0.7, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffectLanding(33, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  FlashOverlayEffect(255, 255, 255, 240)
+  SynchronousTimer(2.0)
+  FlashOverlayEffect(128, 240, 255, 200)
+  SynchronousTimer(1.0)
+  ChangeFlashOverlayColor(5, 0, 0, 255, 0)
+  SynchronousTimer(5.0)
+  TerminateFlashEffect()
+}
+
+Subaction 0x1C: SOUND {
+  BasicVariableSet(64, RA-Int[0x0A])
+  SetLoop(20) {
+    if (R(Button Pressed(Attack)) && R(NOT Button Press(CStick)) && R(NOT Bit is Set(RA-Bool[0x06])) && R(Compare(LA-Float[0x1B] >= 65.0))) {
+      FlashOverlayEffect(136, 247, 255, 150)
+      FloatVariableSubtract(65.0, LA-Float[0x1B])
+      SubRoutine(Subaction_0x3 : MAIN)
+      BitVariableSet(RA-Int[0x06])
+      SubRoutine(hidden_subroutine_0x24D08)
+      VictorySoundEffect(2315)
+      SynchronousTimer(4.0)
+      FlashOverlayEffect(0, 0, 0, 0)
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Subaction 0x1C: OTHER {
+  HeldItemsVisibility(false)
+  SlopeContourStand(6)
+  AsynchronousTimer(21.0)
+  Rumble(15, 0)
+  AsynchronousTimer(40.0)
+  HeldItemsVisibility(true)
+}
+

@@ -1,0 +1,24 @@
+Action 0x12D: ENTRY {
+  ChangeActionStatus(10000, 0, R(Animation End()))
+  ChangeActionStatus(10002, 14, R(Animation End()))
+  if [IF_REQ_UNKNOWN_3ARG] (R(NOT 0x18()), 13, 2) {
+    BasicVariableSet(487, RA-Int[0x00])
+    BasicVariableSet(488, RA-Int[0x01])
+  } elif (R(Compare(RA-Float[0x08] >= IC-Int[0xFA0]))) {
+    BasicVariableSet(478, RA-Int[0x00])
+    BasicVariableSet(484, RA-Int[0x01])
+  } else {
+    if (R(Compare(RA-Float[0x08] <= IC-Int[0xFA1]))) {
+      BasicVariableSet(479, RA-Int[0x00])
+      BasicVariableSet(485, RA-Int[0x01])
+    } else {
+      BasicVariableSet(480, RA-Int[0x00])
+      BasicVariableSet(486, RA-Int[0x01])
+    }
+  }
+  Goto(hidden_subroutine_0x18E40)
+}
+
+Action 0x12D : EXIT {
+  SubRoutine(hidden_subroutine_0x1B0F4)
+}

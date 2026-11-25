@@ -1,0 +1,5 @@
+[hsr_860]
+hidden_subroutine_0x860 {
+  (undef: targetSearch) 16_00_00_00()
+  SubRoutine(hidden_subroutine_0x828)
+}

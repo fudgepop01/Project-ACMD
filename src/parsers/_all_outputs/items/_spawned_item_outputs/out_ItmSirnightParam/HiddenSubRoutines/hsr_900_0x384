@@ -1,0 +1,9 @@
+[hsr_384]
+hidden_subroutine_0x384 {
+  if (R(Is within footstool range())) {
+    LeftDirection()
+    DecideDirection()
+    CharacterSpecific01()
+  }
+  Return()
+}

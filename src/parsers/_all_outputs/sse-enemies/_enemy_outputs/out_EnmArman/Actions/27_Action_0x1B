@@ -1,0 +1,22 @@
+Action 0x1B: MAIN {
+}
+
+Action 0x1B: EXIT {
+  (undef: Sp_base) 65_10_01_00(1)
+}
+
+Action 0x1B: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(46)
+  SubAction09(22)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 32)
+  BitVariableSet(LA-Bool[0x08])
+  SubRoutine(hidden_subroutine_0x674)
+  if (R(Bit is Set(LA-Bool[0x07]))) {
+    (undef: Sp_base) 65_04_01_00(1)
+  } else {
+    (undef: Sp_base) 65_11_01_00(1)
+  }
+  BitVariableClear(LA-Bool[0x07])
+}
+

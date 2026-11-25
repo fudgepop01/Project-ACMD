@@ -1,0 +1,23 @@
+// Status_Walk
+Action 0x1 {
+  BasicVariableRandom(3, 6, LA-Int[0x00])
+  (undef: Sp_base) 65_06_01_00(2)
+  ChangeSubAction(0)
+  SynchronousTimer(5.0)
+  DisableSpecifiedMovement(2)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  (undef: Sp_base) 65_07_03_00(16, 0.0, -20.0)
+  (undef: Sp_Kinetic) 66_05_01_00(3)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 1.2, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+  ChangeSubAction(1)
+  while (R(NOT Bit is Set(RA-Bool[0x04]))) {
+    SynchronousTimer(5.0)
+    EndWhile()
+    (undef: Sp_Kinetic) 66_05_01_00(0)
+    (undef: Sp_base) 65_0A_04_00(1, 0.0, 0.0, -30.0)
+    ChangeSubAction(2)
+    SubRoutine(hidden_subroutine_0x8)
+    ChangeAction(5, R(Button Tap?()))
+}
+

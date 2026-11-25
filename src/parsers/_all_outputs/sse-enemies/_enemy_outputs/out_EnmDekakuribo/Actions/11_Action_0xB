@@ -1,0 +1,31 @@
+Action 0xB: MAIN {
+  SetLoop(-1) {
+    if (R(Successfully tethered ledge())) {
+      if [IF_REQ_UNKNOWN_3ARG] (R(0x12()), 1, Variable_Int_Controller_Flick_No_Reset_Y) {
+        (undef: Sp_Area) 69_00_01_00(Variable_Int_Controller_Flick_No_Reset_Y)
+      }
+    }
+    SubRoutine(hidden_subroutine_0x6C0)
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0xB: EXIT {
+  SubRoutine(hidden_subroutine_0x848)
+}
+
+Action 0xB: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  SubRoutine(hidden_subroutine_0x4A8)
+  if (R(Compare(Variable_Int_Status_Prev_Kind != 12.0))) {
+    if (R(Facing Left())) {
+      SubAction09(10)
+    } else {
+      SubAction09(11)
+    }
+    (undef: Sp_Kinetic) 66_0B_02_00(4, 20)
+    (undef: Sp_Kinetic) 66_00_02_00(3, 15)
+  }
+  SubRoutine(hidden_subroutine_0x7F8)
+}
+

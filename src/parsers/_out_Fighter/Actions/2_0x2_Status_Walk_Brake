@@ -1,0 +1,9 @@
+// Status_Walk_Brake
+Action 0x2: ENTRY {
+  SubRoutine(statusAnimCmd_WaitCommon)
+  ChangeAction(0, R(Animation End()))
+  ChangeSubAction(13, false, 0.0)
+}
+
+Action 0x2 : EXIT {
+}

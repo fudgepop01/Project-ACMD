@@ -1,0 +1,12 @@
+[hsr_1B8]
+hidden_subroutine_0x1B8 {
+  DisableSpecifiedMovement(2)
+  ChangeSubAction(0)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  EnableSpecifiedMovement(2)
+  ChangeAction(3, R(In Air()))
+  ChangeSubAction(4)
+  ChangeAction(10, R(On Ground()))
+  Return()
+}

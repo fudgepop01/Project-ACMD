@@ -1,0 +1,48 @@
+[PressAttack] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x4: MAIN {
+}
+
+Subaction 0x4: MAIN EXIT {
+}
+
+Subaction 0x4: MAIN INIT {
+}
+
+Subaction 0x4: GFX {
+  GraphicEffectAttached(12845057, 8, 0.002, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12845057, 6, 0.002, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12845057, 7, 0.002, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(21.0)
+  GraphicEffectAttached(12845066, 5, -25.0, -18.906, -37.5, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12845066, 5, -25.0, -18.906, -63.75, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12845066, 5, 25.0, -18.906, -37.5, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12845066, 5, 25.0, -18.906, -63.75, 0.0, 0.0, 0.0, 1.0, true)
+}
+
+Subaction 0x4: GFX EXIT {
+}
+
+Subaction 0x4: GFX INIT {
+}
+
+Subaction 0x4: SFX {
+  SynchronousTimer(20.0)
+  SoundEffect(9968)
+}
+
+Subaction 0x4: SFX EXIT {
+}
+
+Subaction 0x4: SFX INIT {
+}
+

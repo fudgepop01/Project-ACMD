@@ -1,0 +1,7 @@
+// @ 0x1F7E4
+SpecialN__11ftYoshiNode {
+  BasicVariableSet(462, RA-Int[0x00])
+  BasicVariableSet(465, RA-Int[0x01])
+  BitVariableClear(RA-Bool[0x10])
+  SubRoutine(hidden_subroutine_0x19BC0)
+}

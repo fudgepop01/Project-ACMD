@@ -1,0 +1,6 @@
+// Status_Jump_Aerial
+Action 0xC {
+  (undef: Sp_base) 65_07_01_00(5)
+  SubRoutine(hidden_subroutine_0x298)
+}
+

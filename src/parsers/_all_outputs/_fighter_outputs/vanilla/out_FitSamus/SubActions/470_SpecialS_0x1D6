@@ -1,0 +1,33 @@
+[SpecialS] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D6: MAIN {
+  AsynchronousTimer(22.0)
+  BitVariableSet(RA-Bool[0x10])
+}
+
+Subaction 0x1D6: GFX {
+  AsynchronousTimer(22.0)
+  GraphicEffectLanding(33, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GraphicEffect(10, 43, -5.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GraphicEffect(262153, 43, 6.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x1D6: SOUND {
+}
+
+Subaction 0x1D6: OTHER {
+  SlopeContourStand(6)
+  CharacterSpecific03(4, 60.0)
+  AsynchronousTimer(22.0)
+  Rumble(12, 0)
+}
+

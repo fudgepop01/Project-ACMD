@@ -1,0 +1,30 @@
+Action 0x113: ENTRY {
+  BitVariableClear(RA-Bool[0x10])
+  BitVariableClear(RA-Bool[0x11])
+  BitVariableClear(RA-Bool[0x12])
+  BitVariableClear(RA-Bool[0x13])
+  SetDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  if (R(On Ground())) {
+    BasicVariableSet(0, RA-Int[0x00])
+    ChangeSubAction(466)
+    SubRoutine(hidden_subroutine_0x1B030)
+    ChangeAction(16, R(In Air()))
+    ChangeAction(0, R(Animation End()))
+    SetAirGround(15)
+    ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1B080)
+  } else {
+    BasicVariableSet(2, RA-Int[0x00])
+    ChangeSubAction(468)
+    SubRoutine(hidden_subroutine_0x1B0D0)
+    ChangeAction(16, R(Animation End()))
+    ChangeAction(25, R(On Ground()))
+    SetAirGround(17)
+    ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1B120)
+  }
+  ChangeAction(280, R(Bit is Set(RA-Bool[0x10])))
+}
+
+Action 0x113 : EXIT {
+}

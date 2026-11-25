@@ -1,0 +1,8 @@
+// @ 0x23CCC
+Fall {
+  if (R(Bit is Set(LA-Bool[0x18]))) {
+    ChangeReadingAction(73)
+  } elif (R(Bit is Set(LA-Bool[0x0B]))) {
+    ChangeReadingAction(228)
+  }
+}

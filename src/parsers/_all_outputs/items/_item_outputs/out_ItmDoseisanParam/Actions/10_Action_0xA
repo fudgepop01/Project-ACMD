@@ -1,0 +1,17 @@
+// Status_Jump_Squat
+Action 0xA {
+  SubRoutine(hidden_subroutine_0x40)
+  DisableActionStatusId(10)
+  ChangeAction(3, R(In Air()))
+  (undef: Sp_Kinetic) 66_02_02_00(0.25, 0.0)
+  ChangeSubAction(1)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ReverseDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  ChangeSubAction(7)
+  FrameSpeedModifier(2.0)
+  ChangeAction(9, R(On Ground()))
+}
+

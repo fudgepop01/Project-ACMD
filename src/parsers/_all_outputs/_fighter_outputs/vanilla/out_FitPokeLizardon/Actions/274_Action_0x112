@@ -1,0 +1,97 @@
+Action 0x112: ENTRY {
+  BitVariableClear(RA-Bool[0x10])
+  BitVariableClear(RA-Bool[0x11])
+  BitVariableClear(RA-Bool[0x12])
+  BasicVariableSet(0, RA-Int[0x02])
+  ChangeActionStatus(10147, 0, R(Animation End()))
+  DisableActionStatusId(10147)
+  ChangeActionStatus(10148, 14, R(Animation End()))
+  DisableActionStatusId(10148)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x17464)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(2)
+      Switch(10000, RA-Int[0x02])
+        Case(0)
+          SetAirGround(15)
+          if (R(Bit is Set(RA-Bool[0x10]))) {
+            ChangeSubAction(463, true)
+          } else {
+            ChangeSubAction(463)
+            BitVariableSet(RA-Bool[0x10])
+          }
+          SetRequirement(R(Animation End()))
+        Case(1)
+          SetAirGround(6)
+          if (R(Bit is Set(RA-Bool[0x11]))) {
+            ChangeSubAction(464, true)
+          } else {
+            ChangeSubAction(464)
+            BitVariableSet(RA-Bool[0x11])
+          }
+          SetRequirement(R(Button Not Pressed(Special)))
+          SetExtraRequirement(R(Compare(RA-Int[0x01] >= 1.0)))
+          SetExtraRequirement(R(Compare(RA-Int[0x00] >= IC-Int[0x5DC0])))
+        Case(2)
+          SetAirGround(6)
+          if (R(Bit is Set(RA-Bool[0x12]))) {
+            ChangeSubAction(465, true)
+          } else {
+            ChangeSubAction(465)
+            BitVariableSet(RA-Bool[0x12])
+          }
+          EnableActionStatusId(10147)
+          DisableActionStatusId(10148)
+      EndSwitch()
+      SetRequirement(R(In Air()))
+    } else {
+      SetAirGround(10)
+      SetAerialOrOnstage(5)
+      Switch(10000, RA-Int[0x02])
+        Case(0)
+          if (R(Bit is Set(RA-Bool[0x10]))) {
+            ChangeSubAction(466, true)
+          } else {
+            ChangeSubAction(466)
+            BitVariableSet(RA-Bool[0x10])
+          }
+          SetRequirement(R(Animation End()))
+        Case(1)
+          if (R(Bit is Set(RA-Bool[0x11]))) {
+            ChangeSubAction(467, true)
+          } else {
+            ChangeSubAction(467)
+            BitVariableSet(RA-Bool[0x11])
+          }
+          SetRequirement(R(Button Not Pressed(Special)))
+          SetExtraRequirement(R(Compare(RA-Int[0x01] >= 1.0)))
+          SetExtraRequirement(R(Compare(RA-Int[0x00] >= IC-Int[0x5DC0])))
+        Case(2)
+          if (R(Bit is Set(RA-Bool[0x12]))) {
+            ChangeSubAction(468, true)
+          } else {
+            ChangeSubAction(468)
+            BitVariableSet(RA-Bool[0x12])
+          }
+          DisableActionStatusId(10147)
+          EnableActionStatusId(10148)
+      EndSwitch()
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+    Switch(10000, RA-Int[0x02])
+      Case(0)
+        if (R(Animation End())) {
+          BasicVariableSet(1, RA-Int[0x02])
+        }
+      Case(1)
+        if (R(Button Not Pressed(Special)) && R(Compare(RA-Int[0x01] >= 1.0)) && R(Compare(RA-Int[0x00] >= IC-Int[0x5DC0]))) {
+          BasicVariableSet(2, RA-Int[0x02])
+        }
+      Case(2)
+    EndSwitch()
+  }
+}
+
+Action 0x112 : EXIT {
+}

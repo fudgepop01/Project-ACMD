@@ -1,0 +1,56 @@
+Action 0x116: ENTRY {
+  EnterFinalSmashState()
+  SetGimmickEffectFlag(false)
+  GenerateArticle(0)
+  ChangeActionStatus(10000, 0, R(Animation End()))
+  ChangeActionStatus(10002, 14, R(Animation End()))
+
+  ChangeAction(287, R(Bit is Set(RA-Bool[0x11])))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x10])))
+
+  BasicVariableSet(486, RA-Int[0x00])
+  BasicVariableSet(487, RA-Int[0x01])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      if (R(Compare(Variable_Int_Motion_Kind == RA-Int[0x01]))) {
+        ArticleVisibility(0, true)
+        SetAnchoredArticleAction(0, 18, true)
+        ModelChangerPermanent(2, 2)
+        ChangeSubAction(RA-Int[0x00], true)
+      } else {
+        ChangeSubAction(RA-Int[0x00])
+      }
+      (undef: motion) 04_05_01_00(24)
+      SetRequirement(R(In Air()))
+      EnableActionStatusId(10000)
+      DisableActionStatusId(10002)
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(Compare(Variable_Int_Motion_Kind == RA-Int[0x00]))) {
+        SetAnchoredArticleAction(0, 19, true)
+        ChangeSubAction(RA-Int[0x01], true)
+      } else {
+        ChangeSubAction(RA-Int[0x01])
+      }
+      (undef: motion) 04_05_01_00(24)
+      SetRequirement(R(On Ground()))
+      DisableActionStatusId(10000)
+      EnableActionStatusId(10002)
+    }
+    LoadRest()
+  }
+}
+
+Action 0x116 : EXIT {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(287)
+      Break()
+    DefaultCase()
+      ExitFinalSmashState()
+      OnlyArticleEvent(0)
+      EnableSpecifiedMovement(5)
+      EnableSpecifiedMovement(6)
+      SetGimmickEffectFlag(true)
+  EndSwitch()
+}

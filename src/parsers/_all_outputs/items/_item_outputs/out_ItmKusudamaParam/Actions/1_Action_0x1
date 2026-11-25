@@ -1,0 +1,12 @@
+// Status_Walk
+Action 0x1 {
+  (undef: Sp_base) 65_04_01_00(1400)
+  if (R(Is within footstool range())) {
+    BitVariableSet(LA-Bool[0x00])
+  }
+  ChangeSubAction(0)
+  SubRoutine(hidden_subroutine_0x88)
+  DisableActionStatusId(1)
+  ChangeActionStatus(3, 3, R(In Air()))
+}
+

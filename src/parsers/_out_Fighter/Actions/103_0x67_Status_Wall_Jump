@@ -1,0 +1,14 @@
+// Status_Wall_Jump
+Action 0x67: ENTRY {
+  ResetFlickX()
+  ResetFlickY()
+  ResetButtonPress()
+  ChangeAction(14, R(Animation End()))
+  BasicVariableSet(Common_Param_Int_Wall_Jump_Stop_Frame, RA-Int[0x00])
+  BasicVariableSet(Common_Param_Int_Wall_Jump_Disable_Cont_Frame, RA-Int[0x02])
+  BasicVariableIncrement(LA-Int[0x03])
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x5D44)
+}
+
+Action 0x67 : EXIT {
+}

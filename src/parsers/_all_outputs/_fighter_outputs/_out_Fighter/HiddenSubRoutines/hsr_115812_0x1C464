@@ -1,0 +1,12 @@
+[hsr_1C464]
+hidden_subroutine_0x1C464 {
+  Switch(10000, Variable_Int_Have_Item_Kind)
+    Case(85)
+    Case(91)
+    Case(6)
+    Case(56)
+      DropItem()
+    DefaultCase()
+      Break()
+  EndSwitch()
+}

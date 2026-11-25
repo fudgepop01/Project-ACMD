@@ -1,0 +1,41 @@
+Action 0x11B: ENTRY {
+  ChangeActionStatus(0, 0, R(Animation End()))
+  if (R(Compare(IC-Int[0xFB1] > 0.0))) {
+    ChangeActionStatus(1, 16, R(Animation End()))
+    FloatVariableSet(IC-Int[0xFB1], LA-Float[0x00])
+  } else {
+    ChangeActionStatus(1, 14, R(Animation End()))
+  }
+  BitVariableClear(RA-Bool[0x10])
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x18D78)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      SetAirGround(6)
+      if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(474, false)
+      } else {
+        ChangeSubAction(474, true)
+      }
+      EnableActionStatusId(0)
+      DisableActionStatusId(1)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetAirGround(0)
+      if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(477, false)
+      } else {
+        ChangeSubAction(477, true)
+      }
+      DisableActionStatusId(0)
+      EnableActionStatusId(1)
+      SetRequirement(R(On Ground()))
+    }
+    BitVariableSet(RA-Bool[0x10])
+    LoadRest()
+  }
+}
+
+Action 0x11B : EXIT {
+}

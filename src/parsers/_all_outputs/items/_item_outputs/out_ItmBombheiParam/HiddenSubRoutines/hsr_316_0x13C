@@ -1,0 +1,4 @@
+[hsr_13C]
+hidden_subroutine_0x13C {
+  GraphicEffectAttached(96, 19, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+}

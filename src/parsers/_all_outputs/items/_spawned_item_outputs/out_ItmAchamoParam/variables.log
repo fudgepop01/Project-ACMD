@@ -1,0 +1,4 @@
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in Action 0x3 (Status_Dash) @ 1 : 1
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in Action 0x4 (Status_Run) @ 1 : 1
+
+LA-Int[0x1B] in Subaction 0x1 : SOUND @ 0 : 1

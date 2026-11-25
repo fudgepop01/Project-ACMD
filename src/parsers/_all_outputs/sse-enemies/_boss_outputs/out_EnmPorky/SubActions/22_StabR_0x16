@@ -1,0 +1,172 @@
+[StabR] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x16: MAIN {
+  AsynchronousTimer(19.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 1, 17, 0, 0.0, 170, 100, 0.0, 20, 0.0, 0, 0.0, 9.5, 0.0, 0.0, -22.0, 0.0, 0, 0.0, 0.0, 1.0, false, true, 1, 0, 0, 1, true, 0, 1, false, 15, false, false, false, false, 3, false, false, 3, false, false, true, true, true, 1, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 1, 16, 0, 0.0, 170, 100, 0.0, 20, 0.0, 0, 0.0, 16.0, 0.0, -3.0, -5.5, 0.0, 0, 0.0, 0.0, 1.0, false, true, 1, 0, 0, 1, true, 0, 1, false, 15, false, false, false, false, 3, false, false, 0, false, false, true, true, true, 0, LA-Float[0x0C])
+  AsynchronousTimer(35.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 1, 17, 0, 0.0, 170, 100, 0.0, 25, 0.0, 0, 0.0, 10.0, 0.0, 0.0, -22.0, 0.0, 2, 0.0, 0.2, 2.5, false, true, 1, 1, 3, 3, true, 0, 1, false, 15, false, true, false, false, 2, false, false, 3, false, false, true, true, true, 1, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 1, 16, 0, 0.0, 170, 100, 0.0, 25, 0.0, 0, 0.0, 18.0, 0.0, -3.0, -5.5, 0.0, 2, 0.0, 0.2, 2.5, false, true, 1, 1, 3, 3, true, 0, 1, false, 15, false, true, false, false, 2, false, false, 0, false, false, true, true, true, 0, LA-Float[0x0C])
+  AsynchronousTimer(45.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 17, 1, 0.25, 100, 100, 0.0, 24, 0.0, 0, 0.0, 13.0, 0.0, 0.0, -15.0, 0.0, 2, 0.0, 0.2, 1.0, false, true, 1, 1, 3, 3, true, 0, 311, false, 15, false, true, false, false, 6, false, false, 3, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 16, 1, 0.25, 100, 100, 0.0, 24, 0.0, 0, 0.0, 14.0, 0.0, 3.0, -3.0, 0.0, 2, 0.0, 0.2, 1.0, false, true, 1, 1, 3, 3, true, 0, 311, false, 15, false, true, false, false, 6, false, false, 3, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(2, 1, 17, 0, 0.0, 100, 100, 0.0, 25, 0.0, 0, 0.0, 16.0, 0.0, -1.0, -22.0, 0.0, 2, 0.0, 0.2, 2.5, false, true, 1, 1, 3, 3, true, 0, 1, false, 15, false, true, false, false, 3, false, false, 3, false, false, true, true, true, 1, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(3, 1, 0, 0, 0.0, 90, 100, 0.0, 40, 0.0, 0, 0.0, 25.0, 0.0, 40.0, 5.0, 0.0, 0, 0.0, 0.0, 1.0, false, true, 1, 0, 0, 2, true, 0, 1, false, 15, false, false, false, false, 3, false, false, 0, false, false, true, true, true, 0, LA-Float[0x0C])
+  AsynchronousTimer(50.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 17, 1, 0.35, 130, 100, 0.0, 24, 0.0, 0, 0.0, 11.0, 0.0, 0.0, -15.0, 0.0, 2, 0.0, 0.2, 2.0, false, true, 1, 1, 3, 3, true, 0, 311, false, 15, false, true, false, false, 6, false, false, 3, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 16, 1, 0.35, 100, 100, 0.0, 24, 0.0, 0, 0.0, 14.0, 0.0, -3.0, -3.0, 0.0, 2, 0.0, 0.2, 2.0, false, true, 1, 1, 3, 3, true, 0, 311, false, 15, false, true, false, false, 6, false, false, 3, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(2, 1, 17, 0, 0.0, 110, 100, 0.0, 25, 0.0, 0, 0.0, 16.0, 0.0, -1.0, -22.0, 0.0, 2, 0.0, 0.2, 2.5, false, true, 1, 1, 3, 3, true, 0, 1, false, 15, false, true, false, false, 3, false, false, 3, false, false, true, true, true, 1, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(3, 1, 0, 0, 0.0, 90, 100, 0.0, 40, 0.0, 0, 0.0, 30.0, 0.0, 40.0, 5.0, 0.0, 0, 0.0, 0.0, 1.0, false, true, 1, 0, 0, 2, true, 0, 1, false, 15, false, false, false, false, 3, false, false, 0, false, false, true, true, true, 0, LA-Float[0x0C])
+  AsynchronousTimer(85.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 17, 1, 0.45, 130, 100, 0.0, 24, 0.0, 0, 0.0, 11.0, 0.0, 0.0, -15.0, 0.0, 2, 0.0, 0.3, 1.5, false, true, 1, 1, 3, 3, true, 0, 311, false, 15, false, true, false, false, 6, false, false, 3, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 16, 1, 0.45, 100, 100, 0.0, 24, 0.0, 0, 0.0, 14.0, 0.0, -3.0, -3.0, 0.0, 2, 0.0, 0.3, 1.5, false, true, 1, 1, 3, 3, true, 0, 311, false, 15, false, true, false, false, 6, false, false, 3, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(2, 1, 17, 0, 0.0, 110, 100, 0.0, 25, 0.0, 0, 0.0, 16.0, 0.0, -1.0, -22.0, 0.0, 2, 0.0, 0.2, 2.5, false, true, 1, 1, 3, 3, true, 0, 1, false, 15, false, true, false, false, 3, false, false, 3, false, false, true, true, true, 1, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(3, 1, 0, 0, 0.0, 90, 100, 0.0, 40, 0.0, 0, 0.0, 35.0, 0.0, 40.0, 5.0, 0.0, 0, 0.0, 0.0, 1.0, false, true, 1, 0, 0, 2, true, 0, 1, false, 15, false, false, false, false, 3, false, false, 0, false, false, true, true, true, 0, LA-Float[0x0C])
+  AsynchronousTimer(140.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 17, 1, 0.55, 150, 100, 0.0, 24, 0.0, 0, 0.0, 11.0, 0.0, 0.0, -20.0, 0.0, 2, 0.0, 0.4, 1.5, false, true, 2, 2, 3, 3, true, 0, 311, false, 15, false, true, false, false, 6, false, false, 3, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 16, 1, 0.55, 100, 100, 0.0, 24, 0.0, 0, 0.0, 14.0, 0.0, -3.0, -3.0, 0.0, 2, 0.0, 0.4, 1.5, false, true, 2, 2, 3, 3, true, 0, 311, false, 15, false, true, false, false, 6, false, false, 3, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(2, 1, 17, 0, 0.0, 90, 100, 0.0, 25, 0.0, 0, 0.0, 16.0, 0.0, -1.0, -22.0, 0.0, 2, 0.0, 0.2, 2.5, false, true, 1, 1, 3, 3, true, 0, 1, false, 15, false, true, false, false, 3, false, false, 3, false, false, true, true, true, 1, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(3, 1, 0, 0, 0.0, 90, 100, 0.0, 40, 0.0, 0, 0.0, 35.0, 0.0, 40.0, 5.0, 0.0, 0, 0.0, 0.0, 1.0, false, true, 1, 0, 0, 2, true, 0, 1, false, 15, false, false, false, false, 3, false, false, 0, false, false, true, true, true, 0, LA-Float[0x0C])
+  AsynchronousTimer(185.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 17, 3, 2.0, 25, 60, 0.0, 0, 0.0, 100, -2.0, 15.0, 0.0, 0.0, -20.0, 0.0, 2, 0.0, 0.4, 1.5, false, true, 2, 2, 3, 3, true, 0, 311, false, 15, false, true, false, false, 6, false, false, 3, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 16, 3, 2.0, 25, 60, 0.0, 0, 0.0, 100, -2.0, 16.0, 0.0, -3.0, -3.0, 0.0, 2, 0.0, 0.4, 1.5, false, true, 2, 2, 3, 3, true, 0, 311, false, 15, false, true, false, false, 6, false, false, 3, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(205.0)
+  TerminateCollisions()
+  SubRoutine(hidden_subroutine_0xF7C)
+}
+
+Subaction 0x16: MAIN EXIT {
+  TerminateCollisions()
+}
+
+Subaction 0x16: MAIN INIT {
+  SubRoutine(hidden_subroutine_0x5D4C)
+}
+
+Subaction 0x16: GFX {
+  GraphicEffectAttached(12320771, 36, 0.0, 0.0, 0.0, 0.0, 90.0, 0.0, 0.5, false)
+  GraphicEffectAttached(12320771, 39, 0.0, 0.0, 0.0, 0.0, 90.0, 0.0, 0.5, false)
+  GraphicEffectAttached(12320771, 42, 0.0, 0.0, 0.0, 0.0, 90.0, 0.0, 0.5, false)
+  AsynchronousTimer(19.0)
+  SetLoop(6) {
+    GraphicEffectAttached(12320795, 10, 0.0, 27.5, -2.0, 0.0, 0.0, 0.0, 0.7, true)
+    GraphicEffectAttached(12320801, 10, 6.4, 28.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+    GraphicEffectAttached(12320801, 10, -6.4, 28.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+    GraphicEffectAttached(12320786, 17, 5.0, 0.0, 0.0, 90.0, 0.0, 0.0, 1.0, true)
+    SynchronousTimer(5.0)
+    GraphicEffectAttached(12320786, 17, 5.0, 0.0, 0.0, 90.0, 0.0, 0.0, 1.0, true)
+    SynchronousTimer(5.0)
+    GraphicEffectAttached(12320786, 17, 5.0, 0.0, 0.0, 90.0, 0.0, 0.0, 1.0, true)
+    SynchronousTimer(5.0)
+    GraphicEffectAttached(12320786, 17, 5.0, 0.0, 0.0, 90.0, 0.0, 0.0, 1.0, true)
+    SynchronousTimer(5.0)
+    GraphicEffectAttached(12320786, 17, 5.0, 0.0, 0.0, 90.0, 0.0, 0.0, 1.0, true)
+    SynchronousTimer(5.0)
+    GraphicEffectAttached(12320786, 17, 5.0, 0.0, 0.0, 90.0, 0.0, 0.0, 1.0, true)
+    SynchronousTimer(5.0)
+  }
+  AsynchronousTimer(190.0)
+  GraphicEffectAttached(12320771, 10, 17.0, 24.0, -4.0, 0.0, 90.0, 0.0, 0.6, false)
+  AsynchronousTimer(200.0)
+  GraphicEffectAttached(12320771, 10, 17.0, 24.0, -4.0, 0.0, 90.0, 0.0, 0.6, false)
+}
+
+Subaction 0x16: GFX EXIT {
+}
+
+Subaction 0x16: GFX INIT {
+}
+
+Subaction 0x16: SFX {
+  SoundEffect(9665)
+  SynchronousTimer(17.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+  SynchronousTimer(5.0)
+  SoundEffect(9664)
+}
+
+Subaction 0x16: SFX EXIT {
+}
+
+Subaction 0x16: SFX INIT {
+}
+

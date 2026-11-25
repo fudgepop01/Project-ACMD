@@ -1,0 +1,13 @@
+Action 0x6: MAIN {
+}
+
+Action 0x6: EXIT {
+}
+
+Action 0x6: INIT {
+  (undef: Sp_base) 65_04_01_00(0)
+  (undef: Sp_base) 65_09_02_00(IC-Int[0xABE4], LA-Float[0x05])
+  BasicVariableSet(0, LA-Int[0x05])
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonAreaOutProc)
+}
+

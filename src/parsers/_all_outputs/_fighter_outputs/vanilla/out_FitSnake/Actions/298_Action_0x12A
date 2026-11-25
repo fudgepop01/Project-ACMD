@@ -1,0 +1,8 @@
+Action 0x12A: ENTRY {
+  SubRoutine(hidden_subroutine_0xFFFFFFFF)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1B5CC)
+}
+
+Action 0x12A : EXIT {
+  SubRoutine(hidden_subroutine_0x1B0F4)
+}

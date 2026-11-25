@@ -1,0 +1,10 @@
+// Status_Jump_Squat
+Action 0xA {
+  DisableSpecifiedMovement(2)
+  DisableActionStatusId(10)
+  (undef: Sp_base) 65_07_03_00(5, 0.0, 1000.0)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, -1.0, 0.5, 0.0, 0.0, 0.0, -0.005, 0.0, 0.0, false, false, false)
+  ChangeSubAction(1)
+  ChangeAction(6, R(Successfully tethered ledge()), true)
+}
+

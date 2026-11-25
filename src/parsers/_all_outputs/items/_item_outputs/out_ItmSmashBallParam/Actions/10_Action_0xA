@@ -1,0 +1,9 @@
+// Status_Jump_Squat
+Action 0xA {
+  SubRoutine(hidden_subroutine_0x27C)
+  (undef: Sp_Kinetic) 66_05_01_00(0)
+  (undef: control_flow_loop) 01_04_02_00(10, 45)
+  (undef: Sp_Kinetic) 66_05_05_00(4, 0.01, 0.8, Variable_Float_Kinetic_Energy_Damage_Speed_Y_Rv, IC-Int[0x3F2])
+  ChangeAction(5, R(NOT In walljump situation()), 255)
+}
+

@@ -1,0 +1,6 @@
+// Status_Run
+Action 0x4 {
+  ChangeAction(3, R(In Air()))
+  ChangeAction(12, R(On Ground()))
+}
+

@@ -1,0 +1,9 @@
+// Status_Bitten_Wario_Start
+Action 0xCC: ENTRY {
+  (undef: StageObject) 0C_29_00_00()
+  WearableItemsVisibility(false)
+  ChangeAction(205, R(Compare(IC-Int[0x40B] >= RA-Float[0x04])))
+}
+
+Action 0xCC : EXIT {
+}

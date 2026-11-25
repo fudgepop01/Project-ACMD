@@ -1,0 +1,13 @@
+Action 0x3: MAIN {
+}
+
+Action 0x3: EXIT {
+}
+
+Action 0x3: INIT {
+  (undef: Sp_AI) 6A_01_01_00(24)
+  SubRoutine(hidden_subroutine_0xBF4)
+  SubRoutine(hidden_subroutine_0xC0C)
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonDyingProc)
+}
+

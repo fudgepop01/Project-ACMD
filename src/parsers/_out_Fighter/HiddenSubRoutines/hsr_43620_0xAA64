@@ -1,0 +1,9 @@
+[hsr_AA64]
+hidden_subroutine_0xAA64 {
+  if (R(Button Press(Attack)) || R(Button Release(Attack))) {
+    BasicVariableIncrement(RA-Int[0x01])
+  }
+  if (R(Button Press(Attack))) {
+    BitVariableSet(RA-Bool[0x13])
+  }
+}

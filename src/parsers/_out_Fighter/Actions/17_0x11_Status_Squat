@@ -1,0 +1,22 @@
+// Status_Squat
+Action 0x11: ENTRY {
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(18, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  SubRoutine(statusAnimCmd_SquatCommon)
+  InvertActionStatusId(8, 10059)
+  AllowSpecificInterrupt(GROUND_CATCH)
+  ClearPreventInterrupt(UNK_JUMP_TRANSITION)
+
+  ChangeAction(114, R(Compare(RA-Int[0x00] == 0.0)))
+  AdditionalRequirement(R(On Ground()))
+
+  ClearPreventInterrupt(ALL?)
+  AllowSpecificInterrupt(UNK_JUMP_TRANSITION)
+  ChangeSubAction(42)
+}
+
+Action 0x11 : EXIT {
+}

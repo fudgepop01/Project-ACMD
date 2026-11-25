@@ -1,0 +1,13 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  ChangeAction(3, R(In Air()))
+  (undef: Sp_Kinetic) 66_02_02_00(0.4, 0.0)
+  ChangeSubAction(7)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ReverseDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  ChangeAction(8, R(Button Tap?()))
+}
+

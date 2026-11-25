@@ -1,0 +1,33 @@
+// Status_Jump_Aerial
+Action 0xC {
+  SubRoutine(hidden_subroutine_0x68)
+  BasicVariableSet(0, LA-Int[0x00])
+  ChangeActionStatus(3, 3, R(In Air()))
+  ChangeAction(6, R(Compare(LA-Int[0x0B] == 0.0)))
+  if (R(Is within footstool range())) {
+    ChangeAction(14, R(On Ground()))
+    AdditionalRequirement_UNDOC5ARGS(R(Is falling+hit down()), 0.0, -15.0, 30.0, 20.0)
+  }
+  if (R(Compare(Variable_Int_Motion_Kind != 6.0))) {
+    ChangeSubAction(4)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+  }
+  ChangeSubAction(5)
+  (undef: Sp_Kinetic) 66_00_0B_00(2.2, 0.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  SynchronousTimer(5.0)
+
+  ChangeActionStatus(13, 13, R(NOT 0x2715()), 18.0)
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus(113, 13, R(In walljump situation()), 6)
+  AdditionalRequirement(R(On Ground()))
+  (undef: control_flow_loop) 01_04_02_00(10, 25)
+
+  SubRoutine(hidden_subroutine_0x1B0)
+  DisableActionStatusId(12)
+  SubRoutine(hidden_subroutine_0x2B8)
+  DisableActionStatusId(12)
+  ChangeAction(12, R(On Ground()))
+}
+

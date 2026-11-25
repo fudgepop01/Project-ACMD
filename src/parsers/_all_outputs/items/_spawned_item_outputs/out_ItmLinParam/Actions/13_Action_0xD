@@ -1,0 +1,9 @@
+// Status_Fly
+Action 0xD {
+  ChangeAction(5, R(In Air()))
+  ChangeSubAction(3)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(5, R(Button Tap?()))
+}
+

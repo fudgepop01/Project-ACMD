@@ -1,0 +1,20 @@
+[hsr_DB4]
+hidden_subroutine_0xDB4 {
+  SetLoop(-1) {
+    if (R(Successfully tethered ledge())) {
+      if [IF_REQ_UNKNOWN_3ARG] (R(0x12()), 1, Variable_Int_Controller_Flick_No_Reset_Y) {
+        (undef: Sp_Area) 69_00_01_00(Variable_Int_Controller_Flick_No_Reset_Y)
+      }
+    }
+    (undef: Sp_Area) 69_01_05_00(Variable_Int_Controller_Flick_No_Reset_Y, 0.0, 0.0, LA-Float[0x04], true)
+    (undef: Sp_Kinetic) 66_0C_02_00(3, LA-Float[0x04])
+    if (R(2714(ERRVALUE)) && R(In Air())) {
+      (undef: Sp_Kinetic) 66_09_02_00(4, 14)
+      (undef: Sp_Kinetic) 66_00_03_00(3, 17, LA-Float[0x04])
+    }
+    SubRoutine(hidden_subroutine_0xCAC)
+    SubRoutine(hidden_subroutine_0x90C)
+    SynchronousTimer(1.0)
+  }
+  Return()
+}

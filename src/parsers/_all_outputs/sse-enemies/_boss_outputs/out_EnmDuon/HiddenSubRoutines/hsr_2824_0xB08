@@ -1,0 +1,24 @@
+[hsr_B08]
+hidden_subroutine_0xB08 {
+  (undef: Sp_base) 65_16_00_00()
+  Switch(1001, -1)
+    Case(-1)
+      if (R(Facing Left())) {
+        (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE7], LA-Float[0x0A])
+        (undef: Sp_base) 65_14_01_00(LA-Float[0x0A])
+      } else {
+        (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE8], LA-Float[0x0A])
+        (undef: Sp_base) 65_14_01_00(LA-Float[0x0A])
+      }
+      Break()
+    Case(3)
+      (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE7], LA-Float[0x0A])
+      (undef: Sp_base) 65_14_01_00(LA-Float[0x0A])
+    Case(2)
+      (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE8], LA-Float[0x0A])
+      (undef: Sp_base) 65_14_01_00(LA-Float[0x0A])
+    DefaultCase()
+      (undef: unk_procedures) 1B_02_01_00(F(0x00000AD0))
+  EndSwitch()
+  Return()
+}

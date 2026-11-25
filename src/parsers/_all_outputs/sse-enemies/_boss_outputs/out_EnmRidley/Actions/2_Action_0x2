@@ -1,0 +1,14 @@
+Action 0x2: MAIN {
+}
+
+Action 0x2: EXIT {
+}
+
+Action 0x2: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(12)
+  if (R(Compare(Variable_Int_Motion_Kind != 17.0)) && R(Compare(Variable_Int_Motion_Kind != 18.0))) {
+    SubAction09(17)
+  }
+}
+

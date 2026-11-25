@@ -1,0 +1,46 @@
+[ThrowB] (flags) {
+  No Out Transition: 1,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x72: MAIN {
+  GenerateArticle(7)
+  SetArticleAction(7, 6)
+  ArticleFrameSpeed(7, RA-Float[0x04])
+  ThrowAttackCollision(0, 0, 8, 40, 55, 0, 60, 0, 0.0, 1.0, 1.0, 0, 0, 3, true, true, 8)
+  ThrowAttackCollision(1, 0, 3, 361, 100, 0, 50, 0, 0.0, 1.0, 1.0, 0, 0, 3, true, true, 8)
+  AsynchronousTimer(11.0)
+  ReverseDirection()
+  ThrowCollision(0, 47, RA-Int[0x02], RA-Int[0x03], RA-Int[0x04])
+}
+
+Subaction 0x72: GFX {
+  SetLoop(2) {
+    GraphicEffect(17, 47, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.5, 4.0, 4.0, 4.0, 0.0, 0.0, 0.0, false)
+    SynchronousTimer(4.0)
+  }
+  AsynchronousTimer(11.0)
+  GraphicEffect(17, 47, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x72: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(112)
+  SoundEffect(114)
+  SynchronousTimer(8.0)
+  SoundEffect(2842)
+}
+
+Subaction 0x72: OTHER {
+  SlopeContourStand(6)
+  RumbleLoop(2, 20)
+  AsynchronousTimer(11.0)
+  Screenshake(1)
+}
+

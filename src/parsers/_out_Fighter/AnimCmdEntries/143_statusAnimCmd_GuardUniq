@@ -1,0 +1,10 @@
+// @ 0x99EC
+GuardUniq {
+  SubRoutine(statusAnimCmd_GuardOnUniq)
+  if (R(Compare(RA-Int[0x01] > 0.0))) {
+    BasicVariableDecrement(RA-Int[0x01])
+  }
+  if (R(Compare(RA-Int[0x03] > 0.0))) {
+    BasicVariableDecrement(RA-Int[0x03])
+  }
+}

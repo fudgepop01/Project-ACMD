@@ -1,0 +1,27 @@
+// Status_Fly
+Action 0xD {
+  ChangeAction(8, R(In Air()))
+  ChangeSubAction(4)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  BasicVariableRandom(2, 6, LA-Int[0x03])
+  SetLoop(6) {
+    ChangeSubAction(5)
+    SynchronousTimer(5.0)
+    if (R(Compare(LA-Int[0x03] <= 1.0))) {
+      if (R(Compare(LA-Int[0x00] == 6.0))) {
+        ChangeAction(14, R(Button Tap?()))
+      }
+      SetRequirement(R(Animation End()))
+      LoadRest()
+      ChangeSubAction(7)
+      SetRequirement(R(Animation End()))
+      LoadRest()
+      LoopBreak()
+    } else {
+      BasicVariableDecrement(LA-Int[0x03])
+    }
+  }
+  ChangeAction(4, R(Button Tap?()))
+}
+

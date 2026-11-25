@@ -1,0 +1,17 @@
+Action 0x124: ENTRY {
+  ExitFinalSmashState()
+  (undef: effect) 11_20_00_00()
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeSubAction(483)
+  SetArticleAction(2, 4)
+  (undef: effect) 11_20_00_00()
+}
+
+Action 0x124 : EXIT {
+}

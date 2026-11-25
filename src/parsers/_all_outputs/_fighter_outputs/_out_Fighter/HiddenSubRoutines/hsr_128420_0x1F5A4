@@ -1,0 +1,8 @@
+[hsr_1F5A4]
+hidden_subroutine_0x1F5A4 {
+  if (R(In Air())) {
+    EnableSpecifiedMovement(1)
+    EnableSpecifiedMovement(2)
+    EnableSpecifiedMovement(4)
+  }
+}

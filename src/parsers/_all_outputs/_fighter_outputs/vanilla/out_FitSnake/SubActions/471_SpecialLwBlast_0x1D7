@@ -1,0 +1,42 @@
+[SpecialLwBlast] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D7: MAIN {
+  AsynchronousTimer(3.0)
+  GenerateArticle(5)
+  AsynchronousTimer(28.0)
+  SetRemoteArticleAction(4, 6)
+  AsynchronousTimer(39.0)
+  AllowInterrupt()
+}
+
+Subaction 0x1D7: GFX {
+  AsynchronousTimer(27.0)
+  GraphicEffect(16, 57, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x1D7: SOUND {
+  AsynchronousTimer(7.0)
+  SoundEffect(2613)
+  SoundEffect(108)
+  SynchronousTimer(11.0)
+  SoundEffect(6372)
+  SynchronousTimer(9.0)
+  SoundEffect(6371)
+}
+
+Subaction 0x1D7: OTHER {
+  SlopeContourStand(6)
+  HeldItemsVisibility(false)
+  AsynchronousTimer(30.0)
+  Rumble(14, 0)
+}
+

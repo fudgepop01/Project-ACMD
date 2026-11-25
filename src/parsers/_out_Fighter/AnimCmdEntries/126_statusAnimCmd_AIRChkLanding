@@ -1,0 +1,8 @@
+// @ 0x885C
+AIRChkLanding {
+
+  ChangeActionStatus(10027, 23, R(On Ground()))
+  AdditionalRequirement(R(Compare(LA-Int[0x0D] < Customize_Param_Int_Landing_Heavy_Frame)))
+
+  ChangeActionStatus(10026, 22, R(On Ground()))
+}

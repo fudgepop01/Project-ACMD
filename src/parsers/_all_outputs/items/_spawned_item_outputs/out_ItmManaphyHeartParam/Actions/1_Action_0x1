@@ -1,0 +1,21 @@
+// Status_Walk
+Action 0x1 {
+  (undef: Sp_base) 65_04_01_00(1400)
+  ChangeSubAction(0)
+  DisableSpecifiedMovement(2)
+  (undef: Sp_base) 65_07_01_00(2)
+  SynchronousTimer(1.0)
+  (undef: Sp_Kinetic) 66_05_01_00(1)
+  (undef: Sp_Kinetic) 66_0A_01_00(0.3)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, 10.0, 10.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false, false, false)
+  FloatVariableSet(0.0, RA-Float[0x02])
+  SetLoop(60) {
+    (undef: Sp_base) 65_07_03_00(9, 0.0, 10.0)
+    FloatVariableAdd(0.016666666666666666, RA-Float[0x02])
+    (undef: Sp_base) 65_02_08_00(LA-Float[0x07], LA-Float[0x07], F(0x000000E0), Variable_Float_Posture_Pos_X, F(0x000000E4), RA-Float[0x02], F(0x000000E8), Variable_Float_Posture_Pos_X)
+    (undef: Sp_base) 65_02_08_00(LA-Float[0x08], LA-Float[0x08], F(0x000000E0), Variable_Float_Posture_Pos_Y, F(0x000000E4), RA-Float[0x02], F(0x000000E8), Variable_Float_Posture_Pos_Y)
+    SynchronousTimer(1.0)
+  }
+  ChangeAction(6, R(Button Tap?()))
+}
+

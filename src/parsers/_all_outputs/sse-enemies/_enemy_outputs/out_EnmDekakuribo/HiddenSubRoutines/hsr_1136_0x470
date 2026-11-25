@@ -1,0 +1,5 @@
+[hsr_470]
+hidden_subroutine_0x470 {
+  (undef: Sp_AI) 6A_00_04_00(23, 16, 17, 18)
+  Return()
+}

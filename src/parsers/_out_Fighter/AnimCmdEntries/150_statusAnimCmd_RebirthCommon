@@ -1,0 +1,10 @@
+// @ 0xA424
+RebirthCommon {
+  (undef: camera) 1A_09_00_00()
+  Visibility(true)
+  DisableMagifyingGlass()
+  UnkRaBit27(true)
+  SetGimmickEffectFlag(false)
+  ChangeAction(14, R(Compare(RA-Int[0x02] > Common_Param_Int_Rebirth_Wait_Frame)))
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0xCEA4)
+}

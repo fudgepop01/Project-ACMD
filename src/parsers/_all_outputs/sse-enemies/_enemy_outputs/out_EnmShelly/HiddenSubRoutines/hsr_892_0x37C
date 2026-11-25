@@ -1,0 +1,11 @@
+[hsr_37C]
+hidden_subroutine_0x37C {
+  if (R(Bit is Set(LA-Bool[0x07]))) {
+    UndoBoneCollision(2)
+    (undef: Sp_CollisionHit) 6D_00_01_00(0)
+  } else {
+    UndoBoneCollision(0)
+    (undef: Sp_CollisionHit) 6D_00_01_00(2)
+  }
+  Return()
+}

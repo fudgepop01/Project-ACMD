@@ -1,0 +1,7 @@
+// @ 0x18278
+AICheckBustPartsMotionEnd {
+  if (R(0x25())) {
+    BitVariableSet(RA-Bool[0x04])
+  }
+  Return()
+}

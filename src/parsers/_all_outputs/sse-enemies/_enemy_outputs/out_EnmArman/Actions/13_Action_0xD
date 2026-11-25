@@ -1,0 +1,18 @@
+Action 0xD: MAIN {
+}
+
+Action 0xD: EXIT {
+}
+
+Action 0xD: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(44)
+  SubAction09(9)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 29)
+  if (R(Article Available())) {
+    (undef: Sp_base) 65_0F_02_00(IC-Int[0xABE9], 0)
+    (undef: Sp_Link) 6E_00_03_00(0, 5103, 11)
+  } else {
+  }
+}
+

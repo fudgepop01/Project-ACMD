@@ -1,0 +1,6 @@
+[hsr_1EC18]
+hidden_subroutine_0x1EC18 {
+  SetAirGround(6)
+  Module0900(0)
+  SetAerialOrOnstage(1)
+}

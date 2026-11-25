@@ -1,0 +1,8 @@
+// Status_Jump_Squat
+Action 0xA {
+  ChangeAction(11, R(On Ground()))
+  ChangeSubAction(2, true)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+}
+

@@ -1,0 +1,17 @@
+// @ 0x22EF0
+AirLasso {
+  AllowSpecificInterrupt(AIR_LANDING)
+  ChangeAction(14, R(Animation End()))
+
+  ChangeAction(128, R(Successfully tethered ledge()))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x10])))
+
+  if (R(Subaction Exists())) {
+    ChangeSubAction(234)
+  }
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x17214)
+  if (R(Compare(RA-Int[0x02] >= 2.0))) {
+    SelectCliffHangData(RA-Int[0x02])
+    PreventSpecificInterrupt(AIR_CLIFF)
+  }
+}

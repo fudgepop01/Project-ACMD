@@ -1,0 +1,23 @@
+Action 0x12: MAIN {
+}
+
+Action 0x12: EXIT {
+}
+
+Action 0x12: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_02_00(24, 27)
+  (undef: Sp_AI) 6A_01_01_00(8)
+  SubAction09(1)
+  Module1901()
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 17.0))) {
+    if (R(0x2715())) {
+      (undef: Sp_Kinetic) 66_0A_02_00(3, 22)
+    } else {
+      (undef: Sp_Kinetic) 66_07_01_00(-1)
+    }
+  } else {
+    (undef: Sp_Kinetic) 66_0B_02_00(4, 29)
+  }
+}
+

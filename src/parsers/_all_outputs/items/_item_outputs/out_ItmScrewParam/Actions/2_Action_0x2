@@ -1,0 +1,8 @@
+// Status_Walk_Brake
+Action 0x2 {
+  BasicVariableSet(1, LA-Int[0x00])
+  (undef: Sp_base) 65_05_01_00(1080)
+  (undef: Sp_base) 65_0C_01_00(0.66)
+  ChangeSubAction(1)
+}
+

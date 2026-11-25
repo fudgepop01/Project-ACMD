@@ -1,0 +1,21 @@
+Action 0xD: MAIN {
+  SetLoop(-1) {
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0xD: EXIT {
+  BasicVariableAdd(-1, LA-Int[0x05])
+  if (R(Compare(LA-Int[0x05] <= 0.0))) {
+    (undef: Sp_base) 65_04_01_00(0)
+    (undef: Sp_base) 65_09_02_00(IC-Int[0xABE4], LA-Float[0x05])
+  }
+}
+
+Action 0xD: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(16)
+  SubAction09(2)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+}
+

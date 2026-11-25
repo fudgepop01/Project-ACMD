@@ -1,0 +1,25 @@
+Action 0xB: MAIN {
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0x4F0)
+    if (R(Successfully tethered ledge()) &&[3A] R(Can Pick Up Another Item()), Variable_Int_Controller_Flick_No_Reset_Y, 2 &&[3A] R(NOT Tap Jump On & C-Stick not Held()), 5, 23) {
+      (undef: Sp_Kinetic) 66_00_02_00(5, 23)
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0xB: EXIT {
+}
+
+Action 0xB: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(34)
+  (undef: Sp_AI) 6A_00_01_00(13)
+  (undef: Sp_AI) 6A_00_01_00(25)
+  (undef: Sp_AI) 6A_00_01_00(26)
+  SubAction09(5)
+  (undef: Sp_Kinetic) 66_00_02_00(5, 20)
+  (undef: Sp_Kinetic) 66_0B_02_00(3, 21)
+  (undef: Sp_Kinetic) 66_00_02_00(4, 22)
+}
+

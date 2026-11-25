@@ -1,0 +1,8 @@
+[hsr_E0]
+hidden_subroutine_0xE0 {
+  (undef: Sp_base) 65_0E_07_00(3, RA-Float[0x00], RA-Float[0x01], RA-Float[0x02], 0.0, -1.0, 3.0)
+  FloatVariableSet(Variable_Float_Controller_Stick_Prev_X_Lr_Rv, RA-Float[0x04])
+  FloatVariableMultiply(Variable_Float_Posture_Lr, RA-Float[0x04])
+  (undef: Sp_base) 65_0D_07_00(169, 0, RA-Float[0x00], RA-Float[0x01], 0.0, RA-Float[0x04], 3.0)
+  Return()
+}

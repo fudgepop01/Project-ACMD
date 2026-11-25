@@ -1,0 +1,10 @@
+Action 0x11C: ENTRY {
+  SetRemoteArticleAction(3, 2)
+  ChangeAction(16, R(Animation End()))
+  ChangeAction(16, R(On Ground()))
+  ChangeSubAction(476)
+}
+
+Action 0x11C : EXIT {
+  RemoveArticle(3)
+}

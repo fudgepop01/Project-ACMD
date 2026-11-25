@@ -1,0 +1,39 @@
+[hsr_20178]
+hidden_subroutine_0x20178 {
+  BasicVariableIncrement(RA-Int[0x03])
+  BasicVariableDecrement(RA-Int[0x04])
+  if (R(Compare(RA-Int[0x04] <= 0.0))) {
+    BasicVariableSet(5, RA-Int[0x04])
+    Switch(10000, RA-Int[0x05])
+      Case(0)
+        SoundEffect(809)
+      Case(1)
+        SoundEffect(811)
+      Case(2)
+        SoundEffect(813)
+      Case(3)
+        SoundEffect(813)
+      Case(4)
+        SoundEffect(812)
+      Case(5)
+        SoundEffect(811)
+      Case(6)
+        SoundEffect(809)
+      Case(7)
+        SoundEffect(808)
+      Case(8)
+        SoundEffect(808)
+      Case(9)
+        SoundEffect(807)
+      DefaultCase()
+        SoundEffect(807)
+    EndSwitch()
+    BasicVariableIncrement(RA-Int[0x05])
+  }
+  if (R(On Ground())) {
+    FloatVariableSubtract(Variable_Float_Motion_Rate, RA-Float[0x04])
+    if (R(Compare(RA-Float[0x04] <= 0.0))) {
+      SubRoutine(hidden_subroutine_0xEE68)
+    }
+  }
+}

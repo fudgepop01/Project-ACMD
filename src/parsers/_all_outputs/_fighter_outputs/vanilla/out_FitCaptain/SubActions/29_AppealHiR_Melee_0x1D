@@ -1,0 +1,30 @@
+[AppealHiR_Melee] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D : MAIN {
+  AsynchronousTimer(59.0)
+  AllowInterrupt()
+  AsynchronousTimer(75.0)
+  FrameSpeedModifier(0.25)
+  SlopeContourStand(6)
+  AllowInterrupt()
+}
+
+Subaction 0x1D : GFX {
+}
+
+Subaction 0x1D : SOUND {
+}
+
+Subaction 0x1D : OTHER {
+  Goto(Subaction_0x1BC : OTHER)
+}
+

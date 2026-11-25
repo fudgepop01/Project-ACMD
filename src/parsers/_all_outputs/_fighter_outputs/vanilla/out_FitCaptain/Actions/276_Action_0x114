@@ -1,0 +1,23 @@
+Action 0x114: ENTRY {
+  BasicVariableSet(470, RA-Int[0x00])
+  BasicVariableSet(471, RA-Int[0x01])
+  FloatVariableSet(IC-Int[0xFB1], RA-Float[0x04])
+  FloatVariableSet(IC-Int[0xFAD], RA-Float[0x0A])
+  BasicVariableSet(IC-Int[0xFAE], RA-Int[0x03])
+  BasicVariableSet(16, RA-Int[0x02])
+  SubRoutine(EXTERNAL: statusAnimCmd_SpecialJumpAttackCommon)
+  if (R(On Ground())) {
+    SetAirGround(100)
+    ChangeSubAction(470)
+  } else {
+    SetStateAerial()
+    SetAirGround(100)
+    ChangeSubAction(471)
+    DisableActionStatusId(10002)
+    BitVariableSet(RA-Bool[0x11])
+  }
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1B410)
+}
+
+Action 0x114 : EXIT {
+}

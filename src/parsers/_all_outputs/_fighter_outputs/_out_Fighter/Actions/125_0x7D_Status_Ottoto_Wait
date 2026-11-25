@@ -1,0 +1,8 @@
+// Status_Ottoto_Wait
+Action 0x7D: ENTRY {
+  SubRoutine(hidden_subroutine_0x170DC)
+  ChangeSubAction(207)
+}
+
+Action 0x7D : EXIT {
+}

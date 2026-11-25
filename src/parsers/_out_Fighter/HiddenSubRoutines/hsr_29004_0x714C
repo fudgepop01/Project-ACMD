@@ -1,0 +1,13 @@
+[hsr_714C]
+hidden_subroutine_0x714C {
+  ChangeAction(73, R(In Air()))
+
+  ChangeActionStatus(10111, 157, R(Button Press(Attack)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(73, R(NOT Holding Item()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeAction(0, R(NOT Holding Item()))
+  AdditionalRequirement(R(On Ground()))
+}

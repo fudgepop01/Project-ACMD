@@ -1,0 +1,10 @@
+[hsr_18588]
+hidden_subroutine_0x18588 {
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    DetachIfAttachedAndResetMovement()
+    ChangeSubAction(470, true)
+    ChangeActionStatus(10002, 14, R(Animation End()))
+    SetAirGround(17)
+    BitVariableClear(RA-Bool[0x10])
+  }
+}

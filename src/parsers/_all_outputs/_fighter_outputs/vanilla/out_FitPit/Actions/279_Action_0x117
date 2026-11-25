@@ -1,0 +1,56 @@
+Action 0x117: ENTRY {
+  ChangeAction(282, R(Button Not Pressed(Special)))
+  ChangeAction(282, R(Compare(RA-Int[0x00] >= IC-Int[0x5DC0])))
+  if (R(Bit is Set(RA-Bool[0x11]))) {
+    ChangeAction(280, R(Compare(Variable_Float_Controller_Stick_Y >= IC-Int[0xFA2])))
+    ChangeAction(281, R(Compare(Variable_Float_Controller_Stick_X_Lr <= IC-Int[0xFA1])))
+    BasicVariableSet(464, RA-Int[0x01])
+    BasicVariableSet(472, RA-Int[0x02])
+    BasicVariableSet(2, RA-Int[0x03])
+    BasicVariableSet(10, RA-Int[0x04])
+  } else {
+    ChangeAction(280, R(Compare(Variable_Float_Controller_Stick_Y < IC-Int[0xFA2])))
+    BasicVariableSet(463, RA-Int[0x01])
+    BasicVariableSet(471, RA-Int[0x02])
+    BasicVariableSet(1, RA-Int[0x03])
+    BasicVariableSet(9, RA-Int[0x04])
+  }
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1D488)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(6)
+      SetAerialOrOnstage(1)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(RA-Int[0x01], true)
+        SetAnchoredArticleAction(0, RA-Int[0x03], true)
+      } else {
+        ChangeSubAction(RA-Int[0x01])
+        SetArticleAction(0, RA-Int[0x03])
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement01(0, R(In Air()))
+    } else {
+      SetAirGround(100)
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(RA-Int[0x02], true)
+        SetAnchoredArticleAction(0, RA-Int[0x04], true)
+      } else {
+        ChangeSubAction(RA-Int[0x02])
+        SetArticleAction(0, RA-Int[0x04])
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement01(1, R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x117 : EXIT {
+  } else {
+  if (R(Compare(Variable_Int_Status_Kind == 279.0)) || R(Compare(Variable_Int_Status_Kind == 280.0)) || R(Compare(Variable_Int_Status_Kind == 281.0)) || R(Compare(Variable_Int_Status_Kind == 282.0))) {
+    OnlyArticleEvent(0)
+    ModelChangerPermanent(1, 2)
+    RemoveArticle(1)
+  }
+}

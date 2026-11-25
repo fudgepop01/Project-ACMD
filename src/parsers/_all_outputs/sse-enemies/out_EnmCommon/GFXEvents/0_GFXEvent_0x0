@@ -1,0 +1,23 @@
+// @ 0x200
+GFXEvent_0x0 {
+  FlashOverlayEffect(255, 255, 255, 0)
+  SynchronousTimer(1.0)
+  ChangeFlashOverlayColor(1, 255, 255, 255, 120)
+  SynchronousTimer(1.0)
+  ChangeFlashOverlayColor(2, 255, 255, 255, 0)
+  SynchronousTimer(2.0)
+  FlashOverlayEffect(255, 255, 255, 90)
+  SynchronousTimer(1.0)
+  ChangeFlashOverlayColor(4, 255, 255, 255, 0)
+  SynchronousTimer(4.0)
+  FlashOverlayEffect(255, 255, 255, 60)
+  SynchronousTimer(1.0)
+  ChangeFlashOverlayColor(4, 255, 255, 255, 0)
+  SynchronousTimer(4.0)
+  FlashOverlayEffect(255, 255, 255, 40)
+  SynchronousTimer(1.0)
+  ChangeFlashOverlayColor(5, 255, 255, 255, 0)
+  SynchronousTimer(5.0)
+  TerminateFlashEffect()
+  Return()
+}

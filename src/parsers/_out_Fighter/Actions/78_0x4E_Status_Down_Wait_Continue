@@ -1,0 +1,12 @@
+// Status_Down_Wait_Continue
+Action 0x4E: ENTRY {
+  if (R(Bit is Set(RA-Bool[0x19]))) {
+    ChangeSubAction(171)
+  } else {
+    ChangeSubAction(180)
+  }
+  SubRoutine(hidden_subroutine_0x59CC)
+}
+
+Action 0x4E : EXIT {
+}

@@ -1,0 +1,37 @@
+[Win2] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1C6: MAIN {
+}
+
+Subaction 0x1C6: GFX {
+}
+
+Subaction 0x1C6: SOUND {
+  AsynchronousTimer(0.0)
+  SoundEffect(4794)
+  SynchronousTimer(15.0)
+  SoundEffect(4794)
+  SoundEffectTransient(4800)
+  SynchronousTimer(81.0)
+  StopTransientSoundEffect()
+  SoundEffect(4797)
+  SoundEffectTransient(4800)
+  SynchronousTimer(22.0)
+  StopTransientSoundEffect()
+  VictorySoundEffect(1940)
+}
+
+Subaction 0x1C6: OTHER {
+  GenerateArticleWin(2, 0)
+  SetArticleAction(2, 0)
+}
+

@@ -1,0 +1,19 @@
+Action 0x114: ENTRY {
+  ChangeAction(279, R(Animation End()))
+  BitVariableSet(LA-Bool[0x3D])
+  if (R(Article Exists())) {
+    SetArticleAction07(3, 3)
+  }
+  BasicVariableSet(462, RA-Int[0x00])
+  BasicVariableSet(463, RA-Int[0x01])
+  Goto(hidden_subroutine_0x18E40)
+}
+
+Action 0x114 : EXIT {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(279)
+      Break()
+    DefaultCase()
+      RemoveArticle(3)
+  EndSwitch()
+}

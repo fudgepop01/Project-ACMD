@@ -1,0 +1,46 @@
+Action 0x113: ENTRY {
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  SetDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  if (R(Bit is Set(LA-Bool[0x3D]))) {
+    BasicVariableSet(469, RA-Int[0x00])
+    BasicVariableSet(472, RA-Int[0x01])
+  } else {
+    BasicVariableSet(468, RA-Int[0x00])
+    BasicVariableSet(471, RA-Int[0x01])
+  }
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(6)
+      SetAerialOrOnstage(1)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(RA-Int[0x00], true)
+      } else {
+        ChangeSubAction(RA-Int[0x00])
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAirGround(10)
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(RA-Int[0x01], true)
+      } else {
+        ChangeSubAction(RA-Int[0x01])
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x113 : EXIT {
+}

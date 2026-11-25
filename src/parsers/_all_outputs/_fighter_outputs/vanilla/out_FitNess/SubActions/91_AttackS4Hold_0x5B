@@ -1,0 +1,34 @@
+[AttackS4Hold] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x5B: MAIN {
+  ModelChanger(2, 0)
+}
+
+Subaction 0x5B: GFX {
+  AsynchronousTimer(4.0)
+  SetLoop(-1) {
+    GraphicEffectStepping(26, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 4.0, 0.0, 8.0, 0.0, 0.0, 0.0, true)
+    SynchronousTimer(5.0)
+    GraphicEffect(17, 59, 0.0, 8.0, 0.0, 0.0, 0.0, 0.0, 1.0, 2.0, 5.0, 2.0, 0.0, 0.0, 0.0, true)
+  }
+}
+
+Subaction 0x5B: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(191)
+}
+
+Subaction 0x5B: OTHER {
+  RumbleLoop(2, 57)
+  SlopeContourStand(4)
+}
+

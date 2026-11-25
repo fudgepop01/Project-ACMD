@@ -1,0 +1,25 @@
+// Status_Run_Brake
+Action 0x5 {
+  DisableSpecifiedMovement(2)
+  ChangeSubAction(1, true)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, -1.0, 2.7, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, false, false, false)
+  SynchronousTimer(80.0)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  while (R(Is Not in Damaging Magnifier())) {
+    SynchronousTimer(5.0)
+    EndWhile()
+    (undef: Sp_Kinetic) 66_02_02_00(0.0, 0.5)
+    Visibility(false)
+    SynchronousTimer(20.0)
+    (undef: Sp_base) 65_0C_01_00(4.0)
+    Visibility(true)
+    ChangeSubAction(2, false)
+    (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, -1.0, 3.0, 0.0, 0.0, 0.0, -0.4, 0.0, 0.0, false, false, false)
+    SynchronousTimer(200.0)
+    while (R(Is Not in Damaging Magnifier())) {
+      SynchronousTimer(5.0)
+      EndWhile()
+      ChangeAction(6, R(Button Tap?()))
+}
+

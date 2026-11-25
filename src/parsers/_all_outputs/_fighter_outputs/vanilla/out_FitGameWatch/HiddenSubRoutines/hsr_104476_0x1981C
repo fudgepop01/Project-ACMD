@@ -1,0 +1,5 @@
+[hsr_1981C]
+hidden_subroutine_0x1981C {
+  SubRoutine(hidden_subroutine_0x18804)
+  SubRoutine(hsr_18A44)
+}

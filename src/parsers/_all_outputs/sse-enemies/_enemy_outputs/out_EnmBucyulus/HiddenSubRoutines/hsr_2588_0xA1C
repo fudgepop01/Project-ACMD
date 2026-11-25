@@ -1,0 +1,14 @@
+[hsr_A1C]
+hidden_subroutine_0xA1C {
+  if (R(Compare(LA-Int[0x05] == 0.0))) {
+    (undef: motion) 04_10_02_00(0, 6)
+  } elif (R(Compare(LA-Int[0x05] == 1.0))) {
+    (undef: motion) 04_10_02_00(0, 7)
+  } elif (R(Compare(LA-Int[0x05] >= 2.0))) {
+    (undef: motion) 04_10_02_00(0, 8)
+  }
+  BasicVariableAdd(1, LA-Int[0x05])
+  if (R(Compare(LA-Int[0x05] >= 2.0))) {
+    BasicVariableSet(2, LA-Int[0x05])
+  }
+}

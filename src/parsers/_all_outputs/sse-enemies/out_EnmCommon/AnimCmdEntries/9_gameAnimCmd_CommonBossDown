@@ -1,0 +1,6 @@
+// @ 0x41C8
+CommonBossDown {
+  SubRoutine(gameAnimCmd_CommonBossDownPre)
+  SubRoutine(gameAnimCmd_CommonBossDownPost)
+  Return()
+}

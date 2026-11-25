@@ -1,0 +1,14 @@
+Action 0x114: ENTRY {
+  BitVariableClear(RA-Bool[0x10])
+  ChangeAction(281, R(Animation End()))
+  if (R(On Ground())) {
+    ChangeSubAction(470)
+  } else {
+    ChangeSubAction(471)
+  }
+  SetAerialOrOnstage(5)
+  Module0900(2)
+}
+
+Action 0x114 : EXIT {
+}

@@ -1,0 +1,13 @@
+[hsr_E88]
+hidden_subroutine_0xE88 {
+  if (R(0x49()) && R(NOT Is Not in Damaging Magnifier())) {
+    (undef: Sp_Area) 69_02_05_00(6, 0.0, 0.0, LA-Float[0x04], true)
+    (undef: Sp_Kinetic) 66_00_03_00(5, 16, LA-Float[0x04])
+    (undef: Sp_Kinetic) 66_00_02_00(5, 20)
+    if (R(Is Not in Damaging Magnifier())) {
+      (undef: Sp_Kinetic) 66_15_02_00(5, -2.0)
+    } else {
+      (undef: Sp_Kinetic) 66_15_02_00(5, -1.0)
+    }
+  }
+}

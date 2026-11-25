@@ -1,0 +1,11 @@
+Action 0x11D: ENTRY {
+  SubRoutine(EXTERNAL: statusAnimCmd_AIRChkLanding)
+  ChangeAction(14, R(Animation End()))
+  ChangeSubAction(467)
+}
+
+Action 0x11D : EXIT {
+  if (R(Article Exists()) && R(0x18())) {
+    SubRoutine(hidden_subroutine_0x19928)
+  }
+}

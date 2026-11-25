@@ -1,0 +1,4 @@
+[hsr_364]
+hidden_subroutine_0x364 {
+  GraphicEffectAttached(130, 2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+}

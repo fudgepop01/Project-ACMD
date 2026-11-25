@@ -1,0 +1,5 @@
+[hsr_68]
+hidden_subroutine_0x68 {
+  ChangeActionStatus(5, 5, R(Successfully tethered ledge()))
+  Return()
+}

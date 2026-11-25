@@ -1,0 +1,17 @@
+// Status_Walk
+Action 0x1 {
+  BasicVariableSet(0, LA-Int[0x01])
+  BasicVariableSet(0, LA-Int[0x02])
+  BasicVariableSet(0, LA-Int[0x03])
+  SetAerialOrOnstage(0)
+  DisableActionStatusId(1)
+  (undef: Sp_base) 65_04_01_00(900)
+  (undef: Sp_base) 65_07_01_00(16)
+  ChangeAction(13, R(Compare(Variable_Float_Controller_Stick_Y <= 50.0)))
+  ChangeSubAction(0)
+  ChangeAction(4, R(On Ground()))
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(9, R(In Air()))
+}
+

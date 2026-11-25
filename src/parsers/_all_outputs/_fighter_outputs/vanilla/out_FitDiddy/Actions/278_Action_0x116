@@ -1,0 +1,30 @@
+Action 0x116: ENTRY {
+  EnterFinalSmashState()
+  SetFlashingEffect(38)
+  SuperHeavyArmor(1, 0.0)
+  BitVariableSet(LA-Bool[0x2F])
+  ChangeAction(300, R(Animation End()))
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1BA90)
+  if (R(Facing Left())) {
+    ChangeSubAction(501)
+    BitVariableSet(RA-Bool[0x13])
+  } else {
+    ChangeSubAction(502)
+  }
+  SetLoop(-1) {
+    if (R(NOT Bit is Set(RA-Bool[0x12]))) {
+      if (R(On Ground())) {
+        SetAerialOrOnstage(1)
+        SetRequirement(R(In Air()))
+      } else {
+        SetAerialOrOnstage(5)
+        SetRequirement(R(On Ground()))
+      }
+    }
+    LoadRest()
+  }
+}
+
+Action 0x116 : EXIT {
+  SubRoutine(hidden_subroutine_0x1BA20)
+}

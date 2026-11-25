@@ -1,0 +1,15 @@
+// @ 0x8D04
+AIRChkWallJump {
+
+  if (R(Compare(Info_Param_Int_Attach_Wall_Type == 1.0))) {
+    ChangeAction(104, R(In wallcling situation()))
+    AdditionalRequirement(R(In Air()))
+
+  }
+
+  if (R(Compare(Info_Param_Int_Wall_Jump_Type == 1.0))) {
+    ChangeAction(103, R(In walljump situation()))
+    AdditionalRequirement(R(In Air()))
+
+  }
+}

@@ -1,0 +1,61 @@
+[Attack100] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x4C : MAIN {
+  AsynchronousTimer(2.0)
+  SubRoutine(hidden_subroutine_0x11738)
+  AsynchronousTimer(8.0)
+  SubRoutine(hidden_subroutine_0x11738)
+  AsynchronousTimer(15.0)
+  SubRoutine(hidden_subroutine_0x11738)
+  AsynchronousTimer(21.0)
+  SubRoutine(hidden_subroutine_0x11738)
+  AsynchronousTimer(27.0)
+  SubRoutine(hidden_subroutine_0x11738)
+  GoToLoopRest01()
+  ClearTimer()
+  BitVariableSet(RA-Bool[0x19])
+  Goto(Subaction_0x4C : MAIN)
+}
+
+Subaction 0x4C : GFX {
+}
+
+Subaction 0x4C : SOUND {
+  AsynchronousTimer(2.0)
+  SoundEffect(3504)
+  SynchronousTimer(6.0)
+  SoundEffect(3505)
+  SynchronousTimer(7.0)
+  SoundEffect(3505)
+  SynchronousTimer(6.0)
+  SoundEffect(3506)
+  SynchronousTimer(6.0)
+  SoundEffect(3506)
+  SynchronousTimer(1.0)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0x4C : SFX)
+}
+
+Subaction 0x4C : OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(3.0)
+  Rumble(0, 0)
+  AsynchronousTimer(15.0)
+  Rumble(0, 0)
+  AsynchronousTimer(27.0)
+  Rumble(0, 0)
+  GoToLoopRest01()
+  ClearTimer()
+  Goto(Subaction_0x4C : OTHER)
+}
+

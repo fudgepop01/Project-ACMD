@@ -1,0 +1,19 @@
+[hsr_1840]
+hidden_subroutine_0x1840 {
+  SubRoutine(hsr_53C)
+  (undef: Sp_Area) 69_08_02_00(Variable_Int_Controller_Flick_No_Reset_Y, LA-Float[0x05])
+  (undef: model) 03_0A_04_00(4, LA-Float[0x0A], LA-Float[0x0B], LA-Float[0x0D])
+  if (R(Compare(LA-Float[0x05] > LA-Float[0x0A]))) {
+    if (R(Facing Right())) {
+      (undef: Sp_Kinetic) 66_0C_02_00(4, 0.0)
+    } else {
+      (undef: Sp_Kinetic) 66_0C_02_00(4, 180.0)
+    }
+  } else {
+    if (R(Facing Right())) {
+      (undef: Sp_Kinetic) 66_0C_02_00(4, 180.0)
+    } else {
+      (undef: Sp_Kinetic) 66_0C_02_00(4, 0.0)
+    }
+  }
+}

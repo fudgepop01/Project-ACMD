@@ -1,0 +1,28 @@
+Action 0xA: MAIN {
+  SetLoop(-1) {
+    if (R(Animation End())) {
+      SubAction09(13)
+      (undef: Sp_AI) 6A_00_01_00(17)
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0xA: EXIT {
+}
+
+Action 0xA: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(16)
+  (undef: Sp_AI) 6A_00_01_00(36)
+  if (R(Bit is Set(LA-Bool[0x06]))) {
+    SubAction09(15)
+  } else {
+    SubAction09(14)
+  }
+  BitVariableClear(LA-Bool[0x06])
+  (undef: Sp_base) 65_07_02_00(IC-Int[0xABE4], LA-Float[0x02])
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 16)
+  BitVariableClear(LA-Bool[0x0B])
+}
+

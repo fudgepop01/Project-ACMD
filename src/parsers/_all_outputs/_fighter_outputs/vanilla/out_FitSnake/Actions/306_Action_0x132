@@ -1,0 +1,22 @@
+Action 0x132: ENTRY {
+  UnkRaBit27(false)
+  SetTagDisplay(false)
+  ChangeAction(14, R(Animation End()))
+  ChangeSubAction(503)
+  SetArticleAction(7, 4)
+  BitVariableClear(LA-Bool[0x19])
+  SetGimmickEffectFlag(false)
+  DetachAttachCameraFar(false)
+}
+
+Action 0x132 : EXIT {
+  BitVariableClear(LA-Bool[0x01])
+  DetachAttachCameraFar(true)
+  ExitFinalSmashState()
+  BodyCollision(0)
+  (undef: color_blend) 21_0C_00_00()
+  EnableCameraZoom()
+  OnlyArticleEvent(7)
+  OnlyArticleEvent(8)
+  SetGimmickEffectFlag(true)
+}

@@ -1,0 +1,46 @@
+[RushAttackStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xB: MAIN {
+  AsynchronousTimer(1.0)
+  SubRoutine(hidden_subroutine_0x33A8)
+}
+
+Subaction 0xB: MAIN EXIT {
+}
+
+Subaction 0xB: MAIN INIT {
+}
+
+Subaction 0xB: GFX {
+}
+
+Subaction 0xB: GFX EXIT {
+}
+
+Subaction 0xB: GFX INIT {
+}
+
+Subaction 0xB: SFX {
+  SynchronousTimer(7.0)
+  SoundEffect(9734)
+  SynchronousTimer(42.0)
+  SoundEffect(9734)
+  SynchronousTimer(32.0)
+  SoundEffect(9730)
+}
+
+Subaction 0xB: SFX EXIT {
+}
+
+Subaction 0xB: SFX INIT {
+}
+

@@ -1,0 +1,6 @@
+[hsr_128]
+hidden_subroutine_0x128 {
+  InertCollision(0, 0, 0, 5.0, 0.0, 5.6, 0.0, 14, 383, 3, false, 9, 3, false, 1, false, 0)
+  ChangeAction(7, R(Bit is Set(RA-Bool[0x05])))
+  Return()
+}

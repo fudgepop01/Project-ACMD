@@ -1,0 +1,38 @@
+[SparkDspOff] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x17: MAIN {
+}
+
+Subaction 0x17: MAIN EXIT {
+}
+
+Subaction 0x17: MAIN INIT {
+}
+
+Subaction 0x17: GFX {
+}
+
+Subaction 0x17: GFX EXIT {
+}
+
+Subaction 0x17: GFX INIT {
+}
+
+Subaction 0x17: SFX {
+}
+
+Subaction 0x17: SFX EXIT {
+}
+
+Subaction 0x17: SFX INIT {
+}
+

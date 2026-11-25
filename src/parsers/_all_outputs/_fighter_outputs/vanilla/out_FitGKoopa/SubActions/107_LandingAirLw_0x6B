@@ -1,0 +1,45 @@
+[LandingAirLw] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x6B: MAIN {
+  GraphicModelSpecf(false, 1)
+  ModelChanger(1, 1)
+  SubRoutine(hidden_subroutine_0xAC20)
+  OffensiveCollision(Sp(0, 0), 10, 80, Sp(0, 130), Sp(0, 60), 20.0, 0.0, 10.0, -20.0, 0.0, 1.0, 1.0, 939593875)
+  OffensiveCollision(Sp(0, 1), 10, 80, Sp(0, 130), Sp(0, 60), 20.0, 0.0, 10.0, 20.0, 0.0, 1.0, 1.0, 939593875)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+  AsynchronousTimer(20.0)
+  ModelChanger(1, 0)
+  UndoBoneCollision(0)
+}
+
+Subaction 0x6B: GFX {
+}
+
+Subaction 0x6B: SOUND {
+  AsynchronousTimer(2.0)
+  SoundEffect(6623)
+  SynchronousTimer(15.0)
+  SoundEffect(6616)
+  SynchronousTimer(6.0)
+  SoundEffect(6661)
+}
+
+Subaction 0x6B: OTHER {
+  Rumble(14, 0)
+  Screenshake(1)
+  SlopeContourStand(6)
+  WearableItemsVisibility(false)
+  AsynchronousTimer(20.0)
+  WearableItemsVisibility(true)
+}
+

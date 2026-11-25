@@ -1,0 +1,44 @@
+Action 0x18: MAIN {
+  (undef: Sp_base) 65_07_02_00(IC-Int[0xABEA], LA-Float[0x05])
+  (undef: Sp_base) 65_07_02_00(IC-Int[0xABEB], LA-Float[0x07])
+  (undef: Sp_base) 65_09_02_00(IC-Int[0xABE5], LA-Float[0x08])
+  SetLoop(-1) {
+    OverrideBoneRotateX(46, LA-Float[0x05])
+    OverrideBoneRotateZ(47, LA-Float[0x07])
+    OverrideBoneRotateX(52, LA-Float[0x05])
+    OverrideBoneRotateZ(53, LA-Float[0x07])
+    OverrideBoneRotateX(58, LA-Float[0x05])
+    OverrideBoneRotateZ(59, LA-Float[0x07])
+    OverrideBoneScale(46, LA-Float[0x08], LA-Float[0x08], LA-Float[0x08])
+    OverrideBoneScale(52, LA-Float[0x08], LA-Float[0x08], LA-Float[0x08])
+    OverrideBoneScale(58, LA-Float[0x08], LA-Float[0x08], LA-Float[0x08])
+    FloatVariableSet(1.0, LA-Float[0x02])
+    FloatVariableDivide(LA-Float[0x08], LA-Float[0x02])
+    OverrideBoneScale(50, LA-Float[0x02], LA-Float[0x02], LA-Float[0x02])
+    OverrideBoneScale(56, LA-Float[0x02], LA-Float[0x02], LA-Float[0x02])
+    OverrideBoneScale(62, LA-Float[0x02], LA-Float[0x02], LA-Float[0x02])
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x18: EXIT {
+}
+
+Action 0x18: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(8)
+  BasicVariableSet(16, LA-Int[0x06])
+  SubAction09(23)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+  SubRoutine(hidden_subroutine_0x784)
+  (undef: Sp_Area) 69_08_02_00(Variable_Int_Controller_Flick_No_Reset_Y, LA-Float[0x05])
+  (undef: Sp_Area) 69_0A_02_00(Variable_Int_Controller_Flick_No_Reset_Y, LA-Float[0x07])
+  FloatVariableAdd(IC-Int[0xFA6], LA-Float[0x07])
+  TeleportationStageBased(LA-Float[0x05], LA-Float[0x07], Variable_Float_Posture_Pos_Z)
+  if [IF_REQ_UNKNOWN_3ARG] (R(Can Pick Up Another Item()), Variable_Int_Controller_Flick_No_Reset_Y, 3) {
+    ReverseDirection()
+  }
+  SubRoutine(hidden_subroutine_0x14AC)
+  SubRoutine(hidden_subroutine_0x1D14)
+}
+

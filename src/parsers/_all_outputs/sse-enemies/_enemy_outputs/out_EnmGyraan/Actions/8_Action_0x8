@@ -1,0 +1,17 @@
+Action 0x8: MAIN {
+}
+
+Action 0x8: EXIT {
+}
+
+Action 0x8: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_02_00(12, 13)
+  (undef: Sp_AI) 6A_00_03_00(18, 19, 21)
+  SubAction09(6)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 15)
+  BitVariableClear(LA-Bool[0x07])
+  SubRoutine(hidden_subroutine_0x458)
+}
+

@@ -1,0 +1,20 @@
+[hsr_11120]
+hidden_subroutine_0x11120 {
+  GraphicEffectAttached(655368, 64, 0.0, 10.0, 2.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(25.0)
+  GraphicEffectAttached(655362, 55, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(32.0)
+  SetLoop(4) {
+    FlashOverlayEffect(255, 255, 100, 100)
+    SynchronousTimer(1.0)
+    FlashOverlayEffect(255, 100, 0, 90)
+    SynchronousTimer(1.0)
+    TerminateFlashEffect()
+    SynchronousTimer(1.0)
+  }
+  TerminateFlashEffect()
+  AsynchronousTimer(50.0)
+  GraphicEffectAttached(655361, 64, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectLanding(40, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(14.0)
+}

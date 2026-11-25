@@ -1,0 +1,5 @@
+[hsr_238]
+hidden_subroutine_0x238 {
+  GraphicEffectAttached(10092565, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(10092566, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+}

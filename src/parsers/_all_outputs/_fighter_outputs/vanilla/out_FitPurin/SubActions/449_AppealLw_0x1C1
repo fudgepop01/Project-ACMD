@@ -1,0 +1,53 @@
+[AppealLw] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1C1: MAIN {
+  AsynchronousTimer(109.0)
+  AllowInterrupt()
+}
+
+Subaction 0x1C1: GFX {
+  Goto(Subaction_0x1C0 : GFX)
+}
+
+Subaction 0x1C1: SOUND {
+  AsynchronousTimer(10.0)
+  SoundEffect(6090)
+  SynchronousTimer(13.0)
+  StopSoundEffect(6090)
+  SoundEffect(6055)
+  SynchronousTimer(10.0)
+  SoundEffect(6056)
+  SynchronousTimer(67.0)
+  SoundEffect(6042)
+  SynchronousTimer(10.0)
+  SoundEffect(6092)
+}
+
+Subaction 0x1C1: OTHER {
+  AsynchronousTimer(23.0)
+  UnkRaBit27(false)
+  SetTagDisplay(false)
+  AsynchronousTimer(29.0)
+  HeldItemsVisibility(false)
+  AsynchronousTimer(32.0)
+  WearableItemsVisibility(false)
+  AsynchronousTimer(40.0)
+  SlopeContourStand02(1, 5)
+  AsynchronousTimer(100.0)
+  SlopeContourStand(0)
+  WearableItemsVisibility(true)
+  UnkRaBit27(true)
+  SetTagDisplay(true)
+  AsynchronousTimer(105.0)
+  HeldItemsVisibility(true)
+}
+

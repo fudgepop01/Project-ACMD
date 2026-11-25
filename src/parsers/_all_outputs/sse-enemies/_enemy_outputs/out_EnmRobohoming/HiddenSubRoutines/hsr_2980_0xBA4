@@ -1,0 +1,4 @@
+[hsr_BA4]
+hidden_subroutine_0xBA4 {
+  GraphicEffect(16973837, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}

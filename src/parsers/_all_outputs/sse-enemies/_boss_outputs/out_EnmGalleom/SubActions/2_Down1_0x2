@@ -1,0 +1,72 @@
+[Down1] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x2: MAIN {
+  SubRoutine(EXTERNAL: gameAnimCmd_CommonBossDown)
+}
+
+Subaction 0x2: MAIN EXIT {
+}
+
+Subaction 0x2: MAIN INIT {
+  BodyCollision(2)
+}
+
+Subaction 0x2: GFX {
+  Screenshake(2)
+  SynchronousTimer(1.0)
+  GraphicEffect(12386305, 11, 0.0, -6.0, 0.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(15.0)
+  GraphicEffectAttached2(12386322, 14, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8, true)
+  AsynchronousTimer(30.0)
+  GraphicEffectAttached2(12386322, 8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8, true)
+  AsynchronousTimer(45.0)
+  GraphicEffectAttached2(12386322, 73, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(60.0)
+  GraphicEffectAttached2(12386322, 36, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(100.0)
+  GraphicEffectAttached2(12386322, 58, 0.0, 0.0, -10.0, 0.0, 0.0, 0.0, 1.2, true)
+  GraphicEffect(12386306, 17, 0.0, -10.0, 0.0, 0.0, 0.0, 0.0, 1.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(114.0)
+  GraphicEffect(12386305, 8, 0.0, -4.0, 5.0, 0.0, 0.0, 0.0, 1.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(12386306, 77, 0.0, -4.0, 5.0, 0.0, 0.0, 0.0, 1.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(115.0)
+  GraphicEffectAttached2(12386322, 14, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8, true)
+  AsynchronousTimer(119.0)
+  GraphicEffect(12386306, 40, 20.0, -4.0, 5.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(130.0)
+  GraphicEffectAttached2(12386322, 8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8, true)
+  AsynchronousTimer(145.0)
+  GraphicEffectAttached2(12386322, 73, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(160.0)
+  GraphicEffectAttached2(12386322, 36, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(200.0)
+  GraphicEffectAttached2(12386322, 58, 0.0, 0.0, -10.0, 0.0, 0.0, 0.0, 1.2, true)
+}
+
+Subaction 0x2: GFX EXIT {
+}
+
+Subaction 0x2: GFX INIT {
+}
+
+Subaction 0x2: SFX {
+  SoundEffect(9714)
+  SynchronousTimer(60.0)
+  SoundEffect(9684)
+}
+
+Subaction 0x2: SFX EXIT {
+}
+
+Subaction 0x2: SFX INIT {
+}
+

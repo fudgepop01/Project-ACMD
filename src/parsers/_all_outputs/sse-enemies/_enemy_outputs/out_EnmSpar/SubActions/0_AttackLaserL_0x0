@@ -1,0 +1,55 @@
+[AttackLaserL] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x0: MAIN {
+  AsynchronousTimer(49.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 5, 8, 3.5, 270, 35, 0.0, 0, 0.0, 85, -2.8, 7.0, 0.0, 0.0, 0.0, 0.0, 3, 0.0, 0.3, 1.0, false, true, 10, 1, 7, 3, false, 0, 311, false, 9, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SubRoutine(hidden_subroutine_0x538)
+  (undef: Sp_base) 65_0E_01_00(IC-Int[0xABE9])
+  (undef: Sp_Link) 6E_00_03_00(2, 5103, 49)
+  (undef: Sp_Link) 6E_00_03_00(2, 5104, 0)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+}
+
+Subaction 0x0: MAIN EXIT {
+}
+
+Subaction 0x0: MAIN INIT {
+}
+
+Subaction 0x0: GFX {
+  GraphicEffectAttached(10747905, 8, 8.3, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(10747915, 8, 8.3, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(10747908, 8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(10747917, 8, 0.0, 11.259, 8.464, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(10747917, 8, 0.0, 11.259, -6.047, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(10747916, 8, 0.0, 11.259, 8.464, 0.0, 0.0, 0.0, 1.0, true)
+}
+
+Subaction 0x0: GFX EXIT {
+}
+
+Subaction 0x0: GFX INIT {
+}
+
+Subaction 0x0: SFX {
+  SoundEffect(9387)
+  SynchronousTimer(41.0)
+  SoundEffect(9388)
+}
+
+Subaction 0x0: SFX EXIT {
+}
+
+Subaction 0x0: SFX INIT {
+}
+

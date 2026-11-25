@@ -1,0 +1,18 @@
+Action 0x1A: MAIN {
+}
+
+Action 0x1A: EXIT {
+}
+
+Action 0x1A: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_02_00(24, 21)
+  SubAction09(0)
+  (undef: Sp_Area) 69_01_05_00(Variable_Int_Controller_Flick_No_Reset_Y, 0.0, 0.0, LA-Float[0x04], true)
+  (undef: Sp_Kinetic) 66_00_03_00(5, 38, LA-Float[0x04])
+  (undef: Sp_Kinetic) 66_0B_02_00(3, 40)
+  (undef: Sp_Kinetic) 66_00_02_00(4, 41)
+  (undef: Sp_Kinetic) 66_00_02_00(5, 37)
+  (undef: Sp_Kinetic) 66_0C_02_00(3, LA-Float[0x04])
+}
+

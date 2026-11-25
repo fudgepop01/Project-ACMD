@@ -1,0 +1,11 @@
+// Status_Dash
+Action 0x3 {
+  if (R(Facing Left())) {
+    RightDirection()
+    DecideDirection()
+    CharacterSpecific01()
+  }
+  ChangeSubAction(1)
+  ChangeAction(4, R(On Ground()))
+}
+

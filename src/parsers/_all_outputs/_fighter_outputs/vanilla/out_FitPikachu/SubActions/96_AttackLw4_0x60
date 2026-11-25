@@ -1,0 +1,68 @@
+[AttackLw4] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x60: MAIN {
+  AsynchronousTimer(1.0)
+  SetLoop(6) {
+    OffensiveCollision(Sp(0, 0), 2, 170, Sp(0, 30), Sp(0, 70), 5.76, 0.0, 6.4, -8.0, 0.0, 1.0, 1.2, 591597123)
+    OffensiveCollision(Sp(0, 1), 2, 170, Sp(0, 30), Sp(0, 70), 5.76, 0.0, 6.4, 8.0, 0.0, 1.0, 1.2, 591597123)
+    OffensiveCollision(Sp(0, 2), 2, 90, Sp(0, 30), Sp(0, 30), 2.88, 0.0, 4.0, 0.0, 0.0, 1.0, 1.2, 591597123)
+    SynchronousTimer(2.0)
+    TerminateCollisions()
+    SynchronousTimer(1.0)
+  }
+  OffensiveCollision(Sp(0, 0), 3, 70, Sp(0, 190), Sp(0, 70), 12.0, 0.0, 6.4, 0.0, 0.3, 1.0, 1.0, 591597187)
+  SynchronousTimer(1.0)
+  TerminateCollisions()
+}
+
+Subaction 0x60: GFX {
+  GraphicEffectLanding(14, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(4.0)
+  GraphicEffect(19, 0, 10.0, 5.0, 4.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(8.0)
+  GraphicEffect(19, 0, -8.0, 6.0, -4.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(12.0)
+  GraphicEffect(19, 0, 0.0, 4.0, 8.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(16.0)
+  GraphicEffect(19, 0, -10.0, 5.0, -4.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(20.0)
+  GraphicEffectLanding(14, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(19, 0, 2.0, 6.0, 10.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(24.0)
+  GraphicEffect(19, 0, -10.0, 4.0, -4.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(28.0)
+  GraphicEffect(19, 0, 8.0, 5.0, 4.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(32.0)
+  GraphicEffect(19, 0, -8.0, 6.0, -4.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x60: SOUND {
+  AsynchronousTimer(1.0)
+  StopSoundEffect(191)
+  SoundEffect(3267)
+  SoundEffect(3337)
+  SoundEffect(107)
+  SynchronousTimer(6.0)
+  SoundEffect(107)
+  SynchronousTimer(6.0)
+  SoundEffect(107)
+  SynchronousTimer(6.0)
+  SoundEffect(107)
+}
+
+Subaction 0x60: OTHER {
+  SlopeContourStand03(1, 6, true)
+  RumbleLoop(2, 32)
+  AsynchronousTimer(28.0)
+  SlopeContourStand02(0, 20)
+}
+

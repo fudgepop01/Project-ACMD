@@ -1,0 +1,12 @@
+[hsr_1C658]
+hidden_subroutine_0x1C658 {
+  if (R(Compare(LA-Int[0x42] >= 3.0))) {
+    SubRoutine(hidden_subroutine_0x1C568)
+  } elif (R(Compare(LA-Int[0x42] >= 2.0))) {
+    SubRoutine(hidden_subroutine_0x1C490)
+  } elif (R(Compare(LA-Int[0x42] >= 1.0))) {
+    SubRoutine(hidden_subroutine_0x1C3B8)
+  } else {
+    SubRoutine(hidden_subroutine_0x1C2E0)
+  }
+}

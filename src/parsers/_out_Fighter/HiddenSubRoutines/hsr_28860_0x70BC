@@ -1,0 +1,7 @@
+[hsr_70BC]
+hidden_subroutine_0x70BC {
+  BasicVariableIncrement(RA-Int[0x03])
+  if (R(Compare(RA-Int[0x03] >= Customize_Param_Int_Jump_Squat_Frame))) {
+    DisableActionStatusId(10111)
+  }
+}

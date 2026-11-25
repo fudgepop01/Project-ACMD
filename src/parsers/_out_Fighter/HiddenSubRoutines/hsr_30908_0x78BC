@@ -1,0 +1,7 @@
+[hsr_78BC]
+hidden_subroutine_0x78BC {
+  SubRoutine(statusAnimCmd_ItemShootWalkF_Common)
+  SubRoutine(statusAnimCmd_AllowThrowItem)
+  SubRoutine(hidden_subroutine_0xC894)
+  SubRoutine(hidden_subroutine_0xC944)
+}

@@ -1,0 +1,41 @@
+Action 0x113: ENTRY {
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x160D8)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(15)
+      SetAerialOrOnstage(2)
+      EnableDisableLedgegrab(0)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(481, true)
+      } else {
+        ChangeSubAction(481)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SubRoutine(hidden_subroutine_0x16068)
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x13]))) {
+        EnableDisableLedgegrab(2)
+      }
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(482, true)
+      } else {
+        ChangeSubAction(482)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x113 : EXIT {
+}

@@ -1,0 +1,12 @@
+// Status_Jump_Squat
+Action 0xA {
+  (undef: Sp_Kinetic) 66_07_00_00()
+  EnableSpecifiedMovement(9)
+  BitVariableSet(LA-Bool[0x0E])
+  BitVariableClear(LA-Bool[0x08])
+  ChangeSubAction(1)
+  SynchronousTimer(1.0)
+  SubRoutine(hidden_subroutine_0xB0)
+  ChangeAction(11, R(Bit is Set(RA-Bool[0x05])))
+}
+

@@ -1,0 +1,10 @@
+// Status_Catched_Air_End_Ganon
+Action 0xEA: ENTRY {
+  (undef: StageObject) 0C_29_00_00()
+  (undef: motion) 04_1A_01_00(459)
+  ChangeSubAction(RA-Int[0x00])
+  ChangeAction(73, R(Animation End()))
+}
+
+Action 0xEA : EXIT {
+}

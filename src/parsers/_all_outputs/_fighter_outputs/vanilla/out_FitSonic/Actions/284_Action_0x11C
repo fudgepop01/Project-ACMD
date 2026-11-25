@@ -1,0 +1,12 @@
+Action 0x11C: ENTRY {
+  BitVariableSet(LA-Bool[0x3A])
+  ChangeAction(14, R(Animation End()))
+  ChangeAction(282, R(On Ground()))
+  BasicVariableSet(IC-Int[0x5DC3], RA-Int[0x02])
+  BasicVariableIncrement(RA-Int[0x02])
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1E9B0)
+  ChangeSubAction(468)
+}
+
+Action 0x11C : EXIT {
+}

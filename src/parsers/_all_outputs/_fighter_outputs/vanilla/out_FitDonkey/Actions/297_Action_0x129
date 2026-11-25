@@ -1,0 +1,10 @@
+Action 0x129: ENTRY {
+  ResetFlickY()
+  PassThroughFloorIfPossible_UNDOC0ARGS()
+  Module0900(2)
+  SetAerialOrOnstage(5)
+  SubRoutine(Action_0x15 : ENTRY)
+}
+
+Action 0x129 : EXIT {
+}

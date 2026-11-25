@@ -1,0 +1,48 @@
+IC-Int[0x03] ("Variable_Float_Posture_Pos_X") in Action 0x5: EXIT @ 6 : 0
+IC-Int[0x03] ("Variable_Float_Posture_Pos_X") in Action 0x5: MAIN @ 6 : 0
+IC-Int[0x03] ("Variable_Float_Posture_Pos_X") in Action 0x6: MAIN @ 6 : 0
+
+IC-Int[0x04] ("Variable_Float_Posture_Pos_Y") in Action 0x5: EXIT @ 6 : 1
+IC-Int[0x04] ("Variable_Float_Posture_Pos_Y") in Action 0x5: MAIN @ 6 : 1
+IC-Int[0x04] ("Variable_Float_Posture_Pos_Y") in Action 0x6: MAIN @ 6 : 1
+
+IC-Int[0x15] ("Variable_Float_Posture_Pos_Z") in Action 0x5: EXIT @ 6 : 2
+IC-Int[0x15] ("Variable_Float_Posture_Pos_Z") in Action 0x5: MAIN @ 6 : 2
+IC-Int[0x15] ("Variable_Float_Posture_Pos_Z") in Action 0x6: MAIN @ 6 : 2
+
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x0: EXIT @ 1 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x0: EXIT @ 2 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x1: EXIT @ 2 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x1: EXIT @ 3 : 1
+
+IC-Int[0x520F] ("Variable_Int_Controller_Flick_X_Dir") in Action 0x5: INIT @ 6 : 1
+IC-Int[0x520F] ("Variable_Int_Controller_Flick_X_Dir") in Action 0x5: INIT @ 9 : 1
+IC-Int[0x520F] ("Variable_Int_Controller_Flick_X_Dir") in Action 0x5: INIT @ 12 : 1
+IC-Int[0x520F] ("Variable_Int_Controller_Flick_X_Dir") in Action 0x5: INIT @ 15 : 1
+IC-Int[0x520F] ("Variable_Int_Controller_Flick_X_Dir") in hsr_51C @ 0 : 1
+IC-Int[0x520F] ("Variable_Int_Controller_Flick_X_Dir") in hsr_51C @ 2 : 1
+IC-Int[0x520F] ("Variable_Int_Controller_Flick_X_Dir") in hsr_51C @ 4 : 1
+IC-Int[0x520F] ("Variable_Int_Controller_Flick_X_Dir") in hsr_51C @ 6 : 1
+IC-Int[0x520F] ("Variable_Int_Controller_Flick_X_Dir") in hsr_56C @ 0 : 1
+IC-Int[0x520F] ("Variable_Int_Controller_Flick_X_Dir") in hsr_56C @ 9 : 1
+IC-Int[0x520F] ("Variable_Int_Controller_Flick_X_Dir") in hsr_56C @ 18 : 1
+IC-Int[0x520F] ("Variable_Int_Controller_Flick_X_Dir") in hsr_56C @ 27 : 1
+IC-Int[0x520F] ("Variable_Int_Controller_Flick_X_Dir") in Subaction 0x0: MAIN @ 2 : 1
+IC-Int[0x520F] ("Variable_Int_Controller_Flick_X_Dir") in Subaction 0x0: MAIN @ 5 : 1
+IC-Int[0x520F] ("Variable_Int_Controller_Flick_X_Dir") in Subaction 0x0: MAIN @ 8 : 1
+IC-Int[0x520F] ("Variable_Int_Controller_Flick_X_Dir") in Subaction 0x0: MAIN @ 11 : 1
+
+LA-Int[0x06] in Action 0x6: INIT @ 4 : 1
+
+LA-Float[0x0C] in Subaction 0x0: MAIN @ 4 : 46
+LA-Float[0x0C] in Subaction 0x0: MAIN @ 7 : 46
+LA-Float[0x0C] in Subaction 0x0: MAIN @ 10 : 46
+LA-Float[0x0C] in Subaction 0x0: MAIN @ 13 : 46
+
+LA-Bool[0x04] in Action 0x0: EXIT @ 0 : 1
+LA-Bool[0x04] in Action 0x1: EXIT @ 1 : 1
+
+LA-Bool[0x06] in Action 0x2: INIT @ 6 : 1
+
+LA-Bool[0x0B] in Action 0x5: EXIT @ 0 : 0
+LA-Bool[0x0B] in Action 0x5: EXIT @ 1 : 1

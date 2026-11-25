@@ -1,0 +1,14 @@
+// @ 0x23350
+ItemSwingS4Hold {
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(161, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(161, R(Button Not Pressed(Attack)))
+  AdditionalRequirement(R(On Ground()))
+
+  BasicVariableSet(Variable_Int_Item_Swing_4_Motion_Kind, RA-Int[0x00])
+  BasicVariableAdd(2, RA-Int[0x00])
+  ChangeSubAction(RA-Int[0x00])
+}

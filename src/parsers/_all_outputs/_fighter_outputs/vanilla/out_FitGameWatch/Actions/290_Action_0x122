@@ -1,0 +1,24 @@
+Action 0x122: ENTRY {
+  SetGimmickEffectFlag(false)
+  SetShapeFlag(3)
+  ChangeAction(296, R(In Air()))
+
+  ChangeAction(285, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus(10044, 287, R(Bit is Set(RA-Bool[0x11])))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x10])))
+  AdditionalRequirement(R(Compare(IC-Int[0x3F8] >= Common_Param_Float_Dash_Stick_X)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeSubAction(505)
+}
+
+Action 0x122 : EXIT {
+  if (R(NOT Bit is Set(RA-Bool[0x12]))) {
+    if (R(Compare(Variable_Int_Status_Kind == 293.0))) {
+      ReverseDirection()
+      DecideDirection()
+    }
+  }
+}

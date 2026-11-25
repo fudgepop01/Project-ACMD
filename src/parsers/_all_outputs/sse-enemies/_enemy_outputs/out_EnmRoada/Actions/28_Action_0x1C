@@ -1,0 +1,12 @@
+Action 0x1C: MAIN {
+  EXTERNAL: statusAnimCmd_CommonStandBy
+}
+
+Action 0x1C: EXIT {
+  EXTERNAL: statusAnimCmdExit_CommonStandBy
+}
+
+Action 0x1C: INIT {
+  EXTERNAL: statusAnimCmdInit_CommonStandBy
+}
+

@@ -1,0 +1,15 @@
+[hsr_10210]
+hidden_subroutine_0x10210 {
+  AsynchronousTimer(3.0)
+  BodyCollision(2)
+  ModelChanger(1, 1)
+  AsynchronousTimer(19.0)
+  BodyCollision(0)
+  SetLoop(3) {
+    ModelChanger(1, 0)
+    SynchronousTimer(2.0)
+    ModelChanger(1, 1)
+    SynchronousTimer(1.0)
+  }
+  Return()
+}

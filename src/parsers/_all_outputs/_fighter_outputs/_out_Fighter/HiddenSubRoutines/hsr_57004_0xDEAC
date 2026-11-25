@@ -1,0 +1,6 @@
+[hsr_DEAC]
+hidden_subroutine_0xDEAC {
+  if (R(Button Press(Attack)) && R(Button Pressed(Shield)) && R(Compare(Variable_Int_Controller_Trigger_1_Count_Prev >= Common_Param_Int_No_Rapid_Frame_Value))) {
+    SubRoutine(hsr_DE24)
+  }
+}

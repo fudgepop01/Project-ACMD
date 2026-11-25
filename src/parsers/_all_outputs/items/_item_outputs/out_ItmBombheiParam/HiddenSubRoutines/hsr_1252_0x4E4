@@ -1,0 +1,8 @@
+[hsr_4E4]
+hidden_subroutine_0x4E4 {
+  if (R(Bit is Set(LA-Bool[0x01]))) {
+    InertCollision(0, 0, 0, 3.0, 0.0, 0.0, 0.0, 14, 383, 3, false, 9, 3, false, 180, false, 0)
+    ChangeAction(7, R(Bit is Set(RA-Bool[0x05])))
+  }
+  Return()
+}

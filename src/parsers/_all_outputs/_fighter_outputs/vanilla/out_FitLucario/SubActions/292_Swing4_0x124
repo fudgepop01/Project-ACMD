@@ -1,0 +1,38 @@
+[Swing4] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x124: MAIN {
+  WeaponOperation(100)
+  AsynchronousTimer(6.0)
+  ChangeBeamSwordSize(5, 3.0)
+  AsynchronousTimer(11.0)
+  SubRoutine(EXTERNAL: gameAnimCmd_SwordSwing4Common)
+  MoveHitbox(3, 26, 0.0, 0.0, 0.0)
+  AsynchronousTimer(14.0)
+  TerminateCollisions()
+  ChangeBeamSwordSize(3, 0.4)
+  AsynchronousTimer(18.0)
+  ChangeBeamSwordSize(5, 1.0)
+}
+
+Subaction 0x124: GFX {
+}
+
+Subaction 0x124: SOUND {
+  SubRoutine(hidden_subroutine_0x25A28)
+}
+
+Subaction 0x124: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(11.0)
+  Rumble(13, 0)
+}
+

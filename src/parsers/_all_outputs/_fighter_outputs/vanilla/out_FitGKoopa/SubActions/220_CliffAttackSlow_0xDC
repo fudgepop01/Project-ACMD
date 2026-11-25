@@ -1,0 +1,42 @@
+[CliffAttackSlow] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xDC: MAIN {
+  BodyCollision(2)
+  AsynchronousTimer(41.0)
+  BodyCollision(0)
+  AsynchronousTimer(45.0)
+  OffensiveCollision(Sp(0, 0), 16, 130, Sp(90, 100), Sp(1, 0), 15.0, 0.0, 7.0, 53.0, 0.0, 1.0, 1.0, 671289491)
+  OffensiveCollision(Sp(0, 1), 16, 130, Sp(90, 100), Sp(1, 0), 15.0, 0.0, 7.0, 33.0, 0.0, 1.0, 1.0, 671289491)
+  OffensiveCollision(Sp(0, 2), 16, 130, Sp(90, 100), Sp(1, 0), 15.0, 0.0, 7.0, 13.0, 0.0, 1.0, 1.0, 671289491)
+  OffensiveCollision(Sp(0, 3), 16, 130, Sp(90, 100), Sp(1, 0), 15.0, 0.0, 7.0, -3.0, 0.0, 1.0, 1.0, 671289491)
+  SynchronousTimer(5.0)
+  TerminateCollisions()
+}
+
+Subaction 0xDC: GFX {
+}
+
+Subaction 0xDC: SOUND {
+  AsynchronousTimer(8.0)
+  SoundEffect(6659)
+  SynchronousTimer(27.0)
+  SoundEffect(6662)
+  SynchronousTimer(10.0)
+  SoundEffect(6622)
+}
+
+Subaction 0xDC: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(43.0)
+  Rumble(13, 0)
+}
+

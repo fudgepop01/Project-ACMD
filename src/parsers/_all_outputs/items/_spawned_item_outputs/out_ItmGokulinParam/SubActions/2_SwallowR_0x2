@@ -1,0 +1,23 @@
+[SwallowR] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x2 : GAME {
+  CatchCollision_UNDOC10ARGS(0, 12, 8.0, 6.0, 0.0, 0.0, 258, 3, 0, true)
+}
+
+Subaction 0x2 : GFX {
+}
+
+Subaction 0x2 : SOUND {
+  AsynchronousTimer(6.0)
+  SoundEffect(7956)
+}
+

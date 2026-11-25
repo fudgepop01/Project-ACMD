@@ -1,0 +1,36 @@
+IC-Int[0x03] ("Variable_Float_Posture_Pos_X") in Action 0x5 (Status_Run_Brake) @ 6 : 0
+IC-Int[0x03] ("Variable_Float_Posture_Pos_X") in Action 0x5 (Status_Run_Brake) @ 26 : 1
+IC-Int[0x03] ("Variable_Float_Posture_Pos_X") in hsr_88 @ 0 : 1
+
+IC-Int[0x04] ("Variable_Float_Posture_Pos_Y") in Action 0x5 (Status_Run_Brake) @ 7 : 0
+
+LA-Int[0x1B] in Subaction 0x0 : SOUND @ 0 : 1
+LA-Int[0x1B] in Subaction 0x4 : SOUND @ 0 : 1
+
+LA-Float[0x07] in hsr_88 @ 0 : 3
+
+LA-Bool[0x00] in Action 0x1 (Status_Walk) @ 2 : 0
+LA-Bool[0x00] in Action 0x1 (Status_Walk) @ 5 : 1
+LA-Bool[0x00] in Action 0x1 (Status_Walk) @ 14 : 1
+LA-Bool[0x00] in Action 0x1 (Status_Walk) @ 22 : 1
+LA-Bool[0x00] in Action 0x1 (Status_Walk) @ 30 : 1
+LA-Bool[0x00] in Action 0x5 (Status_Run_Brake) @ 8 : 1
+LA-Bool[0x00] in Action 0x5 (Status_Run_Brake) @ 9 : 0
+LA-Bool[0x00] in Action 0x5 (Status_Run_Brake) @ 13 : 0
+
+RA-Int[0x00] in Action 0x5 (Status_Run_Brake) @ 2 : 2
+RA-Int[0x00] in Action 0x5 (Status_Run_Brake) @ 3 : 1
+RA-Int[0x00] in Action 0x5 (Status_Run_Brake) @ 4 : 1
+RA-Int[0x00] in Action 0x5 (Status_Run_Brake) @ 5 : 1
+RA-Int[0x00] in Action 0x5 (Status_Run_Brake) @ 31 : 0
+
+RA-Float[0x00] in Action 0x5 (Status_Run_Brake) @ 6 : 1
+
+RA-Float[0x01] in Action 0x5 (Status_Run_Brake) @ 7 : 1
+RA-Float[0x01] in Action 0x5 (Status_Run_Brake) @ 26 : 2
+
+RA-Float[0x02] in Action 0x5 (Status_Run_Brake) @ 28 : 2
+RA-Float[0x02] in Action 0x5 (Status_Run_Brake) @ 30 : 1
+
+RA-Float[0x03] in Action 0x5 (Status_Run_Brake) @ 29 : 2
+RA-Float[0x03] in Action 0x5 (Status_Run_Brake) @ 30 : 2

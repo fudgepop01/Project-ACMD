@@ -1,0 +1,10 @@
+// Status_Turn_Run
+Action 0x8 {
+  ChangeAction(9, R(On Ground()))
+  ChangeSubAction(7, true)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  DisableActionStatusId(9)
+  ChangeAction(11, R(On Ground()))
+}
+

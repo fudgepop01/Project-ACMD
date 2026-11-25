@@ -1,0 +1,7 @@
+Action 0x11B: ENTRY {
+  ChangeAction(284, R(On Ground()))
+  ChangeSubAction(475)
+}
+
+Action 0x11B : EXIT {
+}

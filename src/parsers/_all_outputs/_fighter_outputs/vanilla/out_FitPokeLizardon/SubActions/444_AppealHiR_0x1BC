@@ -1,0 +1,40 @@
+[AppealHiR] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1BC: MAIN {
+  AsynchronousTimer(99.0)
+  AllowInterrupt()
+}
+
+Subaction 0x1BC: GFX {
+  AsynchronousTimer(112.0)
+  GraphicEffectLanding(11, 0, -5.0, 0.0, -2.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x1BC: SOUND {
+  AsynchronousTimer(13.0)
+  SoundEffect(5488)
+  SynchronousTimer(32.0)
+  SoundEffectTransient(2189)
+  SoundEffect(5411)
+  SynchronousTimer(22.0)
+  SoundEffect(5411)
+  SynchronousTimer(45.0)
+  SoundEffect(5486)
+}
+
+Subaction 0x1BC: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(111.0)
+  Rumble(18, 0)
+  Screenshake(0)
+}
+

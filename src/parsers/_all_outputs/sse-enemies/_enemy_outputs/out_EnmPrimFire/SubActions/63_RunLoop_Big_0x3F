@@ -1,0 +1,57 @@
+[RunLoop_Big] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x3F: MAIN {
+}
+
+Subaction 0x3F: MAIN EXIT {
+}
+
+Subaction 0x3F: MAIN INIT {
+  if (R(Compare(Variable_Int_Controller_Flick_X_Dir == 31.0))) {
+    SubRoutine(hidden_subroutine_0xB5D8)
+  } else {
+  }
+}
+
+Subaction 0x3F: GFX {
+  SynchronousTimer(35.0)
+  SetLoop(-1) {
+    GraphicEffectStepping(26, 0, 2.16, 0.0, -3.565, 0.0, 0.0, 0.0, 1.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+    SynchronousTimer(30.0)
+    GraphicEffectStepping(26, 0, -2.16, 0.0, -4.112, 0.0, 0.0, 0.0, 1.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+    SynchronousTimer(30.0)
+  }
+}
+
+Subaction 0x3F: GFX EXIT {
+}
+
+Subaction 0x3F: GFX INIT {
+}
+
+Subaction 0x3F: SFX {
+  SynchronousTimer(25.0)
+  SteppingSoundEffect(9539)
+  SynchronousTimer(30.0)
+  SteppingSoundEffect(9540)
+  SynchronousTimer(1.0)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0x3F : SFX)
+}
+
+Subaction 0x3F: SFX EXIT {
+}
+
+Subaction 0x3F: SFX INIT {
+}
+

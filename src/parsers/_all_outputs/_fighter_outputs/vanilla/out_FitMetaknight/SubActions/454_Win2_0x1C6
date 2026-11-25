@@ -1,0 +1,36 @@
+[Win2] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1C6: MAIN {
+}
+
+Subaction 0x1C6: GFX {
+}
+
+Subaction 0x1C6: SOUND {
+  AsynchronousTimer(14.0)
+  VictorySoundEffect(744)
+  SynchronousTimer(10.0)
+  VictorySoundEffect(742)
+  SynchronousTimer(10.0)
+  VictorySoundEffect(863)
+}
+
+Subaction 0x1C6: OTHER {
+  ModelChangerPermanent(2, 1)
+  GenerateArticleWin(1, 0)
+  SetArticleAction(1, 1)
+  ArticleVisibility(1, false)
+  AsynchronousTimer(39.0)
+  ArticleVisibility(1, true)
+  ModelChangerPermanent(2, 2)
+}
+

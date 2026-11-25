@@ -1,0 +1,43 @@
+[DrillStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x2: MAIN {
+  AsynchronousTimer(36.0)
+  SpecialOffensiveCollisionEnemyHitbox(2, 0, 7, 2, 1.0, 110, 100, 0.0, 40, 0.0, 0, 0.0, 15.0, 0.0, 0.0, -30.0, 0.0, 0, 0.0, 0.2, 1.0, false, true, 1, 2, 2, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(3, 0, 7, 2, 1.0, 110, 100, 0.0, 40, 0.0, 0, 0.0, 15.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.2, 1.0, false, true, 1, 2, 2, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+}
+
+Subaction 0x2: MAIN EXIT {
+}
+
+Subaction 0x2: MAIN INIT {
+}
+
+Subaction 0x2: GFX {
+}
+
+Subaction 0x2: GFX EXIT {
+}
+
+Subaction 0x2: GFX INIT {
+}
+
+Subaction 0x2: SFX {
+  SynchronousTimer(32.0)
+  SoundEffect(9872)
+}
+
+Subaction 0x2: SFX EXIT {
+}
+
+Subaction 0x2: SFX INIT {
+}
+

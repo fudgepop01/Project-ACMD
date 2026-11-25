@@ -1,0 +1,22 @@
+[hsr_D0]
+hidden_subroutine_0xD0 {
+  if (R(2714(1))) {
+    BasicVariableSet(1, LA-Int[0x03])
+  } else {
+    BasicVariableSet(0, LA-Int[0x03])
+  }
+  if (R(Compare(LA-Int[0x02] == LA-Int[0x03]))) {
+    ChangeSubAction(6)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ReverseDirection()
+    DecideDirection()
+    CharacterSpecific01()
+    if (R(Compare(LA-Int[0x02] == 0.0))) {
+      BasicVariableSet(1, LA-Int[0x02])
+    } else {
+      BasicVariableSet(0, LA-Int[0x02])
+    }
+  }
+  Return()
+}

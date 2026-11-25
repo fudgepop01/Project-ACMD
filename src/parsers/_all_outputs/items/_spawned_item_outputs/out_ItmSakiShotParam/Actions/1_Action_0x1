@@ -1,0 +1,18 @@
+// Status_Walk
+Action 0x1 {
+  (undef: Sp_base) 65_04_01_00(30)
+  (undef: Sp_base) 65_03_03_00(0.0, 270.0, -45.0)
+  DecideDirection()
+  CharacterSpecific01()
+  if (R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv < 0.0))) {
+    LeftDirection()
+    DecideDirection()
+    CharacterSpecific01()
+  }
+  SynchronousTimer(2.0)
+  (undef: Sp_Kinetic) 66_09_01_00(true)
+  ChangeAction(6, R(In walljump situation()), 255)
+  ChangeAction(6, R(Bit is Set(RA-Bool[0x03])))
+  ChangeSubAction(0)
+}
+

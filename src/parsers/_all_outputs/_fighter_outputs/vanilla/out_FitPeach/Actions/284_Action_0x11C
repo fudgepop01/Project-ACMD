@@ -1,0 +1,10 @@
+Action 0x11C: ENTRY {
+  ChangeAction(14, R(In Air()))
+  ChangeAction(0, R(Animation End()))
+  ChangeSubAction(51)
+  SetArticleAction(0, 4)
+}
+
+Action 0x11C : EXIT {
+  SubRoutine(hidden_subroutine_0x172F8)
+}

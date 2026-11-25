@@ -1,0 +1,24 @@
+[hsr_2503C]
+hidden_subroutine_0x2503C {
+  if (R(Roll A Die())) {
+    SoundEffect(1368)
+  } else {
+    if (R(Roll A Die())) {
+      SoundEffect(1370)
+    } else {
+      if (R(Roll A Die())) {
+        SoundEffect(1371)
+      } else {
+        if (R(Roll A Die())) {
+          SoundEffect(1372)
+        } else {
+          if (R(Roll A Die())) {
+            SoundEffect(1373)
+          } else {
+            SoundEffect(1391)
+          }
+        }
+      }
+    }
+  }
+}

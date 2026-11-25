@@ -1,0 +1,32 @@
+Action 0x124: ENTRY {
+  ChangeAction(286, R(Compare(Variable_Float_Controller_Stick_Y > Common_Param_Float_Squat_Stick_Y)))
+  SubRoutine(hidden_subroutine_0x1C038)
+  ChangeAction(293, R(Compare(RA-Float[0x04] <= IC-Int[0xFDC])))
+  BasicVariableSet(489, RA-Int[0x00])
+  BasicVariableSet(490, RA-Int[0x01])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(6)
+      SetAerialOrOnstage(2)
+      if (R(Compare(Variable_Int_Motion_Kind == RA-Int[0x01]))) {
+        ChangeSubAction(RA-Int[0x00], true)
+      } else {
+        ChangeSubAction(RA-Int[0x00])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAirGround(116)
+      SetAerialOrOnstage(5)
+      if (R(Compare(Variable_Int_Motion_Kind == RA-Int[0x00]))) {
+        ChangeSubAction(RA-Int[0x01], true)
+      } else {
+        ChangeSubAction(RA-Int[0x01])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x124 : EXIT {
+}

@@ -1,0 +1,52 @@
+[SpecialAirN] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D0 : MAIN {
+  AddSubtractMomentum(0.0, 0.2)
+  AsynchronousTimer(8.0)
+  BitVariableSet(RA-Bool[0x10])
+  AsynchronousTimer(50.0)
+  BitVariableSet(RA-Bool[0x12])
+  BasicVariableSet(1, RA-Int[0x00])
+  AsynchronousTimer(52.0)
+  OffensiveCollision(Sp(44, 0), 26, 361, Sp(0, 93), Sp(0, 30), 5.0, 0.5, 0.0, 0.0, 0.0, 1.0, 1.0, 688063621)
+  OffensiveCollision(Sp(43, 1), 23, 361, Sp(0, 93), Sp(0, 30), 3.5, 2.5, 0.0, 0.0, 0.0, 1.0, 1.0, 688063621)
+  OffensiveCollision(Sp(44, 2), 22, 361, Sp(0, 93), Sp(0, 30), 3.5, -4.0, 0.0, 0.0, 0.0, 1.0, 1.0, 688063557)
+  SynchronousTimer(5.0)
+  TerminateCollisions()
+  SynchronousTimer(12.0)
+  BasicVariableSet(2, RA-Int[0x00])
+}
+
+Subaction 0x1D0 : GFX {
+  Goto(Subaction_0x1CE : GFX)
+}
+
+Subaction 0x1D0 : SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(1314)
+  SynchronousTimer(3.0)
+  SoundEffect(3580)
+  SoundEffect(3496)
+  SynchronousTimer(12.0)
+  SoundEffect(3581)
+  SynchronousTimer(21.0)
+  SoundEffect(3487)
+  SynchronousTimer(15.0)
+  StopSoundEffect(3496)
+  SoundEffect(1315)
+  SoundEffect(3582)
+}
+
+Subaction 0x1D0 : OTHER {
+  SubRoutine(Subaction_0x1CE : OTHER)
+}
+

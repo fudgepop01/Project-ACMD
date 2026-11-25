@@ -1,0 +1,23 @@
+// Status_Run
+Action 0x4 {
+  ChangeAction(3, R(In Air()))
+  DisableActionStatusId(4)
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 5.0))) {
+    ChangeAction(5, R(In Air()))
+    ChangeAction(5, R(Bit is Set(LA-Bool[0x05])))
+  } else {
+    ChangeAction(3, R(In Air()))
+    ChangeAction(3, R(Bit is Set(LA-Bool[0x05])))
+  }
+  if (R(Compare(LA-Int[0x00] == 0.0))) {
+    ChangeSubAction(10)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    BasicVariableSet(1, LA-Int[0x00])
+  }
+  ChangeSubAction(6)
+  (undef: Sp_base) 65_07_01_00(2)
+  SubRoutine(hidden_subroutine_0xB4)
+  ChangeAction(8, R(On Ground()))
+}
+

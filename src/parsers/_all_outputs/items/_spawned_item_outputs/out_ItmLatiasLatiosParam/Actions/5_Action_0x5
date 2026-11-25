@@ -1,0 +1,39 @@
+// Status_Run_Brake
+Action 0x5 {
+  (undef: Sp_base) 65_07_01_00(5)
+  (undef: Sp_base) 65_0A_01_00(14)
+  BasicVariableRandom(6, 10, RA-Int[0x00])
+  BasicVariableDivide(2, RA-Int[0x00])
+  BasicVariableMultiply(2, RA-Int[0x00])
+  while (R(Compare(RA-Int[0x00] > 0.0))) {
+    FloatVariableSet(Variable_Float_Posture_Pos_X, RA-Float[0x00])
+    FloatVariableSet(Variable_Float_Posture_Pos_Y, RA-Float[0x01])
+    if (R(Bit is Set(LA-Bool[0x00]))) {
+      BitVariableClear(LA-Bool[0x00])
+      ChangeSubAction(7)
+      (undef: Sp_base) 65_0C_01_00(1.2)
+    } else {
+      BitVariableSet(LA-Bool[0x00])
+      ChangeSubAction(3)
+      (undef: Sp_base) 65_0C_01_00(0.8)
+    }
+    SubRoutine(hidden_subroutine_0x88)
+    (undef: Sp_Kinetic) 66_05_01_00(2)
+    SynchronousTimer(30.0)
+    while (R(Is Not in Damaging Magnifier())) {
+      SynchronousTimer(5.0)
+      EndWhile()
+      SynchronousTimer(5.0)
+      TerminateGraphicEffect(17039385, true, true)
+      TerminateGraphicEffect(17039386, true, true)
+      (undef: Sp_base) 65_0A_03_00(15, Variable_Float_Posture_Pos_X, RA-Float[0x01])
+      SynchronousTimer(1.0)
+      FloatVariableRandom(-20.0, 20.0, RA-Float[0x02])
+      FloatVariableRandom(-20.0, 20.0, RA-Float[0x03])
+      (undef: Sp_base) 65_07_03_00(5, RA-Float[0x02], RA-Float[0x03])
+      BasicVariableDecrement(RA-Int[0x00])
+      TerminateCollisions()
+      EndWhile()
+      ChangeAction(6, R(Button Tap?()))
+}
+

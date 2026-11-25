@@ -1,0 +1,18 @@
+[hsr_1B0]
+hidden_subroutine_0x1B0 {
+  (undef: Sp_base) 65_07_01_00(2)
+
+  if (R(2714(1)) && R(Is within footstool range())) {
+    ChangeActionStatus(8, 8, R(On Ground()))
+    AdditionalRequirement(R(Compare(LA-Int[0x00] < 3.0)))
+
+    ChangeActionStatus(9, 9, R(In Air()))
+    AdditionalRequirement(R(Compare(LA-Int[0x00] < 3.0)))
+
+  } elif (R(On a Passable Floor()) && R(2714(0)) && R(Is within footstool range())) {
+    ChangeActionStatus(11, 11, R(On Ground()))
+  } elif (R(NOT 2714(1))) {
+    ChangeActionStatus(13, 13, R(On Ground()))
+  }
+  Return()
+}

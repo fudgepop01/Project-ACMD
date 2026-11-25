@@ -1,0 +1,38 @@
+[SpecialAirLwEnd] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1E1: MAIN {
+  BitVariableSet(RA-Bool[0x10])
+  SynchronousTimer(1.0)
+  OffensiveCollision(Sp(0, 0), 8, 80, Sp(0, 35), Sp(0, 80), 4.5, 0.0, 3.2, 9.5, 0.0, 1.0, 1.0, 562103424)
+  OffensiveCollision(Sp(0, 1), 8, 80, Sp(0, 35), Sp(0, 80), 4.8, 0.0, 3.2, -9.5, 0.0, 1.0, 1.0, 562103424)
+  OffensiveCollision(Sp(0, 2), 8, 80, Sp(0, 35), Sp(0, 80), 4.8, 0.0, 3.2, 0.0, 0.0, 1.0, 1.0, 562103424)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+  SynchronousTimer(20.0)
+  BitVariableClear(RA-Bool[0x10])
+}
+
+Subaction 0x1E1: GFX {
+  GraphicEffectLanding(9, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x1E1: SOUND {
+  StopSoundEffect(4751)
+  SoundEffect(4752)
+}
+
+Subaction 0x1E1: OTHER {
+  SlopeContourStand(6)
+  Screenshake(1)
+  Rumble(15, 0)
+}
+

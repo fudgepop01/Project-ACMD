@@ -1,0 +1,9 @@
+LA-Bool[0x00] in hsr_118 @ 0 : 1
+
+LA-Bool[0x01] in hsr_118 @ 4 : 1
+
+LA-Bool[0x02] in Action 0x9 (Status_Turn_Run_Brake) @ 2 : 1
+LA-Bool[0x02] in Action 0xA (Status_Jump_Squat) @ 2 : 1
+
+LA-Bool[0x08] in hsr_118 @ 5 : 0
+LA-Bool[0x08] in hsr_118 @ 8 : 0

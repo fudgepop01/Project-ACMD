@@ -1,0 +1,8 @@
+[hsr_1300]
+hidden_subroutine_0x1300 {
+  BitVariableClear(LA-Bool[0x0C])
+  (undef: Sp_Link) 6E_00_02_00(0, 5102)
+  FloatVariableSet(300.0, LA-Float[0x07])
+  (undef: Sp_base) 65_04_01_00(0)
+  Return()
+}

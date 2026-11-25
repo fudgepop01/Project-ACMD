@@ -1,0 +1,18 @@
+Action 0xF: MAIN {
+}
+
+Action 0xF: EXIT {
+}
+
+Action 0xF: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(8)
+  BasicVariableSet(2, LA-Int[0x06])
+  if (R(Compare(LA-Float[0x0C] >= IC-Int[0x5DC3]))) {
+    SubAction09(13)
+  } else {
+    SubAction09(14)
+  }
+  (undef: Sp_Kinetic) 66_00_02_00(3, 20)
+}
+

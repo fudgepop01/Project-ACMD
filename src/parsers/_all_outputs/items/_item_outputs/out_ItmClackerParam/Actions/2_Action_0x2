@@ -1,0 +1,9 @@
+// Status_Walk_Brake
+Action 0x2 {
+  ChangeSubAction(1)
+  while (R(Compare(LA-Float[0x00] < 6.8))) {
+    FloatVariableAdd(0.006, LA-Float[0x00])
+    SynchronousTimer(1.0)
+    EndWhile()
+}
+

@@ -1,0 +1,14 @@
+// Status_Walk
+Action 0x1 {
+  ChangeSubAction(0)
+  (undef: Sp_base) 65_06_01_00(2)
+  (undef: Sp_base) 65_03_02_00(0.0, -90.0)
+  CharacterSpecific01()
+  (undef: Sp_base) 65_1F_01_00(2)
+  if (R(Is within footstool range())) {
+    BasicVariableSet(1, LA-Int[0x00])
+  }
+  ChangeAction(9, R(In Air()))
+  ChangeAction(12, R(On Ground()))
+}
+

@@ -1,0 +1,13 @@
+// Status_Shield_Break_Fly
+Action 0x56: ENTRY {
+  ChangeAction(87, R(Animation End()))
+  ChangeAction(88, R(On Ground()))
+  FloatVariableSet(Common_Param_Float_Shield_Reset, LA-Float[0x03])
+  BitVariableSet(RA-Bool[0x04])
+  BodyCollision(2)
+  ChangeSubAction(165)
+  SoundEffect(98)
+}
+
+Action 0x56 : EXIT {
+}

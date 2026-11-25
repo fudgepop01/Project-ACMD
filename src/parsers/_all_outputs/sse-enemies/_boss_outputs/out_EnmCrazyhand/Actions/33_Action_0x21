@@ -1,0 +1,19 @@
+Action 0x21: MAIN {
+  SubRoutine(hidden_subroutine_0x1818)
+}
+
+Action 0x21: EXIT {
+  EnableSpecifiedMovement(8)
+  (undef: Sp_Kinetic) 66_07_01_00(4)
+  (undef: Sp_base) 65_16_00_00()
+}
+
+Action 0x21: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(9)
+  BasicVariableSet(34, LA-Int[0x06])
+  FloatVariableSet(IC-Int[0xFA7], LA-Float[0x02])
+  SubAction09(5)
+  (undef: Sp_Kinetic) 66_00_03_00(4, 41, 0.0)
+}
+

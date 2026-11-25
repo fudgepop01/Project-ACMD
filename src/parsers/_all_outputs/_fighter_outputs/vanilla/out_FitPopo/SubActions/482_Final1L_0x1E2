@@ -1,0 +1,36 @@
+[Final1L] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1E2: MAIN {
+  BodyCollision(2)
+  ScreenTint(0, 20, 0, 0, 64, 144, 0)
+  CameraCloseup(15, 0, 1.0, 0.0, 0.0)
+  (undef: camera) 1A_02_02_00(0.0, 1.0)
+  AsynchronousTimer(50.0)
+  EndScreenTint(0, 0)
+  GenerateArticle(2)
+  NormalCamera()
+}
+
+Subaction 0x1E2: GFX {
+}
+
+Subaction 0x1E2: SOUND {
+}
+
+Subaction 0x1E2: OTHER {
+  HeldItemsVisibility(false)
+  AsynchronousTimer(35.0)
+  ModelChangerPermanent(0, -1)
+  AsynchronousTimer(48.0)
+  Rumble(14, 20)
+}
+

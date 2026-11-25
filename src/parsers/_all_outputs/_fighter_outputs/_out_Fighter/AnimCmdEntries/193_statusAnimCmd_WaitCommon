@@ -1,0 +1,9 @@
+// @ 0x21AC0
+WaitCommon {
+  ResetComboMeter()
+  UnkRaBit27Variable(true, IC-Int[0x5A16])
+  SetTagDisplay(true)
+  ChangeAction(14, R(In Air()))
+  SubRoutine(hidden_subroutine_0xBE74)
+  SubRoutine(hidden_subroutine_0xBA6C)
+}

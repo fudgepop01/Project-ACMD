@@ -1,0 +1,8 @@
+// Status_Swim_Dive
+Action 0xB3: ENTRY {
+  SubRoutine(hidden_subroutine_0x7AF4)
+  ChangeSubAction(32)
+}
+
+Action 0xB3 : EXIT {
+}

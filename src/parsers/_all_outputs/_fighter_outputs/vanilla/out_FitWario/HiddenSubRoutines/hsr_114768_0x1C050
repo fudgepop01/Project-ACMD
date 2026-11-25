@@ -1,0 +1,6 @@
+[hsr_1C050]
+hidden_subroutine_0x1C050 {
+  if (R(Animation End())) {
+    SetArticleAction07(0, 2)
+  }
+}

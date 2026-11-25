@@ -1,0 +1,41 @@
+Action 0x126: ENTRY {
+  ChangeActionStatus(10000, 0, R(Animation End()))
+  ChangeActionStatus(10002, 14, R(Animation End()))
+  BitVariableSet(LA-Bool[0x01])
+  SetGimmickEffectFlag(false)
+  BasicVariableSet(495, RA-Int[0x00])
+  BasicVariableSet(496, RA-Int[0x01])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(2)
+      if (R(Compare(Variable_Int_Motion_Kind == RA-Int[0x01]))) {
+        ChangeSubAction(RA-Int[0x00], true)
+      } else {
+        ChangeSubAction(RA-Int[0x00])
+      }
+      SetRequirement(R(In Air()))
+      EnableActionStatusId(10000)
+      DisableActionStatusId(10002)
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(Compare(Variable_Int_Motion_Kind == RA-Int[0x00]))) {
+        ChangeSubAction(RA-Int[0x01], true)
+      } else {
+        ChangeSubAction(RA-Int[0x01])
+      }
+      SetRequirement(R(On Ground()))
+      DisableActionStatusId(10000)
+      EnableActionStatusId(10002)
+    }
+    LoadRest()
+  }
+}
+
+Action 0x126 : EXIT {
+  RemoveArticle(1)
+  Visibility(true)
+  SetGimmickEffectFlag(true)
+  BitVariableClear(LA-Bool[0x01])
+  DetachAttachCameraFar(true)
+  ExitFinalSmashState()
+}

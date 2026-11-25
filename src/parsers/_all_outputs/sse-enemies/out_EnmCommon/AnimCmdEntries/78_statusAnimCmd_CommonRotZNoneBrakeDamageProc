@@ -1,0 +1,10 @@
+// @ 0x3630
+CommonRotZNoneBrakeDamageProc {
+  ConcurrentInfiniteLoop(I(4), statusAnimCmd_CommonDamageProcUniq)
+  if (R(NOT Bit is Set(LA-Bool[0x04]))) {
+    (undef: Sp_Kinetic) 66_07_01_00(-1)
+    (undef: Sp_Kinetic) 66_01_04_00(3, 10, 35791.0, F(0x00001D58))
+  }
+  BitVariableSet(LA-Bool[0x04])
+  Return()
+}

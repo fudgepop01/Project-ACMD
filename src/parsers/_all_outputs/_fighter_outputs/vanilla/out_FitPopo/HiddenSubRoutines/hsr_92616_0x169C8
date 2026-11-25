@@ -1,0 +1,23 @@
+[hsr_169C8]
+hidden_subroutine_0x169C8 {
+  AsynchronousTimer(8.0)
+  SubRoutine(hidden_subroutine_0x166F8)
+  AsynchronousTimer(12.0)
+  SubRoutine(hidden_subroutine_0x16738)
+  AsynchronousTimer(17.0)
+  SubRoutine(hidden_subroutine_0x166F8)
+  AsynchronousTimer(21.0)
+  SubRoutine(hidden_subroutine_0x16738)
+  AsynchronousTimer(26.0)
+  SubRoutine(hidden_subroutine_0x166F8)
+  AsynchronousTimer(31.0)
+  SubRoutine(hidden_subroutine_0x16738)
+  AsynchronousTimer(39.0)
+  SubRoutine(hidden_subroutine_0x166F8)
+  AsynchronousTimer(48.0)
+  BitVariableSet(RA-Bool[0x12])
+  AsynchronousTimer(52.0)
+  OffensiveCollision(Sp(0, 0), 3, 70, Sp(0, 140), Sp(0, 50), 6.0, 0.0, 7.0, 7.0, 0.0, 1.0, 1.0, 985859200)
+  AsynchronousTimer(54.0)
+  TerminateCollisions()
+}

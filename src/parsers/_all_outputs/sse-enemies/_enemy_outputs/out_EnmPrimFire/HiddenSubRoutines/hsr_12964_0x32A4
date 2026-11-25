@@ -1,0 +1,19 @@
+[hsr_32A4]
+hidden_subroutine_0x32A4 {
+  BitVariableClear(LA-Bool[0x0B])
+  (undef: Sp_AI) 6A_00_01_00(49)
+  (undef: Sp_AI) 6A_00_01_00(51)
+  (undef: Sp_AI) 6A_00_01_00(52)
+  SubRoutine(hidden_subroutine_0x15F0)
+  (undef: Sp_AI) 6A_00_01_00(55)
+  (undef: Sp_AI) 6A_00_01_00(56)
+  (undef: Sp_AI) 6A_00_01_00(63)
+  (undef: Sp_AI) 6A_00_01_00(64)
+  (undef: Sp_AI) 6A_00_01_00(65)
+  if (R(Compare(Variable_Int_Controller_Flick_X_Dir == 32.0))) {
+    if (R(NOT Bit is Set(LA-Bool[0x0C]))) {
+      (undef: Sp_AI) 6A_00_01_00(78)
+    }
+  }
+  Return()
+}

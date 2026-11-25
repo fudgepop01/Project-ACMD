@@ -1,0 +1,17 @@
+Action 0x35: MAIN {
+}
+
+Action 0x35: EXIT {
+}
+
+Action 0x35: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(10)
+  (undef: Sp_AI) 6A_01_01_00(3)
+  BasicVariableSet(0, LA-Int[0x06])
+  BasicVariableSet(IC-Int[0x5DC4], LA-Int[0x05])
+  SubAction09(34)
+  DisableSpecifiedMovement(8)
+  (undef: Sp_Kinetic) 66_07_01_00(-1)
+}
+

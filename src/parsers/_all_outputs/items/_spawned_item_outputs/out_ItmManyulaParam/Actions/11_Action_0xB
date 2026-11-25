@@ -1,0 +1,10 @@
+// Status_Jump
+Action 0xB {
+  ChangeAction(3, R(In Air()))
+  (undef: Sp_Kinetic) 66_02_02_00(0.0, 0.0)
+  ChangeSubAction(1)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(8, R(Button Tap?()))
+}
+

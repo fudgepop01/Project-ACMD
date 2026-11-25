@@ -1,0 +1,14 @@
+Action 0x11A: ENTRY {
+  if (R(Bit is Set(RA-Bool[0x12]))) {
+    SetAnimationFrame(30.0)
+    ChangeSubAction(471, true)
+    BitVariableClear(RA-Bool[0x12])
+  } else {
+    ChangeSubAction(471)
+  }
+  SetAerialOrOnstage(5)
+  AllowSpecificInterrupt(AIR_CLIFF)
+}
+
+Action 0x11A : EXIT {
+}

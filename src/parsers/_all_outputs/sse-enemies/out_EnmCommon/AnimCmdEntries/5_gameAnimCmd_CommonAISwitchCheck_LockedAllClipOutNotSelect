@@ -1,0 +1,8 @@
+// @ 0x4350
+CommonAISwitchCheck_LockedAllClipOutNotSelect {
+  BitVariableSet(RA-Bool[0x04])
+  if (R(0x49()) && R(NOT Is Not in Damaging Magnifier())) {
+    FloatVariableSet(0.01, RA-Float[0x00])
+  }
+  Return()
+}

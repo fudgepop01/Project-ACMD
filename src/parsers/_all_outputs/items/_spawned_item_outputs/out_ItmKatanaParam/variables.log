@@ -1,0 +1,17 @@
+IC-Int[0x03] ("Variable_Float_Posture_Pos_X") in Action 0x1 (Status_Walk) @ 1 : 2
+IC-Int[0x03] ("Variable_Float_Posture_Pos_X") in hsr_88 @ 0 : 1
+
+IC-Int[0x04] ("Variable_Float_Posture_Pos_Y") in Action 0x1 (Status_Walk) @ 1 : 3
+
+IC-Int[0x5211] ("Variable_Int_Controller_Trigger_1_Count") in Action 0x1 (Status_Walk) @ 14 : 1
+IC-Int[0x5211] ("Variable_Int_Controller_Trigger_1_Count") in Action 0x5 (Status_Run_Brake) @ 14 : 1
+
+LA-Int[0x0D] in Action 0x1 (Status_Walk) @ 13 : 1
+LA-Int[0x0D] in Action 0x5 (Status_Run_Brake) @ 2 : 1
+LA-Int[0x0D] in Action 0x5 (Status_Run_Brake) @ 13 : 1
+
+LA-Int[0x1B] in Subaction 0x0 : SOUND @ 0 : 1
+
+LA-Float[0x07] in hsr_88 @ 0 : 3
+
+RA-Bool[0x04] in Action 0x5 (Status_Run_Brake) @ 25 : 2

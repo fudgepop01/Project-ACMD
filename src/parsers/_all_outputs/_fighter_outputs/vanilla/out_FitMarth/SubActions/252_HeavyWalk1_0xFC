@@ -1,0 +1,32 @@
+[HeavyWalk1] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xFC: MAIN {
+  BitVariableSet(RA-Bool[0x10])
+  AsynchronousTimer(10.0)
+  BitVariableClear(RA-Bool[0x10])
+  AsynchronousTimer(38.0)
+  BitVariableSet(RA-Bool[0x10])
+}
+
+Subaction 0xFC: GFX {
+}
+
+Subaction 0xFC: SOUND {
+  AsynchronousTimer(36.0)
+  SteppingSoundEffect(4439)
+}
+
+Subaction 0xFC: OTHER {
+  AsynchronousTimer(35.0)
+  Rumble(17, 0)
+}
+

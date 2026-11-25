@@ -1,0 +1,6 @@
+[hsr_1D720]
+hidden_subroutine_0x1D720 {
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    NormalCamera()
+  }
+}

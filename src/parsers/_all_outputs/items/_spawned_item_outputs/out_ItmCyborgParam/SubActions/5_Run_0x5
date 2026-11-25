@@ -1,0 +1,29 @@
+[Run] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x5 : GAME {
+  DefensiveCollision(3, 0, 0)
+}
+
+Subaction 0x5 : GFX {
+  SwordGlow(14, 6, 22, 0.0, 1.0249833333333334, 1.7, 22, 0.0, 0.582, 1.7, true, 0, 27, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  SwordGlow(14, 6, 22, 0.0, 0.805, 1.925, 22, 0.0, 0.805, 1.475, true, 0, 27, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  SwordGlow(15, 10, 27, 0.0, 1.0, 0.0, 27, 0.0, -11.0, 0.0, true, 0, 27, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  GraphicEffect(39, 0, 0.0, 0.0, -3.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  SetLoop(-1) {
+    GraphicEffect(26, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+    SynchronousTimer(10.0)
+  }
+}
+
+Subaction 0x5 : SOUND {
+}
+

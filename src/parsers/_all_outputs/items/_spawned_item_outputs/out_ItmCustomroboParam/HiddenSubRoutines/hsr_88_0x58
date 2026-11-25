@@ -1,0 +1,14 @@
+[hsr_58]
+hidden_subroutine_0x58 {
+  ChangeSubAction(6)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeSubAction(8)
+  if (R(Is within footstool range())) {
+    ChangeSubAction(8)
+  }
+  ChangeSubAction(10)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  Return()
+}

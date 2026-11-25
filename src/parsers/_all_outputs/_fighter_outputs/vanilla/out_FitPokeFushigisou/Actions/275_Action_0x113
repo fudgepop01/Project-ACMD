@@ -1,0 +1,39 @@
+Action 0x113: ENTRY {
+
+  ChangeActionStatus(10002, 14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeActionStatus(10000, 0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  if (R(Compare(Variable_Int_Controller_Flick_No_Reset_X < IC-Int[0x5DC3]))) {
+    BitVariableSet(RA-Bool[0x11])
+  }
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(6)
+      SetAerialOrOnstage(1)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(469, true)
+      } else {
+        ChangeSubAction(469)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAirGround(0)
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(470, true)
+      } else {
+        ChangeSubAction(470)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x113 : EXIT {
+}

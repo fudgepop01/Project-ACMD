@@ -1,0 +1,9 @@
+[hsr_17208]
+hidden_subroutine_0x17208 {
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    Module0900(2)
+    SetAerialOrOnstage(5)
+    SetAirGround(101)
+    TerminateConcurrentInfiniteLoop(9)
+  }
+}

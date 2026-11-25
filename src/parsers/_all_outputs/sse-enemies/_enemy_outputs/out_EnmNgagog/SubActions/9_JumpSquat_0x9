@@ -1,0 +1,50 @@
+[JumpSquat] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x9: MAIN {
+  FrameSpeedModifier(LA-Float[0x04])
+}
+
+Subaction 0x9: MAIN EXIT {
+}
+
+Subaction 0x9: MAIN INIT {
+  SubRoutine(hidden_subroutine_0x2C6C)
+}
+
+Subaction 0x9: GFX {
+  AsynchronousTimer(10.0)
+  GraphicEffect(11, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.2, 0.0, 0.0, 0.0, 0.0, 360.0, 0.0, true)
+}
+
+Subaction 0x9: GFX EXIT {
+}
+
+Subaction 0x9: GFX INIT {
+}
+
+Subaction 0x9: SFX {
+  SynchronousTimer(10.0)
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    SoundEffect(9464)
+  } elif (R(Bit is Set(LA-Bool[0x07]))) {
+    SoundEffect(9449)
+  } else {
+    SoundEffect(9434)
+  }
+}
+
+Subaction 0x9: SFX EXIT {
+}
+
+Subaction 0x9: SFX INIT {
+}
+

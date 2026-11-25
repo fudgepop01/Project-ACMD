@@ -1,0 +1,23 @@
+[hsr_13AC]
+hidden_subroutine_0x13AC {
+  (undef: Sp_base) 65_16_00_00()
+  SubRoutine(hidden_subroutine_0x8C4)
+  (undef: Sp_Area) 69_08_02_00(Variable_Int_Controller_Flick_No_Reset_Y, LA-Float[0x05])
+  FloatVariableSet(LA-Float[0x05], LA-Float[0x07])
+  FloatVariableSubtract(Variable_Float_Posture_Pos_X, LA-Float[0x07])
+  FloatVariableSetAbsolute(LA-Float[0x07], LA-Float[0x07])
+  if (R(Compare(3.0 > LA-Float[0x07]))) {
+    (undef: Sp_Kinetic) 66_04_01_00(4)
+  } else {
+    (undef: Sp_Kinetic) 66_05_01_00(4)
+    if (R(Compare(LA-Float[0x05] > Variable_Float_Posture_Pos_X))) {
+      (undef: Sp_Kinetic) 66_0C_02_00(4, 180.0)
+      (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE7], LA-Float[0x05])
+    } else {
+      (undef: Sp_Kinetic) 66_0C_02_00(4, 0.0)
+      (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE6], LA-Float[0x05])
+    }
+    (undef: Sp_base) 65_14_01_00(LA-Float[0x05])
+  }
+  Return()
+}

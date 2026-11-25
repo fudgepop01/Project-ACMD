@@ -1,0 +1,7 @@
+// Status_Walk_Brake
+Action 0x2 {
+  BodyCollision(3)
+  ChangeSubAction(5)
+  FrameSpeedModifier(10.0)
+}
+

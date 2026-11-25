@@ -1,0 +1,10 @@
+[hsr_18908]
+hidden_subroutine_0x18908 {
+  if (R(Animation has looped?())) {
+    BasicVariableIncrement(LA-Int[0x40])
+    SubRoutine(hsr_18578)
+  }
+  if (R(Compare(LA-Int[0x40] > 6.0))) {
+    BasicVariableSet(6, LA-Int[0x40])
+  }
+}

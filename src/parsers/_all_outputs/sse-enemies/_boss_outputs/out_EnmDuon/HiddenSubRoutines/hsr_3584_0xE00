@@ -1,0 +1,4 @@
+[hsr_E00]
+hidden_subroutine_0xE00 {
+  DeleteHitbox(4)
+}

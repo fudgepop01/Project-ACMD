@@ -1,0 +1,42 @@
+Action 0x117: ENTRY {
+  BitVariableSet(LA-Bool[0x3E])
+  NoEvent()
+  BitVariableClear(LA-Bool[0x46])
+  BasicVariableSet(464, LA-Int[0x45])
+  BasicVariableSet(465, LA-Int[0x46])
+  SetAnimationFrame(LA-Int[0x40])
+  SubRoutine(hidden_subroutine_0x1A950)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x26840)
+  ChangeAction(280, R(Compare(LA-Int[0x41] >= 4.0)))
+  ChangeAction(281, R(Button Press(Special)))
+  ChangeAction(286, R(0x4F()))
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SubRoutine(hidden_subroutine_0x190C8)
+      SubRoutine(hidden_subroutine_0x18FA8)
+      SetAirGround(6)
+      SetRequirement(R(In Air()))
+    } else {
+      SubRoutine(hidden_subroutine_0x19110)
+      SubRoutine(hidden_subroutine_0x18FE8)
+      SetAirGround(10)
+      SetRequirement(R(On Ground()))
+    }
+    FrameSpeedModifier(2.0)
+    LoadRest()
+  }
+}
+
+Action 0x117 : EXIT {
+  if (R(Compare(LA-Int[0x41] >= 4.0)) && R(NOT Bit is Set(LA-Bool[0x46]))) {
+    BitVariableSet(LA-Bool[0x46])
+    GraphicEffectAttached(2228232, 29, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+    GraphicEffectAttached(2228233, 49, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  } else {
+    TerminateGraphicEffect(2228232, true, true)
+    TerminateGraphicEffect(2228233, true, true)
+  }
+  if (R(Compare(Variable_Int_Status_Kind != 31.0)) && R(Compare(Variable_Int_Status_Kind != 32.0)) && R(Compare(Variable_Int_Status_Kind != 280.0)) && R(Compare(Variable_Int_Status_Kind != 281.0)) && R(Compare(Variable_Int_Status_Kind != 286.0))) {
+    SubRoutine(hidden_subroutine_0xD808)
+  }
+}

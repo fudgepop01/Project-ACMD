@@ -1,0 +1,12 @@
+Action 0x28: MAIN {
+  EXTERNAL: statusAnimCmd_CommonStandBy
+}
+
+Action 0x28: EXIT {
+  EXTERNAL: statusAnimCmdExit_CommonStandBy
+}
+
+Action 0x28: INIT {
+  EXTERNAL: statusAnimCmdInit_CommonStandBy
+}
+

@@ -1,0 +1,9 @@
+// Status_Dash
+Action 0x3 {
+  Visibility(true)
+  SubRoutine(hidden_subroutine_0x11C)
+  ChangeSubAction(1)
+  FloatVariableRandom(0.7, 1.2, RA-Float[0x00])
+  FrameSpeedModifier(RA-Float[0x00])
+}
+

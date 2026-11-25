@@ -1,0 +1,33 @@
+[Entry] (flags) {
+  No Out Transition: 1,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1C2: MAIN {
+}
+
+Subaction 0x1C2: GFX {
+}
+
+Subaction 0x1C2: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(4522)
+  SynchronousTimer(40.0)
+  SoundEffect(4523)
+  SynchronousTimer(40.0)
+  SoundEffect(4524)
+  SynchronousTimer(39.0)
+  VictorySoundEffect(4525)
+}
+
+Subaction 0x1C2: OTHER {
+  UnkRaBit27(false)
+  SetTagDisplay(false)
+}
+

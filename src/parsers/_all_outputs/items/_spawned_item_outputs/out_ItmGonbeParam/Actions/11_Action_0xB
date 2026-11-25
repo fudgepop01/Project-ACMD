@@ -1,0 +1,19 @@
+// Status_Jump
+Action 0xB {
+  ChangeAction(3, R(In Air()))
+  (undef: Sp_Kinetic) 66_02_02_00(1.8, 0.0)
+  ChangeSubAction(8)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ReverseDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  ChangeAction(6, R(Compare(LA-Int[0x0B] <= 0.0)))
+  (undef: Sp_base) 65_07_01_00(13)
+  if (R(Bit is Set(LA-Bool[0x07]))) {
+    ChangeAction(10, R(Button Tap?()))
+  } else {
+    ChangeAction(8, R(Button Tap?()))
+  }
+}
+

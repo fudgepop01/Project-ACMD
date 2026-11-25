@@ -1,0 +1,19 @@
+[hsr_170C0]
+hidden_subroutine_0x170C0 {
+  if (R(Compare(RA-Int[0x00] > 0.0))) {
+    BasicVariableDecrement(RA-Int[0x00])
+  }
+  if (R(NOT Article Exists())) {
+    if (R(Compare(RA-Int[0x01] > 0.0))) {
+      BasicVariableDecrement(RA-Int[0x01])
+    }
+  }
+  if (R(In Air())) {
+    BasicVariableDecrement(RA-Int[0x02])
+  }
+  if (R(Compare(RA-Int[0x02] <= 0.0)) && R(In Air())) {
+    EnableSpecifiedMovement(1)
+  } else {
+    DisableSpecifiedMovement(1)
+  }
+}

@@ -1,0 +1,6 @@
+[hsr_177E0]
+hidden_subroutine_0x177E0 {
+  if (R(Article Exists()) &&[3A] R(0x18()), 13, 2) {
+    SetExAnchoredArticleAction(13, 2)
+  }
+}

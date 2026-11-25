@@ -1,0 +1,8 @@
+// Status_Capture_Wait_Yoshi
+Action 0x108: ENTRY {
+  SubRoutine(statusAnimCmd_AllowCaptureCut)
+  ConcurrentInfiniteLoop(I(9), statusAnimCmd_CaptureWaitStruggleUp)
+}
+
+Action 0x108 : EXIT {
+}

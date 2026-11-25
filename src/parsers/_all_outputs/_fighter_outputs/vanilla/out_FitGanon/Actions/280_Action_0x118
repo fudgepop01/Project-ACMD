@@ -1,0 +1,12 @@
+Action 0x118: ENTRY {
+  FrameSpeedModifier(0.0)
+  SynchronousTimer(1.0)
+  ChangeSubAction(467)
+  SubRoutine(hidden_subroutine_0x1B1E0)
+  SetAirGround(6)
+  ChangeAction(14, R(In Air()))
+  ChangeAction(0, R(Animation End()))
+}
+
+Action 0x118 : EXIT {
+}

@@ -1,0 +1,11 @@
+// @ 0x1700
+GFXEvent_0x13 {
+  SetLoop(2) {
+    SubRoutine(hidden_subroutine_0x1608)
+  }
+  SetLoop(1) {
+    SubRoutine(hidden_subroutine_0x16A0)
+  }
+  TerminateFlashEffect()
+  Return()
+}

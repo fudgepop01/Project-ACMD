@@ -1,0 +1,7 @@
+// @ 0xBAC8
+AICheckDeathFlag {
+  if (R(NOT 0x274B()) && R(Bit is Set(LA-Bool[0x00]))) {
+    BitVariableSet(RA-Bool[0x04])
+  }
+  Return()
+}

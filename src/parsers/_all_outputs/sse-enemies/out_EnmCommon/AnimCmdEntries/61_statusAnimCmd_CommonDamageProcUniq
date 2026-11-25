@@ -1,0 +1,8 @@
+// @ 0x3218
+CommonDamageProcUniq {
+  BasicVariableAdd(-1, LA-Int[0x00])
+  if (R(Compare(LA-Int[0x00] <= 0.0))) {
+    SubRoutine(statusAnimCmd_CommonDamageProcEnd)
+  }
+  Return()
+}

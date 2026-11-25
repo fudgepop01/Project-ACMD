@@ -1,0 +1,8 @@
+[hsr_16298]
+hidden_subroutine_0x16298 {
+  if (R(On Ground())) {
+    SubRoutine(hsr_16220)
+  } else {
+    SubRoutine(hsr_16260)
+  }
+}

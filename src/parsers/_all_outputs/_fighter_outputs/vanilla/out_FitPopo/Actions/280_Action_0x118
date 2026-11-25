@@ -1,0 +1,26 @@
+Action 0x118: ENTRY {
+  SelectCliffHangData(0)
+  if (R(On Ground())) {
+    Module0900(0)
+    SetAerialOrOnstage(1)
+    EnableDisableLedgegrab(0)
+    SetAirGround(6)
+    ChangeSubAction(474)
+    ChangeAction(14, R(In Air()))
+    ChangeAction(0, R(Animation End()))
+  } else {
+    Module0900(2)
+    SetAerialOrOnstage(5)
+    SetAirGround(109)
+    ChangeSubAction(475)
+    ChangeAction(16, R(Animation End()))
+    ChangeAction(25, R(On Ground()))
+  }
+  SynchronousTimer(1.0)
+  if (R(In Air())) {
+    EnableDisableLedgegrab(4)
+  }
+}
+
+Action 0x118 : EXIT {
+}

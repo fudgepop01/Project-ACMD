@@ -1,0 +1,9 @@
+[hsr_774C]
+hidden_subroutine_0x774C {
+
+  ChangeActionStatus(10059, 1, R(0x25()), 1)
+  AdditionalRequirement(R(Compare(RA-Int[0x0C] >= 3.0)))
+  AdditionalRequirement(R(On Ground()))
+
+  SubRoutine(statusAnimCmd_ItemShootWalkB_Common)
+}

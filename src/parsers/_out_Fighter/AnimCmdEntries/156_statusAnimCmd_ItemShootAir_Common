@@ -1,0 +1,4 @@
+// @ 0xB754
+ItemShootAir_Common {
+  ChangeActionStatus(10138, RA-Int[0x0B], R(On Ground()))
+}

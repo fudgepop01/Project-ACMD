@@ -1,0 +1,7 @@
+// Status_Dash
+Action 0x3 {
+  (undef: Sp_Kinetic) 66_02_02_00(3.0, 0.0)
+  ChangeActionStatus(4, 4, R(On Ground()))
+  ChangeSubAction(6)
+}
+

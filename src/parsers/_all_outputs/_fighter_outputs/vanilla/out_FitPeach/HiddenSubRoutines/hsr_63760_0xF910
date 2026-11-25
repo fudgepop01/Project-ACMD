@@ -1,0 +1,12 @@
+[hsr_F910]
+hidden_subroutine_0xF910 {
+  OffensiveCollision(Sp(72, 0), 12, 28, Sp(0, 60), Sp(0, 40), 3.0, 0.0, 6.0, 0.0, 0.0, 1.0, 1.0, 977480320)
+  OffensiveCollision(Sp(72, 1), 12, 28, Sp(0, 60), Sp(0, 40), 2.0, 0.0, 2.0, 0.0, 0.0, 1.0, 1.0, 977480320)
+  OffensiveCollision(Sp(72, 2), 12, 28, Sp(0, 60), Sp(0, 30), 2.0, 0.0, -2.0, 0.0, 0.0, 1.0, 1.0, 977480320)
+  OffensiveCollision(Sp(80, 3), 12, 28, Sp(0, 60), Sp(0, 30), 2.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 977480320)
+  SynchronousTimer(1.0)
+  OffensiveCollision(Sp(0, 4), 13, 28, Sp(0, 100), Sp(0, 40), 8.0, 0.0, 8.0, 12.0, 0.0, 1.0, 1.0, 977480192)
+  SynchronousTimer(1.0)
+  DeleteHitbox(4)
+  Return()
+}

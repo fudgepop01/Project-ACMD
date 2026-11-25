@@ -1,0 +1,43 @@
+[SpecialHi] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D8: MAIN {
+  AsynchronousTimer(1.0)
+  SpecialOffensiveCollision(Sp(11, 0), 1, 45, Sp(60, 70), Sp(0, 0), 7.0, 0.0, 1.5, 0.0, 0.0, 0.5, 0.0, 964756544, 3, 5242817)
+  SpecialOffensiveCollision(Sp(11, 1), 1, 365, Sp(0, 12), Sp(0, 0), 9.0, 0.0, 1.5, 0.0, 0.0, 0.5, 0.0, 964822080, 3, 5242817)
+  SpecialOffensiveCollision(Sp(17, 2), 1, 45, Sp(70, 70), Sp(0, 0), 3.5, 0.0, 3.0, 0.0, 0.0, 0.5, 0.0, 964756544, 3, 5242817)
+  SpecialOffensiveCollision(Sp(17, 3), 1, 361, Sp(70, 50), Sp(0, 0), 3.5, 0.0, 3.0, 0.0, 0.0, 0.5, 0.0, 964822080, 3, 5242817)
+  AsynchronousTimer(25.0)
+  TerminateCollisions()
+}
+
+Subaction 0x1D8: GFX {
+  GraphicEffectAttached(2949129, 10, 0.0, -1.5, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  FlashOverlayEffect(240, 224, 255, 180)
+  AsynchronousTimer(1.0)
+  ChangeFlashOverlayColor(7, 160, 128, 255, 80)
+  AsynchronousTimer(8.0)
+  ChangeFlashOverlayColor(7, 0, 0, 255, 0)
+  AsynchronousTimer(15.0)
+  TerminateFlashEffect()
+}
+
+Subaction 0x1D8: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffectTransient(2570)
+  SoundEffect(166)
+  SoundEffect(6282)
+}
+
+Subaction 0x1D8: OTHER {
+  Rumble(19, 0)
+}
+

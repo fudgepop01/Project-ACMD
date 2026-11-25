@@ -1,0 +1,26 @@
+// Status_Capture_Cut
+Action 0x40: ENTRY {
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeSubAction(150)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(45)
+      SetAerialOrOnstage(1)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAirGround(0)
+      SetAerialOrOnstage(5)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x40 : EXIT {
+}

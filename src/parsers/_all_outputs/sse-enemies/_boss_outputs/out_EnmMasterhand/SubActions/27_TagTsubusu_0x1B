@@ -1,0 +1,47 @@
+[TagTsubusu] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1B: MAIN {
+  AsynchronousTimer(157.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 7, 10, 1.1, 20, 100, 0.0, 130, 0.0, 0, 0.0, 12.0, 0.0, 0.0, 10.0, 0.0, 0, 0.0, 0.4, 1.0, true, false, 4, 1, 2, 3, true, 0, 311, false, 15, false, true, false, false, 120, false, false, 0, false, false, false, false, false, 1, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 7, 10, 1.1, 20, 100, 0.0, 160, 0.0, 0, 0.0, 15.0, 0.0, 0.0, -15.0, 0.0, 5, 0.0, 0.4, 1.0, false, false, 4, 1, 8, 3, true, 0, 311, false, 15, false, true, false, false, 120, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(163.0)
+  TerminateCollisions()
+}
+
+Subaction 0x1B: MAIN EXIT {
+}
+
+Subaction 0x1B: MAIN INIT {
+}
+
+Subaction 0x1B: GFX {
+}
+
+Subaction 0x1B: GFX EXIT {
+}
+
+Subaction 0x1B: GFX INIT {
+}
+
+Subaction 0x1B: SFX {
+  SynchronousTimer(153.0)
+  SoundEffect(9899)
+  SynchronousTimer(10.0)
+  SoundEffect(9898)
+}
+
+Subaction 0x1B: SFX EXIT {
+}
+
+Subaction 0x1B: SFX INIT {
+}
+

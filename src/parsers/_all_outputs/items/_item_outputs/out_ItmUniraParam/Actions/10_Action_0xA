@@ -1,0 +1,9 @@
+// Status_Jump_Squat
+Action 0xA {
+  ChangeAction(12, R(On Ground()))
+  if (R(Compare(LA-Int[0x0B] == 0.0))) {
+    ChangeAction(6, R(Button Tap?()))
+  }
+  SubRoutine(hidden_subroutine_0xE0)
+}
+

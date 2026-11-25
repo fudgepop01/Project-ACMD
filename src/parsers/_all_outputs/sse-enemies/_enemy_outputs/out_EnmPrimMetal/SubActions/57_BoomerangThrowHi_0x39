@@ -1,0 +1,48 @@
+[BoomerangThrowHi] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x39: MAIN {
+  SynchronousTimer(29.0)
+  (undef: Sp_base) 65_0E_02_00(IC-Int[0xABFE], 1)
+  (undef: Sp_Link) 6E_00_03_00(2, 5103, 1)
+  SubRoutine(hidden_subroutine_0x12D0)
+}
+
+Subaction 0x39: MAIN EXIT {
+}
+
+Subaction 0x39: MAIN INIT {
+}
+
+Subaction 0x39: GFX {
+  SynchronousTimer(30.0)
+  GraphicEffectLanding(14, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x39: GFX EXIT {
+}
+
+Subaction 0x39: GFX INIT {
+}
+
+Subaction 0x39: SFX {
+  SynchronousTimer(23.0)
+  SoundEffectTransient(9554)
+  SynchronousTimer(19.0)
+  SoundEffect(9535)
+}
+
+Subaction 0x39: SFX EXIT {
+}
+
+Subaction 0x39: SFX INIT {
+}
+

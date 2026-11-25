@@ -1,0 +1,44 @@
+IC-Int[0x3F1] ("Variable_Float_Kinetic_Energy_Damage_Speed_Y_Rv") in Action 0x8 (Status_Turn_Run) @ 3 : 0
+IC-Int[0x3F1] ("Variable_Float_Kinetic_Energy_Damage_Speed_Y_Rv") in Action 0xA (Status_Jump_Squat) @ 3 : 3
+
+IC-Int[0x3F2] in Action 0x8 (Status_Turn_Run) @ 3 : 1
+IC-Int[0x3F2] in Action 0xA (Status_Jump_Squat) @ 3 : 4
+
+IC-Int[0x5218] ("Variable_Int_Controller_Trigger_4_Count_Prev") in Action 0x7 (Status_Turn_Dash) @ 0 : 1
+
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 0 : 1
+LA-Int[0x00] in Action 0x7 (Status_Turn_Dash) @ 0 : 3
+LA-Int[0x00] in Action 0x7 (Status_Turn_Dash) @ 11 : 1
+
+LA-Int[0x01] in Action 0x7 (Status_Turn_Dash) @ 11 : 0
+
+LA-Int[0x0B] in Action 0x7 (Status_Turn_Dash) @ 1 : 1
+LA-Int[0x0B] in hsr_27C @ 4 : 3
+
+LA-Int[0x0C] in Action 0x1 (Status_Walk) @ 3 : 1
+
+LA-Float[0x06] in Action 0x7 (Status_Turn_Dash) @ 3 : 1
+LA-Float[0x06] in hsr_27C @ 3 : 2
+
+LA-Float[0x07] in Action 0x5 (Status_Run_Brake) @ 19 : 1
+
+LA-Float[0x08] in Action 0x5 (Status_Run_Brake) @ 9 : 1
+LA-Float[0x08] in Action 0x5 (Status_Run_Brake) @ 10 : 1
+LA-Float[0x08] in Action 0x5 (Status_Run_Brake) @ 15 : 1
+LA-Float[0x08] in Action 0x5 (Status_Run_Brake) @ 16 : 1
+
+RA-Float[0x00] in Action 0x5 (Status_Run_Brake) @ 8 : 1
+RA-Float[0x00] in Action 0x5 (Status_Run_Brake) @ 13 : 1
+RA-Float[0x00] in Action 0x5 (Status_Run_Brake) @ 19 : 0
+
+RA-Float[0x01] in Action 0x5 (Status_Run_Brake) @ 8 : 2
+RA-Float[0x01] in Action 0x5 (Status_Run_Brake) @ 9 : 0
+RA-Float[0x01] in Action 0x5 (Status_Run_Brake) @ 13 : 2
+RA-Float[0x01] in Action 0x5 (Status_Run_Brake) @ 14 : 1
+RA-Float[0x01] in Action 0x5 (Status_Run_Brake) @ 15 : 3
+RA-Float[0x01] in Action 0x5 (Status_Run_Brake) @ 16 : 0
+
+RA-Bool[0x02] in Action 0x7 (Status_Turn_Dash) @ 2 : 0
+RA-Bool[0x02] in hsr_27C @ 2 : 2
+
+RA-Bool[0x04] in Action 0x5 (Status_Run_Brake) @ 21 : 2

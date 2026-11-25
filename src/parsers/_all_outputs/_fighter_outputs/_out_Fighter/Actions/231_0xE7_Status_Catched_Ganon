@@ -1,0 +1,10 @@
+// Status_Catched_Ganon
+Action 0xE7: ENTRY {
+  (undef: StageObject) 0C_29_00_00()
+  (undef: motion) 04_1A_01_00(459)
+  ChangeSubAction(433)
+  ChangeAction(234, R(Button Tap?()))
+}
+
+Action 0xE7 : EXIT {
+}

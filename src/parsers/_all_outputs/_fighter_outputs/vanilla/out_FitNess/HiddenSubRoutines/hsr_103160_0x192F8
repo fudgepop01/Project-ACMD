@@ -1,0 +1,8 @@
+[hsr_192F8]
+hidden_subroutine_0x192F8 {
+  SubRoutine(hidden_subroutine_0x19190)
+  if (R(On Ground())) {
+    BasicVariableDecrement(RA-Int[0x02])
+  }
+  SubRoutine(hsr_19290)
+}

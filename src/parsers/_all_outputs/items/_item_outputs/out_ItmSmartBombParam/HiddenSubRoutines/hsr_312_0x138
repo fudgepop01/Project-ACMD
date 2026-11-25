@@ -1,0 +1,8 @@
+[hsr_138]
+hidden_subroutine_0x138 {
+  if (R(Facing Left())) {
+    (undef: Sp_base) 65_03_03_00(0.0, 180.0, 0.0)
+  } else {
+    (undef: Sp_base) 65_03_03_00(0.0, 0.0, 0.0)
+  }
+}

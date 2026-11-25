@@ -1,0 +1,61 @@
+[ScopeAirRapid] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x41: MAIN {
+  SynchronousTimer(18.0)
+  (undef: Sp_base) 65_0E_02_00(IC-Int[0xABFD], 1)
+  (undef: Sp_Link) 6E_00_03_00(1, 5103, 49)
+  SynchronousTimer(8.0)
+  (undef: Sp_base) 65_0E_02_00(IC-Int[0xABFD], 1)
+  (undef: Sp_Link) 6E_00_03_00(1, 5103, 49)
+  SynchronousTimer(8.0)
+  (undef: Sp_base) 65_0E_02_00(IC-Int[0xABFD], 1)
+  (undef: Sp_Link) 6E_00_03_00(1, 5103, 49)
+  SynchronousTimer(8.0)
+}
+
+Subaction 0x41: MAIN EXIT {
+}
+
+Subaction 0x41: MAIN INIT {
+}
+
+Subaction 0x41: GFX {
+  AsynchronousTimer(28.0)
+  GraphicEffectAttached(11665415, 19, -0.146, 8.042, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(25.0)
+  GraphicEffectAttached(11665415, 19, -0.146, 8.042, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(33.0)
+  GraphicEffectAttached(11665415, 19, -0.146, 8.042, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+}
+
+Subaction 0x41: GFX EXIT {
+}
+
+Subaction 0x41: GFX INIT {
+}
+
+Subaction 0x41: SFX {
+  SoundEffect(9558)
+  SynchronousTimer(17.0)
+  SoundEffect(9559)
+  SynchronousTimer(8.0)
+  SoundEffect(9559)
+  SynchronousTimer(8.0)
+  SoundEffect(9559)
+}
+
+Subaction 0x41: SFX EXIT {
+}
+
+Subaction 0x41: SFX INIT {
+}
+

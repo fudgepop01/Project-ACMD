@@ -1,0 +1,10 @@
+// Status_Turn
+Action 0x6 {
+  Visibility(false)
+  DetachAttachCameraClose(false)
+  SetRequirement(R(Bit is Set(LA-Bool[0x00])))
+  LoadRest()
+  (undef: Sp_base) 65_12_01_00(false)
+  (undef: Sp_base) 65_00_00_00()
+}
+

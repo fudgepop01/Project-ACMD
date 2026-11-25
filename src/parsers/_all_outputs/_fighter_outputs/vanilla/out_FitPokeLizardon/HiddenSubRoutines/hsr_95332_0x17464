@@ -1,0 +1,10 @@
+[hsr_17464]
+hidden_subroutine_0x17464 {
+  if (R(Animation has looped?())) {
+    BasicVariableIncrement(RA-Int[0x01])
+  }
+  if (R(Bit is Set(RA-Bool[0x13]))) {
+    BitVariableClear(RA-Bool[0x13])
+    (undef: generateArticleManage) 10_14_01_00(0)
+  }
+}

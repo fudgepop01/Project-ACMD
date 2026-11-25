@@ -1,0 +1,11 @@
+// Status_Dash
+Action 0x3 {
+  (undef: Sp_base) 65_03_03_00(0.0, 0.0, 0.0)
+  DecideDirection()
+  CharacterSpecific01()
+  SubRoutine(hidden_subroutine_0x48)
+  if (R(Compare(LA-Int[0x00] == 0.0))) {
+    ChangeSubAction(1)
+  }
+}
+

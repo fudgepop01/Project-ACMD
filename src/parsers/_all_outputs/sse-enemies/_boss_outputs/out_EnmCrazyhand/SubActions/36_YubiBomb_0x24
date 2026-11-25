@@ -1,0 +1,105 @@
+[YubiBomb] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x24: MAIN {
+  AsynchronousTimer(69.0)
+  (undef: Sp_base) 65_0E_03_00(IC-Int[0xABEF], 0, 13)
+  (undef: Sp_Link) 6E_00_03_00(0, 5103, 55)
+  AsynchronousTimer(79.0)
+  (undef: Sp_base) 65_0E_03_00(IC-Int[0xABEF], 0, 25)
+  (undef: Sp_Link) 6E_00_03_00(0, 5103, 55)
+  AsynchronousTimer(89.0)
+  (undef: Sp_base) 65_0E_03_00(IC-Int[0xABEF], 0, 31)
+  (undef: Sp_Link) 6E_00_03_00(0, 5103, 55)
+  AsynchronousTimer(104.0)
+  (undef: Sp_base) 65_0E_03_00(IC-Int[0xABEF], 0, 19)
+  (undef: Sp_Link) 6E_00_03_00(0, 5103, 55)
+  AsynchronousTimer(113.0)
+  (undef: Sp_base) 65_0E_03_00(IC-Int[0xABEF], 0, 13)
+  (undef: Sp_Link) 6E_00_03_00(0, 5103, 55)
+  AsynchronousTimer(126.0)
+  (undef: Sp_base) 65_0E_03_00(IC-Int[0xABEF], 0, 25)
+  (undef: Sp_Link) 6E_00_03_00(0, 5103, 55)
+  AsynchronousTimer(156.0)
+  (undef: Sp_base) 65_0E_03_00(IC-Int[0xABEF], 0, 31)
+  (undef: Sp_Link) 6E_00_03_00(0, 5103, 55)
+  AsynchronousTimer(183.0)
+  (undef: Sp_base) 65_0E_03_00(IC-Int[0xABEF], 0, 19)
+  (undef: Sp_Link) 6E_00_03_00(0, 5103, 55)
+  AsynchronousTimer(194.0)
+  (undef: Sp_base) 65_0E_03_00(IC-Int[0xABEF], 0, 31)
+  (undef: Sp_Link) 6E_00_03_00(0, 5103, 55)
+  AsynchronousTimer(200.0)
+  (undef: Sp_base) 65_0E_03_00(IC-Int[0xABEF], 0, 13)
+  (undef: Sp_Link) 6E_00_03_00(0, 5103, 55)
+  AsynchronousTimer(207.0)
+  (undef: Sp_base) 65_0E_03_00(IC-Int[0xABEF], 0, 25)
+  (undef: Sp_Link) 6E_00_03_00(0, 5103, 55)
+  AsynchronousTimer(224.0)
+  (undef: Sp_base) 65_0E_03_00(IC-Int[0xABEF], 0, 19)
+  (undef: Sp_Link) 6E_00_03_00(0, 5103, 55)
+}
+
+Subaction 0x24: MAIN EXIT {
+}
+
+Subaction 0x24: MAIN INIT {
+}
+
+Subaction 0x24: GFX {
+  AsynchronousTimer(90.0)
+  SetLoop(9) {
+    Screenshake(1)
+    SynchronousTimer(20.0)
+  }
+}
+
+Subaction 0x24: GFX EXIT {
+}
+
+Subaction 0x24: GFX INIT {
+}
+
+Subaction 0x24: SFX {
+  SynchronousTimer(69.0)
+  SoundEffect(9950)
+  SynchronousTimer(10.0)
+  SoundEffect(9950)
+  SynchronousTimer(10.0)
+  SoundEffect(9950)
+  SynchronousTimer(16.0)
+  SoundEffect(9950)
+  SynchronousTimer(10.0)
+  SoundEffect(9950)
+  SynchronousTimer(14.0)
+  SoundEffect(9950)
+  SynchronousTimer(30.0)
+  SoundEffect(9950)
+  SynchronousTimer(26.0)
+  SoundEffect(9950)
+  SynchronousTimer(12.0)
+  SoundEffect(9950)
+  SynchronousTimer(6.0)
+  SoundEffect(9950)
+  SynchronousTimer(6.0)
+  SoundEffect(9950)
+  SynchronousTimer(18.0)
+  SoundEffect(9950)
+  SynchronousTimer(12.0)
+  SoundEffect(9933)
+}
+
+Subaction 0x24: SFX EXIT {
+}
+
+Subaction 0x24: SFX INIT {
+}
+

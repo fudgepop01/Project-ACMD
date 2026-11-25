@@ -1,0 +1,32 @@
+[SpecialAirSEnd] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D3: MAIN {
+  OffensiveCollision(Sp(7, 0), 15, 23, Sp(0, 40), Sp(6, 50), 7.68, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 952307840)
+  AsynchronousTimer(3.0)
+  TerminateCollisions()
+  AsynchronousTimer(20.0)
+  AllowInterrupt()
+}
+
+Subaction 0x1D3: GFX {
+  GraphicEffect(851969, 7, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x1D3: SOUND {
+  VictorySoundEffect(3936)
+}
+
+Subaction 0x1D3: OTHER {
+  Screenshake(2)
+  Rumble(14, 0)
+}
+

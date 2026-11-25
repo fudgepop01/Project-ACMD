@@ -1,0 +1,23 @@
+[hsr_CC]
+hidden_subroutine_0xCC {
+  if (R(2714(1))) {
+    if (R(Compare(Variable_Float_Posture_Lr == -1.0))) {
+      ChangeSubAction(3)
+      SetRequirement(R(Animation End()))
+      LoadRest()
+      ReverseDirection()
+      DecideDirection()
+      CharacterSpecific01()
+    }
+  } else {
+    if (R(Compare(Variable_Float_Posture_Lr == 1.0))) {
+      ChangeSubAction(3)
+      SetRequirement(R(Animation End()))
+      LoadRest()
+      ReverseDirection()
+      DecideDirection()
+      CharacterSpecific01()
+    }
+  }
+  Return()
+}

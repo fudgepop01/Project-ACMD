@@ -1,0 +1,8 @@
+Action 0x126: ENTRY {
+  SubRoutine(hidden_subroutine_0x1EC18)
+  ChangeAction(295, R(Animation End()))
+  ChangeSubAction(477)
+}
+
+Action 0x126 : EXIT {
+}

@@ -1,0 +1,7 @@
+[hsr_18090]
+hidden_subroutine_0x18090 {
+  BasicVariableIncrement(RA-Int[0x00])
+  if (R(Compare(RA-Int[0x00] >= IC-Int[0x5DC2]))) {
+    SubRoutine(EXTERNAL: statusAnimCmd_AIRChkFallCommon)
+  }
+}

@@ -1,0 +1,33 @@
+Action 0x121: ENTRY {
+  GenerateArticle(0)
+  SetArticleAction07(0, 0)
+  ChangeAction(292, R(Animation End()))
+  BitVariableClear(RA-Bool[0x10])
+  SlopeContourStand(1)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      SetAirGround(6)
+      if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(484, false)
+      } else {
+        ChangeSubAction(484, true)
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetAirGround(100)
+      if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(498, false)
+      } else {
+        ChangeSubAction(498, true)
+      }
+      SetRequirement(R(On Ground()))
+    }
+    BitVariableSet(RA-Bool[0x10])
+    LoadRest()
+  }
+}
+
+Action 0x121 : EXIT {
+}

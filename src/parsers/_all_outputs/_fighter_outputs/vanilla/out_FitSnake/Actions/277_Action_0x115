@@ -1,0 +1,10 @@
+Action 0x115: ENTRY {
+  if (R(Article Exists())) {
+    ChangeAction(281, R(Button Tap?()))
+  } else {
+    ChangeAction(282, R(Button Tap?()))
+  }
+}
+
+Action 0x115 : EXIT {
+}

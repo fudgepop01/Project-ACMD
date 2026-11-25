@@ -1,0 +1,73 @@
+[RushStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xA: MAIN {
+}
+
+Subaction 0xA: MAIN EXIT {
+  TerminateCollisions()
+}
+
+Subaction 0xA: MAIN INIT {
+  SubRoutine(hidden_subroutine_0xF7C)
+}
+
+Subaction 0xA: GFX {
+  AsynchronousTimer(74.0)
+  GraphicEffect(12320777, 0, 36.0, 0.0, 34.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(75.0)
+  Screenshake(0)
+  GraphicEffect(12320777, 0, -56.0, 0.0, -4.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(75.0)
+  GraphicEffectAttached(12320770, 10, 17.0, 24.0, -4.0, 0.0, 90.0, 0.0, 0.5, false)
+  AsynchronousTimer(75.0)
+  GraphicEffectAttached(12320770, 10, -17.0, 24.0, -4.0, 0.0, -90.0, 0.0, 0.5, false)
+  AsynchronousTimer(76.0)
+  GraphicEffect(12320777, 0, 54.0, 0.0, -2.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(80.0)
+  GraphicEffect(12320777, 0, -34.0, 0.0, -28.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(82.0)
+  GraphicEffect(12320777, 0, 40.0, 0.0, -32.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(83.0)
+  GraphicEffect(12320777, 0, -42.0, 0.0, 30.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(102.0)
+  GraphicEffect(12320777, 0, 54.0, 0.0, -2.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(103.0)
+  Screenshake(0)
+  GraphicEffect(12320777, 0, -56.0, 0.0, -4.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(104.0)
+  GraphicEffect(12320777, 0, -40.0, 0.0, 30.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(104.0)
+  GraphicEffect(12320777, 0, -34.0, 0.0, -28.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(105.0)
+  GraphicEffect(12320777, 0, 40.0, 0.0, -32.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(109.0)
+  GraphicEffect(12320777, 0, 42.0, 0.0, 34.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0xA: GFX EXIT {
+}
+
+Subaction 0xA: GFX INIT {
+}
+
+Subaction 0xA: SFX {
+  SoundEffect(9649)
+  SynchronousTimer(60.0)
+  SoundEffect(9660)
+}
+
+Subaction 0xA: SFX EXIT {
+}
+
+Subaction 0xA: SFX INIT {
+}
+

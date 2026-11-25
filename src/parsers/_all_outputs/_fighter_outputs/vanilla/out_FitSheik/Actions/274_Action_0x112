@@ -1,0 +1,42 @@
+Action 0x112: ENTRY {
+  GenerateArticle(1)
+  if (R(Compare(LA-Int[0x40] == 0.0))) {
+    BasicVariableSet(1, LA-Int[0x40])
+  }
+  SubRoutine(hidden_subroutine_0x18578)
+
+  ChangeAction(280, R(Animation End()))
+  AdditionalRequirement(R(Compare(LA-Int[0x40] >= 6.0)))
+
+  ChangeAction(279, R(Animation End()))
+  BitVariableClear(RA-Bool[0x10])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      SetAirGround(6)
+      if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(462, false)
+      } else {
+        ChangeSubAction(462, true)
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetAirGround(10)
+      if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(466, false)
+      } else {
+        ChangeSubAction(466, true)
+      }
+      SetRequirement(R(On Ground()))
+    }
+    BitVariableSet(RA-Bool[0x10])
+    LoadRest()
+  }
+}
+
+Action 0x112 : EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 279.0)) && R(Compare(Variable_Int_Status_Kind != 280.0))) {
+    BasicVariableSet(0, LA-Int[0x40])
+  }
+}

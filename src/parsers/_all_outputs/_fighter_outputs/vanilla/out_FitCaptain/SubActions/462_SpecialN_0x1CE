@@ -1,0 +1,71 @@
+[SpecialN] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1CE : MAIN {
+  AsynchronousTimer(8.0)
+  BitVariableSet(RA-Bool[0x10])
+  AsynchronousTimer(52.0)
+  OffensiveCollision(Sp(44, 0), 27, 361, Sp(0, 93), Sp(0, 30), 5.0, 0.5, 0.0, 0.0, 0.0, 1.0, 1.0, 688063621)
+  OffensiveCollision(Sp(43, 1), 25, 361, Sp(0, 93), Sp(0, 30), 3.5, 2.5, 0.0, 0.0, 0.0, 1.0, 1.0, 688063621)
+  OffensiveCollision(Sp(44, 2), 23, 361, Sp(0, 93), Sp(0, 30), 3.5, -4.0, 0.0, 0.0, 0.0, 1.0, 1.0, 688063557)
+  SynchronousTimer(5.0)
+  TerminateCollisions()
+}
+
+Subaction 0x1CE : GFX {
+  GraphicEffectAttached(655361, 64, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(2.0)
+  FlashLightEffect(255, 100, 0, 0, -70.0, -10.0)
+  ChangeFlashLightColor(30, 255, 100, 0, 200)
+  AsynchronousTimer(5.0)
+  GraphicEffectAttached(655368, 64, 0.0, 10.0, 2.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(25.0)
+  GraphicEffectAttached(655362, 55, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(32.0)
+  SetLoop(4) {
+    FlashOverlayEffect(255, 255, 100, 100)
+    SynchronousTimer(1.0)
+    FlashOverlayEffect(255, 100, 0, 90)
+    SynchronousTimer(1.0)
+    TerminateFlashEffect()
+    SynchronousTimer(1.0)
+  }
+  AsynchronousTimer(50.0)
+  GraphicEffectLanding(40, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(14.0)
+}
+
+Subaction 0x1CE : SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(1314)
+  SynchronousTimer(3.0)
+  SoundEffect(3580)
+  SoundEffect(3496)
+  SynchronousTimer(12.0)
+  SoundEffect(3581)
+  SynchronousTimer(4.0)
+  SynchronousTimer(17.0)
+  SoundEffect(3487)
+  SynchronousTimer(15.0)
+  StopSoundEffect(3496)
+  SoundEffect(1315)
+  SoundEffect(3582)
+}
+
+Subaction 0x1CE : OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(1.0)
+  Rumble(13, 0)
+  AsynchronousTimer(52.0)
+  Screenshake(1)
+  Rumble(14, 0)
+}
+

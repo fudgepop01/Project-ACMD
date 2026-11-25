@@ -1,0 +1,51 @@
+Action 0x120: ENTRY {
+  BasicVariableSet(0, LA-Int[0x40])
+  GenerateArticle(3)
+  BasicVariableSet(1, LA-Int[0x40])
+  GenerateArticle(3)
+  BasicVariableSet(2, LA-Int[0x40])
+  GenerateArticle(3)
+  BasicVariableSet(3, LA-Int[0x40])
+  GenerateArticle(3)
+  BasicVariableSet(4, LA-Int[0x40])
+  GenerateArticle(3)
+  BasicVariableSet(5, LA-Int[0x40])
+  GenerateArticle(3)
+  BasicVariableSet(6, LA-Int[0x40])
+  GenerateArticle(3)
+  BasicVariableSet(7, LA-Int[0x40])
+  GenerateArticle(3)
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  SetAnimationFrame(25.0)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      SetAirGround(6)
+      ChangeSubAction(489, true)
+      if (R(NOT Bit is Set(RA-Bool[0x13]))) {
+        BitVariableSet(RA-Bool[0x13])
+        SynchronousTimer(1.0)
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetAirGround(10)
+      ChangeSubAction(490, true)
+      if (R(NOT Bit is Set(RA-Bool[0x13]))) {
+        BitVariableSet(RA-Bool[0x13])
+        SynchronousTimer(1.0)
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x120 : EXIT {
+}

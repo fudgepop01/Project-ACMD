@@ -1,0 +1,7 @@
+// Status_Run
+Action 0x4 {
+  ChangeAction(3, R(In Air()))
+  FloatVariableSet(Variable_Float_Posture_Pos_Y, LA-Float[0x08])
+  ChangeAction(13, R(Button Tap?()))
+}
+

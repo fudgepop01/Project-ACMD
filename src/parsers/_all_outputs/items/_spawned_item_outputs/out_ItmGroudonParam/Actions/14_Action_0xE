@@ -1,0 +1,9 @@
+// Status_Fall
+Action 0xE {
+  ChangeAction(3, R(In Air()))
+  ChangeSubAction(1)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(4, R(Button Tap?()))
+}
+

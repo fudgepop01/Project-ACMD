@@ -1,0 +1,20 @@
+// Status_Run_Brake
+Action 0x5 {
+  (undef: Sp_base) 65_1F_01_00(2)
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 2.0))) {
+    (undef: Sp_base) 65_1F_01_00(2)
+    if (R(Bit is Set(LA-Bool[0x00]))) {
+      ChangeSubAction(9, true)
+    } else {
+      ChangeSubAction(7)
+    }
+  }
+
+  ChangeAction(7, R(In walljump situation()), 255)
+  AdditionalRequirement(R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed_X > 0.8)))
+
+  SubRoutine(hidden_subroutine_0x404)
+  DisableActionStatusId(5)
+  SubRoutine(hidden_subroutine_0x4E4)
+}
+

@@ -1,0 +1,11 @@
+// Status_Run
+Action 0x4 {
+  ChangeAction(3, R(In Air()))
+  if (R(Compare(Variable_Int_Motion_Kind == 1.0))) {
+    ChangeSubAction(1, true)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ChangeSubAction(0)
+  }
+}
+

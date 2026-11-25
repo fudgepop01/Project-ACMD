@@ -1,0 +1,35 @@
+[SpecialNHoldS] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D0: MAIN {
+}
+
+Subaction 0x1D0: GFX {
+  GraphicEffectAttached(1572871, 72, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  SetLoop(-1) {
+    GraphicEffectStepping(26, 0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 15.0, 0.0, 4.0, 0.0, 0.0, 0.0, false)
+    SynchronousTimer(5.0)
+  }
+}
+
+Subaction 0x1D0: SOUND {
+}
+
+Subaction 0x1D0: OTHER {
+  SlopeContourStand(6)
+  HeldItemsVisibility(false)
+  AsynchronousTimer(1.0)
+  RumbleLoop(2, 5)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0x1D0 : OTHER)
+}
+

@@ -1,0 +1,32 @@
+[SpecialAirLw] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1DD: MAIN {
+  AsynchronousTimer(14.0)
+  BitVariableSet(RA-Bool[0x10])
+  AsynchronousTimer(19.0)
+  SpecialOffensiveCollision(Sp(0, 0), 12, 80, Sp(0, 70), Sp(10, 55), 6.8, 0.0, 10.0, 0.0, 0.0, 1.0, 1.0, 952304768, 0, 542113731)
+}
+
+Subaction 0x1DD: GFX {
+}
+
+Subaction 0x1DD: SOUND {
+  StopSoundEffect(1169)
+  SynchronousTimer(1.0)
+  SynchronousTimer(1.0)
+  SoundEffect(2989)
+}
+
+Subaction 0x1DD: OTHER {
+  Rumble(12, 0)
+}
+

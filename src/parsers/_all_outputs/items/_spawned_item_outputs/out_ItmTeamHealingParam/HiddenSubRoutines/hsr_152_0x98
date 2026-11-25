@@ -1,0 +1,5 @@
+[hsr_98]
+hidden_subroutine_0x98 {
+  ChangeAction(7, R(Bit is Set(RA-Bool[0x03])))
+  Return()
+}

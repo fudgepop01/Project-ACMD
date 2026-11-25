@@ -1,0 +1,4 @@
+[hsr_158E8]
+hidden_subroutine_0x158E8 {
+  OffensiveCollision(Sp(32, 0), 3, 0, Sp(0, 40), Sp(5, 8), 1.6, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 679677507)
+}

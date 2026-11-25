@@ -1,0 +1,6 @@
+// @ 0x24128
+CHK_GROUND_GUARD {
+  ClearPreventInterrupt(GROUND_GUARD)
+  SubRoutine(hidden_subroutine_0xA2EC)
+  ClearPreventInterrupt(ALL?)
+}

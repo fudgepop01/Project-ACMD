@@ -1,0 +1,64 @@
+[AttackAirN] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x62: MAIN {
+  SubRoutine(hidden_subroutine_0x230F4)
+  AsynchronousTimer(8.0)
+  BitVariableSet(RA-Bool[0x1E])
+  SoundEffect(5777)
+  SpecialOffensiveCollision(Sp(11, 0), 15, 361, Sp(0, 100), Sp(0, 20), 3.5, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 964897941, 10, 5242816)
+  SpecialOffensiveCollision(Sp(13, 1), 15, 361, Sp(0, 100), Sp(0, 20), 4.0, 0.0, -1.0, 0.0, 0.0, 1.0, 1.0, 964897941, 10, 5242816)
+  AsynchronousTimer(9.0)
+  GraphicEffectAttached(36, 0, 0.0, 6.0, 0.0, 0.0, 0.0, 0.0, 1.25, true)
+  GraphicEffectAttached(36, 0, 0.0, 6.0, 0.0, 0.0, 0.0, 0.0, 1.25, true)
+  GraphicEffectAttached(36, 0, 0.0, 6.0, 0.0, 0.0, 0.0, 0.0, 1.25, true)
+  AsynchronousTimer(15.0)
+  SoundEffect(5777)
+  SpecialOffensiveCollision(Sp(11, 0), 12, 50, Sp(0, 100), Sp(0, 15), 3.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 964887680, 10, 5242816)
+  SpecialOffensiveCollision(Sp(13, 1), 12, 50, Sp(0, 100), Sp(0, 15), 3.5, 0.0, -1.0, 0.0, 0.0, 1.0, 1.0, 964887680, 10, 5242816)
+  AsynchronousTimer(19.0)
+  GraphicEffectAttached(36, 0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.15, true)
+  GraphicEffectAttached(36, 0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.15, true)
+  AsynchronousTimer(28.0)
+  SoundEffect(5777)
+  SpecialOffensiveCollision(Sp(11, 0), 9, 60, Sp(0, 100), Sp(0, 10), 2.5, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 964887616, 10, 5242816)
+  SpecialOffensiveCollision(Sp(13, 1), 9, 60, Sp(0, 100), Sp(0, 10), 3.0, 0.0, -1.0, 0.0, 0.0, 1.0, 1.0, 964887616, 10, 5242816)
+  AsynchronousTimer(29.0)
+  GraphicEffectAttached(36, 0, 0.0, 6.0, 0.0, 0.0, 0.0, 0.0, 1.05, true)
+  AsynchronousTimer(41.0)
+  TerminateCollisions()
+  AsynchronousTimer(53.0)
+  BitVariableClear(RA-Bool[0x1E])
+  AllowInterrupt()
+}
+
+Subaction 0x62: GFX {
+  AsynchronousTimer(8.0)
+  GraphicEffectAttached(2228230, 13, 0.0, 0.0, 0.0, -90.0, 0.0, 0.0, 0.7, true)
+  GraphicEffectAttached(2228226, 29, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, true)
+  GraphicEffectAttached(2228227, 49, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, true)
+  Goto(hidden_subroutine_0xC2B8)
+}
+
+Subaction 0x62: SOUND {
+  AsynchronousTimer(8.0)
+  LowVoiceClip()
+  SoundEffect(5732)
+  SoundEffect(5831)
+}
+
+Subaction 0x62: OTHER {
+  AsynchronousTimer(8.0)
+  RumbleLoop(16, 0)
+  AsynchronousTimer(15.0)
+  RumbleLoop(16, 0)
+}
+

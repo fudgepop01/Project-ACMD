@@ -1,0 +1,49 @@
+[SpecialLw] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1DC: MAIN {
+  AsynchronousTimer(15.0)
+  SpecialOffensiveCollision(Sp(14, 0), 12, 45, Sp(0, 70), Sp(4, 60), 4.5, 0.0, -2.0, 0.0, 0.0, 1.0, 1.0, 964887699, 0, 5242819)
+  SpecialOffensiveCollision(Sp(13, 1), 12, 45, Sp(0, 70), Sp(4, 60), 3.8, 0.0, -3.0, 0.0, 0.0, 1.0, 1.0, 964887699, 0, 5242819)
+  SpecialOffensiveCollision(Sp(14, 2), 10, 45, Sp(0, 70), Sp(4, 60), 3.5, 0.0, 2.0, 0.0, 0.0, 1.0, 1.0, 964887699, 0, 5242819)
+  SynchronousTimer(1.0)
+  BitVariableSet(RA-Bool[0x12])
+  AsynchronousTimer(35.0)
+  TerminateCollisions()
+}
+
+Subaction 0x1DC: GFX {
+  AsynchronousTimer(13.0)
+  GraphicEffectAttached(1376260, 16, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  SetLoop(-1) {
+    GraphicEffectLanding(10, 0, 4.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 2.0, 0.0, 4.0, 0.0, 0.0, 0.0, false)
+    SynchronousTimer(6.0)
+  }
+}
+
+Subaction 0x1DC: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(4718)
+  SynchronousTimer(12.0)
+  SoundEffect(4751)
+  SoundEffect(1842)
+}
+
+Subaction 0x1DC: OTHER {
+  SlopeContourStand(6)
+  CreateAestheticWindEffects(0, 3.0, 30.0, 2.0, 1.0, 0.0, 12.0, 40.0, 20.0, 50)
+  AsynchronousTimer(4.0)
+  SlopeContourStand02(0, 4)
+  AsynchronousTimer(14.0)
+  Screenshake(1)
+  Rumble(5, 0)
+}
+

@@ -1,0 +1,9 @@
+[hsr_3E6C]
+hidden_subroutine_0x3E6C {
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    EnableActionStatusId(10010)
+    BitVariableClear(RA-Bool[0x10])
+  } else {
+    DisableActionStatusId(10010)
+  }
+}

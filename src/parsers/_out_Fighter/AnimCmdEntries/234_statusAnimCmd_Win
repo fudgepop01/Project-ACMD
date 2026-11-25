@@ -1,0 +1,52 @@
+// @ 0x1B5EC
+Win {
+  BitVariableSet(LA-Bool[0x01])
+  NothingDueToBug(false)
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 271.0))) {
+    if (R(Compare(Variable_Int_Motion_Kind < 454.0))) {
+      BasicVariableSet(454, RA-Int[0x01])
+      BasicVariableSet(455, RA-Int[0x02])
+    } elif (R(Compare(Variable_Int_Motion_Kind < 456.0))) {
+      BasicVariableSet(456, RA-Int[0x01])
+      BasicVariableSet(457, RA-Int[0x02])
+    } else {
+      BasicVariableSet(452, RA-Int[0x01])
+      BasicVariableSet(453, RA-Int[0x02])
+    }
+  } else {
+    BasicVariableSet(Variable_Int_Win_Pose_Kind, RA-Int[0x00])
+    BroadcastResultWin(RA-Int[0x00])
+    (undef: posture) 05_07_03_00(0.0, Owner_Param_Float_Result_Win_Rot_Y, 0.0)
+    Switch(10000, RA-Int[0x00])
+      Case(0)
+        BasicVariableSet(452, RA-Int[0x01])
+        BasicVariableSet(453, RA-Int[0x02])
+      Case(1)
+        BasicVariableSet(454, RA-Int[0x01])
+        BasicVariableSet(455, RA-Int[0x02])
+      Case(2)
+        BasicVariableSet(456, RA-Int[0x01])
+        BasicVariableSet(457, RA-Int[0x02])
+    EndSwitch()
+  }
+  CharacterSpecific01()
+  if (R(NOT Subaction Exists())) {
+    BasicVariableSet(452, RA-Int[0x01])
+    BasicVariableSet(453, RA-Int[0x02])
+  }
+  if (R(Subaction Exists())) {
+    if (R(Subaction Exists())) {
+      ChangeSubAction(RA-Int[0x01])
+      SynchronousTimer(1.0)
+      SetRequirement(R(Animation End()))
+      LoadRest()
+      ChangeSubAction(RA-Int[0x02])
+    } else {
+      ChangeSubAction(RA-Int[0x01])
+    }
+    BitVariableSet(RA-Bool[0x10])
+  }
+  if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+    SubRoutine(statusAnimCmd_WaitCommonAnim)
+  }
+}

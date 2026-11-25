@@ -1,0 +1,11 @@
+// Status_Jump_Squat
+Action 0xA {
+  ChangeSubAction(7)
+  ResetCertainMomentum(1)
+  FloatVariableMultiply(0.7, LA-Float[0x00])
+  FloatVariableMultiply(0.96, LA-Float[0x01])
+  (undef: Sp_Kinetic) 66_00_0D_00(LA-Float[0x00], LA-Float[0x01], -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false, false, true)
+  SynchronousTimer(5.0)
+  SubRoutine(hidden_subroutine_0x48)
+}
+

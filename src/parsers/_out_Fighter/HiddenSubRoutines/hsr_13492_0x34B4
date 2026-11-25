@@ -1,0 +1,6 @@
+[hsr_34B4]
+hidden_subroutine_0x34B4 {
+
+  ChangeActionStatus(10040, 26, R(Button Pressed(Shield)))
+  AdditionalRequirement(R(On Ground()))
+}

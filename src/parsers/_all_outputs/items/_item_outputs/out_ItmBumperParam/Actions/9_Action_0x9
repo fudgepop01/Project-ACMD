@@ -1,0 +1,20 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  BitVariableSet(LA-Bool[0x0C])
+  (undef: Sp_Kinetic) 66_06_01_00(0)
+  (undef: Sp_Kinetic) 66_07_00_00()
+  (undef: Sp_base) 65_04_01_00(960)
+  ChangeSubAction(5)
+  RightDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  (undef: Sp_base) 65_03_03_00(90.0, 0.0, 0.0)
+  (undef: Sp_Kinetic) 66_01_03_00(0.0, 9.0, -9.0)
+  SynchronousTimer(10.0)
+  (undef: Sp_Kinetic) 66_01_03_00(0.0, 0.0, 0.0)
+  (undef: Sp_base) 65_03_03_00(90.0, 90.0, -90.0)
+  DecideDirection()
+  CharacterSpecific01()
+  ChangeAction(10, R(Button Tap?()))
+}
+

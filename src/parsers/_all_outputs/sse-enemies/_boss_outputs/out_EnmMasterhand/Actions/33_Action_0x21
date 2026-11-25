@@ -1,0 +1,23 @@
+Action 0x21: MAIN {
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0x13AC)
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x21: EXIT {
+  (undef: Sp_Kinetic) 66_07_01_00(4)
+  (undef: Sp_base) 65_16_00_00()
+}
+
+Action 0x21: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(9)
+  BasicVariableSet(34, LA-Int[0x06])
+  BasicVariableSet(IC-Int[0x5DC0], LA-Int[0x05])
+  SubAction09(5)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 43)
+  (undef: Sp_Kinetic) 66_00_02_00(4, 42)
+  (undef: targetSearch) 16_00_00_00()
+}
+

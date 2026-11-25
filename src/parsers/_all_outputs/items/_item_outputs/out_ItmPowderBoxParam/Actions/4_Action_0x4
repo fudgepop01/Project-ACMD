@@ -1,0 +1,10 @@
+// Status_Run
+Action 0x4 {
+  SubRoutine(hidden_subroutine_0x60)
+  DisableActionStatusId(4)
+  BodyCollision(0)
+  (undef: team) 22_02_01_00(20)
+  ChangeAction(3, R(In Air()))
+  ChangeSubAction(6)
+}
+

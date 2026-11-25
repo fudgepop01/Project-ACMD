@@ -1,0 +1,44 @@
+[WalkFast] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xC: MAIN {
+}
+
+Subaction 0xC: GFX {
+  AsynchronousTimer(7.0)
+  GraphicEffectStepping(0, 12, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(16.0)
+  GraphicEffectStepping(0, 7, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0xC : GFX)
+}
+
+Subaction 0xC: SOUND {
+  AsynchronousTimer(7.0)
+  SteppingSoundEffect(3007)
+  SynchronousTimer(8.0)
+  SteppingSoundEffect(3005)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0xC : SFX)
+}
+
+Subaction 0xC: OTHER {
+  AsynchronousTimer(5.0)
+  Rumble(20, 0)
+  AsynchronousTimer(15.0)
+  Rumble(20, 0)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0xC : OTHER)
+}
+

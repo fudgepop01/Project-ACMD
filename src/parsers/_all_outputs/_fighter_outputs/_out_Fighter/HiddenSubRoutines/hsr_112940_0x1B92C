@@ -1,0 +1,7 @@
+[hsr_1B92C]
+hidden_subroutine_0x1B92C {
+  SubRoutine(statusAnimCmd_ItemShootWalkB_Common)
+  SubRoutine(hsr_9A84)
+  SubRoutine(hidden_subroutine_0x1B7A4)
+  SubRoutine(hidden_subroutine_0x1B854)
+}

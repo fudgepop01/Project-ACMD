@@ -1,0 +1,9 @@
+[hsr_24D08]
+hidden_subroutine_0x24D08 {
+  SubRoutine(hsr_C160)
+  GraphicEffectLanding(8, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.7, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffectAttached(2228226, 29, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, true)
+  GraphicEffectAttached(2228227, 49, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, true)
+  SoundEffect(5732)
+  SoundEffect(5726)
+}

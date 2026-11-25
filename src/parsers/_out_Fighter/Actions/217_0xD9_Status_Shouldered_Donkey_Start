@@ -1,0 +1,10 @@
+// Status_Shouldered_Donkey_Start
+Action 0xD9: ENTRY {
+  ChangeAction(218, R(Animation End()))
+  (undef: StageObject) 0C_29_00_00()
+  (undef: motion) 04_1A_01_00(459)
+  ChangeSubAction(119)
+}
+
+Action 0xD9 : EXIT {
+}

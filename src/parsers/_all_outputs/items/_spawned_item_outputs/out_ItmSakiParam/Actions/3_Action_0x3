@@ -1,0 +1,29 @@
+// Status_Dash
+Action 0x3 {
+  ChangeAction(4, R(On Ground()))
+  if (R(NOT 0x2715())) {
+    ChangeAction(11, R(Button Tap?()))
+  }
+  if (R(Compare(Variable_Int_Status_Prev_Kind != 8.0))) {
+    (undef: Sp_Kinetic) 66_02_02_00(0.2, 0.0)
+  }
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 1.0))) {
+    (undef: Sp_base) 65_07_01_00(10)
+    if (R(2714(1))) {
+      LeftDirection()
+      DecideDirection()
+      CharacterSpecific01()
+    }
+    ChangeSubAction(0, true)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+  }
+  ChangeSubAction(1)
+  SetLoop(-1) {
+    SynchronousTimer(5.0)
+    if (R(NOT 0x2715())) {
+      ChangeAction(11, R(Button Tap?()))
+    }
+  }
+}
+

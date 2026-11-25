@@ -1,0 +1,18 @@
+Action 0x9: MAIN {
+}
+
+Action 0x9: EXIT {
+}
+
+Action 0x9: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(13)
+  (undef: Sp_AI) 6A_00_01_00(14)
+  (undef: Sp_AI) 6A_00_01_00(15)
+  (undef: Sp_AI) 6A_00_01_00(18)
+  (undef: Sp_AI) 6A_00_01_00(31)
+  SubAction09(19)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 15)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 16)
+}
+

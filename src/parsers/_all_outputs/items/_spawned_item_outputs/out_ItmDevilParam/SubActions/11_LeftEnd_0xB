@@ -1,0 +1,22 @@
+[LeftEnd] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xB : GAME {
+}
+
+Subaction 0xB : GFX {
+}
+
+Subaction 0xB : SOUND {
+  AsynchronousTimer(30.0)
+  StopSoundEffect(7717)
+}
+

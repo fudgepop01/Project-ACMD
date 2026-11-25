@@ -1,0 +1,11 @@
+Action 0x119: ENTRY {
+  FrameSpeedModifier(0.0)
+  SynchronousTimer(1.0)
+  ChangeSubAction(469)
+  SubRoutine(hidden_subroutine_0x1B230)
+  ChangeAction(282, R(Animation End()))
+  ChangeAction(283, R(On Ground()))
+}
+
+Action 0x119 : EXIT {
+}

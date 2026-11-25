@@ -1,0 +1,8 @@
+[hsr_1C358]
+hidden_subroutine_0x1C358 {
+  BasicVariableIncrement(RA-Int[0x02])
+  if (R(Compare(RA-Int[0x02] > IC-Int[0x5DC7]))) {
+    DisableSpecifiedMovement(3)
+    TerminateConcurrentInfiniteLoop(9)
+  }
+}

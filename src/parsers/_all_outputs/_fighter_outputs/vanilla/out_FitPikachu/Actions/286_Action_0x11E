@@ -1,0 +1,34 @@
+Action 0x11E: ENTRY {
+  SetGimmickEffectFlag(false)
+  SetTagDisplay(false)
+  SetEvtToGroundStatus(false)
+  BasicVariableSet(0, RA-Int[0x00])
+  ChangeAction(287, R(Compare(RA-Int[0x01] < 0.0)))
+  SetPassableCheck(false)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x17508)
+  SubRoutine(hidden_subroutine_0xB510)
+  SubRoutine(hidden_subroutine_0x4DB8)
+  SubRoutine(hidden_subroutine_0x15CA0)
+  SubRoutine(hidden_subroutine_0xEC78)
+  SetAerialOrOnstage(5)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      Module0900(0)
+      SetAerialOrOnstage(1)
+      SetRequirement(R(In Air()))
+    } else {
+      Module0900(2)
+      SetAerialOrOnstage(5)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x11E : EXIT {
+  SetPassableCheck(true)
+  OnlyArticleEvent(2)
+  if (R(Compare(Variable_Int_Status_Kind != 287.0))) {
+    ExitFinalSmashState()
+  }
+}

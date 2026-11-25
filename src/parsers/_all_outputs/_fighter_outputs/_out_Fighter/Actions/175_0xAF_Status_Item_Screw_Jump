@@ -1,0 +1,26 @@
+// Status_Item_Screw_Jump
+Action 0xAF: ENTRY {
+  ResetFlickY()
+  ResetButtonPress()
+  HeldItemsVisibility(false)
+  ChangeAction(177, R(Animation End()))
+
+  ChangeActionStatus(10027, 23, R(On Ground()))
+  AdditionalRequirement(R(Compare(LA-Int[0x0D] < Customize_Param_Int_Landing_Heavy_Frame)))
+  AdditionalRequirement(R(Compare(IC-Int[0x3EA] < Customize_Param_Float_Mini_Jump_Speed_Y)))
+
+  ChangeActionStatus(10026, 22, R(On Ground()))
+  AdditionalRequirement(R(Compare(IC-Int[0x3EA] < Customize_Param_Float_Mini_Jump_Speed_Y)))
+
+  SubRoutine(statusAnimCmd_AIRChkFallCommon)
+  PreventSpecificInterrupt(AIR_LANDING)
+  BasicVariableIncrement(LA-Int[0x3B])
+  SoundEffect(8041)
+  if (R(Bit is Set(LA-Bool[0x13]))) {
+    SoundEffect(8107)
+  }
+  ChangeSubAction(328)
+}
+
+Action 0xAF : EXIT {
+}

@@ -1,0 +1,10 @@
+Action 0x119: ENTRY {
+  ChangeAction(282, R(Animation End()))
+  BasicVariableSet(465, RA-Int[0x00])
+  BasicVariableSet(476, RA-Int[0x01])
+  BitVariableClear(RA-Bool[0x10])
+  SubRoutine(hidden_subroutine_0x198A0)
+}
+
+Action 0x119 : EXIT {
+}

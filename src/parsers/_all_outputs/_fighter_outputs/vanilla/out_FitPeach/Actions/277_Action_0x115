@@ -1,0 +1,10 @@
+Action 0x115: ENTRY {
+  ChangeAction(14, R(In Air()))
+  ChangeAction(0, R(Animation End()))
+  ChangeSubAction(477)
+  RemoveItemHoldAnim()
+}
+
+Action 0x115 : EXIT {
+  AttachItemHoldAnim_UNDOC1ARGS(0)
+}

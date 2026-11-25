@@ -1,0 +1,43 @@
+[SpecialHi] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1DC: MAIN {
+  AsynchronousTimer(5.0)
+  OffensiveCollision(Sp(0, 0), 2, 90, Sp(120, 100), Sp(0, 0), 5.0, 0.0, 4.0, 0.0, 0.0, 0.0, 0.0, 633537664)
+  SynchronousTimer(1.0)
+  TerminateCollisions()
+}
+
+Subaction 0x1DC: GFX {
+  AsynchronousTimer(5.0)
+  GraphicEffectLanding(41, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x1DC: SOUND {
+  AsynchronousTimer(9.0)
+  SoundEffect(4920)
+  SynchronousTimer(1.0)
+  SoundEffect(4998)
+}
+
+Subaction 0x1DC: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(5.0)
+  Rumble(16, 0)
+  AsynchronousTimer(11.0)
+  SlopeContourStand02(0, 2)
+  Rumble(13, 0)
+  AsynchronousTimer(30.0)
+  Rumble(12, 0)
+  AsynchronousTimer(35.0)
+  SlopeContourStand02(6, 2)
+}
+

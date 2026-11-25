@@ -1,0 +1,6 @@
+[hsr_26DA8]
+hidden_subroutine_0x26DA8 {
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 279.0)) || R(Compare(Variable_Int_Status_Prev_Kind == 282.0))) {
+    SubRoutine(hidden_subroutine_0x271E8)
+  }
+}

@@ -1,0 +1,7 @@
+[hsr_110]
+hidden_subroutine_0x110 {
+  ChangeActionStatus(7, 7, R(Bit is Set(RA-Bool[0x05])))
+  ChangeActionStatus(4, 4, R(On Ground()))
+  SubRoutine(hidden_subroutine_0xB0)
+  Return()
+}

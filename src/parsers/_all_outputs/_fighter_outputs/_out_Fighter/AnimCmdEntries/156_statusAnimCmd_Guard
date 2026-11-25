@@ -1,0 +1,16 @@
+// @ 0x22640
+Guard {
+
+  ChangeAction(126, R(In Air()))
+  AdditionalRequirement(R(Has Passed Over an Edge Backward()))
+
+  ChangeAction(14, R(In Air()))
+  SubRoutine(statusAnimCmd_GuardCont)
+  ChangeAction(86, R(Compare(LA-Float[0x03] < 0.0)))
+
+  ChangeAction(28, R(Button Not Pressed(Shield)))
+  AdditionalRequirement(R(Compare(RA-Int[0x00] <= 0.0)))
+  AdditionalRequirement(R(On Ground()))
+
+  ConcurrentInfiniteLoop(I(9), statusAnimCmd_GuardUniq)
+}

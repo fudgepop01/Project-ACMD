@@ -1,0 +1,8 @@
+// @ 0x22738
+EscapeFb {
+  if (R(Holding Item())) {
+    if (R(Button Press(Attack)) && R(NOT Holding Item of Type(4194304))) {
+      ChangeReadingAction(155)
+    }
+  }
+}

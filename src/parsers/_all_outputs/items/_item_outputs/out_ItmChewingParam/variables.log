@@ -1,0 +1,32 @@
+IC-Int[0x3EE] ("Variable_Float_Kinetic_Energy_Damage_Speed_X") in Action 0x2 (Status_Walk_Brake) @ 9 : 1
+
+IC-Int[0x11F8] in Action 0x2 (Status_Walk_Brake) @ 10 : 2
+
+IC-Int[0x5214] ("Variable_Int_Controller_Trigger_2_Count_Prev") in Action 0x2 (Status_Walk_Brake) @ 0 : 0
+
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 0 : 1
+LA-Int[0x00] in Action 0x2 (Status_Walk_Brake) @ 0 : 1
+
+LA-Int[0x0B] in Action 0x2 (Status_Walk_Brake) @ 2 : 1
+LA-Int[0x0B] in Action 0x3 (Status_Dash) @ 4 : 1
+LA-Int[0x0B] in Action 0x4 (Status_Run) @ 6 : 1
+LA-Int[0x0B] in Action 0x7 (Status_Turn_Dash) @ 0 : 1
+LA-Int[0x0B] in hsr_464 @ 1 : 2
+LA-Int[0x0B] in hsr_4DC @ 0 : 1
+LA-Int[0x0B] in hsr_4DC @ 1 : 1
+
+LA-Int[0x0C] in Action 0x2 (Status_Walk_Brake) @ 4 : 1
+LA-Int[0x0C] in Action 0x4 (Status_Run) @ 7 : 1
+LA-Int[0x0C] in Action 0x7 (Status_Turn_Dash) @ 1 : 1
+
+LA-Bool[0x08] in Action 0x4 (Status_Run) @ 3 : 0
+LA-Bool[0x08] in Action 0x8 (Status_Turn_Run) @ 2 : 0
+LA-Bool[0x08] in Action 0xC (Status_Jump_Aerial) @ 1 : 0
+
+LA-Bool[0x09] in Action 0x2 (Status_Walk_Brake) @ 7 : 1
+LA-Bool[0x09] in Subaction 0x1 : SOUND @ 0 : 1
+
+RA-Int[0x00] in Action 0x2 (Status_Walk_Brake) @ 9 : 0
+RA-Int[0x00] in Action 0x2 (Status_Walk_Brake) @ 10 : 0
+
+RA-Bool[0x01] in hsr_464 @ 0 : 2

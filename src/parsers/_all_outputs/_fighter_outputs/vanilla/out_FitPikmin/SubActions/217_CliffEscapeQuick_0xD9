@@ -1,0 +1,42 @@
+[CliffEscapeQuick] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xD9: MAIN {
+  BodyCollision(2)
+  AsynchronousTimer(29.0)
+  BodyCollision(0)
+}
+
+Subaction 0xD9: GFX {
+  AsynchronousTimer(17.0)
+  GraphicEffect(28, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(25.0)
+  GraphicEffect(11, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.85, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0xD9: SOUND {
+  AsynchronousTimer(2.0)
+  SoundEffect(5076)
+  SynchronousTimer(19.0)
+  SoundEffect(5067)
+  SynchronousTimer(18.0)
+  SoundEffect(5118)
+  SynchronousTimer(8.0)
+  SoundEffect(5116)
+}
+
+Subaction 0xD9: OTHER {
+  AsynchronousTimer(35.0)
+  SlopeContourStand(2)
+  AsynchronousTimer(40.0)
+  SlopeContourStand02(6, 4)
+}
+

@@ -1,0 +1,8 @@
+[hsr_26840]
+hidden_subroutine_0x26840 {
+  FloatVariableSet(Variable_Float_Kinetic_Sum_Speed_X_Lr, LA-Float[0x09])
+  FloatVariableSet(Variable_Float_Kinetic_Sum_Speed_Y, LA-Float[0x0A])
+  if (R(Compare(LA-Int[0x41] >= 4.0))) {
+    SetArticleAction07(0, 0)
+  }
+}

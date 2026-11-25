@@ -1,0 +1,40 @@
+[hsr_273C]
+hidden_subroutine_0x273C {
+  SetLoop(-1) {
+    if (R(Successfully tethered ledge())) {
+      if [IF_REQ_UNKNOWN_3ARG] (R(0x12()), 1, Variable_Int_Controller_Flick_No_Reset_Y) {
+        (undef: Sp_Area) 69_00_01_00(Variable_Int_Controller_Flick_No_Reset_Y)
+      }
+      if (R(0x2710())) {
+        if [IF_REQ_UNKNOWN_3ARG] (R(Can Pick Up Another Item()), Variable_Int_Controller_Flick_No_Reset_Y, 3) {
+          (undef: Sp_Kinetic) 66_00_02_00(5, 31)
+        } ELSEIF_REQ_UNKNOWN_3ARG (R(Can Pick Up Another Item()), Variable_Int_Controller_Flick_No_Reset_Y, 2) {
+          (undef: Sp_Kinetic) 66_00_02_00(5, 30)
+        }
+      } else {
+        if [IF_REQ_UNKNOWN_3ARG] (R(Tap Jump On & C-Stick not Held()), 5, 30 &&[3A] R(Can Pick Up Another Item()), Variable_Int_Controller_Flick_No_Reset_Y, 3) {
+          (undef: Sp_Kinetic) 66_00_02_00(5, 31)
+        }
+        if [IF_REQ_UNKNOWN_3ARG] (R(Tap Jump On & C-Stick not Held()), 5, 31 &&[3A] R(Can Pick Up Another Item()), Variable_Int_Controller_Flick_No_Reset_Y, 2) {
+          (undef: Sp_Kinetic) 66_00_02_00(5, 30)
+        }
+      }
+      Switch(1001, 5)
+        Case(-1)
+          Break()
+        Case(3)
+          (undef: Sp_base) 65_16_00_00()
+          (undef: Sp_base) 65_1F_02_00(IC-Int[0xABEE], LA-Float[0x0A])
+          (undef: Sp_base) 65_14_01_00(LA-Float[0x0A])
+        Case(2)
+          (undef: Sp_base) 65_16_00_00()
+          (undef: Sp_base) 65_1F_02_00(IC-Int[0xABEF], LA-Float[0x0A])
+          (undef: Sp_base) 65_14_01_00(LA-Float[0x0A])
+        DefaultCase()
+          (undef: unk_procedures) 1B_02_01_00(F(0x00002704))
+      EndSwitch()
+    }
+    SynchronousTimer(1.0)
+  }
+  Return()
+}

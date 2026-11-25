@@ -1,0 +1,28 @@
+[LandingAirLw] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x6B: MAIN {
+}
+
+Subaction 0x6B: GFX {
+  Goto(Subaction_0x67 : GFX)
+}
+
+Subaction 0x6B: SOUND {
+  AsynchronousTimer(4.0)
+  LandingSoundEffect(3189)
+}
+
+Subaction 0x6B: OTHER {
+  SlopeContourStand(6)
+  Rumble(22, 0)
+}
+

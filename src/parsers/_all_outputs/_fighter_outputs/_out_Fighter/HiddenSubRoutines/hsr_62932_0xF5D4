@@ -1,0 +1,20 @@
+[hsr_F5D4]
+hidden_subroutine_0xF5D4 {
+  if (R(NOT Bit is Set(RA-Bool[0x11])) && R(Bit is Set(RA-Bool[0x10]))) {
+    AllowSpecificInterrupt(GROUND_SPECIAL)
+    AllowSpecificInterrupt(GROUND_ITEM)
+    AllowSpecificInterrupt(GROUND_CATCH)
+    AllowSpecificInterrupt(GROUND_ATTACK)
+    AllowSpecificInterrupt(GROUND_ESCAPE)
+    AllowSpecificInterrupt(GROUND_GUARD)
+    AllowSpecificInterrupt(GROUND_JUMP)
+    AllowSpecificInterrupt(GROUND)
+    BitVariableSet(RA-Bool[0x11])
+  }
+  if (R(Bit is Set(RA-Bool[0x13]))) {
+    EnableActionStatusId(10010)
+    BitVariableClear(RA-Bool[0x13])
+  } else {
+    DisableActionStatusId(10010)
+  }
+}

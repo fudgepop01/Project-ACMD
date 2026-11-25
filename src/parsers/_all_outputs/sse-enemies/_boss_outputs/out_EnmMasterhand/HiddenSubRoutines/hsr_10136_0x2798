@@ -1,0 +1,8 @@
+[hsr_2798]
+hidden_subroutine_0x2798 {
+  SynchronousTimer(1.0)
+  (undef: Sp_base) 65_0E_03_00(IC-Int[0xABED], 0, 13)
+  (undef: Sp_Link) 6E_00_03_00(0, 5103, 49)
+  (undef: Sp_base) 65_0E_03_00(IC-Int[0xABED], 0, 19)
+  (undef: Sp_Link) 6E_00_03_00(0, 5103, 49)
+}

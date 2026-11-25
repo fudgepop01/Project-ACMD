@@ -1,0 +1,32 @@
+[SpecialNStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1DD: MAIN {
+  GenerateArticle(13)
+  LinkArticleToBone(13, 57, 2)
+  GenerateArticle(12)
+  ArticleVisibility(12, false)
+  AsynchronousTimer(9.0)
+  ArticleVisibility(12, true)
+}
+
+Subaction 0x1DD: GFX {
+}
+
+Subaction 0x1DD: SOUND {
+  AsynchronousTimer(9.0)
+  SoundEffect(6457)
+}
+
+Subaction 0x1DD: OTHER {
+  SlopeContourStand(6)
+}
+

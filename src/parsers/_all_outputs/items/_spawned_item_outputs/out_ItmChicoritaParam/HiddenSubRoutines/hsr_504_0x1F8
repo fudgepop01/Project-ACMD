@@ -1,0 +1,18 @@
+[hsr_1F8]
+hidden_subroutine_0x1F8 {
+  ChangeSubAction(2)
+  SetLoop(-1) {
+    if (R(Compare(LA-Int[0x00] <= 0.0))) {
+      LoopBreak()
+    }
+    BasicVariableDecrement(LA-Int[0x00])
+    SynchronousTimer(9.0)
+    SubRoutine(hidden_subroutine_0xC8)
+    (undef: Sp_base) 65_09_08_00(101, 0, LA-Float[0x00], LA-Float[0x01], 0.0, 2.6, 0.0, 0.0)
+    SynchronousTimer(14.0)
+    SubRoutine(hidden_subroutine_0xC8)
+    (undef: Sp_base) 65_09_08_00(101, 0, LA-Float[0x00], LA-Float[0x01], 0.0, 2.6, 0.0, 0.0)
+    SynchronousTimer(5.0)
+  }
+  Return()
+}

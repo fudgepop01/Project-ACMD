@@ -1,0 +1,52 @@
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x0: EXIT @ 2 : 1
+
+IC-Int[0xA028] in Action 0x6: INIT @ 4 : 2
+IC-Int[0xA028] in Action 0x9: INIT @ 5 : 2
+
+IC-Int[0xABE3] in Action 0x7: INIT @ 3 : 0
+
+IC-Int[0xABE4] in Action 0x8: EXIT @ 0 : 0
+
+LA-Int[0x06] in Action 0x6: INIT @ 3 : 1
+LA-Int[0x06] in Action 0x9: INIT @ 4 : 1
+
+LA-Float[0x02] in Action 0x7: INIT @ 3 : 1
+LA-Float[0x02] in Action 0x8: EXIT @ 0 : 1
+
+LA-Float[0x0C] in Subaction 0x1: MAIN @ 7 : 46
+LA-Float[0x0C] in Subaction 0x3: MAIN @ 1 : 46
+LA-Float[0x0C] in Subaction 0x3: MAIN @ 2 : 46
+LA-Float[0x0C] in Subaction 0x3: MAIN @ 3 : 46
+LA-Float[0x0C] in Subaction 0x3: MAIN @ 4 : 46
+LA-Float[0x0C] in Subaction 0x3: MAIN @ 5 : 46
+LA-Float[0x0C] in Subaction 0x4: MAIN @ 0 : 46
+LA-Float[0x0C] in Subaction 0x4: MAIN @ 1 : 46
+LA-Float[0x0C] in Subaction 0x4: MAIN @ 2 : 46
+LA-Float[0x0C] in Subaction 0x4: MAIN @ 3 : 46
+LA-Float[0x0C] in Subaction 0x4: MAIN @ 4 : 46
+LA-Float[0x0C] in Subaction 0x4: MAIN EXIT @ 0 : 46
+LA-Float[0x0C] in Subaction 0x4: MAIN EXIT @ 1 : 46
+LA-Float[0x0C] in Subaction 0x4: MAIN EXIT @ 2 : 46
+LA-Float[0x0C] in Subaction 0x4: MAIN EXIT @ 3 : 46
+LA-Float[0x0C] in Subaction 0x4: MAIN EXIT @ 4 : 46
+
+LA-Bool[0x04] in Action 0x0: EXIT @ 1 : 1
+
+LA-Bool[0x06] in Action 0x4: INIT @ 3 : 0
+LA-Bool[0x06] in Action 0x5: INIT @ 3 : 0
+LA-Bool[0x06] in Action 0x9: INIT @ 1 : 0
+
+RA-Int[0x01] in Action 0x5: INIT @ 5 : 1
+RA-Int[0x01] in Action 0x5: MAIN @ 1 : 1
+
+RA-Int[0x02] in Action 0x5: INIT @ 6 : 1
+RA-Int[0x02] in Action 0x5: MAIN @ 2 : 1
+
+RA-Int[0x03] in Action 0x5: INIT @ 7 : 1
+RA-Int[0x03] in Action 0x5: MAIN @ 3 : 1
+
+RA-Int[0x04] in Action 0x5: INIT @ 8 : 1
+RA-Int[0x04] in Action 0x5: MAIN @ 4 : 1
+
+RA-Int[0x05] in Action 0x5: INIT @ 9 : 1
+RA-Int[0x05] in Action 0x5: MAIN @ 5 : 1

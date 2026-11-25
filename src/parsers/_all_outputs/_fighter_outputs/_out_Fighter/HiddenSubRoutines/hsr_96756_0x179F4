@@ -1,0 +1,5 @@
+[hsr_179F4]
+hidden_subroutine_0x179F4 {
+  SubRoutine(hsr_1765C)
+  ChangeAction(0, R(Animation End()))
+}

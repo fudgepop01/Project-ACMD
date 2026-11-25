@@ -1,0 +1,6 @@
+[hsr_C160]
+hidden_subroutine_0xC160 {
+  SetLoop(10) {
+    GraphicEffectAttached(2228241, -2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  }
+}

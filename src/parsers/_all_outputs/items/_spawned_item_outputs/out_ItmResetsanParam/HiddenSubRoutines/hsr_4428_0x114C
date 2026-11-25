@@ -1,0 +1,7 @@
+[hsr_114C]
+hidden_subroutine_0x114C {
+  BitVariableClear(LA-Bool[0x01])
+  BitVariableClear(LA-Bool[0x00])
+  ChangeSubAction(13)
+  Return()
+}

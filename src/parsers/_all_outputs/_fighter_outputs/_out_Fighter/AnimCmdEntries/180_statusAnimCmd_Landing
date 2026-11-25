@@ -1,0 +1,10 @@
+// @ 0x21FA0
+Landing {
+  ChangeAction(14, R(In Air()))
+  if (R(NOT Bit is Set(LA-Bool[0x0B])) && R(NOT Compare(Variable_Int_Have_Item_Kind == 0.0))) {
+    SubRoutine(hidden_subroutine_0xF6BC)
+    ConcurrentInfiniteLoop(I(9), hidden_subroutine_0xF464)
+  } else {
+    ChangeAction(0, R(Animation End()))
+  }
+}

@@ -1,0 +1,28 @@
+[LightThrowDash] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x107: MAIN {
+  AsynchronousTimer(5.0)
+  ThrowItem(20.0, 10.0, Variable_Float_Throw_Item_Angle, Variable_Float_Throw_Item_Speed, Variable_Float_Throw_Item_Power)
+}
+
+Subaction 0x107: GFX {
+}
+
+Subaction 0x107: SOUND {
+}
+
+Subaction 0x107: OTHER {
+  SlopeContourStand(1)
+  AsynchronousTimer(30.0)
+  SlopeContourStand02(6, 5)
+}
+

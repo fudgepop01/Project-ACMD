@@ -1,0 +1,4 @@
+[hsr_1AFE0]
+hidden_subroutine_0x1AFE0 {
+  InertCollision(0, 0, 0, 75.0, 0.0, 10.0, 10.0, 2, 7, 3, false, 9, 1, false, 1, false, 0)
+}

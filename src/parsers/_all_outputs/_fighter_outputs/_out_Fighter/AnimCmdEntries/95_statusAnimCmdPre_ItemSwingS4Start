@@ -1,0 +1,12 @@
+// @ 0x23110
+ItemSwingS4Start {
+  if (R(Compare(Variable_Int_Have_Item_Kind == 33.0))) {
+    ChangeReadingAction(161)
+    RemoveItemHoldAnim()
+    if (R(Compare(IC-Int[0x3F2] >= Common_Param_Float_Dash_Stick_X))) {
+      RightDirection()
+    } elif (R(Compare(IC-Int[0x3F6] >= Common_Param_Float_Dash_Stick_X))) {
+      LeftDirection()
+    }
+  }
+}

@@ -1,0 +1,18 @@
+Action 0x123: ENTRY {
+  (undef: item_manage) 1F_11_01_00(2)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      ChangeSubAction(480, true)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      ChangeSubAction(482, true)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x123 : EXIT {
+}

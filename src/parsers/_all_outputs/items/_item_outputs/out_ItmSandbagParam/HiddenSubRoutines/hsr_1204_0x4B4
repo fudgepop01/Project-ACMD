@@ -1,0 +1,5 @@
+[hsr_4B4]
+hidden_subroutine_0x4B4 {
+  SoundEffect(8010)
+  Return()
+}

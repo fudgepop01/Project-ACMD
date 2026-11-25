@@ -1,0 +1,4 @@
+[hsr_2A54]
+hidden_subroutine_0x2A54 {
+  GraphicEffect(10, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}

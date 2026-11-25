@@ -1,0 +1,22 @@
+Action 0x123: ENTRY {
+  SetDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  AllowSpecificInterrupt(AIR_LANDING)
+  if (R(Bit is Set(RA-Bool[0x12]))) {
+    ChangeSubAction(469)
+    BitVariableClear(RA-Bool[0x12])
+  } else {
+    ChangeSubAction(469, true)
+  }
+  SetAerialOrOnstage(5)
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+}
+
+Action 0x123 : EXIT {
+}

@@ -1,0 +1,14 @@
+Action 0x116: ENTRY {
+  SetGimmickEffectFlag(false)
+  EnterFinalSmashState()
+  ChangeAction(288, R(Animation End()))
+  ChangeSubAction(479)
+  BasicVariableSet(Customize_Param_Int_Jump_Count_Max, LA-Int[0x01])
+  GenerateArticle(2)
+  SetArticleAction(2, 0)
+  SetFlashingEffect(38)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x18310)
+}
+
+Action 0x116 : EXIT {
+}

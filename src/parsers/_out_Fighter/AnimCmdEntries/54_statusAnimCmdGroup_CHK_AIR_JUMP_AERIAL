@@ -1,0 +1,6 @@
+// @ 0x238E4
+CHK_AIR_JUMP_AERIAL {
+  ClearPreventInterrupt(AIR_JUMP_AERIAL)
+  SubRoutine(statusAnimCmd_AIRChkJumpAerial)
+  ClearPreventInterrupt(ALL?)
+}

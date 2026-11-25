@@ -1,0 +1,20 @@
+[hsr_104D8]
+hidden_subroutine_0x104D8 {
+  AsynchronousTimer(10.0)
+  SoundEffect(1661)
+  SoundEffect(4272)
+  SynchronousTimer(7.0)
+  SoundEffect(4273)
+  SynchronousTimer(7.0)
+  SoundEffect(4274)
+  SynchronousTimer(7.0)
+  SoundEffect(4275)
+  SynchronousTimer(7.0)
+  SoundEffect(4276)
+  SynchronousTimer(7.0)
+  SoundEffect(4277)
+  SynchronousTimer(7.0)
+  SoundEffect(4278)
+  SynchronousTimer(7.0)
+  SoundEffect(4279)
+}

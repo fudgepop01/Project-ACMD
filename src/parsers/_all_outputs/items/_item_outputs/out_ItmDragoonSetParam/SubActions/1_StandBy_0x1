@@ -1,0 +1,26 @@
+[StandBy] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1 : GAME {
+  SynchronousTimer(20.0)
+  ScreenTint(0, 60, 80, 16, 0, 176, 4)
+}
+
+Subaction 0x1 : GFX {
+  AsynchronousTimer(5.0)
+  GraphicEffectAttached(111, 12, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+}
+
+Subaction 0x1 : SOUND {
+  AsynchronousTimer(1.0)
+  VictorySoundEffect(8005)
+}
+

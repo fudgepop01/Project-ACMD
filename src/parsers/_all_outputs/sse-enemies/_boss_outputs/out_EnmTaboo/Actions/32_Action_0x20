@@ -1,0 +1,24 @@
+Action 0x20: MAIN {
+}
+
+Action 0x20: EXIT {
+}
+
+Action 0x20: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(8)
+  BasicVariableSet(33, LA-Int[0x06])
+  SubAction09(4)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+  SWITCH_3ARG(1000, IC-Int[0xAC1E], 2)
+    Case(0)
+      (undef: Sp_base) 65_1E_01_00(IC-Int[0xAC03])
+    Case(1)
+      (undef: Sp_base) 65_1E_01_00(IC-Int[0xAC02])
+    DefaultCase()
+      (undef: unk_procedures) 1B_02_01_00(F(0x000035C4))
+  EndSwitch()
+  SubRoutine(hidden_subroutine_0x14AC)
+  SubRoutine(hidden_subroutine_0x1D14)
+}
+

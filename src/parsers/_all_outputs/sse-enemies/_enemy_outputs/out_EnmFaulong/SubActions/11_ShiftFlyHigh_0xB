@@ -1,0 +1,40 @@
+[ShiftFlyHigh] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xB: MAIN {
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 15, 10, 1.8, 100, 100, 0.0, 145, 0.0, 0, 0.0, 5.5, 0.0, 0.0, 0.0, 0.0, 2, 0.0, 1.0, 1.0, false, true, 15, 2, 3, 3, true, 0, 1023, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+}
+
+Subaction 0xB: MAIN EXIT {
+  TerminateCollisions()
+}
+
+Subaction 0xB: MAIN INIT {
+}
+
+Subaction 0xB: GFX {
+}
+
+Subaction 0xB: GFX EXIT {
+}
+
+Subaction 0xB: GFX INIT {
+}
+
+Subaction 0xB: SFX {
+}
+
+Subaction 0xB: SFX EXIT {
+}
+
+Subaction 0xB: SFX INIT {
+}
+

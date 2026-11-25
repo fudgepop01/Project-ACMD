@@ -1,0 +1,20 @@
+// Status_Passive_Wall
+Action 0x62: ENTRY {
+  ResetComboMeter()
+  ResetFlickX()
+  ResetFlickY()
+
+  ChangeActionStatus(10022, 99, R(Compare(Variable_Int_Controller_Trigger_3_Count < Common_Param_Int_Passive_Wall_Stop_Frame)))
+  AdditionalRequirement(R(Compare(RA-Int[0x00] >= 0.0)))
+
+  ChangeActionStatus(10021, 99, R(Compare(Variable_Float_Controller_Stick_Y >= Common_Param_Float_Jump_Stick_Y)))
+  AdditionalRequirement(R(Compare(RA-Int[0x00] >= 0.0)))
+
+  ChangeAction(14, R(Animation End()))
+  BasicVariableSet(0, LA-Int[0x03])
+  BasicVariableSet(IC-Int[0x5A0F], RA-Int[0x00])
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x5B44)
+}
+
+Action 0x62 : EXIT {
+}

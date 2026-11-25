@@ -1,0 +1,36 @@
+[FinalStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1DF: MAIN {
+  CameraCloseup(10, 0, 1.5, 0.0, 0.0)
+  AsynchronousTimer(40.0)
+  NormalCamera()
+}
+
+Subaction 0x1DF: GFX {
+  GraphicEffectAttached(15007745, 37, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+}
+
+Subaction 0x1DF: SOUND {
+  AsynchronousTimer(1.0)
+  VictorySoundEffect(1135)
+  VictorySoundEffect(2964)
+  SynchronousTimer(30.0)
+  VictorySoundEffect(2936)
+}
+
+Subaction 0x1DF: OTHER {
+  AsynchronousTimer(1.0)
+  Rumble(4, 0)
+  SynchronousTimer(1.0)
+  Rumble(5, 0)
+}
+

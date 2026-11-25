@@ -1,0 +1,8 @@
+// Status_Rebirth
+Action 0xBE: ENTRY {
+  SubRoutine(statusAnimCmd_RebirthCommon)
+  SubRoutine(statusAnimCmd_WaitCommonAnim)
+}
+
+Action 0xBE : EXIT {
+}

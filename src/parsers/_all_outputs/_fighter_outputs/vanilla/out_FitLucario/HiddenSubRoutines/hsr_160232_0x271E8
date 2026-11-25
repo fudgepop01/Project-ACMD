@@ -1,0 +1,6 @@
+[hsr_271E8]
+hidden_subroutine_0x271E8 {
+  if (R(Compare(Variable_Float_Kinetic_Sum_Speed_Y > 2.0))) {
+    SetMomentum(Variable_Float_Kinetic_Sum_Speed_X_Lr, 2.0)
+  }
+}

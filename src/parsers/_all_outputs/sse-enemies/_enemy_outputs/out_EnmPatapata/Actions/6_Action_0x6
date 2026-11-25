@@ -1,0 +1,20 @@
+Action 0x6: MAIN {
+  SetLoop(-1) {
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x6: EXIT {
+}
+
+Action 0x6: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(13)
+  (undef: Sp_AI) 6A_00_01_00(22)
+  (undef: Sp_AI) 6A_00_01_00(23)
+  SubAction09(4)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 25)
+  SubRoutine(hidden_subroutine_0x1FE4)
+  (undef: motion) 04_12_02_00(0, 0.0)
+}
+

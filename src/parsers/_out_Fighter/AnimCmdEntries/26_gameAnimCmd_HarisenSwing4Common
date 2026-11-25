@@ -1,0 +1,9 @@
+// @ 0x2123C
+HarisenSwing4Common {
+  OffensiveCollision(Sp(305, 0), 10, 120, Sp(90, 100), Sp(100, 0), 6.7, 0.0, 8.8, 0.0, 0.3, 1.0, 1.0, 977472640)
+  OffensiveCollision(Sp(305, 1), 10, 120, Sp(90, 100), Sp(100, 0), 5.5, 0.0, 3.8, 0.0, 0.3, 1.0, 1.0, 977472640)
+  OffensiveCollision(Sp(305, 2), 10, 120, Sp(90, 100), Sp(100, 0), 4.3, 0.0, 0.0, 0.0, 0.3, 1.0, 1.0, 977472640)
+  OffensiveCollision(Sp(305, 3), 10, 120, Sp(90, 100), Sp(100, 0), 4.0, 0.0, -2.0, 0.0, 0.3, 1.0, 1.0, 977472640)
+  SoundEffect(57)
+  SubRoutine(effectAnimCmd_Swing4Impact)
+}

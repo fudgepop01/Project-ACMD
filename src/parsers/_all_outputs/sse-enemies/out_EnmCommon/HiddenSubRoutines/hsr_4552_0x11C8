@@ -1,0 +1,10 @@
+[hsr_11C8]
+hidden_subroutine_0x11C8 {
+  FlashOverlayEffect(100, 160, 200, 40)
+  SynchronousTimer(2.0)
+  FlashOverlayEffect(0, 0, 60, 20)
+  SynchronousTimer(2.0)
+  TerminateFlashEffect()
+  SynchronousTimer(2.0)
+  Return()
+}

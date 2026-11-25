@@ -1,0 +1,8 @@
+Action 0x118: ENTRY {
+  ChangeActionStatus(10002, 14, R(Animation End()))
+  SubRoutine(EXTERNAL: statusAnimCmd_AIRChkLanding)
+  ChangeSubAction(467)
+}
+
+Action 0x118 : EXIT {
+}

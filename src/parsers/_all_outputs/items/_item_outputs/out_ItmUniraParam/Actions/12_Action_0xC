@@ -1,0 +1,10 @@
+// Status_Jump_Aerial
+Action 0xC {
+  ChangeAction(10, R(In Air()))
+  SubRoutine(hidden_subroutine_0xE0)
+  SynchronousTimer(1.0)
+  if (R(0x3E())) {
+    DetachFromSurface()
+  }
+}
+

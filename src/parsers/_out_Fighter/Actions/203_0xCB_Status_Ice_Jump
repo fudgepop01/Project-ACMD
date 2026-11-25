@@ -1,0 +1,12 @@
+// Status_Ice_Jump
+Action 0xCB: ENTRY {
+  SubRoutine(statusAnimCmd_AIRChkFallCommon)
+  SubRoutine(statusAnimCmd_AIRChkStopCeil)
+  ChangeAction(14, R(Animation End()))
+  ChangeAction(14, R(Compare(RA-Int[0x00] >= Common_Param_Int_Ice_Jump_Stiff_Frame)))
+  ChangeSubAction(21)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x7DAC)
+}
+
+Action 0xCB : EXIT {
+}

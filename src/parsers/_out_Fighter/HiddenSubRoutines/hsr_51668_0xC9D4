@@ -1,0 +1,8 @@
+[hsr_C9D4]
+hidden_subroutine_0xC9D4 {
+
+  ChangeActionStatus:01(10116, 155, R(Compare(Variable_Int_Shoot_Item_Bullet <= 0.0)))
+  AdditionalRequirement(R(Button Press(Attack)))
+  AdditionalRequirement(R(Compare(Variable_Float_Motion_Frame <= Common_Param_Float_Dash_Escape_Frame)))
+  AdditionalRequirement(R(On Ground()))
+}

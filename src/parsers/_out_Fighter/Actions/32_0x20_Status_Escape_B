@@ -1,0 +1,8 @@
+// Status_Escape_B
+Action 0x20: ENTRY {
+  SubRoutine(hidden_subroutine_0x4CB4)
+  ChangeSubAction(69)
+}
+
+Action 0x20 : EXIT {
+}

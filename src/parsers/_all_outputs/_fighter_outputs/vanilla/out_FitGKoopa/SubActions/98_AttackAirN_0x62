@@ -1,0 +1,56 @@
+[AttackAirN] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x62: MAIN {
+  AsynchronousTimer(4.0)
+  ModelChanger(1, 1)
+  SubRoutine(hidden_subroutine_0xAC20)
+  AsynchronousTimer(5.0)
+  BitVariableSet(RA-Bool[0x1E])
+  OffensiveCollision(Sp(28, 0), 15, 361, Sp(0, 80), Sp(20, 20), 20.0, 0.0, 4.0, -2.0, 0.0, 1.0, 1.0, 939724419)
+  OffensiveCollision(Sp(4, 1), 15, 361, Sp(0, 80), Sp(20, 20), 18.0, 0.0, -4.0, -4.0, 0.0, 1.0, 1.0, 939724419)
+  OffensiveCollision(Sp(29, 2), 15, 361, Sp(0, 80), Sp(20, 20), 16.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 939724419)
+  AsynchronousTimer(28.0)
+  TerminateCollisions()
+  AsynchronousTimer(37.0)
+  ModelChanger(1, 0)
+  UndoBoneCollision(0)
+  AsynchronousTimer(40.0)
+  BitVariableClear(RA-Bool[0x1E])
+}
+
+Subaction 0x62: GFX {
+  AsynchronousTimer(4.0)
+  SetLoop(-1) {
+    GraphicEffect(19, 0, 0.0, 40.0, 0.0, 0.0, 0.0, 0.0, 2.5, 60.0, 20.0, 60.0, 0.0, 0.0, 0.0, true)
+    SynchronousTimer(2.0)
+  }
+}
+
+Subaction 0x62: SOUND {
+  LowVoiceClip()
+  SynchronousTimer(6.0)
+  SetLoop(3) {
+    SynchronousTimer(8.0)
+    SoundEffect(6621)
+    SynchronousTimer(5.0)
+    SoundEffect(6622)
+  }
+}
+
+Subaction 0x62: OTHER {
+  AsynchronousTimer(4.0)
+  RumbleLoop(8, 25)
+  WearableItemsVisibility(false)
+  AsynchronousTimer(37.0)
+  WearableItemsVisibility(true)
+}
+

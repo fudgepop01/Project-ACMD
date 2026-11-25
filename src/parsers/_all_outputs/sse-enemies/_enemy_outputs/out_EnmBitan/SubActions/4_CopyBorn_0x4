@@ -1,0 +1,47 @@
+[CopyBorn] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x4: MAIN {
+  AsynchronousTimer(20.0)
+  (undef: shadow) 19_00_00_00()
+}
+
+Subaction 0x4: MAIN EXIT {
+}
+
+Subaction 0x4: MAIN INIT {
+  Module1901()
+  SubRoutine(hidden_subroutine_0x2D14)
+}
+
+Subaction 0x4: GFX {
+}
+
+Subaction 0x4: GFX EXIT {
+}
+
+Subaction 0x4: GFX INIT {
+}
+
+Subaction 0x4: SFX {
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    SoundEffect(9308)
+  } else {
+    SoundEffect(79)
+  }
+}
+
+Subaction 0x4: SFX EXIT {
+}
+
+Subaction 0x4: SFX INIT {
+}
+

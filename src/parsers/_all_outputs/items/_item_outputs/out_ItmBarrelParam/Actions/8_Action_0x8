@@ -1,0 +1,9 @@
+// Status_Turn_Run
+Action 0x8 {
+  (undef: team) 22_00_01_00(-1)
+  ChangeAction(5, R(In Air()))
+  ChangeSubAction(3)
+  SubRoutine(hidden_subroutine_0xC8)
+  DisableActionStatusId(8)
+}
+

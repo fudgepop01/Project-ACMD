@@ -1,0 +1,35 @@
+[SpecialSStickJump2] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1E1: MAIN {
+  ThrowAttackCollision(1, 0, 2, 361, 50, 0, 0, 0, 0.0, 1.0, 1.0, 0, 0, 3, true, true, 0)
+  ThrowAttackCollision(0, 0, 5, 270, 40, 0, 25, 11, 0.0, 1.0, 1.0, 0, 0, 3, true, true, 0)
+  ThrowCollision(0, 70, RA-Int[0x01], RA-Int[0x02], RA-Int[0x03])
+  SetAirGround(0)
+  SetAerialOrOnstage(5)
+  Module0900(2)
+  EnableActionStatusId(10146)
+  ResetMomentum()
+  AddSubtractMomentum(1.0, 3.5)
+}
+
+Subaction 0x1E1: GFX {
+  GraphicEffectAttached(27, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+}
+
+Subaction 0x1E1: SOUND {
+  SoundEffect(169)
+  SoundEffect(5270)
+}
+
+Subaction 0x1E1: OTHER {
+}
+

@@ -1,0 +1,60 @@
+[BeamAttack] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x0: MAIN {
+  SubRoutine(hidden_subroutine_0x1990)
+  SynchronousTimer(60.0)
+  (undef: Sp_base) 65_0E_01_00(IC-Int[0xABE5])
+  (undef: Sp_Link) 6E_00_03_00(0, 5103, 49)
+}
+
+Subaction 0x0: MAIN EXIT {
+}
+
+Subaction 0x0: MAIN INIT {
+}
+
+Subaction 0x0: GFX {
+  GraphicEffectAttached(10354689, 0, -5.5, 0.0, 0.0, 0.0, -8.0, 0.0, 1.0, true)
+  GraphicEffectAttached(10354689, 0, 5.5, 0.0, 0.0, 0.0, 8.0, 0.0, 1.0, true)
+  SynchronousTimer(60.0)
+  GraphicEffectAttached(10354690, 0, -5.5, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(10354690, 0, 5.5, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffect(10354691, 0, -5.5, 17.12, 11.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 360.0, false)
+  GraphicEffect(10354691, 0, 5.5, 17.12, 11.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 360.0, false)
+  GraphicEffect(10354691, 0, -5.5, 17.12, 11.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 360.0, false)
+  GraphicEffect(10354691, 0, 5.5, 17.12, 11.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 360.0, false)
+  GraphicEffect(10354691, 0, -5.5, 17.12, 11.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 360.0, false)
+  GraphicEffect(10354691, 0, 5.5, 17.12, 11.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 360.0, false)
+  GraphicEffect(10354691, 0, -5.5, 17.12, 11.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 360.0, false)
+  GraphicEffect(10354691, 0, 5.5, 17.12, 11.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 360.0, false)
+  GraphicEffect(10354691, 0, -5.5, 17.12, 11.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 360.0, false)
+  GraphicEffect(10354691, 0, 5.5, 17.12, 11.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 360.0, false)
+}
+
+Subaction 0x0: GFX EXIT {
+}
+
+Subaction 0x0: GFX INIT {
+}
+
+Subaction 0x0: SFX {
+  SoundEffect(9377)
+  SynchronousTimer(60.0)
+  SoundEffect(9375)
+}
+
+Subaction 0x0: SFX EXIT {
+}
+
+Subaction 0x0: SFX INIT {
+}
+

@@ -1,0 +1,48 @@
+[TurnRun] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xF: MAIN {
+}
+
+Subaction 0xF: MAIN EXIT {
+}
+
+Subaction 0xF: MAIN INIT {
+  SubRoutine(hidden_subroutine_0x2D14)
+  } else {
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    SubRoutine(hidden_subroutine_0x2CDC)
+  }
+}
+
+Subaction 0xF: GFX {
+  GraphicEffectLanding(11, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, IC-Int[0xFA2], 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0xF: GFX EXIT {
+}
+
+Subaction 0xF: GFX INIT {
+}
+
+Subaction 0xF: SFX {
+  } else {
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    LandingSoundEffect(112)
+  }
+}
+
+Subaction 0xF: SFX EXIT {
+}
+
+Subaction 0xF: SFX INIT {
+}
+

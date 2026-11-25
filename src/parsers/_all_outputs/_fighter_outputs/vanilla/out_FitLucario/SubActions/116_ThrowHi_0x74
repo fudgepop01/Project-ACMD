@@ -1,0 +1,50 @@
+[ThrowHi] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x74: MAIN {
+  ThrowAttackCollision(0, 0, 5, 75, 105, 0, 60, 21, -1.0, 1.0, 1.0, 0, 0, 3, true, true, 8)
+  ThrowAttackCollision(1, 0, 3, 45, 100, 0, 60, 0, 0.0, 1.0, 1.0, 0, 0, 3, true, true, 8)
+  AsynchronousTimer(15.0)
+  SpecialOffensiveCollision(Sp(29, 0), 1, 90, Sp(0, 100), Sp(0, 40), 4.75, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 822291605, 0, 139460547)
+  AsynchronousTimer(16.0)
+  ReverseDirection()
+  ThrowCollision(0, 55, RA-Int[0x02], RA-Int[0x03], RA-Int[0x04])
+  FrameSpeedModifier(1.44445)
+  SynchronousTimer(1.0)
+  TerminateCollisions()
+  AsynchronousTimer(18.0)
+  ReverseDirection()
+  AsynchronousTimer(42.0)
+  AllowInterrupt()
+}
+
+Subaction 0x74: GFX {
+  AsynchronousTimer(18.0)
+  GraphicEffect(17, 55, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x74: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(112)
+  SoundEffect(114)
+  SynchronousTimer(15.0)
+  SoundEffect(111)
+  SoundEffect(112)
+  LowVoiceClip()
+}
+
+Subaction 0x74: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(16.0)
+  Rumble(14, 8)
+  Screenshake(1)
+}
+

@@ -1,0 +1,10 @@
+// Status_Walk
+Action 0x1 {
+  (undef: Sp_base) 65_04_01_00(180)
+  ChangeSubAction(0)
+  ChangeAction(7, R(In walljump situation()), 249)
+  ChangeAction(7, R(Bit is Set(RA-Bool[0x03])))
+  SubRoutine(hidden_subroutine_0x0)
+  DisableActionStatusId(1)
+}
+

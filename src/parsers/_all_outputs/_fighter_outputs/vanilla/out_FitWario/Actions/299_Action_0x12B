@@ -1,0 +1,17 @@
+Action 0x12B: ENTRY {
+  ChangeAction(14, R(Animation End()))
+  ChangeSubAction(495)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x12B : EXIT {
+}

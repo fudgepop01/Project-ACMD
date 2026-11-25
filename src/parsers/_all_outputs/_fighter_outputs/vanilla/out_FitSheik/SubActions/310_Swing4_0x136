@@ -1,0 +1,42 @@
+[Swing4] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x136: MAIN {
+  AsynchronousTimer(9.0)
+  SubRoutine(EXTERNAL: gameAnimCmd_StarRodSwing4Common)
+  MoveHitbox(2, 46, 0.0, 0.0, 0.0)
+  MoveHitbox(3, 17, 0.0, 0.0, 0.0)
+  FireProjectile(1)
+  AsynchronousTimer(11.0)
+  TerminateCollisions()
+  AsynchronousTimer(21.0)
+  FireProjectile(1)
+  SubRoutine(EXTERNAL: gameAnimCmd_StarRodSwing4Common [Subaction 0x136: MAIN])
+  AsynchronousTimer(23.0)
+  TerminateCollisions()
+  AsynchronousTimer(49.0)
+  AllowInterrupt()
+}
+
+Subaction 0x136: GFX {
+}
+
+Subaction 0x136: SOUND {
+}
+
+Subaction 0x136: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(9.0)
+  Rumble(16, 0)
+  AsynchronousTimer(21.0)
+  Rumble(13, 0)
+}
+

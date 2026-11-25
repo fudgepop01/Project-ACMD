@@ -1,0 +1,53 @@
+[EscapeF] (flags) {
+  No Out Transition: 1,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x44: MAIN {
+  AsynchronousTimer(4.0)
+  BodyCollision(2)
+  AsynchronousTimer(11.0)
+  ModelChanger(1, 1)
+  AsynchronousTimer(24.0)
+  BodyCollision(0)
+  SubRoutine(hidden_subroutine_0xAC20)
+  ReverseDirection()
+  AsynchronousTimer(37.0)
+  ModelChanger(1, 0)
+  UndoBoneCollision(0)
+}
+
+Subaction 0x44: GFX {
+  GraphicEffect(16, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(6.0)
+  GraphicEffect(40, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(18.0)
+  GraphicEffect(14, 0, 0.0, 0.0, 10.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(11, 0, 0.0, 0.0, 10.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x44: SOUND {
+  AsynchronousTimer(4.0)
+  SoundEffect(6650)
+  SynchronousTimer(8.0)
+  SoundEffect(6701)
+  SynchronousTimer(8.0)
+  SoundEffect(6699)
+  SynchronousTimer(15.0)
+  SoundEffect(6661)
+}
+
+Subaction 0x44: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(11.0)
+  WearableItemsVisibility(false)
+  AsynchronousTimer(37.0)
+  WearableItemsVisibility(true)
+}
+

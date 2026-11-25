@@ -1,0 +1,24 @@
+// Status_Jump_Aerial
+Action 0xC {
+  (undef: Sp_Kinetic) 66_06_01_00(1)
+  ChangeAction(3, R(In Air()))
+  ChangeSubAction(3)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.5, 0.0, 1.8, 0.0, 0.0, 0.0, 0.03, 0.0, 0.0, 0.0, true, false, true)
+  SynchronousTimer(1.0)
+  if (R(Compare(Variable_Float_Posture_Lr == -1.0))) {
+    ChangeAction(15, R(In walljump situation()), 82)
+    ChangeAction(8, R(In walljump situation()), 4)
+  } else {
+    ChangeAction(15, R(In walljump situation()), 164)
+    ChangeAction(8, R(In walljump situation()), 2)
+
+  }
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(13, R(Compare(IC-Int[0x3F8] < 67.0)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(NOT 0x2715()), 20.0)
+  AdditionalRequirement(R(On Ground()))
+}
+

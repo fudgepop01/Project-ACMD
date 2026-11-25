@@ -1,0 +1,9 @@
+[hsr_C894]
+hidden_subroutine_0xC894 {
+  AdditionalActionInterruptsRequirement(ALL?, 10135, R(NOT Compare(RA-Int[0x0C] == 1.0)))
+  AdditionalActionInterruptsRequirement(ALL?, 10136, R(Compare(Variable_Int_Controller_Flick_Y < IC-Int[0x5A64])))
+  AdditionalActionInterruptsRequirement(ALL?, 10127, R(NOT Compare(RA-Int[0x0C] == 1.0)))
+  AdditionalActionInterruptsRequirement(ALL?, 10129, R(NOT Compare(RA-Int[0x0C] == 1.0)))
+  AdditionalActionInterruptsRequirement(ALL?, 10131, R(NOT Compare(RA-Int[0x0C] == 1.0)))
+  AdditionalActionInterruptsRequirement(ALL?, 10132, R(NOT Button Tap?()))
+}

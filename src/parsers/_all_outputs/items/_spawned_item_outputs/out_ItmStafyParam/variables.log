@@ -1,0 +1,14 @@
+LA-Int[0x00] in hsr_D0 @ 5 : 1
+LA-Int[0x00] in hsr_D0 @ 12 : 1
+LA-Int[0x00] in hsr_D0 @ 13 : 1
+LA-Int[0x00] in hsr_D0 @ 15 : 1
+
+LA-Int[0x01] in hsr_D0 @ 1 : 1
+LA-Int[0x01] in hsr_D0 @ 3 : 1
+LA-Int[0x01] in hsr_D0 @ 5 : 3
+
+LA-Int[0x0B] in hsr_2F8 @ 0 : 1
+
+LA-Int[0x1B] in Subaction 0x3 : SOUND @ 0 : 1
+
+LA-Float[0x06] in Action 0xD (Status_Fly) @ 1 : 1

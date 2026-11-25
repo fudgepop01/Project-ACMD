@@ -1,0 +1,14 @@
+// Status_Dash
+Action 0x3 {
+  ChangeSubAction(2)
+  ChangeActionStatus(4, 4, R(On Ground()))
+  (undef: Sp_Kinetic) 66_02_02_00(0.05, 0.0)
+  SynchronousTimer(20.0)
+
+  if (R(Compare(LA-Int[0x00] >= 1.0))) {
+    ChangeActionStatus(9, 9, R(NOT 0x2715()), 20.0)
+    AdditionalRequirement(R(In Air()))
+
+  }
+}
+

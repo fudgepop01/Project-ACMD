@@ -1,0 +1,26 @@
+[CliffJumpQuick1] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xDA: MAIN {
+  BodyCollision(2)
+}
+
+Subaction 0xDA: GFX {
+}
+
+Subaction 0xDA: SOUND {
+  AsynchronousTimer(2.0)
+  SoundEffect(5177)
+}
+
+Subaction 0xDA: OTHER {
+}
+

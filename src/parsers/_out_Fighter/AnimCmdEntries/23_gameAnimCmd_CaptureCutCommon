@@ -1,0 +1,4 @@
+// @ 0x20CCC
+CaptureCutCommon {
+  ThrowAttackCollision(1, 0, 3, 361, 100, 0, 60, 0, 0.0, 1.0, 1.0, 0, 2, 3, true, true, 0)
+}

@@ -1,0 +1,19 @@
+[hsr_28E08]
+hidden_subroutine_0x28E08 {
+  FloatVariableSet(Variable_Float_Kinetic_Sum_Speed_X_Lr, LA-Float[0x34])
+  FloatVariableSet(Variable_Float_Kinetic_Sum_Speed_Y, LA-Float[0x35])
+  FloatVariableMultiply(0.7, LA-Float[0x34])
+  FloatVariableMultiply(0.7, LA-Float[0x35])
+  if (R(Compare(LA-Float[0x34] > 2.8))) {
+    FloatVariableSet(2.8, LA-Float[0x34])
+  } elif (R(Compare(LA-Float[0x34] < -2.8))) {
+    FloatVariableSet(-2.8, LA-Float[0x34])
+  }
+  if (R(Compare(LA-Float[0x35] > 2.8))) {
+    FloatVariableSet(2.8, LA-Float[0x35])
+  } elif (R(Compare(LA-Float[0x35] < -2.8))) {
+    FloatVariableSet(-2.8, LA-Float[0x35])
+  }
+  SetAddMomentum(0.0, 0.0, 0.0, 1)
+  AddSubtractMomentum(LA-Float[0x34], LA-Float[0x35])
+}

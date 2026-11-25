@@ -1,0 +1,9 @@
+Action 0x124: ENTRY {
+  SubRoutine(EXTERNAL: statusAnimCmd_ItemShootWalkFBrake_Common)
+  SubRoutine(hidden_subroutine_0x1B62C)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1B5CC)
+}
+
+Action 0x124 : EXIT {
+  SubRoutine(hidden_subroutine_0x1B0F4)
+}

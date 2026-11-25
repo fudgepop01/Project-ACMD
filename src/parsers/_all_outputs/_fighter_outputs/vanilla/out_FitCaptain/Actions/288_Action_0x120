@@ -1,0 +1,10 @@
+Action 0x120: ENTRY {
+  SetGimmickEffectFlag(false)
+  SetTagDisplay(false)
+  ChangeSubAction(490)
+  SetRemoteArticleAction(0, 3)
+  ChangeAction(289, R(Animation End()))
+}
+
+Action 0x120 : EXIT {
+}

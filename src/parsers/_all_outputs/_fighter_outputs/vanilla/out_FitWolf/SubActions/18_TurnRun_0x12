@@ -1,0 +1,38 @@
+[TurnRun] (flags) {
+  No Out Transition: 1,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x12: MAIN {
+  AsynchronousTimer(10.0)
+  BitVariableSet(RA-Bool[0x10])
+}
+
+Subaction 0x12: GFX {
+  SetLoop(2) {
+    SynchronousTimer(5.0)
+    GraphicEffectStepping(28, 0, -5.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  }
+}
+
+Subaction 0x12: SOUND {
+  AsynchronousTimer(2.0)
+  SteppingSoundEffect(6347)
+  SynchronousTimer(5.0)
+  SteppingSoundEffect(6345)
+  SynchronousTimer(1.0)
+  SoundEffect(6297)
+}
+
+Subaction 0x12: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(14.0)
+  SlopeContourStand02(0, 2)
+}
+

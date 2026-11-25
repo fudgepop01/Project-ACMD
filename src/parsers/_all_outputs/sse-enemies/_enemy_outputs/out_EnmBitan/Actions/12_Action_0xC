@@ -1,0 +1,33 @@
+Action 0xC: MAIN {
+  SetLoop(-1) {
+    (undef: Sp_base) 65_19_01_00(LA-Bool[0x07])
+    if (R(Bit is Set(LA-Bool[0x07])) || R(0x2745())) {
+      (undef: Sp_base) 65_00_00_00()
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0xC: EXIT {
+  if (R(Is Being Thrown by Someone 2())) {
+    (undef: link) 0F_02_00_00()
+    (undef: link) 0F_01_00_00()
+  }
+  (undef: Sp_base) 65_19_01_00(LA-Float[0x07])
+  if (R(Compare(LA-Float[0x07] == 1.0))) {
+    RightDirection()
+  } else {
+    LeftDirection()
+  }
+  (undef: StageObject) 0C_03_00_00()
+}
+
+Action 0xC: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(36)
+  (undef: Sp_Kinetic) 66_07_01_00(-1)
+  (undef: StageObject) 0C_02_00_00()
+  (undef: link) 0F_00_04_00(3, 0, 0, 1)
+  CharacterSpecific01()
+}
+

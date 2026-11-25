@@ -1,0 +1,11 @@
+[hsr_1A58]
+hidden_subroutine_0x1A58 {
+  if (R(Compare(Variable_Int_Status_Prev_Kind == -1.0))) {
+    SubRoutine(hsr_19B0)
+    (undef: motion) 04_10_02_00(1, 16)
+    (undef: motion) 04_12_02_00(0, 1.0)
+    BasicVariableSet(1, LA-Int[0x16])
+    BasicVariableSet(1, LA-Int[0x17])
+    BitVariableSet(LA-Bool[0x06])
+  }
+}

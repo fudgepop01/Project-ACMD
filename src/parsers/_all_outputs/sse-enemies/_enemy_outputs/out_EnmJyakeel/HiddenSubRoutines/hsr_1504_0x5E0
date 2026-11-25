@@ -1,0 +1,8 @@
+[hsr_5E0]
+hidden_subroutine_0x5E0 {
+  if (R(Compare(IC-Int[0x5DC0] == 0.0)) } elif (R(Compare(IC-Int[0x5DC0] == 1.0))) {
+    GraphicEffectAttached2(10092578, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+    GraphicEffectAttached2(10092581, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+    GraphicEffectAttached2(10092577, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  }
+}

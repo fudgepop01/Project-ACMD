@@ -1,0 +1,18 @@
+// Status_Item_Screw_Jump_Aerial
+Action 0xB0: ENTRY {
+  ResetFlickY()
+  ResetButtonPress()
+  HeldItemsVisibility(false)
+  BasicVariableIncrement(LA-Int[0x01])
+  ChangeAction(177, R(Animation End()))
+  SubRoutine(statusAnimCmd_AIRChkFallCommon)
+  BasicVariableIncrement(LA-Int[0x3B])
+  SoundEffect(8042)
+  if (R(Bit is Set(LA-Bool[0x13]))) {
+    SoundEffect(8108)
+  }
+  ChangeSubAction(329)
+}
+
+Action 0xB0 : EXIT {
+}

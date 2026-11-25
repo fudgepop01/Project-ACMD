@@ -1,0 +1,8 @@
+[hsr_58]
+hidden_subroutine_0x58 {
+  ChangeActionStatus(4, 4, R(On Ground()))
+  if (R(Compare(LA-Int[0x00] <= 1.0))) {
+    ChangeActionStatus(7, 7, R(Animation End()))
+  }
+  Return()
+}

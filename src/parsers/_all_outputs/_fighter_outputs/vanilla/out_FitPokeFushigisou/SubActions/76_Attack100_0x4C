@@ -1,0 +1,66 @@
+[Attack100] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x4C: MAIN {
+  ModelChanger(1, 1)
+  TerminateCollisions()
+  AsynchronousTimer(2.0)
+  OffensiveCollision(Sp(42, 0), 2, 30, Sp(0, 20), Sp(0, 20), 3.0, 0.0, 0.0, 0.0, 0.12, 1.0, 1.0, 901972561)
+  OffensiveCollision(Sp(43, 1), 2, 30, Sp(0, 20), Sp(0, 20), 3.5, 0.0, 0.0, 0.0, 0.12, 1.0, 1.0, 901972561)
+  OffensiveCollision(Sp(44, 2), 2, 30, Sp(0, 20), Sp(0, 20), 3.5, 0.0, 0.0, 0.0, 0.12, 1.0, 1.0, 901972561)
+  OffensiveCollision(Sp(45, 3), 2, 30, Sp(0, 0), Sp(0, 20), 2.5, 0.0, 0.0, 0.0, 0.12, 1.0, 1.0, 901841489)
+  OffensiveCollision(Sp(45, 4), 2, 30, Sp(0, 0), Sp(0, 20), 2.5, 5.0, 0.0, 0.0, 0.12, 1.0, 1.0, 901841489)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+  AsynchronousTimer(12.0)
+  OffensiveCollision(Sp(49, 0), 1, 30, Sp(0, 20), Sp(0, 20), 3.0, 0.0, 0.0, 0.0, 0.12, 1.0, 1.0, 901972561)
+  OffensiveCollision(Sp(50, 1), 1, 30, Sp(0, 20), Sp(0, 20), 3.5, 0.0, 0.0, 0.0, 0.12, 1.0, 1.0, 901972561)
+  OffensiveCollision(Sp(51, 2), 1, 30, Sp(0, 20), Sp(0, 20), 3.5, 0.0, 0.5, 0.0, 0.12, 1.0, 1.0, 901972561)
+  OffensiveCollision(Sp(52, 3), 1, 30, Sp(0, 0), Sp(0, 20), 2.5, 0.0, 1.0, 0.0, 0.12, 1.0, 1.0, 901841489)
+  OffensiveCollision(Sp(52, 4), 1, 30, Sp(0, 0), Sp(0, 20), 2.5, -5.0, 1.0, 0.0, 0.12, 1.0, 1.0, 901841489)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+  AsynchronousTimer(16.0)
+  BitVariableSet(RA-Bool[0x19])
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0x4C : MAIN)
+}
+
+Subaction 0x4C: GFX {
+  GraphicEffectAttached(2097159, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  SetLoop(-1) {
+    SynchronousTimer(5.0)
+    GraphicEffectStepping(26, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 12.0, 0.0, 6.0, 0.0, 0.0, 0.0, false)
+  }
+}
+
+Subaction 0x4C: SOUND {
+  AsynchronousTimer(2.0)
+  SoundEffect(5613)
+  SynchronousTimer(10.0)
+  SoundEffect(5613)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0x4C : SFX)
+}
+
+Subaction 0x4C: OTHER {
+  SlopeContourStand03(1, 6, true)
+  AsynchronousTimer(3.0)
+  Rumble(0, 0)
+  AsynchronousTimer(12.0)
+  Rumble(0, 0)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0x4C : OTHER)
+}
+

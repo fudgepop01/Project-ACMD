@@ -1,0 +1,5 @@
+// @ 0xCF14
+Wait {
+  SubRoutine(statusAnimCmd_WaitCommon)
+  SubRoutine(statusAnimCmd_WaitCommonAnim)
+}

@@ -1,0 +1,31 @@
+[FinalHandCrap] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1FB: MAIN {
+}
+
+Subaction 0x1FB: GFX {
+  AsynchronousTimer(4.0)
+  GraphicEffect(14745601, 0, 0.0, 6.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(14745604, 34, 0.0, 7.0, 6.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffectAttached2(14745606, 45, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached2(14745606, 21, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+}
+
+Subaction 0x1FB: SOUND {
+}
+
+Subaction 0x1FB: OTHER {
+  HeldItemsVisibility(false)
+  AsynchronousTimer(4.0)
+  Rumble(4, 0)
+}
+

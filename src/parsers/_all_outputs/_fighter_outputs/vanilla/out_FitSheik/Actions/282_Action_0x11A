@@ -1,0 +1,23 @@
+Action 0x11A: ENTRY {
+  BasicVariableSet(0, RA-Int[0x03])
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x17588)
+
+  ChangeAction(283, R(Button Not Pressed(Special)))
+  AdditionalRequirement(R(Compare(RA-Int[0x03] > IC-Int[0x5DC0])))
+
+  if (R(On Ground())) {
+    SetAerialOrOnstage(2)
+    SetAirGround(15)
+    SubActions0A(471)
+    ChangeAction(283, R(In Air()))
+  } else {
+    SetAerialOrOnstage(5)
+    SetAirGround(100)
+    SubActions0A(474)
+    ChangeAction(283, R(On Ground()))
+  }
+  SubActions0B(0.0)
+}
+
+Action 0x11A : EXIT {
+}

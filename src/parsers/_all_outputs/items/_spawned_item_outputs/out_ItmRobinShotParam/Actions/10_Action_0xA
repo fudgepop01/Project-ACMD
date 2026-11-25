@@ -1,0 +1,9 @@
+// Status_Jump_Squat
+Action 0xA {
+  SetAerialOrOnstage(0)
+  ChangeSubAction(1)
+  SynchronousTimer(10.0)
+  ChangeAction(10, R(Bit is Set(RA-Bool[0x05])))
+  ChangeAction(8, R(Button Tap?()))
+}
+

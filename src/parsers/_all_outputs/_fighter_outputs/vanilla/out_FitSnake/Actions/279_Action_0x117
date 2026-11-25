@@ -1,0 +1,15 @@
+Action 0x117: ENTRY {
+  ChangeActionStatus(10146, 280, R(Compare(Variable_Float_Controller_Stick_Y <= Common_Param_Float_Squat_Stick_Y)))
+  DisableActionStatusId(10146)
+  ChangeActionStatus(10147, 280, R(Button Tap?()))
+  DisableActionStatusId(10147)
+  ChangeSubAction(464)
+  BasicVariableSet(Customize_Param_Int_Jump_Count_Max, LA-Int[0x01])
+  SetCameraBoundaries(0.0, 0.0, 10.0, 0.0)
+}
+
+Action 0x117 : EXIT {
+  SubRoutine(hidden_subroutine_0x19508)
+  SubRoutine(hidden_subroutine_0x19568)
+  SuperHeavyArmor(0, 0.0)
+}

@@ -1,0 +1,13 @@
+// @ 0x22A30
+AttackLw4Start {
+  ChangeAction(14, R(In Air()))
+
+  ChangeActionStatus(10095, 46, R(Animation End()))
+  AdditionalRequirement(R(Button Pressed(Attack)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus(10093, 47, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeSubAction(95)
+}

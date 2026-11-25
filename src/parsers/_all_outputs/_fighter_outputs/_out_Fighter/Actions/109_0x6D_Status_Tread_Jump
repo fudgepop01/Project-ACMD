@@ -1,0 +1,20 @@
+// Status_Tread_Jump
+Action 0x6D: ENTRY {
+  if (R(Button Press(Jump))) {
+    BitVariableSet(RA-Bool[0x11])
+    ResetButtonPress()
+  } else {
+    ResetFlickY()
+  }
+  BasicVariableIncrement(LA-Int[0x05])
+  BasicVariableSet(Common_Param_Int_Tread_Attack_Frame, LA-Int[0x06])
+  BitVariableSet(RA-Bool[0x07])
+  ChangeAction(11, R(Animation End()))
+  ChangeAction(11, R(Bit is Set(RA-Bool[0x10])))
+  ChangeAction(11, R(NOT Is Throwing Someone(3)))
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x165A4)
+}
+
+Action 0x6D : EXIT {
+  BasicVariableSet(Common_Param_Int_Tread_Attack_Frame, LA-Int[0x06])
+}

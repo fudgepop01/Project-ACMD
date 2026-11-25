@@ -1,0 +1,8 @@
+// Status_Turn_Run
+Action 0x8 {
+  DisableSpecifiedMovement(2)
+  SubRoutine(hidden_subroutine_0x118)
+  DisableActionStatusId(4)
+  ChangeSubAction(2)
+}
+

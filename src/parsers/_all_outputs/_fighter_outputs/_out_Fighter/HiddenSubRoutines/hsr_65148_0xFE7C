@@ -1,0 +1,7 @@
+[hsr_FE7C]
+hidden_subroutine_0xFE7C {
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    SubRoutine(hsr_FC3C)
+    BitVariableClear(RA-Bool[0x10])
+  }
+}

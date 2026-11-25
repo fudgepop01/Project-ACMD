@@ -1,0 +1,29 @@
+[SquatB] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x2F: MAIN {
+}
+
+Subaction 0x2F: GFX {
+}
+
+Subaction 0x2F: SOUND {
+  SteppingSoundEffect(3397)
+  SynchronousTimer(6.0)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0x2F : SFX)
+}
+
+Subaction 0x2F: OTHER {
+  SlopeContourStand03(1, 4, true)
+}
+

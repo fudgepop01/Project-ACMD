@@ -1,0 +1,12 @@
+[hsr_B0]
+hidden_subroutine_0xB0 {
+  (undef: team) 22_02_01_00(20)
+  ChangeAction(7, R(Bit is Set(RA-Bool[0x01])))
+  ChangeAction(7, R(Bit is Set(RA-Bool[0x02])))
+  if (R(NOT Bit is Set(LA-Bool[0x00]))) {
+    ChangeAction(7, R(Bit is Set(RA-Bool[0x03])))
+  } else {
+    ChangeAction(7, R(Compare(LA-Int[0x0B] == 0.0)))
+  }
+  Return()
+}

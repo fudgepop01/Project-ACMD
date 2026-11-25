@@ -1,0 +1,51 @@
+Action 0x120: ENTRY {
+  SetGimmickEffectFlag(false)
+  DisableSpecifiedMovement(5)
+  DisableSpecifiedMovement(6)
+  EndScreenTint(0, 0)
+  EndScreenTint(1, 0)
+  ScreenTintFull_UNDOC8ARGS(0, 1, 0, 0, 0, 255, 6, 255)
+  ChangeActionStatus(10000, 0, R(Animation End()))
+  ChangeActionStatus(10002, 14, R(Animation End()))
+  if (R(Compare(Variable_Float_Posture_Lr < 0.0))) {
+    BasicVariableSet(489, RA-Int[0x00])
+    BasicVariableSet(491, RA-Int[0x01])
+  } else {
+    BasicVariableSet(488, RA-Int[0x00])
+    BasicVariableSet(490, RA-Int[0x01])
+  }
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      if (R(Compare(Variable_Int_Motion_Kind == RA-Int[0x01]))) {
+        ModelChangerPermanent(2, 0)
+        ChangeSubAction(RA-Int[0x00], true)
+      } else {
+        ChangeSubAction(RA-Int[0x00])
+      }
+      SetRequirement(R(In Air()))
+      EnableActionStatusId(10000)
+      DisableActionStatusId(10002)
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(Compare(Variable_Int_Motion_Kind == RA-Int[0x00]))) {
+        ChangeSubAction(RA-Int[0x01], true)
+      } else {
+        ChangeSubAction(RA-Int[0x01])
+      }
+      SetRequirement(R(On Ground()))
+      DisableActionStatusId(10000)
+      EnableActionStatusId(10002)
+    }
+    LoadRest()
+  }
+}
+
+Action 0x120 : EXIT {
+  ExitFinalSmashState()
+  EndScreenTint(1, 120)
+  NormalCamera()
+  SetGimmickEffectFlag(true)
+  EnableSpecifiedMovement(5)
+  EnableSpecifiedMovement(6)
+}

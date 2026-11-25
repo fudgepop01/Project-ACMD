@@ -1,0 +1,9 @@
+IC-Int[0x03] ("Variable_Float_Posture_Pos_X") in Action 0x3 (Status_Dash) @ 3 : 2
+
+IC-Int[0x04] ("Variable_Float_Posture_Pos_Y") in Action 0x3 (Status_Dash) @ 3 : 3
+
+LA-Int[0x00] in Action 0x3 (Status_Dash) @ 1 : 2
+LA-Int[0x00] in Action 0x3 (Status_Dash) @ 4 : 1
+LA-Int[0x00] in Action 0x3 (Status_Dash) @ 8 : 0
+
+LA-Int[0x1B] in Subaction 0x0 : SOUND @ 1 : 1

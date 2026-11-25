@@ -1,0 +1,7 @@
+[hsr_4C]
+hidden_subroutine_0x4C {
+  if (R(Compare(LA-Int[0x0B] <= 0.0))) {
+    ChangeAction(6, R(Button Tap?()))
+  }
+  Return()
+}

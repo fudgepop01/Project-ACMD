@@ -1,0 +1,91 @@
+[SwordTripleAttack] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x23: MAIN {
+  AsynchronousTimer(12.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 7, 5, 1.1, 107, 100, 0.0, 24, 0.0, 0, 0.0, 18.0, 0.0, 0.0, 35.0, -64.0, 2, 0.0, 1.0, 1.0, false, true, 15, 2, 3, 3, true, 0, 311, false, 15, false, true, false, false, 120, false, false, 0, false, false, false, false, false, 1, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 1, 7, 0, 0.0, 107, 20, 0.0, 0, 0.0, 65, 0.0, 18.0, 0.0, 0.0, 35.0, -64.0, 2, 0.0, 0.0, 0.0, false, true, 0, 0, 0, 2, false, 0, 1, false, 15, false, true, false, false, 60, false, false, 0, false, false, true, true, true, 1, LA-Float[0x0C])
+  AsynchronousTimer(13.0)
+  TerminateCollisions()
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 7, 5, 1.1, 107, 100, 0.0, 24, 0.0, 0, 0.0, 18.0, 0.0, 0.0, 5.0, -68.0, 2, 0.0, 1.0, 1.0, false, true, 15, 2, 3, 3, true, 0, 311, false, 15, false, true, false, false, 120, false, false, 0, false, false, false, false, false, 1, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 1, 7, 0, 0.0, 107, 20, 0.0, 0, 0.0, 65, 0.0, 18.0, 0.0, 0.0, 5.0, -68.0, 2, 0.0, 0.0, 0.0, false, true, 0, 0, 0, 2, false, 0, 1, false, 15, false, true, false, false, 60, false, false, 0, false, false, true, true, true, 1, LA-Float[0x0C])
+  AsynchronousTimer(14.0)
+  TerminateCollisions()
+  AsynchronousTimer(30.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 7, 7, 1.1, 84, 100, 0.0, 24, 0.0, 0, 0.0, 18.0, 0.0, 0.0, 0.0, -68.0, 2, 0.0, 1.0, 1.0, false, true, 20, 2, 3, 3, true, 0, 311, false, 15, false, true, false, false, 120, false, false, 0, false, false, false, false, false, 1, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 1, 7, 0, 0.0, 84, 24, 0.0, 0, 0.0, 88, 0.0, 18.0, 0.0, 0.0, 0.0, -68.0, 2, 0.0, 0.0, 0.0, false, true, 0, 0, 0, 2, false, 0, 1, false, 15, false, true, false, false, 60, false, false, 0, false, false, true, true, true, 1, LA-Float[0x0C])
+  AsynchronousTimer(32.0)
+  TerminateCollisions()
+  AsynchronousTimer(41.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 2, 52, 9, 1.4, 70, 60, 0.4, 0, 0.0, 100, -1.7, 13.0, 0.0, -35.0, 0.0, 0.0, 2, 0.0, 1.0, 1.0, false, true, 30, 2, 3, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 2, 52, 9, 1.4, 70, 60, 0.4, 0, 0.0, 100, -1.7, 18.0, 0.0, 5.0, 0.0, 0.0, 2, 0.0, 1.0, 1.0, false, true, 30, 2, 3, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(43.0)
+  SpecialOffensiveCollisionEnemyHitbox(2, 0, 7, 9, 1.4, 60, 60, 0.4, 0, 0.0, 100, -1.7, 18.0, 0.0, 0.0, 0.0, -15.0, 2, 0.0, 1.0, 1.0, false, true, 30, 2, 3, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(50.0)
+  TerminateCollisions()
+}
+
+Subaction 0x23: MAIN EXIT {
+  SubRoutine(hidden_subroutine_0xE00)
+}
+
+Subaction 0x23: MAIN INIT {
+  SubRoutine(hidden_subroutine_0xD70)
+}
+
+Subaction 0x23: GFX {
+  AsynchronousTimer(10.0)
+  GraphicEffect(33, 0, 18.846, 0.0, -10.0, 0.0, 0.0, 0.0, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(33, 0, -18.846, 0.0, -10.0, 0.0, 0.0, 0.0, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  SwordGlow(8, 5, 52, -30.0, 0.0, 0.0, 52, -55.0, 0.0, 0.0, true, 0, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  Screenshake(0)
+  AsynchronousTimer(22.0)
+  TerminateSwordGlow(1)
+  AsynchronousTimer(24.0)
+  GraphicEffect(33, 0, 18.846, 0.0, -10.0, 0.0, 0.0, 0.0, 0.86, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(33, 0, -18.846, 0.0, -10.0, 0.0, 0.0, 0.0, 0.86, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  SwordGlow(8, 5, 44, 30.0, 0.0, 0.0, 44, 55.0, 0.0, 0.0, true, 0, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  Screenshake(0)
+  AsynchronousTimer(36.0)
+  TerminateSwordGlow(1)
+  AsynchronousTimer(40.0)
+  GraphicEffect(33, 0, 18.846, 0.0, -10.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(33, 0, -18.846, 0.0, -10.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  SwordGlow(8, 5, 52, -30.0, 0.0, 0.0, 52, -55.0, 0.0, 0.0, true, 0, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  Screenshake(0)
+  AsynchronousTimer(47.0)
+  GraphicEffectAttached(12517416, 4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(52.0)
+  TerminateSwordGlow(1)
+}
+
+Subaction 0x23: GFX EXIT {
+}
+
+Subaction 0x23: GFX INIT {
+}
+
+Subaction 0x23: SFX {
+  SoundEffect(9778)
+  AsynchronousTimer(11.0)
+  SoundEffect(9788)
+  AsynchronousTimer(26.0)
+  SoundEffect(9789)
+  AsynchronousTimer(40.0)
+  SoundEffect(9790)
+}
+
+Subaction 0x23: SFX EXIT {
+}
+
+Subaction 0x23: SFX INIT {
+}
+

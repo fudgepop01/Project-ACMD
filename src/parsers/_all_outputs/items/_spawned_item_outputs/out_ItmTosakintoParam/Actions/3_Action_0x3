@@ -1,0 +1,9 @@
+// Status_Dash
+Action 0x3 {
+  ChangeActionStatus(4, 4, R(On Ground()))
+  ChangeSubAction(2)
+  SetAnimationFrame(1.0)
+  FrameSpeedModifier(0.0)
+  EnableSpecifiedMovement(2)
+}
+

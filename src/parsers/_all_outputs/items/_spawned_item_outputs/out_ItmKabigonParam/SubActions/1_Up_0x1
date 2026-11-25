@@ -1,0 +1,27 @@
+[Up] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1 : GAME {
+  AsynchronousTimer(33.0)
+  SpecialOffensiveCollision(Sp(0, 0), 19, 108, Sp(0, 70), Sp(0, 120), 13.652, 0.0, 11.2, 0.0, 0.0, 1.0, 1.0, 200768, 60, 5242817)
+}
+
+Subaction 0x1 : GFX {
+  AsynchronousTimer(29.0)
+  GraphicEffectAttached(27, 0, 5.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.0, false)
+  GraphicEffectAttached(27, 0, -5.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.0, false)
+  GraphicEffect(41, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.7, 0.0, 0.0, 0.0, 0.0, 360.0, 0.0, true)
+}
+
+Subaction 0x1 : SOUND {
+  SoundEffect(8142)
+}
+

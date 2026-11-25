@@ -1,0 +1,71 @@
+[Expansion2] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x5: MAIN {
+  FrameSpeedModifier(LA-Float[0x04])
+  BodyCollision(1)
+  AsynchronousTimer(54.0)
+  (undef: shadow) 19_02_01_00(18.5)
+  AsynchronousTimer(62.0)
+  (undef: shadow) 19_02_01_00(21.0)
+  AsynchronousTimer(63.0)
+  (undef: shadow) 19_02_01_00(22.0)
+  AsynchronousTimer(64.0)
+  (undef: shadow) 19_02_01_00(23.0)
+  AsynchronousTimer(65.0)
+  (undef: shadow) 19_02_01_00(24.0)
+  AsynchronousTimer(66.0)
+  (undef: shadow) 19_02_01_00(25.0)
+}
+
+Subaction 0x5: MAIN EXIT {
+  (undef: shadow) 19_02_01_00(17.5)
+}
+
+Subaction 0x5: MAIN INIT {
+  SubRoutine(hidden_subroutine_0x2C6C)
+}
+
+Subaction 0x5: GFX {
+  AsynchronousTimer(17.0)
+  GraphicEffectAttached(11141122, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+}
+
+Subaction 0x5: GFX EXIT {
+}
+
+Subaction 0x5: GFX INIT {
+}
+
+Subaction 0x5: SFX {
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    SoundEffect(9459)
+  } elif (R(Bit is Set(LA-Bool[0x07]))) {
+    SoundEffect(9444)
+  } else {
+    SoundEffect(9429)
+  }
+  SynchronousTimer(49.0)
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    SoundEffect(9460)
+  } elif (R(Bit is Set(LA-Bool[0x07]))) {
+    SoundEffect(9445)
+  } else {
+    SoundEffect(9430)
+  }
+}
+
+Subaction 0x5: SFX EXIT {
+}
+
+Subaction 0x5: SFX INIT {
+}
+

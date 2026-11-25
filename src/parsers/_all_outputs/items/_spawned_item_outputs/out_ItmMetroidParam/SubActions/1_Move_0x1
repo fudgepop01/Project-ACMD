@@ -1,0 +1,23 @@
+[Move] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1 : GAME {
+  InertCollision(0, 0, 9, 7.0, 0.0, -3.0, 0.0, 2, 1, 3, false, 9, 1, false, 1, false, 0)
+}
+
+Subaction 0x1 : GFX {
+}
+
+Subaction 0x1 : SOUND {
+  AsynchronousTimer(53.0)
+  SoundEffect(7723)
+}
+

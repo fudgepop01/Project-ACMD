@@ -1,0 +1,20 @@
+// Status_Run_Brake
+Action 0x5 {
+  SubRoutine(hidden_subroutine_0x10)
+  DisableSpecifiedMovement(2)
+  ChangeSubAction(3)
+  (undef: Sp_Kinetic) 66_05_05_00(4, 0.035, 1.5, Variable_Float_Kinetic_Energy_Damage_Speed_Y_Rv, IC-Int[0x3F2])
+  (undef: Sp_base) 65_07_01_00(3)
+  SetRequirement(R(Animation has looped?()))
+  LoadRest()
+  (undef: Sp_base) 65_07_01_00(3)
+  ChangeSubAction(1)
+  TerminateCollisions()
+  (undef: collision) 06_13_00_00()
+  SetLoop(4) {
+    (undef: Sp_base) 65_07_01_00(2)
+    SynchronousTimer(31.0)
+  }
+  ChangeAction(3, R(Button Tap?()))
+}
+

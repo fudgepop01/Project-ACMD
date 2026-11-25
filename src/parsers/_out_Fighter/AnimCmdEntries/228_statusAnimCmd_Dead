@@ -1,0 +1,10 @@
+// @ 0x1837C
+Dead {
+  BodyCollision(3)
+  NothingDueToBug(false)
+  DeleteHeldItem()
+  Module1901()
+  SetGimmickEffectFlag(false)
+  DisableMagifyingGlass()
+  ChangeAction(267, R(Bit is Set(RA-Bool[0x10])))
+}

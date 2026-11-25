@@ -1,0 +1,14 @@
+Action 0xD: MAIN {
+}
+
+Action 0xD: EXIT {
+}
+
+Action 0xD: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(21)
+  (undef: Sp_AI) 6A_00_01_00(22)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 22)
+  (undef: targetSearch) 16_00_00_00()
+}
+

@@ -1,0 +1,7 @@
+[hsr_DDBC]
+hidden_subroutine_0xDDBC {
+  if (R(Is falling+hit down())) {
+    ResetFlickY()
+    BitVariableSet(RA-Bool[0x02])
+  }
+}

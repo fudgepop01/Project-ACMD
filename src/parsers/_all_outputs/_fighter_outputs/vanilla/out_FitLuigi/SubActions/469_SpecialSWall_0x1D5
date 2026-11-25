@@ -1,0 +1,29 @@
+[SpecialSWall] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D5: MAIN {
+}
+
+Subaction 0x1D5: GFX {
+}
+
+Subaction 0x1D5: SOUND {
+  StopSoundEffect(3466)
+  AsynchronousTimer(2.0)
+  SoundEffect(3464)
+}
+
+Subaction 0x1D5: OTHER {
+  ModelChanger(1, 1)
+  ModelChanger(0, -1)
+  Rumble(13, 0)
+}
+

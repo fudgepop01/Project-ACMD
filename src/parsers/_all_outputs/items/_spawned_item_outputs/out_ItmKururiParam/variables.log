@@ -1,0 +1,28 @@
+IC-Int[0x08] ("Variable_Float_Posture_Lr") in Action 0x4 (Status_Run) @ 12 : 1
+IC-Int[0x08] ("Variable_Float_Posture_Lr") in Action 0xC (Status_Jump_Aerial) @ 5 : 1
+
+IC-Int[0x3F8] in Action 0xC (Status_Jump_Aerial) @ 13 : 2
+
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x4 (Status_Run) @ 3 : 1
+
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 1 : 1
+LA-Int[0x00] in Action 0x3 (Status_Dash) @ 4 : 1
+LA-Int[0x00] in Action 0x4 (Status_Run) @ 7 : 1
+LA-Int[0x00] in Action 0x4 (Status_Run) @ 10 : 1
+
+LA-Int[0x01] in Action 0x1 (Status_Walk) @ 2 : 1
+LA-Int[0x01] in hsr_240 @ 1 : 1
+LA-Int[0x01] in hsr_240 @ 5 : 1
+
+LA-Int[0x0B] in Action 0xE (Status_Fall) @ 3 : 1
+LA-Int[0x0B] in hsr_240 @ 0 : 1
+
+LA-Int[0x0C] in hsr_118 @ 5 : 2
+
+LA-Int[0x1B] in Subaction 0x0 : SOUND @ 0 : 1
+
+LA-Bool[0x05] in Action 0x4 (Status_Run) @ 5 : 2
+
+LA-Bool[0x08] in hsr_118 @ 0 : 0
+
+RA-Bool[0x02] in hsr_48 @ 0 : 3

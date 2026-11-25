@@ -1,0 +1,32 @@
+IC-Int[0x03] ("Variable_Float_Posture_Pos_X") in hsr_118 @ 6 : 2
+IC-Int[0x03] ("Variable_Float_Posture_Pos_X") in hsr_118 @ 8 : 2
+
+IC-Int[0x04] ("Variable_Float_Posture_Pos_Y") in hsr_118 @ 6 : 3
+IC-Int[0x04] ("Variable_Float_Posture_Pos_Y") in hsr_118 @ 8 : 3
+
+IC-Int[0x07] ("Variable_Float_Posture_Rot_Z") in hsr_270 @ 1 : 0
+
+IC-Int[0x08] ("Variable_Float_Posture_Lr") in hsr_270 @ 2 : 0
+
+IC-Int[0x520F] ("Variable_Int_Controller_Flick_X_Dir") in Action 0x1 (Status_Walk) @ 2 : 1
+
+LA-Int[0x00] in hsr_118 @ 2 : 2
+LA-Int[0x00] in hsr_118 @ 3 : 1
+LA-Int[0x00] in hsr_118 @ 10 : 0
+
+LA-Int[0x01] in hsr_118 @ 4 : 0
+LA-Int[0x01] in hsr_118 @ 5 : 1
+
+LA-Int[0x1B] in Subaction 0x3 : SOUND @ 0 : 1
+
+RA-Float[0x00] in hsr_270 @ 0 : 1
+RA-Float[0x00] in hsr_270 @ 3 : 2
+
+RA-Float[0x01] in hsr_270 @ 0 : 2
+RA-Float[0x01] in hsr_270 @ 3 : 3
+
+RA-Float[0x02] in hsr_270 @ 0 : 3
+
+RA-Float[0x04] in hsr_270 @ 1 : 1
+RA-Float[0x04] in hsr_270 @ 2 : 1
+RA-Float[0x04] in hsr_270 @ 3 : 5

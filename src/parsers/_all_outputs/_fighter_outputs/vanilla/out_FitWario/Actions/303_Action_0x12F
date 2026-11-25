@@ -1,0 +1,25 @@
+Action 0x12F: ENTRY {
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  if (R(Compare(LA-Int[0x42] >= 3.0))) {
+    if (R(Facing Right())) {
+      ChangeSubAction(525)
+    } else {
+      ChangeSubAction(526)
+    }
+  } elif (R(Compare(LA-Int[0x42] >= 2.0))) {
+    if (R(Facing Right())) {
+      ChangeSubAction(523)
+    } else {
+      ChangeSubAction(524)
+    }
+  }
+}
+
+Action 0x12F : EXIT {
+}

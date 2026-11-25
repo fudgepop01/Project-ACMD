@@ -1,0 +1,10 @@
+[hsr_470]
+hidden_subroutine_0x470 {
+  FlashOverlayEffect(180, 80, 0, 50)
+  SynchronousTimer(2.0)
+  FlashOverlayEffect(128, 50, 0, 80)
+  SynchronousTimer(2.0)
+  FlashOverlayEffect(128, 30, 0, 30)
+  SynchronousTimer(2.0)
+  Return()
+}

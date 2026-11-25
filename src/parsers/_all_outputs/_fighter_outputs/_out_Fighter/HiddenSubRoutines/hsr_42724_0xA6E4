@@ -1,0 +1,13 @@
+[hsr_A6E4]
+hidden_subroutine_0xA6E4 {
+
+  ChangeAction(101, R(Touching a Floor, Wall, or Ceiling(2)))
+  AdditionalRequirement(R(Facing Left()))
+  AdditionalRequirement(R(Compare(Variable_Float_Kinetic_Sum_Speed > Customize_Param_Float_Walk_Speed_Max)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(101, R(Touching a Floor, Wall, or Ceiling(4)))
+  AdditionalRequirement(R(Facing Right()))
+  AdditionalRequirement(R(Compare(Variable_Float_Kinetic_Sum_Speed > Customize_Param_Float_Walk_Speed_Max)))
+  AdditionalRequirement(R(On Ground()))
+}

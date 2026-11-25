@@ -1,0 +1,16 @@
+Action 0x118: ENTRY {
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeSubAction(485)
+  SetArticleAction(2, 4)
+}
+
+Action 0x118 : EXIT {
+  BasicVariableSet(Customize_Param_Int_Jump_Count_Max, LA-Int[0x01])
+  RemoveArticle(2)
+}

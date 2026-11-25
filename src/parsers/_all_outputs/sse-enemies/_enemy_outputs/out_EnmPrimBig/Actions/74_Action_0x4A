@@ -1,0 +1,15 @@
+Action 0x4A: MAIN {
+}
+
+Action 0x4A: EXIT {
+}
+
+Action 0x4A: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(80)
+  SubAction09(66)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 38)
+  (undef: Sp_base) 65_09_02_00(IC-Int[0xABF5], LA-Float[0x02])
+  SubRoutine(hidden_subroutine_0x1270)
+}
+

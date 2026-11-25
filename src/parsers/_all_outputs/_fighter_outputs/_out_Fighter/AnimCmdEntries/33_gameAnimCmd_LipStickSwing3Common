@@ -1,0 +1,8 @@
+// @ 0x21640
+LipStickSwing3Common {
+  OffensiveCollision(Sp(305, 0), 7, 361, Sp(0, 150), Sp(4, 12), 5.76, 0.0, 4.8, 0.0, 0.0, 1.0, 1.0, 977470094)
+  OffensiveCollision(Sp(305, 1), 7, 361, Sp(0, 150), Sp(4, 12), 2.4, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 977470094)
+  OffensiveCollision(Sp(305, 2), 7, 361, Sp(0, 150), Sp(4, 12), 3.5, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 977470094)
+  OffensiveCollision(Sp(305, 3), 7, 361, Sp(0, 150), Sp(4, 12), 3.5, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 977470094)
+  PlaySoundFromProjectileItem(8069, 8071)
+}

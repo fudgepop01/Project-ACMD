@@ -1,0 +1,34 @@
+[hsr_D4A4]
+hidden_subroutine_0xD4A4 {
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  AllowSpecificInterrupt(GROUND_SPECIAL)
+  AllowSpecificInterrupt(GROUND_ITEM)
+  AllowSpecificInterrupt(GROUND_CATCH)
+  AllowSpecificInterrupt(GROUND_ATTACK)
+  AllowSpecificInterrupt(GROUND_ESCAPE)
+  AllowSpecificInterrupt(GROUND_GUARD)
+  AllowSpecificInterrupt(GROUND_JUMP)
+  AllowSpecificInterrupt(GROUND)
+  InvertActionStatusId(5, 10038)
+  InvertActionStatusId(5, 10039)
+  InvertActionStatusId(8, 10048)
+  InvertActionStatusId(8, 10046)
+  InvertActionStatusId(8, 10044)
+  InvertActionStatusId(8, 10059)
+
+  ChangeActionStatus:01(10038, 31, R(Button Pressed(Shield)))
+  AdditionalRequirement(R(Compare(IC-Int[0x3F7] >= Common_Param_Float_Escape_Fb_Stick_X)))
+  AdditionalRequirement(R(Compare(IC-Int[0x5209] < Common_Param_Int_Escape_Fb_Flick_X)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus:01(10039, 32, R(Button Pressed(Shield)))
+  AdditionalRequirement(R(Compare(IC-Int[0x3F8] >= Common_Param_Float_Escape_Fb_Stick_X)))
+  AdditionalRequirement(R(Compare(IC-Int[0x5209] < Common_Param_Int_Escape_Fb_Flick_X)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeSubAction(17)
+}

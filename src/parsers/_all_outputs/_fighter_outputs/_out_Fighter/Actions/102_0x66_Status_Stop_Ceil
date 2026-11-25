@@ -1,0 +1,12 @@
+// Status_Stop_Ceil
+Action 0x66: ENTRY {
+  ChangeAction(14, R(Animation End()))
+
+  ChangeAction(14, R(NOT Touching a Floor, Wall, or Ceiling(1)))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x10])))
+
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x15E14)
+}
+
+Action 0x66 : EXIT {
+}

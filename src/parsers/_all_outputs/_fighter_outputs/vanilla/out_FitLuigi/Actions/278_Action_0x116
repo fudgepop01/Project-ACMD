@@ -1,0 +1,26 @@
+Action 0x116: ENTRY {
+  EnterFinalSmashState()
+  SetGimmickEffectFlag(false)
+  ChangeAction(284, R(Animation End()))
+  ChangeSubAction(479)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(6)
+      SetAerialOrOnstage(1)
+      SetRequirement01(0, R(In Air()))
+    } else {
+      SetAirGround(107)
+      SetAerialOrOnstage(5)
+      SetRequirement01(1, R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x116 : EXIT {
+  ArticleEvent02(1)
+  ModelChangerPermanent(0, -1)
+  (undef: effect) 11_1D_01_00(8)
+  NormalCamera()
+  ResetStageSpeed()
+}

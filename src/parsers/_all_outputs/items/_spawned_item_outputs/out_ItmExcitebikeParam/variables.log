@@ -1,0 +1,33 @@
+IC-Int[0x03] ("Variable_Float_Posture_Pos_X") in Action 0x1 (Status_Walk) @ 16 : 2
+IC-Int[0x03] ("Variable_Float_Posture_Pos_X") in Subaction 0x9 : SOUND @ 16 : 2
+
+IC-Int[0x04] ("Variable_Float_Posture_Pos_Y") in Action 0x1 (Status_Walk) @ 16 : 3
+IC-Int[0x04] ("Variable_Float_Posture_Pos_Y") in Subaction 0x9 : SOUND @ 16 : 3
+
+IC-Int[0x520F] ("Variable_Int_Controller_Flick_X_Dir") in Action 0x1 (Status_Walk) @ 2 : 1
+IC-Int[0x520F] ("Variable_Int_Controller_Flick_X_Dir") in Subaction 0x9 : SOUND @ 2 : 1
+
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 8 : 1
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 13 : 2
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 14 : 1
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 17 : 0
+LA-Int[0x00] in Action 0x4 (Status_Run) @ 7 : 1
+LA-Int[0x00] in Action 0x4 (Status_Run) @ 13 : 1
+LA-Int[0x00] in Subaction 0x9 : SOUND @ 8 : 1
+LA-Int[0x00] in Subaction 0x9 : SOUND @ 13 : 2
+LA-Int[0x00] in Subaction 0x9 : SOUND @ 14 : 1
+LA-Int[0x00] in Subaction 0x9 : SOUND @ 17 : 0
+
+LA-Int[0x01] in Action 0x1 (Status_Walk) @ 15 : 2
+LA-Int[0x01] in Action 0x1 (Status_Walk) @ 16 : 1
+LA-Int[0x01] in Subaction 0x9 : SOUND @ 15 : 2
+LA-Int[0x01] in Subaction 0x9 : SOUND @ 16 : 1
+
+LA-Int[0x0B] in Action 0x4 (Status_Run) @ 0 : 1
+
+LA-Int[0x1B] in Subaction 0x2 : SOUND @ 0 : 1
+LA-Int[0x1B] in Subaction 0x7 : GFX @ 0 : 1
+
+LA-Bool[0x05] in Action 0x4 (Status_Run) @ 6 : 2
+
+RA-Bool[0x02] in hsr_38 @ 0 : 3

@@ -1,0 +1,43 @@
+[EscapeB] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x45 : MAIN {
+  AsynchronousTimer(3.0)
+  BodyCollision(2)
+  AsynchronousTimer(19.0)
+  BodyCollision(0)
+  AsynchronousTimer(31.0)
+  AllowInterrupt()
+}
+
+Subaction 0x45 : GFX {
+  GraphicEffect(16, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(4.0)
+  GraphicEffectStepping(10, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x45 : SOUND {
+  AsynchronousTimer(4.0)
+  SoundEffect(3542)
+  SynchronousTimer(8.0)
+  SoundEffect(3593)
+  SynchronousTimer(8.0)
+  SoundEffect(3591)
+  SynchronousTimer(15.0)
+  SoundEffect(3553)
+}
+
+Subaction 0x45 : OTHER {
+  SlopeContourStand02(1, 4)
+  AsynchronousTimer(16.0)
+  SlopeContourStand02(6, 3)
+}
+

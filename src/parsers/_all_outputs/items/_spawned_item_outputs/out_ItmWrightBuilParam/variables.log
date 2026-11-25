@@ -1,0 +1,3 @@
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in hsr_60 @ 0 : 1
+
+LA-Bool[0x07] in Action 0x1 (Status_Walk) @ 13 : 1

@@ -1,0 +1,10 @@
+// Status_Capture_Taboo
+Action 0x104: ENTRY {
+  HeldItemsVisibility(false)
+  DisableMagifyingGlass()
+  BitVariableSet(LA-Bool[0x01])
+  ChangeSubAction(165)
+}
+
+Action 0x104 : EXIT {
+}

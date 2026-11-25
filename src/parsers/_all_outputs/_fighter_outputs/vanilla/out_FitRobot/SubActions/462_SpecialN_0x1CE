@@ -1,0 +1,50 @@
+[SpecialN] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1CE: MAIN {
+  AsynchronousTimer(1.0)
+  BitVariableSet(RA-Bool[0x11])
+  AsynchronousTimer(24.0)
+  BitVariableClear(RA-Bool[0x11])
+  BitVariableSet(RA-Bool[0x13])
+  OffensiveCollision(Sp(77, 0), 7, 361, Sp(0, 95), Sp(0, 40), 7.0, 1.2, 0.0, 7.0, 0.0, 1.0, 1.0, 105058437)
+  SynchronousTimer(3.0)
+  TerminateCollisions()
+  AsynchronousTimer(29.0)
+  BitVariableSet(RA-Bool[0x12])
+}
+
+Subaction 0x1CE: GFX {
+  AsynchronousTimer(20.0)
+  GraphicEffectLanding(39, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(23.0)
+  GraphicEffectAttached(2359307, 81, 0.0, -1.0, 4.0, -7.5, 0.0, 0.0, 1.0, true)
+  FlashOverlayEffect(255, 96, 128, 80)
+  AsynchronousTimer(25.0)
+  TerminateFlashEffect()
+  FlashLightEffect(255, 192, 224, 160, 75.0, -10.0)
+  AsynchronousTimer(30.0)
+  ChangeFlashLightColor(10, 255, 224, 255, 0)
+  AsynchronousTimer(40.0)
+  TerminateFlashEffect()
+}
+
+Subaction 0x1CE: SOUND {
+}
+
+Subaction 0x1CE: OTHER {
+  SlopeContourStand(9)
+  AsynchronousTimer(23.0)
+  Rumble(14, 0)
+  AsynchronousTimer(24.0)
+  Screenshake(0)
+}
+

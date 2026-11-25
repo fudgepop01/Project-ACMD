@@ -1,0 +1,8 @@
+// Status_Turn_Dash
+Action 0x7 {
+  (undef: Sp_Kinetic) 66_07_00_00()
+  ChangeSubAction(1)
+  SynchronousTimer(20.0)
+  ChangeAction(6, R(Button Tap?()))
+}
+

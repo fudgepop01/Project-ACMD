@@ -1,0 +1,14 @@
+[hsr_978]
+hidden_subroutine_0x978 {
+  (undef: Sp_Kinetic) 66_02_02_00(5.0, 0.0)
+  ChangeSubAction(12)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ReverseDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  ChangeSubAction(13)
+  (undef: control_flow_loop) 01_04_02_00(5, 20)
+  (undef: Sp_base) 65_13_04_00(LA-Int[0x00], 20.0, 3.0, 0.0)
+  Return()
+}

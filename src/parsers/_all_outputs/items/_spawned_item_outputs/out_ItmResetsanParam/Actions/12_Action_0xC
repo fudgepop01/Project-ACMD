@@ -1,0 +1,13 @@
+// Status_Jump_Aerial
+Action 0xC {
+  SubRoutine(hidden_subroutine_0x10F4)
+  DisableActionStatusId(12)
+  ChangeAction(3, R(In Air()))
+  Visibility(true)
+  ChangeSubAction(1)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeSubAction(5)
+  ChangeAction(4, R(On Ground()))
+}
+

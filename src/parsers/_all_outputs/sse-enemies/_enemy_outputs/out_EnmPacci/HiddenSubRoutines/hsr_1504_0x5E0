@@ -1,0 +1,11 @@
+[hsr_5E0]
+hidden_subroutine_0x5E0 {
+  if (R(Compare(Variable_Int_Status_Prev_Kind != 6.0))) {
+    SetBoneMotionOverride(0, 12, 29)
+    BitVariableSet(LA-Bool[0x06])
+    (undef: Sp_base) 65_07_02_00(IC-Int[0xABE3], LA-Float[0x05])
+    (undef: Sp_base) 65_04_01_00(1)
+    BitVariableSet(LA-Bool[0x07])
+  }
+  Return()
+}

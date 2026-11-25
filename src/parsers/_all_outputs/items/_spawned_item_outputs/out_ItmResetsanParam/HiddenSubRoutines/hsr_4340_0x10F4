@@ -1,0 +1,10 @@
+[hsr_10F4]
+hidden_subroutine_0x10F4 {
+  if (R(Bit is Set(LA-Bool[0x01]))) {
+    BodyCollision(0)
+  } else {
+    BodyCollision(1)
+  }
+  ChangeAction(9, R(Successfully tethered ledge()), true)
+  Return()
+}

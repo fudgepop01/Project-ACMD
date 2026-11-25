@@ -1,0 +1,14 @@
+Action 0xB: MAIN {
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonCaptureProc)
+}
+
+Action 0xB: EXIT {
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonCaptureProcExit)
+}
+
+Action 0xB: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_03_00_00()
+  SubAction09(5)
+}
+

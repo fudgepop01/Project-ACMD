@@ -1,0 +1,9 @@
+// Status_Ike_Final_Damage
+Action 0xF8: ENTRY {
+  SetGimmickEffectFlag(false)
+  SuperHeavyArmor(1, 0.0)
+  ChangeSubAction(RA-Int[0x01])
+}
+
+Action 0xF8 : EXIT {
+}

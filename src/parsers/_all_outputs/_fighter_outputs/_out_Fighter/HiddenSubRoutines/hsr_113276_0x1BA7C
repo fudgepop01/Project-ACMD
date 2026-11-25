@@ -1,0 +1,5 @@
+[hsr_1BA7C]
+hidden_subroutine_0x1BA7C {
+  SubRoutine(hsr_9A84)
+  SubRoutine(statusAnimCmd_ItemShootLanding_Common)
+}

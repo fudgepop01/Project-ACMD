@@ -1,0 +1,9 @@
+// Status_Wait
+[statusAnimCmd_Wait]
+Action 0x0: ENTRY {
+  SubRoutine(statusAnimCmd_WaitCommon)
+  SubRoutine(hidden_subroutine_0xBC74)
+}
+
+Action 0x0 : EXIT {
+}

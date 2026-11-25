@@ -1,0 +1,9 @@
+IC-Int[0x3F1] ("Variable_Float_Kinetic_Energy_Damage_Speed_Y_Rv") in Action 0x5 (Status_Run_Brake) @ 3 : 3
+
+IC-Int[0x3F2] in Action 0x5 (Status_Run_Brake) @ 3 : 4
+
+IC-Int[0x5214] ("Variable_Int_Controller_Trigger_2_Count_Prev") in Subaction 0x2 : GAME @ 2 : 2
+
+IC-Int[0x5219] ("Variable_Int_Controller_Trigger_5_Count") in Subaction 0x2 : GAME @ 2 : 4
+
+LA-Int[0x1B] in Subaction 0x0 : SOUND @ 0 : 1

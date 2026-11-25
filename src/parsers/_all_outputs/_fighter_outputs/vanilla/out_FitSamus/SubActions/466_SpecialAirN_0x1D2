@@ -1,0 +1,38 @@
+[SpecialAirN] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D2: MAIN {
+  AsynchronousTimer(2.0)
+  (undef: generateArticleManage) 10_09_01_00(0)
+  BitVariableSet(RA-Bool[0x12])
+  AsynchronousTimer(30.0)
+  AllowInterrupt()
+}
+
+Subaction 0x1D2: GFX {
+  AsynchronousTimer(2.0)
+  GraphicEffect(262149, 43, 6.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  FlashOverlayEffect(255, 192, 255, 180)
+  AsynchronousTimer(4.0)
+  ChangeFlashOverlayColor(10, 80, 80, 80, 0)
+  AsynchronousTimer(14.0)
+  TerminateFlashEffect()
+}
+
+Subaction 0x1D2: SOUND {
+}
+
+Subaction 0x1D2: OTHER {
+  SlopeContourStand(6)
+  CharacterSpecific03(2, 60.0)
+  Rumble(13, 0)
+}
+

@@ -1,0 +1,8 @@
+[hsr_4DC]
+hidden_subroutine_0x4DC {
+  if (R(Compare(LA-Int[0x0B] < 90.0)) && R(Compare(LA-Int[0x0B] >= 1.0))) {
+    FrameSpeedModifier(4.0)
+    SubRoutine(hidden_subroutine_0x364)
+  }
+  Return()
+}

@@ -1,0 +1,8 @@
+// Status_Run
+Action 0x4 {
+  Visibility(true)
+  SubRoutine(hidden_subroutine_0x58)
+  DisableActionStatusId(4)
+  ChangeSubAction(6)
+}
+

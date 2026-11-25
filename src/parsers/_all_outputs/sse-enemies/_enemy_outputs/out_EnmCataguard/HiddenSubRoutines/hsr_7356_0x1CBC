@@ -1,0 +1,20 @@
+[hsr_1CBC]
+hidden_subroutine_0x1CBC {
+  if (R(Successfully tethered ledge())) {
+    if [IF_REQ_UNKNOWN_3ARG] (R(0x12()), 3, Variable_Int_Controller_Flick_No_Reset_Y) {
+      (undef: Sp_Area) 69_00_01_00(Variable_Int_Controller_Flick_No_Reset_Y)
+    }
+    (undef: Sp_Area) 69_01_05_00(Variable_Int_Controller_Flick_No_Reset_Y, 0.0, IC-Int[0xFA4], LA-Float[0x04], true)
+  } else {
+    (undef: unk_procedures) 1B_02_01_00(F(0x00001BB8))
+  }
+  (undef: Sp_base) 65_09_02_00(IC-Int[0xABE7], LA-Float[0x07])
+  (undef: Sp_base) 65_09_02_00(IC-Int[0xABE8], LA-Float[0x08])
+  if (R(Compare(LA-Float[0x04] >= 180.0))) {
+    FloatVariableSet(LA-Float[0x07], LA-Float[0x04])
+  } elif (R(Compare(LA-Float[0x04] <= LA-Float[0x07]))) {
+    FloatVariableSet(LA-Float[0x07], LA-Float[0x04])
+  } elif (R(Compare(LA-Float[0x04] >= LA-Float[0x08]))) {
+    FloatVariableSet(LA-Float[0x08], LA-Float[0x04])
+    Return()
+}

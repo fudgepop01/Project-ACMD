@@ -1,0 +1,49 @@
+[SpecialNTurn] (flags) {
+  No Out Transition: 1,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1CF : MAIN {
+  AsynchronousTimer(20.0)
+  ReverseDirection()
+  AsynchronousTimer(52.0)
+  OffensiveCollision(Sp(44, 0), 28, 361, Sp(0, 93), Sp(0, 30), 5.0, 0.5, 0.0, 0.0, 0.0, 1.0, 1.0, 688063621)
+  OffensiveCollision(Sp(43, 1), 26, 361, Sp(0, 93), Sp(0, 30), 3.5, 2.5, 0.0, 0.0, 0.0, 1.0, 1.0, 688063621)
+  OffensiveCollision(Sp(44, 2), 24, 361, Sp(0, 93), Sp(0, 30), 3.5, -4.0, 0.0, 0.0, 0.0, 1.0, 1.0, 688063557)
+  SynchronousTimer(5.0)
+  TerminateCollisions()
+}
+
+Subaction 0x1CF : GFX {
+  Goto(Subaction_0x1CE : GFX)
+}
+
+Subaction 0x1CF : SOUND {
+  AsynchronousTimer(21.0)
+  SoundEffect(3487)
+  SoundEffect(113)
+  SynchronousTimer(12.0)
+  SoundEffect(3581)
+  SynchronousTimer(4.0)
+  SoundEffect(3487)
+  SynchronousTimer(15.0)
+  StopSoundEffect(3496)
+  SoundEffect(1315)
+  SoundEffect(3582)
+}
+
+Subaction 0x1CF : OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(1.0)
+  Rumble(13, 0)
+  AsynchronousTimer(52.0)
+  Screenshake(1)
+  Rumble(14, 0)
+}
+

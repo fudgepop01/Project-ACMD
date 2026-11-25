@@ -1,0 +1,12 @@
+Action 0x11C: ENTRY {
+  ChangeAction(283, R(Animation End()))
+
+  ChangeAction(25, R(Bit is Set(RA-Bool[0x13])))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeSubAction(478)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x176A8)
+}
+
+Action 0x11C : EXIT {
+}

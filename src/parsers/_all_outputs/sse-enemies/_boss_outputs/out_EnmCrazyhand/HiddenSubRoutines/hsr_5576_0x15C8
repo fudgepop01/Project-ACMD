@@ -1,0 +1,32 @@
+[hsr_15C8]
+hidden_subroutine_0x15C8 {
+  DisableSpecifiedMovement(8)
+  (undef: targetSearch) 16_00_00_00()
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0x850)
+    (undef: Sp_Area) 69_08_02_00(Variable_Int_Controller_Flick_No_Reset_Y, LA-Float[0x05])
+    (undef: model) 03_0A_04_00(3, LA-Float[0x0A], LA-Float[0x0B], LA-Float[0x0D])
+    FloatVariableSet(LA-Float[0x05], LA-Float[0x07])
+    FloatVariableSubtract(LA-Float[0x0A], LA-Float[0x07])
+    FloatVariableSetAbsolute(LA-Float[0x07], LA-Float[0x07])
+    if (R(Compare(LA-Float[0x07] <= IC-Int[0x5DC1]))) {
+      (undef: Sp_Kinetic) 66_04_01_00(4)
+    } else {
+      (undef: Sp_Kinetic) 66_05_01_00(4)
+      if (R(Compare(LA-Float[0x05] > LA-Float[0x0A]))) {
+        if (R(Facing Right())) {
+          (undef: Sp_Kinetic) 66_0C_02_00(4, 0.0)
+        } else {
+          (undef: Sp_Kinetic) 66_0C_02_00(4, 180.0)
+        }
+      } else {
+        if (R(Facing Right())) {
+          (undef: Sp_Kinetic) 66_0C_02_00(4, 180.0)
+        } else {
+          (undef: Sp_Kinetic) 66_0C_02_00(4, 0.0)
+        }
+      }
+    }
+    SynchronousTimer(1.0)
+  }
+}

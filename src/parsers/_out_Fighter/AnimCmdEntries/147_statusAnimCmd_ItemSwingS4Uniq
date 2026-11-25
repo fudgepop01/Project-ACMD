@@ -1,0 +1,8 @@
+// @ 0x9F8C
+ItemSwingS4Uniq {
+  if (R(NOT Button Pressed(Attack))) {
+    BitVariableSet(RA-Bool[0x11])
+  } elif (R(Button Press(Attack))) {
+    BitVariableSet(RA-Bool[0x12])
+  }
+}

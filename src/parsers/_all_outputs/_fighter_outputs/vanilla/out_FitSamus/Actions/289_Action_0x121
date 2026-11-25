@@ -1,0 +1,9 @@
+Action 0x121: ENTRY {
+  SubRoutine(hidden_subroutine_0x1878C)
+  SubRoutine(hidden_subroutine_0x1884C)
+  SynchronousTimer(1.0)
+  ChangeAction(288, R(On Ground()))
+}
+
+Action 0x121 : EXIT {
+}

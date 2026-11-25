@@ -1,0 +1,29 @@
+[JumpAerialF5] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1F: MAIN {
+  AsynchronousTimer(24.0)
+  BitVariableSet(RA-Bool[0x13])
+  BitVariableSet(RA-Bool[0x11])
+}
+
+Subaction 0x1F: GFX {
+}
+
+Subaction 0x1F: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(742)
+}
+
+Subaction 0x1F: OTHER {
+  ModelChangerPermanent(2, 1)
+}
+

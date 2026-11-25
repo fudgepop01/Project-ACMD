@@ -1,0 +1,14 @@
+[hsr_960]
+hidden_subroutine_0x960 {
+  if (R(Successfully tethered ledge())) {
+    if [IF_REQ_UNKNOWN_3ARG] (R(0x12()), 0, Variable_Int_Controller_Flick_No_Reset_Y) {
+      (undef: Sp_Area) 69_00_01_00(Variable_Int_Controller_Flick_No_Reset_Y)
+      (undef: Sp_Area) 69_07_02_00(Variable_Int_Controller_Flick_No_Reset_Y, LA-Float[0x0A])
+      (undef: Sp_Area) 69_09_02_00(Variable_Int_Controller_Flick_No_Reset_Y, LA-Float[0x0B])
+      Return()
+    }
+  }
+  FloatVariableSet(0.0, LA-Float[0x0A])
+  FloatVariableSet(0.0, LA-Float[0x0B])
+  Return()
+}

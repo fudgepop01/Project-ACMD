@@ -1,0 +1,7 @@
+// Status_Walk
+Action 0x1 {
+  (undef: Sp_base) 65_04_01_00(30)
+  ChangeAction(6, R(In walljump situation()), 255)
+  ChangeSubAction(0)
+}
+

@@ -1,0 +1,6 @@
+// @ 0x24248
+CHK_AIR_ATTACK {
+  ClearPreventInterrupt(AIR_ATTACK)
+  SubRoutine(statusAnimCmd_AIRChkAttack)
+  ClearPreventInterrupt(ALL?)
+}

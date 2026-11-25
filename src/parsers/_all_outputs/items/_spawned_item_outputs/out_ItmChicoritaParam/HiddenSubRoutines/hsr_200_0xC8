@@ -1,0 +1,12 @@
+[hsr_C8]
+hidden_subroutine_0xC8 {
+  if (R(Compare(Variable_Float_Posture_Lr == 1.0))) {
+    FloatVariableSet(12.0, LA-Float[0x00])
+  } else {
+    FloatVariableSet(-12.0, LA-Float[0x00])
+  }
+  FloatVariableSet(7.0, LA-Float[0x01])
+  FloatVariableAdd(Variable_Float_Posture_Pos_X, LA-Float[0x00])
+  FloatVariableAdd(Variable_Float_Posture_Pos_Y, LA-Float[0x01])
+  Return()
+}

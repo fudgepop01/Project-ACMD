@@ -1,0 +1,15 @@
+// Status_Escape
+Action 0x1E: ENTRY {
+  ResetFlickY()
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeSubAction(67)
+  Rumble(24, 0)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x116A4)
+}
+
+Action 0x1E : EXIT {
+}

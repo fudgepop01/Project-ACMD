@@ -1,0 +1,13 @@
+// Status_Walk
+Action 0x1 {
+  DisableSpecifiedMovement(2)
+  (undef: Sp_base) 65_03_02_00(0.0, -90.0)
+  FloatVariableSet(0.0, LA-Float[0x00])
+  FloatVariableSet(-0.5, LA-Float[0x01])
+  FloatVariableSet(-4.0, LA-Float[0x02])
+  ChangeSubAction(0)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(5, R(Button Tap?()))
+}
+

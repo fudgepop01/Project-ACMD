@@ -1,0 +1,6 @@
+[hsr_17FC8]
+hidden_subroutine_0x17FC8 {
+  if (R(Article Exists()) && R(0x18())) {
+    ArticleEvent02(4)
+  }
+}

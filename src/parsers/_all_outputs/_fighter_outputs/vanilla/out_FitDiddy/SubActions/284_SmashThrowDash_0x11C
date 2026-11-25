@@ -1,0 +1,37 @@
+[SmashThrowDash] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x11C: MAIN {
+  AsynchronousTimer(39.0)
+  ThrowItem(Variable_Float_Throw_Item_Angle, Variable_Float_Throw_Item_Speed, Variable_Float_Throw_Item_Power)
+}
+
+Subaction 0x11C: GFX {
+}
+
+Subaction 0x11C: SOUND {
+}
+
+Subaction 0x11C: OTHER {
+  AsynchronousTimer(2.0)
+  SlopeContourStand(4)
+  AsynchronousTimer(12.0)
+  SlopeContourStand(0)
+  AsynchronousTimer(20.0)
+  SlopeContourStand(4)
+  AsynchronousTimer(23.0)
+  SlopeContourStand(6)
+  AsynchronousTimer(28.0)
+  SlopeContourStand(2)
+  AsynchronousTimer(78.0)
+  SlopeContourStand(6)
+}
+

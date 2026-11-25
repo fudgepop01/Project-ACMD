@@ -1,0 +1,38 @@
+Action 0x116: ENTRY {
+  EnterFinalSmashState()
+  BodyCollision(2)
+  (undef: item_manage) 1F_11_01_00(2)
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(527, true)
+      } else {
+        ChangeSubAction(527)
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(529, true)
+      } else {
+        ChangeSubAction(529)
+      }
+      SetRequirement(R(On Ground()))
+    }
+    BitVariableSet(RA-Bool[0x10])
+    LoadRest()
+  }
+}
+
+Action 0x116 : EXIT {
+  RemoveArticle(1)
+  ExitFinalSmashState()
+}

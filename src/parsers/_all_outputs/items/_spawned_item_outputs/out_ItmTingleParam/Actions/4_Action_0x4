@@ -1,0 +1,68 @@
+// Status_Run
+Action 0x4 {
+  ChangeActionStatus(3, 3, R(In Air()))
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 1.0))) {
+    ChangeSubAction(8)
+    SynchronousTimer(180.0)
+    SetRequirement(R(Animation has looped?()))
+    LoadRest()
+  }
+  if (R(Compare(Variable_Int_Motion_Kind != 1.0))) {
+    ChangeSubAction(1)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+  }
+  DisableActionStatusId(3)
+  ChangeAction(6, R(In Air()))
+  if (R(Bit is Set(LA-Bool[0x01]))) {
+    (undef: Sp_base) 65_13_06_00(LA-Int[0x00], 3.0, 1.0, 2.0, 2.0, 2.0)
+  } else {
+    (undef: Sp_base) 65_13_05_00(LA-Int[0x00], 3.0, 1.0, 2.0, 2.0)
+  }
+  if (R(Compare(IC-Int[0x5B79] >= 1.0)) && R(Compare(IC-Int[0x5B79] <= 5.0))) {
+    BasicVariableSet(IC-Int[0x5B79], LA-Int[0x00])
+    BasicVariableDecrement(LA-Int[0x00])
+  }
+  BitVariableSet(LA-Bool[0x00])
+  Switch(10000, LA-Int[0x00])
+    Case(0)
+      FrameSpeedModifier(0.0)
+      SynchronousTimer(60.0)
+      FrameSpeedModifier(1.0)
+      ChangeAction(5, R(Button Tap?()))
+    Case(1)
+      ChangeSubAction(4)
+      Screenshake(0)
+      SynchronousTimer(300.0)
+    Case(2)
+      ChangeSubAction(5)
+      Screenshake(0)
+      SynchronousTimer(600.0)
+    Case(3)
+      ChangeSubAction(6)
+      Screenshake(0)
+      SetLoop(9) {
+        FloatVariableRandom(-50.0, 50.0, LA-Float[0x00])
+        FloatVariableAdd(Variable_Float_Posture_Pos_X, LA-Float[0x00])
+        FloatVariableSet(100.0, LA-Float[0x01])
+        FloatVariableAdd(Variable_Float_Posture_Pos_Y, LA-Float[0x01])
+        if (R(Is within footstool range())) {
+          if (R(Is within footstool range())) {
+            (undef: Sp_base) 65_09_04_00(27, 0, LA-Float[0x00], LA-Float[0x01])
+          } else {
+            (undef: Sp_base) 65_09_04_00(29, 0, LA-Float[0x00], LA-Float[0x01])
+          }
+        }
+        SynchronousTimer(40.0)
+      }
+    Case(4)
+      ChangeSubAction(7)
+      Screenshake(0)
+      SynchronousTimer(300.0)
+  EndSwitch()
+  ChangeSubAction(9)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(6, R(Button Tap?()))
+}
+

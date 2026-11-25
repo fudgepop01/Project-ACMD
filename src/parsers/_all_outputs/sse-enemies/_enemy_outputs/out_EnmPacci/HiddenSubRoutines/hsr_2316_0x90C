@@ -1,0 +1,16 @@
+[hsr_90C]
+hidden_subroutine_0x90C {
+  if (R(0x25())) {
+    SWITCH_3ARG(1000, IC-Int[0xABE5], 3)
+      Case(0)
+        SetBoneMotionOverride(0, 8, 29)
+      Case(1)
+        SetBoneMotionOverride(0, 12, 29)
+      Case(2)
+        SetBoneMotionOverride(0, 11, 29)
+      DefaultCase()
+        (undef: unk_procedures) 1B_02_01_00(F(0x000007D0))
+    EndSwitch()
+  }
+  Return()
+}

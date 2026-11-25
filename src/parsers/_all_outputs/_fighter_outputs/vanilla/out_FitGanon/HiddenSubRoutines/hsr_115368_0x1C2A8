@@ -1,0 +1,11 @@
+[hsr_1C2A8]
+hidden_subroutine_0x1C2A8 {
+  if (R(Bit is Set(RA-Bool[0x12])) && R(NOT Bit is Set(RA-Bool[0x13]))) {
+    SubRoutine(hidden_subroutine_0xE1B0)
+    BitVariableSet(RA-Bool[0x13])
+  }
+  if (R(Bit is Set(RA-Bool[0x14])) && R(NOT Bit is Set(RA-Bool[0x15]))) {
+    SubRoutine(hidden_subroutine_0xE1D0)
+    BitVariableSet(RA-Bool[0x15])
+  }
+}

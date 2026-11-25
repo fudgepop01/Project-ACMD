@@ -1,0 +1,9 @@
+[hsr_15C4]
+hidden_subroutine_0x15C4 {
+  if (R(Compare(IC-Int[0x5DC0] == 0.0))) {
+    (undef: Sp_base) 65_1D_01_00(359)
+  } elif (R(Compare(IC-Int[0x5DC0] == 1.0))) {
+    (undef: Sp_base) 65_1D_01_00(359)
+  } elif (R(Compare(IC-Int[0x5DC0] == 2.0))) {
+    (undef: Sp_base) 65_1D_01_00(359)
+}

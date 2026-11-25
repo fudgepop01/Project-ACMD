@@ -1,0 +1,10 @@
+// Status_Walk
+Action 0x1 {
+  BasicVariableSet(4, LA-Int[0x00])
+  ChangeSubAction(3)
+  ChangeAction(4, R(On Ground()))
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(3, R(In Air()))
+}
+

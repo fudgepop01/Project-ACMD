@@ -1,0 +1,10 @@
+// Status_Jump_Aerial
+Action 0xC {
+  ChangeAction(5, R(In Air()))
+
+  ChangeActionStatus(4, 4, R(On Ground()))
+  AdditionalRequirement(R(Compare(Variable_Float_Kinetic_Sum_Speed_X_Abs <= 0.7)))
+
+  ChangeSubAction(6)
+}
+

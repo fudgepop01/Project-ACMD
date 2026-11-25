@@ -1,0 +1,29 @@
+[UpStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1 : GAME {
+  SynchronousTimer(25.0)
+  SetAerialOrOnstage(0)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 2.4, -1.0, 3.0, 0.0, 0.0, 0.0, 0.01, 0.0, 0.0, true, false, false)
+  OffensiveCollision(Sp(0, 0), 8, 70, Sp(0, 100), Sp(0, 35), 7.0, 0.0, 4.5, 0.0, 0.0, 1.0, 1.0, 200837)
+}
+
+Subaction 0x1 : GFX {
+  AsynchronousTimer(25.0)
+  GraphicEffect(41, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x1 : SOUND {
+  SoundEffect(7817)
+  SynchronousTimer(26.0)
+  SoundEffect(7819)
+}
+

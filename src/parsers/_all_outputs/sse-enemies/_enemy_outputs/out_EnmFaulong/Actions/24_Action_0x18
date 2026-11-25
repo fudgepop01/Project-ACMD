@@ -1,0 +1,15 @@
+Action 0x18: MAIN {
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonDyingWaterProc)
+  SubRoutine(hidden_subroutine_0x1744)
+  SubRoutine(hidden_subroutine_0x175C)
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonDyingWaterProcEnd)
+}
+
+Action 0x18: EXIT {
+}
+
+Action 0x18: INIT {
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonDyingWaterProcInit)
+  SubAction09(1)
+}
+

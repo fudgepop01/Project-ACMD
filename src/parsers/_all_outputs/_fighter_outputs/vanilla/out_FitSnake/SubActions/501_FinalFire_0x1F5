@@ -1,0 +1,40 @@
+[FinalFire] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1F5: MAIN {
+  AsynchronousTimer(7.0)
+  GenerateArticle(11)
+}
+
+Subaction 0x1F5: GFX {
+  AsynchronousTimer(5.0)
+  GraphicEffectAttached(16842753, 57, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+}
+
+Subaction 0x1F5: SOUND {
+  StopTransientSoundEffect()
+  SoundEffectTransient(6382)
+  SynchronousTimer(7.0)
+  SoundEffect(6397)
+  SynchronousTimer(28.0)
+  SoundEffect(6376)
+}
+
+Subaction 0x1F5: OTHER {
+  HeldItemsVisibility(false)
+  AsynchronousTimer(6.0)
+  Rumble(14, 0)
+  (undef: item_manage) 1F_10_02_00(false, 2)
+  (undef: item_manage) 1F_10_02_00(false, 0)
+  UnkRaBit27(false)
+  SetTagDisplay(false)
+}
+

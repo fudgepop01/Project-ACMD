@@ -1,0 +1,9 @@
+// Status_Capture_Damage
+[statusAnimCmd_CaptureDamage]
+Action 0x3F: ENTRY {
+  ChangeActionStatus(10035, 62, R(Animation End()))
+  SubRoutine(statusAnimCmd_CaptureDamageCommon)
+}
+
+Action 0x3F : EXIT {
+}

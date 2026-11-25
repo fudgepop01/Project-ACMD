@@ -1,0 +1,10 @@
+[hsr_18470]
+hidden_subroutine_0x18470 {
+  FloatVariableAdd(-1.0, RA-Float[0x04])
+  FloatVariableAdd(-1.0, RA-Float[0x0A])
+  FloatVariableAdd(1.0, RA-Float[0x06])
+  if (R(Compare(RA-Float[0x04] <= IC-Int[0xFEF])) && R(NOT Bit is Set(RA-Bool[0x11]))) {
+    BitVariableSet(RA-Bool[0x11])
+    SetFlashingEffect(37)
+  }
+}

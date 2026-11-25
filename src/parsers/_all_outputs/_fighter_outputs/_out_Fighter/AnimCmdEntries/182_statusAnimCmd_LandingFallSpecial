@@ -1,0 +1,9 @@
+// @ 0x22080
+LandingFallSpecial {
+  ChangeAction(14, R(In Air()))
+  if (R(NOT Bit is Set(LA-Bool[0x0B])) && R(NOT Compare(Variable_Int_Have_Item_Kind == 0.0))) {
+    SubRoutine(hidden_subroutine_0xF6BC)
+  } else {
+    ChangeAction(0, R(Animation End()))
+  }
+}

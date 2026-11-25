@@ -1,0 +1,26 @@
+[SmashThrowAirLw] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x120: MAIN {
+  AsynchronousTimer(39.0)
+  ThrowItem_UNDOC4ARGS(0.0, -6.0, Variable_Float_Throw_Item_Angle, Variable_Float_Throw_Item_Speed)
+}
+
+Subaction 0x120: GFX {
+}
+
+Subaction 0x120: SOUND {
+}
+
+Subaction 0x120: OTHER {
+  Goto(Subaction_0x11B : OTHER)
+}
+

@@ -1,0 +1,28 @@
+[SpecialSEscape] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1EF: MAIN {
+  AsynchronousTimer(10.0)
+  BitVariableSet(RA-Bool[0x11])
+}
+
+Subaction 0x1EF: GFX {
+}
+
+Subaction 0x1EF: SOUND {
+  AsynchronousTimer(7.0)
+  SoundEffect(1892)
+}
+
+Subaction 0x1EF: OTHER {
+  Rumble(17, 0)
+}
+

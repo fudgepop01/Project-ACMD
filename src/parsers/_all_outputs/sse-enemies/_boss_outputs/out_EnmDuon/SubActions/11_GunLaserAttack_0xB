@@ -1,0 +1,76 @@
+[GunLaserAttack] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xB: MAIN {
+  AsynchronousTimer(50.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 16, 14, 1.5, 80, 50, 0.2, 0, 0.0, 120, 0.2, 20.0, 0.0, 0.0, 0.0, 0.0, 3, 0.0, 1.4, 1.0, false, true, 40, 2, 7, 2, true, 0, 311, false, 9, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(58.0)
+  SubRoutine(hidden_subroutine_0x960)
+  (undef: Sp_base) 65_0E_02_00(IC-Int[0xABF1], 0)
+  (undef: Sp_Link) 6E_00_03_00(3, 5103, 22)
+  AsynchronousTimer(88.0)
+  SubRoutine(hidden_subroutine_0x960)
+  (undef: Sp_base) 65_0E_02_00(IC-Int[0xABF1], 0)
+  (undef: Sp_Link) 6E_00_03_00(3, 5103, 22)
+  AsynchronousTimer(118.0)
+  SubRoutine(hidden_subroutine_0x960)
+  (undef: Sp_base) 65_0E_02_00(IC-Int[0xABF1], 0)
+  (undef: Sp_Link) 6E_00_03_00(3, 5103, 22)
+  AsynchronousTimer(128.0)
+  TerminateCollisions()
+}
+
+Subaction 0xB: MAIN EXIT {
+  SubRoutine(hidden_subroutine_0xE00)
+}
+
+Subaction 0xB: MAIN INIT {
+  SubRoutine(hidden_subroutine_0xD70)
+}
+
+Subaction 0xB: GFX {
+  AsynchronousTimer(25.0)
+  GraphicEffectAttached(12517426, 16, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(51.0)
+  GraphicEffectAttached(12517427, 16, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  Screenshake(1)
+  AsynchronousTimer(81.0)
+  GraphicEffectAttached(12517427, 16, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  Screenshake(0)
+  AsynchronousTimer(111.0)
+  GraphicEffectAttached(12517427, 16, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  Screenshake(0)
+}
+
+Subaction 0xB: GFX EXIT {
+}
+
+Subaction 0xB: GFX INIT {
+}
+
+Subaction 0xB: SFX {
+  SoundEffect(9764)
+  AsynchronousTimer(54.0)
+  SoundEffect(9765)
+  AsynchronousTimer(85.0)
+  SoundEffect(9765)
+  AsynchronousTimer(115.0)
+  SoundEffect(9765)
+  AsynchronousTimer(135.0)
+  SoundEffect(9758)
+}
+
+Subaction 0xB: SFX EXIT {
+}
+
+Subaction 0xB: SFX INIT {
+}
+

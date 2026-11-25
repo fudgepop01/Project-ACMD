@@ -1,0 +1,7 @@
+[hsr_2A6C4]
+hidden_subroutine_0x2A6C4 {
+  if (R(Compare(LA-Int[0x63] < 4.0))) {
+    BitVariableSet(RA-Bool[0x10])
+    BasicVariableIncrement(LA-Int[0x63])
+  }
+}

@@ -1,0 +1,21 @@
+Action 0x11A: ENTRY {
+  BitVariableClear(RA-Bool[0x10])
+  SubRoutine(hidden_subroutine_0x1D2B8)
+  ResetButtonPress()
+  BasicVariableSet(283, RA-Int[0x02])
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1D2E8)
+  SubRoutine(hidden_subroutine_0x1D498)
+  if (R(Bit is Set(RA-Bool[0x15]))) {
+    BasicVariableSet(471, RA-Int[0x00])
+    BasicVariableSet(480, RA-Int[0x01])
+  } else {
+    BasicVariableSet(472, RA-Int[0x00])
+    BasicVariableSet(481, RA-Int[0x01])
+  }
+  BitVariableClear(RA-Bool[0x15])
+  BitVariableClear(RA-Bool[0x16])
+  SubRoutine(hidden_subroutine_0x1D388)
+}
+
+Action 0x11A : EXIT {
+}

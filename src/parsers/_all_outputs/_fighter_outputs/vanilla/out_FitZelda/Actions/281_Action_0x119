@@ -1,0 +1,23 @@
+Action 0x119: ENTRY {
+  BodyCollision(2)
+  Visibility(false)
+  UnkRaBit27(false)
+  SetTagDisplay(false)
+  SetPassableCheck(false)
+  ChangeAction(282, R(Compare(RA-Int[0x00] <= 0.0)))
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x17E08)
+  SetAirGround(103)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x119 : EXIT {
+}

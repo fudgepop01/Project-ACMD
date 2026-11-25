@@ -1,0 +1,35 @@
+[SpecialAirSEnd] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D9: MAIN {
+  TerminateCollisions()
+  AsynchronousTimer(12.0)
+  BitVariableSet(RA-Bool[0x12])
+}
+
+Subaction 0x1D9: GFX {
+  GraphicEffect(37, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(13.0)
+  GraphicEffect(327681, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 360.0, 0.0, false)
+}
+
+Subaction 0x1D9: SOUND {
+  StopSoundEffect(2999)
+  SoundEffect(3001)
+}
+
+Subaction 0x1D9: OTHER {
+  AsynchronousTimer(13.0)
+  Rumble(13, 8)
+  HeldItemsVisibility(true)
+  WearableItemsVisibility(true)
+}
+

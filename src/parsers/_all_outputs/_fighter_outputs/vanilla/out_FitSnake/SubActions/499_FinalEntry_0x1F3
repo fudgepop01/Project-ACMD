@@ -1,0 +1,36 @@
+[FinalEntry] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1F3: MAIN {
+  AsynchronousTimer(90.0)
+  ArticleVisibility(8, true)
+}
+
+Subaction 0x1F3: GFX {
+}
+
+Subaction 0x1F3: SOUND {
+  AsynchronousTimer(25.0)
+  SoundEffectTransient(6382)
+  SynchronousTimer(89.0)
+  VictorySoundEffect(6365)
+}
+
+Subaction 0x1F3: OTHER {
+  ModelChangerPermanent(0, -1)
+  TerminateAllGraphicEffect(8, false)
+  HeldItemsVisibility(false)
+  (undef: item_manage) 1F_10_02_00(false, 2)
+  (undef: item_manage) 1F_10_02_00(false, 0)
+  UnkRaBit27(false)
+  SetTagDisplay(false)
+}
+

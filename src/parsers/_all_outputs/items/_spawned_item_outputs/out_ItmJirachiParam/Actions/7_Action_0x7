@@ -1,0 +1,9 @@
+// Status_Turn_Dash
+Action 0x7 {
+  SubRoutine(hidden_subroutine_0x48)
+  DisableActionStatusId(7)
+  SetLoop(12) {
+    SubRoutine(hidden_subroutine_0xE8)
+  }
+}
+

@@ -1,0 +1,12 @@
+// Status_Walk_Brake
+Action 0x2 {
+  BitVariableSet(LA-Bool[0x00])
+  (undef: Sp_base) 65_1F_01_00(2)
+  if (R(Is within footstool range())) {
+    ChangeSubAction(10)
+  } else {
+    ChangeSubAction(1)
+    (undef: collision) 06_22_01_00(false)
+  }
+}
+

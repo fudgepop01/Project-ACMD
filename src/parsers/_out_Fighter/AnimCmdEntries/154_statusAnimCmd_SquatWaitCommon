@@ -1,0 +1,17 @@
+// @ 0xA674
+SquatWaitCommon {
+  UnkRaBit27Variable(true, IC-Int[0x5A16])
+  ChangeAction(14, R(In Air()))
+  SubRoutine(statusAnimCmd_SquatCommon)
+  InvertActionStatusId(0, 10097)
+  InvertActionStatusId(0, 10098)
+  InvertActionStatusId(0, 10059)
+  if (R(Compare(Info_Param_Int_Squat_Walk_Type == 1.0))) {
+    InvertActionStatusId(0, 10044)
+    SubRoutine(statusAnimCmd_AllowSquatF)
+    SubRoutine(statusAnimCmd_AllowSquatB)
+  }
+
+  ChangeActionStatus(10052, 21, R(Compare(Variable_Float_Controller_Stick_Y > Common_Param_Float_Squat_Stick_Y)))
+  AdditionalRequirement(R(On Ground()))
+}

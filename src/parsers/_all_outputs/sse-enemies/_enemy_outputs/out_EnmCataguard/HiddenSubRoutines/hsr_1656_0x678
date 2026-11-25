@@ -1,0 +1,12 @@
+[hsr_678]
+hidden_subroutine_0x678 {
+  (undef: Sp_AI) 6A_00_01_00(19)
+  (undef: Sp_AI) 6A_00_01_00(27)
+  (undef: Sp_AI) 6A_00_01_00(14)
+  (undef: Sp_AI) 6A_00_01_00(22)
+  (undef: Sp_AI) 6A_00_01_00(23)
+  (undef: Sp_AI) 6A_00_01_00(24)
+  (undef: Sp_AI) 6A_00_01_00(26)
+  SubRoutine(hsr_5A0)
+  Return()
+}

@@ -1,0 +1,10 @@
+// @ 0x1E43C
+AirLassoFailureDisguise__20ftPokeFushigisouNode {
+  ChangeAction(22, R(On Ground()))
+
+  ChangeAction(16, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  SetAnimationFrame(RA-Float[0x04])
+  ChangeSubAction(RA-Int[0x02], true)
+}

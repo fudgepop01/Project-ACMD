@@ -1,0 +1,23 @@
+Action 0x117: ENTRY {
+  ChangeAction(280, R(Compare(Variable_Float_Motion_Rate <= IC-Int[0xFB0])))
+  BasicVariableSet(IC-Int[0x5DC1], RA-Int[0x02])
+  ChangeSubAction(464)
+  FrameSpeedModifier(IC-Int[0xFA2])
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x20178)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      SetAirGround(100)
+      SetRequirement(R(In Air()))
+      FloatVariableSet(0.0, RA-Float[0x04])
+    } else {
+      SetAerialOrOnstage(5)
+      SetAirGround(101)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x117 : EXIT {
+}

@@ -1,0 +1,27 @@
+// Status_Run
+Action 0x4 {
+  SubRoutine(hidden_subroutine_0x48)
+  ChangeAction(3, R(In Air()))
+  DisableActionStatusId(4)
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 3.0))) {
+    ChangeAction(3, R(In Air()))
+    ChangeAction(3, R(Bit is Set(LA-Bool[0x05])))
+  }
+  if (R(Compare(LA-Int[0x00] == 0.0))) {
+    (undef: Sp_Kinetic) 66_06_01_00(4)
+    SubRoutine(hidden_subroutine_0x118)
+    BasicVariableSet(1, LA-Int[0x00])
+  }
+  if (R(Compare(Variable_Float_Posture_Lr == -1.0))) {
+    ChangeAction(15, R(In walljump situation()), 82)
+    ChangeAction(8, R(In walljump situation()), 4)
+  } else {
+    ChangeAction(15, R(In walljump situation()), 164)
+    ChangeAction(8, R(In walljump situation()), 2)
+
+  }
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(12, R(Button Tap?()))
+}
+

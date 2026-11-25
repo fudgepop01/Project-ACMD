@@ -1,0 +1,58 @@
+[CopyBirth] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x3: MAIN {
+  AsynchronousTimer(69.0)
+  BitVariableSet(LA-Bool[0x06])
+}
+
+Subaction 0x3: MAIN EXIT {
+  if (R(NOT Bit is Set(LA-Bool[0x06]))) {
+    BitVariableSet(LA-Bool[0x07])
+}
+
+Subaction 0x3: MAIN INIT {
+  SubRoutine(hidden_subroutine_0x2D14)
+  BitVariableClear(LA-Bool[0x06])
+  BitVariableClear(LA-Bool[0x07])
+  (undef: Sp_base) 65_17_0B_00(Variable_Int_Controller_Trigger_1_Count, 0, 0, 0.0, 0.0, 0.0, Variable_Float_Posture_Lr, 12, Variable_Int_Controller_Trigger_1_Count_Prev, LA-Float[0x02], LA-Bool[0x06])
+  } else {
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    SubRoutine(hidden_subroutine_0x2CDC)
+  }
+}
+
+Subaction 0x3: GFX {
+  GraphicEffectAttached(9240577, 4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, IC-Int[0xFA2], true)
+}
+
+Subaction 0x3: GFX EXIT {
+  TerminateAllGraphicEffect(0, true)
+}
+
+Subaction 0x3: GFX INIT {
+}
+
+Subaction 0x3: SFX {
+  SoundEffect(9307)
+  SynchronousTimer(68.0)
+  } else {
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    SoundEffect(76)
+  }
+}
+
+Subaction 0x3: SFX EXIT {
+}
+
+Subaction 0x3: SFX INIT {
+}
+

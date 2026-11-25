@@ -1,0 +1,12 @@
+// Status_Turn_Run
+Action 0x8 {
+  SubRoutine(hidden_subroutine_0x10)
+  (undef: Sp_base) 65_07_03_00(5, LA-Float[0x00], LA-Float[0x01])
+  (undef: Sp_Kinetic) 66_05_01_00(1)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.25, 0.25, 0.25, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, false)
+  (undef: Sp_Kinetic) 66_08_01_00(0.05)
+  ChangeAction(9, R(Compare(IC-Int[0x3F8] < 5.0)))
+  (undef: control_flow_loop) 01_04_02_00(120, 180)
+  ChangeAction(9, R(Button Tap?()))
+}
+

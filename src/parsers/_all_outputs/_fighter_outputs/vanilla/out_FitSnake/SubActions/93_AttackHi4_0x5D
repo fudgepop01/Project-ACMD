@@ -1,0 +1,35 @@
+[AttackHi4] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x5D: MAIN {
+  SetArticleAction(1, 2)
+  AsynchronousTimer(18.0)
+  RemoveArticle(1)
+}
+
+Subaction 0x5D: GFX {
+  GraphicEffect(3080194, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffectLanding(0, 0, 4.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x5D: SOUND {
+  StopSoundEffect(105)
+  AsynchronousTimer(4.0)
+  SoundEffect(2637)
+  SoundEffect(6396)
+}
+
+Subaction 0x5D: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(6.0)
+  Rumble(13, 0)
+}
+

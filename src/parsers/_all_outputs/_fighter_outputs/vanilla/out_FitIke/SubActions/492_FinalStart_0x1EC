@@ -1,0 +1,56 @@
+[FinalStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1EC: MAIN {
+  BodyCollision(2)
+  SetCameraBoundaries(25.0, 0.0, 0.0, 0.0)
+  CameraCloseup(5, 0, 1.5, 0.0, 0.0)
+  SetSlowEffectEnemyFighter(4, 30)
+  ModelChanger(2, 1)
+  BitVariableSet(LA-Bool[0x3D])
+  GenerateArticle(0)
+  AsynchronousTimer(12.0)
+  SpecialOffensiveCollision(Sp(70, 0), 5, 70, Sp(0, 100), Sp(0, 50), 11.0, 0.0, 0.0, 3.0, 0.0, 2.0, 0.0, 579017922, 0, 1048512)
+  SpecialOffensiveCollision(Sp(70, 1), 5, 75, Sp(0, 100), Sp(0, 50), 15.0, 0.0, 9.0, 3.0, 0.0, 2.0, 0.0, 579017922, 0, 1048512)
+  SpecialOffensiveCollision(Sp(70, 2), 5, 80, Sp(0, 100), Sp(0, 50), 15.0, 0.0, 20.0, 3.0, 0.0, 2.0, 0.0, 579017922, 0, 1048512)
+  SpecialOffensiveCollision(Sp(70, 3), 5, 85, Sp(0, 100), Sp(0, 50), 13.0, 0.0, 32.0, 3.0, 0.0, 2.0, 0.0, 579017922, 0, 1048512)
+  SpecialOffensiveCollision(Sp(0, 4), 5, 70, Sp(0, 100), Sp(0, 50), 17.0, 0.0, 8.0, 7.0, 0.0, 2.0, 0.0, 579017922, 0, 1048512)
+  BitVariableSet(RA-Bool[0x12])
+  AsynchronousTimer(14.0)
+  TerminateCollisions()
+  ModelChangerPermanent(0, -1)
+  AsynchronousTimer(19.0)
+  BodyCollision(0)
+  AsynchronousTimer(40.0)
+  NormalCamera()
+}
+
+Subaction 0x1EC: GFX {
+  AsynchronousTimer(11.0)
+  GraphicEffectAttached(16580611, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+}
+
+Subaction 0x1EC: SOUND {
+  AsynchronousTimer(12.0)
+  VictorySoundEffect(5874)
+}
+
+Subaction 0x1EC: OTHER {
+  HeldItemsVisibility(false)
+  SlopeContourStand(6)
+  AsynchronousTimer(12.0)
+  Rumble(14, 0)
+  AsynchronousTimer(13.0)
+  SlopeContourStand(0)
+  AsynchronousTimer(32.0)
+  SlopeContourStand02(6, 3)
+}
+

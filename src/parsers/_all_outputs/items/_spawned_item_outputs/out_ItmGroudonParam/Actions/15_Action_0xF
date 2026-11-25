@@ -1,0 +1,21 @@
+// Status_Fall_Aerial
+Action 0xF {
+  if (R(Compare(LA-Int[0x0B] <= 0.0))) {
+    ChangeAction(6, R(Button Tap?()))
+  }
+  (undef: Sp_base) 65_13_04_00(LA-Int[0x00], 5.0, 3.0, 3.0)
+  if (R(Compare(LA-Int[0x00] == LA-Int[0x01]))) {
+    (undef: Sp_base) 65_13_04_00(LA-Int[0x00], 5.0, 3.0, 3.0)
+  }
+  BasicVariableSet(LA-Int[0x00], LA-Int[0x01])
+  Switch(10000, LA-Int[0x00])
+    Case(0)
+      ChangeAction(12, R(Button Tap?()))
+    Case(1)
+      ChangeAction(13, R(Button Tap?()))
+    Case(2)
+      ChangeAction(14, R(Button Tap?()))
+  EndSwitch()
+  ChangeAction(4, R(Button Tap?()))
+}
+

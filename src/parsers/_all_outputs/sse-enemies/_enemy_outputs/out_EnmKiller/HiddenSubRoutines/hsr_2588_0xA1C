@@ -1,0 +1,52 @@
+[hsr_A1C]
+hidden_subroutine_0xA1C {
+  BitVariableClear(LA-Bool[0x06])
+  SWITCH_6ARG(1013, 3, Variable_Int_Controller_Flick_No_Reset_Y, 0.0, 0.0, true)
+    Case(0)
+      Break()
+    Case(1)
+      BitVariableSet(LA-Bool[0x06])
+    Case(2)
+      BitVariableClear(LA-Bool[0x06])
+    DefaultCase()
+      (undef: unk_procedures) 1B_02_01_00(F(0x00000824))
+  EndSwitch()
+  BitVariableClear(LA-Bool[0x07])
+  if (R(Bit is Set(LA-Bool[0x06]))) {
+    SWITCH_6ARG(1026, 3, Variable_Int_Controller_Flick_No_Reset_Y, 0.0, 0.0, true)
+      Case(2)
+        Break()
+      Case(0)
+        if (R(Compare(Variable_Float_Controller_Stick_Y_Rv < 0.0))) {
+          BitVariableSet(LA-Bool[0x07])
+        }
+      Case(1)
+        if (R(Compare(Variable_Float_Controller_Stick_Y_Rv > 0.0))) {
+          BitVariableSet(LA-Bool[0x07])
+        }
+      DefaultCase()
+        (undef: unk_procedures) 1B_02_01_00(F(0x000008F4))
+    EndSwitch()
+  } else {
+  }
+  if (R(Bit is Set(LA-Bool[0x07]))) {
+    (undef: Sp_Kinetic) 66_0E_01_00(2)
+  }
+  if [IF_UNKNOWN_7ARG] (R(0x2730()), 3, Variable_Int_Controller_Flick_No_Reset_Y, 0.0, 0.0, Variable_Float_Controller_Stick_Y_Rv, true) {
+    if (R(NOT In walljump situation())) {
+      (undef: Sp_Kinetic) 66_04_01_00(2)
+    }
+  } else {
+    if (R(In walljump situation())) {
+      (undef: Sp_Kinetic) 66_05_01_00(2)
+    }
+  }
+  if (R(NOT Bit is Set(LA-Bool[0x06])) &&[3A] R(Distance from Floor()), IC-Int[0xFA1], false) {
+    if (R(Facing Right()) && R(Compare(Variable_Float_Controller_Stick_Y_Rv < 0.0))) {
+      (undef: Sp_Kinetic) 66_0E_01_00(2)
+    } elif (R(Facing Left()) && R(Compare(Variable_Float_Controller_Stick_Y_Rv > 0.0))) {
+      (undef: Sp_Kinetic) 66_0E_01_00(2)
+    }
+  }
+  Return()
+}

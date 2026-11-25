@@ -1,0 +1,11 @@
+[hsr_1C438]
+hidden_subroutine_0x1C438 {
+  BasicVariableDecrement(RA-Int[0x00])
+  BasicVariableDecrement(RA-Int[0x02])
+  if (R(Compare(RA-Int[0x01] >= 0.0))) {
+    BasicVariableDecrement(RA-Int[0x01])
+    if (R(Compare(RA-Int[0x01] < 0.0))) {
+      DefensiveCollisionProperty(2, false, 1)
+    }
+  }
+}

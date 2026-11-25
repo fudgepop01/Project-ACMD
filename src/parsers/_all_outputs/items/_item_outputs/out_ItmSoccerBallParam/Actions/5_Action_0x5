@@ -1,0 +1,13 @@
+// Status_Run_Brake
+Action 0x5 {
+  SubRoutine(hidden_subroutine_0x18)
+  ChangeAction(3, R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed_X < 1.2)))
+  BitVariableSet(RA-Bool[0x00])
+  if (R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed_X > 3.0))) {
+    ChangeSubAction(3)
+  } else {
+    ChangeSubAction(1)
+    ChangeAction(5, R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv > 3.0)))
+  }
+}
+

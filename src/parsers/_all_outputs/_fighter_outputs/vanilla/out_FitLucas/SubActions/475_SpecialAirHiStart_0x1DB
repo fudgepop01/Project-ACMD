@@ -1,0 +1,29 @@
+[SpecialAirHiStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1DB: MAIN {
+}
+
+Subaction 0x1DB: GFX {
+  Goto(Subaction_0x1D8 : GFX)
+}
+
+Subaction 0x1DB: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(2069)
+}
+
+Subaction 0x1DB: OTHER {
+  AsynchronousTimer(20.0)
+  Screenshake(0)
+  Rumble(13, 0)
+}
+

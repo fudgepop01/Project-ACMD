@@ -1,0 +1,4 @@
+[hsr_13CC]
+hidden_subroutine_0x13CC {
+  GraphicEffect(16973837, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}

@@ -1,0 +1,9 @@
+[hsr_E930]
+hidden_subroutine_0xE930 {
+  OffensiveCollision(Sp(59, 0), 1, 70, Sp(5, 100), Sp(0, 0), 5.5, 0.0, 7.7, 0.0, 0.2, 0.5, 1.0, 977473600)
+  OffensiveCollision(Sp(59, 1), 2, 70, Sp(10, 100), Sp(0, 0), 4.0, 0.0, 1.0, 0.0, 0.2, 0.5, 1.0, 977473600)
+  OffensiveCollision(Sp(52, 2), 3, 70, Sp(20, 100), Sp(0, 0), 3.0, 0.0, 0.0, 0.0, 0.2, 0.5, 1.0, 977473600)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+  Return()
+}

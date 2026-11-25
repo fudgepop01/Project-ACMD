@@ -1,0 +1,13 @@
+Action 0xC: MAIN {
+}
+
+Action 0xC: EXIT {
+}
+
+Action 0xC: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(9)
+  BasicVariableSet(13, LA-Int[0x06])
+  FloatVariableSet(IC-Int[0x5DC0], LA-Float[0x02])
+}
+

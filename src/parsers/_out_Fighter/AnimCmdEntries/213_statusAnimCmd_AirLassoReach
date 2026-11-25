@@ -1,0 +1,11 @@
+// @ 0x14C94
+AirLassoReach {
+  ChangeAction(22, R(On Ground()))
+  BasicVariableSet(237, RA-Int[0x02])
+  FloatVariableSet(Variable_Float_Motion_Frame, RA-Float[0x04])
+  if (R(NOT Bit is Set(RA-Bool[0x12]))) {
+    ChangeSubAction(235)
+    FrameSpeedModifier(0.0)
+  }
+  SetArticleAction07(RA-Int[0x00], RA-Int[0x01])
+}

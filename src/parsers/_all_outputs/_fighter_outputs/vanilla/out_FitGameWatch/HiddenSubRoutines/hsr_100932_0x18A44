@@ -1,0 +1,9 @@
+[hsr_18A44]
+hidden_subroutine_0x18A44 {
+  if (R(Button Press(Attack)) || R(Button Press(Special))) {
+    if (R(NOT Bit is Set(LA-Bool[0x40]))) {
+      SetArticleAction07(5, 2)
+      BitVariableSet(LA-Bool[0x40])
+    }
+  }
+}

@@ -1,0 +1,7 @@
+// Status_Smash_Appeal
+Action 0x10D: ENTRY {
+}
+
+[statusAnimCmdExit_Appeal]
+Action 0x10D : EXIT {
+}

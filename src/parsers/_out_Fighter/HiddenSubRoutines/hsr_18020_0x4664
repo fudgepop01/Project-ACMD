@@ -1,0 +1,7 @@
+[hsr_4664]
+hidden_subroutine_0x4664 {
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    SubRoutine(hsr_45E4)
+    BitVariableClear(RA-Bool[0x10])
+  }
+}

@@ -1,0 +1,46 @@
+[RunTurnR] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xB: MAIN {
+}
+
+Subaction 0xB: MAIN EXIT {
+}
+
+Subaction 0xB: MAIN INIT {
+}
+
+Subaction 0xB: GFX {
+}
+
+Subaction 0xB: GFX EXIT {
+}
+
+Subaction 0xB: GFX INIT {
+}
+
+Subaction 0xB: SFX {
+  AsynchronousTimer(1.0)
+  SoundEffect(9268)
+  SynchronousTimer(5.0)
+  SoundEffect(9268)
+  SynchronousTimer(5.0)
+  SoundEffect(9268)
+  SynchronousTimer(5.0)
+  SoundEffect(9268)
+}
+
+Subaction 0xB: SFX EXIT {
+}
+
+Subaction 0xB: SFX INIT {
+}
+

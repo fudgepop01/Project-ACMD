@@ -1,0 +1,4 @@
+[hsr_15960]
+hidden_subroutine_0x15960 {
+  OffensiveCollision(Sp(32, 0), 2, 0, Sp(0, 40), Sp(5, 8), 1.6, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 948112963)
+}

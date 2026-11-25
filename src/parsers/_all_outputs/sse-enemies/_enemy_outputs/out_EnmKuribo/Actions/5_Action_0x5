@@ -1,0 +1,19 @@
+Action 0x5: MAIN {
+}
+
+Action 0x5: EXIT {
+}
+
+Action 0x5: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  SubRoutine(hidden_subroutine_0x3E8)
+  if (R(Facing Left())) {
+    SubAction09(12)
+  }
+  if (R(Facing Right())) {
+    SubAction09(13)
+  }
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 17)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 23)
+}
+

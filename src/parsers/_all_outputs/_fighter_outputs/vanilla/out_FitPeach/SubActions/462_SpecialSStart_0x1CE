@@ -1,0 +1,29 @@
+[SpecialSStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1CE: MAIN {
+}
+
+Subaction 0x1CE: GFX {
+  GraphicEffectLanding(15, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x1CE: SOUND {
+  AsynchronousTimer(5.0)
+  SoundEffectTransient(1473)
+  SoundEffect(115)
+  SynchronousTimer(15.0)
+  SoundEffect(113)
+}
+
+Subaction 0x1CE: OTHER {
+}
+

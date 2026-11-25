@@ -1,0 +1,11 @@
+[hsr_F688]
+hidden_subroutine_0xF688 {
+  AsynchronousTimer(1.0)
+  SubRoutine(hsr_F5F0)
+  AsynchronousTimer(3.0)
+  SubRoutine(hsr_F610)
+  BodyCollision(2)
+  AsynchronousTimer(23.0)
+  BodyCollision(0)
+  Return()
+}

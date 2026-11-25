@@ -1,0 +1,14 @@
+// Status_Attack_Lw3
+[statusAnimCmd_AttackLw3]
+Action 0x29: ENTRY {
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(18, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  InvertActionStatusId(8, 10051)
+  ChangeSubAction(85)
+}
+
+Action 0x29 : EXIT {
+}

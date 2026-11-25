@@ -1,0 +1,18 @@
+[hsr_124C]
+hidden_subroutine_0x124C {
+  (undef: targetSearch) 16_00_00_00()
+  SubRoutine(hidden_subroutine_0x8C4)
+  (undef: Sp_Area) 69_08_02_00(Variable_Int_Controller_Flick_No_Reset_Y, LA-Float[0x05])
+  (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE6], LA-Float[0x07])
+  if (R(Compare(LA-Float[0x05] < LA-Float[0x07]))) {
+    FloatVariableSet(LA-Float[0x07], LA-Float[0x05])
+  } else {
+    (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE7], LA-Float[0x07])
+    if (R(Compare(LA-Float[0x05] > LA-Float[0x07]))) {
+      FloatVariableSet(LA-Float[0x07], LA-Float[0x05])
+    }
+  }
+  TeleportationStageBased(LA-Float[0x05], Variable_Float_Posture_Pos_Y, Variable_Float_Posture_Pos_Z)
+  CharacterSpecific01()
+  Return()
+}

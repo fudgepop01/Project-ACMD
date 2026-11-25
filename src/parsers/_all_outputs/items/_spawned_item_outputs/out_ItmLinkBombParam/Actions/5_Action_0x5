@@ -1,0 +1,19 @@
+// Status_Run_Brake
+Action 0x5 {
+  SubRoutine(hidden_subroutine_0x204)
+  DisableActionStatusId(5)
+
+  ChangeAction(7, R(In walljump situation()), 255)
+  AdditionalRequirement(R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed_X > 0.7)))
+
+  if (R(Compare(LA-Int[0x0B] < 96.0))) {
+    ChangeSubAction(6, false)
+    FrameSpeedModifier(2.0)
+  } else {
+    ChangeAction(5, R(Compare(LA-Int[0x0B] < 96.0)))
+  }
+  SubRoutine(hidden_subroutine_0x190)
+  ChangeAction(7, R(Bit is Set(RA-Bool[0x05])))
+  ChangeAction(4, R(On Ground()))
+}
+

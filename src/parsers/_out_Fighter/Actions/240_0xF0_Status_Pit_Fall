@@ -1,0 +1,12 @@
+// Status_Pit_Fall
+Action 0xF0: ENTRY {
+  PassThroughFloorIfPossible_UNDOC0ARGS()
+  SetStateAerial()
+  SetAirGround(75)
+  ChangeAction(74, R(On Ground()))
+  ChangeAction(14, R(Animation End()))
+}
+
+Action 0xF0 : EXIT {
+  SuperHeavyArmor(0, 0.0)
+}

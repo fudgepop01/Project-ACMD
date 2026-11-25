@@ -1,0 +1,27 @@
+[Wait3] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x2: MAIN {
+}
+
+Subaction 0x2: GFX {
+}
+
+Subaction 0x2: SOUND {
+}
+
+Subaction 0x2: OTHER {
+  AsynchronousTimer(36.0)
+  SlopeContourStand(0)
+  AsynchronousTimer(40.0)
+  AsynchronousTimer(61.0)
+}
+

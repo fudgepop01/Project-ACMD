@@ -1,0 +1,8 @@
+// Status_Big
+Action 0xF2: ENTRY {
+  SubRoutine(hidden_subroutine_0x1F47C)
+}
+
+Action 0xF2 : EXIT {
+  SubRoutine(hidden_subroutine_0x1F5A4)
+}

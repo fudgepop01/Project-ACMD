@@ -1,0 +1,8 @@
+[hsr_342C]
+hidden_subroutine_0x342C {
+  BitVariableClear(LA-Bool[0x0B])
+  SubRoutine(hidden_subroutine_0x1710)
+  (undef: Sp_AI) 6A_00_01_00(70)
+  (undef: Sp_AI) 6A_00_01_00(69)
+  Return()
+}

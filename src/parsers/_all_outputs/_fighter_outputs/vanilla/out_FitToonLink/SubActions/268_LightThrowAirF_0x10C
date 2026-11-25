@@ -1,0 +1,28 @@
+[LightThrowAirF] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x10C: MAIN {
+  Goto(Subaction_0x108 : MAIN)
+}
+
+Subaction 0x10C: GFX {
+}
+
+Subaction 0x10C: SOUND {
+  LowVoiceClip()
+}
+
+Subaction 0x10C: OTHER {
+  ModelChanger(2, 1)
+  AsynchronousTimer(19.0)
+  ModelChanger(2, 0)
+}
+

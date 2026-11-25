@@ -1,0 +1,5 @@
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 1 : 0
+
+LA-Int[0x0B] in hsr_B0 @ 0 : 1
+
+RA-Bool[0x05] in hsr_110 @ 0 : 3

@@ -1,0 +1,36 @@
+IC-Int[0x08] ("Variable_Float_Posture_Lr") in Action 0xA (Status_Jump_Squat) @ 6 : 1
+
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in Action 0x8 (Status_Turn_Run) @ 5 : 2
+
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 0 : 1
+LA-Int[0x00] in Action 0x8 (Status_Turn_Run) @ 1 : 1
+LA-Int[0x00] in Action 0xA (Status_Jump_Squat) @ 13 : 1
+LA-Int[0x00] in Action 0xA (Status_Jump_Squat) @ 19 : 1
+LA-Int[0x00] in Action 0xA (Status_Jump_Squat) @ 20 : 1
+
+LA-Int[0x01] in Action 0x4 (Status_Run) @ 7 : 1
+LA-Int[0x01] in Action 0x9 (Status_Turn_Run_Brake) @ 5 : 1
+LA-Int[0x01] in Action 0x9 (Status_Turn_Run_Brake) @ 7 : 1
+LA-Int[0x01] in Action 0xA (Status_Jump_Squat) @ 24 : 1
+
+LA-Int[0x02] in hsr_D0 @ 5 : 1
+LA-Int[0x02] in hsr_D0 @ 12 : 1
+LA-Int[0x02] in hsr_D0 @ 13 : 1
+LA-Int[0x02] in hsr_D0 @ 15 : 1
+
+LA-Int[0x03] in hsr_D0 @ 1 : 1
+LA-Int[0x03] in hsr_D0 @ 3 : 1
+LA-Int[0x03] in hsr_D0 @ 5 : 3
+
+LA-Int[0x0B] in Action 0x9 (Status_Turn_Run_Brake) @ 1 : 1
+
+LA-Int[0x1B] in Subaction 0x3 : SOUND @ 0 : 1
+
+LA-Float[0x00] in Action 0xA (Status_Jump_Squat) @ 5 : 1
+LA-Float[0x00] in Action 0xA (Status_Jump_Squat) @ 7 : 1
+LA-Float[0x00] in Action 0xA (Status_Jump_Squat) @ 9 : 1
+LA-Float[0x00] in Action 0xA (Status_Jump_Squat) @ 12 : 2
+
+LA-Float[0x01] in Action 0xA (Status_Jump_Squat) @ 5 : 2
+LA-Float[0x01] in Action 0xA (Status_Jump_Squat) @ 11 : 1
+LA-Float[0x01] in Action 0xA (Status_Jump_Squat) @ 12 : 3

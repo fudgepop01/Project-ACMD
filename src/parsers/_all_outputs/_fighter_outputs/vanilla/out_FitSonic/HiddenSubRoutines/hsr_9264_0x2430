@@ -1,0 +1,19 @@
+[hsr_2430]
+hidden_subroutine_0x2430 {
+  ModelChanger(1, 1)
+  ModelChanger(0, -1)
+  BoneCollision(31, 3)
+  BoneCollision(49, 3)
+  BoneCollision(50, 3)
+  BoneCollision(65, 3)
+  BoneCollision(34, 3)
+  BoneCollision(66, 3)
+  BoneCollision(35, 3)
+  BoneCollision(26, 3)
+  BoneCollision(22, 3)
+  BoneCollision(27, 3)
+  BoneCollision(23, 3)
+  BoneCollision(28, 3)
+  BoneCollision(24, 3)
+  BoneCollision(19, 0)
+}

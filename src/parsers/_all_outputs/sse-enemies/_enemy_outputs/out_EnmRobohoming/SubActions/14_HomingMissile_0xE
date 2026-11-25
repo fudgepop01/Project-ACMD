@@ -1,0 +1,47 @@
+[HomingMissile] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xE: MAIN {
+  SynchronousTimer(24.0)
+  (undef: Sp_base) 65_0E_01_00(IC-Int[0xABE4])
+  (undef: Sp_Link) 6E_00_03_00(0, 5103, 25)
+}
+
+Subaction 0xE: MAIN EXIT {
+}
+
+Subaction 0xE: MAIN INIT {
+}
+
+Subaction 0xE: GFX {
+  AsynchronousTimer(24.0)
+  GraphicEffectAttached(73, 50, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.3, false)
+  GraphicEffect(11, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0xE: GFX EXIT {
+}
+
+Subaction 0xE: GFX INIT {
+}
+
+Subaction 0xE: SFX {
+  SoundEffect(9574)
+  SynchronousTimer(25.0)
+  SoundEffect(9572)
+}
+
+Subaction 0xE: SFX EXIT {
+}
+
+Subaction 0xE: SFX INIT {
+}
+

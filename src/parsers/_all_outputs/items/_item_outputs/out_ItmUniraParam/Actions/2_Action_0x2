@@ -1,0 +1,6 @@
+// Status_Walk_Brake
+Action 0x2 {
+  BitVariableClear(LA-Bool[0x0C])
+  BodyCollision(3)
+}
+

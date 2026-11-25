@@ -1,0 +1,21 @@
+// Status_Adv_Follow
+Action 0xF6: ENTRY {
+  (undef: item_manage) 1F_11_01_00(2)
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+  ChangeSubAction(-1)
+  DetachAttachCameraFar(false)
+  SetGimmickEffectFlag(false)
+  Visibility(false)
+  BodyCollision(3)
+  NothingDueToBug(false)
+  DisableMagifyingGlass()
+  Module1901()
+  HavokPhysicsDisable()
+}
+
+Action 0xF6 : EXIT {
+  DetachAttachCameraFar(true)
+  Visibility(true)
+  BodyCollision(0)
+}

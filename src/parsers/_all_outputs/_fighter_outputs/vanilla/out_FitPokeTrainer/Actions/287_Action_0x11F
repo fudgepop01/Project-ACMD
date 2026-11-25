@@ -1,0 +1,13 @@
+Action 0x11F: ENTRY {
+  ChangeAction(291, R(0x4E23()))
+  ChangeAction(285, R(0x4E22()))
+
+  ChangeAction(283, R(In Air()))
+  AdditionalRequirement(R(NOT Bit is Set(LA-Bool[0x42])))
+
+  ChangeAction(282, R(In Air()))
+}
+
+Action 0x11F : EXIT {
+  RotateCharacterModel(0.0, 0.0, 0.0)
+}

@@ -1,0 +1,77 @@
+[SpecialS4Lw] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1DE: MAIN {
+  AsynchronousTimer(12.0)
+  SetLoop(4) {
+    SpecialOffensiveCollision(Sp(65, 0), 2, 80, Sp(0, 40), Sp(1, 2), 3.0, 0.0, 0.0, 1.0, 0.0, 0.5, 1.0, 847447618, 0, 5242819)
+    SpecialOffensiveCollision(Sp(65, 1), 2, 80, Sp(0, 40), Sp(1, 2), 3.0, 0.0, 0.0, 6.0, 0.0, 0.5, 1.0, 847447618, 0, 5242819)
+    SpecialOffensiveCollision(Sp(61, 2), 2, 80, Sp(0, 40), Sp(0, 2), 3.0, 0.0, 0.0, 0.0, 0.0, 0.5, 1.0, 847447618, 0, 5242819)
+    SpecialOffensiveCollision(Sp(34, 3), 2, 80, Sp(0, 40), Sp(0, 2), 2.0, 0.0, 0.0, 0.0, 0.0, 0.5, 1.0, 847447618, 0, 5242819)
+    SynchronousTimer(2.0)
+    TerminateCollisions()
+    SynchronousTimer(4.0)
+  }
+  AsynchronousTimer(36.0)
+  SpecialOffensiveCollision(Sp(65, 0), 3, 361, Sp(0, 120), Sp(1, 60), 5.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 847450242, 0, 5242819)
+  SpecialOffensiveCollision(Sp(65, 1), 5, 361, Sp(0, 120), Sp(1, 60), 4.0, 0.0, 0.0, 6.0, 0.0, 1.0, 1.0, 847450242, 0, 5242819)
+  SpecialOffensiveCollision(Sp(61, 2), 3, 361, Sp(0, 120), Sp(0, 60), 3.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 847450242, 0, 5242819)
+  SpecialOffensiveCollision(Sp(34, 3), 3, 361, Sp(0, 120), Sp(0, 60), 2.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 847450242, 0, 5242819)
+  AsynchronousTimer(38.0)
+  TerminateCollisions()
+}
+
+Subaction 0x1DE: GFX {
+  AsynchronousTimer(10.0)
+  SwordGlow(27, 4, 65, 0.0, 0.0, 1.6, 65, 0.0, 0.0, 10.75, true, 1179649, 65, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  GraphicEffectLanding(33, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(18.0)
+  SetLoop(4) {
+    GraphicEffectStepping(10, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+    SynchronousTimer(6.0)
+  }
+  AsynchronousTimer(48.0)
+  TerminateSwordGlow(1)
+  SetLoop(-1) {
+    GraphicEffectStepping(26, 0, 5.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 15.0, 0.0, 4.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x1DE: SOUND {
+  AsynchronousTimer(12.0)
+  SoundEffect(168)
+  SoundEffect(4444)
+  SoundEffect(1704)
+  SynchronousTimer(6.0)
+  SoundEffect(168)
+  SoundEffect(4444)
+  SynchronousTimer(6.0)
+  SoundEffect(168)
+  SoundEffect(4444)
+  SynchronousTimer(6.0)
+  SoundEffect(168)
+  SoundEffect(4444)
+  SynchronousTimer(6.0)
+  SoundEffect(168)
+  SoundEffect(4444)
+}
+
+Subaction 0x1DE: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(11.0)
+  Rumble(16, 0)
+  AsynchronousTimer(23.0)
+  Rumble(16, 0)
+  AsynchronousTimer(36.0)
+  Rumble(16, 0)
+  AsynchronousTimer(23.0)
+  Rumble(12, 0)
+}
+

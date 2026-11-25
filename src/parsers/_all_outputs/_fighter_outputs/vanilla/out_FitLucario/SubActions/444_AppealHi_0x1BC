@@ -1,0 +1,59 @@
+[AppealHi] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1BC: MAIN {
+  AsynchronousTimer(20.0)
+  CreateAestheticWindEffects(0, 0.6, 100.0, 2.0, 0.1, 0.0, 15.0, 30.0, 30.0, 50)
+  BasicVariableIncrement(LA-Int[0x35])
+  SetLoop(-1) {
+    FlashOverlayEffect(70, 102, 230, 128)
+    ChangeFlashOverlayColor(40, 255, 255, 255, 0)
+    if (R(Compare(LA-Float[0x1B] < 130.0))) {
+      FloatVariableSet(LA-Float[0x1B], LA-Float[0x36])
+      FloatVariableAdd(5.0, LA-Float[0x1B])
+      AddSubtractDamage(3.0)
+      SubRoutine(hidden_subroutine_0x23C80)
+      SubRoutine(Subaction_0x3 : MAIN)
+    }
+    SynchronousTimer(40.0)
+    if (R(Button Not Pressed(UTaunt))) {
+      TerminateFlashEffect()
+      LoopBreak()
+    }
+    SetAnimationFrame(21.0)
+    SubRoutine(hidden_subroutine_0xC160)
+  }
+  TerminateWindEffect(0)
+  SynchronousTimer(19.0)
+  AllowInterrupt()
+}
+
+Subaction 0x1BC: GFX {
+  AsynchronousTimer(20.0)
+  SetLoop(10) {
+    GraphicEffectAttached(2228241, -2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  }
+}
+
+Subaction 0x1BC: SOUND {
+  AsynchronousTimer(20.0)
+  SoundEffect(5732)
+  SoundEffect(2361)
+}
+
+Subaction 0x1BC: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(16.0)
+  SlopeContourStand(0)
+  AsynchronousTimer(65.0)
+  SlopeContourStand02(0, 6)
+}
+

@@ -1,0 +1,20 @@
+// Status_Walk_Brake
+Action 0x2 {
+  Switch(10000, Variable_Int_Motion_Kind)
+    Case(8)
+      SetRequirement(R(Animation End()))
+      LoadRest()
+      if (R(Compare(LA-Int[0x00] > 0.0))) {
+        ChangeSubAction(7)
+      } else {
+        ChangeSubAction(10)
+      }
+    Case(9)
+      SetRequirement(R(Animation End()))
+      LoadRest()
+      ChangeSubAction(1)
+    DefaultCase()
+      ChangeSubAction(1)
+  EndSwitch()
+}
+

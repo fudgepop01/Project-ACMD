@@ -1,0 +1,65 @@
+[SpecialLwShoot] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1E8: MAIN {
+  ArticleVisibility(4, false)
+  BodyCollision(2)
+  AsynchronousTimer(1.0)
+  OffensiveCollision(Sp(0, 0), 1, 361, Sp(0, 80), Sp(0, 30), 3.36, 0.0, 8.0, 12.0, 0.0, 1.0, 1.0, 939721856)
+  ArticleVisibility(4, true)
+  AsynchronousTimer(6.0)
+  BodyCollision(0)
+  AsynchronousTimer(7.0)
+  OffensiveCollision(Sp(0, 0), 1, 361, Sp(0, 80), Sp(0, 30), 4.8, 0.0, 9.2, 20.0, 0.0, 1.0, 1.0, 939721856)
+  AsynchronousTimer(14.0)
+  OffensiveCollision(Sp(0, 0), 1, 361, Sp(0, 80), Sp(0, 30), 8.16, 0.0, 6.8, 32.0, 0.0, 1.0, 1.0, 939721856)
+  AsynchronousTimer(26.0)
+  TerminateCollisions()
+}
+
+Subaction 0x1E8: GFX {
+}
+
+Subaction 0x1E8: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(4484)
+  SynchronousTimer(2.0)
+  SoundEffect(4484)
+  SynchronousTimer(2.0)
+  SoundEffect(4484)
+  SynchronousTimer(2.0)
+  SoundEffect(4484)
+  SynchronousTimer(2.0)
+  SoundEffect(4484)
+  SynchronousTimer(2.0)
+  SoundEffect(4484)
+  SynchronousTimer(2.0)
+  SoundEffect(4484)
+  SynchronousTimer(2.0)
+  SoundEffect(4484)
+  SynchronousTimer(2.0)
+  SoundEffect(4484)
+  SynchronousTimer(2.0)
+  SoundEffect(4484)
+  SynchronousTimer(2.0)
+  SoundEffect(4484)
+  SynchronousTimer(2.0)
+  SoundEffect(4484)
+  SynchronousTimer(2.0)
+  SoundEffect(4484)
+}
+
+Subaction 0x1E8: OTHER {
+  HeldItemsVisibility(false)
+  AsynchronousTimer(6.0)
+  Rumble(5, 0)
+}
+

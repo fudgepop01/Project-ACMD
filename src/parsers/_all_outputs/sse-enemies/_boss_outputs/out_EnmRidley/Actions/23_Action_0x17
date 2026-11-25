@@ -1,0 +1,30 @@
+Action 0x17: MAIN {
+}
+
+Action 0x17: EXIT {
+}
+
+Action 0x17: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(9)
+  BasicVariableSet(24, LA-Int[0x06])
+  (undef: Sp_base) 65_09_02_00(IC-Int[0xABE3], LA-Float[0x02])
+  SubRoutine(hidden_subroutine_0x5CC)
+  if (R(0x2742())) {
+    (undef: Sp_Area) 69_07_02_00(0, LA-Float[0x05])
+  } else {
+    FloatVariableSet(0.0, LA-Float[0x05])
+  }
+  (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE7], LA-Float[0x0A])
+  if (R(Compare(LA-Float[0x05] > LA-Float[0x0A]))) {
+    FloatVariableSet(LA-Float[0x0A], LA-Float[0x05])
+  } else {
+    (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE8], LA-Float[0x0A])
+    if (R(Compare(LA-Float[0x05] < LA-Float[0x0A]))) {
+      FloatVariableSet(LA-Float[0x0A], LA-Float[0x05])
+    }
+  }
+  TeleportationStageBased(LA-Float[0x05], Variable_Float_Posture_Pos_Y, Variable_Float_Posture_Pos_Z)
+  CharacterSpecific01()
+}
+

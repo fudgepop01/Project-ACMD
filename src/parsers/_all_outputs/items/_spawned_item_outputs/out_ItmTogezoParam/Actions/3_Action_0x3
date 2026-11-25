@@ -1,0 +1,10 @@
+// Status_Dash
+Action 0x3 {
+  if (R(Compare(LA-Int[0x00] == 1.0))) {
+    BasicVariableSet(2, LA-Int[0x00])
+    (undef: motion) 04_10_02_00(0, 3)
+    ChangeSubAction(1)
+  }
+  ChangeAction(4, R(On Ground()))
+}
+

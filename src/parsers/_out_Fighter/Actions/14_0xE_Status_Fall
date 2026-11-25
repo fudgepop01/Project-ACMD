@@ -1,0 +1,21 @@
+// Status_Fall
+[statusAnimCmd_Fall]
+Action 0xE: ENTRY {
+
+  ChangeActionStatus:01(10043, 11, R(Button Press(Jump)))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x10])))
+  AdditionalRequirement(R(Compare(RA-Int[0x03] <= Common_Param_Int_Jump_Flick_Y)))
+
+  ChangeActionStatus:01(10042, 11, R(Compare(Variable_Float_Controller_Stick_Y >= Common_Param_Float_Jump_Run_Stick_Y)))
+  AdditionalRequirement(R(Compare(Variable_Int_Controller_Flick_Y < Common_Param_Int_Jump_Initial_Frame)))
+  AdditionalRequirement(R(Tap Jump On & C-Stick not Held()))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x10])))
+  AdditionalRequirement(R(Compare(RA-Int[0x03] <= Common_Param_Int_Jump_Flick_Y)))
+
+  SubRoutine(statusAnimCmd_AIRChkFallCommon)
+  ChangeSubAction(32)
+  ConcurrentInfiniteLoop(I(9), statusAnimCmd_FALLCommonUniq)
+}
+
+Action 0xE : EXIT {
+}

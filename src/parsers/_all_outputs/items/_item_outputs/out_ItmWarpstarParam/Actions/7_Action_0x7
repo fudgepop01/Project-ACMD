@@ -1,0 +1,10 @@
+// Status_Turn_Dash
+Action 0x7 {
+  (undef: Sp_base) 65_1F_01_00(0)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false, false, false)
+  ChangeSubAction(4)
+  Screenshake(2)
+  SynchronousTimer(1.0)
+  ChangeAction(6, R(Button Tap?()))
+}
+

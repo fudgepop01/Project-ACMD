@@ -1,0 +1,15 @@
+Action 0x11B: ENTRY {
+  SetGimmickEffectFlag(false)
+  ChangeSubAction(483)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  if (R(On Ground())) {
+    ChangeAction(0, R(Button Tap?()))
+  } else {
+    ChangeAction(14, R(Button Tap?()))
+  }
+}
+
+Action 0x11B : EXIT {
+  ExitFinalSmashState()
+}

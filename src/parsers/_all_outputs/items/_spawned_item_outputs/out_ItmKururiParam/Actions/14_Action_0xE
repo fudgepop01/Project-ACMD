@@ -1,0 +1,22 @@
+// Status_Fall
+Action 0xE {
+  ChangeAction(3, R(In Air()))
+  DisableActionStatusId(14)
+  SubRoutine(hidden_subroutine_0x240)
+  if (R(Compare(LA-Int[0x0B] > 100.0))) {
+    if (R(NOT On a Passable Floor())) {
+      SetAerialOrOnstage(3)
+    }
+    (undef: Sp_Kinetic) 66_02_02_00(0.25, 0.0)
+    ChangeSubAction(6)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ReverseDirection()
+    DecideDirection()
+    CharacterSpecific01()
+    ChangeAction(12, R(Button Tap?()))
+  } else {
+    ChangeAction(9, R(Button Tap?()))
+  }
+}
+

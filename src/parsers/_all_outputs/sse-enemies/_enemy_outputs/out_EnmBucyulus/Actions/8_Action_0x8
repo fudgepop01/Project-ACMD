@@ -1,0 +1,20 @@
+Action 0x8: MAIN {
+}
+
+Action 0x8: EXIT {
+}
+
+Action 0x8: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(18)
+  (undef: Sp_AI) 6A_00_01_00(12)
+  if (R(NOT Bit is Set(LA-Bool[0x06]))) {
+    (undef: Sp_AI) 6A_00_01_00(20)
+    BitVariableSet(LA-Bool[0x06])
+  }
+  SubAction09(14)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 15)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 16)
+  (undef: Sp_base) 65_04_01_00(0)
+}
+

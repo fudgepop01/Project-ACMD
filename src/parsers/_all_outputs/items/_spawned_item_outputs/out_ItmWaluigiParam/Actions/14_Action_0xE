@@ -1,0 +1,23 @@
+// Status_Fall
+Action 0xE {
+  ChangeAction(6, R(In Air()))
+  (undef: Sp_Kinetic) 66_02_02_00(0.1, 0.0)
+  (undef: Sp_base) 65_07_01_00(2)
+  ChangeSubAction(6)
+  SetLoop(90) {
+    If_UNDOC5ARGS(R(Is falling+hit down()), -11.0, -8.0, 12.0, 11.0)
+    LoopBreak()
+  }
+  SynchronousTimer(1.0)
+}
+SubRoutine(hidden_subroutine_0xB4)
+if (R(Is within footstool range())) {
+  ChangeSubAction(7)
+} else {
+  ChangeSubAction(8)
+}
+SetRequirement(R(Animation End()))
+LoadRest()
+ChangeAction(6, R(Button Tap?()))
+}
+

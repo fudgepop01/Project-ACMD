@@ -1,0 +1,7 @@
+[hsr_410]
+hidden_subroutine_0x410 {
+  (undef: Sp_AI) 6A_00_01_00(14)
+  (undef: Sp_AI) 6A_00_01_00(12)
+  (undef: Sp_AI) 6A_00_01_00(13)
+  Return()
+}

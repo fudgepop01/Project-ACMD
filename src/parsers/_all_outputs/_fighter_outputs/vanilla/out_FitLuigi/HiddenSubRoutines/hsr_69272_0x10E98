@@ -1,0 +1,8 @@
+[hsr_10E98]
+hidden_subroutine_0x10E98 {
+  OffensiveCollision(Sp(0, 0), 1, 361, Sp(0, 80), Sp(0, 1), 4.8, 0.0, 8.0, 8.0, 0.0, 0.3, 1.6, 956506688)
+  OffensiveCollision(Sp(20, 1), 1, 361, Sp(0, 80), Sp(0, 1), 3.84, 0.0, 0.0, 0.0, 0.0, 0.3, 1.6, 956506688)
+  SynchronousTimer(1.0)
+  TerminateCollisions()
+  Return()
+}

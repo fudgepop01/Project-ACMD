@@ -1,0 +1,34 @@
+[Wait1] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x0: MAIN {
+  if (R(Compare(LA-Int[0x35] <= 0.0))) {
+    FloatVariableSet(65.0, LA-Int[0x1B])
+  }
+  if (R(Compare(Variable_Int_Status_Kind == 190.0))) {
+    BitVariableClear(LA-Bool[0x42])
+    BitVariableClear(LA-Bool[0x46])
+  }
+  SubRoutine(Subaction_0x3 : MAIN)
+  BitVariableSet(LA-Bool[0x3F])
+  BitVariableSet(LA-Bool[0x43])
+}
+
+Subaction 0x0: GFX {
+}
+
+Subaction 0x0: SOUND {
+}
+
+Subaction 0x0: OTHER {
+  SlopeContourStand(6)
+}
+

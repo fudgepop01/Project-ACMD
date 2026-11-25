@@ -1,0 +1,4 @@
+// @ 0x23C24
+DamageSongStart {
+  SubRoutine(hidden_subroutine_0x5AC4)
+}

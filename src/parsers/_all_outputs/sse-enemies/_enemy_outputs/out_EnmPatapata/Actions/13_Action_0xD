@@ -1,0 +1,18 @@
+Action 0xD: MAIN {
+}
+
+Action 0xD: EXIT {
+  (undef: Sp_Kinetic) 66_05_01_00(-1)
+}
+
+Action 0xD: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(16)
+  SubAction09(0)
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 5.0))) {
+    (undef: Sp_Kinetic) 66_02_04_00(5, 15, IC-Int[0xA028], false)
+  }
+  (undef: Sp_Kinetic) 66_04_01_00(-1)
+  BasicVariableSet(Variable_Int_Status_Prev_Kind, LA-Int[0x06])
+}
+

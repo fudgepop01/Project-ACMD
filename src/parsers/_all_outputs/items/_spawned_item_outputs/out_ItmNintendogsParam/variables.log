@@ -1,0 +1,7 @@
+IC-Int[0x03] ("Variable_Float_Posture_Pos_X") in Action 0x6 (Status_Turn) @ 3 : 2
+
+IC-Int[0x04] ("Variable_Float_Posture_Pos_Y") in Action 0x6 (Status_Turn) @ 3 : 3
+
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x6 (Status_Turn) @ 1 : 1
+
+LA-Int[0x1B] in Subaction 0x0 : SOUND @ 0 : 1

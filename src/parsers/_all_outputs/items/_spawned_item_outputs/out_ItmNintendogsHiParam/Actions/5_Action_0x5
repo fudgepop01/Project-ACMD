@@ -1,0 +1,27 @@
+// Status_Run_Brake
+Action 0x5 {
+  BasicVariableSet(-1, RA-Int[0x00])
+  SetLoop(3) {
+    ChangeAction(7, R(0x2720()))
+    BasicVariableRandom(0, 3, RA-Int[0x00])
+    if (R(Compare(RA-Int[0x00] == Variable_Int_Motion_Kind))) {
+      if (R(Compare(RA-Int[0x00] >= 2.0))) {
+        BasicVariableSet(0, RA-Int[0x00])
+      } else {
+        BasicVariableIncrement(RA-Int[0x00])
+      }
+    }
+    Switch(10000, RA-Int[0x00])
+      Case(0)
+        ChangeSubAction(1)
+      Case(1)
+        ChangeSubAction(2)
+      Case(2)
+        ChangeSubAction(3)
+    EndSwitch()
+    SetRequirement(R(Animation End()))
+    LoadRest()
+  }
+  ChangeAction(7, R(Button Tap?()))
+}
+

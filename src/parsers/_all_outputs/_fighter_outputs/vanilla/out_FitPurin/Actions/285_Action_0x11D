@@ -1,0 +1,8 @@
+Action 0x11D: ENTRY {
+  ChangeAction(25, R(On Ground()))
+  ChangeSubAction(480)
+  FrameSpeedModifier(0.0)
+}
+
+Action 0x11D : EXIT {
+}

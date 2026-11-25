@@ -1,0 +1,22 @@
+// Status_Jump
+Action 0xB {
+  ChangeAction(3, R(In Air()))
+  SynchronousTimer(60.0)
+  (undef: Sp_Kinetic) 66_02_02_00(0.5, 0.0)
+  (undef: Sp_base) 65_07_01_00(2)
+  if (R(NOT 2714(1))) {
+    ReverseDirection()
+    DecideDirection()
+    CharacterSpecific01()
+  }
+  FloatVariableSet(Variable_Float_Posture_Pos_Y, LA-Float[0x08])
+  SetLoop(4) {
+    (undef: motion) 04_10_02_00(0, 3)
+    SynchronousTimer(5.0)
+    (undef: motion) 04_10_02_00(0, 2)
+    SynchronousTimer(5.0)
+    BasicVariableSet(1, LA-Int[0x00])
+  }
+  ChangeAction(8, R(On Ground()))
+}
+

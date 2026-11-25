@@ -1,0 +1,57 @@
+Action 0x120: ENTRY {
+
+  ChangeAction(289, R(Animation End()))
+  AdditionalRequirement(R(Compare(RA-Int[0x00] <= 0.0)))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x11])))
+
+  ChangeAction(287, R(Animation End()))
+
+  ChangeActionStatus(10037, 30, R(Compare(Variable_Float_Controller_Stick_Y <= Common_Param_Float_Escape_Stick_Y)))
+  AdditionalRequirement(R(Compare(Variable_Int_Controller_Flick_Y < Common_Param_Int_Escape_Flick_Y)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus(10038, 31, R(Compare(Variable_Float_Controller_Stick_X_Lr >= Common_Param_Float_Escape_Fb_Stick_X)))
+  AdditionalRequirement(R(Compare(IC-Int[0x5209] < Common_Param_Int_Escape_Fb_Flick_X)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus(10039, 32, R(Compare(Variable_Float_Controller_Stick_X_Lr_Rv >= Common_Param_Float_Escape_Fb_Stick_X)))
+  AdditionalRequirement(R(Compare(IC-Int[0x5209] < Common_Param_Int_Escape_Fb_Flick_X)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus(10043, 10, R(Button Press(Jump)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus(10042, 10, R(Compare(Variable_Float_Controller_Stick_Y >= Common_Param_Float_Jump_Stick_Y)))
+  AdditionalRequirement(R(Compare(Variable_Int_Controller_Flick_Y < Common_Param_Int_Jump_Initial_Frame)))
+  AdditionalRequirement(R(Button Pressed(RETURN TRUE)))
+  AdditionalRequirement(R(On Ground()))
+
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x19400)
+  BitVariableClear(RA-Bool[0x10])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      SetAirGround(6)
+      if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(483, false)
+      } else {
+        ChangeSubAction(483, true)
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetAirGround(105)
+      if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(487, false)
+      } else {
+        ChangeSubAction(487, true)
+      }
+      SetRequirement(R(On Ground()))
+    }
+    BitVariableSet(RA-Bool[0x10])
+    LoadRest()
+  }
+}
+
+Action 0x120 : EXIT {
+}

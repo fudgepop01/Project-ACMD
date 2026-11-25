@@ -1,0 +1,30 @@
+Action 0x116: ENTRY {
+  EnterFinalSmashState()
+  SetGimmickEffectFlag(false)
+  BasicVariableSet(481, LA-Int[0x40])
+  BasicVariableSet(483, LA-Int[0x41])
+  BitVariableClear(LA-Bool[0x3D])
+  ChangeAction(286, R(Animation End()))
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      Module0900(0)
+      SetAerialOrOnstage(2)
+      SetAirGround(6)
+      SubRoutine(hidden_subroutine_0x16220)
+      SetRequirement(R(In Air()))
+    } else {
+      Module0900(2)
+      SetAerialOrOnstage(5)
+      SetAirGround(12)
+      SubRoutine(hidden_subroutine_0x16260)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x116 : EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 286.0)) && R(Compare(Variable_Int_Status_Kind != 287.0))) {
+    ExitFinalSmashState()
+  }
+}

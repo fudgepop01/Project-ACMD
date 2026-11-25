@@ -1,0 +1,4 @@
+[hsr_2DD4]
+hidden_subroutine_0x2DD4 {
+  SubRoutine(statusAnimCmd_AllowThrowItem)
+}

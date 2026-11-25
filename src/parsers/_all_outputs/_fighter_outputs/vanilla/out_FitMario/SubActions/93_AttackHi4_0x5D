@@ -1,0 +1,43 @@
+[AttackHi4] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x5D: MAIN {
+  AsynchronousTimer(2.0)
+  OffensiveCollision(Sp(39, 0), 14, 83, Sp(0, 90), Sp(0, 32), 5.0, 0.0, 2.5, 1.1, 0.0, 1.0, 1.0, 943915648)
+  OffensiveCollision(Sp(22, 1), 14, 83, Sp(0, 90), Sp(0, 32), 4.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 943915648)
+  BoneCollision(39, 2)
+  SynchronousTimer(6.0)
+  TerminateCollisions()
+  UndoBoneCollision(0)
+}
+
+Subaction 0x5D: GFX {
+  AsynchronousTimer(1.0)
+  GraphicEffectStepping(11, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x5D: SOUND {
+  AsynchronousTimer(1.0)
+  StopSoundEffect(105)
+  SoundEffect(385)
+  SynchronousTimer(1.0)
+  SoundEffect(168)
+  SoundEffect(55)
+}
+
+Subaction 0x5D: OTHER {
+  SlopeContourStand(0)
+  AsynchronousTimer(3.0)
+  Rumble(13, 0)
+  AsynchronousTimer(8.0)
+  SlopeContourStand02(6, 3)
+}
+

@@ -1,0 +1,5 @@
+// @ 0x12034
+CapturePulled {
+  ChangeActionStatus(10035, 62, R(Animation End()))
+  SubRoutine(statusAnimCmd_CapturePulledCommon)
+}

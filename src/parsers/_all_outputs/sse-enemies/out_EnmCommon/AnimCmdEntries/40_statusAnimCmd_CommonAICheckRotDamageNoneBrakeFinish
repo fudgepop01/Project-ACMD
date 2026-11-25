@@ -1,0 +1,5 @@
+// @ 0x40D0
+CommonAICheckRotDamageNoneBrakeFinish {
+  SubRoutine(statusAnimCmd_CommonAICheckEnergyEndMain)
+  Return()
+}

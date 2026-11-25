@@ -1,0 +1,5 @@
+[hsr_230F4]
+hidden_subroutine_0x230F4 {
+  FloatVariableSet(0.0, LA-Float[0x06])
+  FloatVariableSet(0.0, LA-Float[0x07])
+}

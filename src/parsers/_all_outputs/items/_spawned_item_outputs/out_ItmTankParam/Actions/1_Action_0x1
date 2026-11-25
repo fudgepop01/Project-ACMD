@@ -1,0 +1,21 @@
+// Status_Walk
+Action 0x1 {
+  Visibility(false)
+  SynchronousTimer(1.0)
+  if (R(Compare(Variable_Int_Controller_Flick_X_Dir == 171.0))) {
+    Visibility(true)
+    SubRoutine(hidden_subroutine_0x1A0)
+    (undef: Sp_base) 65_04_01_00(1400)
+    ChangeSubAction(0)
+    (undef: motion) 04_10_02_00(0, 5)
+    SetRequirement(R(0x27()), 0)
+    LoadRest()
+    ChangeAction(3, R(In Air()))
+    ChangeAction(4, R(On Ground()))
+  } else {
+    ChangeSubAction(3)
+    (undef: Sp_base) 65_05_01_00(200)
+    SubRoutine(hidden_subroutine_0x118)
+  }
+}
+

@@ -1,0 +1,11 @@
+[hsr_398]
+hidden_subroutine_0x398 {
+  ChangeSubAction(3)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  DisableActionStatusId(3)
+  FloatVariableRandom(1.5, 3.3, LA-Float[0x00])
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, LA-Float[0x00], 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+  ChangeAction(8, R(Button Tap?()))
+  Return()
+}

@@ -1,0 +1,16 @@
+// Status_Damage_Fly
+Action 0x45: ENTRY {
+
+  ChangeActionStatus(10005, 73, R(Animation End()))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x11])))
+
+  SubRoutine(hidden_subroutine_0x53DC)
+  SubRoutine(hidden_subroutine_0x3C34)
+  SubRoutine(hidden_subroutine_0x3D24)
+  SubRoutine(gameAnimCmd_DamageFlyIndirectNoReactionCommon)
+  AsynchronousTimer(3.0)
+  SubRoutine(gameAnimCmd_DamageFlyIndirectCommon)
+}
+
+Action 0x45 : EXIT {
+}

@@ -1,0 +1,31 @@
+Action 0x113: ENTRY {
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+  ChangeAction(284, R(Animation End()))
+  BitVariableClear(RA-Bool[0x10])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(468, true)
+      } else {
+        ChangeSubAction(468)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(471, true)
+      } else {
+        ChangeSubAction(471)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x113 : EXIT {
+}

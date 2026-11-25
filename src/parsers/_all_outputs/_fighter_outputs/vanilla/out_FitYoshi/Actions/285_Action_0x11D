@@ -1,0 +1,14 @@
+Action 0x11D: ENTRY {
+  ChangeSubAction(477)
+  SetAnimationFrame(20.0)
+  AllowSpecificInterrupt(AIR_CLIFF)
+
+  ChangeAction(287, R(On Ground()))
+  AdditionalRequirement(R(Compare(IC-Int[0x3EA] <= 0.0)))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x10])))
+
+  BitVariableSet(RA-Bool[0x11])
+}
+
+Action 0x11D : EXIT {
+}

@@ -1,0 +1,11 @@
+// Status_Swim_Drown
+Action 0xBB: ENTRY {
+  BasicVariableSet(0, RA-Int[0x01])
+  ChangeAction(188, R(Compare(RA-Int[0x01] > Common_Param_Int_Swim_Drown_Out_Frame)))
+  SubRoutine(hidden_subroutine_0x7BA4)
+  ChangeSubAction(245)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x7C6C)
+}
+
+Action 0xBB : EXIT {
+}

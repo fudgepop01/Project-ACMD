@@ -1,0 +1,29 @@
+// @ 0x4AA4
+CaptureDamageCommon {
+  ChangeActionStatus(10036, 64, R(Button Mashable Status Expired()))
+  (undef: StageObject) 0C_29_00_00()
+  (undef: motion) 04_1A_01_00(459)
+  (undef: motion) 04_18_01_00(RA-Int[0x02])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(RA-Int[0x00], true)
+      } else {
+        ChangeSubAction(RA-Int[0x00])
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(128, true)
+      } else {
+        ChangeSubAction(128)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}

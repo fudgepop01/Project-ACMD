@@ -1,0 +1,13 @@
+Action 0x117: ENTRY {
+  BodyCollision(3)
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+  ChangeSubAction(-1)
+  SetGimmickEffectFlag(false)
+  Visibility(false)
+  Module1901()
+  HavokPhysicsDisable()
+}
+
+Action 0x117 : EXIT {
+}

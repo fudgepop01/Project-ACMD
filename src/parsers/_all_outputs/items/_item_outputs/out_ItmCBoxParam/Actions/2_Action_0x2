@@ -1,0 +1,5 @@
+// Status_Walk_Brake
+Action 0x2 {
+  ChangeSubAction(1)
+}
+

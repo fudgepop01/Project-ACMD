@@ -1,0 +1,16 @@
+Action 0x118: ENTRY {
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  BasicVariableSet(464, RA-Int[0x00])
+  BasicVariableSet(475, RA-Int[0x01])
+  BitVariableClear(RA-Bool[0x10])
+  SubRoutine(hidden_subroutine_0x19A08)
+}
+
+Action 0x118 : EXIT {
+}

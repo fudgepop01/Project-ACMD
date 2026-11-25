@@ -1,0 +1,18 @@
+// Status_Item_Shoot_Dash_F
+Action 0xA9: ENTRY {
+  ResetFlickX()
+  SubRoutine(hidden_subroutine_0x1BB0C)
+  Switch(10000, Variable_Int_Have_Item_Kind)
+    Case(24)
+      SubRoutine(hidden_subroutine_0x1B294)
+    Case(44)
+      SubRoutine(hidden_subroutine_0x1B0B4)
+    Case(61)
+      SubRoutine(hidden_subroutine_0x1B54C)
+    Case(13)
+      SubRoutine(hidden_subroutine_0x1B9E4)
+  EndSwitch()
+}
+
+Action 0xA9 : EXIT {
+}

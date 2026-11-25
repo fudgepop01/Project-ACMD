@@ -1,0 +1,12 @@
+[hsr_25A28]
+hidden_subroutine_0x25A28 {
+  if (R(Roll A Die())) {
+    SoundEffect(2312)
+  } elif (R(Roll A Die())) {
+    SoundEffect(2368)
+  } elif (R(Roll A Die())) {
+    SoundEffect(2369)
+  } elif (R(Character Exists(ERRVALUE))) {
+    SoundEffect(2370)
+  }
+}

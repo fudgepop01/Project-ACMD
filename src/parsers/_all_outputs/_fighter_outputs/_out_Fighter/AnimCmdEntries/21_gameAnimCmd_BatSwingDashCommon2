@@ -1,0 +1,7 @@
+// @ 0x21350
+BatSwingDashCommon2 {
+  ChangeHitboxDamage(0, 10)
+  ChangeHitboxDamage(1, 8)
+  ChangeHitboxDamage(2, 6)
+  ChangeHitboxDamage(3, 6)
+}

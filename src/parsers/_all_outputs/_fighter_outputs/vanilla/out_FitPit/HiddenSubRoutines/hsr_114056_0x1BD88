@@ -1,0 +1,15 @@
+[hsr_1BD88]
+hidden_subroutine_0x1BD88 {
+  BasicVariableDecrement(RA-Int[0x00])
+  if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+    if (R(Bit is Set(RA-Bool[0x11]))) {
+      if (R(On Ground())) {
+        DisableActionStatusId(10002)
+        SetAerialOrOnstage(5)
+        Module0900(2)
+      }
+      BitVariableSet(RA-Bool[0x10])
+      SetAirGround(17)
+    }
+  }
+}

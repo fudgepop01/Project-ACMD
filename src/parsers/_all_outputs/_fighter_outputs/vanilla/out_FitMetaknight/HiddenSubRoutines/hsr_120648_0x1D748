@@ -1,0 +1,17 @@
+[hsr_1D748]
+hidden_subroutine_0x1D748 {
+  FrameSpeedModifier(0.25)
+  ArticleFrameSpeed(0, 0.25)
+  BodyCollision(2)
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    (undef: camera) 1A_02_02_00(8.0, -3.0)
+    SetCameraBoundaries(7.0, -7.0, 5.0, -5.0)
+  } else {
+    SetCameraBoundaries(0.0, 0.0, 5.0, -5.0)
+  }
+  CameraCloseup_UNDOC1ARGS(100)
+  ScreenTintFull_UNDOC8ARGS(1, IC-Int[0x5DC3], 0, 0, 0, 255, 6, 255)
+  AsynchronousTimer(5.0)
+  SubRoutine(hidden_subroutine_0x1D720)
+  AsynchronousTimer(100.0)
+}

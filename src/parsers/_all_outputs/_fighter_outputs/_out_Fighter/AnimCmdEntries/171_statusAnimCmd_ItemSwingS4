@@ -1,0 +1,31 @@
+// @ 0x23268
+ItemSwingS4 {
+  ResetButtonPress()
+  SubRoutine(hidden_subroutine_0x1836C)
+  BasicVariableSet(Variable_Int_Item_Swing_4_Motion_Kind, RA-Int[0x00])
+  ChangeSubAction(RA-Int[0x00], false, Variable_Float_Item_Swing_Motion_Rate)
+  ConcurrentInfiniteLoop(I(9), statusAnimCmd_ItemSwingS4Uniq)
+  Switch(10000, Variable_Int_Item_Swing_4_Motion_Kind)
+    Case(292)
+      SubRoutine(hidden_subroutine_0x459C)
+    Case(298)
+      SetStalingId(2, 84, true)
+    Case(310)
+      SubRoutine(hidden_subroutine_0x5084)
+    Case(317)
+      SubRoutine(hidden_subroutine_0x5354)
+    Case(303)
+      SubRoutine(hidden_subroutine_0x4DB4)
+  EndSwitch()
+  if (R(Compare(Variable_Int_Item_Swing_4_Motion_Kind != 298.0))) {
+    BasicVariableAdd(1, RA-Int[0x00])
+    if (R(Subaction Exists())) {
+      SetRequirement(R(Bit is Set(RA-Bool[0x10])))
+      SetExtraRequirement(R(NOT Bit is Set(RA-Bool[0x11])))
+      SetRequirement(R(Bit is Set(RA-Bool[0x10])))
+      SetExtraRequirement(R(Bit is Set(RA-Bool[0x12])))
+      LoadRest()
+      ChangeSubAction(RA-Int[0x00], false, Variable_Float_Item_Swing_Motion_Rate)
+    }
+  }
+}

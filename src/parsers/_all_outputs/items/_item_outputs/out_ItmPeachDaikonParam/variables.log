@@ -1,0 +1,21 @@
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x2 (Status_Walk_Brake) @ 2 : 1
+
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 3 : 0
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 4 : 1
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 22 : 1
+
+LA-Int[0x01] in Action 0x1 (Status_Walk) @ 6 : 1
+LA-Int[0x01] in Action 0x1 (Status_Walk) @ 8 : 1
+LA-Int[0x01] in Action 0x1 (Status_Walk) @ 10 : 1
+LA-Int[0x01] in Action 0x1 (Status_Walk) @ 12 : 1
+LA-Int[0x01] in Action 0x1 (Status_Walk) @ 14 : 1
+LA-Int[0x01] in Action 0x1 (Status_Walk) @ 16 : 1
+LA-Int[0x01] in Action 0x1 (Status_Walk) @ 18 : 1
+LA-Int[0x01] in Action 0x1 (Status_Walk) @ 20 : 1
+LA-Int[0x01] in Subaction 0x3 : GAME @ 0 : 1
+
+LA-Bool[0x0C] in Action 0x2 (Status_Walk_Brake) @ 0 : 0
+LA-Bool[0x0C] in Action 0x3 (Status_Dash) @ 1 : 0
+LA-Bool[0x0C] in Action 0x5 (Status_Run_Brake) @ 1 : 0
+
+RA-Bool[0x02] in hsr_60 @ 0 : 3

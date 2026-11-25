@@ -1,0 +1,13 @@
+// @ 0x3E20
+CommonAICheckGroundTouchFront {
+  if (R(Facing Left())) {
+    if (R(Touching a Floor, Wall, or Ceiling(82)) && R(NOT Touching a Floor, Wall, or Ceiling(164))) {
+      BitVariableSet(RA-Bool[0x04])
+    }
+  } else {
+    if (R(Touching a Floor, Wall, or Ceiling(164)) && R(NOT Touching a Floor, Wall, or Ceiling(82))) {
+      BitVariableSet(RA-Bool[0x04])
+    }
+  }
+  Return()
+}

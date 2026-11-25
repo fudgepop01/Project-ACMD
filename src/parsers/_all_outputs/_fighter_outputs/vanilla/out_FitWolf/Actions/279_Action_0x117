@@ -1,0 +1,37 @@
+Action 0x117: ENTRY {
+  BitVariableClear(RA-Bool[0x10])
+  BasicVariableSet(0, RA-Int[0x01])
+  SetPassableCheck(false)
+  ChangeAction(280, R(Compare(RA-Int[0x01] > IC-Int[0x5DC5])))
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1BCD0)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      BitVariableClear(RA-Bool[0x11])
+      SetAerialOrOnstage(1)
+      SetAirGround(13)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(472, true)
+      } else {
+        ChangeSubAction(472)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(In Air()))
+      EnableDisableLedgegrab(0)
+    } else {
+      BitVariableSet(RA-Bool[0x11])
+      SetAerialOrOnstage(5)
+      SetAirGround(13)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(472, true)
+      } else {
+        ChangeSubAction(472)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      EnableDisableLedgegrab(2)
+    }
+    LoadRest()
+  }
+}
+
+Action 0x117 : EXIT {
+}

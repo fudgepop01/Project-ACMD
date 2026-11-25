@@ -1,0 +1,16 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  ChangeAction(3, R(In Air()))
+  if (R(Compare(Variable_Int_Status_Prev_Kind != 10.0))) {
+    (undef: Sp_base) 65_07_01_00(2)
+    if (R(NOT 2714(1))) {
+      ReverseDirection()
+      DecideDirection()
+      CharacterSpecific01()
+    }
+  }
+  (undef: Sp_Kinetic) 66_00_0B_00(0.4, 0.0, 0.4, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  SynchronousTimer(10.0)
+  ChangeAction(10, R(In walljump situation()), 6)
+}
+

@@ -1,0 +1,6 @@
+// @ 0x24050
+SpecialN {
+  if (R(In Air()) && R(Compare(Variable_Int_Controller_Flick_After_X_Lr_Rv < Common_Param_Int_Special_Air_N_Turn_Frame))) {
+    ReverseDirection()
+  }
+}

@@ -1,0 +1,44 @@
+[JumpB] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xE: MAIN {
+}
+
+Subaction 0xE: MAIN EXIT {
+}
+
+Subaction 0xE: MAIN INIT {
+  FrameSpeedModifier(IC-Int[0xFA6])
+  if (R(Compare(Variable_Int_Controller_Flick_X_Dir == 31.0))) {
+    SubRoutine(hidden_subroutine_0xB5D8)
+  } else {
+  }
+}
+
+Subaction 0xE: GFX {
+  GraphicEffectAttached(27, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.2, false)
+}
+
+Subaction 0xE: GFX EXIT {
+}
+
+Subaction 0xE: GFX INIT {
+}
+
+Subaction 0xE: SFX {
+}
+
+Subaction 0xE: SFX EXIT {
+}
+
+Subaction 0xE: SFX INIT {
+}
+

@@ -1,0 +1,5 @@
+[hsr_14]
+hidden_subroutine_0x14 {
+  DisableSpecifiedMovement(2)
+  Return()
+}

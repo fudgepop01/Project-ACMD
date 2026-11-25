@@ -1,0 +1,13 @@
+// Status_Lay_Down
+Action 0x50: ENTRY {
+  if (R(Touching a Floor, Wall, or Ceiling(8))) {
+    Module0900(0)
+  }
+  FloatVariableSet(Common_Param_Float_Down_Frame, RA-Float[0x09])
+  BitVariableSet(RA-Bool[0x19])
+  ChangeSubAction(171)
+  SubRoutine(hidden_subroutine_0x14B8C)
+}
+
+Action 0x50 : EXIT {
+}

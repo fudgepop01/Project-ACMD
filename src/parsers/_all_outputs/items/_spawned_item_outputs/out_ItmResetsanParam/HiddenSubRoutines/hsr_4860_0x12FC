@@ -1,0 +1,19 @@
+[hsr_12FC]
+hidden_subroutine_0x12FC {
+  Switch(10000, LA-Int[0x00])
+    Case(1)
+    Case(2)
+      Return()
+    Case(3)
+      Return()
+  EndSwitch()
+  Switch(10000, LA-Int[0x0D])
+    Case(102)
+      if (R(Bit is Set(LA-Bool[0x00]))) {
+        BasicVariableSet(2, LA-Int[0x00])
+      } else {
+        BitVariableClear(LA-Bool[0x01])
+      }
+  EndSwitch()
+  Return()
+}

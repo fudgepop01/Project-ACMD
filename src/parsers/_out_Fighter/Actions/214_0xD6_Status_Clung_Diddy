@@ -1,0 +1,23 @@
+// Status_Clung_Diddy
+Action 0xD6: ENTRY {
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    ChangeSubAction(417)
+  } else {
+    ChangeSubAction(414)
+  }
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(6)
+      SetAerialOrOnstage(1)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAirGround(10)
+      SetAerialOrOnstage(5)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0xD6 : EXIT {
+}

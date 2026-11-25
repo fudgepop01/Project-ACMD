@@ -1,0 +1,13 @@
+// Status_Run
+Action 0x4 {
+  ChangeAction(8, R(In Air()))
+  if (R(Is within footstool range())) {
+    ChangeSubAction(1)
+  } else {
+    ChangeSubAction(0)
+  }
+  SetAnimationFrame(64.0)
+  FrameSpeedModifier(1.0)
+  ChangeAction(9, R(On Ground()))
+}
+

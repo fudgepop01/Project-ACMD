@@ -1,0 +1,15 @@
+// Status_Fall
+Action 0xE {
+  ChangeAction(3, R(In Air()))
+  (undef: Sp_Kinetic) 66_02_02_00(2.0, 2.0)
+  ChangeSubAction(0)
+  (undef: motion) 04_10_02_00(0, 5)
+  SetRequirement(R(0x27()), 0)
+  LoadRest()
+  ReverseDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  SynchronousTimer(3.0)
+  ChangeAction(4, R(Button Tap?()))
+}
+

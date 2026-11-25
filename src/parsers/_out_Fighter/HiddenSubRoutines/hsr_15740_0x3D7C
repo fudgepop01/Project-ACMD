@@ -1,0 +1,7 @@
+[hsr_3D7C]
+hidden_subroutine_0x3D7C {
+  SubRoutine(hidden_subroutine_0xA8F4)
+
+  ChangeActionStatus(10012, 74, R(On Ground()))
+  AdditionalRequirement(R(NOT 0x2723()))
+}

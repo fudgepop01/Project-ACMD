@@ -1,0 +1,6 @@
+// @ 0x24088
+CHK_GROUND_SPECIAL {
+  ClearPreventInterrupt(GROUND_SPECIAL)
+  SubRoutine(hidden_subroutine_0x9964)
+  ClearPreventInterrupt(ALL?)
+}

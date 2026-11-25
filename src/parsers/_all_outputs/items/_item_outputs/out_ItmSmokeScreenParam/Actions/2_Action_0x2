@@ -1,0 +1,15 @@
+// Status_Walk_Brake
+Action 0x2 {
+  BasicVariableSet(Variable_Int_Controller_Trigger_2_Count_Prev, LA-Int[0x00])
+  BodyCollision(3)
+  if (R(Bit is Set(LA-Bool[0x09]))) {
+    ResetMomentum()
+    if (R(Compare(LA-Int[0x09] < 720.0))) {
+      (undef: Sp_base) 65_04_01_00(720)
+    }
+    SubRoutine(hidden_subroutine_0xF8)
+  } else {
+    BitVariableClear(LA-Bool[0x0C])
+  }
+}
+

@@ -1,0 +1,9 @@
+[hsr_18988]
+hidden_subroutine_0x18988 {
+  OffensiveCollision(Sp(72, 0), 7, 70, Sp(0, 40), Sp(0, 10), 4.0, 0.0, 5.5, 0.0, 0.0, 1.0, 1.0, 981665282)
+  OffensiveCollision(Sp(72, 1), 7, 70, Sp(0, 40), Sp(0, 10), 4.0, 0.0, 1.4, 0.0, 0.0, 1.0, 1.0, 981665282)
+  OffensiveCollision(Sp(62, 2), 7, 70, Sp(0, 40), Sp(0, 10), 3.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 981665282)
+  OffensiveCollision(Sp(30, 3), 7, 70, Sp(0, 40), Sp(0, 10), 3.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 981665282)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+}

@@ -1,0 +1,16 @@
+// Status_Dash
+Action 0x3 {
+  DisableActionStatusId(3)
+  RightDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  ChangeSubAction(2)
+  if (R(Compare(LA-Int[0x00] == 1.0))) {
+    (undef: Sp_base) 65_1F_01_00(2)
+    (undef: Sp_base) 65_0C_01_00(IC-Int[0xD71])
+    ChangeAction(6, R(On Ground()))
+  } else {
+    ChangeAction(4, R(On Ground()))
+  }
+}
+

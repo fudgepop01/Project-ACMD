@@ -1,0 +1,2091 @@
+IC-Int[0x00] ("Variable_Float_Motion_Frame") in Action 0x3 (Status_Dash): ENTRY @ 46 : 1
+IC-Int[0x00] ("Variable_Float_Motion_Frame") in Action 0x3 (Status_Dash): ENTRY @ 49 : 1
+IC-Int[0x00] ("Variable_Float_Motion_Frame") in Action 0x92 (Status_Ladder_Catch): ENTRY @ 5 : 1
+IC-Int[0x00] ("Variable_Float_Motion_Frame") in Action 0xFE (Status_Captain_Final_Clash): ENTRY @ 1 : 1
+IC-Int[0x00] ("Variable_Float_Motion_Frame") in hsr_1B674 @ 2 : 1
+IC-Int[0x00] ("Variable_Float_Motion_Frame") in statusAnimCmd_AirLassoReach @ 2 : 0
+IC-Int[0x00] ("Variable_Float_Motion_Frame") in statusAnimCmd_CatchTurn @ 4 : 0
+IC-Int[0x00] ("Variable_Float_Motion_Frame") in statusAnimCmd_Glide @ 2 : 1
+IC-Int[0x00] ("Variable_Float_Motion_Frame") in statusAnimCmd_ItemShootLanding_Common @ 3 : 1
+IC-Int[0x00] ("Variable_Float_Motion_Frame") in statusAnimCmd_ItemShootLanding_Common @ 7 : 1
+
+IC-Int[0x02] ("Variable_Float_Damage") in Action 0x76 (Status_Cliff_Attack): ENTRY @ 5 : 1
+IC-Int[0x02] ("Variable_Float_Damage") in Action 0x77 (Status_Cliff_Climb): ENTRY @ 5 : 1
+IC-Int[0x02] ("Variable_Float_Damage") in Action 0x78 (Status_Cliff_Escape): ENTRY @ 5 : 1
+IC-Int[0x02] ("Variable_Float_Damage") in Action 0x79 (Status_Cliff_Jump1): ENTRY @ 5 : 1
+IC-Int[0x02] ("Variable_Float_Damage") in Action 0x7A (Status_Cliff_Jump2): ENTRY @ 7 : 1
+
+IC-Int[0x08] ("Variable_Float_Posture_Lr") in Action 0x92 (Status_Ladder_Catch): ENTRY @ 15 : 1
+IC-Int[0x08] ("Variable_Float_Posture_Lr") in Action 0x92 (Status_Ladder_Catch): ENTRY @ 37 : 1
+IC-Int[0x08] ("Variable_Float_Posture_Lr") in Action 0x93 (Status_Ladder_Catch_End): ENTRY @ 5 : 1
+IC-Int[0x08] ("Variable_Float_Posture_Lr") in Action 0x9C (Status_Item_Throw_Dash): ENTRY @ 0 : 0
+IC-Int[0x08] ("Variable_Float_Posture_Lr") in statusAnimCmd_Appeal @ 53 : 1
+IC-Int[0x08] ("Variable_Float_Posture_Lr") in statusAnimCmd_Appeal @ 62 : 1
+IC-Int[0x08] ("Variable_Float_Posture_Lr") in statusAnimCmd_ItemThrow @ 0 : 0
+IC-Int[0x08] ("Variable_Float_Posture_Lr") in statusAnimCmd_ItemThrowHeavyCommon @ 0 : 0
+
+IC-Int[0x09] ("Variable_Float_Posture_Lr_Rv") in hsr_18E7C @ 17 : 0
+IC-Int[0x09] ("Variable_Float_Posture_Lr_Rv") in hsr_1905C @ 12 : 0
+IC-Int[0x09] ("Variable_Float_Posture_Lr_Rv") in hsr_1942C @ 8 : 0
+IC-Int[0x09] ("Variable_Float_Posture_Lr_Rv") in hsr_1942C @ 42 : 0
+IC-Int[0x09] ("Variable_Float_Posture_Lr_Rv") in hsr_19834 @ 26 : 0
+IC-Int[0x09] ("Variable_Float_Posture_Lr_Rv") in statusAnimCmd_ItemThrowHeavyCommon @ 7 : 0
+IC-Int[0x09] ("Variable_Float_Posture_Lr_Rv") in statusAnimCmd_ItemThrowHeavyCommon @ 30 : 0
+
+IC-Int[0x18] ("Variable_Float_Motion_Rate") in hsr_1DDEC @ 2 : 2
+
+IC-Int[0x26] ("Variable_Float_Damage_Reaction") in hsr_1424C @ 0 : 1
+IC-Int[0x26] ("Variable_Float_Damage_Reaction") in hsr_1424C @ 2 : 1
+
+IC-Int[0x27] ("Variable_Float_Ground_Down_Friction") in Action 0x1 (Status_Walk): ENTRY @ 14 : 1
+IC-Int[0x27] ("Variable_Float_Ground_Down_Friction") in Action 0x1 (Status_Walk): ENTRY @ 17 : 1
+IC-Int[0x27] ("Variable_Float_Ground_Down_Friction") in statusAnimCmd_ItemShootDashB_Common @ 4 : 1
+IC-Int[0x27] ("Variable_Float_Ground_Down_Friction") in statusAnimCmd_ItemShootDashF_Common @ 8 : 1
+IC-Int[0x27] ("Variable_Float_Ground_Down_Friction") in statusAnimCmd_ItemShootWalkB_Common @ 12 : 1
+IC-Int[0x27] ("Variable_Float_Ground_Down_Friction") in statusAnimCmd_ItemShootWalkB_Common @ 14 : 1
+IC-Int[0x27] ("Variable_Float_Ground_Down_Friction") in statusAnimCmd_ItemShootWalkF_Common @ 12 : 1
+IC-Int[0x27] ("Variable_Float_Ground_Down_Friction") in statusAnimCmd_ItemShootWalkF_Common @ 14 : 1
+
+IC-Int[0x3E8] ("Variable_Float_Kinetic_Sum_Speed") in Action 0x96 (Status_Item_Pickup_Light): ENTRY @ 2 : 1
+IC-Int[0x3E8] ("Variable_Float_Kinetic_Sum_Speed") in Action 0x96 (Status_Item_Pickup_Light): ENTRY @ 8 : 1
+IC-Int[0x3E8] ("Variable_Float_Kinetic_Sum_Speed") in hsr_A6E4 @ 2 : 1
+IC-Int[0x3E8] ("Variable_Float_Kinetic_Sum_Speed") in hsr_A6E4 @ 6 : 1
+IC-Int[0x3E8] ("Variable_Float_Kinetic_Sum_Speed") in statusAnimCmd_Glide @ 3 : 1
+
+IC-Int[0x3EA] in Action 0xAF (Status_Item_Screw_Jump): ENTRY @ 6 : 1
+IC-Int[0x3EA] in Action 0xAF (Status_Item_Screw_Jump): ENTRY @ 8 : 1
+
+IC-Int[0x3EC] ("Variable_Float_Motion_Trans_Move_Speed_Y") in statusAnimCmd_SpecialJumpAttackCommon @ 5 : 1
+
+IC-Int[0x3ED] ("Variable_Float_Kinetic_Energy_Damage_Speed") in Action 0x44 (Status_Damage_Air): ENTRY @ 4 : 1
+
+IC-Int[0x3EE] ("Variable_Float_Kinetic_Energy_Damage_Speed_X") in Action 0x43 (Status_Damage): ENTRY @ 11 : 1
+IC-Int[0x3EE] ("Variable_Float_Kinetic_Energy_Damage_Speed_X") in hsr_147AC @ 6 : 1
+IC-Int[0x3EE] ("Variable_Float_Kinetic_Energy_Damage_Speed_X") in hsr_147AC @ 14 : 1
+IC-Int[0x3EE] ("Variable_Float_Kinetic_Energy_Damage_Speed_X") in hsr_B064 @ 6 : 1
+IC-Int[0x3EE] ("Variable_Float_Kinetic_Energy_Damage_Speed_X") in hsr_B1FC @ 8 : 1
+
+IC-Int[0x3EF] ("Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv") in Action 0x43 (Status_Damage): ENTRY @ 9 : 1
+IC-Int[0x3EF] ("Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv") in hsr_147AC @ 2 : 1
+IC-Int[0x3EF] ("Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv") in hsr_147AC @ 10 : 1
+IC-Int[0x3EF] ("Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv") in hsr_B064 @ 2 : 1
+IC-Int[0x3EF] ("Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv") in hsr_B1FC @ 2 : 1
+
+IC-Int[0x3F0] ("Variable_Float_Kinetic_Energy_Damage_Speed_Y") in hsr_138C4 @ 10 : 1
+IC-Int[0x3F0] ("Variable_Float_Kinetic_Energy_Damage_Speed_Y") in hsr_13B6C @ 3 : 1
+IC-Int[0x3F0] ("Variable_Float_Kinetic_Energy_Damage_Speed_Y") in hsr_14054 @ 5 : 1
+IC-Int[0x3F0] ("Variable_Float_Kinetic_Energy_Damage_Speed_Y") in hsr_14054 @ 13 : 1
+IC-Int[0x3F0] ("Variable_Float_Kinetic_Energy_Damage_Speed_Y") in hsr_14054 @ 20 : 1
+IC-Int[0x3F0] ("Variable_Float_Kinetic_Energy_Damage_Speed_Y") in hsr_14054 @ 29 : 1
+IC-Int[0x3F0] ("Variable_Float_Kinetic_Energy_Damage_Speed_Y") in hsr_14054 @ 36 : 1
+IC-Int[0x3F0] ("Variable_Float_Kinetic_Energy_Damage_Speed_Y") in hsr_B2CC @ 2 : 1
+IC-Int[0x3F0] ("Variable_Float_Kinetic_Energy_Damage_Speed_Y") in hsr_B37C @ 2 : 1
+
+IC-Int[0x3F2] in hsr_17FA4 @ 3 : 1
+IC-Int[0x3F2] in statusAnimCmd_AttackS4Start @ 6 : 1
+IC-Int[0x3F2] in statusAnimCmd_ItemSwingS4Start @ 6 : 1
+IC-Int[0x3F2] in statusAnimCmdPre_ItemSwingS4Start @ 3 : 1
+
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x1 (Status_Walk): ENTRY @ 16 : 2
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x1 (Status_Walk): ENTRY @ 21 : 2
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x13 (Status_Squat_F): ENTRY @ 7 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x13 (Status_Squat_F): ENTRY @ 8 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x14 (Status_Squat_B): ENTRY @ 7 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x14 (Status_Squat_B): ENTRY @ 8 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x26 (Status_Attack_Dash): ENTRY @ 1 : 3
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x3 (Status_Dash): ENTRY @ 18 : 3
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x3 (Status_Dash): ENTRY @ 47 : 3
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x3 (Status_Dash): ENTRY @ 56 : 3
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x4 (Status_Run): ENTRY @ 2 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x4 (Status_Run): ENTRY @ 12 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x4 (Status_Run): ENTRY @ 28 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x5 (Status_Run_Brake): ENTRY @ 27 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x5 (Status_Run_Brake): ENTRY @ 31 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x52 (Status_Down_Stand_Fb): ENTRY @ 3 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x61 (Status_Passive_Fb): ENTRY @ 4 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x68 (Status_Attach_Wall): ENTRY @ 7 : 2
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x69 (Status_Attach_Wall_Wait): ENTRY @ 8 : 2
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x8 (Status_Turn_Run): ENTRY @ 13 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x8D (Status_Slip_Wait): ENTRY @ 5 : 2
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x98 (Status_Item_Lift_Wait): ENTRY @ 1 : 2
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x98 (Status_Item_Lift_Wait): ENTRY @ 3 : 2
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x9A (Status_Item_Lift_Walk): ENTRY @ 2 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0xB6 (Status_Swim_Wait): ENTRY @ 0 : 2
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0xB7 (Status_Swim): ENTRY @ 1 : 2
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0xB8 (Status_Swim_End): ENTRY @ 1 : 2
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0xDF (Status_Hammer_Wait): ENTRY @ 3 : 2
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0xE0 (Status_Hammer_Walk): ENTRY @ 5 : 2
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in hsr_12A9C @ 2 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in hsr_170DC @ 3 : 2
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in hsr_18E7C @ 11 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in hsr_1905C @ 6 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in hsr_1942C @ 2 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in hsr_1942C @ 36 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in hsr_19834 @ 6 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in hsr_1FE44 @ 5 : 2
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in hsr_9FBC @ 30 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in hsr_9FBC @ 39 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in hsr_9FBC @ 43 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in hsr_A5B4 @ 9 : 3
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in hsr_A5B4 @ 14 : 3
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in hsr_A5B4 @ 16 : 3
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in hsr_EC64 @ 1 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in hsr_ECDC @ 1 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in statusAnimCmd_AttackAir @ 7 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in statusAnimCmd_CatchDash @ 1 : 3
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in statusAnimCmd_GROUNDChkEscape @ 5 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in statusAnimCmd_GuardCont @ 6 : 3
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in statusAnimCmd_GuardCont @ 15 : 3
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in statusAnimCmd_ItemShootDashF_Common @ 0 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in statusAnimCmd_ItemShootWait_Common @ 8 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in statusAnimCmd_ItemShootWait_Common @ 10 : 3
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in statusAnimCmd_ItemShootWait_Common @ 17 : 3
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in statusAnimCmd_ItemShootWalkBBrake_Common @ 9 : 3
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in statusAnimCmd_ItemShootWalkF_Common @ 7 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in statusAnimCmd_ItemShootWalkF_Common @ 9 : 3
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in statusAnimCmd_ItemShootWalkF_Common @ 13 : 2
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in statusAnimCmd_ItemShootWalkF_Common @ 15 : 3
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in statusAnimCmd_ItemShootWalkFBrake_Common @ 9 : 3
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in statusAnimCmd_ItemThrowHeavyCommon @ 3 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in statusAnimCmd_ItemThrowHeavyCommon @ 26 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in statusAnimCmdExit_CatchWait @ 3 : 1
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in statusAnimCmdExit_CatchWait @ 17 : 1
+
+IC-Int[0x3F4] ("Variable_Float_Controller_Stick_X_Lr_Rv") in Action 0x3 (Status_Dash): ENTRY @ 44 : 3
+IC-Int[0x3F4] ("Variable_Float_Controller_Stick_X_Lr_Rv") in Action 0x8 (Status_Turn_Run): ENTRY @ 21 : 1
+IC-Int[0x3F4] ("Variable_Float_Controller_Stick_X_Lr_Rv") in Action 0x8D (Status_Slip_Wait): ENTRY @ 8 : 2
+IC-Int[0x3F4] ("Variable_Float_Controller_Stick_X_Lr_Rv") in hsr_1B854 @ 1 : 3
+IC-Int[0x3F4] ("Variable_Float_Controller_Stick_X_Lr_Rv") in hsr_A5B4 @ 6 : 3
+IC-Int[0x3F4] ("Variable_Float_Controller_Stick_X_Lr_Rv") in statusAnimCmd_GROUNDChkEscape @ 9 : 1
+IC-Int[0x3F4] ("Variable_Float_Controller_Stick_X_Lr_Rv") in statusAnimCmd_GuardCont @ 18 : 3
+IC-Int[0x3F4] ("Variable_Float_Controller_Stick_X_Lr_Rv") in statusAnimCmd_ItemShootWait_Common @ 13 : 1
+IC-Int[0x3F4] ("Variable_Float_Controller_Stick_X_Lr_Rv") in statusAnimCmd_ItemShootWait_Common @ 15 : 3
+IC-Int[0x3F4] ("Variable_Float_Controller_Stick_X_Lr_Rv") in statusAnimCmd_ItemShootWait_Common @ 18 : 3
+IC-Int[0x3F4] ("Variable_Float_Controller_Stick_X_Lr_Rv") in statusAnimCmd_ItemShootWalkB_Common @ 7 : 1
+IC-Int[0x3F4] ("Variable_Float_Controller_Stick_X_Lr_Rv") in statusAnimCmd_ItemShootWalkB_Common @ 9 : 3
+IC-Int[0x3F4] ("Variable_Float_Controller_Stick_X_Lr_Rv") in statusAnimCmd_ItemShootWalkB_Common @ 13 : 2
+IC-Int[0x3F4] ("Variable_Float_Controller_Stick_X_Lr_Rv") in statusAnimCmd_ItemShootWalkB_Common @ 15 : 3
+IC-Int[0x3F4] ("Variable_Float_Controller_Stick_X_Lr_Rv") in statusAnimCmd_ItemShootWalkBBrake_Common @ 10 : 3
+IC-Int[0x3F4] ("Variable_Float_Controller_Stick_X_Lr_Rv") in statusAnimCmd_ItemShootWalkFBrake_Common @ 10 : 3
+IC-Int[0x3F4] ("Variable_Float_Controller_Stick_X_Lr_Rv") in statusAnimCmd_Jump @ 5 : 1
+IC-Int[0x3F4] ("Variable_Float_Controller_Stick_X_Lr_Rv") in statusAnimCmd_JumpAerial @ 12 : 1
+
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in Action 0x1 (Status_Walk): ENTRY @ 13 : 2
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in Action 0x1 (Status_Walk): ENTRY @ 19 : 2
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in Action 0x3 (Status_Dash): ENTRY @ 3 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in Action 0x3 (Status_Dash): ENTRY @ 27 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in Action 0x3 (Status_Dash): ENTRY @ 33 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in Action 0x4 (Status_Run): ENTRY @ 30 : 3
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in Action 0x4 (Status_Run): ENTRY @ 32 : 3
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in Action 0x8 (Status_Turn_Run): ENTRY @ 17 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in Action 0xB6 (Status_Swim_Wait): ENTRY @ 1 : 2
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in Action 0xB7 (Status_Swim): ENTRY @ 0 : 2
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in Action 0xDF (Status_Hammer_Wait): ENTRY @ 5 : 2
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in Action 0xE0 (Status_Hammer_Walk): ENTRY @ 3 : 2
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in hsr_14904 @ 8 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in hsr_14B8C @ 14 : 2
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in hsr_17FA4 @ 0 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in hsr_18E7C @ 7 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in hsr_1905C @ 0 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in hsr_1942C @ 0 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in hsr_1942C @ 31 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in hsr_19834 @ 0 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in hsr_1D42C @ 10 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in hsr_1FE44 @ 6 : 2
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in hsr_9964 @ 1 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in hsr_9964 @ 10 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in hsr_9964 @ 15 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in hsr_A9AC @ 7 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in hsr_A9AC @ 10 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in hsr_A9AC @ 15 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in hsr_B48C @ 3 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in hsr_B924 @ 0 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in hsr_BA6C @ 1 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in hsr_BAD4 @ 2 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in hsr_DF94 @ 3 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in hsr_FC3C @ 3 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in statusAnimCmd_AttackAir @ 1 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in statusAnimCmd_DamageFall @ 3 : 2
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in statusAnimCmd_EscapeAirCommon @ 11 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in statusAnimCmd_ItemShootWalkB_Common @ 11 : 2
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in statusAnimCmd_ItemShootWalkF_Common @ 11 : 2
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in statusAnimCmd_ItemThrowHeavyCommon @ 1 : 1
+IC-Int[0x3F5] ("Variable_Float_Controller_Stick_X_Abs") in statusAnimCmdExit_CatchWait @ 2 : 1
+
+IC-Int[0x3F6] in statusAnimCmd_AttackS4Start @ 8 : 1
+IC-Int[0x3F6] in statusAnimCmd_ItemSwingS4Start @ 8 : 1
+IC-Int[0x3F6] in statusAnimCmdPre_ItemSwingS4Start @ 5 : 1
+
+IC-Int[0x3F7] in hsr_D4A4 @ 18 : 1
+
+IC-Int[0x3F8] in Action 0x6 (Status_Turn): ENTRY @ 3 : 1
+IC-Int[0x3F8] in Action 0x7 (Status_Turn_Dash): ENTRY @ 3 : 1
+IC-Int[0x3F8] in hsr_D4A4 @ 22 : 1
+
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in Action 0x12 (Status_Squat_Wait): ENTRY @ 11 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in Action 0x13 (Status_Squat_F): ENTRY @ 6 : 2
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in Action 0x13 (Status_Squat_F): ENTRY @ 12 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in Action 0x14 (Status_Squat_B): ENTRY @ 6 : 2
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in Action 0x14 (Status_Squat_B): ENTRY @ 12 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in Action 0x1C (Status_Guard_Off): ENTRY @ 5 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in Action 0x26 (Status_Attack_Dash): ENTRY @ 12 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in Action 0x3 (Status_Dash): ENTRY @ 53 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in Action 0x4 (Status_Run): ENTRY @ 24 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in Action 0x5 (Status_Run_Brake): ENTRY @ 22 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in Action 0x62 (Status_Passive_Wall): ENTRY @ 5 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in Action 0x68 (Status_Attach_Wall): ENTRY @ 5 : 2
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in Action 0x68 (Status_Attach_Wall): ENTRY @ 8 : 2
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in Action 0x69 (Status_Attach_Wall_Wait): ENTRY @ 6 : 2
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in Action 0x69 (Status_Attach_Wall_Wait): ENTRY @ 9 : 2
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in Action 0x8 (Status_Turn_Run): ENTRY @ 8 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in Action 0x8D (Status_Slip_Wait): ENTRY @ 11 : 2
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in Action 0x9 (Status_Turn_Run_Brake): ENTRY @ 3 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in Action 0x9C (Status_Item_Throw_Dash): ENTRY @ 12 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in Action 0xC2 (Status_Gimmick_Truck): ENTRY @ 10 : 2
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_104A4 @ 5 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_14054 @ 1 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_14054 @ 15 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_14054 @ 32 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_14B8C @ 17 : 2
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_1606C @ 0 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_1628C @ 3 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_165A4 @ 6 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_18E7C @ 0 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_18E7C @ 3 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_1905C @ 15 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_1942C @ 12 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_1942C @ 18 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_1942C @ 24 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_1942C @ 27 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_19834 @ 29 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_1C5DC @ 1 : 2
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_1DD4C @ 2 : 2
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_1E22C @ 6 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_1FE44 @ 4 : 2
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_9964 @ 4 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_9FBC @ 9 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_9FBC @ 13 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_9FBC @ 17 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_9FBC @ 34 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_A38C @ 2 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_A5B4 @ 12 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_A5B4 @ 17 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_A9AC @ 1 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_B644 @ 9 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_B874 @ 1 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_DC44 @ 5 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_EC64 @ 0 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_ECDC @ 0 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_F464 @ 16 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_FC3C @ 6 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_FC3C @ 9 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_AIRChkCliff @ 3 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_AIRChkJumpAerial @ 1 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_AIRChkJumpAerial @ 14 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_AIRChkTreadJump @ 0 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_AirLassoHang @ 10 : 2
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_AirLassoHang @ 12 : 2
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_AttackAir @ 15 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_EscapeAirCommon @ 21 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_Fall @ 3 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_GimmickCatapult @ 3 : 2
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_GROUNDChkEscape @ 1 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_GuardCont @ 12 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_GuardCont @ 34 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_GuardCont @ 38 : 2
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_ItemShootDashB_Common @ 6 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_ItemShootDashF_Common @ 10 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_ItemShootLanding_Common @ 4 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_ItemShootWait_Common @ 4 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_ItemShootWalkB_Common @ 3 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_ItemShootWalkBBrake_Common @ 5 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_ItemShootWalkF_Common @ 3 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_ItemShootWalkFBrake_Common @ 5 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_ItemThrowHeavyCommon @ 11 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_ItemThrowHeavyCommon @ 16 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_ItemThrowHeavyCommon @ 21 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_ItemThrowHeavyCommon @ 23 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_JumpSquat @ 7 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_JumpSquat @ 12 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmdExit_CatchWait @ 8 : 1
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmdExit_CatchWait @ 10 : 1
+
+IC-Int[0x3FB] ("Variable_Float_Controller_Stick_Y_Abs") in Action 0x92 (Status_Ladder_Catch): ENTRY @ 4 : 2
+IC-Int[0x3FB] ("Variable_Float_Controller_Stick_Y_Abs") in hsr_1905C @ 1 : 1
+IC-Int[0x3FB] ("Variable_Float_Controller_Stick_Y_Abs") in hsr_19834 @ 1 : 1
+IC-Int[0x3FB] ("Variable_Float_Controller_Stick_Y_Abs") in hsr_9964 @ 11 : 1
+IC-Int[0x3FB] ("Variable_Float_Controller_Stick_Y_Abs") in hsr_9964 @ 16 : 1
+IC-Int[0x3FB] ("Variable_Float_Controller_Stick_Y_Abs") in hsr_A9AC @ 11 : 1
+IC-Int[0x3FB] ("Variable_Float_Controller_Stick_Y_Abs") in hsr_A9AC @ 16 : 1
+IC-Int[0x3FB] ("Variable_Float_Controller_Stick_Y_Abs") in hsr_DF94 @ 4 : 1
+IC-Int[0x3FB] ("Variable_Float_Controller_Stick_Y_Abs") in statusAnimCmd_AttackAir @ 2 : 1
+
+IC-Int[0x3FC] ("Variable_Float_Controller_Stick_Y_Rv") in hsr_9964 @ 7 : 1
+IC-Int[0x3FC] ("Variable_Float_Controller_Stick_Y_Rv") in hsr_A9AC @ 4 : 1
+
+IC-Int[0x3FD] ("Variable_Float_Controller_Stick_Dir") in Action 0x27 (Status_Attack_S3): ENTRY @ 13 : 1
+IC-Int[0x3FD] ("Variable_Float_Controller_Stick_Dir") in Action 0x27 (Status_Attack_S3): ENTRY @ 15 : 1
+IC-Int[0x3FD] ("Variable_Float_Controller_Stick_Dir") in statusAnimCmd_AttackS4 @ 3 : 1
+IC-Int[0x3FD] ("Variable_Float_Controller_Stick_Dir") in statusAnimCmd_AttackS4 @ 5 : 1
+
+IC-Int[0x401] ("Variable_Float_Controller_Stick_Prev_X_Abs") in hsr_FC3C @ 2 : 3
+
+IC-Int[0x402] ("Variable_Float_Controller_Stick_Prev_Y") in hsr_17414 @ 1 : 1
+IC-Int[0x402] ("Variable_Float_Controller_Stick_Prev_Y") in hsr_FC3C @ 5 : 3
+IC-Int[0x402] ("Variable_Float_Controller_Stick_Prev_Y") in hsr_FC3C @ 8 : 3
+
+IC-Int[0x408] ("Variable_Float_Item_Pickup_Light_Range") in Action 0x96 (Status_Item_Pickup_Light): ENTRY @ 2 : 3
+IC-Int[0x408] ("Variable_Float_Item_Pickup_Light_Range") in Action 0x96 (Status_Item_Pickup_Light): ENTRY @ 8 : 3
+
+IC-Int[0x409] ("Variable_Float_Item_Swing_Motion_Rate") in Action 0x9E (Status_Item_Swing): ENTRY @ 1 : 2
+IC-Int[0x409] ("Variable_Float_Item_Swing_Motion_Rate") in Action 0x9F (Status_Item_Swing_S3): ENTRY @ 1 : 2
+IC-Int[0x409] ("Variable_Float_Item_Swing_Motion_Rate") in Action 0xA3 (Status_Item_Swing_Dash): ENTRY @ 1 : 2
+IC-Int[0x409] ("Variable_Float_Item_Swing_Motion_Rate") in statusAnimCmd_ItemSwingS4 @ 3 : 2
+IC-Int[0x409] ("Variable_Float_Item_Swing_Motion_Rate") in statusAnimCmd_ItemSwingS4 @ 25 : 2
+IC-Int[0x409] ("Variable_Float_Item_Swing_Motion_Rate") in statusAnimCmd_ItemSwingS4Start @ 15 : 2
+
+IC-Int[0x40A] ("Variable_Float_Tread_Jump_Speed_Y") in statusAnimCmd_AIRChkTreadJump @ 4 : 1
+IC-Int[0x40A] ("Variable_Float_Tread_Jump_Speed_Y") in statusAnimCmd_AIRChkTreadJump @ 9 : 1
+
+IC-Int[0x40B] in Action 0xCC (Status_Bitten_Wario_Start): ENTRY @ 2 : 2
+
+IC-Int[0xBBB] ("Customize_Param_Float_Walk_Speed_Max") in hsr_A6E4 @ 2 : 3
+IC-Int[0xBBB] ("Customize_Param_Float_Walk_Speed_Max") in hsr_A6E4 @ 6 : 3
+
+IC-Int[0xBC8] ("Customize_Param_Float_Mini_Jump_Speed_Y") in Action 0xAF (Status_Item_Screw_Jump): ENTRY @ 6 : 3
+IC-Int[0xBC8] ("Customize_Param_Float_Mini_Jump_Speed_Y") in Action 0xAF (Status_Item_Screw_Jump): ENTRY @ 8 : 3
+
+IC-Int[0xBFA] ("Customize_Param_Float_Throw_Item_Power_Mul") in hsr_DF94 @ 9 : 2
+
+IC-Int[0xC02] ("Customize_Param_Float_Landing_Frame") in statusAnimCmd_ItemShootLanding_Common @ 3 : 3
+IC-Int[0xC02] ("Customize_Param_Float_Landing_Frame") in statusAnimCmd_ItemShootLanding_Common @ 7 : 3
+
+IC-Int[0xC2D] ("Common_Param_Float_Walk_Stick_X") in Action 0x1 (Status_Walk): ENTRY @ 13 : 4
+IC-Int[0xC2D] ("Common_Param_Float_Walk_Stick_X") in Action 0x1 (Status_Walk): ENTRY @ 19 : 4
+IC-Int[0xC2D] ("Common_Param_Float_Walk_Stick_X") in Action 0x4 (Status_Run): ENTRY @ 30 : 5
+IC-Int[0xC2D] ("Common_Param_Float_Walk_Stick_X") in Action 0xB6 (Status_Swim_Wait): ENTRY @ 1 : 4
+IC-Int[0xC2D] ("Common_Param_Float_Walk_Stick_X") in Action 0xB7 (Status_Swim): ENTRY @ 0 : 4
+IC-Int[0xC2D] ("Common_Param_Float_Walk_Stick_X") in Action 0xDF (Status_Hammer_Wait): ENTRY @ 5 : 4
+IC-Int[0xC2D] ("Common_Param_Float_Walk_Stick_X") in Action 0xE0 (Status_Hammer_Walk): ENTRY @ 3 : 4
+IC-Int[0xC2D] ("Common_Param_Float_Walk_Stick_X") in hsr_18E7C @ 7 : 3
+IC-Int[0xC2D] ("Common_Param_Float_Walk_Stick_X") in hsr_1942C @ 31 : 3
+IC-Int[0xC2D] ("Common_Param_Float_Walk_Stick_X") in hsr_1FE44 @ 6 : 4
+IC-Int[0xC2D] ("Common_Param_Float_Walk_Stick_X") in hsr_A5B4 @ 16 : 5
+IC-Int[0xC2D] ("Common_Param_Float_Walk_Stick_X") in statusAnimCmd_ItemShootWait_Common @ 17 : 5
+IC-Int[0xC2D] ("Common_Param_Float_Walk_Stick_X") in statusAnimCmd_ItemShootWait_Common @ 18 : 5
+IC-Int[0xC2D] ("Common_Param_Float_Walk_Stick_X") in statusAnimCmd_ItemShootWalkB_Common @ 11 : 4
+IC-Int[0xC2D] ("Common_Param_Float_Walk_Stick_X") in statusAnimCmd_ItemShootWalkB_Common @ 15 : 5
+IC-Int[0xC2D] ("Common_Param_Float_Walk_Stick_X") in statusAnimCmd_ItemShootWalkBBrake_Common @ 9 : 5
+IC-Int[0xC2D] ("Common_Param_Float_Walk_Stick_X") in statusAnimCmd_ItemShootWalkBBrake_Common @ 10 : 5
+IC-Int[0xC2D] ("Common_Param_Float_Walk_Stick_X") in statusAnimCmd_ItemShootWalkF_Common @ 11 : 4
+IC-Int[0xC2D] ("Common_Param_Float_Walk_Stick_X") in statusAnimCmd_ItemShootWalkF_Common @ 15 : 5
+IC-Int[0xC2D] ("Common_Param_Float_Walk_Stick_X") in statusAnimCmd_ItemShootWalkFBrake_Common @ 9 : 5
+IC-Int[0xC2D] ("Common_Param_Float_Walk_Stick_X") in statusAnimCmd_ItemShootWalkFBrake_Common @ 10 : 5
+
+IC-Int[0xC31] ("Common_Param_Float_Turn_Stick_X") in Action 0xB6 (Status_Swim_Wait): ENTRY @ 0 : 4
+IC-Int[0xC31] ("Common_Param_Float_Turn_Stick_X") in Action 0xB8 (Status_Swim_End): ENTRY @ 1 : 4
+IC-Int[0xC31] ("Common_Param_Float_Turn_Stick_X") in Action 0xDF (Status_Hammer_Wait): ENTRY @ 3 : 4
+IC-Int[0xC31] ("Common_Param_Float_Turn_Stick_X") in hsr_1FE44 @ 5 : 4
+IC-Int[0xC31] ("Common_Param_Float_Turn_Stick_X") in hsr_A5B4 @ 14 : 5
+
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in Action 0x3 (Status_Dash): ENTRY @ 27 : 3
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in Action 0x3 (Status_Dash): ENTRY @ 33 : 3
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in Action 0x3 (Status_Dash): ENTRY @ 44 : 5
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in Action 0x3 (Status_Dash): ENTRY @ 47 : 5
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in Action 0x6 (Status_Turn): ENTRY @ 3 : 3
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in Action 0x7 (Status_Turn_Dash): ENTRY @ 3 : 3
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in hsr_1942C @ 0 : 3
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in hsr_1B854 @ 1 : 5
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in hsr_9FBC @ 1 : 1
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in hsr_9FBC @ 4 : 1
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in hsr_9FBC @ 6 : 3
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in hsr_A5B4 @ 6 : 5
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in hsr_A5B4 @ 9 : 5
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in hsr_FC3C @ 2 : 5
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in hsr_FC3C @ 3 : 3
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in statusAnimCmd_AttackS4Start @ 6 : 3
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in statusAnimCmd_AttackS4Start @ 8 : 3
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in statusAnimCmd_ItemShootWait_Common @ 8 : 3
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in statusAnimCmd_ItemShootWait_Common @ 10 : 5
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in statusAnimCmd_ItemShootWait_Common @ 13 : 3
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in statusAnimCmd_ItemShootWait_Common @ 15 : 5
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in statusAnimCmd_ItemShootWalkB_Common @ 7 : 3
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in statusAnimCmd_ItemShootWalkB_Common @ 9 : 5
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in statusAnimCmd_ItemShootWalkF_Common @ 7 : 3
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in statusAnimCmd_ItemShootWalkF_Common @ 9 : 5
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in statusAnimCmd_ItemSwingS4Start @ 6 : 3
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in statusAnimCmd_ItemSwingS4Start @ 8 : 3
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in statusAnimCmd_ItemThrowHeavyCommon @ 1 : 3
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in statusAnimCmdExit_CatchWait @ 2 : 3
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in statusAnimCmdPre_ItemSwingS4Start @ 3 : 3
+IC-Int[0xC32] ("Common_Param_Float_Dash_Stick_X") in statusAnimCmdPre_ItemSwingS4Start @ 5 : 3
+
+IC-Int[0xC33] ("Common_Param_Float_Dash_Escape_Frame") in hsr_1B674 @ 2 : 3
+
+IC-Int[0xC36] ("Common_Param_Float_Run_Stick_X") in Action 0x3 (Status_Dash): ENTRY @ 56 : 5
+IC-Int[0xC36] ("Common_Param_Float_Run_Stick_X") in Action 0x4 (Status_Run): ENTRY @ 32 : 5
+IC-Int[0xC36] ("Common_Param_Float_Run_Stick_X") in Action 0x8 (Status_Turn_Run): ENTRY @ 13 : 3
+IC-Int[0xC36] ("Common_Param_Float_Run_Stick_X") in Action 0x8 (Status_Turn_Run): ENTRY @ 17 : 3
+IC-Int[0xC36] ("Common_Param_Float_Run_Stick_X") in Action 0x8 (Status_Turn_Run): ENTRY @ 21 : 3
+
+IC-Int[0xC3A] ("Common_Param_Float_Turn_Run_Stick_X") in Action 0x26 (Status_Attack_Dash): ENTRY @ 1 : 5
+IC-Int[0xC3A] ("Common_Param_Float_Turn_Run_Stick_X") in Action 0x3 (Status_Dash): ENTRY @ 18 : 5
+IC-Int[0xC3A] ("Common_Param_Float_Turn_Run_Stick_X") in Action 0x4 (Status_Run): ENTRY @ 2 : 3
+IC-Int[0xC3A] ("Common_Param_Float_Turn_Run_Stick_X") in Action 0x4 (Status_Run): ENTRY @ 12 : 3
+IC-Int[0xC3A] ("Common_Param_Float_Turn_Run_Stick_X") in Action 0x4 (Status_Run): ENTRY @ 28 : 3
+IC-Int[0xC3A] ("Common_Param_Float_Turn_Run_Stick_X") in Action 0x5 (Status_Run_Brake): ENTRY @ 27 : 3
+IC-Int[0xC3A] ("Common_Param_Float_Turn_Run_Stick_X") in Action 0x5 (Status_Run_Brake): ENTRY @ 31 : 3
+IC-Int[0xC3A] ("Common_Param_Float_Turn_Run_Stick_X") in statusAnimCmd_CatchDash @ 1 : 5
+IC-Int[0xC3A] ("Common_Param_Float_Turn_Run_Stick_X") in statusAnimCmd_GuardCont @ 6 : 5
+
+IC-Int[0xC3D] ("Common_Param_Float_Squat_Stick_Y") in Action 0x12 (Status_Squat_Wait): ENTRY @ 11 : 5
+IC-Int[0xC3D] ("Common_Param_Float_Squat_Stick_Y") in Action 0x13 (Status_Squat_F): ENTRY @ 6 : 4
+IC-Int[0xC3D] ("Common_Param_Float_Squat_Stick_Y") in Action 0x13 (Status_Squat_F): ENTRY @ 12 : 5
+IC-Int[0xC3D] ("Common_Param_Float_Squat_Stick_Y") in Action 0x14 (Status_Squat_B): ENTRY @ 6 : 4
+IC-Int[0xC3D] ("Common_Param_Float_Squat_Stick_Y") in Action 0x14 (Status_Squat_B): ENTRY @ 12 : 5
+IC-Int[0xC3D] ("Common_Param_Float_Squat_Stick_Y") in hsr_17414 @ 1 : 3
+IC-Int[0xC3D] ("Common_Param_Float_Squat_Stick_Y") in hsr_1FE44 @ 4 : 4
+IC-Int[0xC3D] ("Common_Param_Float_Squat_Stick_Y") in hsr_A5B4 @ 12 : 5
+IC-Int[0xC3D] ("Common_Param_Float_Squat_Stick_Y") in hsr_A5B4 @ 17 : 3
+IC-Int[0xC3D] ("Common_Param_Float_Squat_Stick_Y") in hsr_EC64 @ 0 : 5
+IC-Int[0xC3D] ("Common_Param_Float_Squat_Stick_Y") in hsr_ECDC @ 0 : 5
+IC-Int[0xC3D] ("Common_Param_Float_Squat_Stick_Y") in hsr_F464 @ 16 : 5
+IC-Int[0xC3D] ("Common_Param_Float_Squat_Stick_Y") in statusAnimCmd_AirLassoHang @ 12 : 4
+
+IC-Int[0xC3E] ("Common_Param_Float_Squat_F_Stick_X_Min") in Action 0x13 (Status_Squat_F): ENTRY @ 7 : 3
+IC-Int[0xC3E] ("Common_Param_Float_Squat_F_Stick_X_Min") in Action 0x14 (Status_Squat_B): ENTRY @ 8 : 3
+IC-Int[0xC3E] ("Common_Param_Float_Squat_F_Stick_X_Min") in hsr_EC64 @ 1 : 3
+
+IC-Int[0xC40] ("Common_Param_Float_Squat_B_Stick_X_Min") in Action 0x13 (Status_Squat_F): ENTRY @ 8 : 3
+IC-Int[0xC40] ("Common_Param_Float_Squat_B_Stick_X_Min") in Action 0x14 (Status_Squat_B): ENTRY @ 7 : 3
+IC-Int[0xC40] ("Common_Param_Float_Squat_B_Stick_X_Min") in hsr_ECDC @ 1 : 3
+
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in Action 0x1C (Status_Guard_Off): ENTRY @ 5 : 5
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in Action 0x62 (Status_Passive_Wall): ENTRY @ 5 : 5
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in Action 0x68 (Status_Attach_Wall): ENTRY @ 5 : 4
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in Action 0x69 (Status_Attach_Wall_Wait): ENTRY @ 6 : 4
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in Action 0xC2 (Status_Gimmick_Truck): ENTRY @ 10 : 4
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in hsr_14054 @ 15 : 5
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in hsr_14054 @ 32 : 3
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in hsr_1C5DC @ 1 : 4
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in hsr_1DD4C @ 2 : 4
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in hsr_A38C @ 2 : 5
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in hsr_B644 @ 9 : 3
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in statusAnimCmd_AIRChkJumpAerial @ 1 : 5
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in statusAnimCmd_AIRChkJumpAerial @ 14 : 3
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in statusAnimCmd_AIRChkTreadJump @ 0 : 5
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in statusAnimCmd_AirLassoHang @ 10 : 4
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in statusAnimCmd_EscapeAirCommon @ 21 : 3
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in statusAnimCmd_GimmickCatapult @ 3 : 4
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in statusAnimCmd_GuardCont @ 34 : 5
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in statusAnimCmd_ItemShootDashB_Common @ 6 : 5
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in statusAnimCmd_ItemShootDashF_Common @ 10 : 5
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in statusAnimCmd_ItemShootLanding_Common @ 4 : 5
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in statusAnimCmd_ItemShootWait_Common @ 4 : 5
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in statusAnimCmd_ItemShootWalkB_Common @ 3 : 5
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in statusAnimCmd_ItemShootWalkBBrake_Common @ 5 : 5
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in statusAnimCmd_ItemShootWalkF_Common @ 3 : 5
+IC-Int[0xC42] ("Common_Param_Float_Jump_Stick_Y") in statusAnimCmd_ItemShootWalkFBrake_Common @ 5 : 5
+
+IC-Int[0xC43] ("Common_Param_Float_Jump_Neutral_X") in statusAnimCmd_Jump @ 5 : 3
+IC-Int[0xC43] ("Common_Param_Float_Jump_Neutral_X") in statusAnimCmd_JumpAerial @ 12 : 3
+
+IC-Int[0xC44] ("Common_Param_Float_Jump_Neutral_Y") in hsr_1606C @ 0 : 3
+IC-Int[0xC44] ("Common_Param_Float_Jump_Neutral_Y") in hsr_1628C @ 3 : 3
+IC-Int[0xC44] ("Common_Param_Float_Jump_Neutral_Y") in hsr_165A4 @ 6 : 3
+IC-Int[0xC44] ("Common_Param_Float_Jump_Neutral_Y") in hsr_1E22C @ 6 : 3
+IC-Int[0xC44] ("Common_Param_Float_Jump_Neutral_Y") in hsr_DC44 @ 5 : 3
+
+IC-Int[0xC45] ("Common_Param_Float_Jump_Run_Stick_Y") in Action 0x3 (Status_Dash): ENTRY @ 53 : 5
+IC-Int[0xC45] ("Common_Param_Float_Jump_Run_Stick_Y") in Action 0x4 (Status_Run): ENTRY @ 24 : 5
+IC-Int[0xC45] ("Common_Param_Float_Jump_Run_Stick_Y") in Action 0x5 (Status_Run_Brake): ENTRY @ 22 : 5
+IC-Int[0xC45] ("Common_Param_Float_Jump_Run_Stick_Y") in Action 0x8 (Status_Turn_Run): ENTRY @ 8 : 5
+IC-Int[0xC45] ("Common_Param_Float_Jump_Run_Stick_Y") in Action 0x9 (Status_Turn_Run_Brake): ENTRY @ 3 : 5
+IC-Int[0xC45] ("Common_Param_Float_Jump_Run_Stick_Y") in hsr_104A4 @ 5 : 3
+IC-Int[0xC45] ("Common_Param_Float_Jump_Run_Stick_Y") in statusAnimCmd_Fall @ 3 : 5
+
+IC-Int[0xC4C] ("Common_Param_Float_Escape_Stick_Y") in statusAnimCmd_GROUNDChkEscape @ 1 : 3
+IC-Int[0xC4C] ("Common_Param_Float_Escape_Stick_Y") in statusAnimCmd_GuardCont @ 12 : 5
+
+IC-Int[0xC4D] ("Common_Param_Float_Escape_Fb_Stick_X") in hsr_D4A4 @ 18 : 3
+IC-Int[0xC4D] ("Common_Param_Float_Escape_Fb_Stick_X") in hsr_D4A4 @ 22 : 3
+IC-Int[0xC4D] ("Common_Param_Float_Escape_Fb_Stick_X") in statusAnimCmd_GROUNDChkEscape @ 5 : 3
+IC-Int[0xC4D] ("Common_Param_Float_Escape_Fb_Stick_X") in statusAnimCmd_GROUNDChkEscape @ 9 : 3
+IC-Int[0xC4D] ("Common_Param_Float_Escape_Fb_Stick_X") in statusAnimCmd_GuardCont @ 15 : 5
+IC-Int[0xC4D] ("Common_Param_Float_Escape_Fb_Stick_X") in statusAnimCmd_GuardCont @ 18 : 5
+
+IC-Int[0xC4F] ("Common_Param_Float_Attack_S3_Stick_X") in hsr_12A9C @ 2 : 3
+IC-Int[0xC4F] ("Common_Param_Float_Attack_S3_Stick_X") in hsr_9FBC @ 30 : 3
+IC-Int[0xC4F] ("Common_Param_Float_Attack_S3_Stick_X") in hsr_9FBC @ 39 : 3
+IC-Int[0xC4F] ("Common_Param_Float_Attack_S3_Stick_X") in hsr_9FBC @ 43 : 3
+
+IC-Int[0xC50] ("Common_Param_Float_Attack_S3_Stick_Dir_Hi") in Action 0x27 (Status_Attack_S3): ENTRY @ 13 : 3
+
+IC-Int[0xC51] ("Common_Param_Float_Attack_S3_Stick_Dir_Lw") in Action 0x27 (Status_Attack_S3): ENTRY @ 15 : 3
+
+IC-Int[0xC52] ("Common_Param_Float_Attack_Hi3_Stick_Y") in hsr_18E7C @ 0 : 3
+IC-Int[0xC52] ("Common_Param_Float_Attack_Hi3_Stick_Y") in hsr_1942C @ 24 : 3
+IC-Int[0xC52] ("Common_Param_Float_Attack_Hi3_Stick_Y") in hsr_9FBC @ 17 : 3
+IC-Int[0xC52] ("Common_Param_Float_Attack_Hi3_Stick_Y") in statusAnimCmd_ItemThrowHeavyCommon @ 21 : 3
+
+IC-Int[0xC53] ("Common_Param_Float_Attack_Lw3_Stick_Y") in hsr_18E7C @ 3 : 3
+IC-Int[0xC53] ("Common_Param_Float_Attack_Lw3_Stick_Y") in hsr_1942C @ 27 : 3
+IC-Int[0xC53] ("Common_Param_Float_Attack_Lw3_Stick_Y") in hsr_9FBC @ 34 : 3
+IC-Int[0xC53] ("Common_Param_Float_Attack_Lw3_Stick_Y") in statusAnimCmd_ItemThrowHeavyCommon @ 23 : 3
+
+IC-Int[0xC54] ("Common_Param_Float_Attack_S4_Stick_Dir_Hi") in statusAnimCmd_AttackS4 @ 3 : 3
+
+IC-Int[0xC55] ("Common_Param_Float_Attack_S4_Stick_Dir_Lw") in statusAnimCmd_AttackS4 @ 5 : 3
+
+IC-Int[0xC56] ("Common_Param_Float_Attack_Hi4_Stick_Y") in Action 0x26 (Status_Attack_Dash): ENTRY @ 12 : 3
+IC-Int[0xC56] ("Common_Param_Float_Attack_Hi4_Stick_Y") in Action 0x9C (Status_Item_Throw_Dash): ENTRY @ 12 : 3
+IC-Int[0xC56] ("Common_Param_Float_Attack_Hi4_Stick_Y") in hsr_1942C @ 12 : 3
+IC-Int[0xC56] ("Common_Param_Float_Attack_Hi4_Stick_Y") in hsr_9FBC @ 9 : 3
+IC-Int[0xC56] ("Common_Param_Float_Attack_Hi4_Stick_Y") in hsr_FC3C @ 5 : 5
+IC-Int[0xC56] ("Common_Param_Float_Attack_Hi4_Stick_Y") in hsr_FC3C @ 6 : 3
+IC-Int[0xC56] ("Common_Param_Float_Attack_Hi4_Stick_Y") in statusAnimCmd_ItemThrowHeavyCommon @ 11 : 3
+IC-Int[0xC56] ("Common_Param_Float_Attack_Hi4_Stick_Y") in statusAnimCmd_JumpSquat @ 12 : 3
+IC-Int[0xC56] ("Common_Param_Float_Attack_Hi4_Stick_Y") in statusAnimCmdExit_CatchWait @ 8 : 3
+
+IC-Int[0xC57] ("Common_Param_Float_Attack_Hi4_Flick_Y") in hsr_1942C @ 13 : 3
+IC-Int[0xC57] ("Common_Param_Float_Attack_Hi4_Flick_Y") in hsr_9FBC @ 10 : 3
+IC-Int[0xC57] ("Common_Param_Float_Attack_Hi4_Flick_Y") in statusAnimCmd_ItemThrowHeavyCommon @ 12 : 3
+
+IC-Int[0xC58] ("Common_Param_Float_Attack_Lw4_Stick_Y") in hsr_1942C @ 18 : 3
+IC-Int[0xC58] ("Common_Param_Float_Attack_Lw4_Stick_Y") in hsr_9FBC @ 13 : 3
+IC-Int[0xC58] ("Common_Param_Float_Attack_Lw4_Stick_Y") in hsr_FC3C @ 8 : 5
+IC-Int[0xC58] ("Common_Param_Float_Attack_Lw4_Stick_Y") in hsr_FC3C @ 9 : 3
+IC-Int[0xC58] ("Common_Param_Float_Attack_Lw4_Stick_Y") in statusAnimCmd_ItemThrowHeavyCommon @ 16 : 3
+IC-Int[0xC58] ("Common_Param_Float_Attack_Lw4_Stick_Y") in statusAnimCmdExit_CatchWait @ 10 : 3
+
+IC-Int[0xC59] ("Common_Param_Float_Attack_Lw4_Flick_Y") in hsr_1942C @ 19 : 3
+IC-Int[0xC59] ("Common_Param_Float_Attack_Lw4_Flick_Y") in hsr_9FBC @ 14 : 3
+IC-Int[0xC59] ("Common_Param_Float_Attack_Lw4_Flick_Y") in statusAnimCmd_ItemThrowHeavyCommon @ 17 : 3
+
+IC-Int[0xC5C] ("Common_Param_Float_Attack_Air_Neutral_X") in hsr_1905C @ 0 : 3
+IC-Int[0xC5C] ("Common_Param_Float_Attack_Air_Neutral_X") in hsr_19834 @ 0 : 3
+IC-Int[0xC5C] ("Common_Param_Float_Attack_Air_Neutral_X") in hsr_DF94 @ 3 : 3
+IC-Int[0xC5C] ("Common_Param_Float_Attack_Air_Neutral_X") in statusAnimCmd_AttackAir @ 1 : 3
+
+IC-Int[0xC5D] ("Common_Param_Float_Attack_Air_Neutral_Y") in hsr_1905C @ 1 : 3
+IC-Int[0xC5D] ("Common_Param_Float_Attack_Air_Neutral_Y") in hsr_19834 @ 1 : 3
+IC-Int[0xC5D] ("Common_Param_Float_Attack_Air_Neutral_Y") in hsr_DF94 @ 4 : 3
+IC-Int[0xC5D] ("Common_Param_Float_Attack_Air_Neutral_Y") in statusAnimCmd_AttackAir @ 2 : 3
+
+IC-Int[0xC5F] ("Common_Param_Float_Dive_Cont_Value") in Action 0x68 (Status_Attach_Wall): ENTRY @ 8 : 4
+IC-Int[0xC5F] ("Common_Param_Float_Dive_Cont_Value") in Action 0x69 (Status_Attach_Wall_Wait): ENTRY @ 9 : 4
+
+IC-Int[0xC60] in hsr_B924 @ 0 : 3
+
+IC-Int[0xC61] in statusAnimCmd_Glide @ 2 : 3
+
+IC-Int[0xC62] in statusAnimCmd_Glide @ 3 : 3
+
+IC-Int[0xC69] in Action 0x44 (Status_Damage_Air): ENTRY @ 4 : 3
+
+IC-Int[0xC6B] ("Common_Param_Float_Down_Frame") in Action 0x4D (Status_Down_Wait): ENTRY @ 0 : 0
+IC-Int[0xC6B] ("Common_Param_Float_Down_Frame") in Action 0x50 (Status_Lay_Down): ENTRY @ 3 : 0
+
+IC-Int[0xC6C] ("Common_Param_Float_Stand_Stick_Y") in Action 0x8D (Status_Slip_Wait): ENTRY @ 11 : 4
+IC-Int[0xC6C] ("Common_Param_Float_Stand_Stick_Y") in hsr_14B8C @ 17 : 4
+
+IC-Int[0xC6D] ("Common_Param_Float_Stand_Fb_Stick_X") in Action 0x8D (Status_Slip_Wait): ENTRY @ 5 : 4
+IC-Int[0xC6D] ("Common_Param_Float_Stand_Fb_Stick_X") in Action 0x8D (Status_Slip_Wait): ENTRY @ 8 : 4
+IC-Int[0xC6D] ("Common_Param_Float_Stand_Fb_Stick_X") in hsr_14904 @ 8 : 3
+IC-Int[0xC6D] ("Common_Param_Float_Stand_Fb_Stick_X") in hsr_14B8C @ 14 : 4
+
+IC-Int[0xC71] ("Common_Param_Float_Special_Stick_X") in Action 0x3 (Status_Dash): ENTRY @ 3 : 3
+IC-Int[0xC71] ("Common_Param_Float_Special_Stick_X") in hsr_9964 @ 1 : 3
+IC-Int[0xC71] ("Common_Param_Float_Special_Stick_X") in hsr_9964 @ 10 : 3
+IC-Int[0xC71] ("Common_Param_Float_Special_Stick_X") in hsr_9964 @ 15 : 3
+IC-Int[0xC71] ("Common_Param_Float_Special_Stick_X") in hsr_A9AC @ 7 : 3
+IC-Int[0xC71] ("Common_Param_Float_Special_Stick_X") in hsr_A9AC @ 10 : 3
+IC-Int[0xC71] ("Common_Param_Float_Special_Stick_X") in hsr_A9AC @ 15 : 3
+
+IC-Int[0xC72] ("Common_Param_Float_Special_Stick_Y") in hsr_14054 @ 1 : 3
+IC-Int[0xC72] ("Common_Param_Float_Special_Stick_Y") in hsr_9964 @ 4 : 3
+IC-Int[0xC72] ("Common_Param_Float_Special_Stick_Y") in hsr_9964 @ 7 : 3
+IC-Int[0xC72] ("Common_Param_Float_Special_Stick_Y") in hsr_9964 @ 11 : 3
+IC-Int[0xC72] ("Common_Param_Float_Special_Stick_Y") in hsr_9964 @ 16 : 3
+IC-Int[0xC72] ("Common_Param_Float_Special_Stick_Y") in hsr_A9AC @ 1 : 3
+IC-Int[0xC72] ("Common_Param_Float_Special_Stick_Y") in hsr_A9AC @ 4 : 3
+IC-Int[0xC72] ("Common_Param_Float_Special_Stick_Y") in hsr_A9AC @ 11 : 3
+IC-Int[0xC72] ("Common_Param_Float_Special_Stick_Y") in hsr_A9AC @ 16 : 3
+IC-Int[0xC72] ("Common_Param_Float_Special_Stick_Y") in statusAnimCmd_JumpSquat @ 7 : 3
+
+IC-Int[0xC73] ("Common_Param_Float_Pass_Stick_Y") in hsr_B874 @ 1 : 3
+IC-Int[0xC73] ("Common_Param_Float_Pass_Stick_Y") in statusAnimCmd_GuardCont @ 38 : 4
+
+IC-Int[0xC74] ("Common_Param_Float_Pass_Speed_Y") in hsr_B7FC @ 3 : 1
+
+IC-Int[0xC78] ("Common_Param_Float_Cliff_Catch_Cancel_Stick_Y") in statusAnimCmd_AIRChkCliff @ 3 : 3
+
+IC-Int[0xC79] in Action 0x76 (Status_Cliff_Attack): ENTRY @ 5 : 3
+IC-Int[0xC79] in Action 0x77 (Status_Cliff_Climb): ENTRY @ 5 : 3
+IC-Int[0xC79] in Action 0x78 (Status_Cliff_Escape): ENTRY @ 5 : 3
+IC-Int[0xC79] in Action 0x79 (Status_Cliff_Jump1): ENTRY @ 5 : 3
+IC-Int[0xC79] in Action 0x7A (Status_Cliff_Jump2): ENTRY @ 7 : 3
+
+IC-Int[0xC7E] ("Common_Param_Float_Passive_Fb_Cont_Value") in hsr_B48C @ 3 : 3
+IC-Int[0xC7E] ("Common_Param_Float_Passive_Fb_Cont_Value") in statusAnimCmd_EscapeAirCommon @ 11 : 3
+
+IC-Int[0xC97] ("Common_Param_Float_Wall_Jump_Stick_X") in Action 0x68 (Status_Attach_Wall): ENTRY @ 7 : 4
+IC-Int[0xC97] ("Common_Param_Float_Wall_Jump_Stick_X") in Action 0x69 (Status_Attach_Wall_Wait): ENTRY @ 8 : 4
+
+IC-Int[0xC9B] ("Common_Param_Float_Tread_Jump_Speed_Limit") in statusAnimCmd_AIRChkTreadJump @ 4 : 3
+IC-Int[0xC9B] ("Common_Param_Float_Tread_Jump_Speed_Limit") in statusAnimCmd_AIRChkTreadJump @ 9 : 3
+
+IC-Int[0xCA5] ("Common_Param_Float_Shield_Dec") in statusAnimCmd_GuardOnUniq @ 0 : 0
+
+IC-Int[0xCA7] ("Common_Param_Float_Shield_Reset") in Action 0x56 (Status_Shield_Break_Fly): ENTRY @ 2 : 0
+
+IC-Int[0xCD4] ("Common_Param_Float_Damage_Fly_Reflect_Speed") in Action 0x43 (Status_Damage): ENTRY @ 9 : 3
+IC-Int[0xCD4] ("Common_Param_Float_Damage_Fly_Reflect_Speed") in Action 0x43 (Status_Damage): ENTRY @ 11 : 3
+IC-Int[0xCD4] ("Common_Param_Float_Damage_Fly_Reflect_Speed") in hsr_147AC @ 2 : 3
+IC-Int[0xCD4] ("Common_Param_Float_Damage_Fly_Reflect_Speed") in hsr_147AC @ 6 : 3
+IC-Int[0xCD4] ("Common_Param_Float_Damage_Fly_Reflect_Speed") in hsr_147AC @ 10 : 3
+IC-Int[0xCD4] ("Common_Param_Float_Damage_Fly_Reflect_Speed") in hsr_147AC @ 14 : 3
+IC-Int[0xCD4] ("Common_Param_Float_Damage_Fly_Reflect_Speed") in hsr_B064 @ 2 : 3
+IC-Int[0xCD4] ("Common_Param_Float_Damage_Fly_Reflect_Speed") in hsr_B064 @ 6 : 3
+IC-Int[0xCD4] ("Common_Param_Float_Damage_Fly_Reflect_Speed") in hsr_B1FC @ 2 : 3
+IC-Int[0xCD4] ("Common_Param_Float_Damage_Fly_Reflect_Speed") in hsr_B1FC @ 8 : 3
+IC-Int[0xCD4] ("Common_Param_Float_Damage_Fly_Reflect_Speed") in hsr_B2CC @ 2 : 3
+IC-Int[0xCD4] ("Common_Param_Float_Damage_Fly_Reflect_Speed") in hsr_B37C @ 2 : 3
+
+IC-Int[0xCE3] in statusAnimCmd_DamageFall @ 3 : 4
+
+IC-Int[0xCE7] in hsr_1424C @ 0 : 3
+
+IC-Int[0xCE8] in hsr_1424C @ 2 : 3
+
+IC-Int[0xD07] ("Common_Param_Float_Damage_Bury_Jump_No_Attack_Frame_Value") in hsr_1D0EC @ 1 : 3
+
+IC-Int[0xD08] ("Common_Param_Float_Damage_Bury_Damage_Reaction_Sub") in Action 0xC7 (Status_Bury): ENTRY @ 6 : 1
+IC-Int[0xD08] ("Common_Param_Float_Damage_Bury_Damage_Reaction_Sub") in Action 0xC8 (Status_Bury_Wait): ENTRY @ 4 : 1
+
+IC-Int[0xD16] ("Common_Param_Float_Ladder_Stick_Y") in Action 0x92 (Status_Ladder_Catch): ENTRY @ 4 : 4
+
+IC-Int[0xD17] ("Common_Param_Float_Ladder_Cancel_Frame") in Action 0x92 (Status_Ladder_Catch): ENTRY @ 5 : 3
+
+IC-Int[0xD19] in hsr_17FA4 @ 0 : 3
+
+IC-Int[0xD77] ("Common_Param_Float_Item_Lift_Walk_Stick_X") in Action 0x98 (Status_Item_Lift_Wait): ENTRY @ 1 : 4
+IC-Int[0xD77] ("Common_Param_Float_Item_Lift_Walk_Stick_X") in Action 0x9A (Status_Item_Lift_Walk): ENTRY @ 2 : 3
+
+IC-Int[0xD78] ("Common_Param_Float_Item_Turn_Stick_X") in Action 0x98 (Status_Item_Lift_Wait): ENTRY @ 3 : 4
+
+IC-Int[0xDB4] ("Owner_Param_Float_Result_Win_Rot_Y") in statusAnimCmd_Win @ 16 : 1
+
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in Action 0xEF (): ENTRY @ 3 : 1
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in hsr_15E14 @ 1 : 1
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in hsr_BC74 @ 2 : 1
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in hsr_BC74 @ 16 : 1
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in statusAnimCmd_AttackAir @ 24 : 0
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in statusAnimCmd_Win @ 3 : 1
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in statusAnimCmd_Win @ 6 : 1
+
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x100 (Status_Kirby_Final_Damage_Fly) : EXIT @ 0 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x5C (Status_Damage_Song_Start) : EXIT @ 0 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x5D (Status_Damage_Song) : EXIT @ 0 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x5E (Status_Damage_Song_End) : EXIT @ 0 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x6 (Status_Turn) : EXIT @ 0 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x6 (Status_Turn) : EXIT @ 1 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x6 (Status_Turn) : EXIT @ 6 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x7 (Status_Turn_Dash) : EXIT @ 0 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x7 (Status_Turn_Dash) : EXIT @ 1 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x7 (Status_Turn_Dash) : EXIT @ 6 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0xDC (Status_Warptar) : EXIT @ 0 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in statusAnimCmd_GuardCont @ 4 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in statusAnimCmd_GuardCont @ 21 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in statusAnimCmdExit_AirLasso @ 0 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in statusAnimCmdExit_AirLasso @ 1 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in statusAnimCmdExit_AirLassoHang @ 0 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in statusAnimCmdExit_AirLassoReach @ 0 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in statusAnimCmdExit_AirLassoReach @ 1 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in statusAnimCmdExit_CatchPull @ 0 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in statusAnimCmdExit_CatchTurn @ 0 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in statusAnimCmdExit_CatchWait @ 0 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in statusAnimCmdExit_Guard @ 0 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in statusAnimCmdExit_Guard @ 1 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in statusAnimCmdExit_GuardDamage @ 1 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in statusAnimCmdExit_GuardOn @ 0 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in statusAnimCmdExit_GuardOn @ 1 : 1
+
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x4D (Status_Down_Wait): ENTRY @ 1 : 1
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in hsr_1F47C @ 2 : 1
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in statusAnimCmd_CatchTurn @ 3 : 1
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in statusAnimCmd_GuardCont @ 5 : 1
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in statusAnimCmd_GuardCont @ 22 : 1
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in statusAnimCmd_Win @ 2 : 1
+
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0x96 (Status_Item_Pickup_Light): ENTRY @ 15 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0x96 (Status_Item_Pickup_Light): ENTRY @ 17 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0x96 (Status_Item_Pickup_Light): ENTRY @ 19 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0x97 (Status_Item_Pickup_Heavy): ENTRY @ 3 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0x9B (Status_Item_Throw) : EXIT @ 0 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0x9C (Status_Item_Throw_Dash) : EXIT @ 0 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0x9C (Status_Item_Throw_Dash): ENTRY @ 1 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0x9D (Status_Item_Throw_Heavy) : EXIT @ 0 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0x9E (Status_Item_Swing) : EXIT @ 2 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0x9F (Status_Item_Swing_S3) : EXIT @ 2 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0xA1 (Status_Item_Swing_S4) : EXIT @ 1 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0xA3 (Status_Item_Swing_Dash) : EXIT @ 2 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0xA4 (Status_Item_Shoot_Wait): ENTRY @ 2 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0xA5 (Status_Item_Shoot_Walk_F): ENTRY @ 1 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0xA6 (Status_Item_Shoot_Walk_Brake_F): ENTRY @ 1 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0xA7 (Status_Item_Shoot_Walk_B): ENTRY @ 1 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0xA8 (Status_Item_Shoot_Walk_Brake_B): ENTRY @ 1 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0xA9 (Status_Item_Shoot_Dash_F): ENTRY @ 2 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0xAA (Status_Item_Shoot_Dash_B): ENTRY @ 2 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0xAB (Status_Item_Shoot_Jump_Squat): ENTRY @ 2 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0xAC (Status_Item_Shoot_Jump): ENTRY @ 1 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0xAD (Status_Item_Shoot_Air): ENTRY @ 7 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0xAE (Status_Item_Shoot_Landing): ENTRY @ 1 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in Action 0xB2 (Status_Item_Assist_Hoist) : EXIT @ 0 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in hsr_1C464 @ 0 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in hsr_1DDEC @ 5 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in hsr_DF94 @ 6 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in statusAnimCmd_ItemThrow @ 5 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in statusAnimCmd_Landing @ 2 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in statusAnimCmd_LandingAttackAir @ 2 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in statusAnimCmd_LandingFallSpecial @ 2 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in statusAnimCmd_LandingLight @ 3 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in statusAnimCmdPre_ItemSwingS4Start @ 0 : 1
+IC-Int[0x4E29] ("Variable_Int_Have_Item_Kind") in statusAnimCmdPre_Wait @ 4 : 1
+
+IC-Int[0x4E32] ("Variable_Int_Shoot_Item_Bullet") in hsr_1B674 @ 0 : 3
+IC-Int[0x4E32] ("Variable_Int_Shoot_Item_Bullet") in statusAnimCmdPre_ItemShoot @ 0 : 1
+
+IC-Int[0x5208] ("Variable_Int_Combo_Count") in Action 0x24 (Status_Attack): ENTRY @ 7 : 1
+IC-Int[0x5208] ("Variable_Int_Combo_Count") in Action 0x24 (Status_Attack): ENTRY @ 14 : 1
+IC-Int[0x5208] ("Variable_Int_Combo_Count") in Action 0x24 (Status_Attack): ENTRY @ 41 : 1
+IC-Int[0x5208] ("Variable_Int_Combo_Count") in Action 0x24 (Status_Attack): ENTRY @ 55 : 1
+IC-Int[0x5208] ("Variable_Int_Combo_Count") in Action 0x27 (Status_Attack_S3): ENTRY @ 11 : 1
+IC-Int[0x5208] ("Variable_Int_Combo_Count") in Action 0x27 (Status_Attack_S3): ENTRY @ 29 : 1
+IC-Int[0x5208] ("Variable_Int_Combo_Count") in statusAnimCmd_AttackS4 @ 14 : 1
+IC-Int[0x5208] ("Variable_Int_Combo_Count") in statusAnimCmd_AttackS4 @ 21 : 1
+
+IC-Int[0x5209] in Action 0x3 (Status_Dash): ENTRY @ 45 : 1
+IC-Int[0x5209] in Action 0x3 (Status_Dash): ENTRY @ 48 : 1
+IC-Int[0x5209] in hsr_1B854 @ 2 : 1
+IC-Int[0x5209] in hsr_A5B4 @ 7 : 1
+IC-Int[0x5209] in hsr_A5B4 @ 10 : 1
+IC-Int[0x5209] in hsr_D4A4 @ 19 : 1
+IC-Int[0x5209] in hsr_D4A4 @ 23 : 1
+IC-Int[0x5209] in statusAnimCmd_DamageFall @ 4 : 1
+IC-Int[0x5209] in statusAnimCmd_GROUNDChkEscape @ 6 : 1
+IC-Int[0x5209] in statusAnimCmd_GROUNDChkEscape @ 10 : 1
+IC-Int[0x5209] in statusAnimCmd_GuardCont @ 16 : 1
+IC-Int[0x5209] in statusAnimCmd_GuardCont @ 19 : 1
+IC-Int[0x5209] in statusAnimCmd_ItemShootWait_Common @ 9 : 1
+IC-Int[0x5209] in statusAnimCmd_ItemShootWait_Common @ 11 : 1
+IC-Int[0x5209] in statusAnimCmd_ItemShootWait_Common @ 14 : 1
+IC-Int[0x5209] in statusAnimCmd_ItemShootWait_Common @ 16 : 1
+IC-Int[0x5209] in statusAnimCmd_ItemShootWalkB_Common @ 8 : 1
+IC-Int[0x5209] in statusAnimCmd_ItemShootWalkB_Common @ 10 : 1
+IC-Int[0x5209] in statusAnimCmd_ItemShootWalkF_Common @ 8 : 1
+IC-Int[0x5209] in statusAnimCmd_ItemShootWalkF_Common @ 10 : 1
+
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in Action 0x1C (Status_Guard_Off): ENTRY @ 6 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in Action 0x3 (Status_Dash): ENTRY @ 54 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in Action 0x4 (Status_Run): ENTRY @ 25 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in Action 0x5 (Status_Run_Brake): ENTRY @ 23 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in Action 0x8 (Status_Turn_Run): ENTRY @ 9 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in Action 0x9 (Status_Turn_Run_Brake): ENTRY @ 4 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in Action 0xC2 (Status_Gimmick_Truck): ENTRY @ 11 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in Action 0xE2 (Status_Hammer_Jump_Squat): ENTRY @ 7 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in hsr_104A4 @ 6 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in hsr_14054 @ 16 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in hsr_14054 @ 33 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in hsr_1B7A4 @ 1 : 3
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in hsr_1C5DC @ 2 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in hsr_1DD4C @ 3 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in hsr_9FBC @ 10 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in hsr_9FBC @ 14 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in hsr_A38C @ 3 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in hsr_B874 @ 2 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in statusAnimCmd_AIRChkJumpAerial @ 2 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in statusAnimCmd_AIRChkJumpAerial @ 15 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in statusAnimCmd_AIRChkTreadJump @ 1 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in statusAnimCmd_AirLassoHang @ 11 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in statusAnimCmd_Fall @ 4 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in statusAnimCmd_GimmickCatapult @ 4 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in statusAnimCmd_GROUNDChkEscape @ 2 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in statusAnimCmd_GuardCont @ 13 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in statusAnimCmd_GuardCont @ 35 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in statusAnimCmd_GuardCont @ 39 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in statusAnimCmd_ItemShootDashB_Common @ 7 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in statusAnimCmd_ItemShootDashF_Common @ 11 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in statusAnimCmd_ItemShootLanding_Common @ 5 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in statusAnimCmd_ItemShootWait_Common @ 5 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in statusAnimCmd_ItemShootWalkB_Common @ 4 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in statusAnimCmd_ItemShootWalkBBrake_Common @ 6 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in statusAnimCmd_ItemShootWalkF_Common @ 4 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in statusAnimCmd_ItemShootWalkFBrake_Common @ 6 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in statusAnimCmd_JumpSquat @ 0 : 1
+
+IC-Int[0x520B] ("Variable_Int_Controller_Flick_No_Reset_X") in hsr_1942C @ 1 : 1
+IC-Int[0x520B] ("Variable_Int_Controller_Flick_No_Reset_X") in hsr_19834 @ 7 : 1
+IC-Int[0x520B] ("Variable_Int_Controller_Flick_No_Reset_X") in hsr_19834 @ 17 : 1
+IC-Int[0x520B] ("Variable_Int_Controller_Flick_No_Reset_X") in statusAnimCmd_ItemThrowHeavyCommon @ 2 : 1
+
+IC-Int[0x520C] ("Variable_Int_Controller_Flick_No_Reset_Y") in hsr_1942C @ 13 : 1
+IC-Int[0x520C] ("Variable_Int_Controller_Flick_No_Reset_Y") in hsr_1942C @ 19 : 1
+IC-Int[0x520C] ("Variable_Int_Controller_Flick_No_Reset_Y") in hsr_19834 @ 30 : 1
+IC-Int[0x520C] ("Variable_Int_Controller_Flick_No_Reset_Y") in hsr_19834 @ 40 : 1
+IC-Int[0x520C] ("Variable_Int_Controller_Flick_No_Reset_Y") in statusAnimCmd_ItemThrowHeavyCommon @ 12 : 1
+IC-Int[0x520C] ("Variable_Int_Controller_Flick_No_Reset_Y") in statusAnimCmd_ItemThrowHeavyCommon @ 17 : 1
+
+IC-Int[0x5210] ("Variable_Int_Controller_Flick_Y_Dir") in Action 0xE2 (Status_Hammer_Jump_Squat): ENTRY @ 8 : 1
+IC-Int[0x5210] ("Variable_Int_Controller_Flick_Y_Dir") in statusAnimCmd_JumpSquat @ 1 : 1
+
+IC-Int[0x5212] ("Variable_Int_Controller_Trigger_1_Count_Prev") in hsr_DEAC @ 2 : 1
+
+IC-Int[0x5215] ("Variable_Int_Controller_Trigger_3_Count") in Action 0x62 (Status_Passive_Wall): ENTRY @ 3 : 3
+IC-Int[0x5215] ("Variable_Int_Controller_Trigger_3_Count") in hsr_B644 @ 3 : 1
+IC-Int[0x5215] ("Variable_Int_Controller_Trigger_3_Count") in statusAnimCmd_EscapeAirCommon @ 18 : 1
+
+IC-Int[0x5216] ("Variable_Int_Controller_Trigger_3_Count_Prev") in hsr_14054 @ 2 : 1
+IC-Int[0x5216] ("Variable_Int_Controller_Trigger_3_Count_Prev") in hsr_14054 @ 10 : 1
+IC-Int[0x5216] ("Variable_Int_Controller_Trigger_3_Count_Prev") in hsr_14054 @ 26 : 1
+
+IC-Int[0x5219] ("Variable_Int_Controller_Trigger_5_Count") in hsr_B48C @ 1 : 1
+IC-Int[0x5219] ("Variable_Int_Controller_Trigger_5_Count") in hsr_B48C @ 6 : 1
+IC-Int[0x5219] ("Variable_Int_Controller_Trigger_5_Count") in hsr_B644 @ 1 : 1
+IC-Int[0x5219] ("Variable_Int_Controller_Trigger_5_Count") in hsr_B644 @ 7 : 1
+IC-Int[0x5219] ("Variable_Int_Controller_Trigger_5_Count") in hsr_B71C @ 1 : 1
+IC-Int[0x5219] ("Variable_Int_Controller_Trigger_5_Count") in hsr_B7BC @ 1 : 1
+
+IC-Int[0x521A] ("Variable_Int_Controller_Trigger_5_Count_Prev") in hsr_B48C @ 2 : 1
+IC-Int[0x521A] ("Variable_Int_Controller_Trigger_5_Count_Prev") in hsr_B48C @ 7 : 1
+IC-Int[0x521A] ("Variable_Int_Controller_Trigger_5_Count_Prev") in hsr_B644 @ 2 : 1
+IC-Int[0x521A] ("Variable_Int_Controller_Trigger_5_Count_Prev") in hsr_B644 @ 8 : 1
+IC-Int[0x521A] ("Variable_Int_Controller_Trigger_5_Count_Prev") in hsr_B71C @ 2 : 1
+IC-Int[0x521A] ("Variable_Int_Controller_Trigger_5_Count_Prev") in hsr_B7BC @ 2 : 1
+
+IC-Int[0x521B] ("Variable_Int_Controller_Flick_X_Lr") in hsr_B924 @ 6 : 1
+
+IC-Int[0x521C] ("Variable_Int_Controller_Flick_X_Lr_Rv") in hsr_B924 @ 2 : 1
+
+IC-Int[0x521D] ("Variable_Int_Controller_Flick_After_X_Lr_Rv") in statusAnimCmdPre_SpecialN @ 1 : 1
+
+IC-Int[0x521E] ("Variable_Int_Item_Swing_1_Motion_Kind") in Action 0x9E (Status_Item_Swing): ENTRY @ 1 : 0
+IC-Int[0x521E] ("Variable_Int_Item_Swing_1_Motion_Kind") in Action 0x9E (Status_Item_Swing): ENTRY @ 2 : 1
+
+IC-Int[0x521F] ("Variable_Int_Item_Swing_3_Motion_Kind") in Action 0x9F (Status_Item_Swing_S3): ENTRY @ 1 : 0
+IC-Int[0x521F] ("Variable_Int_Item_Swing_3_Motion_Kind") in Action 0x9F (Status_Item_Swing_S3): ENTRY @ 2 : 1
+
+IC-Int[0x5220] ("Variable_Int_Item_Swing_4_Motion_Kind") in statusAnimCmd_ItemSwingS4 @ 2 : 0
+IC-Int[0x5220] ("Variable_Int_Item_Swing_4_Motion_Kind") in statusAnimCmd_ItemSwingS4 @ 5 : 1
+IC-Int[0x5220] ("Variable_Int_Item_Swing_4_Motion_Kind") in statusAnimCmd_ItemSwingS4 @ 17 : 1
+IC-Int[0x5220] ("Variable_Int_Item_Swing_4_Motion_Kind") in statusAnimCmd_ItemSwingS4Hold @ 5 : 0
+IC-Int[0x5220] ("Variable_Int_Item_Swing_4_Motion_Kind") in statusAnimCmd_ItemSwingS4Start @ 13 : 0
+IC-Int[0x5220] ("Variable_Int_Item_Swing_4_Motion_Kind") in statusAnimCmd_ItemSwingS4Start @ 16 : 1
+
+IC-Int[0x5221] ("Variable_Int_Item_Swing_Dash_Motion_Kind") in Action 0xA3 (Status_Item_Swing_Dash): ENTRY @ 1 : 0
+IC-Int[0x5221] ("Variable_Int_Item_Swing_Dash_Motion_Kind") in Action 0xA3 (Status_Item_Swing_Dash): ENTRY @ 2 : 1
+
+IC-Int[0x5222] ("Variable_Int_Item_Wait_Motion_Kind") in hsr_BC74 @ 11 : 1
+IC-Int[0x5222] ("Variable_Int_Item_Wait_Motion_Kind") in hsr_BC74 @ 14 : 1
+
+IC-Int[0x5223] ("Variable_Int_Item_Squat_Wait_Motion_Kind") in Action 0x12 (Status_Squat_Wait): ENTRY @ 14 : 1
+IC-Int[0x5223] ("Variable_Int_Item_Squat_Wait_Motion_Kind") in Action 0x12 (Status_Squat_Wait): ENTRY @ 16 : 1
+
+IC-Int[0x5224] ("Variable_Int_Win_Pose_Kind") in statusAnimCmd_Win @ 14 : 0
+
+IC-Int[0x5225] ("Variable_Int_Player_Color_Kind") in hsr_2D9C @ 0 : 11
+
+IC-Int[0x59D9] ("Customize_Param_Int_Run_Brake_Attack_Dash_Frame") in Action 0x8 (Status_Turn_Run): ENTRY @ 24 : 0
+
+IC-Int[0x59DA] ("Customize_Param_Int_Jump_Squat_Frame") in Action 0xE2 (Status_Hammer_Jump_Squat): ENTRY @ 2 : 4
+IC-Int[0x59DA] ("Customize_Param_Int_Jump_Squat_Frame") in hsr_127A4 @ 11 : 3
+IC-Int[0x59DA] ("Customize_Param_Int_Jump_Squat_Frame") in hsr_19BB4 @ 1 : 3
+
+IC-Int[0x59DB] ("Customize_Param_Int_Jump_Count_Max") in Action 0xD (Status_Fly): ENTRY @ 10 : 3
+IC-Int[0x59DB] ("Customize_Param_Int_Jump_Count_Max") in hsr_14054 @ 9 : 3
+IC-Int[0x59DB] ("Customize_Param_Int_Jump_Count_Max") in hsr_14054 @ 17 : 3
+IC-Int[0x59DB] ("Customize_Param_Int_Jump_Count_Max") in statusAnimCmd_AIRChkJumpAerial @ 3 : 3
+IC-Int[0x59DB] ("Customize_Param_Int_Jump_Count_Max") in statusAnimCmd_AIRChkJumpAerial @ 7 : 3
+IC-Int[0x59DB] ("Customize_Param_Int_Jump_Count_Max") in statusAnimCmd_AIRChkJumpAerial @ 19 : 3
+IC-Int[0x59DB] ("Customize_Param_Int_Jump_Count_Max") in statusAnimCmd_GlideAttack @ 1 : 3
+IC-Int[0x59DB] ("Customize_Param_Int_Jump_Count_Max") in statusAnimCmd_GlideEnd @ 1 : 3
+
+IC-Int[0x59DC] ("Customize_Param_Int_Jump_Glide_Frame") in hsr_B9F4 @ 0 : 4
+
+IC-Int[0x59DD] in Action 0x24 (Status_Attack): ENTRY @ 11 : 3
+
+IC-Int[0x59DF] ("Customize_Param_Int_Landing_Heavy_Frame") in Action 0xAF (Status_Item_Screw_Jump): ENTRY @ 5 : 3
+IC-Int[0x59DF] ("Customize_Param_Int_Landing_Heavy_Frame") in statusAnimCmd_AIRChkLanding @ 1 : 3
+
+IC-Int[0x59F7] ("Common_Param_Int_Dash_Flick_X") in Action 0x3 (Status_Dash): ENTRY @ 45 : 3
+IC-Int[0x59F7] ("Common_Param_Int_Dash_Flick_X") in Action 0x3 (Status_Dash): ENTRY @ 48 : 3
+IC-Int[0x59F7] ("Common_Param_Int_Dash_Flick_X") in hsr_1B854 @ 2 : 3
+IC-Int[0x59F7] ("Common_Param_Int_Dash_Flick_X") in hsr_9FBC @ 1 : 2
+IC-Int[0x59F7] ("Common_Param_Int_Dash_Flick_X") in hsr_9FBC @ 4 : 2
+IC-Int[0x59F7] ("Common_Param_Int_Dash_Flick_X") in hsr_9FBC @ 6 : 4
+IC-Int[0x59F7] ("Common_Param_Int_Dash_Flick_X") in hsr_A5B4 @ 7 : 3
+IC-Int[0x59F7] ("Common_Param_Int_Dash_Flick_X") in hsr_A5B4 @ 10 : 3
+IC-Int[0x59F7] ("Common_Param_Int_Dash_Flick_X") in statusAnimCmd_ItemShootWait_Common @ 9 : 3
+IC-Int[0x59F7] ("Common_Param_Int_Dash_Flick_X") in statusAnimCmd_ItemShootWait_Common @ 11 : 3
+IC-Int[0x59F7] ("Common_Param_Int_Dash_Flick_X") in statusAnimCmd_ItemShootWait_Common @ 14 : 3
+IC-Int[0x59F7] ("Common_Param_Int_Dash_Flick_X") in statusAnimCmd_ItemShootWait_Common @ 16 : 3
+IC-Int[0x59F7] ("Common_Param_Int_Dash_Flick_X") in statusAnimCmd_ItemShootWalkB_Common @ 8 : 3
+IC-Int[0x59F7] ("Common_Param_Int_Dash_Flick_X") in statusAnimCmd_ItemShootWalkB_Common @ 10 : 3
+IC-Int[0x59F7] ("Common_Param_Int_Dash_Flick_X") in statusAnimCmd_ItemShootWalkF_Common @ 8 : 3
+IC-Int[0x59F7] ("Common_Param_Int_Dash_Flick_X") in statusAnimCmd_ItemShootWalkF_Common @ 10 : 3
+
+IC-Int[0x59F8] ("Common_Param_Int_Dash_Speed_Keep_Frame") in Action 0x3 (Status_Dash): ENTRY @ 46 : 3
+
+IC-Int[0x59F9] ("Common_Param_Int_Re_Dash_Frame") in Action 0x3 (Status_Dash): ENTRY @ 49 : 3
+
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in Action 0x1C (Status_Guard_Off): ENTRY @ 6 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in Action 0x3 (Status_Dash): ENTRY @ 54 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in Action 0x4 (Status_Run): ENTRY @ 25 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in Action 0x5 (Status_Run_Brake): ENTRY @ 23 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in Action 0x8 (Status_Turn_Run): ENTRY @ 9 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in Action 0x9 (Status_Turn_Run_Brake): ENTRY @ 4 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in Action 0xC2 (Status_Gimmick_Truck): ENTRY @ 11 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in Action 0xE2 (Status_Hammer_Jump_Squat): ENTRY @ 7 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in hsr_104A4 @ 6 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in hsr_14054 @ 16 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in hsr_14054 @ 33 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in hsr_1C5DC @ 2 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in hsr_1DD4C @ 3 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in hsr_A38C @ 3 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in statusAnimCmd_AIRChkJumpAerial @ 2 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in statusAnimCmd_AIRChkJumpAerial @ 15 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in statusAnimCmd_AIRChkTreadJump @ 1 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in statusAnimCmd_AirLassoHang @ 11 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in statusAnimCmd_Fall @ 4 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in statusAnimCmd_GimmickCatapult @ 4 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in statusAnimCmd_GuardCont @ 35 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in statusAnimCmd_ItemShootDashB_Common @ 7 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in statusAnimCmd_ItemShootDashF_Common @ 11 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in statusAnimCmd_ItemShootLanding_Common @ 5 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in statusAnimCmd_ItemShootWait_Common @ 5 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in statusAnimCmd_ItemShootWalkB_Common @ 4 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in statusAnimCmd_ItemShootWalkBBrake_Common @ 6 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in statusAnimCmd_ItemShootWalkF_Common @ 4 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in statusAnimCmd_ItemShootWalkFBrake_Common @ 6 : 3
+IC-Int[0x59FB] ("Common_Param_Int_Jump_Initial_Frame") in statusAnimCmd_JumpSquat @ 0 : 3
+
+IC-Int[0x59FC] ("Common_Param_Int_Jump_Flick_Y") in statusAnimCmd_Fall @ 2 : 3
+IC-Int[0x59FC] ("Common_Param_Int_Jump_Flick_Y") in statusAnimCmd_Fall @ 7 : 3
+
+IC-Int[0x59FD] ("Common_Param_Int_Escape_Flick_Y") in statusAnimCmd_GROUNDChkEscape @ 2 : 3
+IC-Int[0x59FD] ("Common_Param_Int_Escape_Flick_Y") in statusAnimCmd_GuardCont @ 13 : 3
+
+IC-Int[0x59FE] ("Common_Param_Int_Escape_Fb_Flick_X") in hsr_D4A4 @ 19 : 3
+IC-Int[0x59FE] ("Common_Param_Int_Escape_Fb_Flick_X") in hsr_D4A4 @ 23 : 3
+IC-Int[0x59FE] ("Common_Param_Int_Escape_Fb_Flick_X") in statusAnimCmd_GROUNDChkEscape @ 6 : 3
+IC-Int[0x59FE] ("Common_Param_Int_Escape_Fb_Flick_X") in statusAnimCmd_GROUNDChkEscape @ 10 : 3
+IC-Int[0x59FE] ("Common_Param_Int_Escape_Fb_Flick_X") in statusAnimCmd_GuardCont @ 16 : 3
+IC-Int[0x59FE] ("Common_Param_Int_Escape_Fb_Flick_X") in statusAnimCmd_GuardCont @ 19 : 3
+
+IC-Int[0x5A00] in hsr_B924 @ 2 : 3
+IC-Int[0x5A00] in hsr_B924 @ 6 : 3
+
+IC-Int[0x5A05] ("Common_Param_Int_Special_Air_N_Turn_Frame") in statusAnimCmdPre_SpecialN @ 1 : 3
+
+IC-Int[0x5A06] ("Common_Param_Int_Pass_Flick_Y") in hsr_B874 @ 2 : 3
+IC-Int[0x5A06] ("Common_Param_Int_Pass_Flick_Y") in statusAnimCmd_GuardCont @ 39 : 3
+
+IC-Int[0x5A07] ("Common_Param_Int_Cliff_Catch_Move_Frame") in statusAnimCmd_CliffCatchMove @ 2 : 0
+
+IC-Int[0x5A0D] ("Common_Param_Int_No_Rapid_Frame_Value") in hsr_14054 @ 2 : 3
+IC-Int[0x5A0D] ("Common_Param_Int_No_Rapid_Frame_Value") in hsr_14054 @ 10 : 3
+IC-Int[0x5A0D] ("Common_Param_Int_No_Rapid_Frame_Value") in hsr_14054 @ 26 : 3
+IC-Int[0x5A0D] ("Common_Param_Int_No_Rapid_Frame_Value") in hsr_B48C @ 2 : 3
+IC-Int[0x5A0D] ("Common_Param_Int_No_Rapid_Frame_Value") in hsr_B48C @ 7 : 3
+IC-Int[0x5A0D] ("Common_Param_Int_No_Rapid_Frame_Value") in hsr_B644 @ 2 : 3
+IC-Int[0x5A0D] ("Common_Param_Int_No_Rapid_Frame_Value") in hsr_B644 @ 8 : 3
+IC-Int[0x5A0D] ("Common_Param_Int_No_Rapid_Frame_Value") in hsr_B71C @ 2 : 3
+IC-Int[0x5A0D] ("Common_Param_Int_No_Rapid_Frame_Value") in hsr_B7BC @ 2 : 3
+IC-Int[0x5A0D] ("Common_Param_Int_No_Rapid_Frame_Value") in hsr_DEAC @ 2 : 3
+
+IC-Int[0x5A0E] ("Common_Param_Int_Passive_Wall_Stop_Frame") in Action 0x62 (Status_Passive_Wall): ENTRY @ 3 : 5
+IC-Int[0x5A0E] ("Common_Param_Int_Passive_Wall_Stop_Frame") in hsr_B48C @ 1 : 3
+IC-Int[0x5A0E] ("Common_Param_Int_Passive_Wall_Stop_Frame") in hsr_B48C @ 6 : 3
+IC-Int[0x5A0E] ("Common_Param_Int_Passive_Wall_Stop_Frame") in hsr_B644 @ 1 : 3
+IC-Int[0x5A0E] ("Common_Param_Int_Passive_Wall_Stop_Frame") in hsr_B644 @ 3 : 3
+IC-Int[0x5A0E] ("Common_Param_Int_Passive_Wall_Stop_Frame") in hsr_B644 @ 7 : 3
+IC-Int[0x5A0E] ("Common_Param_Int_Passive_Wall_Stop_Frame") in hsr_B71C @ 1 : 3
+IC-Int[0x5A0E] ("Common_Param_Int_Passive_Wall_Stop_Frame") in hsr_B7BC @ 1 : 3
+IC-Int[0x5A0E] ("Common_Param_Int_Passive_Wall_Stop_Frame") in statusAnimCmd_EscapeAirCommon @ 12 : 3
+IC-Int[0x5A0E] ("Common_Param_Int_Passive_Wall_Stop_Frame") in statusAnimCmd_EscapeAirCommon @ 14 : 3
+IC-Int[0x5A0E] ("Common_Param_Int_Passive_Wall_Stop_Frame") in statusAnimCmd_EscapeAirCommon @ 18 : 3
+IC-Int[0x5A0E] ("Common_Param_Int_Passive_Wall_Stop_Frame") in statusAnimCmd_EscapeAirCommon @ 19 : 3
+IC-Int[0x5A0E] ("Common_Param_Int_Passive_Wall_Stop_Frame") in statusAnimCmd_EscapeAirCommon @ 22 : 3
+IC-Int[0x5A0E] ("Common_Param_Int_Passive_Wall_Stop_Frame") in statusAnimCmd_EscapeAirCommon @ 24 : 3
+IC-Int[0x5A0E] ("Common_Param_Int_Passive_Wall_Stop_Frame") in statusAnimCmd_EscapeAirCommon @ 26 : 3
+
+IC-Int[0x5A0F] in Action 0x62 (Status_Passive_Wall): ENTRY @ 9 : 0
+IC-Int[0x5A0F] in Action 0x63 (Status_Passive_Wall_Jump): ENTRY @ 4 : 0
+
+IC-Int[0x5A11] ("Common_Param_Int_Slip_Damage_Disable_Frame") in Action 0x8A (Status_Slip_Down): ENTRY @ 0 : 0
+
+IC-Int[0x5A12] ("Common_Param_Int_Slip_Wait_Frame") in Action 0x8D (Status_Slip_Wait): ENTRY @ 0 : 0
+
+IC-Int[0x5A13] ("Common_Param_Int_Slip_Disable_Frame") in hsr_1769C @ 0 : 0
+
+IC-Int[0x5A16] in Action 0x12 (Status_Squat_Wait): ENTRY @ 0 : 1
+IC-Int[0x5A16] in Action 0x75 (Status_Cliff_Wait): ENTRY @ 0 : 1
+IC-Int[0x5A16] in statusAnimCmd_WaitCommon @ 1 : 1
+
+IC-Int[0x5A1F] ("Common_Param_Int_Wall_Jump_Stop_Frame") in Action 0x67 (Status_Wall_Jump): ENTRY @ 4 : 0
+
+IC-Int[0x5A20] ("Common_Param_Int_Wall_Jump_Disable_Cont_Frame") in Action 0x67 (Status_Wall_Jump): ENTRY @ 5 : 0
+
+IC-Int[0x5A21] ("Common_Param_Int_Tread_Attack_Frame") in Action 0x6D (Status_Tread_Jump) : EXIT @ 0 : 0
+IC-Int[0x5A21] ("Common_Param_Int_Tread_Attack_Frame") in Action 0x6D (Status_Tread_Jump): ENTRY @ 7 : 0
+
+IC-Int[0x5A23] ("Common_Param_Int_Attach_Wall_Disable_Frame") in Action 0x68 (Status_Attach_Wall) : EXIT @ 0 : 0
+IC-Int[0x5A23] ("Common_Param_Int_Attach_Wall_Disable_Frame") in Action 0x69 (Status_Attach_Wall_Wait) : EXIT @ 0 : 0
+
+IC-Int[0x5A24] ("Common_Param_Int_Shield_Min_Frame") in Action 0x1A (Status_Guard_On): ENTRY @ 7 : 0
+
+IC-Int[0x5A26] ("Common_Param_Int_Shield_Just_Frame") in Action 0x1A (Status_Guard_On): ENTRY @ 8 : 0
+
+IC-Int[0x5A27] ("Common_Param_Int_Continue_Just_Shield_Count") in Action 0x1D (Status_Guard_Damage): ENTRY @ 6 : 0
+
+IC-Int[0x5A28] ("Common_Param_Int_Guard_Off_Cancel_Frame") in Action 0x1C (Status_Guard_Off): ENTRY @ 17 : 0
+
+IC-Int[0x5A29] ("Common_Param_Int_Catch_Dash_Frame") in Action 0x26 (Status_Attack_Dash): ENTRY @ 8 : 0
+IC-Int[0x5A29] ("Common_Param_Int_Catch_Dash_Frame") in statusAnimCmd_GuardCont @ 26 : 0
+
+IC-Int[0x5A2A] ("Common_Param_Int_Catch_Turn_Frame") in Action 0x8 (Status_Turn_Run): ENTRY @ 5 : 0
+IC-Int[0x5A2A] ("Common_Param_Int_Catch_Turn_Frame") in statusAnimCmd_CatchDash @ 4 : 0
+
+IC-Int[0x5A2B] in hsr_102F4 @ 0 : 0
+
+IC-Int[0x5A2C] ("Common_Param_Int_Capture_Cut_Jump_Button_Count") in Action 0x41 (Status_Capture_Jump): ENTRY @ 2 : 0
+
+IC-Int[0x5A35] in hsr_B064 @ 3 : 3
+IC-Int[0x5A35] in hsr_B064 @ 7 : 3
+IC-Int[0x5A35] in hsr_B1FC @ 5 : 3
+IC-Int[0x5A35] in hsr_B1FC @ 11 : 3
+IC-Int[0x5A35] in hsr_B2CC @ 3 : 3
+IC-Int[0x5A35] in hsr_B37C @ 4 : 3
+
+IC-Int[0x5A36] in hsr_13B6C @ 4 : 3
+
+IC-Int[0x5A37] in statusAnimCmd_DamageFall @ 4 : 3
+
+IC-Int[0x5A3D] ("Common_Param_Int_Rebirth_Wait_Frame") in statusAnimCmd_RebirthCommon @ 5 : 4
+
+IC-Int[0x5A40] ("Common_Param_Int_Bury_Down_Frame") in Action 0xC7 (Status_Bury): ENTRY @ 2 : 0
+
+IC-Int[0x5A42] ("Common_Param_Int_Ice_Jump_Stiff_Frame") in Action 0xCB (Status_Ice_Jump): ENTRY @ 3 : 4
+
+IC-Int[0x5A44] in hsr_17FA4 @ 2 : 3
+
+IC-Int[0x5A45] ("Common_Param_Int_Swim_Jump_Charge_Frame") in Action 0xBA (Status_Swim_Jump): ENTRY @ 9 : 4
+
+IC-Int[0x5A46] ("Common_Param_Int_Swim_Jump_Speed_Y_Dec_Count") in Action 0xBA (Status_Swim_Jump): ENTRY @ 3 : 3
+
+IC-Int[0x5A48] ("Common_Param_Int_Swim_Drown_Frame") in hsr_1C65C @ 1 : 0
+
+IC-Int[0x5A49] ("Common_Param_Int_Swim_Drown_Out_Frame") in Action 0xBB (Status_Swim_Drown): ENTRY @ 1 : 4
+
+IC-Int[0x5A54] ("Common_Param_Int_Item_Throw_4_Flick") in hsr_1942C @ 1 : 3
+IC-Int[0x5A54] ("Common_Param_Int_Item_Throw_4_Flick") in statusAnimCmd_ItemThrowHeavyCommon @ 2 : 3
+
+IC-Int[0x5A55] ("Common_Param_Int_Item_Air_Throw_4_Flick") in hsr_19834 @ 7 : 3
+IC-Int[0x5A55] ("Common_Param_Int_Item_Air_Throw_4_Flick") in hsr_19834 @ 17 : 3
+IC-Int[0x5A55] ("Common_Param_Int_Item_Air_Throw_4_Flick") in hsr_19834 @ 30 : 3
+IC-Int[0x5A55] ("Common_Param_Int_Item_Air_Throw_4_Flick") in hsr_19834 @ 40 : 3
+
+IC-Int[0x5A56] ("Common_Param_Int_Item_Catch_Frame_Attack_Dash") in hsr_127A4 @ 8 : 3
+
+IC-Int[0x5A57] ("Common_Param_Int_Item_Air_Catch_Frame") in statusAnimCmd_AttackAirUniq @ 1 : 3
+
+IC-Int[0x5A58] ("Common_Param_Int_Item_Air_Catch_Frame_Escape") in hsr_1195C @ 1 : 3
+
+IC-Int[0x5A5C] in hsr_11814 @ 7 : 3
+IC-Int[0x5A5C] in hsr_1195C @ 5 : 3
+IC-Int[0x5A5C] in statusAnimCmd_EscapeAirCommon @ 5 : 3
+
+IC-Int[0x5A64] in hsr_1B7A4 @ 1 : 5
+
+IC-Int[0x5A6F] ("Common_Param_Int_Hammer_Landing_Frame") in Action 0xE5 (Status_Hammer_Landing): ENTRY @ 0 : 4
+
+IC-Int[0x5A87] ("Owner_Param_Int_Swim_Drown_Frame_Add") in hsr_1C65C @ 2 : 0
+
+IC-Int[0x5A8C] ("Info_Param_Int_Attack_Combo_Type") in Action 0x24 (Status_Attack): ENTRY @ 17 : 1
+IC-Int[0x5A8C] ("Info_Param_Int_Attack_Combo_Type") in hsr_9FBC @ 53 : 1
+
+IC-Int[0x5A8D] ("Info_Param_Int_Attack_Combo_Max") in Action 0x24 (Status_Attack): ENTRY @ 7 : 3
+IC-Int[0x5A8D] ("Info_Param_Int_Attack_Combo_Max") in Action 0x24 (Status_Attack): ENTRY @ 14 : 3
+IC-Int[0x5A8D] ("Info_Param_Int_Attack_Combo_Max") in Action 0x24 (Status_Attack): ENTRY @ 55 : 3
+
+IC-Int[0x5A8E] ("Info_Param_Int_Attack_100_Type") in Action 0x24 (Status_Attack): ENTRY @ 3 : 1
+
+IC-Int[0x5A8F] ("Info_Param_Int_S3_Combo_Max") in Action 0x27 (Status_Attack_S3): ENTRY @ 29 : 3
+
+IC-Int[0x5A90] ("Info_Param_Int_S4_Combo_Max") in statusAnimCmd_AttackS4 @ 21 : 3
+
+IC-Int[0x5A91] ("Info_Param_Int_Jump_Aerial_Type") in hsr_14054 @ 7 : 1
+IC-Int[0x5A91] ("Info_Param_Int_Jump_Aerial_Type") in statusAnimCmd_AIRChkJumpAerial @ 0 : 1
+
+IC-Int[0x5A92] ("Info_Param_Int_Glide_Type") in Action 0xD (Status_Fly): ENTRY @ 5 : 1
+IC-Int[0x5A92] ("Info_Param_Int_Glide_Type") in statusAnimCmd_JumpAerial @ 7 : 1
+
+IC-Int[0x5A93] ("Info_Param_Int_Squat_Walk_Type") in Action 0x12 (Status_Squat_Wait): ENTRY @ 6 : 1
+
+IC-Int[0x5A94] ("Info_Param_Int_Attack_Dash_Type") in Action 0x26 (Status_Attack_Dash): ENTRY @ 14 : 1
+
+IC-Int[0x5A95] ("Info_Param_Int_Wall_Jump_Type") in statusAnimCmd_AIRChkWallJump @ 4 : 1
+
+IC-Int[0x5A96] ("Info_Param_Int_Attach_Wall_Type") in statusAnimCmd_AIRChkWallJump @ 0 : 1
+
+IC-Int[0x5A97] ("Info_Param_Int_Air_Lasso_Type") in hsr_AB24 @ 0 : 3
+IC-Int[0x5A97] ("Info_Param_Int_Air_Lasso_Type") in statusAnimCmd_EscapeAirCommon @ 6 : 3
+
+IC-Int[0xA814] in Action 0x99 (Status_Item_Lift_Turn): ENTRY @ 1 : 0
+
+IC-Int[0xA815] in statusAnimCmd_ItemShootDashF_Common @ 1 : 0
+
+IC-Int[0xA816] in Action 0xE1 (Status_Hammer_Turn): ENTRY @ 3 : 0
+
+LA-Int[0x01] in Action 0xB0 (Status_Item_Screw_Jump_Aerial): ENTRY @ 3 : 0
+LA-Int[0x01] in Action 0xD (Status_Fly): ENTRY @ 3 : 0
+LA-Int[0x01] in Action 0xD (Status_Fly): ENTRY @ 10 : 1
+LA-Int[0x01] in Action 0xD (Status_Fly): ENTRY @ 18 : 1
+LA-Int[0x01] in hsr_14054 @ 9 : 1
+LA-Int[0x01] in hsr_14054 @ 17 : 1
+LA-Int[0x01] in hsr_14054 @ 24 : 3
+LA-Int[0x01] in hsr_14054 @ 31 : 3
+LA-Int[0x01] in statusAnimCmd_AIRChkJumpAerial @ 3 : 1
+LA-Int[0x01] in statusAnimCmd_AIRChkJumpAerial @ 7 : 1
+LA-Int[0x01] in statusAnimCmd_AIRChkJumpAerial @ 10 : 3
+LA-Int[0x01] in statusAnimCmd_AIRChkJumpAerial @ 13 : 3
+LA-Int[0x01] in statusAnimCmd_AIRChkJumpAerial @ 19 : 1
+LA-Int[0x01] in statusAnimCmd_GlideAttack @ 1 : 1
+LA-Int[0x01] in statusAnimCmd_GlideEnd @ 1 : 1
+LA-Int[0x01] in statusAnimCmd_JumpAerial @ 2 : 0
+
+LA-Int[0x02] in statusAnimCmd_AIRChkCliff @ 2 : 1
+
+LA-Int[0x03] in Action 0x62 (Status_Passive_Wall): ENTRY @ 8 : 1
+LA-Int[0x03] in Action 0x67 (Status_Wall_Jump): ENTRY @ 6 : 0
+
+LA-Int[0x05] in Action 0x6D (Status_Tread_Jump): ENTRY @ 6 : 0
+
+LA-Int[0x06] in Action 0x6D (Status_Tread_Jump) : EXIT @ 0 : 1
+LA-Int[0x06] in Action 0x6D (Status_Tread_Jump): ENTRY @ 7 : 1
+LA-Int[0x06] in statusAnimCmd_AIRChkTreadJump @ 3 : 1
+LA-Int[0x06] in statusAnimCmd_AIRChkTreadJump @ 8 : 1
+
+LA-Int[0x09] in hsr_1769C @ 0 : 1
+
+LA-Int[0x0A] in Action 0x8A (Status_Slip_Down): ENTRY @ 0 : 1
+
+LA-Int[0x0B] in Action 0x68 (Status_Attach_Wall) : EXIT @ 0 : 1
+LA-Int[0x0B] in Action 0x69 (Status_Attach_Wall_Wait) : EXIT @ 0 : 1
+
+LA-Int[0x0D] in Action 0xAF (Status_Item_Screw_Jump): ENTRY @ 5 : 1
+LA-Int[0x0D] in statusAnimCmd_AIRChkLanding @ 1 : 1
+
+LA-Int[0x13] in Action 0xBA (Status_Swim_Jump): ENTRY @ 3 : 1
+LA-Int[0x13] in Action 0xBA (Status_Swim_Jump): ENTRY @ 4 : 0
+
+LA-Int[0x14] in hsr_1C65C @ 3 : 2
+
+LA-Int[0x39] in hsr_14054 @ 3 : 1
+LA-Int[0x39] in hsr_14054 @ 11 : 1
+LA-Int[0x39] in hsr_14054 @ 18 : 1
+LA-Int[0x39] in hsr_14054 @ 27 : 1
+LA-Int[0x39] in hsr_14054 @ 34 : 1
+
+LA-Int[0x3B] in Action 0xAF (Status_Item_Screw_Jump): ENTRY @ 11 : 0
+LA-Int[0x3B] in Action 0xB0 (Status_Item_Screw_Jump_Aerial): ENTRY @ 6 : 0
+LA-Int[0x3B] in statusAnimCmdPre_Fly @ 3 : 1
+LA-Int[0x3B] in statusAnimCmdPre_Jump @ 3 : 1
+LA-Int[0x3B] in statusAnimCmdPre_JumpAerial @ 3 : 1
+
+LA-Int[0x3D] in Action 0x47 (Status_Damage_Fly_Reflect_Lr): ENTRY @ 2 : 0
+LA-Int[0x3D] in Action 0x48 (Status_Damage_Fly_Reflect_U): ENTRY @ 2 : 0
+LA-Int[0x3D] in hsr_B064 @ 3 : 1
+LA-Int[0x3D] in hsr_B064 @ 7 : 1
+LA-Int[0x3D] in hsr_B1FC @ 5 : 1
+LA-Int[0x3D] in hsr_B1FC @ 11 : 1
+LA-Int[0x3D] in hsr_B2CC @ 3 : 1
+LA-Int[0x3D] in hsr_B37C @ 4 : 1
+
+LA-Int[0x3E] in statusAnimCmd_AirLassoHang @ 1 : 0
+
+LA-Float[0x00] in statusAnimCmd_SpecialJumpAttackCommon @ 1 : 0
+
+LA-Float[0x01] in statusAnimCmd_SpecialJumpAttackCommon @ 0 : 1
+
+LA-Float[0x03] in Action 0x1A (Status_Guard_On): ENTRY @ 4 : 2
+LA-Float[0x03] in Action 0x56 (Status_Shield_Break_Fly): ENTRY @ 2 : 1
+LA-Float[0x03] in statusAnimCmd_Guard @ 4 : 2
+LA-Float[0x03] in statusAnimCmd_GuardOnUniq @ 0 : 1
+LA-Float[0x03] in statusAnimCmd_GuardOnUniq @ 1 : 1
+LA-Float[0x03] in statusAnimCmd_GuardOnUniq @ 2 : 1
+
+LA-Float[0x04] in statusAnimCmd_GuardOnUniq @ 1 : 3
+LA-Float[0x04] in statusAnimCmd_GuardOnUniq @ 2 : 0
+
+LA-Bool[0x01] in Action 0x104 (Status_Capture_Taboo): ENTRY @ 2 : 0
+LA-Bool[0x01] in Action 0xDC (Status_Warptar): ENTRY @ 5 : 0
+LA-Bool[0x01] in Action 0xDE (Status_Dragoon_Ride): ENTRY @ 4 : 0
+LA-Bool[0x01] in Action 0xED (Status_Link_Final): ENTRY @ 1 : 0
+LA-Bool[0x01] in statusAnimCmd_Lose @ 0 : 0
+LA-Bool[0x01] in statusAnimCmd_Win @ 0 : 0
+
+LA-Bool[0x03] in statusAnimCmd_SpecialJumpAttackCommon @ 2 : 0
+
+LA-Bool[0x04] in hsr_DE24 @ 0 : 1
+LA-Bool[0x04] in hsr_DE24 @ 3 : 0
+LA-Bool[0x04] in hsr_DF94 @ 12 : 0
+
+LA-Bool[0x0A] in Action 0x4 (Status_Run): ENTRY @ 29 : 1
+LA-Bool[0x0A] in hsr_BC74 @ 1 : 1
+LA-Bool[0x0A] in hsr_BC74 @ 8 : 1
+LA-Bool[0x0A] in statusAnimCmdPre_Walk @ 0 : 1
+
+LA-Bool[0x0B] in Action 0xBF (Status_Gimmick_Door): ENTRY @ 0 : 1
+LA-Bool[0x0B] in Action 0xDF (Status_Hammer_Wait) : EXIT @ 0 : 1
+LA-Bool[0x0B] in Action 0xDF (Status_Hammer_Wait): ENTRY @ 0 : 2
+LA-Bool[0x0B] in Action 0xE0 (Status_Hammer_Walk) : EXIT @ 0 : 1
+LA-Bool[0x0B] in Action 0xE0 (Status_Hammer_Walk): ENTRY @ 0 : 2
+LA-Bool[0x0B] in Action 0xE1 (Status_Hammer_Turn): ENTRY @ 0 : 2
+LA-Bool[0x0B] in Action 0xE2 (Status_Hammer_Jump_Squat) : EXIT @ 0 : 1
+LA-Bool[0x0B] in Action 0xE2 (Status_Hammer_Jump_Squat): ENTRY @ 0 : 2
+LA-Bool[0x0B] in Action 0xE3 (Status_Hammer_Jump) : EXIT @ 0 : 1
+LA-Bool[0x0B] in Action 0xE3 (Status_Hammer_Jump): ENTRY @ 0 : 2
+LA-Bool[0x0B] in Action 0xE4 (Status_Hammer_Fall) : EXIT @ 0 : 1
+LA-Bool[0x0B] in Action 0xE4 (Status_Hammer_Fall): ENTRY @ 0 : 2
+LA-Bool[0x0B] in Action 0xE5 (Status_Hammer_Landing) : EXIT @ 0 : 1
+LA-Bool[0x0B] in Action 0xE5 (Status_Hammer_Landing): ENTRY @ 3 : 2
+LA-Bool[0x0B] in hsr_138C4 @ 2 : 1
+LA-Bool[0x0B] in hsr_13B6C @ 9 : 1
+LA-Bool[0x0B] in statusAnimCmd_DamageFall @ 6 : 1
+LA-Bool[0x0B] in statusAnimCmd_Landing @ 1 : 1
+LA-Bool[0x0B] in statusAnimCmd_LandingAttackAir @ 1 : 1
+LA-Bool[0x0B] in statusAnimCmd_LandingFallSpecial @ 1 : 1
+LA-Bool[0x0B] in statusAnimCmd_LandingLight @ 2 : 1
+LA-Bool[0x0B] in statusAnimCmdPre_Fall @ 2 : 1
+LA-Bool[0x0B] in statusAnimCmdPre_Fly @ 0 : 1
+LA-Bool[0x0B] in statusAnimCmdPre_Jump @ 0 : 1
+LA-Bool[0x0B] in statusAnimCmdPre_JumpAerial @ 0 : 1
+LA-Bool[0x0B] in statusAnimCmdPre_TreadJump @ 0 : 1
+LA-Bool[0x0B] in statusAnimCmdPre_Wait @ 2 : 1
+
+LA-Bool[0x0F] in statusAnimCmdPre_Fly @ 2 : 1
+LA-Bool[0x0F] in statusAnimCmdPre_Jump @ 2 : 1
+LA-Bool[0x0F] in statusAnimCmdPre_JumpAerial @ 2 : 1
+
+LA-Bool[0x13] in Action 0xAF (Status_Item_Screw_Jump): ENTRY @ 13 : 1
+LA-Bool[0x13] in Action 0xB0 (Status_Item_Screw_Jump_Aerial): ENTRY @ 8 : 1
+LA-Bool[0x13] in statusAnimCmd_Jump @ 18 : 1
+LA-Bool[0x13] in statusAnimCmd_JumpAerial @ 17 : 1
+
+LA-Bool[0x16] in Action 0xD (Status_Fly): ENTRY @ 6 : 1
+LA-Bool[0x16] in statusAnimCmd_Glide @ 0 : 0
+LA-Bool[0x16] in statusAnimCmd_JumpAerial @ 8 : 1
+
+LA-Bool[0x18] in Action 0x54 (Status_Down_Damage): ENTRY @ 7 : 1
+LA-Bool[0x18] in hsr_14B8C @ 1 : 1
+LA-Bool[0x18] in hsr_157B4 @ 0 : 1
+LA-Bool[0x18] in hsr_1C65C @ 0 : 2
+LA-Bool[0x18] in statusAnimCmd_DamageFall @ 2 : 1
+LA-Bool[0x18] in statusAnimCmdPre_Fall @ 0 : 1
+LA-Bool[0x18] in statusAnimCmdPre_Landing @ 0 : 1
+LA-Bool[0x18] in statusAnimCmdPre_Wait @ 0 : 1
+
+LA-Bool[0x19] in Action 0xEF (): ENTRY @ 2 : 0
+
+LA-Bool[0x24] in hsr_BA6C @ 2 : 1
+LA-Bool[0x24] in hsr_BAD4 @ 3 : 1
+
+LA-Bool[0x2A] in Action 0x9B (Status_Item_Throw) : EXIT @ 3 : 0
+LA-Bool[0x2A] in Action 0x9C (Status_Item_Throw_Dash) : EXIT @ 3 : 0
+LA-Bool[0x2A] in Action 0x9D (Status_Item_Throw_Heavy) : EXIT @ 3 : 0
+LA-Bool[0x2A] in hsr_1942C @ 10 : 0
+LA-Bool[0x2A] in hsr_1942C @ 16 : 0
+LA-Bool[0x2A] in hsr_1942C @ 22 : 0
+LA-Bool[0x2A] in hsr_19834 @ 10 : 0
+LA-Bool[0x2A] in hsr_19834 @ 20 : 0
+LA-Bool[0x2A] in hsr_19834 @ 33 : 0
+LA-Bool[0x2A] in hsr_19834 @ 43 : 0
+LA-Bool[0x2A] in statusAnimCmd_ItemThrowHeavyCommon @ 9 : 0
+LA-Bool[0x2A] in statusAnimCmd_ItemThrowHeavyCommon @ 14 : 0
+LA-Bool[0x2A] in statusAnimCmd_ItemThrowHeavyCommon @ 19 : 0
+
+LA-Bool[0x3B] in Action 0xEB (Status_Capture_Yoshi): ENTRY @ 5 : 1
+LA-Bool[0x3B] in Action 0xEB (Status_Capture_Yoshi): ENTRY @ 16 : 1
+
+RA-Int[0x00] in Action 0x100 (Status_Kirby_Final_Damage_Fly): ENTRY @ 2 : 0
+RA-Int[0x00] in Action 0x101 (Status_Kirby_Final_Damage_Wait): ENTRY @ 3 : 0
+RA-Int[0x00] in Action 0x11 (Status_Squat): ENTRY @ 7 : 2
+RA-Int[0x00] in Action 0x1A (Status_Guard_On): ENTRY @ 7 : 1
+RA-Int[0x00] in Action 0x1D (Status_Guard_Damage): ENTRY @ 5 : 1
+RA-Int[0x00] in Action 0x26 (Status_Attack_Dash): ENTRY @ 8 : 1
+RA-Int[0x00] in Action 0x3E (Status_Capture_Wait): ENTRY @ 9 : 0
+RA-Int[0x00] in Action 0x3E (Status_Capture_Wait): ENTRY @ 11 : 0
+RA-Int[0x00] in Action 0x41 (Status_Capture_Jump): ENTRY @ 2 : 1
+RA-Int[0x00] in Action 0x42 (Status_Capture_Thrown): ENTRY @ 2 : 0
+RA-Int[0x00] in Action 0x62 (Status_Passive_Wall): ENTRY @ 4 : 1
+RA-Int[0x00] in Action 0x62 (Status_Passive_Wall): ENTRY @ 6 : 1
+RA-Int[0x00] in Action 0x62 (Status_Passive_Wall): ENTRY @ 9 : 1
+RA-Int[0x00] in Action 0x63 (Status_Passive_Wall_Jump): ENTRY @ 4 : 1
+RA-Int[0x00] in Action 0x67 (Status_Wall_Jump): ENTRY @ 4 : 1
+RA-Int[0x00] in Action 0x8 (Status_Turn_Run): ENTRY @ 24 : 1
+RA-Int[0x00] in Action 0x8D (Status_Slip_Wait): ENTRY @ 0 : 1
+RA-Int[0x00] in Action 0x8D (Status_Slip_Wait): ENTRY @ 14 : 2
+RA-Int[0x00] in Action 0x9A (Status_Item_Lift_Walk): ENTRY @ 6 : 1
+RA-Int[0x00] in Action 0x9A (Status_Item_Lift_Walk): ENTRY @ 8 : 1
+RA-Int[0x00] in Action 0x9A (Status_Item_Lift_Walk): ENTRY @ 11 : 1
+RA-Int[0x00] in Action 0xC7 (Status_Bury): ENTRY @ 2 : 1
+RA-Int[0x00] in Action 0xC7 (Status_Bury): ENTRY @ 5 : 2
+RA-Int[0x00] in Action 0xCA (Status_Ice): ENTRY @ 14 : 1
+RA-Int[0x00] in Action 0xCB (Status_Ice_Jump): ENTRY @ 3 : 2
+RA-Int[0x00] in Action 0xD7 (Status_Clung_Damage_Diddy): ENTRY @ 0 : 0
+RA-Int[0x00] in Action 0xD7 (Status_Clung_Damage_Diddy): ENTRY @ 7 : 1
+RA-Int[0x00] in Action 0xDB (Status_Shouldered_Donkey_Thrown): ENTRY @ 2 : 0
+RA-Int[0x00] in Action 0xE2 (Status_Hammer_Jump_Squat): ENTRY @ 2 : 2
+RA-Int[0x00] in Action 0xE5 (Status_Hammer_Landing): ENTRY @ 0 : 2
+RA-Int[0x00] in Action 0xEA (Status_Catched_Air_End_Ganon): ENTRY @ 2 : 0
+RA-Int[0x00] in Action 0xEB (Status_Capture_Yoshi): ENTRY @ 8 : 0
+RA-Int[0x00] in Action 0xEB (Status_Capture_Yoshi): ENTRY @ 10 : 0
+RA-Int[0x00] in Action 0xED (Status_Link_Final): ENTRY @ 8 : 1
+RA-Int[0x00] in Action 0xF1 (Status_Throw_Kirby): ENTRY @ 3 : 0
+RA-Int[0x00] in hsr_102F4 @ 8 : 0
+RA-Int[0x00] in hsr_102F4 @ 10 : 0
+RA-Int[0x00] in hsr_107FC @ 8 : 0
+RA-Int[0x00] in hsr_107FC @ 10 : 0
+RA-Int[0x00] in hsr_116A4 @ 0 : 0
+RA-Int[0x00] in hsr_11814 @ 7 : 1
+RA-Int[0x00] in hsr_1195C @ 0 : 0
+RA-Int[0x00] in hsr_1195C @ 1 : 1
+RA-Int[0x00] in hsr_1195C @ 5 : 1
+RA-Int[0x00] in hsr_127A4 @ 0 : 1
+RA-Int[0x00] in hsr_127A4 @ 1 : 0
+RA-Int[0x00] in hsr_127A4 @ 2 : 1
+RA-Int[0x00] in hsr_1451C @ 0 : 1
+RA-Int[0x00] in hsr_1451C @ 1 : 0
+RA-Int[0x00] in hsr_15AAC @ 0 : 1
+RA-Int[0x00] in hsr_15AAC @ 1 : 0
+RA-Int[0x00] in hsr_15AAC @ 2 : 1
+RA-Int[0x00] in hsr_15C94 @ 0 : 1
+RA-Int[0x00] in hsr_15C94 @ 1 : 0
+RA-Int[0x00] in hsr_15C94 @ 2 : 1
+RA-Int[0x00] in hsr_15F4C @ 0 : 1
+RA-Int[0x00] in hsr_15F4C @ 1 : 0
+RA-Int[0x00] in hsr_15F4C @ 2 : 1
+RA-Int[0x00] in hsr_177D4 @ 0 : 1
+RA-Int[0x00] in hsr_177D4 @ 1 : 0
+RA-Int[0x00] in hsr_17FA4 @ 1 : 0
+RA-Int[0x00] in hsr_17FA4 @ 2 : 1
+RA-Int[0x00] in hsr_18E7C @ 1 : 1
+RA-Int[0x00] in hsr_18E7C @ 4 : 1
+RA-Int[0x00] in hsr_18E7C @ 9 : 1
+RA-Int[0x00] in hsr_18E7C @ 12 : 1
+RA-Int[0x00] in hsr_18E7C @ 15 : 1
+RA-Int[0x00] in hsr_1905C @ 2 : 1
+RA-Int[0x00] in hsr_1905C @ 7 : 1
+RA-Int[0x00] in hsr_1905C @ 10 : 1
+RA-Int[0x00] in hsr_1905C @ 16 : 1
+RA-Int[0x00] in hsr_1905C @ 19 : 1
+RA-Int[0x00] in hsr_1942C @ 3 : 1
+RA-Int[0x00] in hsr_1942C @ 6 : 1
+RA-Int[0x00] in hsr_1942C @ 14 : 1
+RA-Int[0x00] in hsr_1942C @ 20 : 1
+RA-Int[0x00] in hsr_1942C @ 25 : 1
+RA-Int[0x00] in hsr_1942C @ 28 : 1
+RA-Int[0x00] in hsr_1942C @ 34 : 1
+RA-Int[0x00] in hsr_1942C @ 37 : 1
+RA-Int[0x00] in hsr_1942C @ 40 : 1
+RA-Int[0x00] in hsr_19834 @ 2 : 1
+RA-Int[0x00] in hsr_19834 @ 8 : 1
+RA-Int[0x00] in hsr_19834 @ 13 : 1
+RA-Int[0x00] in hsr_19834 @ 18 : 1
+RA-Int[0x00] in hsr_19834 @ 23 : 1
+RA-Int[0x00] in hsr_19834 @ 31 : 1
+RA-Int[0x00] in hsr_19834 @ 36 : 1
+RA-Int[0x00] in hsr_19834 @ 41 : 1
+RA-Int[0x00] in hsr_19834 @ 46 : 1
+RA-Int[0x00] in hsr_1C65C @ 1 : 1
+RA-Int[0x00] in hsr_1C65C @ 2 : 1
+RA-Int[0x00] in hsr_1C65C @ 3 : 4
+RA-Int[0x00] in hsr_1CEFC @ 0 : 0
+RA-Int[0x00] in hsr_1D1C4 @ 0 : 0
+RA-Int[0x00] in hsr_1D30C @ 0 : 0
+RA-Int[0x00] in hsr_1E22C @ 0 : 0
+RA-Int[0x00] in hsr_1E494 @ 0 : 0
+RA-Int[0x00] in hsr_1F47C @ 4 : 2
+RA-Int[0x00] in hsr_1F47C @ 7 : 2
+RA-Int[0x00] in hsr_1F47C @ 10 : 2
+RA-Int[0x00] in hsr_1F47C @ 13 : 2
+RA-Int[0x00] in hsr_B9F4 @ 0 : 2
+RA-Int[0x00] in hsr_CED4 @ 10 : 0
+RA-Int[0x00] in hsr_E20C @ 1 : 0
+RA-Int[0x00] in hsr_E20C @ 3 : 1
+RA-Int[0x00] in hsr_E3BC @ 1 : 0
+RA-Int[0x00] in hsr_E3BC @ 3 : 1
+RA-Int[0x00] in hsr_F994 @ 0 : 1
+RA-Int[0x00] in hsr_F994 @ 1 : 0
+RA-Int[0x00] in hsr_F994 @ 2 : 1
+RA-Int[0x00] in statusAnimCmd_AirLassoReach @ 7 : 0
+RA-Int[0x00] in statusAnimCmd_AirLassoRewind @ 1 : 0
+RA-Int[0x00] in statusAnimCmd_Appeal @ 12 : 1
+RA-Int[0x00] in statusAnimCmd_Appeal @ 20 : 1
+RA-Int[0x00] in statusAnimCmd_Appeal @ 24 : 1
+RA-Int[0x00] in statusAnimCmd_Appeal @ 28 : 1
+RA-Int[0x00] in statusAnimCmd_Appeal @ 38 : 1
+RA-Int[0x00] in statusAnimCmd_Appeal @ 42 : 1
+RA-Int[0x00] in statusAnimCmd_Appeal @ 46 : 1
+RA-Int[0x00] in statusAnimCmd_Appeal @ 65 : 0
+RA-Int[0x00] in statusAnimCmd_Appeal @ 68 : 0
+RA-Int[0x00] in statusAnimCmd_AttackAir @ 24 : 1
+RA-Int[0x00] in statusAnimCmd_AttackS4 @ 4 : 1
+RA-Int[0x00] in statusAnimCmd_AttackS4 @ 6 : 1
+RA-Int[0x00] in statusAnimCmd_AttackS4 @ 8 : 1
+RA-Int[0x00] in statusAnimCmd_AttackS4 @ 16 : 0
+RA-Int[0x00] in statusAnimCmd_CatchDash @ 4 : 1
+RA-Int[0x00] in statusAnimCmd_CliffCatchMove @ 2 : 1
+RA-Int[0x00] in statusAnimCmd_CliffCatchMove @ 3 : 2
+RA-Int[0x00] in statusAnimCmd_DamageFall @ 5 : 1
+RA-Int[0x00] in statusAnimCmd_EscapeAirCommon @ 1 : 1
+RA-Int[0x00] in statusAnimCmd_EscapeAirCommon @ 5 : 1
+RA-Int[0x00] in statusAnimCmd_EscapeAirCommon @ 12 : 1
+RA-Int[0x00] in statusAnimCmd_EscapeAirCommon @ 14 : 1
+RA-Int[0x00] in statusAnimCmd_EscapeAirCommon @ 19 : 1
+RA-Int[0x00] in statusAnimCmd_EscapeAirCommon @ 22 : 1
+RA-Int[0x00] in statusAnimCmd_EscapeAirCommon @ 24 : 1
+RA-Int[0x00] in statusAnimCmd_EscapeAirCommon @ 26 : 1
+RA-Int[0x00] in statusAnimCmd_Guard @ 6 : 1
+RA-Int[0x00] in statusAnimCmd_GuardDamageUniq @ 1 : 1
+RA-Int[0x00] in statusAnimCmd_GuardOnUniq @ 4 : 1
+RA-Int[0x00] in statusAnimCmd_GuardOnUniq @ 5 : 0
+RA-Int[0x00] in statusAnimCmd_ItemSwingS4 @ 2 : 1
+RA-Int[0x00] in statusAnimCmd_ItemSwingS4 @ 3 : 0
+RA-Int[0x00] in statusAnimCmd_ItemSwingS4 @ 18 : 1
+RA-Int[0x00] in statusAnimCmd_ItemSwingS4 @ 25 : 0
+RA-Int[0x00] in statusAnimCmd_ItemSwingS4Hold @ 5 : 1
+RA-Int[0x00] in statusAnimCmd_ItemSwingS4Hold @ 6 : 1
+RA-Int[0x00] in statusAnimCmd_ItemSwingS4Hold @ 7 : 0
+RA-Int[0x00] in statusAnimCmd_ItemSwingS4Start @ 13 : 1
+RA-Int[0x00] in statusAnimCmd_ItemSwingS4Start @ 14 : 0
+RA-Int[0x00] in statusAnimCmd_ItemSwingS4Start @ 15 : 0
+RA-Int[0x00] in statusAnimCmd_ItemThrow @ 12 : 1
+RA-Int[0x00] in statusAnimCmd_ItemThrow @ 24 : 0
+RA-Int[0x00] in statusAnimCmd_ItemThrow @ 26 : 0
+RA-Int[0x00] in statusAnimCmd_ItemThrow @ 39 : 0
+RA-Int[0x00] in statusAnimCmd_ItemThrow @ 40 : 1
+RA-Int[0x00] in statusAnimCmd_ItemThrowHeavyCommon @ 4 : 1
+RA-Int[0x00] in statusAnimCmd_ItemThrowHeavyCommon @ 6 : 1
+RA-Int[0x00] in statusAnimCmd_ItemThrowHeavyCommon @ 13 : 1
+RA-Int[0x00] in statusAnimCmd_ItemThrowHeavyCommon @ 18 : 1
+RA-Int[0x00] in statusAnimCmd_ItemThrowHeavyCommon @ 22 : 1
+RA-Int[0x00] in statusAnimCmd_ItemThrowHeavyCommon @ 24 : 1
+RA-Int[0x00] in statusAnimCmd_ItemThrowHeavyCommon @ 27 : 1
+RA-Int[0x00] in statusAnimCmd_ItemThrowHeavyCommon @ 29 : 1
+RA-Int[0x00] in statusAnimCmd_ItemThrowHeavyCommon @ 33 : 0
+RA-Int[0x00] in statusAnimCmd_SpecialJumpAttack @ 3 : 0
+RA-Int[0x00] in statusAnimCmd_Throw @ 5 : 0
+RA-Int[0x00] in statusAnimCmd_ThrowLogCommon @ 0 : 1
+RA-Int[0x00] in statusAnimCmd_TurnRunUniq @ 0 : 1
+RA-Int[0x00] in statusAnimCmd_TurnRunUniq @ 1 : 0
+RA-Int[0x00] in statusAnimCmd_TurnRunUniq @ 2 : 1
+RA-Int[0x00] in statusAnimCmd_Win @ 14 : 1
+RA-Int[0x00] in statusAnimCmd_Win @ 15 : 0
+RA-Int[0x00] in statusAnimCmd_Win @ 17 : 1
+RA-Int[0x00] in statusAnimCmdExit_AirLasso @ 2 : 0
+RA-Int[0x00] in statusAnimCmdExit_AirLassoFailure @ 0 : 0
+RA-Int[0x00] in statusAnimCmdExit_AirLassoHang @ 1 : 0
+RA-Int[0x00] in statusAnimCmdExit_AirLassoReach @ 2 : 0
+RA-Int[0x00] in statusAnimCmdExit_AirLassoRewind @ 0 : 0
+RA-Int[0x00] in statusAnimCmdExit_CatchWait @ 4 : 1
+RA-Int[0x00] in statusAnimCmdExit_CatchWait @ 6 : 1
+RA-Int[0x00] in statusAnimCmdExit_CatchWait @ 9 : 1
+RA-Int[0x00] in statusAnimCmdExit_CatchWait @ 11 : 1
+RA-Int[0x00] in statusAnimCmdExit_CatchWait @ 13 : 1
+RA-Int[0x00] in statusAnimCmdExit_CatchWait @ 18 : 1
+RA-Int[0x00] in statusAnimCmdExit_CatchWait @ 20 : 1
+RA-Int[0x00] in statusAnimCmdExit_CatchWait @ 24 : 1
+RA-Int[0x00] in statusAnimCmdExit_CatchWait @ 26 : 1
+
+RA-Int[0x01] in Action 0x1A (Status_Guard_On): ENTRY @ 8 : 1
+RA-Int[0x01] in Action 0x1D (Status_Guard_Damage): ENTRY @ 4 : 1
+RA-Int[0x01] in Action 0x24 (Status_Attack): ENTRY @ 11 : 1
+RA-Int[0x01] in Action 0x8 (Status_Turn_Run): ENTRY @ 5 : 1
+RA-Int[0x01] in Action 0xBA (Status_Swim_Jump): ENTRY @ 2 : 1
+RA-Int[0x01] in Action 0xBA (Status_Swim_Jump): ENTRY @ 9 : 2
+RA-Int[0x01] in Action 0xBB (Status_Swim_Drown): ENTRY @ 0 : 1
+RA-Int[0x01] in Action 0xBB (Status_Swim_Drown): ENTRY @ 1 : 2
+RA-Int[0x01] in Action 0xED (Status_Link_Final): ENTRY @ 10 : 0
+RA-Int[0x01] in Action 0xF7 (Status_Ike_Final_Damage_Fly): ENTRY @ 2 : 0
+RA-Int[0x01] in Action 0xF8 (Status_Ike_Final_Damage): ENTRY @ 2 : 0
+RA-Int[0x01] in Action 0xF9 (Status_Ike_Final_Damage_Fall): ENTRY @ 2 : 0
+RA-Int[0x01] in hsr_102F4 @ 0 : 1
+RA-Int[0x01] in hsr_104A4 @ 0 : 1
+RA-Int[0x01] in hsr_104A4 @ 1 : 0
+RA-Int[0x01] in hsr_11E54 @ 2 : 0
+RA-Int[0x01] in hsr_127A4 @ 7 : 0
+RA-Int[0x01] in hsr_127A4 @ 8 : 1
+RA-Int[0x01] in hsr_127A4 @ 11 : 1
+RA-Int[0x01] in hsr_147AC @ 3 : 1
+RA-Int[0x01] in hsr_147AC @ 7 : 1
+RA-Int[0x01] in hsr_147AC @ 11 : 1
+RA-Int[0x01] in hsr_147AC @ 15 : 1
+RA-Int[0x01] in hsr_1685C @ 1 : 1
+RA-Int[0x01] in hsr_16F3C @ 0 : 1
+RA-Int[0x01] in hsr_17214 @ 0 : 0
+RA-Int[0x01] in hsr_17414 @ 0 : 0
+RA-Int[0x01] in hsr_18E7C @ 2 : 1
+RA-Int[0x01] in hsr_18E7C @ 5 : 1
+RA-Int[0x01] in hsr_18E7C @ 10 : 1
+RA-Int[0x01] in hsr_18E7C @ 13 : 1
+RA-Int[0x01] in hsr_18E7C @ 16 : 1
+RA-Int[0x01] in hsr_1905C @ 3 : 1
+RA-Int[0x01] in hsr_1905C @ 8 : 1
+RA-Int[0x01] in hsr_1905C @ 11 : 1
+RA-Int[0x01] in hsr_1905C @ 17 : 1
+RA-Int[0x01] in hsr_1905C @ 20 : 1
+RA-Int[0x01] in hsr_1942C @ 4 : 1
+RA-Int[0x01] in hsr_1942C @ 7 : 1
+RA-Int[0x01] in hsr_1942C @ 15 : 1
+RA-Int[0x01] in hsr_1942C @ 21 : 1
+RA-Int[0x01] in hsr_1942C @ 26 : 1
+RA-Int[0x01] in hsr_1942C @ 29 : 1
+RA-Int[0x01] in hsr_1942C @ 35 : 1
+RA-Int[0x01] in hsr_1942C @ 38 : 1
+RA-Int[0x01] in hsr_1942C @ 41 : 1
+RA-Int[0x01] in hsr_19834 @ 3 : 1
+RA-Int[0x01] in hsr_19834 @ 9 : 1
+RA-Int[0x01] in hsr_19834 @ 14 : 1
+RA-Int[0x01] in hsr_19834 @ 19 : 1
+RA-Int[0x01] in hsr_19834 @ 24 : 1
+RA-Int[0x01] in hsr_19834 @ 32 : 1
+RA-Int[0x01] in hsr_19834 @ 37 : 1
+RA-Int[0x01] in hsr_19834 @ 42 : 1
+RA-Int[0x01] in hsr_19834 @ 47 : 1
+RA-Int[0x01] in hsr_1C8A4 @ 0 : 0
+RA-Int[0x01] in hsr_1C9A4 @ 0 : 0
+RA-Int[0x01] in hsr_1F47C @ 4 : 4
+RA-Int[0x01] in hsr_1F47C @ 7 : 4
+RA-Int[0x01] in hsr_1F47C @ 10 : 4
+RA-Int[0x01] in hsr_1F47C @ 13 : 4
+RA-Int[0x01] in hsr_B1FC @ 3 : 1
+RA-Int[0x01] in hsr_B1FC @ 9 : 1
+RA-Int[0x01] in hsr_B37C @ 3 : 1
+RA-Int[0x01] in statusAnimCmd_AirLassoHang @ 9 : 2
+RA-Int[0x01] in statusAnimCmd_AirLassoReach @ 7 : 1
+RA-Int[0x01] in statusAnimCmd_AirLassoRewind @ 1 : 1
+RA-Int[0x01] in statusAnimCmd_Appeal @ 13 : 1
+RA-Int[0x01] in statusAnimCmd_Appeal @ 21 : 1
+RA-Int[0x01] in statusAnimCmd_Appeal @ 25 : 1
+RA-Int[0x01] in statusAnimCmd_Appeal @ 29 : 1
+RA-Int[0x01] in statusAnimCmd_Appeal @ 39 : 1
+RA-Int[0x01] in statusAnimCmd_Appeal @ 43 : 1
+RA-Int[0x01] in statusAnimCmd_Appeal @ 47 : 1
+RA-Int[0x01] in statusAnimCmd_Appeal @ 63 : 0
+RA-Int[0x01] in statusAnimCmd_AttackAirUniq @ 0 : 0
+RA-Int[0x01] in statusAnimCmd_AttackAirUniq @ 1 : 1
+RA-Int[0x01] in statusAnimCmd_GuardOnUniq @ 7 : 1
+RA-Int[0x01] in statusAnimCmd_GuardOnUniq @ 8 : 0
+RA-Int[0x01] in statusAnimCmd_GuardUniq @ 1 : 1
+RA-Int[0x01] in statusAnimCmd_GuardUniq @ 2 : 0
+RA-Int[0x01] in statusAnimCmd_ItemShootDashB_Common @ 9 : 1
+RA-Int[0x01] in statusAnimCmd_ItemShootDashF_Common @ 13 : 1
+RA-Int[0x01] in statusAnimCmd_ItemShootLanding_Common @ 8 : 1
+RA-Int[0x01] in statusAnimCmd_ItemShootWalkB_Common @ 15 : 1
+RA-Int[0x01] in statusAnimCmd_ItemShootWalkBBrake_Common @ 8 : 1
+RA-Int[0x01] in statusAnimCmd_ItemShootWalkF_Common @ 15 : 1
+RA-Int[0x01] in statusAnimCmd_ItemShootWalkFBrake_Common @ 8 : 1
+RA-Int[0x01] in statusAnimCmd_ItemThrow @ 40 : 0
+RA-Int[0x01] in statusAnimCmd_ItemThrow @ 41 : 1
+RA-Int[0x01] in statusAnimCmd_SpecialJumpAttack @ 7 : 0
+RA-Int[0x01] in statusAnimCmd_TurnRunUniq @ 6 : 1
+RA-Int[0x01] in statusAnimCmd_TurnRunUniq @ 7 : 0
+RA-Int[0x01] in statusAnimCmd_TurnRunUniq @ 8 : 1
+RA-Int[0x01] in statusAnimCmd_Win @ 4 : 1
+RA-Int[0x01] in statusAnimCmd_Win @ 7 : 1
+RA-Int[0x01] in statusAnimCmd_Win @ 10 : 1
+RA-Int[0x01] in statusAnimCmd_Win @ 19 : 1
+RA-Int[0x01] in statusAnimCmd_Win @ 22 : 1
+RA-Int[0x01] in statusAnimCmd_Win @ 25 : 1
+RA-Int[0x01] in statusAnimCmd_Win @ 31 : 1
+RA-Int[0x01] in statusAnimCmd_Win @ 36 : 0
+RA-Int[0x01] in statusAnimCmd_Win @ 42 : 0
+
+RA-Int[0x02] in Action 0x3E (Status_Capture_Wait): ENTRY @ 3 : 0
+RA-Int[0x02] in Action 0x67 (Status_Wall_Jump): ENTRY @ 5 : 1
+RA-Int[0x02] in Action 0x69 (Status_Attach_Wall_Wait): ENTRY @ 4 : 2
+RA-Int[0x02] in Action 0xCA (Status_Ice): ENTRY @ 14 : 3
+RA-Int[0x02] in hsr_102F4 @ 3 : 0
+RA-Int[0x02] in hsr_107FC @ 3 : 0
+RA-Int[0x02] in hsr_14054 @ 4 : 1
+RA-Int[0x02] in hsr_14054 @ 12 : 1
+RA-Int[0x02] in hsr_14054 @ 19 : 1
+RA-Int[0x02] in hsr_14054 @ 28 : 1
+RA-Int[0x02] in hsr_14054 @ 35 : 1
+RA-Int[0x02] in hsr_15F4C @ 8 : 1
+RA-Int[0x02] in hsr_15F4C @ 9 : 0
+RA-Int[0x02] in hsr_1628C @ 0 : 1
+RA-Int[0x02] in hsr_1628C @ 1 : 0
+RA-Int[0x02] in hsr_1FE44 @ 1 : 0
+RA-Int[0x02] in statusAnimCmd_AirLasso @ 8 : 1
+RA-Int[0x02] in statusAnimCmd_AirLasso @ 9 : 0
+RA-Int[0x02] in statusAnimCmd_AirLassoFailure @ 4 : 0
+RA-Int[0x02] in statusAnimCmd_AirLassoReach @ 1 : 1
+RA-Int[0x02] in statusAnimCmd_GuardCont @ 26 : 1
+RA-Int[0x02] in statusAnimCmd_GuardOnUniq @ 10 : 1
+RA-Int[0x02] in statusAnimCmd_GuardOnUniq @ 11 : 0
+RA-Int[0x02] in statusAnimCmd_GuardOnUniq @ 12 : 1
+RA-Int[0x02] in statusAnimCmd_ItemShootWait_Common @ 17 : 1
+RA-Int[0x02] in statusAnimCmd_ItemShootWalkBBrake_Common @ 9 : 1
+RA-Int[0x02] in statusAnimCmd_ItemShootWalkFBrake_Common @ 9 : 1
+RA-Int[0x02] in statusAnimCmd_ItemThrow @ 39 : 1
+RA-Int[0x02] in statusAnimCmd_ItemThrow @ 41 : 0
+RA-Int[0x02] in statusAnimCmd_RebirthCommon @ 5 : 2
+RA-Int[0x02] in statusAnimCmd_SpecialJumpAttackCommon @ 6 : 0
+RA-Int[0x02] in statusAnimCmd_Win @ 5 : 1
+RA-Int[0x02] in statusAnimCmd_Win @ 8 : 1
+RA-Int[0x02] in statusAnimCmd_Win @ 11 : 1
+RA-Int[0x02] in statusAnimCmd_Win @ 20 : 1
+RA-Int[0x02] in statusAnimCmd_Win @ 23 : 1
+RA-Int[0x02] in statusAnimCmd_Win @ 26 : 1
+RA-Int[0x02] in statusAnimCmd_Win @ 32 : 1
+RA-Int[0x02] in statusAnimCmd_Win @ 40 : 0
+
+RA-Int[0x03] in Action 0x1C (Status_Guard_Off): ENTRY @ 12 : 1
+RA-Int[0x03] in Action 0x1D (Status_Guard_Damage): ENTRY @ 6 : 1
+RA-Int[0x03] in Action 0xD1 (Status_Swallowed_Drink): ENTRY @ 3 : 0
+RA-Int[0x03] in hsr_19BB4 @ 0 : 0
+RA-Int[0x03] in hsr_19BB4 @ 1 : 1
+RA-Int[0x03] in statusAnimCmd_Fall @ 2 : 1
+RA-Int[0x03] in statusAnimCmd_Fall @ 7 : 1
+RA-Int[0x03] in statusAnimCmd_GuardUniq @ 4 : 1
+RA-Int[0x03] in statusAnimCmd_GuardUniq @ 5 : 0
+RA-Int[0x03] in statusAnimCmd_ItemShootWait_Common @ 18 : 1
+RA-Int[0x03] in statusAnimCmd_ItemShootWalkBBrake_Common @ 10 : 1
+RA-Int[0x03] in statusAnimCmd_ItemShootWalkFBrake_Common @ 10 : 1
+RA-Int[0x03] in statusAnimCmd_SpecialJumpAttackCommon @ 1 : 1
+
+RA-Int[0x04] in hsr_13B6C @ 4 : 1
+RA-Int[0x04] in statusAnimCmd_ItemShootDashF_Common @ 7 : 0
+RA-Int[0x04] in statusAnimCmd_ItemShootWalkF_Common @ 11 : 0
+RA-Int[0x04] in statusAnimCmd_ItemShootWalkF_Common @ 13 : 0
+
+RA-Int[0x05] in Action 0x1C (Status_Guard_Off): ENTRY @ 17 : 1
+RA-Int[0x05] in Action 0x1D (Status_Guard_Damage): ENTRY @ 11 : 3
+RA-Int[0x05] in Action 0x1D (Status_Guard_Damage): ENTRY @ 12 : 2
+RA-Int[0x05] in Action 0xDF (Status_Hammer_Wait): ENTRY @ 8 : 1
+RA-Int[0x05] in Action 0xE0 (Status_Hammer_Walk): ENTRY @ 8 : 1
+RA-Int[0x05] in Action 0xE1 (Status_Hammer_Turn): ENTRY @ 7 : 1
+RA-Int[0x05] in Action 0xE2 (Status_Hammer_Jump_Squat): ENTRY @ 5 : 1
+RA-Int[0x05] in Action 0xE3 (Status_Hammer_Jump): ENTRY @ 2 : 1
+RA-Int[0x05] in Action 0xE4 (Status_Hammer_Fall): ENTRY @ 2 : 1
+RA-Int[0x05] in Action 0xE5 (Status_Hammer_Landing): ENTRY @ 5 : 1
+RA-Int[0x05] in hsr_1129C @ 0 : 1
+RA-Int[0x05] in hsr_1129C @ 1 : 0
+RA-Int[0x05] in hsr_1129C @ 2 : 1
+RA-Int[0x05] in hsr_1424C @ 1 : 1
+RA-Int[0x05] in hsr_1424C @ 3 : 1
+RA-Int[0x05] in hsr_1424C @ 5 : 1
+RA-Int[0x05] in hsr_1DDEC @ 2 : 0
+RA-Int[0x05] in hsr_1DDEC @ 4 : 0
+RA-Int[0x05] in statusAnimCmd_GuardDamageUniq @ 4 : 1
+RA-Int[0x05] in statusAnimCmd_GuardDamageUniq @ 5 : 0
+RA-Int[0x05] in statusAnimCmd_ItemShootDashB_Common @ 3 : 0
+RA-Int[0x05] in statusAnimCmd_ItemShootWalkB_Common @ 11 : 0
+RA-Int[0x05] in statusAnimCmd_ItemShootWalkB_Common @ 13 : 0
+
+RA-Int[0x06] in hsr_13B6C @ 10 : 1
+RA-Int[0x06] in hsr_1B854 @ 1 : 1
+RA-Int[0x06] in statusAnimCmd_ItemShootWait_Common @ 10 : 1
+RA-Int[0x06] in statusAnimCmd_ItemShootWalkF_Common @ 9 : 1
+
+RA-Int[0x07] in hsr_13B6C @ 16 : 1
+RA-Int[0x07] in statusAnimCmd_ItemShootWait_Common @ 15 : 1
+RA-Int[0x07] in statusAnimCmd_ItemShootWalkB_Common @ 9 : 1
+
+RA-Int[0x08] in hsr_14904 @ 14 : 0
+RA-Int[0x08] in statusAnimCmd_ItemShootDashB_Common @ 2 : 1
+RA-Int[0x08] in statusAnimCmd_ItemShootDashF_Common @ 6 : 1
+RA-Int[0x08] in statusAnimCmd_ItemShootJumpSquat_Common @ 1 : 1
+RA-Int[0x08] in statusAnimCmd_ItemShootLanding_Common @ 1 : 1
+RA-Int[0x08] in statusAnimCmd_ItemShootWait_Common @ 1 : 1
+RA-Int[0x08] in statusAnimCmd_ItemShootWait_Common @ 2 : 1
+RA-Int[0x08] in statusAnimCmd_ItemShootWalkB_Common @ 0 : 1
+RA-Int[0x08] in statusAnimCmd_ItemShootWalkB_Common @ 1 : 1
+RA-Int[0x08] in statusAnimCmd_ItemShootWalkBBrake_Common @ 2 : 1
+RA-Int[0x08] in statusAnimCmd_ItemShootWalkBBrake_Common @ 3 : 1
+RA-Int[0x08] in statusAnimCmd_ItemShootWalkF_Common @ 0 : 1
+RA-Int[0x08] in statusAnimCmd_ItemShootWalkF_Common @ 1 : 1
+RA-Int[0x08] in statusAnimCmd_ItemShootWalkFBrake_Common @ 2 : 1
+RA-Int[0x08] in statusAnimCmd_ItemShootWalkFBrake_Common @ 3 : 1
+
+RA-Int[0x09] in statusAnimCmd_ItemShootJumpSquat_Common @ 2 : 1
+
+RA-Int[0x0A] in statusAnimCmd_ItemShootDashB_Common @ 5 : 1
+RA-Int[0x0A] in statusAnimCmd_ItemShootDashB_Common @ 6 : 1
+RA-Int[0x0A] in statusAnimCmd_ItemShootDashF_Common @ 9 : 1
+RA-Int[0x0A] in statusAnimCmd_ItemShootDashF_Common @ 10 : 1
+RA-Int[0x0A] in statusAnimCmd_ItemShootLanding_Common @ 2 : 1
+RA-Int[0x0A] in statusAnimCmd_ItemShootLanding_Common @ 4 : 1
+RA-Int[0x0A] in statusAnimCmd_ItemShootWait_Common @ 3 : 1
+RA-Int[0x0A] in statusAnimCmd_ItemShootWait_Common @ 4 : 1
+RA-Int[0x0A] in statusAnimCmd_ItemShootWalkB_Common @ 2 : 1
+RA-Int[0x0A] in statusAnimCmd_ItemShootWalkB_Common @ 3 : 1
+RA-Int[0x0A] in statusAnimCmd_ItemShootWalkBBrake_Common @ 4 : 1
+RA-Int[0x0A] in statusAnimCmd_ItemShootWalkBBrake_Common @ 5 : 1
+RA-Int[0x0A] in statusAnimCmd_ItemShootWalkF_Common @ 2 : 1
+RA-Int[0x0A] in statusAnimCmd_ItemShootWalkF_Common @ 3 : 1
+RA-Int[0x0A] in statusAnimCmd_ItemShootWalkFBrake_Common @ 4 : 1
+RA-Int[0x0A] in statusAnimCmd_ItemShootWalkFBrake_Common @ 5 : 1
+
+RA-Int[0x0B] in statusAnimCmd_ItemShootAir_Common @ 0 : 1
+
+RA-Int[0x0C] in hsr_1B32C @ 1 : 1
+RA-Int[0x0C] in hsr_1B38C @ 1 : 1
+RA-Int[0x0C] in hsr_1B3FC @ 1 : 1
+RA-Int[0x0C] in hsr_1B474 @ 1 : 1
+RA-Int[0x0C] in hsr_1B4EC @ 1 : 1
+RA-Int[0x0C] in hsr_1B7A4 @ 0 : 3
+RA-Int[0x0C] in hsr_1B7A4 @ 2 : 3
+RA-Int[0x0C] in hsr_1B7A4 @ 3 : 3
+RA-Int[0x0C] in hsr_1B7A4 @ 4 : 3
+RA-Int[0x0C] in hsr_1B854 @ 3 : 1
+
+RA-Float[0x03] in Action 0x23 (Status_Rebound): ENTRY @ 3 : 2
+
+RA-Float[0x04] in Action 0x4 (Status_Run): ENTRY @ 1 : 2
+RA-Float[0x04] in Action 0x4 (Status_Run): ENTRY @ 11 : 3
+RA-Float[0x04] in Action 0x4 (Status_Run): ENTRY @ 27 : 3
+RA-Float[0x04] in Action 0x5 (Status_Run_Brake): ENTRY @ 26 : 2
+RA-Float[0x04] in Action 0x9C (Status_Item_Throw_Dash): ENTRY @ 0 : 1
+RA-Float[0x04] in Action 0xCC (Status_Bitten_Wario_Start): ENTRY @ 2 : 4
+RA-Float[0x04] in hsr_18E7C @ 17 : 1
+RA-Float[0x04] in hsr_1905C @ 12 : 1
+RA-Float[0x04] in hsr_1942C @ 8 : 1
+RA-Float[0x04] in hsr_1942C @ 42 : 1
+RA-Float[0x04] in hsr_19834 @ 26 : 1
+RA-Float[0x04] in hsr_1D42C @ 10 : 3
+RA-Float[0x04] in statusAnimCmd_AirLassoFailure @ 3 : 0
+RA-Float[0x04] in statusAnimCmd_AirLassoReach @ 2 : 1
+RA-Float[0x04] in statusAnimCmd_CatchTurn @ 4 : 1
+RA-Float[0x04] in statusAnimCmd_CatchTurn @ 6 : 0
+RA-Float[0x04] in statusAnimCmd_ItemThrow @ 0 : 1
+RA-Float[0x04] in statusAnimCmd_ItemThrowHeavyCommon @ 0 : 1
+RA-Float[0x04] in statusAnimCmd_ItemThrowHeavyCommon @ 7 : 1
+RA-Float[0x04] in statusAnimCmd_ItemThrowHeavyCommon @ 30 : 1
+RA-Float[0x04] in statusAnimCmd_Throw @ 5 : 2
+
+RA-Float[0x06] in hsr_1D0EC @ 0 : 1
+RA-Float[0x06] in hsr_1D0EC @ 1 : 1
+
+RA-Float[0x08] in hsr_B1FC @ 4 : 1
+RA-Float[0x08] in hsr_B1FC @ 10 : 1
+
+RA-Float[0x09] in Action 0x4D (Status_Down_Wait): ENTRY @ 0 : 1
+RA-Float[0x09] in Action 0x50 (Status_Lay_Down): ENTRY @ 3 : 1
+RA-Float[0x09] in Action 0x54 (Status_Down_Damage): ENTRY @ 8 : 1
+RA-Float[0x09] in hsr_14A0C @ 0 : 1
+RA-Float[0x09] in hsr_14B8C @ 20 : 2
+
+RA-Float[0x0A] in statusAnimCmd_SpecialJumpAttackCommon @ 0 : 0
+
+RA-Bool[0x02] in hsr_DDBC @ 2 : 0
+
+RA-Bool[0x04] in Action 0x56 (Status_Shield_Break_Fly): ENTRY @ 3 : 0
+
+RA-Bool[0x05] in Action 0x92 (Status_Ladder_Catch): ENTRY @ 16 : 1
+RA-Bool[0x05] in Action 0x92 (Status_Ladder_Catch): ENTRY @ 20 : 0
+RA-Bool[0x05] in Action 0x92 (Status_Ladder_Catch): ENTRY @ 23 : 1
+RA-Bool[0x05] in Action 0x92 (Status_Ladder_Catch): ENTRY @ 27 : 0
+RA-Bool[0x05] in Action 0x92 (Status_Ladder_Catch): ENTRY @ 38 : 1
+RA-Bool[0x05] in Action 0x92 (Status_Ladder_Catch): ENTRY @ 42 : 0
+RA-Bool[0x05] in Action 0x92 (Status_Ladder_Catch): ENTRY @ 45 : 1
+RA-Bool[0x05] in Action 0x92 (Status_Ladder_Catch): ENTRY @ 49 : 0
+RA-Bool[0x05] in Action 0xF4 (Status_Heart_Swap): ENTRY @ 9 : 1
+RA-Bool[0x05] in Action 0xF4 (Status_Heart_Swap): ENTRY @ 14 : 0
+RA-Bool[0x05] in Action 0xF4 (Status_Heart_Swap): ENTRY @ 19 : 1
+RA-Bool[0x05] in Action 0xF4 (Status_Heart_Swap): ENTRY @ 24 : 0
+
+RA-Bool[0x06] in hsr_165A4 @ 3 : 0
+RA-Bool[0x06] in hsr_165A4 @ 7 : 0
+RA-Bool[0x06] in hsr_1E22C @ 3 : 0
+RA-Bool[0x06] in hsr_1E22C @ 7 : 0
+RA-Bool[0x06] in hsr_DC44 @ 2 : 0
+RA-Bool[0x06] in hsr_DC44 @ 6 : 0
+RA-Bool[0x06] in statusAnimCmd_Jump @ 6 : 1
+RA-Bool[0x06] in statusAnimCmd_Jump @ 12 : 1
+
+RA-Bool[0x07] in Action 0x6D (Status_Tread_Jump): ENTRY @ 8 : 0
+
+RA-Bool[0x08] in Action 0x94 (Status_Ladder_Wait): ENTRY @ 0 : 0
+
+RA-Bool[0x0B] in Action 0xBA (Status_Swim_Jump): ENTRY @ 6 : 0
+
+RA-Bool[0x0C] in Action 0xC3 (Status_Gimmick_Spring): ENTRY @ 1 : 0
+
+RA-Bool[0x0E] in statusAnimCmd_Appeal @ 3 : 1
+RA-Bool[0x0E] in statusAnimCmd_Appeal @ 17 : 1
+
+RA-Bool[0x10] in Action 0x1 (Status_Walk): ENTRY @ 0 : 0
+RA-Bool[0x10] in Action 0x24 (Status_Attack): ENTRY @ 8 : 1
+RA-Bool[0x10] in Action 0x24 (Status_Attack): ENTRY @ 35 : 0
+RA-Bool[0x10] in Action 0x27 (Status_Attack_S3): ENTRY @ 7 : 0
+RA-Bool[0x10] in Action 0x27 (Status_Attack_S3): ENTRY @ 31 : 1
+RA-Bool[0x10] in Action 0x3 (Status_Dash): ENTRY @ 6 : 1
+RA-Bool[0x10] in Action 0x3 (Status_Dash): ENTRY @ 12 : 1
+RA-Bool[0x10] in Action 0x3 (Status_Dash): ENTRY @ 28 : 1
+RA-Bool[0x10] in Action 0x3 (Status_Dash): ENTRY @ 31 : 1
+RA-Bool[0x10] in Action 0x3 (Status_Dash): ENTRY @ 34 : 1
+RA-Bool[0x10] in Action 0x3E (Status_Capture_Wait): ENTRY @ 8 : 1
+RA-Bool[0x10] in Action 0x3E (Status_Capture_Wait): ENTRY @ 12 : 0
+RA-Bool[0x10] in Action 0x3E (Status_Capture_Wait): ENTRY @ 17 : 1
+RA-Bool[0x10] in Action 0x3E (Status_Capture_Wait): ENTRY @ 21 : 0
+RA-Bool[0x10] in Action 0x6 (Status_Turn): ENTRY @ 2 : 1
+RA-Bool[0x10] in Action 0x66 (Status_Stop_Ceil): ENTRY @ 2 : 1
+RA-Bool[0x10] in Action 0x68 (Status_Attach_Wall): ENTRY @ 9 : 2
+RA-Bool[0x10] in Action 0x6D (Status_Tread_Jump): ENTRY @ 10 : 2
+RA-Bool[0x10] in Action 0x7 (Status_Turn_Dash): ENTRY @ 2 : 1
+RA-Bool[0x10] in Action 0x75 (Status_Cliff_Wait): ENTRY @ 16 : 1
+RA-Bool[0x10] in Action 0x8 (Status_Turn_Run): ENTRY @ 16 : 1
+RA-Bool[0x10] in Action 0x8 (Status_Turn_Run): ENTRY @ 20 : 1
+RA-Bool[0x10] in Action 0x94 (Status_Ladder_Wait): ENTRY @ 3 : 2
+RA-Bool[0x10] in Action 0xB5 (Status_Swim_Up): ENTRY @ 2 : 1
+RA-Bool[0x10] in Action 0xC2 (Status_Gimmick_Truck): ENTRY @ 5 : 1
+RA-Bool[0x10] in Action 0xC2 (Status_Gimmick_Truck): ENTRY @ 7 : 1
+RA-Bool[0x10] in Action 0xC2 (Status_Gimmick_Truck): ENTRY @ 9 : 1
+RA-Bool[0x10] in Action 0xC2 (Status_Gimmick_Truck): ENTRY @ 13 : 1
+RA-Bool[0x10] in Action 0xD3 (Status_Swallowed_Thrown_Star): ENTRY @ 3 : 1
+RA-Bool[0x10] in Action 0xD6 (Status_Clung_Diddy): ENTRY @ 0 : 1
+RA-Bool[0x10] in Action 0xE2 (Status_Hammer_Jump_Squat): ENTRY @ 9 : 0
+RA-Bool[0x10] in Action 0xEB (Status_Capture_Yoshi): ENTRY @ 7 : 1
+RA-Bool[0x10] in Action 0xEB (Status_Capture_Yoshi): ENTRY @ 11 : 0
+RA-Bool[0x10] in Action 0xEB (Status_Capture_Yoshi): ENTRY @ 18 : 1
+RA-Bool[0x10] in Action 0xEB (Status_Capture_Yoshi): ENTRY @ 22 : 0
+RA-Bool[0x10] in Action 0xED (Status_Link_Final): ENTRY @ 6 : 1
+RA-Bool[0x10] in Action 0xEF (): ENTRY @ 19 : 1
+RA-Bool[0x10] in Action 0xFB (Status_Final_Visual_Attack_Other): ENTRY @ 5 : 0
+RA-Bool[0x10] in Action 0xFB (Status_Final_Visual_Attack_Other): ENTRY @ 6 : 1
+RA-Bool[0x10] in hsr_1017C @ 0 : 1
+RA-Bool[0x10] in hsr_1017C @ 5 : 0
+RA-Bool[0x10] in hsr_102F4 @ 7 : 1
+RA-Bool[0x10] in hsr_102F4 @ 11 : 0
+RA-Bool[0x10] in hsr_102F4 @ 16 : 1
+RA-Bool[0x10] in hsr_102F4 @ 20 : 0
+RA-Bool[0x10] in hsr_107FC @ 7 : 1
+RA-Bool[0x10] in hsr_107FC @ 11 : 0
+RA-Bool[0x10] in hsr_107FC @ 16 : 1
+RA-Bool[0x10] in hsr_107FC @ 20 : 0
+RA-Bool[0x10] in hsr_1195C @ 8 : 1
+RA-Bool[0x10] in hsr_120B4 @ 2 : 1
+RA-Bool[0x10] in hsr_120B4 @ 7 : 1
+RA-Bool[0x10] in hsr_1366C @ 1 : 1
+RA-Bool[0x10] in hsr_1366C @ 3 : 0
+RA-Bool[0x10] in hsr_138C4 @ 3 : 1
+RA-Bool[0x10] in hsr_138C4 @ 8 : 0
+RA-Bool[0x10] in hsr_15E14 @ 0 : 1
+RA-Bool[0x10] in hsr_165A4 @ 0 : 1
+RA-Bool[0x10] in hsr_17214 @ 1 : 1
+RA-Bool[0x10] in hsr_17214 @ 5 : 1
+RA-Bool[0x10] in hsr_17FA4 @ 9 : 0
+RA-Bool[0x10] in hsr_1D42C @ 1 : 1
+RA-Bool[0x10] in hsr_1E22C @ 1 : 1
+RA-Bool[0x10] in hsr_1FE44 @ 0 : 1
+RA-Bool[0x10] in hsr_BF2C @ 0 : 1
+RA-Bool[0x10] in hsr_BF2C @ 2 : 0
+RA-Bool[0x10] in hsr_DC44 @ 0 : 1
+RA-Bool[0x10] in hsr_F464 @ 6 : 1
+RA-Bool[0x10] in hsr_F5D4 @ 1 : 1
+RA-Bool[0x10] in hsr_FE7C @ 0 : 1
+RA-Bool[0x10] in hsr_FE7C @ 2 : 0
+RA-Bool[0x10] in statusAnimCmd_AirLasso @ 3 : 1
+RA-Bool[0x10] in statusAnimCmd_Appeal @ 9 : 0
+RA-Bool[0x10] in statusAnimCmd_Appeal @ 16 : 1
+RA-Bool[0x10] in statusAnimCmd_AttackS4 @ 12 : 0
+RA-Bool[0x10] in statusAnimCmd_AttackS4 @ 23 : 1
+RA-Bool[0x10] in statusAnimCmd_CatchWait @ 1 : 3
+RA-Bool[0x10] in statusAnimCmd_Dead @ 6 : 2
+RA-Bool[0x10] in statusAnimCmd_Fall @ 1 : 1
+RA-Bool[0x10] in statusAnimCmd_Fall @ 6 : 1
+RA-Bool[0x10] in statusAnimCmd_Glide @ 9 : 2
+RA-Bool[0x10] in statusAnimCmd_ItemSwingS4 @ 20 : 1
+RA-Bool[0x10] in statusAnimCmd_ItemSwingS4 @ 22 : 1
+RA-Bool[0x10] in statusAnimCmd_ItemThrow @ 23 : 1
+RA-Bool[0x10] in statusAnimCmd_ItemThrow @ 27 : 0
+RA-Bool[0x10] in statusAnimCmd_JumpSquat @ 2 : 0
+RA-Bool[0x10] in statusAnimCmd_SpecialJumpAttackCommon @ 4 : 1
+RA-Bool[0x10] in statusAnimCmd_Win @ 44 : 0
+RA-Bool[0x10] in statusAnimCmd_Win @ 46 : 1
+
+RA-Bool[0x11] in Action 0x24 (Status_Attack): ENTRY @ 36 : 0
+RA-Bool[0x11] in Action 0x3 (Status_Dash): ENTRY @ 51 : 1
+RA-Bool[0x11] in Action 0x43 (Status_Damage): ENTRY @ 2 : 3
+RA-Bool[0x11] in Action 0x43 (Status_Damage): ENTRY @ 5 : 3
+RA-Bool[0x11] in Action 0x44 (Status_Damage_Air): ENTRY @ 2 : 1
+RA-Bool[0x11] in Action 0x44 (Status_Damage_Air): ENTRY @ 6 : 1
+RA-Bool[0x11] in Action 0x44 (Status_Damage_Air): ENTRY @ 9 : 1
+RA-Bool[0x11] in Action 0x45 (Status_Damage_Fly): ENTRY @ 1 : 1
+RA-Bool[0x11] in Action 0x46 (Status_Damage_Fly_Roll): ENTRY @ 0 : 3
+RA-Bool[0x11] in Action 0x47 (Status_Damage_Fly_Reflect_Lr): ENTRY @ 1 : 1
+RA-Bool[0x11] in Action 0x48 (Status_Damage_Fly_Reflect_U): ENTRY @ 1 : 1
+RA-Bool[0x11] in Action 0x6 (Status_Turn): ENTRY @ 1 : 3
+RA-Bool[0x11] in Action 0x68 (Status_Attach_Wall): ENTRY @ 6 : 1
+RA-Bool[0x11] in Action 0x69 (Status_Attach_Wall_Wait): ENTRY @ 7 : 1
+RA-Bool[0x11] in Action 0x6D (Status_Tread_Jump): ENTRY @ 1 : 0
+RA-Bool[0x11] in Action 0x7 (Status_Turn_Dash): ENTRY @ 1 : 3
+RA-Bool[0x11] in Action 0x75 (Status_Cliff_Wait): ENTRY @ 18 : 1
+RA-Bool[0x11] in Action 0x8 (Status_Turn_Run): ENTRY @ 15 : 2
+RA-Bool[0x11] in Action 0x8 (Status_Turn_Run): ENTRY @ 19 : 2
+RA-Bool[0x11] in hsr_104A4 @ 3 : 0
+RA-Bool[0x11] in hsr_104A4 @ 7 : 0
+RA-Bool[0x11] in hsr_1054C @ 1 : 1
+RA-Bool[0x11] in hsr_1195C @ 9 : 1
+RA-Bool[0x11] in hsr_1195C @ 11 : 0
+RA-Bool[0x11] in hsr_120B4 @ 16 : 1
+RA-Bool[0x11] in hsr_1366C @ 0 : 1
+RA-Bool[0x11] in hsr_138C4 @ 1 : 1
+RA-Bool[0x11] in hsr_1606C @ 1 : 0
+RA-Bool[0x11] in hsr_1628C @ 4 : 0
+RA-Bool[0x11] in hsr_165A4 @ 1 : 1
+RA-Bool[0x11] in hsr_17214 @ 2 : 0
+RA-Bool[0x11] in hsr_17214 @ 4 : 1
+RA-Bool[0x11] in hsr_17214 @ 7 : 0
+RA-Bool[0x11] in hsr_1D42C @ 0 : 1
+RA-Bool[0x11] in hsr_1D42C @ 2 : 0
+RA-Bool[0x11] in hsr_1EFAC @ 0 : 1
+RA-Bool[0x11] in hsr_1EFAC @ 5 : 1
+RA-Bool[0x11] in hsr_1FE44 @ 2 : 1
+RA-Bool[0x11] in hsr_1FE44 @ 8 : 0
+RA-Bool[0x11] in hsr_F464 @ 5 : 1
+RA-Bool[0x11] in hsr_F464 @ 19 : 0
+RA-Bool[0x11] in hsr_F5D4 @ 0 : 1
+RA-Bool[0x11] in hsr_F5D4 @ 10 : 0
+RA-Bool[0x11] in statusAnimCmd_ItemShootWait_Common @ 2 : 3
+RA-Bool[0x11] in statusAnimCmd_ItemShootWalkB_Common @ 1 : 3
+RA-Bool[0x11] in statusAnimCmd_ItemShootWalkBBrake_Common @ 3 : 3
+RA-Bool[0x11] in statusAnimCmd_ItemShootWalkF_Common @ 1 : 3
+RA-Bool[0x11] in statusAnimCmd_ItemShootWalkFBrake_Common @ 3 : 3
+RA-Bool[0x11] in statusAnimCmd_ItemSwingS4 @ 21 : 1
+RA-Bool[0x11] in statusAnimCmd_ItemSwingS4Uniq @ 1 : 0
+
+RA-Bool[0x12] in Action 0x27 (Status_Attack_S3): ENTRY @ 9 : 0
+RA-Bool[0x12] in Action 0x5 (Status_Run_Brake): ENTRY @ 30 : 3
+RA-Bool[0x12] in Action 0x6 (Status_Turn) : EXIT @ 5 : 1
+RA-Bool[0x12] in Action 0x7 (Status_Turn_Dash) : EXIT @ 5 : 1
+RA-Bool[0x12] in Action 0x75 (Status_Cliff_Wait): ENTRY @ 4 : 2
+RA-Bool[0x12] in Action 0xD (Status_Fly): ENTRY @ 7 : 0
+RA-Bool[0x12] in hsr_12A9C @ 1 : 1
+RA-Bool[0x12] in hsr_1424C @ 7 : 1
+RA-Bool[0x12] in hsr_1685C @ 0 : 1
+RA-Bool[0x12] in hsr_1685C @ 3 : 0
+RA-Bool[0x12] in hsr_1D42C @ 8 : 1
+RA-Bool[0x12] in hsr_1D42C @ 9 : 0
+RA-Bool[0x12] in hsr_1EFAC @ 1 : 1
+RA-Bool[0x12] in hsr_1EFAC @ 3 : 0
+RA-Bool[0x12] in hsr_1EFAC @ 6 : 1
+RA-Bool[0x12] in hsr_1EFAC @ 8 : 0
+RA-Bool[0x12] in hsr_E20C @ 6 : 1
+RA-Bool[0x12] in hsr_E3BC @ 6 : 1
+RA-Bool[0x12] in hsr_F464 @ 0 : 1
+RA-Bool[0x12] in hsr_F464 @ 3 : 0
+RA-Bool[0x12] in hsr_F464 @ 18 : 0
+RA-Bool[0x12] in statusAnimCmd_AirLassoReach @ 3 : 1
+RA-Bool[0x12] in statusAnimCmd_EscapeAirCommon @ 9 : 1
+RA-Bool[0x12] in statusAnimCmd_ItemShootWait_Common @ 0 : 0
+RA-Bool[0x12] in statusAnimCmd_ItemShootWait_Common @ 7 : 3
+RA-Bool[0x12] in statusAnimCmd_ItemShootWait_Common @ 12 : 3
+RA-Bool[0x12] in statusAnimCmd_ItemShootWalkB_Common @ 6 : 3
+RA-Bool[0x12] in statusAnimCmd_ItemShootWalkF_Common @ 6 : 3
+RA-Bool[0x12] in statusAnimCmd_ItemSwingS4 @ 23 : 1
+RA-Bool[0x12] in statusAnimCmd_ItemSwingS4Uniq @ 3 : 0
+RA-Bool[0x12] in statusAnimCmd_JumpAerial @ 9 : 0
+
+RA-Bool[0x13] in Action 0x24 (Status_Attack): ENTRY @ 37 : 0
+RA-Bool[0x13] in Action 0x27 (Status_Attack_S3): ENTRY @ 8 : 0
+RA-Bool[0x13] in Action 0x27 (Status_Attack_S3): ENTRY @ 30 : 1
+RA-Bool[0x13] in Action 0x3 (Status_Dash): ENTRY @ 60 : 1
+RA-Bool[0x13] in hsr_11E54 @ 5 : 0
+RA-Bool[0x13] in hsr_11F24 @ 2 : 0
+RA-Bool[0x13] in hsr_11F24 @ 7 : 1
+RA-Bool[0x13] in hsr_11F24 @ 8 : 0
+RA-Bool[0x13] in hsr_12A9C @ 4 : 0
+RA-Bool[0x13] in hsr_17414 @ 2 : 0
+RA-Bool[0x13] in hsr_B9F4 @ 1 : 1
+RA-Bool[0x13] in hsr_B9F4 @ 4 : 1
+RA-Bool[0x13] in hsr_CED4 @ 1 : 1
+RA-Bool[0x13] in hsr_F464 @ 21 : 1
+RA-Bool[0x13] in hsr_F464 @ 23 : 0
+RA-Bool[0x13] in hsr_F5D4 @ 12 : 1
+RA-Bool[0x13] in hsr_F5D4 @ 14 : 0
+RA-Bool[0x13] in hsr_F6BC @ 2 : 0
+RA-Bool[0x13] in statusAnimCmd_AirLassoHang @ 13 : 1
+RA-Bool[0x13] in statusAnimCmd_EscapeAirCommon @ 16 : 1
+
+RA-Bool[0x14] in Action 0x24 (Status_Attack): ENTRY @ 5 : 1
+RA-Bool[0x14] in Action 0x24 (Status_Attack): ENTRY @ 10 : 3
+RA-Bool[0x14] in Action 0x75 (Status_Cliff_Wait): ENTRY @ 8 : 1
+RA-Bool[0x14] in hsr_B924 @ 1 : 1
+RA-Bool[0x14] in hsr_B924 @ 3 : 0
+RA-Bool[0x14] in hsr_CED4 @ 0 : 1
+RA-Bool[0x14] in hsr_CED4 @ 8 : 0
+
+RA-Bool[0x15] in Action 0x24 (Status_Attack): ENTRY @ 33 : 0
+RA-Bool[0x15] in Action 0x24 (Status_Attack): ENTRY @ 56 : 1
+RA-Bool[0x15] in hsr_120B4 @ 3 : 0
+RA-Bool[0x15] in hsr_120B4 @ 8 : 0
+RA-Bool[0x15] in hsr_120B4 @ 17 : 0
+RA-Bool[0x15] in hsr_B924 @ 7 : 0
+RA-Bool[0x15] in hsr_B9F4 @ 3 : 2
+RA-Bool[0x15] in statusAnimCmd_AirLassoHang @ 14 : 2
+RA-Bool[0x15] in statusAnimCmd_AirLassoRewind @ 2 : 2
+
+RA-Bool[0x16] in Action 0x24 (Status_Attack): ENTRY @ 34 : 0
+RA-Bool[0x16] in hsr_11FDC @ 1 : 1
+RA-Bool[0x16] in hsr_120B4 @ 11 : 1
+RA-Bool[0x16] in hsr_13B6C @ 2 : 1
+RA-Bool[0x16] in hsr_13B6C @ 6 : 0
+
+RA-Bool[0x18] in Action 0x25 (Status_Attack_100): ENTRY @ 6 : 0
+RA-Bool[0x18] in Action 0x25 (Status_Attack_100): ENTRY @ 11 : 1
+RA-Bool[0x18] in hsr_11F24 @ 10 : 0
+
+RA-Bool[0x19] in Action 0x25 (Status_Attack_100): ENTRY @ 7 : 0
+RA-Bool[0x19] in Action 0x4D (Status_Down_Wait): ENTRY @ 4 : 1
+RA-Bool[0x19] in Action 0x4E (Status_Down_Wait_Continue): ENTRY @ 0 : 1
+RA-Bool[0x19] in Action 0x4F (Status_Down_Eat): ENTRY @ 5 : 1
+RA-Bool[0x19] in Action 0x50 (Status_Lay_Down): ENTRY @ 4 : 0
+RA-Bool[0x19] in Action 0x51 (Status_Down_Stand): ENTRY @ 3 : 1
+RA-Bool[0x19] in Action 0x52 (Status_Down_Stand_Fb): ENTRY @ 4 : 1
+RA-Bool[0x19] in Action 0x52 (Status_Down_Stand_Fb): ENTRY @ 10 : 1
+RA-Bool[0x19] in Action 0x53 (Status_Down_Stand_Attack): ENTRY @ 3 : 1
+RA-Bool[0x19] in Action 0x54 (Status_Down_Damage): ENTRY @ 14 : 1
+RA-Bool[0x19] in Action 0x54 (Status_Down_Damage): ENTRY @ 20 : 1
+RA-Bool[0x19] in Action 0x58 (Status_Shield_Break_Down): ENTRY @ 4 : 0
+RA-Bool[0x19] in Action 0x58 (Status_Shield_Break_Down): ENTRY @ 6 : 0
+RA-Bool[0x19] in Action 0x58 (Status_Shield_Break_Down): ENTRY @ 8 : 1
+RA-Bool[0x19] in Action 0x59 (Status_FuraFura_Stand): ENTRY @ 3 : 1
+RA-Bool[0x19] in hsr_11F24 @ 5 : 1
+RA-Bool[0x19] in hsr_11F24 @ 6 : 0
+
+RA-Bool[0x1A] in Action 0x25 (Status_Attack_100): ENTRY @ 8 : 0
+
+RA-Bool[0x1B] in Action 0x54 (Status_Down_Damage): ENTRY @ 13 : 1
+RA-Bool[0x1B] in hsr_11F24 @ 4 : 1
+RA-Bool[0x1B] in hsr_11F24 @ 14 : 0
+
+RA-Bool[0x1C] in Action 0x24 (Status_Attack): ENTRY @ 38 : 0
+RA-Bool[0x1C] in Action 0x54 (Status_Down_Damage): ENTRY @ 0 : 1
+RA-Bool[0x1C] in hsr_120B4 @ 12 : 1
+RA-Bool[0x1C] in hsr_120B4 @ 21 : 0
+
+RA-Bool[0x1D] in Action 0x24 (Status_Attack): ENTRY @ 19 : 3
+RA-Bool[0x1D] in Action 0x24 (Status_Attack): ENTRY @ 22 : 3
+RA-Bool[0x1D] in Action 0x24 (Status_Attack): ENTRY @ 39 : 0
+RA-Bool[0x1D] in Action 0x54 (Status_Down_Damage): ENTRY @ 29 : 1
+RA-Bool[0x1D] in Action 0x54 (Status_Down_Damage): ENTRY @ 35 : 1
+RA-Bool[0x1D] in Action 0x54 (Status_Down_Damage): ENTRY @ 41 : 0
+RA-Bool[0x1D] in hsr_11FDC @ 2 : 0
+RA-Bool[0x1D] in hsr_120B4 @ 13 : 0
+
+RA-Bool[0x1E] in statusAnimCmd_AttackAirCommon @ 5 : 1

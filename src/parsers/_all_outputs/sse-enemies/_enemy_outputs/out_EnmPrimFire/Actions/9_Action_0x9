@@ -1,0 +1,23 @@
+Action 0x9: MAIN {
+}
+
+Action 0x9: EXIT {
+}
+
+Action 0x9: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  if (R(Bit is Set(LA-Bool[0x0B])) || R(Compare(LA-Int[0x12] != 0.0))) {
+    (undef: Sp_AI) 6A_00_01_00(21)
+  } else {
+    (undef: Sp_AI) 6A_00_01_00(16)
+  }
+  if (R(Compare(Variable_Int_Controller_Flick_X_Dir == 31.0))) {
+    SubAction09(83)
+  } else {
+    SubAction09(4)
+  }
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 16)
+  ReverseDirection()
+  SubRoutine(hidden_subroutine_0x1270)
+}
+

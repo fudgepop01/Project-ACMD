@@ -1,0 +1,12 @@
+// @ 0x9204
+AIRChkFallCommon {
+  AllowSpecificInterrupt(AIR_LANDING)
+  AllowSpecificInterrupt(AIR_SPECIAL)
+  AllowSpecificInterrupt(AIR_ITEM_THROW)
+  AllowSpecificInterrupt(AIR_LASSO)
+  AllowSpecificInterrupt(AIR_ESCAPE)
+  AllowSpecificInterrupt(AIR_ATTACK)
+  AllowSpecificInterrupt(AIR_TREAD_JUMP)
+  AllowSpecificInterrupt(AIR_WALL_JUMP)
+  AllowSpecificInterrupt(AIR_JUMP_AERIAL)
+}

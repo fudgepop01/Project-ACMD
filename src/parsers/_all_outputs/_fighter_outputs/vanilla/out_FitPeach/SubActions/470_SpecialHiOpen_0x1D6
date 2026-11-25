@@ -1,0 +1,33 @@
+[SpecialHiOpen] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D6: MAIN {
+  SetArticleAction(0, 2)
+  AsynchronousTimer(10.0)
+  OffensiveCollision(Sp(101, 0), 3, 80, Sp(0, 40), Sp(0, 35), 3.3, 0.0, 8.0, 0.0, 0.0, 1.0, 1.0, 1023607298)
+}
+
+Subaction 0x1D6: GFX {
+  AsynchronousTimer(4.0)
+  GraphicEffect(29, 101, 0.0, 15.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x1D6: SOUND {
+  AsynchronousTimer(4.0)
+  SoundEffect(3921)
+}
+
+Subaction 0x1D6: OTHER {
+  HeldItemsVisibility(false)
+  AsynchronousTimer(10.0)
+  Rumble(12, 0)
+}
+

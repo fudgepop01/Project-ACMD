@@ -1,0 +1,10 @@
+[hsr_C58]
+hidden_subroutine_0xC58 {
+  FlashOverlayEffect(80, 0, 180, 80)
+  SynchronousTimer(1.0)
+  ChangeFlashOverlayColor(4, 40, 0, 60, 10)
+  SynchronousTimer(4.0)
+  TerminateFlashEffect()
+  SynchronousTimer(1.0)
+  Return()
+}

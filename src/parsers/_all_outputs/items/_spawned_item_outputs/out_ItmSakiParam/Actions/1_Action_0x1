@@ -1,0 +1,20 @@
+// Status_Walk
+Action 0x1 {
+  BasicVariableSet(7, LA-Int[0x00])
+  BasicVariableSet(6, LA-Int[0x01])
+  BasicVariableSet(6, LA-Int[0x02])
+  BasicVariableRandom(960, 960, LA-Int[0x0B])
+  (undef: Sp_base) 65_05_01_00(LA-Int[0x0B])
+  RightDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  DisableSpecifiedMovement(2)
+  ChangeSubAction(0)
+  SetAnimationFrame(0.0)
+  FrameSpeedModifier(0.0)
+  SynchronousTimer(10.0)
+  EnableSpecifiedMovement(2)
+  ChangeAction(4, R(On Ground()))
+  ChangeAction(3, R(In Air()))
+}
+

@@ -1,0 +1,10 @@
+Action 0x129: ENTRY {
+  SetGimmickEffectFlag(false)
+  SetShapeFlag(3)
+  SubRoutine(statusAnimCmd_FinalAirChkLanding__15ftGameWatchNode)
+  SubRoutine(statusAnimCmd_FinalAirChkJumpAerial__15ftGameWatchNode)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1981C)
+}
+
+Action 0x129 : EXIT {
+}

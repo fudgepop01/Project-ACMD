@@ -1,0 +1,17 @@
+Action 0x118: ENTRY {
+  ChangeAction(281, R(Animation End()))
+  ChangeActionStatus(10147, 281, R(Hitbox Connects()))
+  ChangeActionStatus(10146, 281, R(On Ground()))
+  DisableActionStatusId(10146)
+  if (R(Bit is Set(RA-Bool[0x12]))) {
+    ChangeSubAction(467)
+  } else {
+    ChangeSubAction(466)
+  }
+}
+
+Action 0x118 : EXIT {
+  if (R(Current Triggered Status ID())) {
+    BitVariableSet(RA-Bool[0x13])
+  }
+}

@@ -1,0 +1,8 @@
+// @ 0x3798
+CommonDyingWaterProcEnd {
+  SynchronousTimer(15.0)
+  (undef: StageObject) 0C_02_00_00()
+  SynchronousTimer(45.0)
+  (undef: Sp_base) 65_00_00_00()
+  Return()
+}

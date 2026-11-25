@@ -1,0 +1,17 @@
+Action 0x15: MAIN {
+}
+
+Action 0x15: EXIT {
+  if (R(Animation End())) {
+    FloatVariableAdd(IC-Int[0xFA3], LA-Float[0x08])
+  }
+}
+
+Action 0x15: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(22)
+  SubAction09(0)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 16)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 24)
+}
+

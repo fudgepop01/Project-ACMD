@@ -1,0 +1,37 @@
+// @ 0x3270
+CommonDamageProcInit {
+  ConcurrentInfiniteLoop(I(4), statusAnimCmd_CommonDamageProcUniq)
+  if (R(NOT Bit is Set(LA-Bool[0x04]))) {
+    SetHitlag(LA-Int[0x02], true)
+    if (R(Compare(LA-Int[0x03] != -1.0))) {
+      (undef: shake) 1D_00_03_00(LA-Int[0x03], LA-Int[0x02], 255)
+    }
+    if (R(Compare(LA-Int[0x0B] != -1.0))) {
+      (undef: camera) 1A_05_01_00(LA-Int[0x0B])
+    }
+  }
+  if (R(On Ground())) {
+    if (R(Bit is Set(LA-Bool[0x04]))) {
+      (undef: Sp_Kinetic) 66_0B_02_00(4, 4)
+    } else {
+      (undef: Sp_Kinetic) 66_07_01_00(-1)
+      (undef: Sp_Kinetic) 66_00_02_00(3, 2)
+      (undef: Sp_Kinetic) 66_00_02_00(3, 4)
+    }
+    if (R(NOT 0x2710()) && R(NOT Is within footstool range())) {
+      Module0900(2)
+    }
+  }
+  if (R(In Air())) {
+    if (R(Bit is Set(LA-Bool[0x04]))) {
+      (undef: Sp_Kinetic) 66_0B_02_00(3, 3)
+    } else {
+      (undef: Sp_Kinetic) 66_07_01_00(-1)
+      (undef: Sp_Kinetic) 66_00_02_00(4, 2)
+      (undef: Sp_Kinetic) 66_00_02_00(4, 3)
+    }
+    (undef: Sp_Kinetic) 66_00_02_00(3, 0)
+  }
+  BitVariableSet(LA-Bool[0x04])
+  Return()
+}

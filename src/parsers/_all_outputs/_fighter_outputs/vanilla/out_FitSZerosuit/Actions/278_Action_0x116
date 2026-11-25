@@ -1,0 +1,31 @@
+Action 0x116: ENTRY {
+  EnterFinalSmashState()
+  SetAirGround(50)
+  (undef: item_manage) 1F_11_01_00(2)
+  BitVariableClear(RA-Bool[0x13])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      if (R(NOT Bit is Set(RA-Bool[0x13]))) {
+        ChangeSubAction(487, false)
+      } else {
+        ChangeSubAction(487, true)
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(NOT Bit is Set(RA-Bool[0x13]))) {
+        ChangeSubAction(488, false)
+      } else {
+        ChangeSubAction(488, true)
+      }
+      SetRequirement(R(On Ground()))
+    }
+    BitVariableSet(RA-Bool[0x13])
+    LoadRest()
+  }
+}
+
+Action 0x116 : EXIT {
+  ExitFinalSmashState()
+}

@@ -1,0 +1,56 @@
+[Sliding_Big] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x47: MAIN {
+  TerminateCollisions()
+  AsynchronousTimer(6.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 6, 8, 3.0, 30, 100, 0.0, 85, -1.5, 0, 0.5, 4.5, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.5, 2.0, false, true, 10, 2, 2, 3, true, 0, 311, false, 15, false, true, false, false, 6, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 20, 8, 3.0, 30, 100, 0.0, 85, -1.5, 0, 0.5, 3.6, 0.0, 0.0, 5.0, 0.0, 0, 0.0, 0.5, 2.0, false, true, 10, 2, 2, 3, true, 0, 311, false, 15, false, true, false, false, 6, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(2, 0, 17, 8, 3.0, 30, 100, 0.0, 85, -1.5, 0, 0.5, 3.6, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.5, 2.0, false, true, 10, 2, 2, 3, true, 0, 311, false, 15, false, true, false, false, 6, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(3, 0, 30, 8, 3.0, 30, 100, 0.0, 85, -1.5, 0, 0.5, 3.6, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.5, 2.0, false, true, 10, 2, 2, 3, true, 0, 311, false, 15, false, true, false, false, 6, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(30.0)
+  TerminateCollisions()
+}
+
+Subaction 0x47: MAIN EXIT {
+}
+
+Subaction 0x47: MAIN INIT {
+}
+
+Subaction 0x47: GFX {
+  AsynchronousTimer(4.0)
+  GraphicEffectStepping(26, 0, -1.36, 0.0, -2.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(19.0)
+  Screenshake(1)
+  GraphicEffectAttached(13, 0, 0.0, 0.0, 3.0, 0.0, 0.0, 0.0, 0.4, false)
+  GraphicEffectAttached(11, 0, 0.0, 0.0, 3.0, 0.0, 0.0, 0.0, 0.5, false)
+}
+
+Subaction 0x47: GFX EXIT {
+}
+
+Subaction 0x47: GFX INIT {
+}
+
+Subaction 0x47: SFX {
+  SynchronousTimer(18.0)
+  SoundEffect(9543)
+  SynchronousTimer(1.0)
+  SoundEffect(9541)
+}
+
+Subaction 0x47: SFX EXIT {
+}
+
+Subaction 0x47: SFX INIT {
+}
+

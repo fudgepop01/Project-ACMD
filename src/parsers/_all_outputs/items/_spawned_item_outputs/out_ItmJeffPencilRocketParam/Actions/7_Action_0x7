@@ -1,0 +1,8 @@
+// Status_Turn_Dash
+Action 0x7 {
+  ChangeSubAction(2)
+  Screenshake(2)
+  SynchronousTimer(1.0)
+  ChangeAction(6, R(Button Tap?()))
+}
+

@@ -1,0 +1,9 @@
+[hsr_51C4]
+hidden_subroutine_0x51C4 {
+  if (R(Bit is Set(RA-Bool[0x11]))) {
+    if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+      AllowInterrupt()
+      BitVariableSet(RA-Bool[0x10])
+    }
+  }
+}

@@ -1,0 +1,17 @@
+[hsr_1424C]
+hidden_subroutine_0x1424C {
+  if (R(Compare(Variable_Float_Damage_Reaction < IC-Int[0xCE7]))) {
+    BasicVariableSet(1, RA-Int[0x05])
+  } elif (R(Compare(Variable_Float_Damage_Reaction < IC-Int[0xCE8]))) {
+    BasicVariableSet(2, RA-Int[0x05])
+  } else {
+    BasicVariableSet(3, RA-Int[0x05])
+  }
+  if (R(Bit is Set(RA-Bool[0x12]))) {
+    SubRoutine(hidden_subroutine_0x14054)
+  }
+  SubRoutine(hidden_subroutine_0xB644)
+  SubRoutine(hidden_subroutine_0xB71C)
+  SubRoutine(hidden_subroutine_0xB7BC)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x13B6C)
+}

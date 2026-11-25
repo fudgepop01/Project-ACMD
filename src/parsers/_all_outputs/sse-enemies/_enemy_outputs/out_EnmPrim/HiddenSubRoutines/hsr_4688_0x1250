@@ -1,0 +1,6 @@
+[hsr_1250]
+hidden_subroutine_0x1250 {
+  if (R(Compare(Variable_Int_Controller_Flick_X_Dir == 28.0))) {
+    GenerateDefensiveCollisionBubble_UNDOC15ARG(3, 0, 6, 9.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 50.0, false, 0.5)
+  }
+}

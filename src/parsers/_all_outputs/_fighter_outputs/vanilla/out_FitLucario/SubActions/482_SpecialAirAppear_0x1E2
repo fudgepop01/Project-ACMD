@@ -1,0 +1,33 @@
+[SpecialAirAppear] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1E2: MAIN {
+  BodyCollision(2)
+  OffensiveCollision(Sp(11, 0), 11, 285, Sp(0, 64), Sp(0, 80), 3.5, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 964887637)
+  OffensiveCollision(Sp(12, 1), 11, 285, Sp(0, 64), Sp(0, 80), 3.5, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 964887637)
+  OffensiveCollision(Sp(14, 2), 11, 285, Sp(0, 64), Sp(0, 80), 5.0, 0.0, -1.0, 1.0, 0.0, 1.0, 1.0, 964887637)
+}
+
+Subaction 0x1E2: GFX {
+  GraphicEffect(2228239, 10, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x1E2: SOUND {
+  StopSoundEffect(5810)
+  SynchronousTimer(1.0)
+  VictorySoundEffect(2317)
+  VictorySoundEffect(5811)
+}
+
+Subaction 0x1E2: OTHER {
+  Rumble(13, 0)
+}
+

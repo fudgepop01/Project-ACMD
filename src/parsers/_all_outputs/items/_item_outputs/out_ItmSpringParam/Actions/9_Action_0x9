@@ -1,0 +1,10 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  ChangeSubAction(4, true)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  (undef: Sp_base) 65_1E_01_00(2)
+  FrameSpeedModifier(0.0)
+  ChangeAction(4, R(On Ground()))
+}
+

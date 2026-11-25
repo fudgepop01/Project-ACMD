@@ -1,0 +1,33 @@
+Action 0x11: MAIN {
+  SubRoutine(hidden_subroutine_0xAA4)
+}
+
+Action 0x11: EXIT {
+  (undef: Sp_base) 65_16_00_00()
+  if (R(Facing Left())) {
+    (undef: Sp_base) 65_1F_02_00(IC-Int[0xABF2], LA-Float[0x0A])
+    (undef: Sp_base) 65_14_01_00(LA-Float[0x0A])
+  } else {
+    (undef: Sp_base) 65_1F_02_00(IC-Int[0xABF3], LA-Float[0x0A])
+    (undef: Sp_base) 65_14_01_00(LA-Float[0x0A])
+  }
+  ReverseDirection()
+  DecideDirection()
+  SubRoutine(hidden_subroutine_0xFE4)
+}
+
+Action 0x11: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(13)
+  BasicVariableSet(18, LA-Int[0x06])
+  SetBoneMotionOverride(0, 16, 10)
+  if (R(Facing Left())) {
+    BasicVariableSet(2, LA-Int[0x05])
+  } else {
+    BasicVariableSet(3, LA-Int[0x05])
+  }
+  SubRoutine(hidden_subroutine_0x964)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 21)
+  SubRoutine(hidden_subroutine_0xF7C)
+}
+

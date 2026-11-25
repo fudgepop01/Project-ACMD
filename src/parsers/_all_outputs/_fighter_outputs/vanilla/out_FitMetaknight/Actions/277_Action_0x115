@@ -1,0 +1,52 @@
+Action 0x115: ENTRY {
+  GenerateArticle(0)
+
+  ChangeAction(283, R(Bit is Set(RA-Bool[0x10])))
+  AdditionalRequirement(R(Button Pressed(Special)))
+
+  ChangeAction(283, R(Bit is Set(RA-Bool[0x10])))
+  AdditionalRequirement(R(Button Pressed(Attack)))
+
+  ChangeAction(284, R(Bit is Set(RA-Bool[0x10])))
+  BasicVariableSet(472, RA-Int[0x00])
+  BasicVariableSet(473, RA-Int[0x01])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      if (R(Compare(Variable_Int_Motion_Kind == RA-Int[0x01]))) {
+        if (R(NOT Bit is Set(RA-Bool[0x11]))) {
+          ArticleVisibility(0, true)
+          SetAnchoredArticleAction(0, 0, true)
+        }
+        ModelChangerPermanent(2, 2)
+        ChangeSubAction(RA-Int[0x00], true)
+      } else {
+        ChangeSubAction(RA-Int[0x00])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(Compare(Variable_Int_Motion_Kind == RA-Int[0x00]))) {
+        SetAnchoredArticleAction(0, 1, true)
+        ChangeSubAction(RA-Int[0x01], true)
+      } else {
+        ChangeSubAction(RA-Int[0x01])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x115 : EXIT {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(283)
+    Case(284)
+      Break()
+    DefaultCase()
+      BodyCollision(0)
+      Visibility(true)
+      OnlyArticleEvent(0)
+      ModelChangerPermanent(2, 0)
+  EndSwitch()
+}

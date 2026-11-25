@@ -1,0 +1,10 @@
+[hsr_9D0]
+hidden_subroutine_0x9D0 {
+  if (R(Compare(LA-Int[0x05] > 0.0))) {
+    if (R(Compare(Variable_Int_Combo_Count > IC-Int[0x5DC1]))) {
+      BasicVariableSet(0, LA-Int[0x05])
+      (undef: Sp_base) 65_04_01_00(0)
+    }
+  }
+  Return()
+}

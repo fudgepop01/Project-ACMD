@@ -1,0 +1,22 @@
+[hsr_1B0F4]
+hidden_subroutine_0x1B0F4 {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(290)
+    Case(291)
+    Case(292)
+    Case(293)
+    Case(294)
+    Case(295)
+    Case(296)
+    Case(298)
+    Case(299)
+    Case(297)
+    Case(300)
+    Case(301)
+      Break()
+    DefaultCase()
+      if [IF_REQ_UNKNOWN_3ARG] (R(0x18()), 13, 2) {
+        (undef: generateArticleManage) 10_09_01_00(13)
+      }
+  EndSwitch()
+}

@@ -1,0 +1,20 @@
+Action 0x11: MAIN {
+}
+
+Action 0x11: EXIT {
+}
+
+Action 0x11: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(13)
+  SubAction09(6)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 23)
+  (undef: Sp_Link) 6E_00_02_00(0, 5101)
+  (undef: Sp_Link) 6E_03_02_00(0, O(0x000003B4))
+  BitVariableClear(LA-Bool[0x06])
+  (undef: collision) 06_07_02_00(1, 0)
+  (undef: Sp_CollisionHit) 6D_00_01_00(0)
+  BasicVariableSet(5, LA-Int[0x06])
+  SubRoutine(hidden_subroutine_0x414)
+}
+

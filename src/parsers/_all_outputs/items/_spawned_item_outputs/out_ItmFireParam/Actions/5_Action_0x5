@@ -1,0 +1,13 @@
+// Status_Run_Brake
+Action 0x5 {
+  DisableSpecifiedMovement(2)
+  ChangeSubAction(0)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, -0.1, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeSubAction(1)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.012, 0.0, 0.0, true, false, true)
+  SynchronousTimer(170.0)
+  ChangeAction(6, R(Button Tap?()))
+}
+

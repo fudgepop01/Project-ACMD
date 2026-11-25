@@ -1,0 +1,18 @@
+Action 0x11C: ENTRY {
+  ChangeAction(14, R(In Air()))
+  ChangeAction(0, R(Animation End()))
+  SetArticleAction07(4, 1)
+  ChangeSubAction(473)
+}
+
+Action 0x11C : EXIT {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(0)
+    Case(14)
+      Break()
+    DefaultCase()
+      if (R(Article Exists()) && R(0x18())) {
+        SubRoutine(hidden_subroutine_0x19928)
+      }
+  EndSwitch()
+}

@@ -1,0 +1,40 @@
+[SwimF] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xF2 : MAIN {
+}
+
+Subaction 0xF2 : GFX {
+}
+
+Subaction 0xF2 : SOUND {
+  AsynchronousTimer(16.0)
+  SoundEffect(178)
+  SynchronousTimer(22.5)
+  SoundEffect(179)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0xF2 : SFX)
+}
+
+Subaction 0xF2 : OTHER {
+  Rumble(0, 0)
+  AsynchronousTimer(17.0)
+  Rumble(0, 0)
+  AsynchronousTimer(27.0)
+  Rumble(0, 0)
+  AsynchronousTimer(40.0)
+  Rumble(0, 0)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0xF2 : OTHER)
+}
+

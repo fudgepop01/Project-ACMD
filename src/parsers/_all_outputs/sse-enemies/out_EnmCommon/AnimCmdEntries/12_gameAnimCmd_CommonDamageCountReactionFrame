@@ -1,0 +1,9 @@
+// @ 0x4138
+CommonDamageCountReactionFrame {
+  if (R(On Ground())) {
+    BasicVariableAdd(-2, LA-Int[0x00])
+  } else {
+    BasicVariableAdd(-1, LA-Int[0x00])
+  }
+  Return()
+}

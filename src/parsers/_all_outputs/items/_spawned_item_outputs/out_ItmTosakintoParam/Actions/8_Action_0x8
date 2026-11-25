@@ -1,0 +1,13 @@
+// Status_Turn_Run
+Action 0x8 {
+  ChangeSubAction(7)
+  DisableSpecifiedMovement(2)
+  SetRequirement(R(Animation has looped?()))
+  LoadRest()
+  if (R(Is within footstool range())) {
+    ChangeAction(9, R(Button Tap?()))
+  } else {
+    ChangeAction(10, R(Button Tap?()))
+  }
+}
+

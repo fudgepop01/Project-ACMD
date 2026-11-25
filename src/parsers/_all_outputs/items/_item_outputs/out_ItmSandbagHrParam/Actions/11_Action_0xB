@@ -1,0 +1,87 @@
+// Status_Jump
+Action 0xB {
+  SubRoutine(hidden_subroutine_0x554)
+  DisableActionStatusId(4)
+  DisableActionStatusId(11)
+  ChangeAction(3, R(In Air()))
+  if (R(Compare(Variable_Int_Motion_Kind >= 12.0)) && R(Compare(Variable_Int_Motion_Kind <= 14.0))) {
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ChangeSubAction(27)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ChangeSubAction(33)
+  } elif (R(Compare(Variable_Int_Motion_Kind == 27.0)) || R(Compare(Variable_Int_Motion_Kind == 26.0))) {
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ChangeSubAction(27)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ChangeSubAction(33)
+  } elif (R(Compare(Variable_Int_Motion_Kind == 16.0)) || R(Compare(Variable_Int_Motion_Kind == 15.0)) || R(Compare(Variable_Int_Motion_Kind == 11.0))) {
+    (undef: Sp_base) 65_1A_04_00(5, RA-Float[0x00], RA-Float[0x01], RA-Float[0x02])
+    if (R(Facing Right())) {
+      FloatVariableSet(40.0, RA-Float[0x04])
+    } else {
+      FloatVariableSet(-40.0, RA-Float[0x04])
+    }
+    if (R(Compare(RA-Float[0x02] < RA-Float[0x04]))) {
+      BitVariableSet(LA-Bool[0x00])
+    } else {
+      BitVariableClear(LA-Bool[0x00])
+    }
+    if (R(Bit is Set(LA-Bool[0x00]))) {
+      ChangeSubAction(26)
+      SetRequirement(R(Animation End()))
+      LoadRest()
+      ChangeSubAction(32)
+    } else {
+      ChangeSubAction(27)
+      SetRequirement(R(Animation End()))
+      LoadRest()
+      ChangeSubAction(33)
+    }
+  } elif (R(Compare(Variable_Int_Motion_Kind == 32.0))) {
+    if (R(Compare(Variable_Int_Controller_Trigger_3_Count == 79.0)) && R(Compare(Variable_Float_Posture_Pos_X > 50.0))) {
+      BasicVariableSet(1, RA-Int[0x03])
+      while (R(Compare(Variable_Float_Kinetic_Sum_Speed_X_Abs > 0.1))) {
+        SynchronousTimer(5.0)
+        EndWhile()
+        BasicVariableSet(1, RA-Int[0x00])
+      } elif (R(Is within footstool range())) {
+        BasicVariableSet(1, RA-Int[0x00])
+        SynchronousTimer(60.0)
+      } else {
+        BasicVariableSet(0, RA-Int[0x00])
+      }
+      if (R(Compare(RA-Int[0x00] == 1.0))) {
+        ChangeSubAction(30)
+        SetRequirement(R(Animation End()))
+        LoadRest()
+        ChangeAction(4, R(On Ground()))
+      }
+    } elif (R(Compare(Variable_Int_Motion_Kind == 33.0))) {
+      if (R(Compare(Variable_Int_Controller_Trigger_3_Count == 79.0)) && R(Compare(Variable_Float_Posture_Pos_X > 50.0))) {
+        BasicVariableSet(1, RA-Int[0x03])
+        BasicVariableSet(1, RA-Int[0x00])
+        while (R(Compare(Variable_Float_Kinetic_Sum_Speed_X_Abs > 0.1))) {
+          SynchronousTimer(5.0)
+          EndWhile()
+        } elif (R(Is within footstool range())) {
+          BasicVariableSet(1, RA-Int[0x00])
+          SynchronousTimer(60.0)
+        } else {
+          BasicVariableSet(0, RA-Int[0x00])
+        }
+        if (R(Compare(RA-Int[0x00] == 1.0))) {
+          ChangeSubAction(31)
+          SetRequirement(R(Animation End()))
+          LoadRest()
+          ChangeAction(4, R(On Ground()))
+        }
+      } else {
+        ChangeAction(4, R(On Ground()))
+      }
+      ChangeAction(11, R(On Ground()))
+}
+

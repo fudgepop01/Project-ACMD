@@ -1,0 +1,25 @@
+Action 0xE: MAIN {
+  SetLoop(-1) {
+    if (R(Successfully tethered ledge())) {
+      if [IF_REQ_UNKNOWN_3ARG] (R(0x12()), 2, Variable_Int_Controller_Flick_No_Reset_Y ||[3A] R(0x12()), 0, Variable_Int_Controller_Flick_No_Reset_Y ||[3A] R(0x12()), 1, Variable_Int_Controller_Flick_No_Reset_Y) {
+        (undef: Sp_Area) 69_00_01_00(Variable_Int_Controller_Flick_No_Reset_Y)
+      }
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0xE: EXIT {
+}
+
+Action 0xE: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(19)
+  (undef: Sp_AI) 6A_00_01_00(9)
+  SubAction09(8)
+  (undef: Sp_Area) 69_01_05_00(Variable_Int_Controller_Flick_No_Reset_Y, 0.0, 0.0, LA-Float[0x04], true)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 22)
+  (undef: Sp_Kinetic) 66_00_03_00(3, 24, LA-Float[0x04])
+  (undef: Sp_Kinetic) 66_0C_02_00(3, LA-Float[0x04])
+}
+

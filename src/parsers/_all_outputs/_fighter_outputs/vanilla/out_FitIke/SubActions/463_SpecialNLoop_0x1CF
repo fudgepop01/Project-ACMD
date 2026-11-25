@@ -1,0 +1,48 @@
+[SpecialNLoop] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1CF: MAIN {
+}
+
+Subaction 0x1CF: GFX {
+  GraphicEffectAttached(2293762, 70, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  SetLoop(17) {
+    GraphicEffect(10, 0, -8.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 15.0, 0.0, 4.0, 0.0, 0.0, 0.0, false)
+    FlashOverlayEffect(255, 144, 128, 80)
+    SynchronousTimer(1.0)
+    ChangeFlashOverlayColor(8, 255, 0, 0, 0)
+    SynchronousTimer(8.0)
+    TerminateFlashEffect()
+    SynchronousTimer(2.0)
+  }
+  SetLoop(4) {
+    GraphicEffect(39, 0, -5.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 15.0, 0.0, 4.0, 0.0, 0.0, 0.0, false)
+    FlashOverlayEffect(255, 192, 128, 150)
+    SynchronousTimer(1.0)
+    ChangeFlashOverlayColor(4, 255, 0, 0, 0)
+    SynchronousTimer(4.0)
+    FlashOverlayEffect(255, 128, 0, 180)
+    SynchronousTimer(1.0)
+    ChangeFlashOverlayColor(4, 255, 0, 0, 0)
+    SynchronousTimer(4.0)
+  }
+}
+
+Subaction 0x1CF: SOUND {
+}
+
+Subaction 0x1CF: OTHER {
+  SlopeContourStand(6)
+  CreateAestheticWindEffects(0, 2.0, 130.0, 2.0, 1.0, 0.0, 12.0, 30.0, 30.0, 100)
+  AsynchronousTimer(1.0)
+  RumbleLoop(2, 0)
+}
+

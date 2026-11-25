@@ -1,0 +1,41 @@
+Action 0x11F: ENTRY {
+  ExitFinalSmashState()
+  SetGimmickEffectFlag(false)
+  BasicVariableSet(482, LA-Int[0x40])
+  BasicVariableSet(484, LA-Int[0x41])
+  BitVariableClear(LA-Bool[0x3D])
+
+  ChangeActionStatus(10146, 0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus(10147, 14, R(Animation End()))
+  if (R(Touching a Floor, Wall, or Ceiling(8))) {
+    Module0900(0)
+    SetAerialOrOnstage(2)
+  }
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x17778)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      Module0900(0)
+      SetAerialOrOnstage(2)
+      SetAirGround(6)
+      SubRoutine(hidden_subroutine_0x16220)
+      EnableActionStatusId(10146)
+      DisableActionStatusId(10147)
+      SetRequirement(R(In Air()))
+    } else {
+      Module0900(2)
+      SetAerialOrOnstage(5)
+      SubRoutine(hidden_subroutine_0x16260)
+      SetAirGround(0)
+      EnableActionStatusId(10147)
+      DisableActionStatusId(10146)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x11F : EXIT {
+  ExitFinalSmashState()
+}

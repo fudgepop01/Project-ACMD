@@ -1,0 +1,18 @@
+// Status_Run_Brake
+Action 0x5 {
+  ChangeAction(6, R(In walljump situation()), 200)
+  BitVariableSet(LA-Bool[0x0C])
+  (undef: motion) 04_10_02_00(1, 8)
+  (undef: motion) 04_13_02_00(1, 0.0)
+  (undef: motion) 04_12_02_00(1, 1.0)
+  SubRoutine(hidden_subroutine_0x60)
+  ChangeSubAction(3)
+  SetLoop(-1) {
+    if (R(Hitbox has Connected())) {
+      SynchronousTimer(19.0)
+      ChangeAction(5, R(Character Exists(ERRVALUE)))
+    }
+    SynchronousTimer(1.0)
+  }
+}
+

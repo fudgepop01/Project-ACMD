@@ -1,0 +1,5 @@
+[hsr_320]
+hidden_subroutine_0x320 {
+  SubRoutine(hidden_subroutine_0x310)
+  Return()
+}

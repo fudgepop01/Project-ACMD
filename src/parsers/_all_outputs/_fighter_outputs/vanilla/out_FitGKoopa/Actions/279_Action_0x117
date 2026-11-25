@@ -1,0 +1,15 @@
+Action 0x117: ENTRY {
+  SetAerialOrOnstage(1)
+
+  ChangeAction(16, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  SynchronousTimer(1.0)
+  ChangeAction(280, R(In Air()))
+}
+
+Action 0x117 : EXIT {
+}

@@ -1,0 +1,13 @@
+// Status_Swim_Up
+Action 0xB5: ENTRY {
+  ChangeAction(182, R(Animation End()))
+  SubRoutine(hidden_subroutine_0x7AF4)
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    ChangeSubAction(240)
+  } else {
+    ChangeSubAction(239)
+  }
+}
+
+Action 0xB5 : EXIT {
+}

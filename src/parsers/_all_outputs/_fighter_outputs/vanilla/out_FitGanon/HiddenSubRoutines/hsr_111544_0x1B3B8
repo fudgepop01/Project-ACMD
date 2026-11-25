@@ -1,0 +1,8 @@
+[hsr_1B3B8]
+hidden_subroutine_0x1B3B8 {
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    SetAerialOrOnstage(1)
+  } else {
+    SetAerialOrOnstage(2)
+  }
+}

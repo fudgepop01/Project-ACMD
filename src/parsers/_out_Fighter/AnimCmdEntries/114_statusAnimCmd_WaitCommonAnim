@@ -1,0 +1,47 @@
+// @ 0x24494
+WaitCommonAnim {
+  SetLoop(-1) {
+    if (R(Bit is Set(LA-Bool[0x0A]))) {
+      if (R(Compare(Variable_Int_Motion_Kind == 380.0))) {
+        SetAnimationTimerFrame(0.0)
+      } else {
+        ChangeSubAction(380)
+      }
+      SynchronousTimer(1.0)
+      SetRequirement(R(NOT Bit is Set(LA-Bool[0x0A])))
+      SetRequirement(R(Animation End()))
+    } elif (R(Holding Item())) {
+      if (R(Compare(Variable_Int_Item_Wait_Motion_Kind == 5.0))) {
+        ChangeSubAction(5)
+        SynchronousTimer(1.0)
+        SetRequirement(R(NOT Compare(Variable_Int_Item_Wait_Motion_Kind == 5.0)))
+      } else {
+        if (R(Compare(Variable_Int_Motion_Kind == 0.0))) {
+          SetAnimationTimerFrame(0.0)
+        } else {
+          ChangeSubAction(0)
+        }
+        SynchronousTimer(1.0)
+        SetRequirement(R(Animation End()))
+      }
+    } else {
+      Switch(1000, 0)
+        Case(1)
+          ChangeSubAction(1)
+        Case(2)
+          ChangeSubAction(2)
+        Case(3)
+          ChangeSubAction(3)
+        Case(4)
+          ChangeSubAction(4)
+        Case(-1)
+          SetAnimationTimerFrame(0.0)
+        DefaultCase()
+          ChangeSubAction(0)
+      EndSwitch()
+      SynchronousTimer(1.0)
+      SetRequirement(R(Animation End()))
+    }
+    LoadRest()
+  }
+}

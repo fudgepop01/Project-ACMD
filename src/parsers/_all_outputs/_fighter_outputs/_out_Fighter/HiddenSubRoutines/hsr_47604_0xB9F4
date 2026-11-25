@@ -1,0 +1,11 @@
+[hsr_B9F4]
+hidden_subroutine_0xB9F4 {
+
+  ChangeAction(132, R(Compare(RA-Int[0x00] >= Customize_Param_Int_Jump_Glide_Frame)))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x13])))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeAction(132, R(Bit is Set(RA-Bool[0x15])))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x13])))
+  AdditionalRequirement(R(In Air()))
+}

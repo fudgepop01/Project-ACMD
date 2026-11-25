@@ -1,0 +1,4 @@
+[hsr_1765C]
+hidden_subroutine_0x1765C {
+  ChangeAction(14, R(In Air()))
+}

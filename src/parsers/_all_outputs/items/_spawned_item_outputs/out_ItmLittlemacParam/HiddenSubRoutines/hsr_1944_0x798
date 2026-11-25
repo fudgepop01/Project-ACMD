@@ -1,0 +1,51 @@
+[hsr_798]
+hidden_subroutine_0x798 {
+  ChangeActionStatus(3, 3, R(In Air()))
+  ChangeAction(11, R(In walljump situation()), 6)
+  (undef: Sp_base) 65_07_01_00(2)
+  SubRoutine(hsr_E8)
+  SetAerialOrOnstage(3)
+  if (R(Compare(LA-Int[0x0B] > 200.0))) {
+    Switch(10000, LA-Int[0x02])
+      Case(0)
+        (undef: Sp_base) 65_13_04_00(LA-Int[0x02], 0.0, 1.0, 3.0)
+        SubRoutine(hsr_1A0)
+      Case(1)
+        (undef: Sp_base) 65_13_04_00(LA-Int[0x02], 1.0, 0.0, 3.0)
+        SubRoutine(hsr_1D8)
+      Case(2)
+        (undef: Sp_base) 65_13_04_00(LA-Int[0x02], 1.0, 1.0, 0.0)
+        BasicVariableRandom(1, 3, LA-Int[0x03])
+        if (R(Compare(LA-Int[0x03] == 1.0))) {
+          ChangeSubAction(3)
+          SetRequirement(R(Animation End()))
+          LoadRest()
+          ChangeSubAction(4)
+          SetRequirement(R(Animation End()))
+          LoadRest()
+        } else {
+          SetLoop(3) {
+            ChangeSubAction(0)
+            SetRequirement(R(Animation End()))
+            LoadRest()
+            BasicVariableDecrement(LA-Int[0x03])
+            if (R(Compare(LA-Int[0x03] == 0.0))) {
+              LoopBreak()
+            }
+          }
+          SubRoutine(hsr_1A0)
+        }
+    EndSwitch()
+  } else {
+    ChangeSubAction(2)
+    (undef: Sp_Kinetic) 66_00_0D_00(2.0, 0.0, 5.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+    SynchronousTimer(6.0)
+    (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, 5.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+  }
+  ChangeSubAction(13)
+  (undef: control_flow_loop) 01_04_02_00(5, 20)
+  (undef: Sp_base) 65_13_04_00(LA-Int[0x00], 0.0, 0.0, 20.0)
+  Return()
+}

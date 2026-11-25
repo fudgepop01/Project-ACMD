@@ -1,0 +1,49 @@
+Action 0x116: ENTRY {
+  EnterFinalSmashState()
+  SetGimmickEffectFlag(false)
+  SubRoutine(hidden_subroutine_0x19ED0)
+  ChangeAction(289, R(Compare(RA-Int[0x00] >= 2.0)))
+  BitVariableClear(LA-Bool[0x3E])
+  BasicVariableSet(485, LA-Int[0x45])
+  BasicVariableSet(486, LA-Int[0x46])
+  SetLoop(-1) {
+    Switch(10000, RA-Int[0x00])
+      Case(0)
+        SubRoutine(hidden_subroutine_0x19020)
+        if (R(On Ground())) {
+          SetAirGround(6)
+          SubRoutine(hidden_subroutine_0x19FA0)
+          SetRequirement(R(In Air()))
+        } else {
+          SetAirGround(12)
+          SubRoutine(hidden_subroutine_0x19110)
+          SetRequirement(R(On Ground()))
+        }
+        SetRequirement(R(Animation End()))
+        Break()
+      Case(1)
+        Module0900(2)
+        SetAerialOrOnstage(0)
+        SetRequirement(R(NOT Is Not in Damaging Magnifier()))
+        Break()
+    EndSwitch()
+    LoadRest()
+    Switch(10000, RA-Int[0x00])
+      Case(0)
+        if (R(Animation End())) {
+          BasicVariableSet(1, RA-Int[0x00])
+        }
+        Break()
+      Case(1)
+        BasicVariableSet(2, RA-Int[0x00])
+        Break()
+    EndSwitch()
+  }
+}
+
+Action 0x116 : EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 289.0)) && R(Compare(Variable_Int_Status_Kind != 290.0)) && R(Compare(Variable_Int_Status_Kind != 291.0)) && R(Compare(Variable_Int_Status_Kind != 292.0))) {
+    BitVariableClear(LA-Bool[0x01])
+    ExitFinalSmashState()
+  }
+}

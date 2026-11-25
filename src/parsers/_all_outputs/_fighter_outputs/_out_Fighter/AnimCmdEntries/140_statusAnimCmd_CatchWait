@@ -1,0 +1,7 @@
+// @ 0x22228
+CatchWait {
+  ChangeAction(266, R(In Air()))
+  ChangeActionStatus(10144, 60, R(Bit is Set(RA-Bool[0x10])))
+  SubRoutine(hidden_subroutine_0xFC3C)
+  ChangeSubAction(111)
+}

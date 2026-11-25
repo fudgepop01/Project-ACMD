@@ -1,0 +1,23 @@
+[hsr_1F440]
+hidden_subroutine_0x1F440 {
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeSubAction(RA-Int[0x00])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      SetAirGround(6)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetAirGround(10)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}

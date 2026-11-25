@@ -1,0 +1,53 @@
+[WalkSlow] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xA: MAIN {
+}
+
+Subaction 0xA: GFX {
+  AsynchronousTimer(44.0)
+  GraphicEffectLanding(11, 0, -5.0, 0.0, 6.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(88.0)
+  GraphicEffectLanding(11, 0, 4.0, 0.0, 7.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0xA : GFX)
+}
+
+Subaction 0xA: SOUND {
+  AsynchronousTimer(2.0)
+  SteppingSoundEffect(5489)
+  SynchronousTimer(43.0)
+  SteppingSoundEffect(5487)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0xA : SFX)
+}
+
+Subaction 0xA: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(1.0)
+  SlopeContourStand02(2, 3)
+  AsynchronousTimer(2.0)
+  Rumble(12, 0)
+  AsynchronousTimer(10.0)
+  SlopeContourStand02(6, 3)
+  AsynchronousTimer(46.0)
+  Rumble(12, 0)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0xA : OTHER)
+  AsynchronousTimer(53.0)
+  SlopeContourStand02(4, 3)
+  AsynchronousTimer(86.0)
+  SlopeContourStand02(6, 3)
+}
+

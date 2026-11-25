@@ -1,0 +1,22 @@
+Action 0x8: MAIN {
+}
+
+Action 0x8: EXIT {
+}
+
+Action 0x8: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(29)
+  if (R(NOT Bit is Set(LA-Bool[0x06]))) {
+    (undef: Sp_AI) 6A_00_01_00(17)
+  }
+  (undef: Sp_AI) 6A_00_01_00(18)
+  (undef: Sp_AI) 6A_00_01_00(19)
+  (undef: Sp_AI) 6A_00_01_00(20)
+  (undef: Sp_AI) 6A_00_01_00(21)
+  BitVariableClear(LA-Bool[0x06])
+  SubAction09(16)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+  (undef: targetSearch) 16_00_00_00()
+}
+

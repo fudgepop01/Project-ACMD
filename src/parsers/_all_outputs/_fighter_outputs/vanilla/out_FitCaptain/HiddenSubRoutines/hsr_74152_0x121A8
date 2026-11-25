@@ -1,0 +1,7 @@
+[hsr_121A8]
+hidden_subroutine_0x121A8 {
+  SynchronousTimer(3.0)
+  TerminateCollisions()
+  AsynchronousTimer(48.0)
+  AllowInterrupt()
+}

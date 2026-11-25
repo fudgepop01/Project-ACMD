@@ -1,0 +1,36 @@
+// Status_Turn_Run
+Action 0x8 {
+  ChangeAction(3, R(In Air()))
+  if (R(Compare(LA-Int[0x0B] == 0.0))) {
+    ChangeAction(14, R(On Ground()))
+  }
+  ChangeAction_UNDOC6ARGS(13, R(Is falling+hit down()), -10.0, -10.0, 10.0, 10.0)
+  (undef: Sp_base) 65_07_01_00(2)
+  ChangeSubAction(11)
+  SynchronousTimer(10.0)
+
+  if (R(Is within footstool range())) {
+    ChangeAction(9, R(In walljump situation()), 6)
+    AdditionalRequirement(R(On Ground()))
+
+  } else {
+
+    ChangeAction(11, R(In walljump situation()), 6)
+    AdditionalRequirement(R(On Ground()))
+
+  }
+  ChangeAction(9, R(NOT 0x2715()), 5.0)
+
+  ChangeAction(9, R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv < 0.01)))
+  AdditionalRequirement(R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv > -0.01)))
+
+  SetLoop(120) {
+    If_UNDOC5ARGS(R(Is falling+hit down()), -11.0, -8.0, 11.0, 11.0)
+    LoopBreak()
+  }
+  (undef: Sp_base) 65_07_01_00(2)
+  SynchronousTimer(1.0)
+}
+ChangeAction(9, R(On Ground()))
+}
+

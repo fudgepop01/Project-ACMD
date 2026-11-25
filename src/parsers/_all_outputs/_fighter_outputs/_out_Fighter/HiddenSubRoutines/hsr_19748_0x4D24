@@ -1,0 +1,4 @@
+[hsr_4D24]
+hidden_subroutine_0x4D24 {
+  GraphicEffect(10, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}

@@ -1,0 +1,15 @@
+// @ 0x90FC
+TurnRunUniq {
+  if (R(Compare(RA-Int[0x00] >= 0.0))) {
+    BasicVariableDecrement(RA-Int[0x00])
+    if (R(Compare(RA-Int[0x00] < 0.0))) {
+      ReverseDirection()
+    }
+  }
+  if (R(Compare(RA-Int[0x01] >= 0.0))) {
+    BasicVariableDecrement(RA-Int[0x01])
+    if (R(Compare(RA-Int[0x01] < 0.0))) {
+      DisableActionStatusId(10106)
+    }
+  }
+}

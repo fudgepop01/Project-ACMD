@@ -1,0 +1,9 @@
+[hsr_1E518]
+hidden_subroutine_0x1E518 {
+  if (R(Compare(RA-Float[0x05] > 0.0))) {
+    FloatVariableAdd(-1.0, RA-Float[0x05])
+  } elif (R(NOT Bit is Set(RA-Bool[0x12]))) {
+    BitVariableSet(RA-Bool[0x12])
+    ReverseDirection()
+  }
+}

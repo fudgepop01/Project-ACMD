@@ -1,0 +1,11 @@
+[hsr_1BF50]
+hidden_subroutine_0x1BF50 {
+  BasicVariableDecrement(RA-Int[0x00])
+  SubRoutine(hidden_subroutine_0x1BCA0)
+  if (R(Compare(RA-Int[0x00] <= IC-Int[0x5DC4]))) {
+    if (R(NOT Bit is Set(RA-Bool[0x1C]))) {
+      BitVariableSet(RA-Bool[0x1C])
+      SetFlashingEffect(37)
+    }
+  }
+}

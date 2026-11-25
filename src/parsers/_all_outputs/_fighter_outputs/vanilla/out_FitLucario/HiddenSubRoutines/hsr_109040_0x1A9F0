@@ -1,0 +1,7 @@
+[hsr_1A9F0]
+hidden_subroutine_0x1A9F0 {
+  NoEvent()
+  DisableActionStatusId(10038)
+  DisableActionStatusId(10039)
+  NoEvent()
+}

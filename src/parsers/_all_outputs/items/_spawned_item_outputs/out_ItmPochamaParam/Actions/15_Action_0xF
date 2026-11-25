@@ -1,0 +1,10 @@
+// Status_Fall_Aerial
+Action 0xF {
+  ChangeAction(3, R(In Air()))
+  ChangeSubAction(1)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  (undef: Sp_Kinetic) 66_02_02_00(LA-Float[0x00], 0.0)
+  ChangeAction(6, R(Button Tap?()))
+}
+

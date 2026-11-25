@@ -1,0 +1,23 @@
+Action 0xC: MAIN {
+}
+
+Action 0xC: EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 10.0))) {
+    SubRoutine(EXTERNAL: statusAnimCmd_CommonCatchProcExit)
+  }
+}
+
+Action 0xC: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_01_01_00(8)
+  (undef: Sp_AI) 6A_00_01_00(23)
+  (undef: Sp_AI) 6A_00_01_00(21)
+  SubAction09(2)
+  (undef: Sp_Kinetic) 66_07_01_00(-1)
+  if (R(Compare(Variable_Int_Status_Prev_Kind != 10.0))) {
+    (undef: Sp_base) 65_04_01_00(0)
+  }
+  (undef: Sp_base) 65_04_01_00(2)
+  (undef: Sp_Link) 6E_05_01_00(5)
+}
+

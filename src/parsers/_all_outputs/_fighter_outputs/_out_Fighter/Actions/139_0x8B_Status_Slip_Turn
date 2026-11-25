@@ -1,0 +1,9 @@
+// Status_Slip_Turn
+Action 0x8B: ENTRY {
+  ReverseDirection()
+  SubRoutine(hidden_subroutine_0x1769C)
+  ChangeSubAction(227)
+}
+
+Action 0x8B : EXIT {
+}

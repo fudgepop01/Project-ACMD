@@ -1,0 +1,5 @@
+[hsr_7DAC]
+hidden_subroutine_0x7DAC {
+  BasicVariableIncrement(RA-Int[0x00])
+  SubRoutine(statusAnimCmd_FALLCommonUniq)
+}

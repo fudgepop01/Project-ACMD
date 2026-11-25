@@ -1,0 +1,31 @@
+[SpecialNCharge] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D0: MAIN {
+}
+
+Subaction 0x1D0: GFX {
+  SetLoop(-1) {
+    GraphicEffectStepping(26, 0, 0.0, 0.0, -2.0, 0.0, 0.0, 0.0, 1.0, 4.0, 0.0, 10.0, 0.0, 0.0, 0.0, true)
+    SynchronousTimer(5.0)
+  }
+}
+
+Subaction 0x1D0: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffectTransient(5299)
+}
+
+Subaction 0x1D0: OTHER {
+  SlopeContourStand(6)
+  RumbleLoop(9, 0)
+}
+

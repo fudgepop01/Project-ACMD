@@ -1,0 +1,16 @@
+LA-Int[0x00] in Action 0x4 (Status_Run) @ 1 : 0
+LA-Int[0x00] in Action 0x9 (Status_Turn_Run_Brake) @ 0 : 1
+
+LA-Int[0x09] in Action 0x4 (Status_Run) @ 0 : 1
+LA-Int[0x09] in Action 0x9 (Status_Turn_Run_Brake) @ 0 : 0
+
+LA-Int[0x0C] in Action 0x7 (Status_Turn_Dash) @ 0 : 1
+LA-Int[0x0C] in Action 0xA (Status_Jump_Squat) @ 3 : 1
+LA-Int[0x0C] in Action 0xB (Status_Jump) @ 0 : 1
+
+LA-Int[0x13] in Action 0x8 (Status_Turn_Run) @ 3 : 1
+LA-Int[0x13] in Subaction 0x5 : GAME @ 1 : 2
+
+LA-Int[0x1B] in Subaction 0x0 : SOUND @ 0 : 1
+
+LA-Bool[0x03] in Action 0x1 (Status_Walk) @ 0 : 0

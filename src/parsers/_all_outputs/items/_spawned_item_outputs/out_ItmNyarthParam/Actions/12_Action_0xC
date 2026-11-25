@@ -1,0 +1,10 @@
+// Status_Jump_Aerial
+Action 0xC {
+  ChangeAction(6, R(Compare(LA-Int[0x0B] == 0.0)))
+  ChangeAction(8, R(In Air()))
+  ChangeSubAction(1)
+  SetLoop(1000) {
+    SubRoutine(hidden_subroutine_0x2B0)
+  }
+}
+

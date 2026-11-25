@@ -1,0 +1,17 @@
+Action 0x12: MAIN {
+  SubRoutine(hidden_subroutine_0x1550)
+}
+
+Action 0x12: EXIT {
+  (undef: Sp_Link) 6E_02_02_00(0, O(0x00000430))
+}
+
+Action 0x12: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(9)
+  (undef: Sp_AI) 6A_00_01_00(9)
+  SubAction09(4)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 30)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 29)
+}
+

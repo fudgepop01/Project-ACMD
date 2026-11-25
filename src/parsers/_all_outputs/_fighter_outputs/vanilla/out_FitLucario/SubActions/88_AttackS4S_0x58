@@ -1,0 +1,49 @@
+[AttackS4S] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x58: MAIN {
+  AsynchronousTimer(11.0)
+  OffensiveCollision(Sp(0, 0), 14, 361, Sp(0, 100), Sp(0, 20), 3.0, 0.0, 8.0, 9.0, 0.0, 0.9, 1.0, 956509333)
+  OffensiveCollision(Sp(0, 1), 14, 361, Sp(0, 100), Sp(0, 20), 3.75, 0.0, 8.0, 13.5, 0.0, 0.9, 1.0, 956509333)
+  OffensiveCollision(Sp(0, 2), 16, 361, Sp(0, 100), Sp(0, 25), 6.5, 0.0, 8.0, 21.0, 0.0, 0.9, 1.0, 16985301)
+  SynchronousTimer(5.0)
+  TerminateCollisions()
+  AsynchronousTimer(42.0)
+  AllowInterrupt()
+}
+
+Subaction 0x58: GFX {
+  AsynchronousTimer(11.0)
+  GraphicEffectLanding(40, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(2228229, 0, 16.0, 8.5, 0.0, 0.0, 0.0, 0.0, 0.9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GraphicEffectAttached(2228226, 29, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, true)
+  GraphicEffectAttached(2228227, 49, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, true)
+  Goto(hidden_subroutine_0xC2B8)
+}
+
+Subaction 0x58: SOUND {
+  AsynchronousTimer(7.0)
+  StopSoundEffect(105)
+  SubRoutine(hidden_subroutine_0x25A28)
+  SynchronousTimer(4.0)
+  SoundEffect(168)
+  SoundEffect(115)
+  SoundEffect(5831)
+}
+
+Subaction 0x58: OTHER {
+  SlopeContourStand(4)
+  AsynchronousTimer(10.0)
+  SlopeContourStand(6)
+  AsynchronousTimer(11.0)
+  Rumble(17, 0)
+}
+

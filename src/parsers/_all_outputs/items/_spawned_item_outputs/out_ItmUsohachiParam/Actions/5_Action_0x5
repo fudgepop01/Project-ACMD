@@ -1,0 +1,7 @@
+// Status_Run_Brake
+Action 0x5 {
+  BasicVariableSet(IC-Int[0x5B7A], LA-Int[0x15])
+  ChangeAction(4, R(On Ground()))
+  ChangeSubAction(5)
+}
+

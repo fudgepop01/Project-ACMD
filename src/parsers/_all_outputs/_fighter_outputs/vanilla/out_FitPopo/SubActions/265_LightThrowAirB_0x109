@@ -1,0 +1,28 @@
+[LightThrowAirB] (flags) {
+  No Out Transition: 1,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x109: MAIN {
+  AsynchronousTimer(3.0)
+  ReverseDirection()
+  AsynchronousTimer(8.0)
+  ThrowItem(Variable_Float_Throw_Item_Angle, Variable_Float_Throw_Item_Speed, Variable_Float_Throw_Item_Power)
+}
+
+Subaction 0x109: GFX {
+}
+
+Subaction 0x109: SOUND {
+}
+
+Subaction 0x109: OTHER {
+  Goto(Subaction_0x100 : OTHER)
+}
+

@@ -1,0 +1,8 @@
+[hsr_1B5A0]
+hidden_subroutine_0x1B5A0 {
+  if (R(Bit is Set(RA-Bool[0x17]))) {
+    if (R(Animation End())) {
+      SetAirGround(0)
+      BitVariableClear(RA-Bool[0x17])
+    }
+}

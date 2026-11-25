@@ -1,0 +1,17 @@
+[hsr_4CC]
+hidden_subroutine_0x4CC {
+  (undef: targetSearch) 16_00_01_00(-2)
+  (undef: Sp_AI) 6A_00_01_00(15)
+  (undef: Sp_AI) 6A_00_01_00(20)
+  (undef: Sp_AI) 6A_00_01_00(16)
+  (undef: Sp_AI) 6A_00_01_00(17)
+  (undef: Sp_AI) 6A_00_01_00(18)
+  (undef: Sp_AI) 6A_00_01_00(19)
+  if (R(On a Passable Floor())) {
+    (undef: Sp_AI) 6A_00_01_00(21)
+  } else {
+    (undef: Sp_AI) 6A_00_01_00(22)
+  }
+  (undef: Sp_AI) 6A_00_01_00(33)
+  Return()
+}

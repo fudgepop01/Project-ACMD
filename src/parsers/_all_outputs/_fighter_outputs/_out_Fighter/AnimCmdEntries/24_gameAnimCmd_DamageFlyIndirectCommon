@@ -1,0 +1,4 @@
+// @ 0x21788
+DamageFlyIndirectCommon {
+  SpecialCollateralCollision(Sp(301, 0), 6, 361, Sp(0, 100), Sp(0, 30), 5.76, 0.0, 2.728, 0.0, 0.0, 1.0, 1.0, 537068608, 0, 5177408)
+}

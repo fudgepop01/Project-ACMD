@@ -1,0 +1,6 @@
+// Status_Turn_Run
+Action 0x8 {
+  ChangeSubAction(0, true)
+  ChangeAction(4, R(On Ground()))
+}
+

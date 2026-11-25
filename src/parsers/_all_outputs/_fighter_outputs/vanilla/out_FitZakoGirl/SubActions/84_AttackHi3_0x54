@@ -1,0 +1,31 @@
+[AttackHi3] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x54: MAIN {
+  AsynchronousTimer(11.0)
+  OffensiveCollision(Sp(34, 0), 9, 70, Sp(0, 105), Sp(0, 65), 4.5, -4.0, 0.0, 0.0, 0.0, 1.0, 1.0, 956498496)
+  OffensiveCollision(Sp(34, 1), 9, 70, Sp(0, 105), Sp(0, 65), 4.5, -1.0, 0.0, 0.0, 0.0, 1.0, 1.0, 956498496)
+  OffensiveCollision(Sp(33, 2), 9, 70, Sp(0, 105), Sp(0, 65), 4.5, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 956498496)
+  AsynchronousTimer(22.0)
+  TerminateCollisions()
+}
+
+Subaction 0x54: GFX {
+}
+
+Subaction 0x54: SOUND {
+  AsynchronousTimer(11.0)
+  SoundEffect(6769)
+}
+
+Subaction 0x54: OTHER {
+}
+

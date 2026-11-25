@@ -1,0 +1,8 @@
+// Status_Swim_Rise
+Action 0xB4: ENTRY {
+  SubRoutine(hidden_subroutine_0x1C464)
+  ChangeSubAction(238)
+}
+
+Action 0xB4 : EXIT {
+}

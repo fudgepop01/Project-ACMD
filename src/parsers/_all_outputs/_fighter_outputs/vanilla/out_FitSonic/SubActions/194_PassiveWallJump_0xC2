@@ -1,0 +1,37 @@
+[PassiveWallJump] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xC2: MAIN {
+}
+
+Subaction 0xC2: GFX {
+}
+
+Subaction 0xC2: SOUND {
+  SoundEffect(6519)
+}
+
+Subaction 0xC2: OTHER {
+  HeldItemsVisibility(false)
+  AsynchronousTimer(7.0)
+  HavokPhysicsDisable()
+  AsynchronousTimer(8.0)
+  SetLoop(4) {
+    SubRoutine(hidden_subroutine_0x2430)
+    SynchronousTimer(3.0)
+    SubRoutine(hidden_subroutine_0x24C8)
+    SynchronousTimer(3.0)
+  }
+  AsynchronousTimer(39.0)
+  HeldItemsVisibility(true)
+  HavokPhysicsEnable()
+}
+

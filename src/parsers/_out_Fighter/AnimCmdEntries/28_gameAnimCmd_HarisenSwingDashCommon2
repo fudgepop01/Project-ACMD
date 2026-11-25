@@ -1,0 +1,7 @@
+// @ 0x2148C
+HarisenSwingDashCommon2 {
+  ChangeHitboxDamage(0, 5)
+  ChangeHitboxDamage(1, 5)
+  ChangeHitboxDamage(2, 4)
+  ChangeHitboxDamage(3, 4)
+}

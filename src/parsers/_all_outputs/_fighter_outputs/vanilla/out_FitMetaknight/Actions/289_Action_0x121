@@ -1,0 +1,25 @@
+Action 0x121: ENTRY {
+  SetGimmickEffectFlag(false)
+  ChangeAction(288, R(Bit is Set(RA-Bool[0x11])))
+  EndScreenTint(1, 0)
+  ScreenTintFull_UNDOC8ARGS(1, 0, 0, 0, 0, 255, 3, 255)
+  BodyCollision(2)
+  DisableSpecifiedMovement(5)
+  DisableSpecifiedMovement(6)
+  SubRoutine(hidden_subroutine_0x1D848)
+}
+
+Action 0x121 : EXIT {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(288)
+    Case(289)
+      Break()
+    DefaultCase()
+      ExitFinalSmashState()
+      EndScreenTint(1, 120)
+      NormalCamera()
+      SetGimmickEffectFlag(true)
+      EnableSpecifiedMovement(5)
+      EnableSpecifiedMovement(6)
+  EndSwitch()
+}

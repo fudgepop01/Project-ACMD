@@ -1,0 +1,10 @@
+[hsr_1FE4]
+hidden_subroutine_0x1FE4 {
+  (undef: Sp_Kinetic) 66_00_02_00(3, 26)
+  if (R(Touching a Floor, Wall, or Ceiling(49))) {
+    (undef: Sp_Kinetic) 66_00_02_00(5, 24)
+  } else {
+    (undef: Sp_Kinetic) 66_00_02_00(5, 23)
+  }
+  Return()
+}

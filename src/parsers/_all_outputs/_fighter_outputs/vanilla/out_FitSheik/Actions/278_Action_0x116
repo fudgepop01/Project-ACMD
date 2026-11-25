@@ -1,0 +1,44 @@
+Action 0x116: ENTRY {
+  EnterFinalSmashState()
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  SetAirGround(50)
+  GenerateArticle(4)
+  BitVariableClear(RA-Bool[0x10])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(484, false)
+        SetAnchoredArticleAction(4, 0, false)
+      } else {
+        ChangeSubAction(484, true)
+        SetAnchoredArticleAction(4, 0, true)
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(485, false)
+        SetAnchoredArticleAction(4, 1, false)
+      } else {
+        ChangeSubAction(485, true)
+        SetAnchoredArticleAction(4, 1, true)
+      }
+      SetRequirement(R(On Ground()))
+    }
+    BitVariableSet(RA-Bool[0x10])
+    LoadRest()
+  }
+}
+
+Action 0x116 : EXIT {
+  OnlyArticleEvent(4)
+  RemoveArticle(5)
+  ExitFinalSmashState()
+}

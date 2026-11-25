@@ -1,0 +1,40 @@
+[DamageLeft] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x3: MAIN {
+}
+
+Subaction 0x3: MAIN EXIT {
+}
+
+Subaction 0x3: MAIN INIT {
+  SubRoutine(hidden_subroutine_0x2E24)
+}
+
+Subaction 0x3: GFX {
+}
+
+Subaction 0x3: GFX EXIT {
+}
+
+Subaction 0x3: GFX INIT {
+}
+
+Subaction 0x3: SFX {
+  SoundEffect(9594)
+}
+
+Subaction 0x3: SFX EXIT {
+}
+
+Subaction 0x3: SFX INIT {
+}
+

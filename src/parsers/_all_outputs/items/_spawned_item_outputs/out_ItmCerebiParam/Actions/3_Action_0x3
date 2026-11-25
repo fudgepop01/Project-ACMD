@@ -1,0 +1,16 @@
+// Status_Dash
+Action 0x3 {
+  (undef: control_flow_loop) 01_04_02_00(80, 140)
+  BasicVariableRandom(3, 5, LA-Int[0x00])
+  SetLoop(5) {
+    (undef: Sp_base) 65_09_08_00(23, 5000, Variable_Float_Posture_Pos_X, Variable_Float_Posture_Pos_Y, 0.0, 0.0, 0.0, 0.0)
+    if (R(Compare(LA-Int[0x00] <= 1.0))) {
+      LoopBreak()
+    } else {
+      SynchronousTimer(40.0)
+      BasicVariableDecrement(LA-Int[0x00])
+    }
+  }
+  ChangeAction(5, R(In Air()))
+}
+

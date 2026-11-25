@@ -1,0 +1,24 @@
+[hsr_199C]
+hidden_subroutine_0x199C {
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0x8C4)
+    (undef: Sp_Area) 69_08_02_00(Variable_Int_Controller_Flick_No_Reset_Y, LA-Float[0x05])
+    FloatVariableAdd(LA-Float[0x0A], LA-Float[0x05])
+    (undef: Sp_Area) 69_0A_02_00(Variable_Int_Controller_Flick_No_Reset_Y, LA-Float[0x07])
+    FloatVariableAdd(LA-Float[0x0B], LA-Float[0x07])
+    (undef: Sp_base) 65_14_01_00(LA-Float[0x05])
+    (undef: Sp_base) 65_15_01_00(LA-Float[0x07])
+    (undef: model) 03_0A_04_00(2, LA-Float[0x05], LA-Float[0x07], LA-Float[0x08])
+    FloatVariableSubtract(Variable_Float_Posture_Pos_X, LA-Float[0x05])
+    FloatVariableSubtract(Variable_Float_Posture_Pos_Y, LA-Float[0x07])
+    FloatVariableAdd(LA-Float[0x0A], LA-Float[0x05])
+    FloatVariableAdd(LA-Float[0x0B], LA-Float[0x07])
+    (undef: Sp_Area) 69_08_02_00(Variable_Int_Controller_Flick_No_Reset_Y, LA-Float[0x08])
+    FloatVariableAdd(LA-Float[0x08], LA-Float[0x05])
+    (undef: Sp_Area) 69_0A_02_00(Variable_Int_Controller_Flick_No_Reset_Y, LA-Float[0x08])
+    FloatVariableAdd(LA-Float[0x08], LA-Float[0x07])
+    (undef: Sp_Area) 69_02_05_00(7, LA-Float[0x05], LA-Float[0x07], LA-Float[0x04], false)
+    (undef: Sp_Kinetic) 66_0C_02_00(4, LA-Float[0x04])
+    SynchronousTimer(1.0)
+  }
+}

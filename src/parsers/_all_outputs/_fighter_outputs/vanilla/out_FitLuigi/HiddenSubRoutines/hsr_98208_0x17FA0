@@ -1,0 +1,10 @@
+[hsr_17FA0]
+hidden_subroutine_0x17FA0 {
+  if (R(Compare(RA-Int[0x00] < IC-Int[0x5DC0]))) {
+    BasicVariableIncrement(RA-Int[0x00])
+    if (R(Compare(RA-Int[0x00] >= IC-Int[0x5DC0]))) {
+      SetFlashingEffect(26)
+      FrameSpeedModifier(0.0)
+    }
+  }
+}

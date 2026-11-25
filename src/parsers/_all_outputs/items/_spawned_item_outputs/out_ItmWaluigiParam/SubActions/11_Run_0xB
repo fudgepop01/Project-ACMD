@@ -1,0 +1,37 @@
+[Run] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xB : GAME {
+  (undef: Sp_Kinetic) 66_00_0D_00(2.5, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+  SynchronousTimer(10.0)
+  ChangeAction_UNDOC6ARGS(13, R(Is falling+hit down()), -20.0, -20.0, 20.0, 20.0)
+  ChangeAction_UNDOC6ARGS(11, R(Is falling+hit down()), -15.0, 20.0, 15.0, 100.0)
+
+  ChangeAction_UNDOC6ARGS(10, R(Is falling+hit down()), -15.0, -100.0, 15.0, -15.0)
+  AdditionalRequirement(R(On a Passable Floor()))
+}
+
+Subaction 0xB : GFX {
+  AsynchronousTimer(10.0)
+  GraphicEffect(26, 0, -4.8, 0.0, -4.0, 0.0, 0.0, 0.0, 0.9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(30.0)
+  GraphicEffect(26, 0, -6.0, 0.0, 2.5, 0.0, 0.0, 0.0, 0.9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GoToLoopRest01()
+  GoToLoopRest02()
+}
+
+Subaction 0xB : SOUND {
+  AsynchronousTimer(2.0)
+  SoundEffect(7671)
+  SynchronousTimer(20.0)
+  SoundEffect(7672)
+}
+

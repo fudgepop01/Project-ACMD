@@ -1,0 +1,23 @@
+// Status_Turn_Dash
+Action 0x7: ENTRY {
+  SubRoutine(hidden_subroutine_0xD4A4)
+
+  ChangeActionStatus:01(10049, 3, R(Bit is Set(RA-Bool[0x11])))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x10])))
+  AdditionalRequirement(R(Compare(IC-Int[0x3F8] >= Common_Param_Float_Dash_Stick_X)))
+  AdditionalRequirement(R(On Ground()))
+}
+
+Action 0x7 : EXIT {
+  if (R(Compare(Variable_Int_Status_Kind == 31.0)) || R(Compare(Variable_Int_Status_Kind == 32.0))) {
+    ReverseDirection()
+    DecideDirection()
+  } else {
+    if (R(NOT Bit is Set(RA-Bool[0x12]))) {
+      if (R(Compare(Variable_Int_Status_Kind == 10.0))) {
+        ReverseDirection()
+        DecideDirection()
+      }
+    }
+  }
+}

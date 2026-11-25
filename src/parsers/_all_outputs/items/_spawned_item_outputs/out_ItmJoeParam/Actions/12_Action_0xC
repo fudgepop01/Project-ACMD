@@ -1,0 +1,10 @@
+// Status_Jump_Aerial
+Action 0xC {
+  if (R(Is within footstool range())) {
+    (undef: Sp_base) 65_07_01_00(2)
+  } else {
+    (undef: Sp_base) 65_07_01_00(3)
+  }
+  ChangeAction(8, R(Button Tap?()))
+}
+

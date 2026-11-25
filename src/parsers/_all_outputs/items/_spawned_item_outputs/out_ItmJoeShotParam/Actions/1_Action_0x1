@@ -1,0 +1,14 @@
+// Status_Walk
+Action 0x1 {
+  DisableSpecifiedMovement(2)
+  (undef: Sp_base) 65_04_01_00(1400)
+  SynchronousTimer(1.0)
+  if (R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv < 0.0))) {
+    LeftDirection()
+    DecideDirection()
+    CharacterSpecific01()
+  }
+  ChangeSubAction(0)
+  ChangeAction(6, R(In walljump situation()), 255)
+}
+

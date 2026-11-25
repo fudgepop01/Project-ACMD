@@ -1,0 +1,12 @@
+[hsr_17F98]
+hidden_subroutine_0x17F98 {
+  if (R(Animation End())) {
+    BitVariableSet(RA-Bool[0x11])
+  }
+  if (R(On Ground())) {
+    if (R(NOT Bit is Set(RA-Bool[0x10])) || R(Compare(IC-Int[0x3EA] > 0.0))) {
+      PassThroughFloorIfPossible_UNDOC0ARGS()
+      SetStateAerial()
+    }
+  }
+}

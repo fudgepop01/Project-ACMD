@@ -1,0 +1,41 @@
+Action 0x116: ENTRY {
+  EnterFinalSmashState()
+  SetGimmickEffectFlag(false)
+  BitVariableClear(RA-Bool[0x10])
+
+  ChangeAction(290, R(Bit is Set(RA-Bool[0x11])))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x12])))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(492, true)
+      } else {
+        ChangeSubAction(492)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(498, true)
+      } else {
+        ChangeSubAction(498)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x116 : EXIT {
+  SubRoutine(hidden_subroutine_0x20DDC)
+}

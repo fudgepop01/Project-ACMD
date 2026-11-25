@@ -1,0 +1,16 @@
+[hsr_1FAF4]
+hidden_subroutine_0x1FAF4 {
+  if (R(NOT Bit is Set(RA-Bool[0x11]))) {
+    BasicVariableIncrement(RA-Int[0x01])
+    if (R(Compare(RA-Int[0x01] >= IC-Int[0x5DC3]))) {
+      BitVariableSet(RA-Bool[0x11])
+      SoundEffect(5914)
+    }
+  }
+  if (R(NOT Bit is Set(RA-Bool[0x12]))) {
+    BasicVariableIncrement(RA-Int[0x02])
+    if (R(Compare(RA-Int[0x02] >= IC-Int[0x5DC4]))) {
+      BitVariableSet(RA-Bool[0x12])
+    }
+  }
+}

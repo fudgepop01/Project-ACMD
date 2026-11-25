@@ -1,0 +1,120 @@
+Action 0x112: ENTRY {
+  BitVariableClear(RA-Bool[0x13])
+  BitVariableClear(RA-Bool[0x10])
+  BitVariableClear(RA-Bool[0x11])
+  BitVariableClear(RA-Bool[0x12])
+  BasicVariableSet(0, RA-Int[0x00])
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeActionStatus(10002, 14, R(In Air()))
+  DisableActionStatusId(10002)
+  ChangeActionStatus(10026, 22, R(On Ground()))
+  DisableActionStatusId(10026)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(6)
+      SetAerialOrOnstage(2)
+      Switch(10000, RA-Int[0x00])
+        Case(0)
+          if (R(Bit is Set(RA-Bool[0x10]))) {
+            ChangeSubAction(462, true)
+            SetAnchoredArticleAction(0, 0, true)
+          } else {
+            ChangeSubAction(462)
+            SetArticleAction(0, 0)
+            BitVariableSet(RA-Bool[0x10])
+          }
+          SetRequirement(R(Bit is Set(RA-Bool[0x13])))
+          SetExtraRequirement(R(Button Not Pressed(Special)))
+        Case(1)
+          if (R(Bit is Set(RA-Bool[0x11]))) {
+            ChangeSubAction(463, true)
+            SetAnchoredArticleAction(0, 1, true)
+          } else {
+            ChangeSubAction(463)
+            SetArticleAction(0, 1)
+            BitVariableSet(RA-Bool[0x11])
+          }
+          SetRequirement(R(Button Not Pressed(Special)))
+        Case(2)
+          if (R(Bit is Set(RA-Bool[0x12]))) {
+            ChangeSubAction(464, true)
+            SetAnchoredArticleAction(0, 2, true)
+          } else {
+            ChangeSubAction(464)
+            SubRoutine(hidden_subroutine_0x21250)
+            SetArticleAction(0, 2)
+            BitVariableSet(RA-Bool[0x12])
+          }
+          EnableActionStatusId(10002)
+          DisableActionStatusId(10026)
+      EndSwitch()
+      SetRequirement(R(In Air()))
+    } else {
+      SetAirGround(10)
+      SetAerialOrOnstage(5)
+      Switch(10000, RA-Int[0x00])
+        Case(0)
+          if (R(Bit is Set(RA-Bool[0x10]))) {
+            ChangeSubAction(465, true)
+            SetAnchoredArticleAction(0, 3, true)
+          } else {
+            ChangeSubAction(465)
+            SetArticleAction(0, 3)
+            BitVariableSet(RA-Bool[0x10])
+          }
+          SetRequirement(R(Bit is Set(RA-Bool[0x13])))
+          SetExtraRequirement(R(Button Not Pressed(Special)))
+        Case(1)
+          if (R(Bit is Set(RA-Bool[0x11]))) {
+            ChangeSubAction(466, true)
+            SetAnchoredArticleAction(0, 4, true)
+          } else {
+            ChangeSubAction(466)
+            SetArticleAction(0, 4)
+            BitVariableSet(RA-Bool[0x11])
+          }
+          SetRequirement(R(Button Not Pressed(Special)))
+        Case(2)
+          if (R(Bit is Set(RA-Bool[0x12]))) {
+            ChangeSubAction(467, true)
+            SetAnchoredArticleAction(0, 5, true)
+          } else {
+            ChangeSubAction(467)
+            SubRoutine(hidden_subroutine_0x21250)
+            SetArticleAction(0, 5)
+            BitVariableSet(RA-Bool[0x12])
+          }
+          DisableActionStatusId(10002)
+          EnableActionStatusId(10026)
+      EndSwitch()
+      SetRequirement(R(On Ground()))
+    }
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    Switch(10000, RA-Int[0x00])
+      Case(0)
+        if (R(Button Pressed(Special))) {
+          if (R(Animation End())) {
+            BasicVariableSet(1, RA-Int[0x00])
+            SubRoutine(hidden_subroutine_0x141E8)
+          }
+        } else {
+          BasicVariableSet(2, RA-Int[0x00])
+        }
+      Case(1)
+        if (R(Button Not Pressed(Special))) {
+          BasicVariableSet(2, RA-Int[0x00])
+        }
+      Case(2)
+    EndSwitch()
+  }
+}
+
+Action 0x112 : EXIT {
+}

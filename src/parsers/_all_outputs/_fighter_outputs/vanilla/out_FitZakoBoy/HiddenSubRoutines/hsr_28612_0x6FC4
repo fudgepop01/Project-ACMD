@@ -1,0 +1,10 @@
+[hsr_6FC4]
+hidden_subroutine_0x6FC4 {
+  OffensiveCollision(Sp(28, 0), 2, 361, Sp(0, 70), Sp(0, 0), 4.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 956498496)
+  OffensiveCollision(Sp(29, 1), 2, 361, Sp(0, 70), Sp(0, 0), 4.0, -1.0, 0.0, 0.0, 0.0, 1.0, 1.0, 956498496)
+  OffensiveCollision(Sp(29, 2), 1, 361, Sp(0, 70), Sp(0, 0), 4.0, -6.0, 0.0, 0.0, 0.0, 1.0, 1.0, 956498496)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+  BitVariableSet(RA-Bool[0x19])
+  Return()
+}

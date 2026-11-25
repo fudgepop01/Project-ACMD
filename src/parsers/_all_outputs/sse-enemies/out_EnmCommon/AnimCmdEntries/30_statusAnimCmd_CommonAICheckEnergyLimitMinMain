@@ -1,0 +1,7 @@
+// @ 0x3F90
+CommonAICheckEnergyLimitMinMain {
+  if (R(Is within footstool range())) {
+    BitVariableSet(RA-Bool[0x04])
+  }
+  Return()
+}

@@ -1,0 +1,21 @@
+// Status_Turn_Run
+Action 0x8 {
+  SubRoutine(hidden_subroutine_0x68)
+  ChangeActionStatus(4, 4, R(On Ground()))
+  BasicVariableIncrement(LA-Int[0x00])
+  ChangeSubAction(8)
+  (undef: Sp_Kinetic) 66_00_0D_00(1.2, 4.2, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.005, 0.0, true, false, true)
+  if (R(Is within footstool range())) {
+    ChangeAction(15, R(In Air()))
+    AdditionalRequirement_UNDOC5ARGS(R(Is falling+hit down()), -15.0, -30.0, 15.0, 20.0)
+  }
+  (undef: control_flow_loop) 01_04_02_00(10, 55)
+
+  ChangeActionStatus(10, 10, R(NOT 0x2715()), 18.0)
+  AdditionalRequirement(R(In Air()))
+  AdditionalRequirement(R(Compare(LA-Int[0x00] < 3.0)))
+
+  SubRoutine(hidden_subroutine_0x1B0)
+  SubRoutine(hidden_subroutine_0x2B8)
+}
+

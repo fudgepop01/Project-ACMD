@@ -1,0 +1,17 @@
+Action 0x117: ENTRY {
+  BasicVariableSet(IC-Int[0x5DC0], RA-Int[0x02])
+  BasicVariableSet(IC-Int[0x5DC1], RA-Int[0x03])
+  ChangeAction(280, R(Compare(RA-Int[0x03] <= 0.0)))
+
+  ChangeAction(280, R(Compare(RA-Int[0x02] <= 0.0)))
+  AdditionalRequirement(R(Button Not Pressed(Special)))
+
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x19B48)
+  BasicVariableSet(463, RA-Int[0x00])
+  BasicVariableSet(474, RA-Int[0x01])
+  BitVariableClear(RA-Bool[0x10])
+  SubRoutine(hidden_subroutine_0x198A0)
+}
+
+Action 0x117 : EXIT {
+}

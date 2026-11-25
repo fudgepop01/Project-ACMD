@@ -1,0 +1,34 @@
+[hsr_6C0]
+hidden_subroutine_0x6C0 {
+  FloatVariableSet(-1.0, LA-Float[0x07])
+  BasicVariableSet(-1, LA-Int[0x09])
+  if (R(Successfully tethered ledge()) && R(0x2740())) {
+    BasicVariableSet(Variable_Int_Controller_Flick_No_Reset_Y, LA-Int[0x08])
+  } else {
+    (undef: Sp_AI) 6A_04_03_00(2, 15, LA-Int[0x09])
+    if (R(Compare(LA-Int[0x09] >= 0.0))) {
+      (undef: Sp_Area) 69_00_01_00(LA-Int[0x09])
+      BasicVariableSet(LA-Int[0x09], LA-Int[0x08])
+    } else {
+      if (R(Compare(LA-Int[0x08] >= 0.0)) &&[3A] R(0x13()), 2, LA-Int[0x08]) {
+        BasicVariableSet(-1, LA-Int[0x08])
+      }
+    }
+  }
+  if (R(Compare(LA-Int[0x08] >= 0.0))) {
+    if (R(Compare(Variable_Int_Motion_Other_1_Kind == -1.0))) {
+      (undef: motion) 04_10_02_00(0, 6)
+      (undef: motion) 04_13_02_00(0, 0.0)
+    }
+    (undef: Sp_Area) 69_03_09_00(LA-Int[0x08], 0.0, IC-Int[0xFA3], -1.0, 0.0, 1.0, Variable_Float_Motion_Other_1_End_Frame, LA-Float[0x07], true)
+    if (R(Compare(LA-Float[0x07] >= 0.0))) {
+      FloatVariableSet(LA-Float[0x07], LA-Float[0x05])
+    }
+    (undef: motion) 04_12_02_00(0, LA-Float[0x05])
+  } else {
+    if (R(Compare(Variable_Int_Motion_Other_1_Kind != -1.0))) {
+      (undef: motion) 04_11_01_00(0)
+    }
+  }
+  Return()
+}

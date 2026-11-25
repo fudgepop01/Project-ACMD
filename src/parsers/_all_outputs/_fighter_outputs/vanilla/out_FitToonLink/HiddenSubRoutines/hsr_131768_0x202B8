@@ -1,0 +1,11 @@
+[hsr_202B8]
+hidden_subroutine_0x202B8 {
+  BasicVariableDecrement(RA-Int[0x00])
+  if (R(Compare(RA-Int[0x00] < 0.0))) {
+    if (R(On Ground())) {
+      ChangeAction(0, R(Button Tap?()))
+    } else {
+      ChangeAction(16, R(Button Tap?()))
+    }
+  }
+}

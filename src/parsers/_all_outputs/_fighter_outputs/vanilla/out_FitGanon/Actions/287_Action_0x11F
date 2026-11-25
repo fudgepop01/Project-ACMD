@@ -1,0 +1,23 @@
+Action 0x11F: ENTRY {
+  ChangeAction(14, R(Animation End()))
+
+  ChangeAction(23, R(On Ground()))
+  AdditionalRequirement(R(Compare(Variable_Float_Kinetic_Sum_Speed_Y <= 0.0)))
+
+  ChangeSubAction(482)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      Module0900(0)
+      SetAerialOrOnstage(1)
+      SetRequirement(R(In Air()))
+    } else {
+      Module0900(2)
+      SetAerialOrOnstage(5)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x11F : EXIT {
+}

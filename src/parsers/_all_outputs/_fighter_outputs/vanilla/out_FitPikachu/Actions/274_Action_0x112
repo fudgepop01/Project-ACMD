@@ -1,0 +1,33 @@
+Action 0x112: ENTRY {
+  BasicVariableSet(462, LA-Int[0x40])
+  BasicVariableSet(463, LA-Int[0x41])
+  BitVariableClear(LA-Bool[0x3D])
+
+  ChangeActionStatus(0, 0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus(1, 14, R(Animation End()))
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      Module0900(0)
+      SetAerialOrOnstage(2)
+      SubRoutine(hidden_subroutine_0x16220)
+      EnableActionStatusId(0)
+      DisableActionStatusId(1)
+      SetAirGround(6)
+      SetRequirement(R(In Air()))
+    } else {
+      Module0900(2)
+      SetAerialOrOnstage(5)
+      SubRoutine(hidden_subroutine_0x16260)
+      DisableActionStatusId(0)
+      EnableActionStatusId(1)
+      SetAirGround(0)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x112 : EXIT {
+}

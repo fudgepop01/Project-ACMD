@@ -1,0 +1,23 @@
+[hsr_B45C]
+hidden_subroutine_0xB45C {
+  SubRoutine(hsr_5294)
+  if (R(NOT 0x2723())) {
+    if (R(NOT Bit is Set(RA-Bool[0x16]))) {
+      if (R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed_Y < -1.0)) || R(Compare(RA-Int[0x04] >= IC-Int[0x5A36]))) {
+        SubRoutine(hsr_3D7C)
+        BitVariableSet(RA-Bool[0x16])
+      }
+    }
+    if (R(NOT Bit is Set(LA-Bool[0x0B]))) {
+      if (R(Compare(RA-Int[0x06] <= 0.0))) {
+        AllowSpecificInterrupt(AIR_ITEM_THROW)
+        AllowSpecificInterrupt(AIR_ATTACK)
+        SubRoutine(hsr_B5C4)
+        SubRoutine(hsr_B684)
+      }
+      if (R(Compare(RA-Int[0x07] <= 0.0))) {
+        AllowSpecificInterrupt(AIR_LASSO)
+        AllowSpecificInterrupt(AIR_ESCAPE)
+      }
+    }
+}

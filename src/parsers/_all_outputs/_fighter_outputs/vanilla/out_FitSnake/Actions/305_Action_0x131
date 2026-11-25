@@ -1,0 +1,66 @@
+Action 0x131: ENTRY {
+  UnkRaBit27(false)
+  SetTagDisplay(false)
+  GenerateArticle(9)
+  BitVariableClear(LA-Bool[0x19])
+  SetGimmickEffectFlag(false)
+  DetachAttachCameraFar(false)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1A008)
+  BasicVariableSet(IC-Int[0x5DC4], RA-Int[0x05])
+  ChangeActionStatus(10146, 306, R(Compare(RA-Int[0x05] <= 0.0)))
+  BasicVariableSet(IC-Int[0x5DC1], RA-Int[0x02])
+  SetLoop(-1) {
+    if (R(NOT 0x36()) && R(Bit is Set(RA-Bool[0x13]))) {
+      BasicVariableDecrement(RA-Int[0x02])
+      BasicVariableIncrement(RA-Int[0x03])
+      DisableActionStatusId(10146)
+      ChangeSubAction(501)
+      SetArticleAction(7, 2)
+      SetArticleAction(8, 0)
+      if (R(Compare(RA-Int[0x03] >= IC-Int[0x5DC3]))) {
+        ChangeAction(306, R(Animation End()))
+      } else {
+        SetRequirement01(24, R(Animation End()))
+      }
+    } elif (R(Compare(RA-Int[0x02] <= 0.0)) && R(Compare(RA-Int[0x05] > 0.0))) {
+      DisableActionStatusId(10146)
+      ChangeSubAction(502)
+      SetArticleAction(7, 3)
+      SetArticleAction(8, 1)
+      SetRequirement01(24, R(Animation End()))
+      BasicVariableSet(IC-Int[0x5DC1], RA-Int[0x02])
+    } else {
+      BitVariableSet(RA-Bool[0x13])
+      EnableActionStatusId(10146)
+      ChangeSubAction(500)
+      SetArticleAction(7, 1)
+      SetArticleAction(8, 2)
+      SetAnimationFrame(45.0)
+      FrameSpeedModifier(0.0)
+      SetRequirement(R(Button Press(Attack)))
+      BasicVariableSet(IC-Int[0x5DC2], RA-Int[0x04])
+      SetRequirement(R(Compare(RA-Int[0x04] <= 0.0)))
+      (undef: generateArticleManage) 10_0F_03_00(8, 0, 0)
+      RemoveArticle(10)
+    }
+    LoadRest()
+  }
+}
+
+Action 0x131 : EXIT {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(306)
+      Break()
+    DefaultCase()
+      BitVariableClear(LA-Bool[0x01])
+      DetachAttachCameraFar(true)
+      ExitFinalSmashState()
+      (undef: color_blend) 21_0C_00_00()
+      EnableCameraZoom()
+      OnlyArticleEvent(7)
+      OnlyArticleEvent(8)
+      RemoveArticle(10)
+      SetGimmickEffectFlag(true)
+  EndSwitch()
+  OnlyArticleEvent(9)
+}

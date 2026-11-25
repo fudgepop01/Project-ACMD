@@ -1,0 +1,36 @@
+[EntryL] (flags) {
+  No Out Transition: 1,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1C3: MAIN {
+  Goto(Subaction_0x1C2 : MAIN)
+}
+
+Subaction 0x1C3: GFX {
+  Goto(Subaction_0x1C2 : GFX)
+}
+
+Subaction 0x1C3: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(4926)
+  SynchronousTimer(5.0)
+  SoundEffect(4955)
+  SoundEffect(2849)
+  SynchronousTimer(30.0)
+  SynchronousTimer(44.0)
+  SoundEffect(4995)
+  SynchronousTimer(20.0)
+  SoundEffect(4993)
+}
+
+Subaction 0x1C3: OTHER {
+  SlopeContourStand(6)
+}
+

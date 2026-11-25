@@ -1,0 +1,5 @@
+[hsr_29924]
+hidden_subroutine_0x29924 {
+  FloatVariableSet(Variable_Float_Posture_Lr_Rv, RA-Float[0x3D7])
+  SubRoutine(hsr_29CA4)
+}

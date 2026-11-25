@@ -1,0 +1,36 @@
+// Status_Item_Swing_S4_Start
+[statusAnimCmd_ItemSwingS4Start]
+Action 0xA0: ENTRY {
+  ChangeAction(14, R(In Air()))
+
+  ChangeActionStatus(10119, 162, R(Animation End()))
+  AdditionalRequirement(R(Button Pressed(Attack)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus(10118, 161, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  if (R(Compare(IC-Int[0x3F2] >= Common_Param_Float_Dash_Stick_X))) {
+    RightDirection()
+  } elif (R(Compare(IC-Int[0x3F6] >= Common_Param_Float_Dash_Stick_X))) {
+    LeftDirection()
+  }
+  DecideDirection()
+  CharacterSpecific01()
+  BasicVariableSet(Variable_Int_Item_Swing_4_Motion_Kind, RA-Int[0x00])
+  BasicVariableDecrement(RA-Int[0x00])
+  ChangeSubAction(RA-Int[0x00], false, Variable_Float_Item_Swing_Motion_Rate)
+  Switch(10000, Variable_Int_Item_Swing_4_Motion_Kind)
+    Case(292)
+      SetStalingId(2, 80, true)
+    Case(310)
+      SetStalingId(2, 92, true)
+    Case(317)
+      SetStalingId(2, 96, true)
+    Case(303)
+      SetStalingId(2, 88, true)
+  EndSwitch()
+}
+
+Action 0xA0 : EXIT {
+}

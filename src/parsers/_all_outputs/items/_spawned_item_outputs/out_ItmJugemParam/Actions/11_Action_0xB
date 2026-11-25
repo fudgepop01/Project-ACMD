@@ -1,0 +1,16 @@
+// Status_Jump
+Action 0xB {
+  DisableSpecifiedMovement(2)
+  if (R(Compare(LA-Float[0x06] == 0.0))) {
+    BodyCollision(2)
+    EnableSpecifiedMovement(2)
+    (undef: Sp_Kinetic) 66_01_03_00(0.0, 0.0, 180.0)
+    SynchronousTimer(1.0)
+    (undef: Sp_Kinetic) 66_01_03_00(0.0, 0.0, 0.0)
+    DecideDirection()
+    CharacterSpecific01()
+    ChangeSubAction(3)
+    (undef: Sp_Kinetic) 66_02_02_00(0.5, 0.0)
+  }
+}
+

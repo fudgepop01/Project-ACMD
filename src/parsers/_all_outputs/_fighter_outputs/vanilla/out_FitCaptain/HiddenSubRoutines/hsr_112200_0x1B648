@@ -1,0 +1,10 @@
+[hsr_1B648]
+hidden_subroutine_0x1B648 {
+  if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+    if (R(Bit is Set(RA-Bool[0x11]))) {
+      BitVariableSet(RA-Bool[0x10])
+      SetAirGround(101)
+      AllowSpecificInterrupt(AIR_LANDING)
+    }
+  }
+}

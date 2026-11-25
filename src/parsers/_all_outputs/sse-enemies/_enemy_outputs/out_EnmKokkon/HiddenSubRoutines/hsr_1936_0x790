@@ -1,0 +1,22 @@
+[hsr_790]
+hidden_subroutine_0x790 {
+  if (R(Bit is Set(LA-Bool[0x07]))) {
+    if (R(Compare(IC-Int[0x5209] >= IC-Int[0xFA1]))) {
+      SubRoutine(hidden_subroutine_0x670)
+      BitVariableClear(LA-Bool[0x07])
+      BitVariableSet(LA-Bool[0x08])
+      SubRoutine(hidden_subroutine_0x610)
+      BitVariableSet(LA-Bool[0x06])
+    }
+  }
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    if (R(Compare(LA-Int[0x05] >= 1.0))) {
+      if (R(Compare(IC-Int[0x5209] >= LA-Float[0x05]))) {
+        SubRoutine(hidden_subroutine_0x610)
+      }
+    } else {
+      BitVariableClear(LA-Bool[0x08])
+      (undef: Sp_AI) 6A_00_01_00(16)
+    }
+  }
+}

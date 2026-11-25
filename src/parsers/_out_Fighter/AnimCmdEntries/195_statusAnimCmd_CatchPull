@@ -1,0 +1,9 @@
+// @ 0x115FC
+CatchPull {
+  SubRoutine(statusAnimCmd_CatchPullCommon)
+  ChangeSubAction(111)
+  AsynchronousTimer(1.0)
+
+  ChangeAction(57, R(Button Tap?()))
+  AdditionalRequirement(R(On Ground()))
+}

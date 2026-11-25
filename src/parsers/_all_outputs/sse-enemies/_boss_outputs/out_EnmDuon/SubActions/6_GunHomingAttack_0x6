@@ -1,0 +1,76 @@
+[GunHomingAttack] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x6: MAIN {
+  AsynchronousTimer(20.0)
+  (undef: Sp_base) 65_0E_02_00(IC-Int[0xABF2], 0)
+  (undef: Sp_Link) 6E_00_03_00(4, 5103, 20)
+  AsynchronousTimer(30.0)
+  (undef: Sp_base) 65_0E_03_00(IC-Int[0xABF2], 0, 26)
+  (undef: Sp_Link) 6E_00_03_00(4, 5103, 20)
+  AsynchronousTimer(40.0)
+  (undef: Sp_base) 65_0E_02_00(IC-Int[0xABF2], 0)
+  (undef: Sp_Link) 6E_00_03_00(4, 5103, 20)
+  AsynchronousTimer(50.0)
+  (undef: Sp_base) 65_0E_03_00(IC-Int[0xABF2], 0, 26)
+  (undef: Sp_Link) 6E_00_03_00(4, 5103, 20)
+  AsynchronousTimer(51.0)
+}
+
+Subaction 0x6: MAIN EXIT {
+  SubRoutine(hidden_subroutine_0xE00)
+}
+
+Subaction 0x6: MAIN INIT {
+  SubRoutine(hidden_subroutine_0xD70)
+}
+
+Subaction 0x6: GFX {
+  AsynchronousTimer(19.0)
+  GraphicEffectAttached(12517446, 23, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  Screenshake(0)
+  AsynchronousTimer(29.0)
+  GraphicEffectAttached(12517446, 25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  Screenshake(0)
+  AsynchronousTimer(39.0)
+  GraphicEffectAttached(12517446, 23, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  Screenshake(0)
+  AsynchronousTimer(49.0)
+  GraphicEffectAttached(12517446, 25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  Screenshake(0)
+}
+
+Subaction 0x6: GFX EXIT {
+}
+
+Subaction 0x6: GFX INIT {
+}
+
+Subaction 0x6: SFX {
+  SoundEffect(9758)
+  SynchronousTimer(18.0)
+  SoundEffect(9759)
+  SynchronousTimer(10.0)
+  SoundEffect(9759)
+  SynchronousTimer(10.0)
+  SoundEffect(9759)
+  SynchronousTimer(10.0)
+  SoundEffect(9759)
+  SynchronousTimer(42.0)
+  SoundEffect(9758)
+}
+
+Subaction 0x6: SFX EXIT {
+}
+
+Subaction 0x6: SFX INIT {
+}
+

@@ -1,0 +1,11 @@
+[hsr_3F8]
+hidden_subroutine_0x3F8 {
+  GraphicEffectAttached2(10813446, 20, -3.5, 4.280983333333333, 4.032, -10.5, -62.7, 0.0, 2.5, true)
+  GraphicEffectAttached2(10813446, 20, 3.5, 4.280983333333333, 4.032, -10.5, 62.7, 0.0, 2.5, true)
+  SynchronousTimer(15.0)
+  GraphicEffectAttached2(10813446, 20, -3.5, 4.280983333333333, 4.032, -10.5, -62.7, 0.0, 2.3, true)
+  GraphicEffectAttached2(10813446, 20, 3.5, 4.280983333333333, 4.032, -10.5, 62.7, 0.0, 2.3, true)
+  SynchronousTimer(15.0)
+  GraphicEffectAttached2(10813446, 20, -3.5, 4.280983333333333, 4.032, -10.5, -62.7, 0.0, 2.4, true)
+  GraphicEffectAttached2(10813446, 20, 3.5, 4.280983333333333, 4.032, -10.5, 62.7, 0.0, 2.4, true)
+}

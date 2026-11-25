@@ -1,0 +1,8 @@
+[hsr_15E08]
+hidden_subroutine_0x15E08 {
+  if (R(Compare(RA-Int[0x02] <= -1.0))) {
+    GenerateArticle(2)
+  } else {
+    GenerateItem(RA-Int[0x02])
+  }
+}

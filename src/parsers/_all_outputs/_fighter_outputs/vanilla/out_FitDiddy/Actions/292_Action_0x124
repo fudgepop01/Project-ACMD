@@ -1,0 +1,12 @@
+Action 0x124: ENTRY {
+  SubRoutine(EXTERNAL: statusAnimCmd_AIRChkFallCommon)
+  PreventSpecificInterrupt(AIR_LANDING)
+  ChangeAction(291, R(On Ground()))
+  ChangeSubAction(482)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0xFFFFFFFF)
+  AllowSpecificInterrupt(AIR_CLIFF)
+  SetAirGround(0)
+}
+
+Action 0x124 : EXIT {
+}

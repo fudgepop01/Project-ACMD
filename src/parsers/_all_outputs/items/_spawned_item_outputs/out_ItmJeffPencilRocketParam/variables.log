@@ -1,0 +1,8 @@
+IC-Int[0x5210] ("Variable_Int_Controller_Flick_Y_Dir") in Action 0x1 (Status_Walk) @ 1 : 0
+
+RA-Float[0x00] in Action 0x5 (Status_Run_Brake) @ 7 : 2
+RA-Float[0x00] in Action 0x5 (Status_Run_Brake) @ 8 : 1
+RA-Float[0x00] in Action 0x5 (Status_Run_Brake) @ 16 : 2
+RA-Float[0x00] in Action 0x5 (Status_Run_Brake) @ 17 : 0
+
+RA-Bool[0x05] in Action 0x5 (Status_Run_Brake) @ 6 : 2

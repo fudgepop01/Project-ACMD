@@ -1,0 +1,47 @@
+[ReturnMove] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xD: MAIN {
+}
+
+Subaction 0xD: MAIN EXIT {
+  SubRoutine(hidden_subroutine_0xC8C)
+}
+
+Subaction 0xD: MAIN INIT {
+  SubRoutine(hidden_subroutine_0xC14)
+}
+
+Subaction 0xD: GFX {
+  GraphicEffect(12189710, 3, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(55.0)
+  GraphicEffect(12189709, 3, 0.0, -3.0, 0.0, 0.0, 0.0, 0.0, 0.9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(85.0)
+  GraphicEffect(12189709, 3, 0.0, -3.0, 16.0, 0.0, -90.0, 0.0, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0xD: GFX EXIT {
+}
+
+Subaction 0xD: GFX INIT {
+}
+
+Subaction 0xD: SFX {
+  SynchronousTimer(35.0)
+  SoundEffect(9628)
+}
+
+Subaction 0xD: SFX EXIT {
+}
+
+Subaction 0xD: SFX INIT {
+}
+

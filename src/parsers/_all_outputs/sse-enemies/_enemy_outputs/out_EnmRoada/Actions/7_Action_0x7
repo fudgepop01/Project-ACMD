@@ -1,0 +1,18 @@
+Action 0x7: MAIN {
+}
+
+Action 0x7: EXIT {
+}
+
+Action 0x7: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  if (R(Compare(IC-Int[0x5DC1] == 1.0))) {
+    (undef: Sp_AI) 6A_00_01_00(17)
+  }
+  (undef: Sp_AI) 6A_00_01_00(18)
+  (undef: Sp_AI) 6A_00_01_00(38)
+  SubAction09(22)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 15)
+  (undef: Sp_base) 65_04_01_00(0)
+}
+

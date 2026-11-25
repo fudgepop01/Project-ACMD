@@ -1,0 +1,9 @@
+// Status_Turn_Run
+Action 0x8 {
+  ChangeAction(3, R(In Air()))
+  (undef: motion) 04_10_02_00(0, 3)
+  ChangeSubAction(1)
+  BasicVariableSet(2, LA-Int[0x00])
+  ChangeAction(9, R(Button Tap?()))
+}
+

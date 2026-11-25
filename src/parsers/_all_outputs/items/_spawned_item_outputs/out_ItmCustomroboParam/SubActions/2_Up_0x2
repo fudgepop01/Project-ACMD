@@ -1,0 +1,22 @@
+[Up] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x2 : GAME {
+  (undef: Sp_Kinetic) 66_02_02_00(0.0, 0.06)
+  OffensiveCollision(Sp(0, 0), 8, 70, Sp(0, 100), Sp(0, 35), 7.0, 0.0, 4.5, 0.0, 0.0, 1.0, 1.0, 197760)
+}
+
+Subaction 0x2 : GFX {
+}
+
+Subaction 0x2 : SOUND {
+}
+

@@ -1,0 +1,10 @@
+[hsr_CAC]
+hidden_subroutine_0xCAC {
+  if (R(Compare(LA-Float[0x04] >= IC-Int[0xFA1])) && R(Compare(LA-Float[0x04] <= 180.0))) {
+    SubAction09(5)
+  } elif (R(Compare(LA-Float[0x04] >= 180.0)) && R(Compare(LA-Float[0x04] <= IC-Int[0xFA2]))) {
+    SubAction09(4)
+  } else {
+    SubAction09(3)
+  }
+}

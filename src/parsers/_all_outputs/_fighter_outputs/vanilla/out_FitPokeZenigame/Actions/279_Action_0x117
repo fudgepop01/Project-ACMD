@@ -1,0 +1,65 @@
+Action 0x117: ENTRY {
+  ChangeAction(280, R(Button Press(Special)))
+
+  ChangeAction(14, R(In Air()))
+  AdditionalRequirement(R(Button Press(Shield)))
+
+  ChangeAction(14, R(In Air()))
+  AdditionalRequirement(R(Compare(LA-Int[0x40] >= IC-Int[0x5DC0])))
+
+  ChangeAction(0, R(On Ground()))
+  AdditionalRequirement(R(Button Press(Shield)))
+
+  ChangeAction(0, R(On Ground()))
+  AdditionalRequirement(R(Compare(LA-Int[0x40] >= IC-Int[0x5DC0])))
+
+  ChangeAction(31, R(Compare(Variable_Float_Controller_Stick_X_Lr >= Common_Param_Float_Escape_Fb_Stick_X)))
+  AdditionalRequirement(R(Compare(IC-Int[0x5209] < Common_Param_Int_Escape_Fb_Flick_X)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(32, R(Compare(Variable_Float_Controller_Stick_X_Lr_Rv >= Common_Param_Float_Escape_Fb_Stick_X)))
+  AdditionalRequirement(R(Compare(IC-Int[0x5209] < Common_Param_Int_Escape_Fb_Flick_X)))
+  AdditionalRequirement(R(On Ground()))
+
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x18800)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(6)
+      SetAerialOrOnstage(2)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(464, true)
+      } else {
+        ChangeSubAction(464)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAirGround(0)
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(468, true)
+      } else {
+        ChangeSubAction(468)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x117 : EXIT {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(0)
+    Case(14)
+      Break()
+    Case(280)
+      Break()
+    Case(31)
+    Case(32)
+      Break()
+    DefaultCase()
+      BasicVariableSet(0, LA-Int[0x40])
+      Break()
+  EndSwitch()
+}

@@ -1,0 +1,13 @@
+// @ 0x1125C
+AttackHi4Start {
+  ChangeAction(14, R(In Air()))
+
+  ChangeActionStatus(10092, 49, R(Animation End()))
+  AdditionalRequirement(R(Button Pressed(Attack)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus(10090, 50, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeSubAction(92)
+}

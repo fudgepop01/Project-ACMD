@@ -1,0 +1,27 @@
+[DownSpotD] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xBD: MAIN {
+}
+
+Subaction 0xBD: GFX {
+}
+
+Subaction 0xBD: SOUND {
+  AsynchronousTimer(1.0)
+  ImpactSoundEffect(95)
+}
+
+Subaction 0xBD: OTHER {
+  AsynchronousTimer(5.0)
+  SlopeContourStand02(1, 10)
+}
+

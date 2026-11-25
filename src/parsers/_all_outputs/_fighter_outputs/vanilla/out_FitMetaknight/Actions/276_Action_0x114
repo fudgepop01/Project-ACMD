@@ -1,0 +1,21 @@
+Action 0x114: ENTRY {
+
+  if (R(On Ground())) {
+    ChangeAction(133, R(Animation End()))
+    AdditionalRequirement(R(In Air()))
+
+    ChangeSubAction(482)
+  } else {
+    ChangeAction(285, R(Animation End()))
+    ChangeSubAction(483)
+  }
+  Module0900(2)
+  SetAerialOrOnstage(5)
+}
+
+Action 0x114 : EXIT {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(133)
+      BitVariableSet(LA-Bool[0x3D])
+  EndSwitch()
+}

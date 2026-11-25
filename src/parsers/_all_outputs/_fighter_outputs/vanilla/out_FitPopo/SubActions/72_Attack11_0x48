@@ -1,0 +1,44 @@
+[Attack11] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x48: MAIN {
+  AsynchronousTimer(3.0)
+  OffensiveCollision(Sp(23, 0), 3, 60, Sp(0, 70), Sp(0, 0), 3.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 985858560)
+  OffensiveCollision(Sp(23, 1), 3, 60, Sp(0, 70), Sp(0, 0), 3.0, 0.0, 3.0, 0.0, 0.0, 1.0, 1.0, 985858560)
+  OffensiveCollision(Sp(23, 2), 3, 60, Sp(0, 70), Sp(0, 0), 4.0, 0.0, 6.5, 0.0, 0.0, 1.0, 1.0, 985858560)
+  AsynchronousTimer(7.0)
+  TerminateCollisions()
+  AsynchronousTimer(10.0)
+  BitVariableSet(RA-Bool[0x10])
+  AsynchronousTimer(18.0)
+  BitVariableSet(RA-Bool[0x11])
+  AsynchronousTimer(27.0)
+  AllowInterrupt()
+}
+
+Subaction 0x48: GFX {
+  AsynchronousTimer(2.0)
+  SwordHammerGlow(6, 5, 23, 0.0, 7.3, -1.0, 23, 0.0, 10.0, -1.0, true, 0, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 8, 2, 4.0)
+  AsynchronousTimer(8.0)
+  TerminateSwordGlow(1)
+}
+
+Subaction 0x48: SOUND {
+  AsynchronousTimer(3.0)
+  SoundEffect(4356)
+}
+
+Subaction 0x48: OTHER {
+  SlopeContourStand(2)
+  AsynchronousTimer(4.0)
+  Rumble(16, 0)
+}
+

@@ -1,0 +1,15 @@
+// Status_Capture_Cut_Gokulin
+Action 0x103: ENTRY {
+  ChangeSubAction(165)
+  ChangeActionStatus(10012, 74, R(On Ground()))
+
+  ChangeAction(73, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  SubRoutine(hidden_subroutine_0x53DC)
+  SubRoutine(hidden_subroutine_0x3C34)
+  SubRoutine(hidden_subroutine_0x3D24)
+}
+
+Action 0x103 : EXIT {
+}

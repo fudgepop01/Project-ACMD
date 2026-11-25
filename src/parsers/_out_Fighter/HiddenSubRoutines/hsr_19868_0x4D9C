@@ -1,0 +1,18 @@
+[hsr_4D9C]
+hidden_subroutine_0x4D9C {
+  if (R(Button Press(Attack)) || R(Button Release(Attack))) {
+    BitVariableSet(RA-Bool[0x13])
+  }
+  if (R(Bit is Set(RA-Bool[0x1B]))) {
+    if (R(Bit is Set(RA-Bool[0x19]))) {
+      BitVariableClear(RA-Bool[0x19])
+      if (R(Bit is Set(RA-Bool[0x13]))) {
+        BitVariableClear(RA-Bool[0x13])
+      } elif (R(Button Not Pressed(Attack))) {
+        BitVariableClear(RA-Bool[0x18])
+      }
+    }
+  } elif (R(Animation has looped?())) {
+    BitVariableSet(RA-Bool[0x1B])
+  }
+}

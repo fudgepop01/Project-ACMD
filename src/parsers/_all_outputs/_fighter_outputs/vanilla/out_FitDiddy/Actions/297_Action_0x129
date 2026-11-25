@@ -1,0 +1,17 @@
+Action 0x129: ENTRY {
+
+  ChangeAction(16, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeAction(25, R(On Ground()))
+  BasicVariableSet(2, RA-Int[0x02])
+  if (R(Article Available())) {
+    GenerateArticle(1)
+  }
+  ChangeSubAction(494)
+  SetAirGround(10)
+  SetAerialOrOnstage(5)
+}
+
+Action 0x129 : EXIT {
+}

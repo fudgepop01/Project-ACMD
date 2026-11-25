@@ -1,0 +1,11 @@
+[hsr_16C00]
+hidden_subroutine_0x16C00 {
+  if (R(On Ground())) {
+    SubRoutine(hidden_subroutine_0x15960)
+    SubRoutine(hidden_subroutine_0x16B60)
+  } else {
+    SubRoutine(hidden_subroutine_0x159D0)
+    SubRoutine(hidden_subroutine_0x16B78)
+  }
+  Return()
+}

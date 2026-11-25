@@ -1,0 +1,8 @@
+[hsr_1C670]
+hidden_subroutine_0x1C670 {
+  if (R(Bit is Set(RA-Bool[0x11]))) {
+    if (R(Button Press(Special))) {
+      BitVariableSet(RA-Bool[0x12])
+    }
+  }
+}

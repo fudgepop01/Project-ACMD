@@ -1,0 +1,4 @@
+[hsr_74F4]
+hidden_subroutine_0x74F4 {
+  SubRoutine(statusAnimCmd_ItemShootDashF_Common)
+}

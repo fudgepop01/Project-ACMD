@@ -1,0 +1,13 @@
+[hsr_54C]
+hidden_subroutine_0x54C {
+  if (R(Compare(Variable_Int_Motion_Kind == 2.0))) {
+    if (R(Animation has looped?())) {
+      SubAction09(1)
+    }
+  } else {
+    if (R(Compare(Variable_Int_Motion_Kind != 1.0))) {
+      SubAction09(1)
+    }
+  }
+  Return()
+}

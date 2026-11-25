@@ -1,0 +1,7 @@
+[hsr_17F28]
+hidden_subroutine_0x17F28 {
+  if (R(Compare(RA-Int[0x00] == 6.0))) {
+    SoundEffect(1133)
+  }
+  BasicVariableIncrement(RA-Int[0x00])
+}

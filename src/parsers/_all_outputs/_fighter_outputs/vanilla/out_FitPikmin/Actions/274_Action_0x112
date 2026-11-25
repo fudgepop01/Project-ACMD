@@ -1,0 +1,24 @@
+Action 0x112: ENTRY {
+  if (R(On Ground())) {
+    ChangeAction(14, R(In Air()))
+    ChangeAction(0, R(Animation End()))
+    SetAirGround(6)
+    Module0900(0)
+    SetAerialOrOnstage(1)
+    if (R(Article Available())) {
+      ChangeSubAction(462)
+    } else {
+      ChangeSubAction(463)
+    }
+  } else {
+    SubRoutine(EXTERNAL: statusAnimCmd_AIRChkLanding)
+    ChangeAction(14, R(Animation End()))
+    SetAirGround(0)
+    Module0900(2)
+    SetAerialOrOnstage(5)
+    ChangeSubAction(464)
+  }
+}
+
+Action 0x112 : EXIT {
+}

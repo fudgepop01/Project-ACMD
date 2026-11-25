@@ -1,0 +1,31 @@
+[hsr_1A6C8]
+hidden_subroutine_0x1A6C8 {
+  SetLoop(-1) {
+    AsynchronousTimer(1.0)
+    SubRoutine(hidden_subroutine_0x1A7E8)
+    SubRoutine(hidden_subroutine_0x1A820)
+    AsynchronousTimer(4.0)
+    SubRoutine(hidden_subroutine_0x1A7E8)
+    SubRoutine(hidden_subroutine_0x1A820)
+    AsynchronousTimer(7.0)
+    SubRoutine(hidden_subroutine_0x1A7E8)
+    SubRoutine(hidden_subroutine_0x1A820)
+    AsynchronousTimer(10.0)
+    SubRoutine(hidden_subroutine_0x1A7E8)
+    SubRoutine(hidden_subroutine_0x1A820)
+    AsynchronousTimer(13.0)
+    SubRoutine(hidden_subroutine_0x1A7E8)
+    DeleteHitbox(0)
+    SubRoutine(hidden_subroutine_0x1A820)
+    AsynchronousTimer(16.0)
+    SubRoutine(hidden_subroutine_0x1A7E8)
+    DeleteHitbox(0)
+    SubRoutine(hidden_subroutine_0x1A820)
+    AsynchronousTimer(19.0)
+    SubRoutine(hidden_subroutine_0x1A7E8)
+    DeleteHitbox(0)
+    SubRoutine(hidden_subroutine_0x1A820)
+    GoToLoopRest01()
+    ClearTimer()
+  }
+}

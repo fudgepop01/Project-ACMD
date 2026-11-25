@@ -1,0 +1,6 @@
+[hsr_2844C]
+hidden_subroutine_0x2844C {
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 279.0))) {
+    SetAnimationTimerFrame(5.0)
+  }
+}

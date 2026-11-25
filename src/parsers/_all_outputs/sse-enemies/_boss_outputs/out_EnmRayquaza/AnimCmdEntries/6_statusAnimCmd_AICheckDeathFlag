@@ -1,0 +1,7 @@
+// @ 0xD324
+AICheckDeathFlag {
+  if (R(Bit is Set(LA-Bool[0x00]))) {
+    BitVariableSet(RA-Bool[0x04])
+  }
+  Return()
+}

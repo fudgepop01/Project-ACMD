@@ -1,0 +1,68 @@
+[StepGround] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xD : GAME {
+  (undef: Sp_Kinetic) 66_02_02_00(0.3, 0.0)
+  AsynchronousTimer(2.0)
+  OffensiveCollision(Sp(8, 0), 8, 270, Sp(0, 100), Sp(0, 60), 10.0, 0.0, 0.0, -7.0, 0.0, 1.0, 1.0, 402785408)
+  OffensiveCollision(Sp(8, 1), 8, 270, Sp(0, 100), Sp(0, 60), 10.0, 0.0, 0.0, 7.0, 0.0, 1.0, 1.0, 402785408)
+  SpecialOffensiveCollision(Sp(8, 2), 6, 361, Sp(0, 100), Sp(0, 80), 10.0, 0.0, 0.0, -7.0, 0.0, 1.0, 1.0, 402719883, 0, 786496)
+  SpecialOffensiveCollision(Sp(8, 3), 6, 361, Sp(0, 100), Sp(0, 80), 10.0, 0.0, 0.0, 7.0, 0.0, 1.0, 1.0, 402719883, 0, 786496)
+  SynchronousTimer(2.0)
+  SubRoutine(hidden_subroutine_0x1284)
+  AsynchronousTimer(9.0)
+  SubRoutine(hidden_subroutine_0x1284)
+  AsynchronousTimer(16.0)
+  SubRoutine(hidden_subroutine_0x1284)
+  AsynchronousTimer(23.0)
+  SubRoutine(hidden_subroutine_0x1284)
+  AsynchronousTimer(30.0)
+  SubRoutine(hidden_subroutine_0x1284)
+  AsynchronousTimer(37.0)
+  SubRoutine(hidden_subroutine_0x1284)
+}
+
+Subaction 0xD : GFX {
+  AsynchronousTimer(2.0)
+  GraphicEffect(13, 0, 3.0, 0.0, 4.0, 10.0, 0.0, 0.0, 0.35, 0.0, 0.0, 0.0, 0.0, 40.0, 0.0, true)
+  AsynchronousTimer(9.0)
+  GraphicEffect(7, 0, 0.0, 0.0, 6.0, 0.0, 0.0, 0.0, 0.38, 0.0, 0.0, 0.0, 0.0, 180.0, 0.0, true)
+  AsynchronousTimer(16.0)
+  GraphicEffect(13, 0, 1.6, 0.0, 3.0, 10.0, 0.0, 0.0, 0.32, 0.0, 0.0, 0.0, 0.0, 40.0, 0.0, true)
+  AsynchronousTimer(23.0)
+  GraphicEffect(7, 0, 4.0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.35, 0.0, 0.0, 0.0, 0.0, 180.0, 0.0, true)
+  AsynchronousTimer(30.0)
+  GraphicEffect(13, 0, 0.0, 0.0, 0.0, 10.0, 0.0, 0.0, 0.37, 0.0, 0.0, 0.0, 0.0, 40.0, 0.0, true)
+  AsynchronousTimer(37.0)
+  GraphicEffect(7, 0, 2.4, 0.0, 3.0, 0.0, 0.0, 0.0, 0.38, 0.0, 0.0, 0.0, 0.0, 180.0, 0.0, true)
+}
+
+Subaction 0xD : SOUND {
+  AsynchronousTimer(1.0)
+  if (R(Is within footstool range())) {
+    SoundEffect(7678)
+  } else {
+    SoundEffect(7679)
+  }
+  SynchronousTimer(1.0)
+  SoundEffect(7674)
+  SynchronousTimer(6.0)
+  SoundEffect(7674)
+  SynchronousTimer(6.0)
+  SoundEffect(7674)
+  SynchronousTimer(6.0)
+  SoundEffect(7674)
+  SynchronousTimer(6.0)
+  SoundEffect(7674)
+  SynchronousTimer(6.0)
+  SoundEffect(7674)
+}
+

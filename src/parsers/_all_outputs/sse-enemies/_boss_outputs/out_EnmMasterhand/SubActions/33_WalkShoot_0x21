@@ -1,0 +1,51 @@
+[WalkShoot] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x21: MAIN {
+  AsynchronousTimer(13.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 11, 20, 2.0, 361, 45, 0.0, 0, 0.0, 50, 0.5, 8.0, 0.0, 0.0, -7.0, 0.0, 0, 0.0, 1.0, 1.0, false, false, 20, 2, 2, 3, true, 0, 311, false, 15, false, true, false, false, 120, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 9, 20, 2.0, 361, 45, 0.0, 0, 0.0, 50, 0.5, 8.0, 0.0, 0.0, -7.0, 0.0, 0, 0.0, 1.0, 1.0, false, false, 20, 2, 2, 3, true, 0, 311, false, 15, false, true, false, false, 120, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(2, 0, 7, 12, 2.0, 361, 45, 0.0, 0, 0.0, 50, 0.5, 8.0, 0.0, 0.0, -12.0, 0.0, 0, 0.0, 1.0, 1.0, false, false, 20, 2, 2, 3, true, 0, 311, false, 15, false, true, false, false, 120, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(18.0)
+  TerminateCollisions()
+}
+
+Subaction 0x21: MAIN EXIT {
+}
+
+Subaction 0x21: MAIN INIT {
+}
+
+Subaction 0x21: GFX {
+  AsynchronousTimer(7.0)
+  GraphicEffect(11, 19, 0.0, 3.5, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(15.0)
+  GraphicEffect(40, 13, 0.0, 0.0, 0.0, -10.0, 180.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  Screenshake(2)
+}
+
+Subaction 0x21: GFX EXIT {
+}
+
+Subaction 0x21: GFX INIT {
+}
+
+Subaction 0x21: SFX {
+  SynchronousTimer(14.0)
+  SoundEffect(9899)
+}
+
+Subaction 0x21: SFX EXIT {
+}
+
+Subaction 0x21: SFX INIT {
+}
+

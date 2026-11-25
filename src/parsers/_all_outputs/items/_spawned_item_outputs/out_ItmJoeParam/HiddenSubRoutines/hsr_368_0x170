@@ -1,0 +1,14 @@
+[hsr_170]
+hidden_subroutine_0x170 {
+  SubRoutine(hsr_88)
+  ChangeSubAction(7)
+  SynchronousTimer(6.0)
+  FloatVariableSet(Variable_Float_Posture_Pos_X, LA-Float[0x00])
+  FloatVariableSet(Variable_Float_Posture_Pos_Y, LA-Float[0x01])
+  FloatVariableAdd(0.0, LA-Float[0x00])
+  FloatVariableAdd(5.0, LA-Float[0x01])
+  (undef: Sp_base) 65_09_08_00(149, 0, LA-Float[0x00], LA-Float[0x01], 0.0, 4.0, 0.0, 0.0)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  Return()
+}

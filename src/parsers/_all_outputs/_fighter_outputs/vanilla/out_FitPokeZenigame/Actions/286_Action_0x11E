@@ -1,0 +1,11 @@
+Action 0x11E: ENTRY {
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeSubAction(483)
+}
+
+Action 0x11E : EXIT {
+}

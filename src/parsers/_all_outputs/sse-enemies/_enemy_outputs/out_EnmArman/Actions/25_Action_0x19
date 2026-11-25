@@ -1,0 +1,17 @@
+Action 0x19: MAIN {
+}
+
+Action 0x19: EXIT {
+}
+
+Action 0x19: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(22)
+  (undef: Sp_AI) 6A_01_01_00(45)
+  SubAction09(4)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 28)
+  BasicVariableSet(4, LA-Int[0x06])
+  (undef: Sp_Link) 6E_03_02_00(0, O(0x00001864))
+  (undef: Sp_Link) 6E_04_02_00(0, O(0x00001994))
+}
+

@@ -1,0 +1,49 @@
+[Turn] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x15: MAIN {
+  SubRoutine(hidden_subroutine_0x2DE0)
+}
+
+Subaction 0x15: MAIN EXIT {
+}
+
+Subaction 0x15: MAIN INIT {
+}
+
+Subaction 0x15: GFX {
+  GraphicEffectAttached(9437195, 5, -5.776, 2.271, -9.508, 13.5, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(9437195, 5, 5.776, 2.27, -9.508, 13.5, 0.0, 0.0, 1.0, true)
+}
+
+Subaction 0x15: GFX EXIT {
+}
+
+Subaction 0x15: GFX INIT {
+}
+
+Subaction 0x15: SFX {
+  SynchronousTimer(4.0)
+  SoundEffect(9314)
+  SynchronousTimer(18.0)
+  LandingSoundEffect(9316)
+  SynchronousTimer(13.0)
+  SoundEffect(9314)
+  SynchronousTimer(16.0)
+  LandingSoundEffect(9316)
+}
+
+Subaction 0x15: SFX EXIT {
+}
+
+Subaction 0x15: SFX INIT {
+}
+

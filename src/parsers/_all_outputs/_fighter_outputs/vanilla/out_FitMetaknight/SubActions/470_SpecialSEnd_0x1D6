@@ -1,0 +1,33 @@
+[SpecialSEnd] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D6: MAIN {
+  SpecialOffensiveCollision(Sp(41, 0), 3, 70, Sp(0, 130), Sp(0, 30), 4.0, 6.0, 0.0, 0.0, 0.0, 1.0, 1.0, 994248322, 0, 5242819)
+  SpecialOffensiveCollision(Sp(41, 2), 2, 361, Sp(0, 100), Sp(0, 30), 7.0, -8.0, 0.0, 0.0, 0.0, 1.0, 1.0, 994248322, 0, 5242819)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+}
+
+Subaction 0x1D6: GFX {
+  GraphicEffectLanding(9, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x1D6: SOUND {
+  AsynchronousTimer(14.0)
+  SoundEffect(744)
+}
+
+Subaction 0x1D6: OTHER {
+  ModelChangerPermanent(2, 1)
+  AsynchronousTimer(10.0)
+  ModelChangerPermanent(2, 0)
+}
+

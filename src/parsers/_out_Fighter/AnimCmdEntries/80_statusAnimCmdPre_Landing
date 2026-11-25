@@ -1,0 +1,6 @@
+// @ 0x23FD4
+Landing {
+  if (R(Bit is Set(LA-Bool[0x18]))) {
+    ChangeReadingAction(74)
+  }
+}

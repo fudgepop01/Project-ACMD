@@ -1,0 +1,12 @@
+// Status_Turn_Run
+Action 0x8 {
+  DisableSpecifiedMovement(2)
+  DisableActionStatusId(8)
+  ChangeSubAction(1)
+  (undef: Sp_base) 65_07_03_00(5, 0.0, 40.0)
+  (undef: Sp_Kinetic) 66_05_01_00(3)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, -1.0, 0.5, 0.0, 0.0, 0.0, -0.005, 0.0, 0.0, false, false, false)
+  SynchronousTimer(10.0)
+  ChangeAction(9, R(Bit is Set(RA-Bool[0x04])))
+}
+

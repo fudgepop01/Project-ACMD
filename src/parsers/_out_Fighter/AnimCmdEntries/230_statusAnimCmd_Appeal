@@ -1,0 +1,72 @@
+// @ 0x1AFFC
+Appeal {
+  ResetButtonPress()
+  ChangeAction(14, R(In Air()))
+  if (R(0x271B()) && R(NOT Bit is Set(RA-Bool[0x0E])) && R(Button Pressed(DTaunt))) {
+    AsynchronousTimer(1.0)
+    if (R(NOT Button Pressed(DTaunt)) && R(0x271C())) {
+      ChangeAction(269, R(Button Tap?()))
+      BitVariableSet(RA-Bool[0x10])
+      SetFtManagerBool(true)
+    } else {
+      BasicVariableSet(448, RA-Int[0x00])
+      BasicVariableSet(449, RA-Int[0x01])
+    }
+  }
+  if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+    if (R(Bit is Set(RA-Bool[0x0E]))) {
+      Switch(10001, 3)
+        Case(0)
+          BasicVariableSet(444, RA-Int[0x00])
+          BasicVariableSet(445, RA-Int[0x01])
+          BroadcastSpecialTauntEvent(0)
+        Case(1)
+          BasicVariableSet(448, RA-Int[0x00])
+          BasicVariableSet(449, RA-Int[0x01])
+          BroadcastSpecialTauntEvent(1)
+        Case(2)
+          BasicVariableSet(446, RA-Int[0x00])
+          BasicVariableSet(447, RA-Int[0x01])
+          if (R(Roll A Die())) {
+            BroadcastSpecialTauntEvent(2)
+          } else {
+            BroadcastSpecialTauntEvent(3)
+          }
+      EndSwitch()
+    } else {
+      if (R(Button Pressed(UTaunt))) {
+        BasicVariableSet(444, RA-Int[0x00])
+        BasicVariableSet(445, RA-Int[0x01])
+        BroadcastSpecialTauntEvent(0)
+      } elif (R(Button Pressed(DTaunt))) {
+        BasicVariableSet(448, RA-Int[0x00])
+        BasicVariableSet(449, RA-Int[0x01])
+        BroadcastSpecialTauntEvent(1)
+      } elif (R(Button Pressed(STaunt))) {
+        BasicVariableSet(446, RA-Int[0x00])
+        BasicVariableSet(447, RA-Int[0x01])
+        if (R(Button Pressed(DLeft))) {
+          BroadcastSpecialTauntEvent(2)
+        } elif (R(Button Pressed(DRight))) {
+          BroadcastSpecialTauntEvent(3)
+        } else {
+          if (R(Compare(Variable_Float_Posture_Lr < 0.0))) {
+            BroadcastSpecialTauntEvent(2)
+          } else {
+            BroadcastSpecialTauntEvent(3)
+          }
+        }
+      }
+    }
+    if (R(Subaction Exists())) {
+      if (R(Compare(Variable_Float_Posture_Lr < 0.0))) {
+        ChangeSubAction(RA-Int[0x01])
+      } else {
+        ChangeSubAction(RA-Int[0x00])
+      }
+    } else {
+      ChangeSubAction(RA-Int[0x00])
+    }
+    ChangeAction(0, R(Animation End()))
+  }
+}

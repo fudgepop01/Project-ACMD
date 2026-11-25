@@ -1,0 +1,33 @@
+[SpecialNOpenWait] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1CF: MAIN {
+  AsynchronousTimer(2.0)
+  CatchCollision_UNDOC9ARGS(0, 444, 3.6, 0.0, 1.2, 2.7, 204, 2, 2)
+  CatchCollision_UNDOC9ARGS(1, 444, 4.5, 0.0, 1.2, 2.7, 204, 1, 2)
+  ThrowAttackCollision(0, 0, 5, 45, 70, 0, 60, 0, 0.0, 1.0, 1.0, 2, 2, 3, true, true, 8)
+  ThrowAttackCollision(1, 0, 1, 361, 100, 0, 60, 0, 0.0, 1.0, 1.0, 0, 2, 3, true, true, 8)
+  InertCollision(0, 0, 444, 4.5, 0.0, 1.2, 2.7, 2, 1, 7, false, 15, 15, false, 0, true, 0)
+  BitVariableSet(RA-Bool[0x11])
+  SynchronousTimer(2.0)
+  BoneCollision(445, 2)
+}
+
+Subaction 0x1CF: GFX {
+}
+
+Subaction 0x1CF: SOUND {
+}
+
+Subaction 0x1CF: OTHER {
+  SlopeContourStand03(1, 4, true)
+}
+

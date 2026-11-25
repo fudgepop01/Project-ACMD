@@ -1,0 +1,10 @@
+[hsr_1878C]
+hidden_subroutine_0x1878C {
+  if (R(Bit is Set(RA-Bool[0x15]))) {
+    ChangeSubAction(477)
+    BitVariableClear(RA-Bool[0x15])
+  } else {
+    ChangeSubAction(477, true)
+  }
+  SetAerialOrOnstage(5)
+}

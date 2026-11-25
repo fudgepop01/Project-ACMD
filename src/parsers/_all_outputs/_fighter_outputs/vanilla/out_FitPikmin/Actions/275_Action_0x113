@@ -1,0 +1,32 @@
+Action 0x113: ENTRY {
+  ChangeActionStatus(10000, 0, R(Animation End()))
+  ChangeActionStatus(10002, 14, R(Animation End()))
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1ECA0)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SubRoutine(hidden_subroutine_0x1EC18)
+      if (R(Compare(Variable_Int_Motion_Kind == 466.0))) {
+        ChangeSubAction(465, true)
+      } else {
+        ChangeSubAction(465)
+      }
+      SetRequirement(R(In Air()))
+      EnableActionStatusId(10000)
+      DisableActionStatusId(10002)
+    } else {
+      SubRoutine(hidden_subroutine_0x1EC50)
+      if (R(Compare(Variable_Int_Motion_Kind == 465.0))) {
+        ChangeSubAction(466, true)
+      } else {
+        ChangeSubAction(466)
+      }
+      SetRequirement(R(On Ground()))
+      DisableActionStatusId(10000)
+      EnableActionStatusId(10002)
+    }
+    LoadRest()
+  }
+}
+
+Action 0x113 : EXIT {
+}

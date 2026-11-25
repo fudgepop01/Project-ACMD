@@ -1,0 +1,4 @@
+[hsr_7C54]
+hidden_subroutine_0x7C54 {
+  BasicVariableIncrement(RA-Int[0x01])
+}

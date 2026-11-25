@@ -1,0 +1,9 @@
+Action 0x10A: ENTRY {
+  AllowSpecificInterrupt(AIR_LANDING)
+  ChangeActionStatus(10002, 14, R(Animation End()))
+  ChangeSubAction(113)
+  SetAirGround(46)
+}
+
+Action 0x10A : EXIT {
+}

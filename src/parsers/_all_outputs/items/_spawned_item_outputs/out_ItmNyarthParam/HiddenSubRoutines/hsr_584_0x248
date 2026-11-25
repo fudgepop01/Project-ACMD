@@ -1,0 +1,7 @@
+[hsr_248]
+hidden_subroutine_0x248 {
+  FloatVariableSet(5.0, LA-Float[0x01])
+  FloatVariableAdd(Variable_Float_Posture_Pos_Y, LA-Float[0x01])
+  FloatVariableSet(Variable_Float_Posture_Pos_X, LA-Float[0x02])
+  Return()
+}

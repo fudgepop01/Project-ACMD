@@ -1,0 +1,27 @@
+// Status_Walk_Brake
+Action 0x2 {
+  if (R(Bit is Set(LA-Bool[0x00]))) {
+    Visibility(true)
+    ChangeSubAction(3)
+    FrameSpeedModifier(1.0)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ChangeAction(6, R(Button Tap?()))
+  } else {
+    ChangeSubAction(0)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ChangeSubAction(1)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    Visibility(false)
+    ChangeSubAction(2)
+    (undef: Sp_base) 65_09_01_00(22)
+    FloatVariableSet(0.0, LA-Float[0x00])
+    FloatVariableSet(0.0, LA-Float[0x01])
+    ChangeAction(2, R(Bit is Set(LA-Bool[0x00])))
+    SynchronousTimer(300.0)
+    BitVariableSet(LA-Bool[0x00])
+  }
+}
+

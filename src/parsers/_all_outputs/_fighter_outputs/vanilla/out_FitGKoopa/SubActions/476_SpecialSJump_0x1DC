@@ -1,0 +1,36 @@
+[SpecialSJump] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1DC: MAIN {
+}
+
+Subaction 0x1DC: GFX {
+  SetLoop(3) {
+    GraphicEffectAttached(70, 4, -5.0, 0.0, 0.0, 0.0, 0.0, 90.0, 3.2, true)
+    SynchronousTimer(3.0)
+    GraphicEffectAttached(70, 4, 0.0, 0.0, 0.0, 0.0, 0.0, 90.0, 4.0, true)
+    SynchronousTimer(3.0)
+    GraphicEffectAttached(70, 4, 5.0, 0.0, 0.0, 0.0, 0.0, 90.0, 3.6, true)
+    SynchronousTimer(3.0)
+  }
+}
+
+Subaction 0x1DC: SOUND {
+  SoundEffect(6695)
+  SynchronousTimer(5.0)
+  SoundEffect(6632)
+  SynchronousTimer(15.0)
+  SoundEffect(6632)
+}
+
+Subaction 0x1DC: OTHER {
+}
+

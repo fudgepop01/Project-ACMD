@@ -1,0 +1,5 @@
+[hsr_498]
+hidden_subroutine_0x498 {
+  AsynchronousTimer(2.0)
+  GraphicEffect(11, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}

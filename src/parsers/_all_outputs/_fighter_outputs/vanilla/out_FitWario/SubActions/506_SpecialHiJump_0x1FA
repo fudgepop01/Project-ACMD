@@ -1,0 +1,58 @@
+[SpecialHiJump] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1FA: MAIN {
+  OffensiveCollision(Sp(400, 0), 5, 85, Sp(110, 100), Sp(0, 0), 3.0, 0.0, 5.0, -1.0, 0.0, 1.0, 1.0, 994247296)
+  OffensiveCollision(Sp(400, 1), 5, 115, Sp(110, 100), Sp(0, 0), 3.0, 0.0, 5.0, 8.0, 0.0, 1.0, 1.0, 994247296)
+  OffensiveCollision(Sp(400, 2), 5, 85, Sp(90, 100), Sp(0, 0), 3.0, 0.0, 11.0, -1.0, 0.0, 1.0, 1.0, 994247296)
+  OffensiveCollision(Sp(400, 3), 5, 105, Sp(90, 100), Sp(0, 0), 3.0, 0.0, 11.0, 8.0, 0.0, 1.0, 1.0, 994247296)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+  SetLoop(10) {
+    OffensiveCollision(Sp(400, 0), 1, 95, Sp(80, 100), Sp(0, 0), 6.5, 0.0, 5.0, 0.0, 0.0, 1.0, 0.5, 994247232)
+    OffensiveCollision(Sp(400, 1), 1, 90, Sp(65, 100), Sp(0, 0), 6.0, 0.0, 11.0, 0.0, 0.0, 1.0, 0.5, 994247232)
+    SynchronousTimer(2.0)
+    TerminateCollisions()
+  }
+  EnableDisableLedgegrab(2)
+  OffensiveCollision(Sp(400, 0), 4, 70, Sp(0, 130), Sp(0, 60), 8.0, 0.0, 8.0, 0.0, 0.0, 0.5, 1.0, 994247296)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+}
+
+Subaction 0x1FA: GFX {
+  FlashOverlayEffect(255, 255, 255, 190)
+  AsynchronousTimer(2.0)
+  FlashOverlayEffect(255, 240, 128, 80)
+  AsynchronousTimer(4.0)
+  ChangeFlashOverlayColor(26, 255, 0, 0, 0)
+  SetLoop(5) {
+    GraphicEffect(1441802, 405, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+    SynchronousTimer(5.0)
+  }
+  AsynchronousTimer(30.0)
+  TerminateFlashEffect()
+}
+
+Subaction 0x1FA: SOUND {
+  AsynchronousTimer(0.0)
+  SoundEffect(4848)
+  SoundEffectTransient(1893)
+  SynchronousTimer(5.0)
+  SoundEffect(4791)
+  SynchronousTimer(15.0)
+  SoundEffect(4892)
+}
+
+Subaction 0x1FA: OTHER {
+  RumbleLoop(2, 30)
+}
+

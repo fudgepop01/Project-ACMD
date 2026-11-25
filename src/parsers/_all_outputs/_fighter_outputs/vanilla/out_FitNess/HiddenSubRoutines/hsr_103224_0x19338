@@ -1,0 +1,5 @@
+[hsr_19338]
+hidden_subroutine_0x19338 {
+  SubRoutine(hidden_subroutine_0x19190)
+  SubRoutine(hsr_19290)
+}

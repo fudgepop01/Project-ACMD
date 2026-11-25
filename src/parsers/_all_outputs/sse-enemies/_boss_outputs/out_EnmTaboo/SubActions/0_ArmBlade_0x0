@@ -1,0 +1,63 @@
+[ArmBlade] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x0: MAIN {
+  AsynchronousTimer(155.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 131, 24, 2.0, 361, 60, 0.0, 0, 0.0, 102, -1.0, 9.0, 0.0, -20.0, 0.0, 0.0, 2, 0.0, 1.0, 1.0, false, true, 10, 2, 3, 3, false, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 105, 18, 1.8, 361, 50, 0.0, 0, 0.0, 61, 0.5, 10.0, 0.0, -9.0, 0.0, 0.0, 2, 0.0, 1.0, 1.0, false, true, 5, 2, 3, 3, false, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(2, 0, 39, 18, 1.8, 361, 50, 0.0, 0, 0.0, 61, 0.5, 10.0, 0.0, 0.0, 0.0, 0.0, 2, 0.0, 1.0, 1.0, false, true, 5, 2, 3, 3, false, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(3, 0, 18, 18, 1.8, 361, 50, 0.0, 0, 0.0, 61, 0.5, 10.0, 0.0, 0.0, -10.0, 0.0, 2, 0.0, 1.0, 1.0, false, true, 5, 2, 3, 3, false, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(300.0)
+  TerminateCollisions()
+}
+
+Subaction 0x0: MAIN EXIT {
+}
+
+Subaction 0x0: MAIN INIT {
+}
+
+Subaction 0x0: GFX {
+  AsynchronousTimer(144.0)
+  SwordGlow(59, 16, 122, 0.0, 0.0, 0.0, 125, 0.0, 0.0, 0.0, true, 0, 122, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  SetLoop(5) {
+    Screenshake(1)
+    GraphicEffectAttached(12648461, 132, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+    SynchronousTimer(15.0)
+    Screenshake(0)
+    GraphicEffectAttached(12648460, 132, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+    SynchronousTimer(15.0)
+  }
+  AsynchronousTimer(300.0)
+  TerminateSwordGlow(1)
+  AsynchronousTimer(419.0)
+  SubRoutine(hidden_subroutine_0xBAD4)
+}
+
+Subaction 0x0: GFX EXIT {
+}
+
+Subaction 0x0: GFX INIT {
+  SubRoutine(hidden_subroutine_0xBB8C)
+}
+
+Subaction 0x0: SFX {
+  SoundEffect(9827)
+  SynchronousTimer(290.0)
+  SoundEffect(9828)
+}
+
+Subaction 0x0: SFX EXIT {
+}
+
+Subaction 0x0: SFX INIT {
+}
+

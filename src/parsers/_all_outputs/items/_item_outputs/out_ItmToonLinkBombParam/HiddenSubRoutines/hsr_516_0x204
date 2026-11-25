@@ -1,0 +1,7 @@
+[hsr_204]
+hidden_subroutine_0x204 {
+  ChangeAction(7, R(Compare(LA-Int[0x0B] == 0.0)))
+  ChangeAction(7, R(Bit is Set(RA-Bool[0x02])))
+  ChangeAction(7, R(Bit is Set(RA-Bool[0x03])))
+  Return()
+}

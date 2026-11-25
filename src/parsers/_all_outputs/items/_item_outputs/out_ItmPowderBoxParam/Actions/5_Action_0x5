@@ -1,0 +1,8 @@
+// Status_Run_Brake
+Action 0x5 {
+  BodyCollision(0)
+  (undef: team) 22_02_01_00(20)
+  SubRoutine(hidden_subroutine_0x60)
+  ChangeSubAction(3)
+}
+

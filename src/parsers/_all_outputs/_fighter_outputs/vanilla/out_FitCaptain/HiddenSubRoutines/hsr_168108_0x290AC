@@ -1,0 +1,5 @@
+[hsr_290AC]
+hidden_subroutine_0x290AC {
+  BasicVariableSet(Customize_Param_Int_Jump_Count_Max, LA-Int[0x01])
+  BasicVariableSet(470, RA-Int[0x00])
+}

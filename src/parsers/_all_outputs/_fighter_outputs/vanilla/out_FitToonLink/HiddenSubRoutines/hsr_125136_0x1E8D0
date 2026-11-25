@@ -1,0 +1,11 @@
+[hsr_1E8D0]
+hidden_subroutine_0x1E8D0 {
+  SpecialOffensiveCollision(Sp(0, 0), 4, 90, Sp(50, 100), Sp(0, 0), 4.0, 0.0, 8.5, 15.5, 0.0, 0.0, 0.5, 847447682, 0, 672137155)
+  SpecialOffensiveCollision(Sp(0, 1), 4, 70, Sp(50, 100), Sp(0, 0), 8.0, 0.0, 1.0, 7.0, 0.0, 0.0, 0.5, 847447682, 0, 672137155)
+  SpecialOffensiveCollision(Sp(0, 2), 4, 110, Sp(50, 100), Sp(0, 0), 8.0, 0.0, 1.0, 24.0, 0.0, 0.0, 0.5, 847447682, 0, 672137155)
+  SpecialOffensiveCollision(Sp(0, 3), 4, 0, Sp(50, 100), Sp(0, 0), 9.0, 0.0, 18.0, 7.0, 0.0, 0.0, 0.5, 847447682, 0, 672137155)
+  SpecialOffensiveCollision(Sp(0, 4), 4, 180, Sp(50, 100), Sp(0, 0), 9.0, 0.0, 18.0, 24.0, 0.0, 0.0, 0.5, 847447682, 0, 672137155)
+  SynchronousTimer(1.0)
+  TerminateCollisions()
+  Return()
+}

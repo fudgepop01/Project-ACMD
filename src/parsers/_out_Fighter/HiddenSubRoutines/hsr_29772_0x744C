@@ -1,0 +1,8 @@
+[hsr_744C]
+hidden_subroutine_0x744C {
+
+  ChangeActionStatus(10059, 1, R(0x25()), 1)
+  AdditionalRequirement(R(On Ground()))
+
+  SubRoutine(statusAnimCmd_ItemShootWalkF_Common)
+}

@@ -1,0 +1,12 @@
+[hsr_8044]
+hidden_subroutine_0x8044 {
+  RemoveItemHoldAnim()
+  if (R(0x2718())) {
+    ChangeSubAction(RA-Int[0x05], true, Variable_Float_Motion_Rate)
+  } else {
+    ChangeSubAction(RA-Int[0x05])
+    if (R(Compare(Variable_Int_Have_Item_Kind == 27.0))) {
+      FrameSpeedModifier(2.0)
+    }
+  }
+}

@@ -1,0 +1,6 @@
+[hsr_CA4C]
+hidden_subroutine_0xCA4C {
+  if (R(On a Passable Floor()) && R(Compare(Variable_Float_Controller_Stick_Y <= Common_Param_Float_Pass_Stick_Y)) && R(Compare(Variable_Int_Controller_Flick_Y < Common_Param_Int_Pass_Flick_Y))) {
+    SubRoutine(hsr_3DAC)
+  }
+}

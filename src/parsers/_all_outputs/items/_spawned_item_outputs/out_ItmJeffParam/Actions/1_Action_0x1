@@ -1,0 +1,15 @@
+// Status_Walk
+Action 0x1 {
+  ChangeSubAction(0)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 1.5, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  if (R(Is within footstool range())) {
+    BasicVariableSet(1, LA-Int[0x00])
+  } else {
+    BasicVariableSet(2, LA-Int[0x00])
+  }
+  ChangeAction(4, R(On Ground()))
+  ChangeAction(3, R(In Air()))
+}
+

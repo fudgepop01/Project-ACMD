@@ -1,0 +1,43 @@
+// Status_Fly
+Action 0xD: ENTRY {
+  ResetFlickX()
+  ResetFlickY()
+  ResetButtonPress()
+  BasicVariableIncrement(LA-Int[0x01])
+  SubRoutine(statusAnimCmd_AIRChkFallCommon)
+  if (R(Compare(Info_Param_Int_Glide_Type != 0.0)) && R(NOT Bit is Set(LA-Bool[0x16]))) {
+    BitVariableSet(RA-Bool[0x12])
+    SubRoutine(statusAnimCmd_AllowGlide)
+  }
+
+  if (R(Compare(LA-Int[0x01] == Customize_Param_Int_Jump_Count_Max))) {
+    ChangeAction(15, R(Animation End()))
+    AdditionalRequirement(R(In Air()))
+
+  } else {
+
+    ChangeAction(14, R(Animation End()))
+    AdditionalRequirement(R(In Air()))
+
+  }
+  SetAirGround(3)
+  Switch(10000, LA-Int[0x01])
+    Case(2)
+      ChangeSubAction(27)
+    Case(3)
+      ChangeSubAction(28)
+    Case(4)
+      ChangeSubAction(29)
+    Case(5)
+      ChangeSubAction(30)
+    Case(6)
+      ChangeSubAction(31)
+  EndSwitch()
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x4044)
+}
+
+Action 0xD : EXIT {
+  if (R(Turning with Item()) && R(NOT Has Been Hit by Cape Effect())) {
+    (undef: turn) 20_01_00_00()
+  }
+}

@@ -1,0 +1,25 @@
+// Status_Squat_B
+Action 0x14: ENTRY {
+  ChangeAction(14, R(In Air()))
+  SubRoutine(statusAnimCmd_SquatCommon)
+  InvertActionStatusId(1, 10097)
+  InvertActionStatusId(1, 10098)
+  InvertActionStatusId(8, 10059)
+  SubRoutine(statusAnimCmd_AllowSquatF)
+
+  ChangeAction(18, R(Compare(Variable_Float_Controller_Stick_Y < Common_Param_Float_Squat_Stick_Y)))
+  AdditionalRequirement(R(Compare(Variable_Float_Controller_Stick_X_Lr >= Common_Param_Float_Squat_B_Stick_X_Min)))
+  AdditionalRequirement(R(Compare(Variable_Float_Controller_Stick_X_Lr < Common_Param_Float_Squat_F_Stick_X_Min)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(41, R(Button Press(Attack)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus(10052, 21, R(Compare(Variable_Float_Controller_Stick_Y > Common_Param_Float_Squat_Stick_Y)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeSubAction(47)
+}
+
+Action 0x14 : EXIT {
+}

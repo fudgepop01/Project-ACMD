@@ -1,0 +1,52 @@
+[DownBound] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x25: MAIN {
+}
+
+Subaction 0x25: MAIN EXIT {
+}
+
+Subaction 0x25: MAIN INIT {
+  FrameSpeedModifier(IC-Int[0xFA6])
+}
+
+Subaction 0x25: GFX {
+  GraphicEffect(9, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GraphicEffectLanding(11, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x25: GFX EXIT {
+}
+
+Subaction 0x25: GFX INIT {
+}
+
+Subaction 0x25: SFX {
+  if (R(Compare(Variable_Int_Controller_Flick_X_Dir == 28.0))) {
+    ImpactSoundEffect(9546)
+  } else {
+    ImpactSoundEffect(9537)
+  }
+  SynchronousTimer(16.0)
+  if (R(Compare(Variable_Int_Controller_Flick_X_Dir == 28.0))) {
+    ImpactSoundEffect(9546)
+  } else {
+    ImpactSoundEffect(9537)
+  }
+}
+
+Subaction 0x25: SFX EXIT {
+}
+
+Subaction 0x25: SFX INIT {
+}
+

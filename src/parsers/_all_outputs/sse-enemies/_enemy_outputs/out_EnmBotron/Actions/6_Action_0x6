@@ -1,0 +1,18 @@
+Action 0x6: MAIN {
+  SubRoutine(hidden_subroutine_0x9E0)
+}
+
+Action 0x6: EXIT {
+}
+
+Action 0x6: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(18)
+  SubRoutine(hidden_subroutine_0x410)
+  SubAction09(4)
+  (undef: Sp_Area) 69_01_05_00(Variable_Int_Controller_Flick_No_Reset_Y, 0.0, IC-Int[0xFA0], LA-Float[0x04], true)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+  (undef: Sp_Kinetic) 66_00_03_00(3, 18, LA-Float[0x04])
+  (undef: Sp_Kinetic) 66_0C_02_00(3, LA-Float[0x04])
+}
+

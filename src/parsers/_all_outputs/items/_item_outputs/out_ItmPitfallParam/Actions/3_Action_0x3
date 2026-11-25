@@ -1,0 +1,7 @@
+// Status_Dash
+Action 0x3 {
+  SubRoutine(hidden_subroutine_0x78)
+  ChangeAction(7, R(Compare(LA-Int[0x0B] == 0.0)))
+  ChangeSubAction(2)
+}
+

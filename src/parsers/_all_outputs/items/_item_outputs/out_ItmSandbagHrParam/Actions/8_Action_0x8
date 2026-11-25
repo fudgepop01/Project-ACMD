@@ -1,0 +1,7 @@
+// Status_Turn_Run
+Action 0x8 {
+  ChangeSubAction(1)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+}
+

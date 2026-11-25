@@ -1,0 +1,10 @@
+// Status_Rebound_Stop
+Action 0x22: ENTRY {
+  ChangeAction(14, R(In Air()))
+  FrameSpeedModifier(0.0)
+  AsynchronousTimer(1.0)
+  ChangeAction(35, R(Button Tap?()))
+}
+
+Action 0x22 : EXIT {
+}

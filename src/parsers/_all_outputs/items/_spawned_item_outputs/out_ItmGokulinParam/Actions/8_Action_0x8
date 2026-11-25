@@ -1,0 +1,15 @@
+// Status_Turn_Run
+Action 0x8 {
+  ChangeAction(3, R(In Air()))
+  (undef: Sp_base) 65_07_01_00(2)
+
+  ChangeAction_UNDOC6ARGS(9, R(Is falling+hit down()), -15.0, -5.4, 15.0, 18.0)
+  AdditionalRequirement(R(Compare(LA-Int[0x13] != -1.0)))
+
+  ChangeSubAction(1)
+  SetLoop(-1) {
+    (undef: Sp_base) 65_07_01_00(2)
+    SynchronousTimer(5.0)
+  }
+}
+

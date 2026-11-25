@@ -1,0 +1,16 @@
+IC-Int[0x1B] ("Variable_Float_Kinetic_Sum_Speed_X_Abs") in Action 0x4 (Status_Run) @ 4 : 1
+IC-Int[0x1B] ("Variable_Float_Kinetic_Sum_Speed_X_Abs") in Action 0xC (Status_Jump_Aerial) @ 2 : 1
+
+IC-Int[0x6338] in Action 0x4 (Status_Run) @ 8 : 0
+
+LA-Int[0x0B] in Action 0x2 (Status_Walk_Brake) @ 1 : 1
+LA-Int[0x0B] in Action 0x4 (Status_Run) @ 2 : 1
+LA-Int[0x0B] in Action 0x5 (Status_Run_Brake) @ 0 : 1
+
+LA-Int[0x0C] in Action 0x2 (Status_Walk_Brake) @ 2 : 1
+LA-Int[0x0C] in Action 0x4 (Status_Run) @ 7 : 1
+LA-Int[0x0C] in Action 0x4 (Status_Run) @ 8 : 1
+
+LA-Int[0x1B] in Subaction 0x0 : SOUND @ 1 : 1
+
+LA-Bool[0x0C] in Action 0x2 (Status_Walk_Brake) @ 3 : 0

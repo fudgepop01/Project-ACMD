@@ -1,0 +1,18 @@
+// Status_Capture_Gokulin
+Action 0x102: ENTRY {
+  SetGimmickEffectFlag(false)
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+  ChangeSubAction(41)
+  SynchronousTimer(19.0)
+  ChangeSubAction(204)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeSubAction(-1)
+  Visibility(false)
+  SetGimmickEffectFlag(false)
+}
+
+Action 0x102 : EXIT {
+  Visibility(true)
+}

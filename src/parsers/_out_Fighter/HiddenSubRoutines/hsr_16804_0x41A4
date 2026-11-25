@@ -1,0 +1,31 @@
+[hsr_41A4]
+hidden_subroutine_0x41A4 {
+  if (R(Bit is Set(RA-Bool[0x12]))) {
+    InvertActionStatusId(8, 10053)
+    EnableActionStatusId(10051)
+    BitVariableClear(RA-Bool[0x12])
+  }
+  if (R(NOT Bit is Set(RA-Bool[0x11])) && R(Bit is Set(RA-Bool[0x10]))) {
+    AllowSpecificInterrupt(GROUND_SPECIAL)
+    AllowSpecificInterrupt(GROUND_ITEM)
+    AllowSpecificInterrupt(GROUND_CATCH)
+    AllowSpecificInterrupt(GROUND_ATTACK)
+    AllowSpecificInterrupt(GROUND_ESCAPE)
+    AllowSpecificInterrupt(GROUND_GUARD)
+    AllowSpecificInterrupt(GROUND_JUMP)
+    AllowSpecificInterrupt(GROUND)
+    InvertActionStatusId(8, 10051)
+
+    ChangeActionStatus(10053, 18, R(Compare(Variable_Float_Controller_Stick_Y <= Common_Param_Float_Squat_Stick_Y)))
+    AdditionalRequirement(R(On Ground()))
+
+    BitVariableSet(RA-Bool[0x12])
+    BitVariableSet(RA-Bool[0x11])
+  }
+  if (R(Bit is Set(RA-Bool[0x13]))) {
+    EnableActionStatusId(10010)
+    BitVariableClear(RA-Bool[0x13])
+  } else {
+    DisableActionStatusId(10010)
+  }
+}

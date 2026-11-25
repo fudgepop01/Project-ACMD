@@ -1,0 +1,42 @@
+Action 0x11B: ENTRY {
+  BitVariableClear(RA-Bool[0x10])
+  BasicVariableSet(IC-Int[0x5DC5], RA-Int[0x03])
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1FD1C)
+
+  ChangeAction(101, R(Touching a Floor, Wall, or Ceiling(2)))
+  AdditionalRequirement(R(Facing Left()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(101, R(Touching a Floor, Wall, or Ceiling(4)))
+  AdditionalRequirement(R(Facing Right()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(285, R(Compare(RA-Int[0x03] <= 0.0)))
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(2)
+      EnableDisableLedgegrab(0)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(472, true)
+      } else {
+        ChangeSubAction(472)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      EnableDisableLedgegrab(2)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(477, true)
+      } else {
+        ChangeSubAction(477)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x11B : EXIT {
+}

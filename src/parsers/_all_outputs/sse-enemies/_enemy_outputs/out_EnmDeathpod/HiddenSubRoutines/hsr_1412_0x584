@@ -1,0 +1,21 @@
+[hsr_584]
+hidden_subroutine_0x584 {
+  if [IF_REQ_UNKNOWN_3ARG] (R(Tap Jump On & C-Stick not Held()), 5, 15 && R(Is within footstool range())) {
+    (undef: Sp_Kinetic) 66_07_01_00(5)
+    (undef: Sp_base) 65_04_01_00(1)
+    (undef: Sp_base) 65_07_02_00(IC-Int[0xABE3], LA-Float[0x02])
+  }
+  if (R(0x2710())) {
+    if (R(Compare(IC-Int[0x5209] >= LA-Float[0x02]))) {
+      (undef: Sp_Kinetic) 66_00_04_00(5, 16, 35791.0, 3)
+      (undef: Sp_base) 65_04_01_00(1)
+      (undef: Sp_base) 65_07_02_00(IC-Int[0xABE5], LA-Float[0x02])
+    }
+  } else {
+    if [IF_REQ_UNKNOWN_3ARG] (R(NOT Tap Jump On & C-Stick not Held()), 5, 15) {
+      if (R(Compare(IC-Int[0x5209] >= LA-Float[0x02]))) {
+        (undef: Sp_Kinetic) 66_00_04_00(5, 15, 35791.0, 3)
+      }
+    }
+    Return()
+}

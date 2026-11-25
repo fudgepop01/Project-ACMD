@@ -1,0 +1,5 @@
+[hsr_106B8]
+hidden_subroutine_0x106B8 {
+  AsynchronousTimer(1.0)
+  SoundEffect(4309)
+}

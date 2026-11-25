@@ -1,0 +1,28 @@
+Action 0x120: ENTRY {
+  BitVariableClear(LA-Bool[0x3E])
+  BasicVariableSet(483, LA-Int[0x45])
+  BasicVariableSet(484, LA-Int[0x46])
+  ChangeActionStatus(0, 0, R(Animation End()))
+  ChangeActionStatus(1, 14, R(Animation End()))
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SubRoutine(hidden_subroutine_0x18FA8)
+      SubRoutine(hidden_subroutine_0x190C8)
+      EnableActionStatusId(0)
+      DisableActionStatusId(1)
+      SetRequirement(R(In Air()))
+      SetAirGround(6)
+    } else {
+      SubRoutine(hidden_subroutine_0x18FE8)
+      SubRoutine(hidden_subroutine_0x19110)
+      DisableActionStatusId(0)
+      EnableActionStatusId(1)
+      SetRequirement(R(On Ground()))
+      SetAirGround(10)
+    }
+    LoadRest()
+  }
+}
+
+Action 0x120 : EXIT {
+}

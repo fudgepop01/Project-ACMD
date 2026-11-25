@@ -1,0 +1,12 @@
+[hsr_1C8]
+hidden_subroutine_0x1C8 {
+  if (R(2714(1))) {
+    FloatVariableAdd(6.0, LA-Float[0x02])
+    RightDirection()
+  } else {
+    FloatVariableSubtract(6.0, LA-Float[0x02])
+    LeftDirection()
+  }
+  DecideDirection()
+  CharacterSpecific01()
+}

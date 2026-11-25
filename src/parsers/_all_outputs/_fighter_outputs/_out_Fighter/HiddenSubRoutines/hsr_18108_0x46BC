@@ -1,0 +1,4 @@
+[hsr_46BC]
+hidden_subroutine_0x46BC {
+  GraphicEffect(33, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}

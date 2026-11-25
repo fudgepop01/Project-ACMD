@@ -1,0 +1,36 @@
+[DownBoundU] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xAA: MAIN {
+  AsynchronousTimer(3.0)
+  AsynchronousTimer(21.0)
+}
+
+Subaction 0xAA: GFX {
+  GraphicEffect(9, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GraphicEffectTumbling(11, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0xAA: SOUND {
+  StopSoundEffect(68)
+  StopSoundEffect(69)
+  StopSoundEffect(70)
+  AsynchronousTimer(1.0)
+  ImpactSoundEffect(94)
+}
+
+Subaction 0xAA: OTHER {
+  Rumble(18, 0)
+  Screenshake(1)
+  AsynchronousTimer(18.0)
+  SlopeContourStand02(1, 3)
+}
+

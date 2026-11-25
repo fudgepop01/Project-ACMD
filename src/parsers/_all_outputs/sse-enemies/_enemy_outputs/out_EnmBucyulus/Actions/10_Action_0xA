@@ -1,0 +1,18 @@
+Action 0xA: MAIN {
+}
+
+Action 0xA: EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 12.0))) {
+    SubRoutine(hidden_subroutine_0xFFFFFFFF)
+  }
+}
+
+Action 0xA: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(22)
+  SubAction09(0)
+  (undef: Sp_Kinetic) 66_07_01_00(-1)
+  (undef: Sp_Link) 6E_05_01_00(5)
+  SubRoutine(hidden_subroutine_0xA1C)
+}
+

@@ -1,5 +1,5 @@
 {
-  "name": "RAIExt",
+  "name": "rai-ext",
   "displayName": "RAIExt",
   "description": "used for development of RAI",
   "version": "0.0.1",
@@ -9,9 +9,7 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onLanguage:rai"
-  ],
+  "activationEvents": [],
   "main": "./out/extension.js",
   "capabilities": {
     "definitionProvider": true
@@ -79,11 +77,13 @@
     "eslint": "^8.1.0",
     "glob": "^7.1.7",
     "mocha": "^9.1.3",
+    "ts-node": "^10.9.2",
     "typescript": "^4.4.4"
   },
   "dependencies": {
     "chevrotain": "^10.0.0",
     "construct-js": "^1.0.1",
-    "ieee754": "^1.2.1"
+    "ieee754": "^1.2.1",
+    "kaitai-struct": "^0.10.0"
   }
 }

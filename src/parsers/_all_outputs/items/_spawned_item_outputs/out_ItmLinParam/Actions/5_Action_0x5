@@ -1,0 +1,24 @@
+// Status_Run_Brake
+Action 0x5 {
+  SubRoutine(hidden_subroutine_0x28)
+  (undef: Sp_base) 65_07_01_00(2)
+  if (R(Compare(Variable_Int_Controller_Trigger_1_Count_Prev == 0.0))) {
+    FloatVariableSet(-10.0, RA-Float[0x00])
+    FloatVariableSet(-1.0, RA-Float[0x01])
+  } else {
+    FloatVariableSet(-10.0, RA-Float[0x00])
+    FloatVariableSet(0.0, RA-Float[0x01])
+  }
+  FloatVariableMultiply(Variable_Float_Posture_Lr, RA-Float[0x00])
+  FloatVariableSet(LA-Float[0x08], RA-Float[0x03])
+  FloatVariableAdd(3.0, RA-Float[0x03])
+  (undef: Sp_base) 65_0A_06_00(0, RA-Float[0x00], RA-Float[0x01], 0.0, LA-Float[0x07], RA-Float[0x03])
+  if (R(Compare(Variable_Int_Controller_Trigger_1_Count_Prev == 0.0))) {
+    ChangeSubAction(4)
+  } else {
+    ChangeSubAction(5)
+  }
+  ChangeAction(8, R(In Air()))
+  ChangeAction(12, R(On Ground()))
+}
+

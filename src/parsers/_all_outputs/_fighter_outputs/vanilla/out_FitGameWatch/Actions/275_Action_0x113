@@ -1,0 +1,44 @@
+Action 0x113: ENTRY {
+  BitVariableClear(LA-Bool[0x3F])
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1709C)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      SetAirGround(6)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(RA-Int[0x00], true)
+      } else {
+        ChangeSubAction(RA-Int[0x00], false)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x12]))) {
+        SetAirGround(101)
+      } else {
+        SetAirGround(100)
+      }
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(RA-Int[0x01], true)
+      } else {
+        ChangeSubAction(RA-Int[0x01], false)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    (undef: motion) 04_05_01_00(24)
+    LoadRest()
+  }
+}
+
+Action 0x113 : EXIT {
+  RemoveArticle(3)
+}

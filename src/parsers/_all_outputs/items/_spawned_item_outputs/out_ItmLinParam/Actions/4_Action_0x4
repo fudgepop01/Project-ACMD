@@ -1,0 +1,18 @@
+// Status_Run
+Action 0x4 {
+  SubRoutine(hidden_subroutine_0x8)
+  DisableActionStatusId(1)
+  (undef: Sp_Kinetic) 66_06_01_00(0)
+  (undef: Sp_base) 65_03_03_00(0.0, 0.0, 0.0)
+  DecideDirection()
+  CharacterSpecific01()
+  ChangeActionStatus(3, 3, R(In Air()))
+  ChangeSubAction(2)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  DisableActionStatusId(3)
+  ChangeAction(9, R(In Air()))
+  (undef: control_flow_loop) 01_04_02_00(60, 180)
+  ChangeAction(13, R(On Ground()))
+}
+

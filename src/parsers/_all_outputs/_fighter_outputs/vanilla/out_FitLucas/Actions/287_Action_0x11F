@@ -1,0 +1,34 @@
+Action 0x11F: ENTRY {
+
+  ChangeAction(289, R(Compare(RA-Int[0x00] <= 0.0)))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x11])))
+
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x19400)
+  BitVariableClear(RA-Bool[0x10])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      SetAirGround(6)
+      if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(482, false)
+      } else {
+        ChangeSubAction(482, true)
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetAirGround(105)
+      if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(486, false)
+      } else {
+        ChangeSubAction(486, true)
+      }
+      SetRequirement(R(On Ground()))
+    }
+    BitVariableSet(RA-Bool[0x10])
+    LoadRest()
+  }
+}
+
+Action 0x11F : EXIT {
+}

@@ -1,0 +1,35 @@
+Action 0x115: ENTRY {
+  ChangeActionStatus(10000, 0, R(Animation End()))
+  ChangeActionStatus(10002, 14, R(Animation End()))
+  BasicVariableSet(464, RA-Int[0x00])
+  BasicVariableSet(465, RA-Int[0x01])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SubRoutine(hidden_subroutine_0x180D4)
+      if (R(Compare(Variable_Int_Motion_Kind == RA-Int[0x01]))) {
+        ChangeSubAction(RA-Int[0x00], true)
+      } else {
+        ChangeSubAction(RA-Int[0x00])
+      }
+      SetRequirement(R(In Air()))
+      EnableActionStatusId(10000)
+      DisableActionStatusId(10002)
+    } else {
+      Module0900(2)
+      SetAerialOrOnstage(5)
+      SetAirGround(10)
+      if (R(Compare(Variable_Int_Motion_Kind == RA-Int[0x00]))) {
+        ChangeSubAction(RA-Int[0x01], true)
+      } else {
+        ChangeSubAction(RA-Int[0x01])
+      }
+      SetRequirement(R(On Ground()))
+      DisableActionStatusId(10000)
+      EnableActionStatusId(10002)
+    }
+    LoadRest()
+  }
+}
+
+Action 0x115 : EXIT {
+}

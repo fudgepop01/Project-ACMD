@@ -1,0 +1,39 @@
+[FinalStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1E4: MAIN {
+  BodyCollision(2)
+  CameraCloseup(5, 0, 1.2, 0.0, 0.0)
+  SetSlowEffectEnemyFighter(2, 30)
+  AsynchronousTimer(45.0)
+  NormalCamera()
+  OffensiveCollision(Sp(0, 0), 5, 90, Sp(0, 100), Sp(0, 100), 14.0, 0.0, 10.0, 0.0, 0.0, 1.0, 1.0, 537068672)
+}
+
+Subaction 0x1E4: GFX {
+}
+
+Subaction 0x1E4: SOUND {
+  AsynchronousTimer(10.0)
+  VictorySoundEffect(2571)
+  SynchronousTimer(37.0)
+  SoundEffect(6305)
+  SynchronousTimer(7.0)
+  SoundEffect(6339)
+  SynchronousTimer(5.0)
+  SoundEffect(6264)
+}
+
+Subaction 0x1E4: OTHER {
+  SlopeContourStand(6)
+  HeldItemsVisibility(false)
+}
+

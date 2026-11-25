@@ -1,0 +1,26 @@
+[SpecialN] (flags) {
+  No Out Transition: 1,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D4: MAIN {
+  TerminateCollisions()
+}
+
+Subaction 0x1D4: GFX {
+}
+
+Subaction 0x1D4: SOUND {
+}
+
+Subaction 0x1D4: OTHER {
+  HeldItemsVisibility(false)
+  Rumble(13, 0)
+}
+

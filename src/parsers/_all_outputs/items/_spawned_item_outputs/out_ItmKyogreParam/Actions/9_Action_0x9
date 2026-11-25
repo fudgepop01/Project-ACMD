@@ -1,0 +1,27 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  SubRoutine(hidden_subroutine_0x14)
+  (undef: Sp_base) 65_07_01_00(9)
+  if (R(2714(1))) {
+    BasicVariableSet(1, LA-Int[0x01])
+  } else {
+    BasicVariableSet(0, LA-Int[0x01])
+  }
+  SubRoutine(hidden_subroutine_0x334)
+  if (R(Compare(LA-Int[0x01] != LA-Int[0x02]))) {
+    ChangeSubAction(4)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ReverseDirection()
+    DecideDirection()
+    CharacterSpecific01()
+    BasicVariableSet(LA-Int[0x01], LA-Int[0x02])
+    BasicVariableSet(1, LA-Int[0x00])
+  }
+  if (R(Compare(LA-Int[0x00] == 1.0))) {
+    BasicVariableSet(0, LA-Int[0x00])
+    ChangeAction(10, R(Button Tap?()))
+  }
+  ChangeAction(11, R(Button Tap?()))
+}
+

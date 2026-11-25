@@ -1,0 +1,12 @@
+// Status_Walk_Brake
+Action 0x2 {
+  BodyCollision(2)
+  ChangeSubAction(1)
+  ChangeActionStatus(7, 7, R(Compare(LA-Int[0x0B] == 0.0)))
+  if (R(Compare(LA-Int[0x0B] <= 0.0))) {
+    (undef: Sp_base) 65_05_01_00(90)
+  }
+  SynchronousTimer(9.0)
+  SubRoutine(hidden_subroutine_0xE0)
+}
+

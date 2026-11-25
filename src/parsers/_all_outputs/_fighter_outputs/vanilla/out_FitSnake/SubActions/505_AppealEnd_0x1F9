@@ -1,0 +1,37 @@
+[AppealEnd] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1F9: MAIN {
+  AsynchronousTimer(65.0)
+  AllowInterrupt()
+}
+
+Subaction 0x1F9: GFX {
+}
+
+Subaction 0x1F9: SOUND {
+}
+
+Subaction 0x1F9: OTHER {
+  SlopeContourStand03(1, 6, true)
+  UnkRaBit27(false)
+  SetTagDisplay(false)
+  AsynchronousTimer(10.0)
+  UnkRaBit27(true)
+  SetTagDisplay(true)
+  AsynchronousTimer(15.0)
+  SlopeContourStand02(6, 3)
+  HeldItemsVisibility(false)
+  Rumble(16, 0)
+  AsynchronousTimer(36.0)
+  (undef: generateArticleManage) 10_09_01_00(14)
+}
+

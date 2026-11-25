@@ -1,0 +1,283 @@
+IC-Int[0x3EA] in Action 0x11D (): ENTRY @ 4 : 1
+IC-Int[0x3EA] in Action 0x11E (): ENTRY @ 4 : 1
+IC-Int[0x3EA] in hsr_17F98 @ 5 : 1
+
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in Action 0x120 (): ENTRY @ 4 : 2
+IC-Int[0x3F3] ("Variable_Float_Controller_Stick_X_Lr") in statusAnimCmd_GuardContYoshi__11ftYoshiNode @ 6 : 3
+
+IC-Int[0x3F4] ("Variable_Float_Controller_Stick_X_Lr_Rv") in statusAnimCmd_GuardContYoshi__11ftYoshiNode @ 9 : 3
+
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_GuardContYoshi__11ftYoshiNode @ 3 : 3
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in statusAnimCmd_GuardContYoshi__11ftYoshiNode @ 15 : 2
+
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0x100: MAIN @ 3 : 1
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0x101: MAIN @ 1 : 3
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0x102: MAIN @ 1 : 3
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0x107: MAIN @ 1 : 3
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0x108: MAIN @ 1 : 3
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0x109: MAIN @ 3 : 1
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0x10A: MAIN @ 1 : 3
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0x10B: MAIN @ 1 : 3
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0x110: MAIN @ 1 : 1
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0x111: MAIN @ 1 : 3
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0x112: MAIN @ 1 : 3
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0x113: MAIN @ 1 : 3
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0x118: MAIN @ 1 : 1
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0x119: MAIN @ 1 : 3
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0x11A: MAIN @ 1 : 3
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0x11B: MAIN @ 1 : 3
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0x11C: MAIN @ 1 : 1
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0x11D: MAIN @ 1 : 1
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0x11E: MAIN @ 1 : 3
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0x11F: MAIN @ 1 : 3
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0x120: MAIN @ 1 : 3
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0xFE: MAIN @ 1 : 1
+IC-Int[0x405] ("Variable_Float_Throw_Item_Speed") in Subaction 0xFF: MAIN @ 1 : 3
+
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0x100: MAIN @ 3 : 0
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0x101: MAIN @ 1 : 2
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0x102: MAIN @ 1 : 2
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0x107: MAIN @ 1 : 2
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0x108: MAIN @ 1 : 2
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0x109: MAIN @ 3 : 0
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0x10A: MAIN @ 1 : 2
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0x10B: MAIN @ 1 : 2
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0x110: MAIN @ 1 : 0
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0x111: MAIN @ 1 : 2
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0x112: MAIN @ 1 : 2
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0x113: MAIN @ 1 : 2
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0x118: MAIN @ 1 : 0
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0x119: MAIN @ 1 : 2
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0x11A: MAIN @ 1 : 2
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0x11B: MAIN @ 1 : 2
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0x11C: MAIN @ 1 : 0
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0x11D: MAIN @ 1 : 0
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0x11E: MAIN @ 1 : 2
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0x11F: MAIN @ 1 : 2
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0x120: MAIN @ 1 : 2
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0xFE: MAIN @ 1 : 0
+IC-Int[0x406] ("Variable_Float_Throw_Item_Angle") in Subaction 0xFF: MAIN @ 1 : 2
+
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0x100: MAIN @ 3 : 2
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0x101: MAIN @ 1 : 4
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0x102: MAIN @ 1 : 4
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0x107: MAIN @ 1 : 4
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0x108: MAIN @ 1 : 4
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0x109: MAIN @ 3 : 2
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0x10A: MAIN @ 1 : 4
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0x10B: MAIN @ 1 : 4
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0x110: MAIN @ 1 : 2
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0x111: MAIN @ 1 : 4
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0x112: MAIN @ 1 : 4
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0x113: MAIN @ 1 : 4
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0x118: MAIN @ 1 : 2
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0x119: MAIN @ 1 : 4
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0x11A: MAIN @ 1 : 4
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0x11B: MAIN @ 1 : 4
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0x11C: MAIN @ 1 : 2
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0x11D: MAIN @ 1 : 2
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0x11E: MAIN @ 1 : 4
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0x11F: MAIN @ 1 : 4
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0x120: MAIN @ 1 : 4
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0xFE: MAIN @ 1 : 2
+IC-Int[0x407] ("Variable_Float_Throw_Item_Power") in Subaction 0xFF: MAIN @ 1 : 4
+
+IC-Int[0xC4C] ("Common_Param_Float_Escape_Stick_Y") in statusAnimCmd_GuardContYoshi__11ftYoshiNode @ 3 : 5
+
+IC-Int[0xC4D] ("Common_Param_Float_Escape_Fb_Stick_X") in statusAnimCmd_GuardContYoshi__11ftYoshiNode @ 6 : 5
+IC-Int[0xC4D] ("Common_Param_Float_Escape_Fb_Stick_X") in statusAnimCmd_GuardContYoshi__11ftYoshiNode @ 9 : 5
+
+IC-Int[0xC73] ("Common_Param_Float_Pass_Stick_Y") in statusAnimCmd_GuardContYoshi__11ftYoshiNode @ 15 : 4
+
+IC-Int[0xFC3] in Action 0x11A (): ENTRY @ 4 : 1
+IC-Int[0xFC3] in Action 0x11A (): ENTRY @ 8 : 0
+
+IC-Int[0xFE1] in Action 0x120 (): ENTRY @ 5 : 4
+
+IC-Int[0xFE2] in hsr_18928 @ 25 : 0
+
+IC-Int[0xFE3] in Action 0x122 (): ENTRY @ 17 : 0
+
+IC-Int[0xFE8] in Action 0x122 (): ENTRY @ 15 : 0
+
+IC-Int[0xFEC] in hsr_18CC8 @ 3 : 0
+
+IC-Int[0xFEF] in hsr_18310 @ 1 : 3
+IC-Int[0xFEF] in hsr_18470 @ 3 : 3
+IC-Int[0xFEF] in hsr_18928 @ 1 : 3
+
+IC-Int[0x5209] in statusAnimCmd_GuardContYoshi__11ftYoshiNode @ 7 : 1
+IC-Int[0x5209] in statusAnimCmd_GuardContYoshi__11ftYoshiNode @ 10 : 1
+
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in statusAnimCmd_GuardContYoshi__11ftYoshiNode @ 4 : 1
+IC-Int[0x520A] ("Variable_Int_Controller_Flick_Y") in statusAnimCmd_GuardContYoshi__11ftYoshiNode @ 16 : 1
+
+IC-Int[0x59DB] ("Customize_Param_Int_Jump_Count_Max") in Action 0x116 (): ENTRY @ 4 : 0
+
+IC-Int[0x59FD] ("Common_Param_Int_Escape_Flick_Y") in statusAnimCmd_GuardContYoshi__11ftYoshiNode @ 4 : 3
+
+IC-Int[0x59FE] ("Common_Param_Int_Escape_Fb_Flick_X") in statusAnimCmd_GuardContYoshi__11ftYoshiNode @ 7 : 3
+IC-Int[0x59FE] ("Common_Param_Int_Escape_Fb_Flick_X") in statusAnimCmd_GuardContYoshi__11ftYoshiNode @ 10 : 3
+
+IC-Int[0x5A06] ("Common_Param_Int_Pass_Flick_Y") in statusAnimCmd_GuardContYoshi__11ftYoshiNode @ 16 : 3
+
+LA-Int[0x01] in Action 0x116 (): ENTRY @ 4 : 1
+
+LA-Float[0x00] in Action 0x11A (): ENTRY @ 8 : 1
+
+RA-Int[0x00] in Action 0x114 (): ENTRY @ 2 : 1
+RA-Int[0x00] in Action 0x117 (): ENTRY @ 0 : 1
+RA-Int[0x00] in Action 0x118 (): ENTRY @ 0 : 1
+RA-Int[0x00] in Action 0x122 (): ENTRY @ 6 : 1
+RA-Int[0x00] in Action 0x122 (): ENTRY @ 8 : 1
+RA-Int[0x00] in Action 0x122 (): ENTRY @ 14 : 1
+RA-Int[0x00] in hsr_17C98 @ 1 : 0
+RA-Int[0x00] in hsr_17F28 @ 0 : 1
+RA-Int[0x00] in hsr_17F28 @ 3 : 0
+RA-Int[0x00] in hsr_18928 @ 7 : 1
+RA-Int[0x00] in hsr_18928 @ 10 : 1
+RA-Int[0x00] in hsr_18928 @ 13 : 1
+RA-Int[0x00] in hsr_18928 @ 18 : 1
+RA-Int[0x00] in hsr_19BC0 @ 9 : 0
+RA-Int[0x00] in hsr_19BC0 @ 11 : 0
+RA-Int[0x00] in statusAnimCmd_SpecialN__11ftYoshiNode @ 0 : 1
+
+RA-Int[0x01] in Action 0x117 (): ENTRY @ 1 : 1
+RA-Int[0x01] in Action 0x118 (): ENTRY @ 1 : 1
+RA-Int[0x01] in hsr_19BC0 @ 19 : 0
+RA-Int[0x01] in hsr_19BC0 @ 21 : 0
+RA-Int[0x01] in statusAnimCmd_SpecialN__11ftYoshiNode @ 1 : 1
+
+RA-Int[0x02] in Subaction 0x72: MAIN @ 3 : 2
+RA-Int[0x02] in Subaction 0x73: MAIN @ 3 : 2
+RA-Int[0x02] in Subaction 0x74: MAIN @ 3 : 2
+RA-Int[0x02] in Subaction 0x75: MAIN @ 3 : 2
+
+RA-Int[0x03] in Subaction 0x72: MAIN @ 3 : 3
+RA-Int[0x03] in Subaction 0x73: MAIN @ 3 : 3
+RA-Int[0x03] in Subaction 0x74: MAIN @ 3 : 3
+RA-Int[0x03] in Subaction 0x75: MAIN @ 3 : 3
+
+RA-Int[0x04] in Subaction 0x72: MAIN @ 3 : 4
+RA-Int[0x04] in Subaction 0x73: MAIN @ 3 : 4
+RA-Int[0x04] in Subaction 0x74: MAIN @ 3 : 4
+RA-Int[0x04] in Subaction 0x75: MAIN @ 3 : 4
+
+RA-Int[0x0E] in Subaction 0x165: MAIN @ 1 : 0
+RA-Int[0x0E] in Subaction 0x169: MAIN @ 1 : 0
+RA-Int[0x0E] in Subaction 0x16D: MAIN @ 1 : 0
+
+RA-Float[0x04] in Action 0x120 (): ENTRY @ 10 : 2
+RA-Float[0x04] in Action 0x121 (): ENTRY @ 5 : 2
+RA-Float[0x04] in Action 0x122 (): ENTRY @ 5 : 1
+RA-Float[0x04] in Action 0x123 (): ENTRY @ 5 : 1
+RA-Float[0x04] in hsr_18310 @ 0 : 1
+RA-Float[0x04] in hsr_18310 @ 1 : 1
+RA-Float[0x04] in hsr_18470 @ 0 : 1
+RA-Float[0x04] in hsr_18470 @ 3 : 1
+RA-Float[0x04] in hsr_18928 @ 0 : 1
+RA-Float[0x04] in hsr_18928 @ 1 : 1
+
+RA-Float[0x05] in Action 0x122 (): ENTRY @ 15 : 1
+RA-Float[0x05] in hsr_18928 @ 14 : 1
+RA-Float[0x05] in hsr_18928 @ 16 : 1
+
+RA-Float[0x06] in Action 0x120 (): ENTRY @ 5 : 2
+RA-Float[0x06] in Action 0x122 (): ENTRY @ 21 : 1
+RA-Float[0x06] in Action 0x123 (): ENTRY @ 10 : 1
+RA-Float[0x06] in hsr_18470 @ 2 : 1
+
+RA-Float[0x07] in Action 0x122 (): ENTRY @ 16 : 1
+RA-Float[0x07] in hsr_18928 @ 20 : 1
+RA-Float[0x07] in hsr_18928 @ 21 : 1
+RA-Float[0x07] in hsr_18928 @ 25 : 1
+
+RA-Float[0x08] in Action 0x122 (): ENTRY @ 17 : 1
+RA-Float[0x08] in Subaction 0x174: MAIN @ 1 : 0
+RA-Float[0x08] in Subaction 0x175: MAIN @ 1 : 0
+RA-Float[0x08] in Subaction 0x177: MAIN @ 1 : 0
+
+RA-Float[0x09] in Action 0x122 (): ENTRY @ 18 : 1
+
+RA-Float[0x0A] in Action 0x120 (): ENTRY @ 7 : 1
+RA-Float[0x0A] in Action 0x120 (): ENTRY @ 9 : 1
+RA-Float[0x0A] in Action 0x122 (): ENTRY @ 10 : 1
+RA-Float[0x0A] in Action 0x122 (): ENTRY @ 12 : 1
+RA-Float[0x0A] in hsr_18310 @ 6 : 1
+RA-Float[0x0A] in hsr_18470 @ 1 : 1
+RA-Float[0x0A] in hsr_18928 @ 6 : 1
+RA-Float[0x0A] in hsr_18CC8 @ 3 : 1
+
+RA-Bool[0x10] in Action 0x113 (): ENTRY @ 3 : 0
+RA-Bool[0x10] in Action 0x113 (): ENTRY @ 7 : 1
+RA-Bool[0x10] in Action 0x113 (): ENTRY @ 11 : 0
+RA-Bool[0x10] in Action 0x113 (): ENTRY @ 16 : 1
+RA-Bool[0x10] in Action 0x113 (): ENTRY @ 20 : 0
+RA-Bool[0x10] in Action 0x114 (): ENTRY @ 0 : 0
+RA-Bool[0x10] in Action 0x118 (): ENTRY @ 2 : 0
+RA-Bool[0x10] in Action 0x11D (): ENTRY @ 5 : 1
+RA-Bool[0x10] in Action 0x11E (): ENTRY @ 5 : 1
+RA-Bool[0x10] in Action 0x120 (): ENTRY @ 11 : 1
+RA-Bool[0x10] in Action 0x120 (): ENTRY @ 12 : 0
+RA-Bool[0x10] in Action 0x122 (): ENTRY @ 19 : 0
+RA-Bool[0x10] in Action 0x123 (): ENTRY @ 11 : 0
+RA-Bool[0x10] in hsr_17C98 @ 3 : 1
+RA-Bool[0x10] in hsr_17C98 @ 5 : 0
+RA-Bool[0x10] in hsr_17F98 @ 4 : 1
+RA-Bool[0x10] in hsr_19BC0 @ 8 : 1
+RA-Bool[0x10] in hsr_19BC0 @ 12 : 0
+RA-Bool[0x10] in hsr_19BC0 @ 18 : 1
+RA-Bool[0x10] in hsr_19BC0 @ 22 : 0
+RA-Bool[0x10] in statusAnimCmd_SpecialN__11ftYoshiNode @ 2 : 0
+RA-Bool[0x10] in Subaction 0x10: MAIN @ 1 : 0
+RA-Bool[0x10] in Subaction 0x12: MAIN @ 1 : 0
+RA-Bool[0x10] in Subaction 0x1DA: MAIN @ 1 : 0
+RA-Bool[0x10] in Subaction 0x1DC: MAIN @ 5 : 0
+RA-Bool[0x10] in Subaction 0x1DD: MAIN @ 1 : 0
+RA-Bool[0x10] in Subaction 0x48: MAIN @ 9 : 0
+RA-Bool[0x10] in Subaction 0x6C: MAIN @ 10 : 0
+RA-Bool[0x10] in Subaction 0x6D: MAIN @ 7 : 0
+RA-Bool[0x10] in Subaction 0x6E: MAIN @ 10 : 0
+RA-Bool[0x10] in Subaction 0x70: MAIN @ 5 : 0
+RA-Bool[0x10] in Subaction 0xD3: MAIN @ 1 : 0
+RA-Bool[0x10] in Subaction 0xFD: MAIN @ 1 : 0
+
+RA-Bool[0x11] in Action 0x114 (): ENTRY @ 1 : 0
+RA-Bool[0x11] in Action 0x117 (): ENTRY @ 2 : 2
+RA-Bool[0x11] in Action 0x11D (): ENTRY @ 6 : 0
+RA-Bool[0x11] in hsr_17C98 @ 8 : 1
+RA-Bool[0x11] in hsr_17C98 @ 10 : 0
+RA-Bool[0x11] in hsr_17F98 @ 1 : 0
+RA-Bool[0x11] in hsr_18310 @ 2 : 1
+RA-Bool[0x11] in hsr_18310 @ 3 : 0
+RA-Bool[0x11] in hsr_18470 @ 4 : 1
+RA-Bool[0x11] in hsr_18470 @ 5 : 0
+RA-Bool[0x11] in hsr_18928 @ 2 : 1
+RA-Bool[0x11] in hsr_18928 @ 3 : 0
+RA-Bool[0x11] in Subaction 0x1CF: MAIN @ 1 : 0
+RA-Bool[0x11] in Subaction 0x1D4: MAIN @ 2 : 0
+RA-Bool[0x11] in Subaction 0x1D7: MAIN @ 2 : 0
+RA-Bool[0x11] in Subaction 0x1DA: MAIN @ 3 : 0
+RA-Bool[0x11] in Subaction 0x48: MAIN @ 11 : 0
+
+RA-Bool[0x12] in hsr_18CC8 @ 1 : 1
+RA-Bool[0x12] in hsr_18CC8 @ 4 : 0
+RA-Bool[0x12] in Subaction 0x10: MAIN @ 2 : 0
+RA-Bool[0x12] in Subaction 0x1D0: MAIN @ 4 : 0
+RA-Bool[0x12] in Subaction 0x1D6: MAIN @ 2 : 0
+RA-Bool[0x12] in Subaction 0x1D9: MAIN @ 2 : 0
+RA-Bool[0x12] in Subaction 0x1E2: MAIN @ 2 : 0
+
+RA-Bool[0x13] in Subaction 0x161: MAIN @ 2 : 0
+RA-Bool[0x13] in Subaction 0x1D0: MAIN @ 6 : 0
+
+RA-Bool[0x1E] in Subaction 0x62: MAIN @ 1 : 0
+RA-Bool[0x1E] in Subaction 0x62: MAIN @ 16 : 0
+RA-Bool[0x1E] in Subaction 0x63: MAIN @ 1 : 0
+RA-Bool[0x1E] in Subaction 0x63: MAIN @ 8 : 0
+RA-Bool[0x1E] in Subaction 0x64: MAIN @ 1 : 0
+RA-Bool[0x1E] in Subaction 0x64: MAIN @ 26 : 0
+RA-Bool[0x1E] in Subaction 0x65: MAIN @ 1 : 0
+RA-Bool[0x1E] in Subaction 0x65: MAIN @ 7 : 0
+RA-Bool[0x1E] in Subaction 0x66: MAIN @ 1 : 0
+RA-Bool[0x1E] in Subaction 0x66: MAIN @ 20 : 0

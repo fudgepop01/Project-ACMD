@@ -1,0 +1,7 @@
+// Status_Captain_Final_Start
+Action 0xFC: ENTRY {
+  SetGimmickEffectFlag(false)
+}
+
+Action 0xFC : EXIT {
+}

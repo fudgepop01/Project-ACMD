@@ -1,0 +1,43 @@
+[ScreenIn2] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x6: MAIN {
+  AsynchronousTimer(60.0)
+  (undef: shadow) 19_00_00_00()
+}
+
+Subaction 0x6: MAIN EXIT {
+}
+
+Subaction 0x6: MAIN INIT {
+  Module1901()
+  BodyCollision(2)
+}
+
+Subaction 0x6: GFX {
+}
+
+Subaction 0x6: GFX EXIT {
+}
+
+Subaction 0x6: GFX INIT {
+}
+
+Subaction 0x6: SFX {
+  SoundEffect(9505)
+}
+
+Subaction 0x6: SFX EXIT {
+}
+
+Subaction 0x6: SFX INIT {
+}
+

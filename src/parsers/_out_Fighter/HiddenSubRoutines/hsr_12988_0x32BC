@@ -1,0 +1,77 @@
+[hsr_32BC]
+hidden_subroutine_0x32BC {
+  ChangeActionStatus:01(10118, 160, R(Holding Item of Type(4)))
+
+  AdditionalRequirement_UNDOC3ARGS(R(F-Smash Shortcut(Common_Param_Float_Dash_Stick_X)), Common_Param_Int_Dash_Flick_X)
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus:01(10125, 164, R(Holding Item of Type(2)))
+
+  AdditionalRequirement_UNDOC3ARGS(R(F-Smash Shortcut(Common_Param_Float_Dash_Stick_X)), Common_Param_Int_Dash_Flick_X)
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus_UNDOC5ARGS:01(10088, 42, R(F-Smash Shortcut(Common_Param_Float_Dash_Stick_X)), Common_Param_Int_Dash_Flick_X)
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus:01(10091, 48, R(Button Press(Attack)))
+  AdditionalRequirement(R(Compare(Variable_Float_Controller_Stick_Y >= Common_Param_Float_Attack_Hi4_Stick_Y)))
+  AdditionalRequirement(R(Compare(Variable_Int_Controller_Flick_Y < Common_Param_Float_Attack_Hi4_Flick_Y)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus:01(10094, 45, R(Button Press(Attack)))
+  AdditionalRequirement(R(Compare(Variable_Float_Controller_Stick_Y <= Common_Param_Float_Attack_Lw4_Stick_Y)))
+  AdditionalRequirement(R(Compare(Variable_Int_Controller_Flick_Y < Common_Param_Float_Attack_Lw4_Flick_Y)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus:01(10085, 40, R(Button Press(Attack)))
+  AdditionalRequirement(R(Compare(Variable_Float_Controller_Stick_Y >= Common_Param_Float_Attack_Hi3_Stick_Y)))
+  AdditionalRequirement(R(Stick Direction Not Pressed()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus:01(10109, 150, R(Light Item is in Grabbing Range()))
+  AdditionalRequirement(R(Can Pick Up Another Item()))
+  AdditionalRequirement(R(Button Press(Attack)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus:01(10110, 151, R(Heavy Item is in Grabbing Range()))
+  AdditionalRequirement(R(NOT Holding Item()))
+  AdditionalRequirement(R(Button Press(Attack)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus:01(10120, 159, R(Holding Item of Type(4)))
+  AdditionalRequirement(R(Button Press(Attack)))
+  AdditionalRequirement(R(Compare(Variable_Float_Controller_Stick_X_Lr >= Common_Param_Float_Attack_S3_Stick_X)))
+  AdditionalRequirement(R(Stick Direction Pressed()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus:01(10086, 41, R(Button Press(Attack)))
+  AdditionalRequirement(R(Compare(Variable_Float_Controller_Stick_Y <= Common_Param_Float_Attack_Lw3_Stick_Y)))
+  AdditionalRequirement(R(Stick Direction Not Pressed()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus:01(10124, 164, R(Holding Item of Type(2)))
+  AdditionalRequirement(R(Button Press(Attack)))
+  AdditionalRequirement(R(Compare(Variable_Float_Controller_Stick_X_Lr >= Common_Param_Float_Attack_S3_Stick_X)))
+  AdditionalRequirement(R(Stick Direction Pressed()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus:01(10084, 39, R(Button Press(Attack)))
+  AdditionalRequirement(R(Compare(Variable_Float_Controller_Stick_X_Lr >= Common_Param_Float_Attack_S3_Stick_X)))
+  AdditionalRequirement(R(Stick Direction Pressed()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus:01(10121, 158, R(Holding Item of Type(4)))
+  AdditionalRequirement(R(Button Press(Attack)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus:01(10123, 164, R(Holding Item of Type(2)))
+  AdditionalRequirement(R(Button Press(Attack)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus:01(10082, 37, R(Button Press(Attack)))
+  AdditionalRequirement(R(Compare(Info_Param_Int_Attack_Combo_Type == 3.0)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus:01(10081, 36, R(Button Press(Attack)))
+  AdditionalRequirement(R(On Ground()))
+}

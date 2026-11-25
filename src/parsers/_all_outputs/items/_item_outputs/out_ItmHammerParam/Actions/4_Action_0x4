@@ -1,0 +1,14 @@
+// Status_Run
+Action 0x4 {
+  SubRoutine(hidden_subroutine_0xA8)
+  DisableActionStatusId(4)
+  ChangeAction(3, R(In Air()))
+  if (R(Bit is Set(LA-Bool[0x00]))) {
+    (undef: Sp_base) 65_1F_01_00(2)
+    Screenshake(0)
+    SynchronousTimer(3.0)
+    ChangeAction(6, R(Button Tap?()))
+  }
+  ChangeSubAction(6)
+}
+

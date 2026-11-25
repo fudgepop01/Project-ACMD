@@ -1,0 +1,14 @@
+[hsr_17C98]
+hidden_subroutine_0x17C98 {
+  if (R(Button Pressed(Special))) {
+    BasicVariableIncrement(RA-Int[0x00])
+  }
+  if (R(Bit is Set(RA-Bool[0x10])) && R(NOT Article Exists())) {
+    BitVariableClear(RA-Bool[0x10])
+    GenerateArticle(1)
+  }
+  if (R(Bit is Set(RA-Bool[0x11])) && R(Article Exists())) {
+    BitVariableClear(RA-Bool[0x11])
+    ArticleEvent02(1)
+  }
+}

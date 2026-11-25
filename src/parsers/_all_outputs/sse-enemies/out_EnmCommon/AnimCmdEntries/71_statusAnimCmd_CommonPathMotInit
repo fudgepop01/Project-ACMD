@@ -1,0 +1,10 @@
+// @ 0x3A88
+CommonPathMotInit {
+  if [IF_REQ_UNKNOWN_3ARG] (R(Tap Jump On & C-Stick not Held()), RA-Int[0x05], RA-Int[0x04]) {
+    (undef: Sp_Kinetic) 66_02_04_00(RA-Int[0x05], RA-Int[0x03], IC-Int[0xA028], false)
+  } else {
+    (undef: Sp_Kinetic) 66_02_04_00(RA-Int[0x05], RA-Int[0x03], IC-Int[0xA028], true)
+    SubAction09(RA-Int[0x01])
+  }
+  Return()
+}

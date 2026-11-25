@@ -1,0 +1,16 @@
+[hsr_1A5A8]
+hidden_subroutine_0x1A5A8 {
+  if (R(On Ground())) {
+    if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+      ChangeSubAction(510, false)
+    } else {
+      ChangeSubAction(510, true)
+    }
+  } else {
+    if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+      ChangeSubAction(518, false)
+    } else {
+      ChangeSubAction(518, true)
+    }
+  }
+}

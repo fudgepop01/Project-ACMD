@@ -1,0 +1,6 @@
+[hsr_1EBE0]
+hidden_subroutine_0x1EBE0 {
+  if (R(NOT Compare(Variable_Int_Status_Kind == 128.0))) {
+    SubRoutine(Subaction_0x1DA : MAIN)
+  }
+}

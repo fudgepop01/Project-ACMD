@@ -1,0 +1,21 @@
+Action 0x11A: ENTRY {
+  BasicVariableSet(IC-Int[0x5DC2], RA-Int[0x02])
+  BasicVariableSet(470, RA-Int[0x00])
+  BasicVariableSet(471, RA-Int[0x01])
+  if (R(On Ground())) {
+    SetAerialOrOnstage(1)
+    SetAirGround(6)
+    ChangeSubAction(RA-Int[0x00])
+    ChangeAction(14, R(In Air()))
+    ChangeActionStatus(10000, 0, R(Animation End()))
+  } else {
+    SetAerialOrOnstage(5)
+    SetAirGround(0)
+    ChangeSubAction(RA-Int[0x01])
+    ChangeAction(25, R(On Ground()))
+    ChangeActionStatus(10002, 16, R(Animation End()))
+  }
+}
+
+Action 0x11A : EXIT {
+}

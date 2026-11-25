@@ -1,0 +1,16 @@
+Action 0x1E: MAIN {
+}
+
+Action 0x1E: EXIT {
+  TeleportationStageBased(Variable_Float_Posture_Pos_X, IC-Int[0xFA4], Variable_Float_Posture_Pos_Z)
+  CharacterSpecific01()
+}
+
+Action 0x1E: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(16)
+  (undef: Sp_AI) 6A_01_01_00(3)
+  SubAction09(2)
+  (undef: Sp_Kinetic) 66_00_02_00(4, 24)
+}
+

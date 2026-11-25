@@ -1,0 +1,41 @@
+Action 0x9: MAIN {
+}
+
+Action 0x9: EXIT {
+  BasicVariableSet(1, LA-Int[0x05])
+  SubRoutine(hidden_subroutine_0x964)
+  SubRoutine(hidden_subroutine_0xFE4)
+}
+
+Action 0x9: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(12)
+  (undef: Sp_AI) 6A_00_01_00(21)
+  if (R(Compare(Variable_Int_Motion_Partial_1_Kind != 13.0))) {
+    SetBoneMotionOverride(0, 13, 10)
+  }
+  (undef: Sp_base) 65_07_02_00(IC-Int[0xABEA], LA-Float[0x02])
+  BasicVariableSet(2, LA-Int[0x06])
+  if (R(Successfully tethered ledge())) {
+    if [IF_REQ_UNKNOWN_3ARG] (R(Can Pick Up Another Item()), Variable_Int_Controller_Flick_No_Reset_Y, 1) {
+      LeftDirection()
+      DecideDirection()
+      BasicVariableSet(2, LA-Int[0x05])
+    } else {
+      RightDirection()
+      DecideDirection()
+      BasicVariableSet(3, LA-Int[0x05])
+    }
+  } else {
+    LeftDirection()
+    DecideDirection()
+    BasicVariableSet(2, LA-Int[0x05])
+  }
+  SubRoutine(hidden_subroutine_0x964)
+  SubRoutine(hidden_subroutine_0xCAC)
+  (undef: Sp_base) 65_07_02_00(IC-Int[0xABEB], LA-Float[0x07])
+  (undef: Sp_base) 65_04_01_00(0)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 15)
+  SubRoutine(hidden_subroutine_0xF7C)
+}
+

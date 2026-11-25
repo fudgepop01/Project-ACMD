@@ -1,0 +1,6 @@
+// @ 0x218F0
+AIRChkStopCeil {
+
+  ChangeActionStatus(10025, 102, R(Touching a Floor, Wall, or Ceiling(1)))
+  AdditionalRequirement(R(In Air()))
+}

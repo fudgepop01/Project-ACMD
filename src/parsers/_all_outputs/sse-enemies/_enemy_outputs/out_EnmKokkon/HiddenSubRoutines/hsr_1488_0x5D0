@@ -1,0 +1,7 @@
+[hsr_5D0]
+hidden_subroutine_0x5D0 {
+  GraphicEffectAttached(10813444, 20, -3.5, 4.280983333333333, 4.032, -10.5, -62.7, 0.0, 1.1, true)
+  GraphicEffectAttached(10813445, 20, -2.603, 4.272, 4.032, 0.0, 0.0, 0.0, 1.1, true)
+  GraphicEffectAttached(10813444, 20, 3.5, 4.280983333333333, 4.032, -10.5, 62.7, 0.0, 1.1, true)
+  GraphicEffectAttached(10813445, 20, 2.603, 4.272, 4.032, 0.0, 0.0, 0.0, 1.1, true)
+}

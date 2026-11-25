@@ -1,0 +1,22 @@
+Action 0x2: MAIN {
+}
+
+Action 0x2: EXIT {
+}
+
+Action 0x2: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_03_00_00()
+  (undef: Sp_AI) 6A_00_01_00(18)
+  (undef: Sp_AI) 6A_00_01_00(9)
+  BitVariableClear(LA-Bool[0x0C])
+  (undef: motion) 04_10_02_00(0, 23)
+  if (R(Compare(Variable_Int_Motion_Kind == -1.0))) {
+    SubAction09(0)
+  } else {
+    if (R(Compare(Variable_Int_Motion_Partial_1_Kind != 13.0))) {
+      SetBoneMotionOverride(0, 13, 10)
+    }
+  }
+}
+

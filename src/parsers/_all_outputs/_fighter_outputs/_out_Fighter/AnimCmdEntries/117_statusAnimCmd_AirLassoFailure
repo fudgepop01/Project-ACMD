@@ -1,0 +1,10 @@
+// @ 0x230D0
+AirLassoFailure {
+  ChangeAction(22, R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  SetAnimationFrame(RA-Float[0x04])
+  ChangeSubAction(RA-Int[0x02], true)
+}

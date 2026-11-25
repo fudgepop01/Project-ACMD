@@ -1,0 +1,20 @@
+Action 0x31: MAIN {
+}
+
+Action 0x31: EXIT {
+}
+
+Action 0x31: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(17)
+  if (R(Compare(Variable_Int_Controller_Flick_X_Dir == 31.0))) {
+    SubAction09(71)
+  } else {
+    SubAction09(32)
+  }
+  (undef: Sp_Kinetic) 66_00_02_00(5, 47)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 46)
+  (undef: Sp_Kinetic) 66_07_01_00(3)
+  SubRoutine(hidden_subroutine_0x1270)
+}
+

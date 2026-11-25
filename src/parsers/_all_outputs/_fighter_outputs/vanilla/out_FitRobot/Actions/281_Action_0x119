@@ -1,0 +1,10 @@
+Action 0x119: ENTRY {
+  ResetButtonPress()
+  ChangeActionStatus(10026, 22, R(On Ground()))
+  AllowSpecificInterrupt(AIR_LANDING)
+  ChangeAction(282, R(Button Press(Attack)))
+  ChangeSubAction(32)
+}
+
+Action 0x119 : EXIT {
+}

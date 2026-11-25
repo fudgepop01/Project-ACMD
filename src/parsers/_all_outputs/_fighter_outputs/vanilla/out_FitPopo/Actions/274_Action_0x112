@@ -1,0 +1,20 @@
+Action 0x112: ENTRY {
+  if (R(On Ground())) {
+    SetAirGround(6)
+    SetAerialOrOnstage(1)
+    ChangeAction(14, R(In Air()))
+    ChangeAction(0, R(Animation End()))
+    ChangeSubAction(462)
+  } else {
+    SetAirGround(100)
+    Module0900(2)
+    SetAerialOrOnstage(5)
+    ChangeAction(25, R(On Ground()))
+    ChangeAction(14, R(Animation End()))
+    ChangeSubAction(463)
+  }
+}
+
+Action 0x112 : EXIT {
+  SetRemoteArticleAction(1, 2)
+}

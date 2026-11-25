@@ -1,0 +1,48 @@
+Action 0x11E: ENTRY {
+
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 279.0)) || R(Compare(Variable_Int_Status_Prev_Kind == 280.0))) {
+    ChangeAction(0, R(Animation End()))
+    AdditionalRequirement(R(On Ground()))
+
+    ChangeAction(14, R(Animation End()))
+    AdditionalRequirement(R(In Air()))
+
+    BitVariableClear(RA-Bool[0x10])
+    SetLoop(-1) {
+      if (R(On Ground())) {
+        SetAerialOrOnstage(1)
+        SetAirGround(6)
+        if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+          ChangeSubAction(27, false)
+        } else {
+          ChangeSubAction(27, true)
+        }
+        SetRequirement(R(In Air()))
+      } else {
+        SetAerialOrOnstage(5)
+        SetAirGround(0)
+        if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+          ChangeSubAction(29, false)
+        } else {
+          ChangeSubAction(29, true)
+        }
+        SetRequirement(R(On Ground()))
+      }
+      BitVariableSet(RA-Bool[0x10])
+      LoadRest()
+    }
+  } else {
+    BasicVariableSet(IC-Int[0x5DC4], RA-Int[0x00])
+    ChangeAction(287, R(Compare(RA-Int[0x00] <= 0.0)))
+    ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x19AD8)
+    SubRoutine(hidden_subroutine_0x19110)
+    SetAirGround(10)
+    ChangeSubAction(481)
+  }
+}
+
+Action 0x11E : EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 287.0))) {
+    Visibility(true)
+  }
+}

@@ -1,0 +1,42 @@
+[SpecialNHold] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D0: MAIN {
+}
+
+Subaction 0x1D0: GFX {
+  SetLoop(-1) {
+    GraphicEffectStepping(10, 0, 0.0, 0.0, -8.0, 0.0, 0.0, 0.0, 0.6, 8.0, 0.0, 10.0, 0.0, 0.0, 0.0, true)
+    FlashOverlayEffect(0, 0, 255, 120)
+    SynchronousTimer(1.0)
+    FlashOverlayEffect(0, 128, 255, 80)
+    ChangeFlashOverlayColor(8, 255, 255, 255, 0)
+    SynchronousTimer(8.0)
+    TerminateFlashEffect()
+    SynchronousTimer(1.0)
+  }
+}
+
+Subaction 0x1D0: SOUND {
+  SoundEffect(5573)
+  SynchronousTimer(22.0)
+  SoundEffect(5573)
+  SynchronousTimer(22.0)
+  SoundEffect(5573)
+  SynchronousTimer(15.0)
+  VictorySoundEffect(5576)
+}
+
+Subaction 0x1D0: OTHER {
+  AsynchronousTimer(3.0)
+  RumbleLoop(37, 0)
+}
+

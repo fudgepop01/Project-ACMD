@@ -1,0 +1,16 @@
+// Status_Fall
+Action 0xE {
+  (undef: Sp_Kinetic) 66_02_02_00(LA-Float[0x00], 0.0)
+  ChangeAction(3, R(In Air()))
+  ReverseDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  SynchronousTimer(5.5)
+  if (R(Compare(LA-Int[0x00] == 0.0))) {
+    ChangeAction(15, R(Button Tap?()))
+  } else {
+    BasicVariableSubtract(1, LA-Int[0x00])
+    ChangeAction(4, R(Button Tap?()))
+  }
+}
+

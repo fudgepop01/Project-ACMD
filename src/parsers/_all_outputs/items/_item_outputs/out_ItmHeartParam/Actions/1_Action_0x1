@@ -1,0 +1,9 @@
+// Status_Walk
+Action 0x1 {
+  (undef: Sp_base) 65_04_01_00(1400)
+  ChangeSubAction(0)
+  (undef: Sp_Kinetic) 66_01_03_00(0.0, 2.5, 0.0)
+  SubRoutine(hidden_subroutine_0xA0)
+  DisableActionStatusId(1)
+}
+

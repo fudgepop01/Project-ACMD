@@ -1,0 +1,20 @@
+Action 0xA: MAIN {
+  SetLoop(-1) {
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0xA: EXIT {
+}
+
+Action 0xA: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(30)
+  SubAction09(9)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 20)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 16)
+  if (R(0x11())) {
+    (undef: territory) 15_00_00_00()
+  }
+}
+

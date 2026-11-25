@@ -1,0 +1,7 @@
+[hsr_1B1B4]
+hidden_subroutine_0x1B1B4 {
+  if (R(Button Not Pressed(Special))) {
+    BitVariableSet(RA-Bool[0x10])
+    TerminateConcurrentInfiniteLoop(9)
+  }
+}

@@ -1,0 +1,29 @@
+// Status_Fly
+Action 0xD {
+  SubRoutine(hidden_subroutine_0x68)
+  BasicVariableSet(0, LA-Int[0x00])
+  ChangeAction(6, R(Compare(LA-Int[0x0B] == 0.0)))
+  ChangeActionStatus(3, 3, R(In Air()))
+  SetAerialOrOnstage(3)
+  if (R(Compare(Variable_Int_Motion_Kind == 5.0))) {
+    ChangeSubAction(6)
+    (undef: Sp_Kinetic) 66_02_02_00(0.08, 0.0)
+  } else {
+    ChangeSubAction(7)
+    (undef: Sp_Kinetic) 66_02_02_00(0.08, 0.0)
+  }
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ReverseDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  if (R(Is within footstool range())) {
+    ChangeAction(14, R(On Ground()))
+    AdditionalRequirement_UNDOC5ARGS(R(Is falling+hit down()), 0.0, -15.0, 30.0, 20.0)
+  }
+  SubRoutine(hidden_subroutine_0x1B0)
+  DisableActionStatusId(13)
+  SubRoutine(hidden_subroutine_0x2B8)
+  DisableActionStatusId(13)
+}
+

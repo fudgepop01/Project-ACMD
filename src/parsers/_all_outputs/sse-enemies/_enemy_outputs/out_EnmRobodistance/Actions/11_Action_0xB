@@ -1,0 +1,10 @@
+Action 0xB: MAIN {
+}
+
+Action 0xB: EXIT {
+}
+
+Action 0xB: INIT {
+  SubRoutine(hidden_subroutine_0x5C0)
+}
+

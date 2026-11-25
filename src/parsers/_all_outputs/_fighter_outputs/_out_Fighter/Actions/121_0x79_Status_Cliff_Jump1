@@ -1,0 +1,16 @@
+// Status_Cliff_Jump1
+Action 0x79: ENTRY {
+  ClearBuffer()
+  ResetButtonPress()
+  ResetFlickY()
+  ChangeAction(14, R(In Air()))
+  ChangeActionStatus(10074, 122, R(Animation End()))
+  if (R(Compare(Variable_Float_Damage < IC-Int[0xC79]))) {
+    ChangeSubAction(218)
+  } else {
+    ChangeSubAction(223)
+  }
+}
+
+Action 0x79 : EXIT {
+}

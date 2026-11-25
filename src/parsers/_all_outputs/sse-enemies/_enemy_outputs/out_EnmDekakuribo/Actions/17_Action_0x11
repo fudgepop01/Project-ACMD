@@ -1,0 +1,23 @@
+Action 0x11: MAIN {
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0x6C0)
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x11: EXIT {
+  SubRoutine(hidden_subroutine_0x848)
+}
+
+Action 0x11: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(33)
+  if (R(Facing Left())) {
+    SubAction09(18)
+  } else {
+    SubAction09(19)
+  }
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 23)
+  SubRoutine(hidden_subroutine_0x7F8)
+}
+

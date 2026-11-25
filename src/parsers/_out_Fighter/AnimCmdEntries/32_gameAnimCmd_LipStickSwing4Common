@@ -1,0 +1,9 @@
+// @ 0x21C04
+LipStickSwing4Common {
+  OffensiveCollision(Sp(305, 0), 11, 361, Sp(0, 150), Sp(6, 16), 5.76, 0.0, 4.8, 0.0, 0.0, 1.0, 1.0, 977470094)
+  OffensiveCollision(Sp(305, 1), 11, 361, Sp(0, 150), Sp(6, 16), 2.4, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 977470094)
+  OffensiveCollision(Sp(305, 2), 11, 361, Sp(0, 150), Sp(6, 16), 3.5, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 977470094)
+  OffensiveCollision(Sp(305, 3), 11, 361, Sp(0, 150), Sp(6, 16), 3.5, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 977470094)
+  PlaySoundFromProjectileItem(8069, 8071)
+  SubRoutine(effectAnimCmd_Swing4Impact)
+}

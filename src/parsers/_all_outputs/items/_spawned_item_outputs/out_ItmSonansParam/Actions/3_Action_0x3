@@ -1,0 +1,10 @@
+// Status_Dash
+Action 0x3 {
+  SubRoutine(hidden_subroutine_0x70)
+  if (R(NOT Bit is Set(LA-Bool[0x00]))) {
+    ChangeAction(12, R(On Ground()))
+  } else {
+    ChangeAction(13, R(On Ground()))
+  }
+}
+

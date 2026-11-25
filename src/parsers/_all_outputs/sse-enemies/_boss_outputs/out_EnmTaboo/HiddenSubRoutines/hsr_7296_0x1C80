@@ -1,0 +1,7 @@
+[hsr_1C80]
+hidden_subroutine_0x1C80 {
+  (undef: Sp_base) 65_07_02_00(IC-Int[0xABE9], LA-Float[0x04])
+  (undef: Sp_base) 65_07_02_00(IC-Int[0xABE8], LA-Float[0x0D])
+  FloatVariableSet(IC-Int[0xFA7], LA-Float[0x07])
+  FloatVariableSet(IC-Int[0xFA8], LA-Float[0x08])
+}

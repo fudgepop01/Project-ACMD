@@ -1,0 +1,7 @@
+// @ 0x220E8
+CatchPullCommon {
+  ChangeAction(266, R(In Air()))
+
+  ChangeAction(57, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+}

@@ -1,0 +1,14 @@
+[hsr_20DDC]
+hidden_subroutine_0x20DDC {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(290)
+    Case(291)
+    Case(292)
+    Case(293)
+    Case(294)
+      Break()
+    DefaultCase()
+      BodyCollision(0)
+      ExitFinalSmashState()
+  EndSwitch()
+}

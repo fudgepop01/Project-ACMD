@@ -1,0 +1,12 @@
+LA-Int[0x0B] in Action 0x3 (Status_Dash) @ 1 : 2
+LA-Int[0x0B] in Action 0x4 (Status_Run) @ 1 : 2
+LA-Int[0x0B] in Action 0x8 (Status_Turn_Run) @ 2 : 2
+
+LA-Bool[0x08] in Action 0x9 (Status_Turn_Run_Brake) @ 8 : 0
+
+LA-Bool[0x0F] in Action 0x8 (Status_Turn_Run) @ 3 : 0
+LA-Bool[0x0F] in Action 0x9 (Status_Turn_Run_Brake) @ 3 : 0
+
+RA-Bool[0x02] in hsr_78 @ 0 : 3
+
+RA-Bool[0x03] in hsr_78 @ 1 : 2

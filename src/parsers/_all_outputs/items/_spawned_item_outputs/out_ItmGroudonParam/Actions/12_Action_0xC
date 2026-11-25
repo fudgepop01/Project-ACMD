@@ -1,0 +1,8 @@
+// Status_Jump_Aerial
+Action 0xC {
+  ChangeAction(3, R(In Air()))
+  ChangeSubAction(2)
+  (undef: control_flow_loop) 01_04_02_00(90, 120)
+  ChangeAction(4, R(Button Tap?()))
+}
+

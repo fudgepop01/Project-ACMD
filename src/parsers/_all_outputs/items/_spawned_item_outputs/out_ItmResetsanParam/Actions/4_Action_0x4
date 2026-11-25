@@ -1,0 +1,10 @@
+// Status_Run
+Action 0x4 {
+  Visibility(true)
+  BitVariableClear(LA-Bool[0x08])
+  SubRoutine(hidden_subroutine_0x10F4)
+  DisableActionStatusId(4)
+  ChangeAction(3, R(In Air()))
+  SubRoutine(hidden_subroutine_0x15DC)
+}
+

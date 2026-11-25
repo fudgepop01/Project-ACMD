@@ -1,0 +1,15 @@
+// Status_Jump
+Action 0xB {
+  BasicVariableIncrement(LA-Int[0x03])
+  ChangeAction(4, R(On Ground()))
+  (undef: Sp_base) 65_07_01_00(3)
+  if (R(2714(1))) {
+    ChangeSubAction(12)
+  } else {
+    ChangeSubAction(13)
+  }
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(13, R(Button Tap?()))
+}
+

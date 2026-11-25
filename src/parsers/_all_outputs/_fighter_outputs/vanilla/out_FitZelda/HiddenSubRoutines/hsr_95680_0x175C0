@@ -1,0 +1,13 @@
+[hsr_175C0]
+hidden_subroutine_0x175C0 {
+  BasicVariableDecrement(RA-Int[0x00])
+  BasicVariableDecrement(RA-Int[0x03])
+  if (R(NOT On Ground())) {
+    BasicVariableDecrement(RA-Int[0x02])
+    if (R(Compare(RA-Int[0x02] >= 0.0))) {
+      DisableSpecifiedMovement(1)
+    } else {
+      EnableSpecifiedMovement(1)
+    }
+  }
+}

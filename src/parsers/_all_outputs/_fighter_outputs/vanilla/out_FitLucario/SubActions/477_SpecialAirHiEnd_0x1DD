@@ -1,0 +1,32 @@
+[SpecialAirHiEnd] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1DD: MAIN {
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x25050)
+  EnableDisableLedgegrab(2)
+  FrameSpeedModifier(1.0)
+  SubRoutine(hidden_subroutine_0x23A68)
+}
+
+Subaction 0x1DD: GFX {
+  AsynchronousTimer(11.0)
+  EnableDisableLedgegrab(1)
+}
+
+Subaction 0x1DD: SOUND {
+  StopSoundEffect(5805)
+  SoundEffect(5806)
+}
+
+Subaction 0x1DD: OTHER {
+  SlopeContourStand(6)
+}
+

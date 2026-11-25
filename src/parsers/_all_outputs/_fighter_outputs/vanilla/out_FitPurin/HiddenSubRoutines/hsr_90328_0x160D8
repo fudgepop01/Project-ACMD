@@ -1,0 +1,6 @@
+[hsr_160D8]
+hidden_subroutine_0x160D8 {
+  if (R(Bit is Set(RA-Bool[0x12]))) {
+    SubRoutine(hsr_16068)
+  }
+}

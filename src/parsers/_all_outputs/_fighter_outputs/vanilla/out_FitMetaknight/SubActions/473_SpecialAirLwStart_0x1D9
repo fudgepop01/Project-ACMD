@@ -1,0 +1,48 @@
+[SpecialAirLwStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D9: MAIN {
+  AsynchronousTimer(12.0)
+  BitVariableSet(RA-Bool[0x11])
+  SetAirGround(106)
+  AsynchronousTimer(17.0)
+  BodyCollision(2)
+  AsynchronousTimer(26.0)
+  BitVariableSet(RA-Bool[0x10])
+}
+
+Subaction 0x1D9: GFX {
+  Goto(Subaction_0x1D8 : GFX)
+}
+
+Subaction 0x1D9: SOUND {
+  AsynchronousTimer(0.0)
+  SoundEffect(868)
+  SynchronousTimer(8.0)
+  SoundEffect(808)
+}
+
+Subaction 0x1D9: OTHER {
+  ModelChangerPermanent(2, 1)
+  ArticleVisibility(0, false)
+  SetArticleAction(0, 0)
+  AsynchronousTimer(5.0)
+  HeldItemsVisibility(false)
+  AsynchronousTimer(8.0)
+  ModelChangerPermanent(2, 2)
+  ArticleVisibility(0, true)
+  AsynchronousTimer(12.0)
+  Visibility(false)
+  ArticleVisibility(0, false)
+  UnkRaBit27(false)
+  SetTagDisplay(false)
+}
+

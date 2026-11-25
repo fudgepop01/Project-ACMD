@@ -1,0 +1,61 @@
+IC-Int[0xFA1] in hsr_CAC @ 0 : 3
+
+IC-Int[0xFA2] in hsr_CAC @ 4 : 3
+
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x0: EXIT @ 1 : 1
+
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in hsr_5E0 @ 0 : 1
+
+IC-Int[0x5209] in hsr_6C0 @ 0 : 1
+
+IC-Int[0x520C] ("Variable_Int_Controller_Flick_No_Reset_Y") in Action 0x7: INIT @ 4 : 0
+IC-Int[0x520C] ("Variable_Int_Controller_Flick_No_Reset_Y") in hsr_DB4 @ 2 : 2
+IC-Int[0x520C] ("Variable_Int_Controller_Flick_No_Reset_Y") in hsr_DB4 @ 3 : 0
+IC-Int[0x520C] ("Variable_Int_Controller_Flick_No_Reset_Y") in hsr_DB4 @ 6 : 0
+
+IC-Int[0xABE3] in hsr_5E0 @ 3 : 0
+IC-Int[0xABE3] in hsr_6C0 @ 10 : 0
+
+IC-Int[0xABE4] in hsr_804 @ 2 : 1
+
+IC-Int[0xABE5] in hsr_90C @ 1 : 1
+
+LA-Float[0x04] in Action 0x7: INIT @ 4 : 3
+LA-Float[0x04] in Action 0x7: INIT @ 6 : 2
+LA-Float[0x04] in Action 0x7: INIT @ 7 : 1
+LA-Float[0x04] in hsr_CAC @ 0 : 1
+LA-Float[0x04] in hsr_CAC @ 1 : 1
+LA-Float[0x04] in hsr_CAC @ 3 : 1
+LA-Float[0x04] in hsr_CAC @ 4 : 1
+LA-Float[0x04] in hsr_DB4 @ 6 : 3
+LA-Float[0x04] in hsr_DB4 @ 7 : 1
+LA-Float[0x04] in hsr_DB4 @ 11 : 2
+
+LA-Float[0x05] in hsr_5E0 @ 3 : 1
+LA-Float[0x05] in hsr_6C0 @ 0 : 3
+LA-Float[0x05] in hsr_6C0 @ 10 : 1
+
+LA-Float[0x0C] in Subaction 0x1: MAIN @ 5 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 1 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 2 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 6 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 7 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 11 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 12 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 14 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 15 : 46
+
+LA-Bool[0x04] in Action 0x0: EXIT @ 0 : 1
+
+LA-Bool[0x06] in hsr_5E0 @ 2 : 0
+LA-Bool[0x06] in hsr_6C0 @ 1 : 1
+LA-Bool[0x06] in hsr_6C0 @ 3 : 0
+LA-Bool[0x06] in hsr_6C0 @ 7 : 0
+
+LA-Bool[0x07] in hsr_5E0 @ 5 : 0
+LA-Bool[0x07] in hsr_6C0 @ 4 : 0
+LA-Bool[0x07] in hsr_6C0 @ 8 : 0
+LA-Bool[0x07] in hsr_804 @ 0 : 1
+
+LA-Bool[0x08] in Action 0x6: EXIT @ 0 : 0
+LA-Bool[0x08] in hsr_994 @ 0 : 1

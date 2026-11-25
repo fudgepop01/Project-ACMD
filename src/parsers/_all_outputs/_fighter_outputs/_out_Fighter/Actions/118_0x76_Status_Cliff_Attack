@@ -1,0 +1,21 @@
+// Status_Cliff_Attack
+Action 0x76: ENTRY {
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(Holding a Ledge()))
+
+  if (R(Compare(Variable_Float_Damage < IC-Int[0xC79]))) {
+    ChangeSubAction(215)
+    SetStalingIdWith0(2, 75)
+  } else {
+    ChangeSubAction(220)
+    SetStalingIdWith0(2, 74)
+  }
+}
+
+Action 0x76 : EXIT {
+}

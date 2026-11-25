@@ -1,0 +1,37 @@
+[AttackAirHi] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x65: MAIN {
+  BitVariableSet(RA-Bool[0x10])
+  AsynchronousTimer(5.0)
+  BitVariableSet(RA-Bool[0x1E])
+  AsynchronousTimer(25.0)
+  BitVariableSet(RA-Bool[0x11])
+  AsynchronousTimer(29.0)
+  BitVariableClear(RA-Bool[0x1E])
+}
+
+Subaction 0x65: GFX {
+}
+
+Subaction 0x65: SOUND {
+  AsynchronousTimer(7.0)
+  SoundEffect(53)
+}
+
+Subaction 0x65: OTHER {
+  HeldItemsVisibility(false)
+  AsynchronousTimer(8.0)
+  Rumble(17, 0)
+  AsynchronousTimer(33.0)
+  HeldItemsVisibility(true)
+}
+

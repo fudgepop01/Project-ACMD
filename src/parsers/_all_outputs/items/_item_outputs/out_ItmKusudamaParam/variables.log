@@ -1,0 +1,18 @@
+IC-Int[0x5215] ("Variable_Int_Controller_Trigger_3_Count") in Action 0x7 (Status_Turn_Dash) @ 18 : 0
+
+LA-Int[0x16] in Action 0x7 (Status_Turn_Dash) @ 8 : 1
+
+LA-Bool[0x00] in Action 0x1 (Status_Walk) @ 2 : 0
+LA-Bool[0x00] in Action 0x7 (Status_Turn_Dash) @ 0 : 1
+
+RA-Bool[0x01] in hsr_88 @ 0 : 2
+
+RA-Bool[0x02] in hsr_88 @ 1 : 2
+
+RA-Bool[0x03] in hsr_88 @ 2 : 2
+
+RA-Bool[0x06] in Action 0x7 (Status_Turn_Dash) @ 1 : 0
+RA-Bool[0x06] in Action 0x7 (Status_Turn_Dash) @ 22 : 0
+RA-Bool[0x06] in Subaction 0x4 : GAME @ 0 : 1
+RA-Bool[0x06] in Subaction 0x4 : GFX @ 0 : 1
+RA-Bool[0x06] in Subaction 0x4 : SOUND @ 0 : 1

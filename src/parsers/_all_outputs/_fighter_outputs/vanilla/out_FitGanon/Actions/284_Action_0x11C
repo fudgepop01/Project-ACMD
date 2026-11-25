@@ -1,0 +1,7 @@
+Action 0x11C: ENTRY {
+  ChangeAction(285, R(Animation End()))
+  ChangeSubAction(474)
+}
+
+Action 0x11C : EXIT {
+}

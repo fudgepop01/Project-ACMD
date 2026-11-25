@@ -1,0 +1,15 @@
+Action 0x4: MAIN {
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonBulletProcInit)
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonBulletProcExec)
+  Return()
+}
+
+Action 0x4: EXIT {
+}
+
+Action 0x4: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_03_00_00()
+  ChangeSubAction(3)
+}
+

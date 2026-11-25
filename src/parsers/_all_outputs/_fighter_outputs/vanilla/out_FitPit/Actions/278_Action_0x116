@@ -1,0 +1,45 @@
+Action 0x116: ENTRY {
+  EnterFinalSmashState()
+  ChangeActionStatus(10000, 0, R(Animation End()))
+  ChangeActionStatus(10002, 14, R(Animation End()))
+  GenerateArticle(2)
+  if (R(Facing Right())) {
+    BasicVariableSet(497, RA-Int[0x00])
+    BasicVariableSet(499, RA-Int[0x01])
+  } else {
+    BasicVariableSet(496, RA-Int[0x00])
+    BasicVariableSet(498, RA-Int[0x01])
+  }
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(RA-Int[0x00], true)
+      } else {
+        ChangeSubAction(RA-Int[0x00])
+        BitVariableSet(RA-Bool[0x10])
+      }
+      EnableActionStatusId(10000)
+      DisableActionStatusId(10002)
+      SetRequirement01(0, R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(RA-Int[0x01], true)
+      } else {
+        ChangeSubAction(RA-Int[0x01])
+        BitVariableSet(RA-Bool[0x10])
+      }
+      EnableActionStatusId(10002)
+      DisableActionStatusId(10000)
+      SetRequirement01(1, R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x116 : EXIT {
+  ModelChangerPermanent(0, -1)
+  (undef: effect) 11_1D_01_00(8)
+  NormalCamera()
+}

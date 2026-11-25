@@ -1,0 +1,5 @@
+// @ 0x3B98
+CommonAICanselFigure {
+  BitVariableClear(LA-Bool[0x0F])
+  Return()
+}

@@ -1,0 +1,25 @@
+Action 0x116: ENTRY {
+  EnterFinalSmashState()
+  SetGimmickEffectFlag(false)
+  ChangeAction(279, R(Animation End()))
+  if (R(Compare(Variable_Float_Posture_Lr < 0.0))) {
+    ChangeSubAction(470)
+  } else {
+    ChangeSubAction(469)
+  }
+  BitVariableSet(LA-Bool[0x01])
+  BitVariableClear(LA-Bool[0x19])
+  DisableCameraZoom()
+}
+
+Action 0x116 : EXIT {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(279)
+      Break()
+    DefaultCase()
+      ExitFinalSmashState()
+      RemoveArticle(1)
+      BitVariableClear(LA-Bool[0x01])
+      EnableCameraZoom()
+  EndSwitch()
+}

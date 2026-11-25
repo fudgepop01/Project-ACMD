@@ -1,0 +1,17 @@
+[hsr_BBC]
+hidden_subroutine_0xBBC {
+  if (R(0x3F())) {
+    ModuleEndTrace()
+  }
+  if (R(Compare(Variable_Int_Status_Kind != 2.0)) && R(Compare(Variable_Int_Status_Kind != 3.0)) && R(Compare(Variable_Int_Status_Kind != 4.0)) && R(Compare(Variable_Int_Status_Kind != 5.0)) && R(Compare(Variable_Int_Status_Kind != 6.0)) && R(Compare(Variable_Int_Status_Kind != 11.0)) && R(Compare(Variable_Int_Status_Kind != 12.0))) {
+    AttachGround_UNDOC2ARGS(0, LA-Bool[0x07])
+    if (R(Bit is Set(LA-Bool[0x07]))) {
+      Module0900(0)
+      (undef: Sp_AI) 6A_00_01_00(18)
+    } else {
+      Module0900(2)
+      (undef: Sp_AI) 6A_00_01_00(17)
+    }
+  }
+  Return()
+}

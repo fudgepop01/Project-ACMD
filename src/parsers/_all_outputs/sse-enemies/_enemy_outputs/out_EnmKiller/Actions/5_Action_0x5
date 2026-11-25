@@ -1,0 +1,63 @@
+Action 0x5: MAIN {
+  SetLoop(-1) {
+    if (R(Successfully tethered ledge())) {
+      if [IF_REQ_UNKNOWN_3ARG] (R(0x12()), 1, Variable_Int_Controller_Flick_No_Reset_Y) {
+        (undef: Sp_Area) 69_00_01_00(Variable_Int_Controller_Flick_No_Reset_Y)
+        BitVariableSet(LA-Bool[0x0C])
+      } else {
+        BitVariableClear(LA-Bool[0x0C])
+      }
+    } else {
+      BitVariableClear(LA-Bool[0x0C])
+    }
+    Switch(1001, -1)
+      Case(-1)
+        Break()
+      Case(2)
+        if (R(Facing Left())) {
+          ReverseDirection()
+          DecideDirection()
+          (undef: Sp_Kinetic) 66_0F_01_00(3)
+          (undef: Sp_Kinetic) 66_0E_01_00(3)
+          (undef: Sp_Kinetic) 66_0E_01_00(2)
+        }
+      Case(3)
+        if (R(Facing Right())) {
+          ReverseDirection()
+          DecideDirection()
+          (undef: Sp_Kinetic) 66_0F_01_00(3)
+          (undef: Sp_Kinetic) 66_0E_01_00(3)
+          (undef: Sp_Kinetic) 66_0E_01_00(2)
+        }
+      DefaultCase()
+        (undef: unk_procedures) 1B_02_01_00(F(0x000006D4))
+    EndSwitch()
+    if (R(2714(ERRVALUE)) && R(NOT Compare(Variable_Float_Controller_Stick_Prev_Y_Abs >= IC-Int[0x5DC1]))) {
+      BasicVariableSet(15, RA-Int[0x05])
+      SubRoutine(hidden_subroutine_0xED4)
+    } else {
+      if (R(Bit is Set(LA-Bool[0x0C]))) {
+        SubRoutine(hidden_subroutine_0xA1C)
+      }
+      BitVariableClear(LA-Bool[0x08])
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x5: EXIT {
+  (undef: Sp_Kinetic) 66_07_01_00(2)
+}
+
+Action 0x5: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(10)
+  (undef: Sp_AI) 6A_00_01_00(9)
+  (undef: Sp_AI) 6A_00_01_00(12)
+  SubAction09(2)
+  (undef: Sp_Kinetic) 66_00_04_00(3, 15, 35791.0, 3)
+  (undef: Sp_Kinetic) 66_00_04_00(2, 16, 35791.0, 3)
+  SetPassableCheck(false)
+  BitVariableClear(LA-Bool[0x08])
+}
+

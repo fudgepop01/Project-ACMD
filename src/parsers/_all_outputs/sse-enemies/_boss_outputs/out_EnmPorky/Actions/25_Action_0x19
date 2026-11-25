@@ -1,0 +1,23 @@
+Action 0x19: MAIN {
+}
+
+Action 0x19: EXIT {
+  BasicVariableSet(1, LA-Int[0x05])
+  SubRoutine(hidden_subroutine_0x964)
+}
+
+Action 0x19: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(11)
+  BasicVariableSet(2, LA-Int[0x06])
+  if (R(Facing Left())) {
+    SetBoneMotionOverride(0, 21, 10)
+    BasicVariableSet(2, LA-Int[0x05])
+  } else {
+    SetBoneMotionOverride(0, 22, 10)
+    BasicVariableSet(3, LA-Int[0x05])
+  }
+  SubRoutine(hidden_subroutine_0x964)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+}
+

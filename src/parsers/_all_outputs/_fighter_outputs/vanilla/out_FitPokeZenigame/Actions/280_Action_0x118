@@ -1,0 +1,45 @@
+Action 0x118: ENTRY {
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  FloatVariableSet(IC-Int[0xFA0], RA-Float[0x04])
+  if (R(Compare(LA-Int[0x40] < IC-Int[0x5DC1]))) {
+    BasicVariableSet(465, RA-Int[0x01])
+    BasicVariableSet(469, RA-Int[0x02])
+  } else {
+    BasicVariableSet(466, RA-Int[0x01])
+    BasicVariableSet(470, RA-Int[0x02])
+  }
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(6)
+      SetAerialOrOnstage(2)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(RA-Int[0x01], true)
+      } else {
+        ChangeSubAction(RA-Int[0x01])
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAirGround(0)
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(RA-Int[0x02], true)
+      } else {
+        ChangeSubAction(RA-Int[0x02])
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x118 : EXIT {
+  BasicVariableSet(0, LA-Int[0x40])
+}

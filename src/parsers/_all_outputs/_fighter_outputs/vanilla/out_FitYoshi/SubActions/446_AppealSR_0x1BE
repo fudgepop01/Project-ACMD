@@ -1,0 +1,43 @@
+[AppealSR] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1BE: MAIN {
+  AsynchronousTimer(99.0)
+  AllowInterrupt()
+}
+
+Subaction 0x1BE: GFX {
+  AsynchronousTimer(18.0)
+  GraphicEffectStepping(26, 0, 0.0, 0.0, 3.0, 0.0, 180.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(35.0)
+  GraphicEffectStepping(26, 0, 0.0, 0.0, -1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(48.0)
+  GraphicEffectStepping(26, 0, 0.0, 0.0, 0.0, 0.0, 180.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(62.0)
+  GraphicEffectStepping(26, 0, 0.0, 0.0, -2.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x1BE: SOUND {
+  AsynchronousTimer(24.0)
+  SoundEffect(3000)
+  SynchronousTimer(24.0)
+  SoundEffect(3000)
+  SynchronousTimer(20.0)
+  SoundEffect(2957)
+  SynchronousTimer(6.0)
+  SoundEffect(1153)
+  SynchronousTimer(43.0)
+  SoundEffect(2967)
+}
+
+Subaction 0x1BE: OTHER {
+}
+

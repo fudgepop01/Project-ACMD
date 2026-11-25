@@ -1,0 +1,11 @@
+[hsr_1C598]
+hidden_subroutine_0x1C598 {
+  BasicVariableDecrement(RA-Int[0x03])
+  if (R(Compare(RA-Int[0x03] < 0.0))) {
+    TerminateConcurrentInfiniteLoop(9)
+  }
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    SubRoutine(hidden_subroutine_0x1B2E8)
+    BitVariableClear(RA-Bool[0x10])
+  }
+}

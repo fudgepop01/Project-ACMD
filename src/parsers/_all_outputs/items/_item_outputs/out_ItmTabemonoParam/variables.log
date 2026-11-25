@@ -1,0 +1,10 @@
+IC-Int[0x5213] ("Variable_Int_Controller_Trigger_2_Count") in Action 0x1 (Status_Walk) @ 3 : 1
+IC-Int[0x5213] ("Variable_Int_Controller_Trigger_2_Count") in Subaction 0x0 : SOUND @ 1 : 1
+IC-Int[0x5213] ("Variable_Int_Controller_Trigger_2_Count") in Subaction 0x7 : GFX @ 1 : 1
+
+LA-Int[0x00] in Subaction 0x0 : SOUND @ 6 : 1
+LA-Int[0x00] in Subaction 0x0 : SOUND @ 8 : 1
+LA-Int[0x00] in Subaction 0x7 : GFX @ 6 : 1
+LA-Int[0x00] in Subaction 0x7 : GFX @ 8 : 1
+
+RA-Bool[0x02] in hsr_60 @ 0 : 3

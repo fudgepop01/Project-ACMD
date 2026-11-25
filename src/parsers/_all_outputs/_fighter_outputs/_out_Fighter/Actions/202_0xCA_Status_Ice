@@ -1,0 +1,24 @@
+// Status_Ice
+Action 0xCA: ENTRY {
+  SetGimmickEffectFlag(false)
+  ChangeAction(203, R(Button Mashable Status Expired()))
+  SoundEffect(195)
+  HavokSleep()
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1D1C4)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(6)
+      SetAerialOrOnstage(1)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAirGround(67)
+      SetAerialOrOnstage(5)
+      SetRequirement(R(On Ground()))
+      SetExtraRequirement(R(Compare(RA-Int[0x00] >= RA-Int[0x02])))
+    }
+    LoadRest()
+  }
+}
+
+Action 0xCA : EXIT {
+}

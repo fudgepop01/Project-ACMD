@@ -1,0 +1,89 @@
+[SpecialHi2] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1E1: MAIN {
+  AsynchronousTimer(0.0)
+  ModelChanger(2, 1)
+  BitVariableClear(LA-Bool[0x3D])
+  GenerateArticle(0)
+  OffensiveCollision(Sp(0, 0), 6, 91, Sp(140, 100), Sp(0, 0), 3.5, 0.0, 3.5, 19.0, 0.0, 1.0, 1.0, 981670978)
+  OffensiveCollision(Sp(0, 1), 6, 78, Sp(140, 100), Sp(0, 0), 3.5, 0.0, 3.5, 7.0, 0.0, 1.0, 1.0, 981670978)
+  OffensiveCollision(Sp(0, 2), 6, 90, Sp(115, 100), Sp(0, 0), 3.5, 0.0, 13.5, 7.0, 0.0, 1.0, 1.0, 981670978)
+  OffensiveCollision(Sp(0, 3), 6, 91, Sp(115, 100), Sp(0, 0), 3.5, 0.0, 13.5, 19.0, 0.0, 1.0, 1.0, 981670978)
+  SuperHeavyArmor(1, 0.0)
+  AsynchronousTimer(1.0)
+  TerminateCollisions()
+  AsynchronousTimer(2.0)
+  SpecialOffensiveCollision(Sp(70, 0), 4, 87, Sp(80, 100), Sp(0, 0), 6.0, 0.0, 4.0, 0.0, 0.0, 1.0, 1.0, 579012162, 0, 542113731)
+  SpecialOffensiveCollision(Sp(70, 1), 4, 87, Sp(80, 100), Sp(0, 0), 6.0, 0.0, 10.0, 0.0, 0.0, 1.0, 1.0, 579012162, 0, 542113731)
+  DeleteHitbox(2)
+  DeleteHitbox(3)
+  AsynchronousTimer(12.0)
+  TerminateCollisions()
+  SpecialOffensiveCollision(Sp(70, 0), 2, 85, Sp(30, 100), Sp(0, 0), 6.0, 0.0, 4.0, 0.0, 0.0, 1.0, 1.0, 579012098, 0, 542113731)
+  SpecialOffensiveCollision(Sp(70, 1), 2, 85, Sp(30, 100), Sp(0, 0), 6.0, 0.0, 10.0, 0.0, 0.0, 1.0, 1.0, 579012098, 0, 542113731)
+  AsynchronousTimer(21.0)
+  BitVariableSet(RA-Bool[0x11])
+  SuperHeavyArmor(0, 0.0)
+  TerminateCollisions()
+  SpecialOffensiveCollision(Sp(70, 0), 2, 60, Sp(22, 100), Sp(0, 0), 6.0, 0.0, 7.0, 0.0, 0.0, 1.0, 1.0, 579012098, 0, 5242819)
+  SpecialOffensiveCollision(Sp(70, 1), 2, 60, Sp(22, 100), Sp(0, 0), 6.0, 0.0, 7.0, 0.0, 0.0, 1.0, 1.0, 579012098, 0, 5242819)
+  AsynchronousTimer(22.0)
+  BitVariableSet(RA-Bool[0x12])
+  TerminateCollisions()
+  AsynchronousTimer(25.0)
+  ModelChanger(2, 0)
+  RemoveArticle(0)
+  AsynchronousTimer(28.0)
+  SpecialOffensiveCollision(Sp(70, 0), 2, 270, Sp(38, 100), Sp(0, 0), 6.0, 0.0, 4.0, 0.0, 0.0, 0.5, 0.0, 579011586, 7, 5242819)
+  SpecialOffensiveCollision(Sp(70, 1), 2, 270, Sp(38, 100), Sp(0, 0), 6.0, 0.0, 14.0, 0.0, 0.0, 0.5, 0.0, 579011586, 7, 5242819)
+  AsynchronousTimer(40.0)
+  TerminateCollisions()
+}
+
+Subaction 0x1E1: GFX {
+  GraphicEffectLanding(39, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  TerminateGraphicEffect(2293761, false, true)
+  AsynchronousTimer(22.0)
+  GraphicEffectLanding(41, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(25.0)
+  SwordGlow(4, 2, 70, 0.0, 2.8, 0.0, 70, 0.0, 14.3, 0.0, true, 2293761, 70, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+}
+
+Subaction 0x1E1: SOUND {
+  AsynchronousTimer(0.0)
+  SoundEffect(5896)
+  SynchronousTimer(2.0)
+  PlayTeeterSfx()
+  SoundEffect(5897)
+  SynchronousTimer(10.0)
+  SoundEffect(5897)
+  SynchronousTimer(10.0)
+  SoundEffect(5898)
+  SynchronousTimer(3.0)
+  SoundEffect(83)
+  SynchronousTimer(3.0)
+  SoundEffect(5921)
+  SynchronousTimer(2.0)
+  SoundEffect(5899)
+  SynchronousTimer(10.0)
+  SoundEffect(5899)
+}
+
+Subaction 0x1E1: OTHER {
+  Screenshake(0)
+  Rumble(12, 0)
+  AsynchronousTimer(21.0)
+  Rumble(12, 0)
+  AsynchronousTimer(40.0)
+  Rumble(16, 0)
+}
+

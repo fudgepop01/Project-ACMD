@@ -1,0 +1,9 @@
+[hsr_17CE0]
+hidden_subroutine_0x17CE0 {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(285)
+      Break()
+    DefaultCase()
+      RemoveArticle(1)
+  EndSwitch()
+}

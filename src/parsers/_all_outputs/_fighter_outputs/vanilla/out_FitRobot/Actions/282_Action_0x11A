@@ -1,0 +1,6 @@
+Action 0x11A: ENTRY {
+  SubRoutine(EXTERNAL: statusAnimCmd_AttackAir)
+}
+
+Action 0x11A : EXIT {
+}

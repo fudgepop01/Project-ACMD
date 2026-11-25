@@ -1,0 +1,66 @@
+[AttackGround] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x4 : GAME {
+  ScreenTint(0, 2, 255, 255, 255, 96, 0)
+  SynchronousTimer(6.0)
+  SpecialOffensiveCollision(Sp(35, 0), 30, 25, Sp(0, 80), Sp(0, 60), 6.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 198274, 0, 1048515)
+  SpecialOffensiveCollision(Sp(38, 1), 30, 30, Sp(0, 80), Sp(0, 60), 6.0, 0.0, 5.0, 0.0, 0.0, 1.0, 1.0, 198274, 0, 1048515)
+  SpecialOffensiveCollision(Sp(38, 2), 30, 80, Sp(0, 80), Sp(0, 60), 6.0, 0.0, 15.0, 0.0, 0.0, 1.0, 1.0, 198274, 0, 1048515)
+  SpecialOffensiveCollision(Sp(0, 3), 30, 30, Sp(0, 80), Sp(0, 60), 8.0, 0.0, 8.0, 8.0, 0.0, 1.0, 1.0, 198274, 0, 1048515)
+  ScreenTint(0, 4, 0, 0, 0, 128, 0)
+  SynchronousTimer(3.0)
+  TerminateCollisions()
+  SynchronousTimer(3.0)
+  ScreenTint(0, 80, 0, 0, 0, 0, 0)
+}
+
+Subaction 0x4 : GFX {
+  GraphicEffectAttached(14024708, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(1.0)
+  GraphicEffect(14024705, 0, 0.0, 10.0, 20.0, -45.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  SwordGlow(21, 4, 38, 0.0, 0.967, -0.225, 38, 0.0, 10.421, -0.552, true, 0, 38, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  TerminateSwordGlow(30)
+  AsynchronousTimer(5.0)
+  GraphicEffectAttached2(26, 15, 0.0, 0.0, 0.0, 180.0, 22.119, 0.0, 0.9, true)
+  AsynchronousTimer(10.0)
+  GraphicEffectAttached2(26, 15, 0.0, 0.0, 0.0, 180.0, 22.119, 0.0, 0.85, true)
+  AsynchronousTimer(15.0)
+  GraphicEffectAttached2(26, 15, 0.0, 0.0, 0.0, 180.0, 22.119, 0.0, 0.8, true)
+  AsynchronousTimer(20.0)
+  GraphicEffectAttached2(26, 15, 0.0, 0.0, 0.0, 180.0, 22.119, 0.0, 0.7, true)
+  AsynchronousTimer(25.0)
+  GraphicEffectAttached2(26, 15, 0.0, 0.0, 0.0, 180.0, 22.119, 0.0, 0.6, true)
+  SynchronousTimer(153.0)
+  GraphicEffect(14024724, 0, 0.0, 9.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x4 : SOUND {
+  AsynchronousTimer(1.0)
+  if (R(Is within footstool range())) {
+    SoundEffect(7773)
+  } else {
+    SoundEffect(7774)
+  }
+  SynchronousTimer(3.0)
+  SoundEffect(7764)
+  SynchronousTimer(4.0)
+  SoundEffect(7765)
+  SynchronousTimer(45.0)
+  SoundEffect(7766)
+  SynchronousTimer(12.0)
+  SoundEffect(7766)
+  SynchronousTimer(27.0)
+  SoundEffect(7767)
+  SynchronousTimer(5.0)
+  SoundEffect(7768)
+}
+

@@ -1,0 +1,7 @@
+// @ 0x21E5C
+LipStickSwingDashCommon2 {
+  ChangeHitboxDamage(0, 10)
+  ChangeHitboxDamage(1, 10)
+  ChangeHitboxDamage(2, 10)
+  ChangeHitboxDamage(3, 10)
+}

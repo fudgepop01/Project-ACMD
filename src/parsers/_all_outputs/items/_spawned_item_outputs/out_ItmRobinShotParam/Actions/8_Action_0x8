@@ -1,0 +1,7 @@
+// Status_Turn_Run
+Action 0x8 {
+  ChangeSubAction(0)
+  InertCollision(0, 0, 0, 10.0, 0.0, 8.0, 2.0, 2, 1, 3, false, 9, 1, false, 1, false, 0)
+  ChangeAction(9, R(Bit is Set(RA-Bool[0x05])))
+}
+

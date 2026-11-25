@@ -1,0 +1,16 @@
+Action 0x126: ENTRY {
+  ChangeAction(25, R(On Ground()))
+  ChangeAction(73, R(Animation End()))
+  BasicVariableSet(0, RA-Int[0x02])
+  if (R(Bit is Set(RA-Bool[0x12]))) {
+    if (R(Article Available())) {
+      GenerateArticle(1)
+    }
+    BitVariableClear(RA-Bool[0x12])
+  }
+  ChangeSubAction(492)
+  SetAirGround(10)
+}
+
+Action 0x126 : EXIT {
+}

@@ -1,0 +1,3 @@
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x3 (Status_Dash) @ 0 : 1
+
+LA-Int[0x1B] in Subaction 0x1 : SOUND @ 0 : 1

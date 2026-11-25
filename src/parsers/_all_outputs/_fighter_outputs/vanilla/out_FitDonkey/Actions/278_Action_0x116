@@ -1,0 +1,55 @@
+Action 0x116: ENTRY {
+  EnterFinalSmashState()
+  (undef: item_manage) 1F_11_01_00(2)
+  GenerateArticle(0)
+  ChangeAction(307, R(Animation End()))
+  FloatVariableSet(Variable_Float_Posture_Lr, RA-Float[0x04])
+  if (R(Compare(Variable_Float_Posture_Lr == 1.0))) {
+    BasicVariableSet(502, RA-Int[0x0B])
+    BasicVariableSet(504, RA-Int[0x0C])
+    BasicVariableSet(1, RA-Int[0x0D])
+    BasicVariableSet(3, RA-Int[0x0E])
+  } else {
+    BasicVariableSet(501, RA-Int[0x0B])
+    BasicVariableSet(503, RA-Int[0x0C])
+    BasicVariableSet(0, RA-Int[0x0D])
+    BasicVariableSet(2, RA-Int[0x0E])
+  }
+  BitVariableClear(RA-Bool[0x10])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(RA-Int[0x0B], true)
+        SetAnchoredArticleAction(0, RA-Int[0x0D], true)
+      } else {
+        ChangeSubAction(RA-Int[0x0B], false)
+        SetAnchoredArticleAction(0, RA-Int[0x0D], false)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(RA-Int[0x0C], true)
+        SetAnchoredArticleAction(0, RA-Int[0x0E], true)
+      } else {
+        ChangeSubAction(RA-Int[0x0C], false)
+        SetAnchoredArticleAction(0, RA-Int[0x0E], false)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x116 : EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 307.0))) {
+    ExitFinalSmashState()
+  }
+  if (R(Compare(RA-Float[0x04] == -1.0))) {
+    RightDirection()
+    DecideDirection()
+  }
+}

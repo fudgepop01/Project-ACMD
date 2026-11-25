@@ -1,0 +1,20 @@
+// @ 0x9904
+GuardOnUniq {
+  FloatVariableSubtract(Common_Param_Float_Shield_Dec, LA-Float[0x03])
+  if (R(Compare(LA-Float[0x03] < LA-Float[0x04]))) {
+    FloatVariableSet(LA-Float[0x04], LA-Float[0x03])
+  }
+  if (R(Compare(RA-Int[0x00] > 0.0))) {
+    BasicVariableDecrement(RA-Int[0x00])
+  }
+  if (R(Compare(RA-Int[0x01] > 0.0))) {
+    BasicVariableDecrement(RA-Int[0x01])
+  }
+  if (R(Compare(RA-Int[0x02] >= 0.0))) {
+    BasicVariableDecrement(RA-Int[0x02])
+    if (R(Compare(RA-Int[0x02] < 0.0))) {
+      DisableActionStatusId(10106)
+      DisableActionStatusId(10105)
+    }
+  }
+}

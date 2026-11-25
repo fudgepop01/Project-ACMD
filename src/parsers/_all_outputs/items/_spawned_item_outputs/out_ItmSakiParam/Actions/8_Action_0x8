@@ -1,0 +1,27 @@
+// Status_Turn_Run
+Action 0x8 {
+  Switch(10000, LA-Int[0x00])
+    Case(2)
+    Case(4)
+      ChangeSubAction(17)
+    Case(3)
+      ChangeSubAction(18)
+      SetAerialOrOnstage(6)
+    Case(5)
+      ChangeSubAction(18)
+  EndSwitch()
+  if (R(NOT 0x2715())) {
+    ChangeAction(11, R(In Air()))
+  }
+  SynchronousTimer(15.0)
+  ChangeAction(4, R(On Ground()))
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  Switch(10000, LA-Int[0x00])
+    Case(2)
+    Case(3)
+      ChangeAction(9, R(In Air()))
+  EndSwitch()
+  ChangeAction(3, R(In Air()))
+}
+

@@ -1,0 +1,7 @@
+// @ 0x4080
+CommonAICheckArriveGoalPos {
+  if (R(0x2743())) {
+    BitVariableSet(RA-Bool[0x04])
+  }
+  Return()
+}

@@ -1,0 +1,21 @@
+// Status_Turn_Dash
+Action 0x7 {
+  ChangeSubAction(4, false)
+  SynchronousTimer(90.0)
+  Screenshake(3)
+  SetLoop(32) {
+    FloatVariableRandom(-20.0, 20.0, RA-Float[0x00])
+    FloatVariableRandom(-20.0, 20.0, RA-Float[0x01])
+    (undef: Sp_base) 65_0E_04_00(18, RA-Float[0x03], RA-Float[0x04], RA-Float[0x02])
+    FloatVariableAdd(RA-Float[0x03], RA-Float[0x00])
+    FloatVariableAdd(RA-Float[0x04], RA-Float[0x01])
+    FloatVariableAdd(-10.0, RA-Float[0x01])
+    (undef: Sp_base) 65_09_08_00(119, 0, RA-Float[0x00], RA-Float[0x01], RA-Float[0x02], 0.0, 0.0, 7.0)
+    SynchronousTimer(6.0)
+  }
+  (undef: camera) 1A_0A_01_00(3)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(6, R(Button Tap?()))
+}
+

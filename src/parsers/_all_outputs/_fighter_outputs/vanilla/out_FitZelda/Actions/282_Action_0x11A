@@ -1,0 +1,17 @@
+Action 0x11A: ENTRY {
+  if (R(On Ground())) {
+    ChangeSubAction(471)
+    ChangeAction(14, R(In Air()))
+    ChangeAction(0, R(Animation End()))
+  } else {
+    ChangeSubAction(473)
+    ChangeAction(16, R(Animation End()))
+    ChangeAction(25, R(On Ground()))
+    FloatVariableSet(IC-Int[0xFB2], LA-Float[0x00])
+    FloatVariableSet(IC-Int[0xFB1], LA-Float[0x01])
+  }
+}
+
+Action 0x11A : EXIT {
+  Visibility(true)
+}

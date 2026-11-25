@@ -1,0 +1,5 @@
+[hsr_FE4]
+hidden_subroutine_0xFE4 {
+  DeleteHitbox(4)
+  DeleteHitbox(3)
+}

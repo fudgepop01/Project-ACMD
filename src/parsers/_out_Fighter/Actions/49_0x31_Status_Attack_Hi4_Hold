@@ -1,0 +1,16 @@
+// Status_Attack_Hi4_Hold
+[statusAnimCmd_AttackHi4Hold]
+Action 0x31: ENTRY {
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(50, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(50, R(Button Not Pressed(Attack)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeSubAction(94)
+}
+
+Action 0x31 : EXIT {
+}

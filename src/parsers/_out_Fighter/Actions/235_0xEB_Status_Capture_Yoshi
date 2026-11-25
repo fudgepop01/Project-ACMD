@@ -1,0 +1,35 @@
+// Status_Capture_Yoshi
+Action 0xEB: ENTRY {
+  SetGimmickEffectFlag(false)
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      if (R(NOT Bit is Set(LA-Bool[0x3B]))) {
+        SetAerialOrOnstage(1)
+        if (R(Bit is Set(RA-Bool[0x10]))) {
+          ChangeSubAction(RA-Int[0x00], true)
+        } else {
+          ChangeSubAction(RA-Int[0x00])
+          BitVariableSet(RA-Bool[0x10])
+        }
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      if (R(NOT Bit is Set(LA-Bool[0x3B]))) {
+        SetAerialOrOnstage(5)
+        if (R(Bit is Set(RA-Bool[0x10]))) {
+          ChangeSubAction(126, true)
+        } else {
+          ChangeSubAction(126)
+          BitVariableSet(RA-Bool[0x10])
+        }
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0xEB : EXIT {
+}

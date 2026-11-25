@@ -1,0 +1,33 @@
+// Status_Capture_Wait
+Action 0x3E: ENTRY {
+  SubRoutine(hidden_subroutine_0x1054C)
+  (undef: StageObject) 0C_29_00_00()
+  (undef: motion) 04_1A_01_00(459)
+  (undef: motion) 04_18_01_00(RA-Int[0x02])
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x104A4)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(RA-Int[0x00], true)
+      } else {
+        ChangeSubAction(RA-Int[0x00])
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(127, true)
+      } else {
+        ChangeSubAction(127)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x3E : EXIT {
+}

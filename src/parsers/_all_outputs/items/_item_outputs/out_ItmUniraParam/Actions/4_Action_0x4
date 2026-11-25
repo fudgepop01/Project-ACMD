@@ -1,0 +1,12 @@
+// Status_Run
+Action 0x4 {
+  BitVariableSet(LA-Bool[0x0C])
+  ChangeAction(3, R(In Air()))
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 5.0)) || R(Compare(Variable_Int_Motion_Kind == 0.0))) {
+    SubRoutine(hidden_subroutine_0xE0)
+    ChangeAction(12, R(On Ground()))
+  }
+  SubRoutine(hidden_subroutine_0x220)
+  ChangeAction(11, R(Button Tap?()))
+}
+

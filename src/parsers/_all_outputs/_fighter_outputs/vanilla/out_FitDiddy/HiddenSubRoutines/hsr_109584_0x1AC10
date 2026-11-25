@@ -1,0 +1,10 @@
+[hsr_1AC10]
+hidden_subroutine_0x1AC10 {
+  if (R(Bit is Set(RA-Bool[0x12]))) {
+    SetAirGround(10)
+    SetAerialOrOnstage(5)
+    Module0900(2)
+    EnableActionStatusId(10146)
+    BitVariableClear(RA-Bool[0x12])
+  }
+}

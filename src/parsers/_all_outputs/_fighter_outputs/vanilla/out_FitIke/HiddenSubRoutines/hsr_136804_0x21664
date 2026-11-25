@@ -1,0 +1,7 @@
+[hsr_21664]
+hidden_subroutine_0x21664 {
+  BasicVariableIncrement(RA-Int[0x00])
+  if (R(Compare(RA-Int[0x00] >= RA-Int[0x01]))) {
+    BitVariableSet(RA-Bool[0x11])
+  }
+}

@@ -1,0 +1,6 @@
+// @ 0x241A8
+CHK_AIR_CLIFF {
+  ClearPreventInterrupt(AIR_CLIFF)
+  SubRoutine(statusAnimCmd_AIRChkCliff)
+  ClearPreventInterrupt(ALL?)
+}

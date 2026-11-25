@@ -1,0 +1,5 @@
+[hsr_10AD8]
+hidden_subroutine_0x10AD8 {
+  AsynchronousTimer(6.0)
+  VictorySoundEffect(2313)
+}

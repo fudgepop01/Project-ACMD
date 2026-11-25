@@ -1,0 +1,17 @@
+[hsr_127A4]
+hidden_subroutine_0x127A4 {
+  if (R(Compare(RA-Int[0x00] >= 0.0))) {
+    BasicVariableDecrement(RA-Int[0x00])
+    if (R(Compare(RA-Int[0x00] < 0.0))) {
+      DisableActionStatusId(10106)
+      DisableActionStatusId(10105)
+    }
+  }
+  BasicVariableIncrement(RA-Int[0x01])
+  if (R(Compare(RA-Int[0x01] <= Common_Param_Int_Item_Catch_Frame_Attack_Dash))) {
+    SubRoutine(hsr_DE24)
+  }
+  if (R(Compare(RA-Int[0x01] >= Customize_Param_Int_Jump_Squat_Frame))) {
+    DisableActionStatusId(10091)
+  }
+}

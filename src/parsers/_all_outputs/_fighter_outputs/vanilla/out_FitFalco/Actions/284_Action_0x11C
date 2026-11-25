@@ -1,0 +1,37 @@
+Action 0x11C: ENTRY {
+  Visibility(true)
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(483, false)
+      } else {
+        SetAirGround(6)
+        ChangeSubAction(483, true)
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(485, false)
+      } else {
+        SetAirGround(0)
+        ChangeSubAction(485, true)
+      }
+      SetRequirement(R(On Ground()))
+    }
+    BitVariableSet(RA-Bool[0x10])
+    LoadRest()
+  }
+}
+
+Action 0x11C : EXIT {
+  (undef: effect) 11_20_00_00()
+}

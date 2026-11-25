@@ -1,0 +1,40 @@
+[Win3] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1C8: MAIN {
+}
+
+Subaction 0x1C8: GFX {
+  AsynchronousTimer(15.0)
+  GraphicEffectAttached(1769473, 52, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, true)
+  AsynchronousTimer(16.0)
+  TerminateGraphicEffect(1769473, false, true)
+  AsynchronousTimer(41.0)
+  SetLoop(6) {
+    GraphicEffectAttached(1769474, 52, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, true)
+    SynchronousTimer(8.0)
+  }
+}
+
+Subaction 0x1C8: SOUND {
+  AsynchronousTimer(45.0)
+  SoundEffect(5148)
+  SynchronousTimer(14.0)
+  SoundEffect(5148)
+  SynchronousTimer(18.0)
+  SoundEffect(5148)
+  SynchronousTimer(16.0)
+  SoundEffect(5148)
+}
+
+Subaction 0x1C8: OTHER {
+}
+

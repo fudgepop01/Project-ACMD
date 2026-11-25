@@ -1,0 +1,40 @@
+[AppealLw] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1C1: MAIN {
+  GraphicModelSpecf(false, 1)
+  AsynchronousTimer(109.0)
+  AllowInterrupt()
+}
+
+Subaction 0x1C1: GFX {
+  Goto(Subaction_0x1C0 : GFX)
+}
+
+Subaction 0x1C1: SOUND {
+  AsynchronousTimer(18.0)
+  SoundEffect(5921)
+  SynchronousTimer(4.0)
+  SoundEffect(5841)
+  SynchronousTimer(48.0)
+  SoundEffect(2414)
+}
+
+Subaction 0x1C1: OTHER {
+  HavokPhysicsDisable()
+  SlopeContourStand(6)
+  AsynchronousTimer(21.0)
+  Rumble(13, 0)
+  HeldItemsVisibility(false)
+  AsynchronousTimer(112.0)
+  HeldItemsVisibility(true)
+}
+

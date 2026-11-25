@@ -1,0 +1,34 @@
+// Status_Cliff_Wait
+Action 0x75: ENTRY {
+  UnkRaBit27Variable(true, IC-Int[0x5A16])
+  ChangeAction(0, R(On Ground()))
+  ChangeAction(14, R(In Air()))
+  ChangeAction(14, R(NOT Hasn't Tethered 3 Times()))
+  ChangeAction(73, R(Bit is Set(RA-Bool[0x12])))
+
+  ChangeActionStatus:01(10075, 121, R(Holding a Ledge()))
+  AdditionalRequirement(R(Button Press(Jump)))
+
+  ChangeActionStatus:01(10074, 121, R(Holding a Ledge()))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x14])))
+
+  ChangeActionStatus:01(10069, 118, R(Holding a Ledge()))
+  AdditionalRequirement(R(Button Press(Attack)))
+
+  ChangeActionStatus:01(10070, 118, R(Holding a Ledge()))
+  AdditionalRequirement(R(Button Press(Special)))
+
+  ChangeActionStatus:01(10071, 120, R(Holding a Ledge()))
+  AdditionalRequirement(R(Button Press(Shield)))
+
+  ChangeActionStatus:01(10072, 119, R(Holding a Ledge()))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x10])))
+
+  ChangeActionStatus:01(10002, 14, R(Holding a Ledge()))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x11])))
+
+  ChangeSubAction(214)
+}
+
+Action 0x75 : EXIT {
+}

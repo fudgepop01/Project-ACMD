@@ -1,0 +1,21 @@
+// @ 0xA77C
+SquatWaitCommonAnim {
+  SetLoop(-1) {
+    if (R(Compare(Variable_Int_Item_Squat_Wait_Motion_Kind == 45.0))) {
+      ChangeSubAction(45)
+      SetRequirement(R(NOT Compare(Variable_Int_Item_Squat_Wait_Motion_Kind == 45.0)))
+    } else {
+      Switch(1001, 43)
+        Case(1)
+          ChangeSubAction(44)
+        Case(-1)
+          SetAnimationTimerFrame(0.0)
+        DefaultCase()
+          ChangeSubAction(43)
+      EndSwitch()
+      SynchronousTimer(1.0)
+      SetRequirement(R(Animation End()))
+    }
+    LoadRest()
+  }
+}

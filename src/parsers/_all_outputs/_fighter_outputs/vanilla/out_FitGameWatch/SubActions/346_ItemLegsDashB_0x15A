@@ -1,0 +1,29 @@
+[ItemLegsDashB] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x15A: MAIN {
+}
+
+Subaction 0x15A: GFX {
+}
+
+Subaction 0x15A: SOUND {
+  AsynchronousTimer(2.0)
+  SoundEffect(4509)
+  SynchronousTimer(8.0)
+  SteppingSoundEffect(4560)
+  SynchronousTimer(11.0)
+  SteppingSoundEffect(4558)
+}
+
+Subaction 0x15A: OTHER {
+}
+

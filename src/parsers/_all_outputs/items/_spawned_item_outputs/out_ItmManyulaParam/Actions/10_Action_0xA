@@ -1,0 +1,25 @@
+// Status_Jump_Squat
+Action 0xA {
+  ChangeAction(3, R(In Air()))
+  if (R(Is within footstool range())) {
+    if (R(NOT On a Passable Floor())) {
+      SetAerialOrOnstage(3)
+      ChangeAction(9, R(NOT 0x2715()), 28.5)
+    }
+  }
+  ChangeSubAction(2)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeSubAction(0)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+  SynchronousTimer(10.0)
+  ChangeAction(9, R(In walljump situation()), 6)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+
+  ChangeAction(9, R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv < 0.01)))
+  AdditionalRequirement(R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv > -0.01)))
+
+  ChangeAction(11, R(Button Tap?()))
+}
+

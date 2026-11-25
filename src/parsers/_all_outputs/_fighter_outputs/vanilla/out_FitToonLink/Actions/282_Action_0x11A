@@ -1,0 +1,14 @@
+Action 0x11A: ENTRY {
+  SetGimmickEffectFlag(false)
+  SetRequirement(R(Bit is Set(RA-Bool[0x11])))
+  LoadRest()
+  BasicVariableSet(IC-Int[0x5DC3], RA-Int[0x00])
+  ChangeSubAction(482)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x202B8)
+}
+
+Action 0x11A : EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 283.0))) {
+    ExitFinalSmashState()
+  }
+}

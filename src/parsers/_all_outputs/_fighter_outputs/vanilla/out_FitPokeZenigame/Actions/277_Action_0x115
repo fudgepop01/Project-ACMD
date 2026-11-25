@@ -1,0 +1,27 @@
+Action 0x115: ENTRY {
+  BodyCollision(3)
+  SetGimmickEffectFlag(false)
+  (undef: item_manage) 1F_11_01_00(2)
+  ChangeAction(285, R(Animation End()))
+  SetLoop(-1) {
+    if (R(Bit is Set(RA-Bool[0x05]))) {
+      ChangeSubAction(482, true)
+    } else {
+      ChangeSubAction(482)
+      BitVariableSet(RA-Bool[0x05])
+    }
+    if (R(On Ground())) {
+      SetAerialOrOnstage(2)
+      SetAirGround(6)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetAirGround(13)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x115 : EXIT {
+}

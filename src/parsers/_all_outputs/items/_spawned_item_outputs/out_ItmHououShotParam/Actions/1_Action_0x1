@@ -1,0 +1,20 @@
+// Status_Walk
+Action 0x1 {
+  (undef: Sp_base) 65_04_01_00(1400)
+  ChangeSubAction(0)
+  SetAerialOrOnstage(0)
+  BitVariableSet(LA-Bool[0x0E])
+  DisableSpecifiedMovement(1)
+  BasicVariableSet(0, LA-Int[0x00])
+  DisableActionStatusId(1)
+  SynchronousTimer(1.0)
+  (undef: Sp_base) 65_07_01_00(11)
+  if (R(Bit is Set(LA-Bool[0x07]))) {
+    SynchronousTimer(1.0)
+    ChangeAction(5, R(In Air()))
+  } else {
+    (undef: Sp_base) 65_00_00_00()
+  }
+  ChangeAction(4, R(On Ground()))
+}
+

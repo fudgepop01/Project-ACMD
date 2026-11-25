@@ -1,0 +1,9 @@
+// @ 0x3428
+CommonDamageProc {
+  SubRoutine(statusAnimCmd_CommonDamageProcInit)
+  SetLoop(-1) {
+    SubRoutine(statusAnimCmd_CommonDamageProcLoop)
+    SynchronousTimer(1.0)
+  }
+  Return()
+}

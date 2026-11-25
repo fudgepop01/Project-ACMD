@@ -1,0 +1,9 @@
+Action 0x11B: ENTRY {
+  BitVariableSet(LA-Bool[0x3A])
+  ChangeAction(14, R(Animation End()))
+  ChangeAction(282, R(On Ground()))
+  ChangeSubAction(466)
+}
+
+Action 0x11B : EXIT {
+}

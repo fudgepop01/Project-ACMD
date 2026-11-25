@@ -1,0 +1,37 @@
+[SpecialNSpin] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D0: MAIN {
+  SetLoop(-1) {
+    TerminateCollisions()
+    SpecialOffensiveCollision(Sp(0, 0), 1, 90, Sp(50, 100), Sp(0, 0), 5.0, 0.0, -2.0, 0.0, 0.0, 1.0, 1.0, 725681666, 0, 542113731)
+    SpecialOffensiveCollision(Sp(0, 1), 1, 90, Sp(90, 100), Sp(0, 0), 5.0, 0.0, -2.0, 0.0, 0.0, 1.0, 1.0, 725747202, 0, 542113731)
+    SpecialOffensiveCollision(Sp(0, 2), 1, 30, Sp(90, 45), Sp(0, 0), 5.0, 0.0, 7.0, -9.0, 0.0, 1.0, 1.0, 725812738, 0, 542113731)
+    SpecialOffensiveCollision(Sp(0, 3), 1, 150, Sp(90, 45), Sp(0, 0), 5.0, 0.0, 7.0, 9.0, 0.0, 1.0, 1.0, 725812738, 0, 542113731)
+    AsynchronousTimer(180.0)
+    GoToLoopRest01()
+    GoToLoopRest02()
+  }
+}
+
+Subaction 0x1D0: GFX {
+  GraphicEffectAttached(1507348, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+}
+
+Subaction 0x1D0: SOUND {
+  SoundEffectOccursWhenLanding(744)
+}
+
+Subaction 0x1D0: OTHER {
+  ModelChangerPermanent(2, 0)
+  RumbleLoop(2, 57)
+}
+

@@ -1,0 +1,12 @@
+// Status_Run
+Action 0x4 {
+  if (R(Bit is Set(LA-Bool[0x00]))) {
+    ChangeAction(8, R(Button Tap?()))
+    Return()
+  }
+  SubRoutine(hidden_subroutine_0x18)
+  DisableActionStatusId(4)
+  ChangeSubAction(0)
+  ChangeAction(8, R(In Air()))
+}
+

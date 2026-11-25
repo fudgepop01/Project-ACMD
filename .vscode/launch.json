@@ -3,9 +3,8 @@
 // Hover to view descriptions of existing attributes.
 // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
 {
-	"version": "0.2.0",
+	"version": "1.0.0",
 	"configurations": [
-	
 		{
 			"name": "Run Extension",
 			"type": "extensionHost",
@@ -30,6 +29,25 @@
 				"${workspaceFolder}/out/test/**/*.js"
 			],
 			"preLaunchTask": "${defaultBuildTask}"
+		},
+		{
+			"name": "TS-Node",
+			"type": "node",
+			"request": "launch",
+			"runtimeExecutable": "${workspaceFolder}/node_modules/.bin/ts-node",
+			// "runtimeArgs": [
+			// 	"--transpile-only",
+			// 	// if you use esm
+			// 	"--esm",
+			// ],
+			"program": "${file}",
+			"args": [
+				"Fighter",
+				// "Fighter"
+			],
+			"cwd": "${fileDirname}",
+			"internalConsoleOptions": "openOnSessionStart",
+			"skipFiles": ["<node_internals>/**", "node_modules/**"]
 		}
 	]
 }

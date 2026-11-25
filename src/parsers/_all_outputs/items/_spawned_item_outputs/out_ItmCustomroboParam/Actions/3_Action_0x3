@@ -1,0 +1,17 @@
+// Status_Dash
+Action 0x3 {
+  ChangeAction(4, R(On Ground()))
+  if (R(Compare(1.0 != 0.0)) && R(NOT 0x2715())) {
+    BasicVariableSet(0, LA-Int[0x01])
+    BasicVariableSet(0, LA-Int[0x02])
+    BasicVariableSet(0, LA-Int[0x03])
+    ChangeAction(13, R(Button Tap?()))
+  } else {
+    ChangeSubAction(3)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ChangeSubAction(4)
+    SynchronousTimer(-1.0)
+  }
+}
+

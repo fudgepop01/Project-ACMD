@@ -1,0 +1,8 @@
+// @ 0x3988
+CommonPathMotSubReverseLrRot {
+  DecideDirection()
+  CharacterSpecific01()
+  SubAction09(RA-Int[0x01])
+  (undef: Sp_Kinetic) 66_02_04_00(RA-Int[0x05], RA-Int[0x03], IC-Int[0xA028], false)
+  Return()
+}

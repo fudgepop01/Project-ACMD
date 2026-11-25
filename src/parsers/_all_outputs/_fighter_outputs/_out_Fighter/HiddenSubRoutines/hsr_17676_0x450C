@@ -1,0 +1,4 @@
+[hsr_450C]
+hidden_subroutine_0x450C {
+  GraphicEffect(10, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}

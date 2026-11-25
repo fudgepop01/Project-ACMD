@@ -1,0 +1,47 @@
+[SpecialS] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D3: MAIN {
+  ThrowAttackCollision(0, 0, 9, 361, 90, 0, 60, 19, 1.0, 0.0, 1.0, 2, 11, 3, true, true, 0)
+  ThrowAttackCollision(1, 0, 4, 0, 10, 0, 100, 0, 1.0, 0.0, 1.0, 0, 2, 3, true, true, 0)
+  AsynchronousTimer(16.0)
+  SuperHeavyArmor(1, 0.0)
+  AsynchronousTimer(30.0)
+  ThrowCollision(0, 69, RA-Int[0x02], RA-Int[0x03], RA-Int[0x04])
+  AsynchronousTimer(38.0)
+  BitVariableSet(RA-Bool[0x17])
+  AsynchronousTimer(40.0)
+  SuperHeavyArmor(0, 0.0)
+}
+
+Subaction 0x1D3: GFX {
+  GraphicEffectAttached(1376262, 41, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(30.0)
+  GraphicEffectAttached2(1376264, 41, 0.0, 0.0, 0.0, 20.0, 0.0, 0.0, 1.0, true)
+}
+
+Subaction 0x1D3: SOUND {
+  AsynchronousTimer(3.0)
+  SoundEffect(4763)
+  SynchronousTimer(14.0)
+  SoundEffect(1840)
+  SynchronousTimer(13.0)
+  SoundEffect(4757)
+}
+
+Subaction 0x1D3: OTHER {
+  Rumble(13, 0)
+  SlopeContourStand(6)
+  AsynchronousTimer(30.0)
+  Screenshake(2)
+  Rumble(14, 0)
+}
+

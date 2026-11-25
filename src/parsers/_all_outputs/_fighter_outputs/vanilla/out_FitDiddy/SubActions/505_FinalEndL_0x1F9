@@ -1,0 +1,35 @@
+[FinalEndL] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1F9: MAIN {
+  ModelChangerPermanent(0, -1)
+  (undef: effect) 11_1D_01_00(8)
+  EndFlashingEffect(37)
+  BodyCollision(2)
+  GenerateArticle(3)
+  AsynchronousTimer(3.0)
+  ArticleVisibility(0, false)
+  BitVariableSet(RA-Bool[0x12])
+}
+
+Subaction 0x1F9: GFX {
+}
+
+Subaction 0x1F9: SOUND {
+  SoundEffect(80)
+}
+
+Subaction 0x1F9: OTHER {
+  Screenshake(2)
+  AsynchronousTimer(2.0)
+  Rumble(15, 0)
+}
+

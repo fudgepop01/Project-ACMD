@@ -1,0 +1,11 @@
+Action 0x11B: ENTRY {
+  ChangeSubAction(482)
+  Module0900(2)
+  SetAerialOrOnstage(5)
+  SetAirGround(10)
+  ChangeAction(14, R(Animation End()))
+  ChangeAction(287, R(On Ground()))
+}
+
+Action 0x11B : EXIT {
+}

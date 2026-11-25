@@ -1,0 +1,10 @@
+// Status_Run_Brake
+Action 0x5 {
+  if (R(Compare(LA-Int[0x00] == 1.0))) {
+    BasicVariableSet(2, LA-Int[0x00])
+  }
+  SubRoutine(hidden_subroutine_0x20)
+  DisableActionStatusId(5)
+  ChangeSubAction(1)
+}
+

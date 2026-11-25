@@ -1,0 +1,15 @@
+// Status_Fly
+Action 0xD {
+  ChangeAction(6, R(Compare(LA-Int[0x0B] == 0.0)))
+  SubRoutine(hidden_subroutine_0x70)
+  DisableActionStatusId(13)
+  ChangeAction(3, R(In Air()))
+  ChangeSubAction(3)
+  SetLoop(3) {
+    SetAnimationFrame(1.0)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+  }
+  ChangeAction(12, R(Button Tap?()))
+}
+

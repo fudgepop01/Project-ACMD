@@ -1,0 +1,17 @@
+// Status_Item_Shoot_Walk_B
+Action 0xA7: ENTRY {
+  SubRoutine(hidden_subroutine_0x1BB0C)
+  Switch(10000, Variable_Int_Have_Item_Kind)
+    Case(24)
+      SubRoutine(hidden_subroutine_0x1B23C)
+    Case(44)
+      SubRoutine(hidden_subroutine_0x1B05C)
+    Case(61)
+      SubRoutine(hidden_subroutine_0x1B4EC)
+    Case(13)
+      SubRoutine(hidden_subroutine_0x1B92C)
+  EndSwitch()
+}
+
+Action 0xA7 : EXIT {
+}

@@ -1,0 +1,25 @@
+Action 0x119: ENTRY {
+  ChangeSubAction(475)
+
+  ChangeAction(16, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeActionStatus(10026, 22, R(On Ground()))
+  DisableActionStatusId(10026)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      SetAirGround(6)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetAirGround(13)
+      EnableActionStatusId(10026)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x119 : EXIT {
+}

@@ -1,0 +1,90 @@
+[AttackHi4] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x5D: MAIN {
+  AsynchronousTimer(4.0)
+  BodyCollision(2)
+  AsynchronousTimer(5.0)
+  OffensiveCollision(Sp(31, 0), 5, 80, Sp(0, 85), Sp(0, 60), 6.0, 0.0, 5.0, 0.0, 0.0, 1.0, 0.2, 994247296)
+  OffensiveCollision(Sp(31, 1), 5, 90, Sp(0, 85), Sp(0, 60), 6.0, 0.0, -4.0, -1.5, 0.0, 1.0, 0.2, 994247296)
+  SynchronousTimer(1.0)
+  TerminateCollisions()
+  AsynchronousTimer(7.0)
+  BodyCollision(0)
+  SetLoop(6) {
+    OffensiveCollision(Sp(0, 0), 1, 220, Sp(60, 100), Sp(0, 0), 4.5, 0.0, 26.0, 6.0, 0.0, 1.0, 0.6, 591594496)
+    OffensiveCollision(Sp(0, 1), 1, 220, Sp(60, 100), Sp(0, 0), 4.5, 0.0, 26.0, -6.0, 0.0, 1.0, 0.6, 591594496)
+    OffensiveCollision(Sp(0, 2), 1, 130, Sp(60, 100), Sp(0, 0), 4.5, 0.0, 14.0, 6.0, 0.0, 1.0, 0.6, 591594496)
+    OffensiveCollision(Sp(0, 3), 1, 130, Sp(60, 100), Sp(0, 0), 4.5, 0.0, 14.0, -6.0, 0.0, 1.0, 0.6, 591594496)
+    SynchronousTimer(1.0)
+    TerminateCollisions()
+    SynchronousTimer(1.0)
+  }
+  OffensiveCollision(Sp(0, 0), 3, 75, Sp(0, 153), Sp(0, 70), 10.0, 4.0, 25.0, 0.0, 0.0, 1.0, 1.0, 994247808)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+}
+
+Subaction 0x5D: GFX {
+  AsynchronousTimer(5.0)
+  GraphicEffectLanding(41, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffectAttached(3145732, 80, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(7.0)
+  GraphicEffectAttached(3145729, 81, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(17.0)
+  GraphicEffectAttached(3145729, 81, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(31.0)
+  GraphicEffectLanding(11, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x5D: SOUND {
+  AsynchronousTimer(5.0)
+  StopSoundEffect(105)
+  SoundEffect(2681)
+  SoundEffect(6478)
+  SynchronousTimer(27.0)
+  SoundEffect(6521)
+}
+
+Subaction 0x5D: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(3.0)
+  SlopeContourStand(0)
+  AsynchronousTimer(6.0)
+  HavokPhysicsDisable()
+  HeldItemsVisibility(false)
+  AsynchronousTimer(7.0)
+  WearableItemsVisibility(false)
+  RumbleLoop(0, 20)
+  SetLoop(7) {
+    SubRoutine(hidden_subroutine_0x2430)
+    SynchronousTimer(1.0)
+    SubRoutine(hidden_subroutine_0x24C8)
+    SynchronousTimer(1.0)
+  }
+  SetLoop(1) {
+    SubRoutine(hidden_subroutine_0x2430)
+    SynchronousTimer(3.0)
+    SubRoutine(hidden_subroutine_0x24C8)
+    SynchronousTimer(3.0)
+  }
+  SubRoutine(hidden_subroutine_0x2430)
+  SynchronousTimer(3.0)
+  SubRoutine(hidden_subroutine_0x24C8)
+  AsynchronousTimer(30.0)
+  WearableItemsVisibility(true)
+  SlopeContourStand(6)
+  AsynchronousTimer(31.0)
+  HeldItemsVisibility(true)
+  AsynchronousTimer(40.0)
+  HavokPhysicsEnable()
+}
+

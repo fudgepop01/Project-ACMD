@@ -1,0 +1,5 @@
+[hsr_D70]
+hidden_subroutine_0xD70 {
+  SpecialOffensiveCollisionEnemyHitbox(4, 4, 7, 0, 0.0, 0, 100, 0.0, 24, 0.0, 0, 0.0, 22.0, 0.0, 0.0, 16.0, 0.0, 0, 0.0, 0.0, 0.0, false, true, 0, 0, 0, 3, true, 0, 1, false, 15, false, false, false, false, 3, true, false, 0, false, false, true, true, true, 1, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(4, 4, 7, 0, 0.0, 0, 100, 0.0, 13, 0.0, 0, 0.0, 26.0, 0.0, 0.0, 24.0, 0.0, 0, 0.0, 0.0, 0.0, false, true, 0, 0, 0, 3, true, 0, 1, false, 15, false, false, false, false, 3, true, false, 0, false, false, true, true, true, 1, LA-Float[0x0C])
+}

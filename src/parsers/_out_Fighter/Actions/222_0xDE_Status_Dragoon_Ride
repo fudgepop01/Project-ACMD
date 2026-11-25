@@ -1,0 +1,18 @@
+// Status_Dragoon_Ride
+Action 0xDE: ENTRY {
+  BodyCollision(2)
+  SetGimmickEffectFlag(false)
+  HeldItemsVisibility(false)
+  DisableMagifyingGlass()
+  BitVariableSet(LA-Bool[0x01])
+  ChangeSubAction(332)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  TerminateSelfFtRemoveDragoon()
+  DetachAttachCameraFar(false)
+  ChangeSubAction(333)
+}
+
+Action 0xDE : EXIT {
+  DetachAttachCameraFar(true)
+}

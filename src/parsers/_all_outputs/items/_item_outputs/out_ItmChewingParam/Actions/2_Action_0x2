@@ -1,0 +1,20 @@
+// Status_Walk_Brake
+Action 0x2 {
+  BasicVariableSet(Variable_Int_Controller_Trigger_2_Count_Prev, LA-Int[0x00])
+  BodyCollision(3)
+  if (R(Compare(LA-Int[0x0B] < 1.0))) {
+    (undef: Sp_base) 65_05_01_00(360)
+    BasicVariableSet(270, LA-Int[0x0C])
+  }
+  ChangeSubAction(1)
+  if (R(Bit is Set(LA-Bool[0x09]))) {
+    ResetMomentum()
+    (undef: Sp_base) 65_02_06_00(RA-Int[0x00], Variable_Float_Kinetic_Energy_Damage_Speed_X, F(0x000005F4), 50.0, F(0x000005F8), 480.0)
+    StartMashing3(RA-Int[0x00], 1.0, IC-Int[0x11F8])
+    ChangeAction(3, R(Button Mashable Status Expired()))
+  } else {
+  }
+  SubRoutine(hidden_subroutine_0x464)
+  SubRoutine(hidden_subroutine_0x4DC)
+}
+

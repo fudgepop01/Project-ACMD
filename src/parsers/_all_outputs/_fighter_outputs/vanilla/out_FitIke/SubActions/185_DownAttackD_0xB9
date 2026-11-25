@@ -1,0 +1,62 @@
+[DownAttackD] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xB9: MAIN {
+  BodyCollision(2)
+  AsynchronousTimer(18.0)
+  OffensiveCollision(Sp(70, 0), 6, 361, Sp(0, 50), Sp(1, 80), 6.0, 0.0, 12.0, 0.0, 0.0, 1.0, 1.0, 579017794)
+  OffensiveCollision(Sp(70, 1), 6, 361, Sp(0, 50), Sp(1, 80), 6.0, 0.0, 6.0, 0.0, 0.0, 1.0, 1.0, 579017794)
+  OffensiveCollision(Sp(67, 2), 6, 361, Sp(0, 50), Sp(1, 80), 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 579017794)
+  OffensiveCollision(Sp(12, 3), 6, 361, Sp(0, 50), Sp(1, 80), 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 579017794)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+  AsynchronousTimer(30.0)
+  OffensiveCollision(Sp(70, 0), 6, 361, Sp(0, 50), Sp(1, 80), 6.0, 0.0, 12.0, 0.0, 0.0, 1.0, 1.0, 579017794)
+  OffensiveCollision(Sp(70, 1), 6, 361, Sp(0, 50), Sp(1, 80), 6.0, 0.0, 6.0, 0.0, 0.0, 1.0, 1.0, 579017794)
+  OffensiveCollision(Sp(67, 2), 6, 361, Sp(0, 50), Sp(1, 80), 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 579017794)
+  OffensiveCollision(Sp(12, 3), 6, 361, Sp(0, 50), Sp(1, 80), 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 579017794)
+  AsynchronousTimer(32.0)
+  TerminateCollisions()
+  BodyCollision(0)
+}
+
+Subaction 0xB9: GFX {
+  AsynchronousTimer(15.0)
+  SwordGlow(4, 3, 70, 0.0, 2.8, 0.0, 70, 0.0, 14.3, 0.0, true, 2293761, 70, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  AsynchronousTimer(20.0)
+  GraphicEffectStepping(28, 0, 0.0, 0.0, 0.0, 0.0, 180.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(22.0)
+  TerminateSwordGlow(1)
+  AsynchronousTimer(28.0)
+  SwordGlow(4, 3, 70, 0.0, 2.8, 0.0, 70, 0.0, 14.3, 0.0, true, 2293761, 70, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  AsynchronousTimer(30.0)
+  GraphicEffectStepping(28, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(35.0)
+  TerminateSwordGlow(1)
+}
+
+Subaction 0xB9: SOUND {
+  AsynchronousTimer(18.0)
+  SoundEffect(5877)
+  SynchronousTimer(12.0)
+  SoundEffect(5921)
+}
+
+Subaction 0xB9: OTHER {
+  SlopeContourStand03(1, 6, true)
+  AsynchronousTimer(17.0)
+  Rumble(17, 0)
+  AsynchronousTimer(31.0)
+  Rumble(17, 0)
+  AsynchronousTimer(32.0)
+  SlopeContourStand02(6, 12)
+}
+

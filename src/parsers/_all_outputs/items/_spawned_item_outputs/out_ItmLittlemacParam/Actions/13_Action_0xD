@@ -1,0 +1,10 @@
+// Status_Fly
+Action 0xD {
+  ChangeActionStatus(3, 3, R(In Air()))
+  (undef: Sp_Kinetic) 66_02_03_00(0.45, 0.0, true)
+  (undef: Sp_base) 65_07_01_00(2)
+  SubRoutine(hidden_subroutine_0xE8)
+  SubRoutine(hidden_subroutine_0x798)
+  ChangeAction(10, R(Button Tap?()))
+}
+

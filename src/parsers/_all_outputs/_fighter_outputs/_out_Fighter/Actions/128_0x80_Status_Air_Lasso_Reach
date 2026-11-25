@@ -1,0 +1,19 @@
+// Status_Air_Lasso_Reach
+[statusAnimCmd_AirLassoReach]
+Action 0x80: ENTRY {
+  ChangeAction(22, R(On Ground()))
+  BasicVariableSet(237, RA-Int[0x02])
+  FloatVariableSet(Variable_Float_Motion_Frame, RA-Float[0x04])
+  if (R(NOT Bit is Set(RA-Bool[0x12]))) {
+    ChangeSubAction(235)
+    FrameSpeedModifier(0.0)
+  }
+  SetArticleAction07(RA-Int[0x00], RA-Int[0x01])
+}
+
+[statusAnimCmdExit_AirLassoReach]
+Action 0x80 : EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 129.0)) && R(Compare(Variable_Int_Status_Kind != 131.0))) {
+    RemoveArticle(RA-Int[0x00])
+  }
+}

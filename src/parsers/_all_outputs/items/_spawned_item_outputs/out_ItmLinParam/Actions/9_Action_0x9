@@ -1,0 +1,8 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  ChangeSubAction(3)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(5, R(Button Tap?()))
+}
+

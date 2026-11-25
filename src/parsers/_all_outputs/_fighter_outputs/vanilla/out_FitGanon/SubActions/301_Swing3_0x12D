@@ -1,0 +1,36 @@
+[Swing3] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x12D: MAIN {
+  WeaponOperation(1)
+  AsynchronousTimer(9.0)
+  SubRoutine(EXTERNAL: gameAnimCmd_HarisenSwing3Common)
+  MoveHitbox(2, 54, -2.0, 0.0, 0.0)
+  MoveHitbox(3, 27, 0.0, 0.0, 0.0)
+  AsynchronousTimer(14.0)
+  TerminateCollisions()
+  WeaponOperation(3)
+  SynchronousTimer(2.0)
+  AllowInterrupt()
+}
+
+Subaction 0x12D: GFX {
+}
+
+Subaction 0x12D: SOUND {
+}
+
+Subaction 0x12D: OTHER {
+  AsynchronousTimer(9.0)
+  SlopeContourStand(6)
+  Rumble(17, 0)
+}
+

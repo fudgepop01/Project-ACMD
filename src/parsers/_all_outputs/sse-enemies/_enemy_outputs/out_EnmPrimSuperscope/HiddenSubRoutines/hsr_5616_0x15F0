@@ -1,0 +1,11 @@
+[hsr_15F0]
+hidden_subroutine_0x15F0 {
+  if (R(Compare(Variable_Int_Controller_Flick_X_Dir == 23.0)) || R(Compare(Variable_Int_Controller_Flick_X_Dir == 35.0)) || R(Compare(Variable_Int_Controller_Flick_X_Dir == 32.0)) || R(Compare(Variable_Int_Controller_Flick_X_Dir == 34.0))) {
+    SubRoutine(hidden_subroutine_0x15A8)
+    (undef: Sp_AI) 6A_00_01_00(60)
+  } elif (R(Compare(Variable_Int_Controller_Flick_X_Dir == 35.0))) {
+    SubRoutine(hidden_subroutine_0x15A8)
+    (undef: Sp_AI) 6A_00_01_00(60)
+  }
+  Return()
+}

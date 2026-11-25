@@ -1,0 +1,8 @@
+// Status_Turn_Dash
+Action 0x7 {
+  Visibility(false)
+  ChangeSubAction(4)
+  SynchronousTimer(2.0)
+  (undef: Sp_base) 65_00_00_00()
+}
+

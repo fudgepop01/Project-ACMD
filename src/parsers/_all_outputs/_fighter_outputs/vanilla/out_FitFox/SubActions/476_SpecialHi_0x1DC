@@ -1,0 +1,38 @@
+[SpecialHi] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1DC: MAIN {
+  OffensiveCollision(Sp(11, 0), 14, 80, Sp(0, 60), Sp(5, 60), 4.7, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 948113541)
+  SynchronousTimer(4.0)
+  OffensiveCollision(Sp(11, 0), 8, 80, Sp(0, 60), Sp(5, 60), 3.8, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 948113541)
+}
+
+Subaction 0x1DC: GFX {
+  GraphicEffectAttached(458761, 10, 0.0, -1.5, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  FlashOverlayEffect(255, 192, 128, 180)
+  SynchronousTimer(1.0)
+  ChangeFlashOverlayColor(30, 160, 60, 60, 80)
+  SynchronousTimer(30.0)
+  ChangeFlashOverlayColor(20, 128, 0, 0, 0)
+  SynchronousTimer(20.0)
+  TerminateFlashEffect()
+}
+
+Subaction 0x1DC: SOUND {
+  AsynchronousTimer(0.0)
+  SoundEffect(1224)
+  SoundEffect(3206)
+}
+
+Subaction 0x1DC: OTHER {
+  RumbleLoop(8, 20)
+}
+

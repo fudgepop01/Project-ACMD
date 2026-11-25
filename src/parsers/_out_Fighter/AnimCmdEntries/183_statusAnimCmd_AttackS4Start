@@ -1,0 +1,20 @@
+// @ 0x10D74
+AttackS4Start {
+  ChangeAction(14, R(In Air()))
+
+  ChangeActionStatus(10089, 43, R(Animation End()))
+  AdditionalRequirement(R(Button Pressed(Attack)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus(10087, 44, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  if (R(Compare(IC-Int[0x3F2] >= Common_Param_Float_Dash_Stick_X))) {
+    RightDirection()
+  } elif (R(Compare(IC-Int[0x3F6] >= Common_Param_Float_Dash_Stick_X))) {
+    LeftDirection()
+  }
+  DecideDirection()
+  CharacterSpecific01()
+  ChangeSubAction(86)
+}

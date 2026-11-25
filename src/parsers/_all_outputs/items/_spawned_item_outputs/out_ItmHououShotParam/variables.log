@@ -1,0 +1,10 @@
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in Action 0x4 (Status_Run) @ 1 : 1
+
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 5 : 1
+LA-Int[0x00] in Action 0x4 (Status_Run) @ 6 : 3
+LA-Int[0x00] in Action 0x5 (Status_Run_Brake) @ 1 : 3
+LA-Int[0x00] in Subaction 0x6 : GAME @ 11 : 1
+
+LA-Bool[0x07] in Action 0x1 (Status_Walk) @ 9 : 1
+
+LA-Bool[0x0E] in Action 0x1 (Status_Walk) @ 3 : 0

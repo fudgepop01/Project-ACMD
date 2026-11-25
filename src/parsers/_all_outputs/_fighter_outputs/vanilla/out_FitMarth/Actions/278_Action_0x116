@@ -1,0 +1,12 @@
+Action 0x116: ENTRY {
+  EnterFinalSmashState()
+  SetGimmickEffectFlag(false)
+  BitVariableClear(RA-Bool[0x10])
+  ChangeAction(286, R(Animation End()))
+  BasicVariableSet(494, RA-Int[0x00])
+  BasicVariableSet(498, RA-Int[0x01])
+  SubRoutine(hidden_subroutine_0x1DF38)
+}
+
+Action 0x116 : EXIT {
+}

@@ -1,0 +1,7 @@
+// Status_Jump_Squat
+Action 0xA {
+  SubRoutine(hidden_subroutine_0xF8)
+  (undef: Sp_Kinetic) 66_00_0D_00(LA-Float[0x00], LA-Float[0x01], -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+  ChangeAction(3, R(In Air()))
+}
+

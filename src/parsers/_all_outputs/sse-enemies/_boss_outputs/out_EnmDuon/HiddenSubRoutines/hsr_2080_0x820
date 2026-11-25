@@ -1,0 +1,11 @@
+[hsr_820]
+hidden_subroutine_0x820 {
+  BitVariableClear(LA-Bool[0x06])
+  SetLoop(-1) {
+    if (R(Bit is Set(LA-Bool[0x00])) && R(NOT Bit is Set(LA-Bool[0x06]))) {
+      BodyCollision(2)
+      BitVariableSet(LA-Bool[0x06])
+    }
+    SynchronousTimer(1.0)
+  }
+}

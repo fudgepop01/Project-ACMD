@@ -1,0 +1,12 @@
+// Status_Throw_Kirby
+Action 0xF1: ENTRY {
+  ChangeActionStatus(10142, 14, R(In Air()))
+  EnableActionStatusId(10142)
+  ChangeAction(14, R(Animation End()))
+  ChangeSubAction(RA-Int[0x00])
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1017C)
+  SubRoutine(statusAnimCmd_ThrowLogCommon)
+}
+
+Action 0xF1 : EXIT {
+}

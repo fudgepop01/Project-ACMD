@@ -1,0 +1,73 @@
+[AppealHi] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1BC: MAIN {
+  AsynchronousTimer(100.0)
+  AllowInterrupt()
+}
+
+Subaction 0x1BC: GFX {
+  AsynchronousTimer(20.0)
+  SetLoop(4) {
+    SynchronousTimer(4.0)
+    GraphicEffect(70, 4, 0.0, 3.0, 0.0, 15.0, 0.0, 0.0, 0.8, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, true)
+    GraphicEffectLanding(14, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.75, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+    SynchronousTimer(4.0)
+    GraphicEffect(70, 4, 0.0, 0.0, 0.0, 15.0, 0.0, 0.0, 1.0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, true)
+    SynchronousTimer(4.0)
+    GraphicEffect(70, 4, 0.0, -3.0, 0.0, 15.0, 0.0, 0.0, 0.8, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, true)
+  }
+  AsynchronousTimer(75.0)
+  GraphicEffect(70, 4, 0.0, 4.0, 0.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffectLanding(14, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x1BC: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffectTransient(861)
+  SynchronousTimer(20.0)
+  VictorySoundEffect(826)
+}
+
+Subaction 0x1BC: OTHER {
+  ModelChangerPermanent(2, 2)
+  if (R(NOT Article Exists())) {
+    GenerateArticleSubactionExclusive(0, true)
+  } else {
+    ArticleVisibility(0, true)
+  }
+  SetArticleAction(0, 20)
+  AsynchronousTimer(21.0)
+  if (R(Article Exists())) {
+    ArticleVisibility(0, false)
+    ModelChanger(1, 1)
+    ModelChangerPermanent(2, 2)
+  }
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+  UnkRaBit27(false)
+  SetTagDisplay(false)
+  AsynchronousTimer(75.0)
+  if (R(Article Exists())) {
+    ModelChanger(1, 0)
+    ArticleVisibility(0, true)
+  }
+  HeldItemsVisibility(true)
+  WearableItemsVisibility(true)
+  UnkRaBit27(true)
+  SetTagDisplay(true)
+  AsynchronousTimer(118.0)
+  ModelChangerPermanent(2, 0)
+  if (R(Article Exists())) {
+    ArticleVisibility(0, false)
+  }
+}
+

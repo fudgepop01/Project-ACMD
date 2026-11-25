@@ -1,0 +1,4 @@
+[hsr_11550]
+hidden_subroutine_0x11550 {
+  VictorySoundEffect(6016)
+}

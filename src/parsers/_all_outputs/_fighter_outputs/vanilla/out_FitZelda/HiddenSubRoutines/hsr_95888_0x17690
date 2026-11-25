@@ -1,0 +1,17 @@
+[hsr_17690]
+hidden_subroutine_0x17690 {
+  if (R(Bit is Set(RA-Bool[0x12]))) {
+    if (R(Article Exists())) {
+      SetArticleAction07(0, 1)
+    }
+    BitVariableClear(RA-Bool[0x12])
+  }
+  if (R(NOT On Ground())) {
+    BasicVariableDecrement(RA-Int[0x02])
+    if (R(Compare(RA-Int[0x02] >= 0.0))) {
+      DisableSpecifiedMovement(1)
+    } else {
+      EnableSpecifiedMovement(1)
+    }
+  }
+}

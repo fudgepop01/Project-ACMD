@@ -1,0 +1,23 @@
+// Status_Hammer_Jump_Squat
+Action 0xE2: ENTRY {
+
+  ChangeAction(0, R(NOT Bit is Set(LA-Bool[0x0B])))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(227, R(Compare(RA-Int[0x00] > Customize_Param_Int_Jump_Squat_Frame)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(228, R(In Air()))
+  BasicVariableSet(322, RA-Int[0x05])
+  SubRoutine(hidden_subroutine_0x8044)
+  if (R(Compare(Variable_Int_Controller_Flick_Y >= Common_Param_Int_Jump_Initial_Frame)) || R(Compare(Variable_Int_Controller_Flick_Y_Dir <= 0.0))) {
+    BitVariableSet(RA-Bool[0x10])
+  }
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x80EC)
+}
+
+Action 0xE2 : EXIT {
+  if (R(Bit is Set(LA-Bool[0x0B]))) {
+    AttachItemHoldAnim_UNDOC1ARGS(2)
+  }
+}

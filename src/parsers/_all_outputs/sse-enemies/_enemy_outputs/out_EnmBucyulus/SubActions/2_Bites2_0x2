@@ -1,0 +1,43 @@
+[Bites2] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x2: MAIN {
+}
+
+Subaction 0x2: MAIN EXIT {
+}
+
+Subaction 0x2: MAIN INIT {
+}
+
+Subaction 0x2: GFX {
+  AsynchronousTimer(7.0)
+  GraphicEffectAttached(9699339, 4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  AsynchronousTimer(25.0)
+  GraphicEffectAttached(9699340, 4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+}
+
+Subaction 0x2: GFX EXIT {
+}
+
+Subaction 0x2: GFX INIT {
+}
+
+Subaction 0x2: SFX {
+  SoundEffect(9336)
+}
+
+Subaction 0x2: SFX EXIT {
+}
+
+Subaction 0x2: SFX INIT {
+}
+

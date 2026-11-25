@@ -1,0 +1,25 @@
+[SwimUpDamage] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xF0: MAIN {
+}
+
+Subaction 0xF0: GFX {
+}
+
+Subaction 0xF0: SOUND {
+  AsynchronousTimer(5.0)
+  SoundEffect(183)
+}
+
+Subaction 0xF0: OTHER {
+}
+

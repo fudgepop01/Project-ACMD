@@ -1,0 +1,27 @@
+Action 0xD: MAIN {
+}
+
+Action 0xD: EXIT {
+  (undef: Sp_Kinetic) 66_07_01_00(3)
+  (undef: Sp_Kinetic) 66_07_01_00(5)
+  SubRoutine(hidden_subroutine_0x458)
+}
+
+Action 0xD: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  if (R(Bit is Set(LA-Bool[0x07]))) {
+    BitVariableClear(LA-Bool[0x07])
+    if (R(Compare(IC-Int[0x5DC0] == 0.0))) {
+      (undef: Sp_AI) 6A_00_01_00(16)
+    } else {
+      (undef: Sp_AI) 6A_00_01_00(15)
+    }
+  } else {
+    (undef: Sp_AI) 6A_00_01_00(14)
+  }
+  SubAction09(10)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+  (undef: Sp_Kinetic) 66_00_04_00(3, 21, 35791.0, 13)
+  (undef: Sp_Kinetic) 66_00_04_00(5, 21, 35791.0, 19)
+}
+

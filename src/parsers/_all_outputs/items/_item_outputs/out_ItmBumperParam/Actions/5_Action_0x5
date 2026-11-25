@@ -1,0 +1,21 @@
+// Status_Run_Brake
+Action 0x5 {
+  DetachFromSurface()
+  (undef: Sp_Kinetic) 66_06_01_00(3)
+  RightDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 8.0))) {
+    AddSubtractMomentum_UNDOC3ARGS(0.0, 3.0, 0.0)
+  }
+  ChangeAction(4, R(On Ground()))
+  ChangeAction(8, R(In walljump situation()), 7)
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 2.0))) {
+    ChangeSubAction(2)
+    SynchronousTimer(18.0)
+    if (R(0x271E())) {
+      ChangeAction(9, R(Button Tap?()))
+    }
+  }
+}
+

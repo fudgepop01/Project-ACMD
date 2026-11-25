@@ -1,0 +1,19 @@
+// Status_Glide_Landing
+Action 0x86: ENTRY {
+  ChangeAction(14, R(In Air()))
+  if (R(Subaction Exists())) {
+    ChangeSubAction(62)
+
+    ChangeActionStatus(10013, 77, R(Animation End()))
+    AdditionalRequirement(R(On Ground()))
+
+  } else {
+
+    ChangeActionStatus(10014, 81, R(Button Tap?()))
+    AdditionalRequirement(R(On Ground()))
+
+  }
+}
+
+Action 0x86 : EXIT {
+}

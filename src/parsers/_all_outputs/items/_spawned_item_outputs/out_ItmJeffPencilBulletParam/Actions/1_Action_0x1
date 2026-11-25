@@ -1,0 +1,7 @@
+// Status_Walk
+Action 0x1 {
+  ChangeSubAction(0)
+  (undef: Sp_base) 65_05_01_00(Variable_Int_Controller_Flick_Y_Dir)
+  ChangeAction(4, R(On Ground()))
+}
+

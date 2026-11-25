@@ -1,0 +1,9 @@
+[hsr_78]
+hidden_subroutine_0x78 {
+  ChangeActionStatus(6, 6, R(Bit is Set(RA-Bool[0x02])))
+  ChangeActionStatus(4, 4, R(On Ground()))
+  if (R(Bit is Set(LA-Bool[0x01]))) {
+    BitVariableSet(LA-Bool[0x0C])
+  }
+  Return()
+}

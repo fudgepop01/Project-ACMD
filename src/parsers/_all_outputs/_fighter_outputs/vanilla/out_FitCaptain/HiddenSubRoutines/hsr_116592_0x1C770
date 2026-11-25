@@ -1,0 +1,5 @@
+[hsr_1C770]
+hidden_subroutine_0x1C770 {
+  EnableActionStatusId(0)
+  DisableActionStatusId(1)
+}

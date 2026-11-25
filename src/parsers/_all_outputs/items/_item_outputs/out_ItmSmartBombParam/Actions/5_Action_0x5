@@ -1,0 +1,17 @@
+// Status_Run_Brake
+Action 0x5 {
+  SubRoutine(hidden_subroutine_0x138)
+  SubRoutine(hidden_subroutine_0xB0)
+  DisableActionStatusId(5)
+  ChangeSubAction(3)
+  if (R(NOT Bit is Set(LA-Bool[0x00]))) {
+    ChangeAction(7, R(In walljump situation()), 255)
+    if (R(Is within footstool range())) {
+      AsynchronousTimer(20.0)
+      ChangeAction(7, R(Button Tap?()))
+    }
+  } else {
+    ChangeAction(4, R(On Ground()))
+  }
+}
+

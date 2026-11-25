@@ -1,0 +1,30 @@
+Action 0x121: ENTRY {
+  SetGimmickEffectFlag(false)
+  RemoveArticle(1)
+  SubRoutine(hidden_subroutine_0x1C3F8)
+  BasicVariableSet(484, LA-Int[0x40])
+  BasicVariableSet(488, LA-Int[0x41])
+
+  ChangeActionStatus(0, 0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus(1, 14, R(Animation End()))
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SubRoutine(hidden_subroutine_0x1C478)
+      EnableActionStatusId(0)
+      DisableActionStatusId(1)
+      SetRequirement(R(In Air()))
+    } else {
+      SubRoutine(hidden_subroutine_0x1C4D0)
+      EnableActionStatusId(1)
+      DisableActionStatusId(0)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x121 : EXIT {
+  ExitFinalSmashState()
+}

@@ -1,0 +1,20 @@
+Action 0x7: MAIN {
+  SetLoop(-1) {
+    if (R(Animation has looped?())) {
+      SubRoutine(hidden_subroutine_0x3D8C)
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x7: EXIT {
+}
+
+Action 0x7: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  SubRoutine(hidden_subroutine_0x3D8C)
+  SubRoutine(hidden_subroutine_0x31C4)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+  SubRoutine(hidden_subroutine_0x1270)
+}
+

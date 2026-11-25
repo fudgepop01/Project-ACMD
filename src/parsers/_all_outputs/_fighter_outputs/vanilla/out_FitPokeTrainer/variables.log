@@ -1,0 +1,46 @@
+IC-Int[0x3FC] ("Variable_Float_Controller_Stick_Y_Rv") in Action 0x11D (): ENTRY @ 3 : 1
+
+IC-Int[0xC72] ("Common_Param_Float_Special_Stick_Y") in Action 0x11D (): ENTRY @ 3 : 3
+
+IC-Int[0xFA0] in Action 0x119 (): ENTRY @ 9 : 1
+IC-Int[0xFA0] in Action 0x11A (): ENTRY @ 5 : 1
+
+IC-Int[0x4E39] ("Variable_Int_Situation_Kind") in Action 0x116 (): ENTRY @ 0 : 1
+IC-Int[0x4E39] ("Variable_Int_Situation_Kind") in Action 0x123 (): ENTRY @ 2 : 1
+IC-Int[0x4E39] ("Variable_Int_Situation_Kind") in Action 0x125 (): ENTRY @ 1 : 1
+
+IC-Int[0x5A89] ("Owner_Param_Int_Stock_Count") in Action 0x119 (): ENTRY @ 4 : 2
+IC-Int[0x5A89] ("Owner_Param_Int_Stock_Count") in Action 0x11A (): ENTRY @ 2 : 2
+
+IC-Int[0x5DC2] in Action 0x122 () : EXIT @ 0 : 0
+
+LA-Int[0x41] in Action 0x119 (): ENTRY @ 12 : 2
+LA-Int[0x41] in hsr_4694 @ 0 : 0
+
+LA-Int[0x42] in Action 0x122 () : EXIT @ 0 : 1
+
+LA-Int[0x47] in Action 0x128 (): ENTRY @ 0 : 1
+LA-Int[0x47] in Action 0x128 (): ENTRY @ 18 : 1
+
+LA-Int[0x48] in Action 0x128 (): ENTRY @ 6 : 1
+LA-Int[0x48] in Action 0x128 (): ENTRY @ 24 : 1
+
+LA-Float[0x15] in Action 0x116 (): ENTRY @ 12 : 1
+
+LA-Float[0x19] in Action 0x120 (): ENTRY @ 5 : 1
+
+LA-Bool[0x41] in Action 0x119 (): ENTRY @ 13 : 1
+
+LA-Bool[0x42] in Action 0x116 (): ENTRY @ 7 : 1
+LA-Bool[0x42] in Action 0x119 (): ENTRY @ 3 : 1
+LA-Bool[0x42] in Action 0x11E (): ENTRY @ 3 : 1
+LA-Bool[0x42] in Action 0x11F (): ENTRY @ 3 : 1
+LA-Bool[0x42] in Action 0x120 (): ENTRY @ 3 : 1
+LA-Bool[0x42] in Action 0x121 (): ENTRY @ 3 : 1
+LA-Bool[0x42] in Action 0x122 (): ENTRY @ 3 : 1
+LA-Bool[0x42] in Action 0x123 (): ENTRY @ 9 : 1
+LA-Bool[0x42] in Action 0x123 (): ENTRY @ 22 : 1
+LA-Bool[0x42] in Action 0x125 (): ENTRY @ 7 : 1
+LA-Bool[0x42] in Action 0x127 (): ENTRY @ 2 : 1
+
+RA-Int[0x00] in Action 0x122 (): ENTRY @ 15 : 0

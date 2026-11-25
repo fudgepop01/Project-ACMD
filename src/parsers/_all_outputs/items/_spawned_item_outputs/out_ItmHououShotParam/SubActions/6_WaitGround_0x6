@@ -1,0 +1,187 @@
+[WaitGround] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x6 : GAME {
+  SetLoop(80) {
+    SpecialOffensiveCollision(Sp(0, 0), 1, 230, Sp(100, 100), Sp(0, 60), 40.0, 0.0, 20.0, 0.0, 0.0, 0.3, 0.5, 200709, 30, 1048512)
+    SpecialOffensiveCollision(Sp(0, 1), 1, 250, Sp(30, 100), Sp(0, 60), 30.0, 0.0, 60.0, 0.0, 0.0, 0.3, 0.5, 200709, 30, 1048512)
+    SynchronousTimer(3.0)
+    TerminateCollisions()
+  }
+  SynchronousTimer(2.0)
+  SpecialOffensiveCollision(Sp(0, 0), 1, 80, Sp(180, 100), Sp(0, 0), 44.0, 0.0, 20.0, 0.0, 0.0, 3.0, 1.0, 197765, 30, 1048512)
+  SpecialOffensiveCollision(Sp(0, 1), 1, 80, Sp(180, 100), Sp(0, 0), 34.0, 0.0, 60.0, 0.0, 0.0, 3.0, 1.0, 197765, 30, 1048512)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+  BasicVariableSet(1, LA-Int[0x00])
+  (undef: Sp_base) 65_00_00_00()
+}
+
+Subaction 0x6 : GFX {
+  ScreenTintFull(0, 60, 255, 100, 0, 40)
+  GraphicEffectAttached(17039416, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.1, false)
+  GraphicEffectAttached(17039414, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.15, false)
+  AsynchronousTimer(15.0)
+  GraphicEffectAttached(17039364, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 9.0, false)
+  AsynchronousTimer(60.0)
+  ScreenTintFull(0, 200, 255, 50, 0, 65)
+  AsynchronousTimer(300.0)
+  ScreenTintFull(0, 90, 50, 0, 0, 0)
+  AsynchronousTimer(390.0)
+  EndScreenTint(0, 0)
+}
+
+Subaction 0x6 : SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(7987)
+  SynchronousTimer(10.0)
+  if (R(Is within footstool range())) {
+    SoundEffect(7988)
+  } else {
+    if (R(Is within footstool range())) {
+      SoundEffect(7989)
+    } else {
+      SoundEffect(7990)
+    }
+  }
+  SynchronousTimer(20.0)
+  if (R(Is within footstool range())) {
+    SoundEffect(7988)
+  } else {
+    if (R(Is within footstool range())) {
+      SoundEffect(7989)
+    } else {
+      SoundEffect(7990)
+    }
+  }
+  SynchronousTimer(20.0)
+  if (R(Is within footstool range())) {
+    SoundEffect(7988)
+  } else {
+    if (R(Is within footstool range())) {
+      SoundEffect(7989)
+    } else {
+      SoundEffect(7990)
+    }
+  }
+  SynchronousTimer(20.0)
+  if (R(Is within footstool range())) {
+    SoundEffect(7988)
+  } else {
+    if (R(Is within footstool range())) {
+      SoundEffect(7989)
+    } else {
+      SoundEffect(7990)
+    }
+  }
+  SynchronousTimer(20.0)
+  if (R(Is within footstool range())) {
+    SoundEffect(7988)
+  } else {
+    if (R(Is within footstool range())) {
+      SoundEffect(7989)
+    } else {
+      SoundEffect(7990)
+    }
+  }
+  SynchronousTimer(20.0)
+  if (R(Is within footstool range())) {
+    SoundEffect(7988)
+  } else {
+    if (R(Is within footstool range())) {
+      SoundEffect(7989)
+    } else {
+      SoundEffect(7990)
+    }
+  }
+  SynchronousTimer(20.0)
+  if (R(Is within footstool range())) {
+    SoundEffect(7988)
+  } else {
+    if (R(Is within footstool range())) {
+      SoundEffect(7989)
+    } else {
+      SoundEffect(7990)
+    }
+  }
+  SynchronousTimer(20.0)
+  if (R(Is within footstool range())) {
+    SoundEffect(7988)
+  } else {
+    if (R(Is within footstool range())) {
+      SoundEffect(7989)
+    } else {
+      SoundEffect(7990)
+    }
+  }
+  SynchronousTimer(20.0)
+  if (R(Is within footstool range())) {
+    SoundEffect(7988)
+  } else {
+    if (R(Is within footstool range())) {
+      SoundEffect(7989)
+    } else {
+      SoundEffect(7990)
+    }
+  }
+  SynchronousTimer(20.0)
+  if (R(Is within footstool range())) {
+    SoundEffect(7988)
+  } else {
+    if (R(Is within footstool range())) {
+      SoundEffect(7989)
+    } else {
+      SoundEffect(7990)
+    }
+  }
+  SynchronousTimer(20.0)
+  if (R(Is within footstool range())) {
+    SoundEffect(7988)
+  } else {
+    if (R(Is within footstool range())) {
+      SoundEffect(7989)
+    } else {
+      SoundEffect(7990)
+    }
+  }
+  SynchronousTimer(20.0)
+  if (R(Is within footstool range())) {
+    SoundEffect(7988)
+  } else {
+    if (R(Is within footstool range())) {
+      SoundEffect(7989)
+    } else {
+      SoundEffect(7990)
+    }
+  }
+  SynchronousTimer(20.0)
+  if (R(Is within footstool range())) {
+    SoundEffect(7988)
+  } else {
+    if (R(Is within footstool range())) {
+      SoundEffect(7989)
+    } else {
+      SoundEffect(7990)
+    }
+  }
+  SynchronousTimer(20.0)
+  if (R(Is within footstool range())) {
+    SoundEffect(7988)
+  } else {
+    if (R(Is within footstool range())) {
+      SoundEffect(7989)
+    } else {
+      SoundEffect(7990)
+    }
+  }
+  SynchronousTimer(20.0)
+}
+

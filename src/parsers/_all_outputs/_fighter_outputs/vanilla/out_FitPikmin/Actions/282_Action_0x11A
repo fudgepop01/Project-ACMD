@@ -1,0 +1,12 @@
+Action 0x11A: ENTRY {
+  ExitFinalSmashState()
+  (undef: link) 0F_02_00_00()
+  (undef: link) 0F_01_00_00()
+  ChangeSubAction(41)
+  DetachAttachCameraFar(true)
+  ChangeAction(74, R(On Ground()))
+  BitVariableClear(LA-Bool[0x01])
+}
+
+Action 0x11A : EXIT {
+}

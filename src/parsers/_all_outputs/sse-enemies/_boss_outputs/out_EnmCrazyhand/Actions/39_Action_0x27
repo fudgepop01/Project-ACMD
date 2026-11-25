@@ -1,0 +1,17 @@
+Action 0x27: MAIN {
+}
+
+Action 0x27: EXIT {
+  if (R(Bit is Set(LA-Bool[0x0B]))) {
+    (undef: status) 02_02_03_00(200, 40, R(Button Tap?()))
+  }
+}
+
+Action 0x27: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(8)
+  BasicVariableSet(44, LA-Int[0x06])
+  SubAction09(16)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+}
+

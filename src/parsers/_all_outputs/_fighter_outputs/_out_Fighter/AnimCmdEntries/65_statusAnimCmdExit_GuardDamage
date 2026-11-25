@@ -1,0 +1,8 @@
+// @ 0x22708
+GuardDamage {
+  SubRoutine(statusAnimCmdExit_Guard)
+  if (R(Compare(Variable_Int_Status_Kind == 27.0))) {
+    SubActions0A(64)
+    SubActions0B(0.0)
+  }
+}

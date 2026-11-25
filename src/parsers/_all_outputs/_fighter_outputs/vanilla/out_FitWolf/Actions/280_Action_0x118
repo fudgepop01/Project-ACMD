@@ -1,0 +1,20 @@
+Action 0x118: ENTRY {
+  if (R(On Ground())) {
+    SetAerialOrOnstage(2)
+    SetAirGround(6)
+    ChangeAction(16, R(In Air()))
+    ChangeAction(0, R(Animation End()))
+    ChangeSubAction(473)
+    EnableActionStatusId(10146)
+  } else {
+    SetAerialOrOnstage(5)
+    SetAirGround(10)
+    ChangeAction(16, R(Animation End()))
+    ChangeSubAction(474)
+    EnableActionStatusId(10026)
+    ChangeAction(25, R(On Ground()))
+  }
+}
+
+Action 0x118 : EXIT {
+}

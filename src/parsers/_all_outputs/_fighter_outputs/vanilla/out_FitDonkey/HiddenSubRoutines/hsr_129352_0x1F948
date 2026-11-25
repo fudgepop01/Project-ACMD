@@ -1,0 +1,9 @@
+[hsr_1F948]
+hidden_subroutine_0x1F948 {
+  if (R(Button Press(Shield))) {
+    BitVariableSet(RA-Bool[0x11])
+  }
+  if (R(Animation has looped?())) {
+    BasicVariableIncrement(LA-Int[0x40])
+  }
+}

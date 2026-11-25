@@ -1,0 +1,8 @@
+[hsr_1AFBC]
+hidden_subroutine_0x1AFBC {
+
+  ChangeActionStatus(10000, 0, R(0x25()), 1)
+  AdditionalRequirement(R(On Ground()))
+
+  SubRoutine(statusAnimCmd_ItemShootWait_Common)
+}

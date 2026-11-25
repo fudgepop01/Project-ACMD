@@ -1,0 +1,52 @@
+[Bite] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x0: MAIN {
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 16.0))) {
+    AsynchronousTimer(1.0)
+    SubRoutine(hidden_subroutine_0x2948)
+  } else {
+    SubRoutine(hidden_subroutine_0x27B8)
+  }
+  AsynchronousTimer(18.0)
+  TerminateCollisions()
+  AsynchronousTimer(22.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 19, 8, 2.5, 35, 50, 0.0, 0, 0.0, 78, -1.6, 12.5, 0.0, 0.0, 0.0, 0.0, 2, 0.0, 0.6, 1.0, false, true, 50, 2, 3, 3, true, 0, 311, false, 15, false, true, false, false, 12, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(26.0)
+  TerminateCollisions()
+}
+
+Subaction 0x0: MAIN EXIT {
+}
+
+Subaction 0x0: MAIN INIT {
+}
+
+Subaction 0x0: GFX {
+}
+
+Subaction 0x0: GFX EXIT {
+}
+
+Subaction 0x0: GFX INIT {
+}
+
+Subaction 0x0: SFX {
+  SynchronousTimer(18.0)
+  SoundEffect(9343)
+}
+
+Subaction 0x0: SFX EXIT {
+}
+
+Subaction 0x0: SFX INIT {
+}
+

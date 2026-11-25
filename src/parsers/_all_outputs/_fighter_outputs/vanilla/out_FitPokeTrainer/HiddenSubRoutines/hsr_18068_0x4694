@@ -1,0 +1,4 @@
+[hsr_4694]
+hidden_subroutine_0x4694 {
+  BasicVariableDecrement(LA-Int[0x41])
+}

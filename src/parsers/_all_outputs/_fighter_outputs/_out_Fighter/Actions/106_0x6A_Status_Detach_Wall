@@ -1,0 +1,10 @@
+// Status_Detach_Wall
+Action 0x6A: ENTRY {
+  SubRoutine(statusAnimCmd_AIRChkFallCommon)
+  ChangeAction(14, R(Animation End()))
+  ChangeSubAction(196, true)
+  FrameSpeedModifier(1.0)
+}
+
+Action 0x6A : EXIT {
+}

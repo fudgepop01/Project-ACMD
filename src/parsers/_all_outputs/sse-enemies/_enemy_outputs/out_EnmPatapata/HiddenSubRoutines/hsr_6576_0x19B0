@@ -1,0 +1,9 @@
+[hsr_19B0]
+hidden_subroutine_0x19B0 {
+  (undef: Sp_base) 65_09_02_00(IC-Int[0xABE4], LA-Float[0x01])
+  (undef: Sp_base) 65_09_02_00(IC-Int[0xABE4], LA-Float[0x03])
+  BitVariableClear(LA-Bool[0x00])
+  BitVariableClear(LA-Bool[0x01])
+  (undef: team) 22_00_01_00(LA-Int[0x05])
+  (undef: damage) 1E_02_00_00()
+}

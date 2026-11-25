@@ -1,0 +1,16 @@
+[hsr_104C]
+hidden_subroutine_0x104C {
+  Switch(10000, LA-Int[0x00])
+    Case(1)
+    Case(2)
+      if (R(Is within footstool range())) {
+        SoundEffect(7683)
+      } else {
+        SoundEffect(7684)
+      }
+      Return()
+    Case(3)
+      SoundEffect(7686)
+      Return()
+  EndSwitch()
+}

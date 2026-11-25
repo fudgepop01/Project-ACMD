@@ -1,0 +1,13 @@
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in Action 0x9 (Status_Turn_Run_Brake) @ 1 : 1
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in Action 0xA (Status_Jump_Squat) @ 1 : 1
+
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x3 (Status_Dash) @ 0 : 1
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x8 (Status_Turn_Run) @ 1 : 1
+
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 0 : 1
+LA-Int[0x00] in Action 0x3 (Status_Dash) @ 6 : 1
+LA-Int[0x00] in Action 0x3 (Status_Dash) @ 7 : 0
+LA-Int[0x00] in Action 0x8 (Status_Turn_Run) @ 5 : 1
+LA-Int[0x00] in Action 0x8 (Status_Turn_Run) @ 7 : 0
+
+LA-Int[0x1B] in Subaction 0x0 : SOUND @ 0 : 1

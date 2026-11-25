@@ -1,0 +1,43 @@
+[AppealS] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1BF: MAIN {
+  AsynchronousTimer(99.0)
+  AllowInterrupt()
+}
+
+Subaction 0x1BF: GFX {
+}
+
+Subaction 0x1BF: SOUND {
+  AsynchronousTimer(6.0)
+  SoundEffect(5600)
+  SynchronousTimer(4.0)
+  VictorySoundEffect(2283)
+  SynchronousTimer(30.0)
+  VictorySoundEffect(2265)
+  VictorySoundEffect(5705)
+  SynchronousTimer(20.0)
+  VictorySoundEffect(2266)
+  VictorySoundEffect(5707)
+  SynchronousTimer(13.0)
+  SoundEffect(5705)
+  SynchronousTimer(24.0)
+  SoundEffect(5668)
+  SynchronousTimer(19.0)
+  SoundEffect(5667)
+}
+
+Subaction 0x1BF: OTHER {
+  HeldItemsVisibility(false)
+  SlopeContourStand03(1, 6, true)
+}
+

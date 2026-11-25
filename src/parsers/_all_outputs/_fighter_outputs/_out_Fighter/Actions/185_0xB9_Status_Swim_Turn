@@ -1,0 +1,11 @@
+// Status_Swim_Turn
+Action 0xB9: ENTRY {
+  ReverseDirection()
+  ChangeAction(182, R(Animation End()))
+  SubRoutine(hidden_subroutine_0x1C5DC)
+  SubRoutine(hidden_subroutine_0x1C65C)
+  ChangeSubAction(244)
+}
+
+Action 0xB9 : EXIT {
+}

@@ -1,0 +1,35 @@
+[NONE] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x3: MAIN {
+  TerminateSwordGlow(1)
+  TerminateGraphicEffect(2228225, true, true)
+  if (R(Compare(LA-Float[0x1B] >= 130.0))) {
+    SwordGlow(1652, 8, 29, 0.5, 0.0, 0.0, 29, 0.5, 1.7, 0.0, false, 2228225, 31, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+    SwordGlow(1652, 8, 49, -0.5, 0.0, 0.0, 49, -0.5, -1.7, 0.0, false, 2228225, 53, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  } elif (R(Compare(LA-Float[0x1B] >= 65.0))) {
+    SwordGlow(1651, 8, 29, 0.5, 0.0, 0.0, 29, 0.5, 1.7, 0.0, false, 2228225, 31, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8)
+    SwordGlow(1651, 8, 49, -0.5, 0.0, 0.0, 49, -0.5, -1.7, 0.0, false, 2228225, 53, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8)
+  }
+  if (R(On Ground())) {
+    BitVariableClear(LA-Bool[0x42])
+  }
+}
+
+Subaction 0x3: GFX {
+}
+
+Subaction 0x3: SOUND {
+}
+
+Subaction 0x3: OTHER {
+}
+

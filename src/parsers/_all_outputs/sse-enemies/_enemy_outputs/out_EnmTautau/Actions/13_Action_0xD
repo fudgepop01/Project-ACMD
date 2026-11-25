@@ -1,0 +1,31 @@
+Action 0xD: MAIN {
+  SetLoop(-1) {
+    if (R(Compare(Variable_Int_Controller_Flick_Y >= IC-Int[0x5DC0]))) {
+      if (R(Bit is Set(LA-Bool[0x0B]))) {
+        if [IF_REQ_UNKNOWN_3ARG] (R(Can Pick Up Another Item()), Variable_Int_Controller_Flick_No_Reset_Y, 3) {
+          (undef: Sp_AI) 6A_00_01_00(37)
+        } else {
+          (undef: Sp_AI) 6A_00_01_00(19)
+        }
+      } else {
+        (undef: Sp_AI) 6A_00_01_00(19)
+        (undef: targetSearch) 16_00_00_00()
+        (undef: Sp_AI) 6A_00_01_00(38)
+      }
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0xD: EXIT {
+  BitVariableClear(LA-Bool[0x0B])
+}
+
+Action 0xD: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(28)
+  (undef: Sp_AI) 6A_00_01_00(30)
+  SubAction09(1)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 16)
+}
+

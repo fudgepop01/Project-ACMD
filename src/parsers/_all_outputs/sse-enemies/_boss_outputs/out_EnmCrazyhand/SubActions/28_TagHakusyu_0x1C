@@ -1,0 +1,93 @@
+[TagHakusyu] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1C: MAIN {
+  AsynchronousTimer(39.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 23, 4, 1.1, 160, 100, 0.0, 10, 0.0, 0, 0.0, 22.5, 0.0, 0.0, 0.0, 0.0, 9, 0.0, 1.0, 1.0, true, false, 0, 2, 6, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 7, 4, 1.1, 160, 100, 0.0, 10, 0.0, 0, 0.0, 22.5, 0.0, 0.0, -15.0, 0.0, 9, 0.0, 1.0, 1.0, true, false, 0, 2, 6, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(150.0)
+  TerminateCollisions()
+  AsynchronousTimer(172.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 23, 3, 0.0, 160, 60, 0.0, 0, 0.0, 60, 0.0, 16.0, 0.0, 7.5, 28.0, -7.0, 0, 0.0, 1.0, 1.0, true, false, 0, 2, 6, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 23, 3, 0.0, 160, 60, 0.0, 0, 0.0, 60, 0.0, 16.0, 0.0, 3.75, 11.5, -7.0, 0, 0.0, 1.0, 1.0, true, false, 0, 2, 6, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(178.0)
+  TerminateCollisions()
+  AsynchronousTimer(179.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 23, 6, 1.1, 90, 40, 0.0, 0, 0.0, 30, 0.0, 18.0, 0.0, 7.5, 28.0, 7.0, 5, 0.0, 1.0, 1.0, true, false, 0, 2, 8, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 23, 6, 1.1, 90, 40, 0.0, 0, 0.0, 30, 0.0, 18.0, 0.0, 3.75, 11.5, 7.0, 5, 0.0, 1.0, 1.0, true, false, 0, 2, 8, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(182.0)
+  TerminateCollisions()
+  AsynchronousTimer(190.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 23, 3, 0.0, 160, 60, 0.0, 0, 0.0, 60, 0.0, 16.0, 0.0, 7.5, 28.0, -7.0, 0, 0.0, 1.0, 1.0, true, false, 0, 2, 6, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 23, 3, 0.0, 160, 60, 0.0, 0, 0.0, 60, 0.0, 16.0, 0.0, 3.75, 11.5, -7.0, 0, 0.0, 1.0, 1.0, true, false, 0, 2, 6, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(193.0)
+  TerminateCollisions()
+  AsynchronousTimer(194.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 23, 6, 1.1, 90, 40, 0.0, 0, 0.0, 30, 0.0, 18.0, 0.0, 7.5, 28.0, 7.0, 5, 0.0, 1.0, 1.0, true, false, 0, 2, 8, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 23, 6, 1.1, 90, 40, 0.0, 0, 0.0, 30, 0.0, 18.0, 0.0, 3.75, 11.5, 7.0, 5, 0.0, 1.0, 1.0, true, false, 0, 2, 8, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(198.0)
+  TerminateCollisions()
+  AsynchronousTimer(205.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 23, 4, 0.0, 160, 60, 0.0, 0, 0.0, 60, 0.0, 17.0, 0.0, 7.5, 28.0, -7.0, 0, 0.0, 1.0, 1.0, true, false, 20, 2, 6, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 23, 4, 0.0, 160, 60, 0.0, 0, 0.0, 60, 0.0, 17.0, 0.0, 3.75, 11.5, -7.0, 0, 0.0, 1.0, 1.0, true, false, 20, 2, 6, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(207.0)
+  TerminateCollisions()
+  AsynchronousTimer(208.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 23, 5, 1.1, 90, 40, 0.0, 0, 0.0, 30, 0.0, 20.0, 0.0, 7.5, 28.0, 7.0, 5, 0.0, 1.0, 1.0, true, false, 0, 2, 8, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 23, 5, 1.1, 90, 40, 0.0, 0, 0.0, 30, 0.0, 20.0, 0.0, 3.75, 11.5, 7.0, 5, 0.0, 1.0, 1.0, true, false, 0, 2, 8, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(211.0)
+  TerminateCollisions()
+  AsynchronousTimer(219.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 23, 4, 0.0, 160, 60, 0.0, 0, 0.0, 60, 0.0, 18.0, 0.0, 7.5, 28.0, -7.0, 0, 0.0, 1.0, 1.0, true, false, 20, 2, 6, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 23, 4, 0.0, 160, 60, 0.0, 0, 0.0, 60, 0.0, 18.0, 0.0, 3.75, 11.5, -7.0, 0, 0.0, 1.0, 1.0, true, false, 20, 2, 6, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(223.0)
+  TerminateCollisions()
+  AsynchronousTimer(224.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 23, 6, 1.1, 90, 40, 0.0, 0, 0.0, 30, 0.0, 22.5, 0.0, 7.5, 28.0, 7.0, 3, 0.0, 1.0, 1.0, true, false, 0, 2, 8, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 23, 6, 1.1, 90, 40, 0.0, 0, 0.0, 30, 0.0, 22.5, 0.0, 3.75, 11.5, 7.0, 3, 0.0, 1.0, 1.0, true, false, 0, 2, 8, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(226.0)
+  TerminateCollisions()
+  AsynchronousTimer(234.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 23, 4, 0.0, 160, 60, 0.0, 0, 0.0, 60, 0.0, 18.0, 0.0, 7.5, 28.0, -7.0, 0, 0.0, 1.0, 1.0, true, false, 20, 2, 6, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 23, 4, 0.0, 160, 60, 0.0, 0, 0.0, 60, 0.0, 18.0, 0.0, 3.75, 11.5, -7.0, 0, 0.0, 1.0, 1.0, true, false, 20, 2, 6, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(237.0)
+  TerminateCollisions()
+  AsynchronousTimer(238.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 23, 8, 1.1, 90, 80, 0.0, 0, 0.0, 70, 0.0, 22.5, 0.0, 7.5, 28.0, 7.0, 5, 0.0, 1.0, 1.0, true, false, 0, 2, 8, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 23, 8, 1.1, 90, 80, 0.0, 0, 0.0, 70, 0.0, 22.5, 0.0, 3.75, 11.5, 7.0, 5, 0.0, 1.0, 1.0, true, false, 0, 2, 8, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(242.0)
+  TerminateCollisions()
+}
+
+Subaction 0x1C: MAIN EXIT {
+}
+
+Subaction 0x1C: MAIN INIT {
+}
+
+Subaction 0x1C: GFX {
+}
+
+Subaction 0x1C: GFX EXIT {
+}
+
+Subaction 0x1C: GFX INIT {
+}
+
+Subaction 0x1C: SFX {
+}
+
+Subaction 0x1C: SFX EXIT {
+}
+
+Subaction 0x1C: SFX INIT {
+}
+

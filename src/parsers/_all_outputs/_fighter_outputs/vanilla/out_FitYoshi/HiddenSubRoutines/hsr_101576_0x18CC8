@@ -1,0 +1,9 @@
+[hsr_18CC8]
+hidden_subroutine_0x18CC8 {
+  SubRoutine(hsr_18310)
+  if (R(Bit is Set(RA-Bool[0x12]))) {
+    GenerateArticle(4)
+    FloatVariableSet(IC-Int[0xFEC], RA-Float[0x0A])
+    BitVariableClear(RA-Bool[0x12])
+  }
+}

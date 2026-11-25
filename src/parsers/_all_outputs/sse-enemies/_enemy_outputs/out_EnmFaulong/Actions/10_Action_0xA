@@ -1,0 +1,18 @@
+Action 0xA: MAIN {
+}
+
+Action 0xA: EXIT {
+}
+
+Action 0xA: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(13)
+  SubAction09(3)
+  if (R(0x2715())) {
+    (undef: Sp_Kinetic) 66_0A_02_00(3, 19)
+  } else {
+    (undef: Sp_Kinetic) 66_07_01_00(-1)
+  }
+  BasicVariableSet(11, LA-Int[0x06])
+}
+

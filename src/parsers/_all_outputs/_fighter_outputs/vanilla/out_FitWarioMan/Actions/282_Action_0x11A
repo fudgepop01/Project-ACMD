@@ -1,0 +1,9 @@
+Action 0x11A: ENTRY {
+  BasicVariableSet(466, RA-Int[0x00])
+  BasicVariableSet(477, RA-Int[0x01])
+  BitVariableClear(RA-Bool[0x10])
+  SubRoutine(hidden_subroutine_0x198A0)
+}
+
+Action 0x11A : EXIT {
+}

@@ -1,0 +1,6 @@
+// @ 0x22F58
+AirLasso {
+  if (R(Compare(Variable_Int_Status_Kind != 129.0)) && R(Compare(Variable_Int_Status_Kind != 128.0))) {
+    RemoveArticle(RA-Int[0x00])
+  }
+}

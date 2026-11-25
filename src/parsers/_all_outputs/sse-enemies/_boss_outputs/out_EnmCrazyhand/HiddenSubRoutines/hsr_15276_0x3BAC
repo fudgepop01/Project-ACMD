@@ -1,0 +1,4 @@
+[hsr_3BAC]
+hidden_subroutine_0x3BAC {
+  VictorySoundEffect(8837)
+}

@@ -1,0 +1,11 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  (undef: Sp_base) 65_07_01_00(16)
+  ChangeAction(13, R(Compare(LA-Float[0x08] <= Variable_Float_Posture_Pos_Y)))
+  if (R(Compare(1010.0 <= 0.01))) {
+    ChangeSubAction(2)
+    SynchronousTimer(100.0)
+  }
+  ChangeAction(13, R(Button Tap?()))
+}
+

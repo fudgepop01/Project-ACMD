@@ -1,0 +1,13 @@
+// Status_Slip_Down
+Action 0x8A: ENTRY {
+  BasicVariableSet(Common_Param_Int_Slip_Damage_Disable_Frame, LA-Int[0x0A])
+
+  ChangeAction(126, R(In Air()))
+  AdditionalRequirement(R(Has Passed Over an Edge Backward()))
+
+  SubRoutine(hidden_subroutine_0x622C)
+  ChangeSubAction(225)
+}
+
+Action 0x8A : EXIT {
+}

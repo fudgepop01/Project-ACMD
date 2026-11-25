@@ -1,0 +1,32 @@
+Action 0xE: MAIN {
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0xECC)
+    if (R(NOT 0x3F())) {
+      LoopBreak()
+    }
+    SubRoutine(hidden_subroutine_0x165C)
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0xE: EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 8.0)) && R(Compare(Variable_Int_Status_Kind != 0.0)) && R(Compare(Variable_Int_Status_Kind != 15.0)) && R(Compare(Variable_Int_Status_Kind != 14.0))) {
+    SubRoutine(hidden_subroutine_0xBBC)
+  }
+  (undef: collision) 06_2A_00_00()
+}
+
+Action 0xE: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_01_01_00(8)
+  (undef: Sp_AI) 6A_00_01_00(13)
+  BasicVariableSet(15, LA-Int[0x06])
+  SubAction09(0)
+  ModuleGetTraceVecFromLine_UNDOC2ARGS(LA-Float[0x0A], LA-Float[0x0B])
+  (undef: Sp_Kinetic) 66_1C_04_00(Variable_Float_Posture_Lr, LA-Float[0x0A], LA-Float[0x0B], LA-Float[0x04])
+  (undef: Sp_Kinetic) 66_07_01_00(-1)
+  (undef: Sp_Kinetic) 66_00_03_00(3, 21, LA-Float[0x04])
+  SubRoutine(hidden_subroutine_0x43C)
+  (undef: collision) 06_29_01_00(0)
+}
+

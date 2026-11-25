@@ -1,0 +1,26 @@
+// @ 0x20E28
+BatSwing4Common {
+  SetLoop(4) {
+    GraphicEffect(10, 0, 0.0, 0.0, -5.0, 0.0, 0.0, 0.0, 1.0, 4.0, 0.0, 10.0, 0.0, 0.0, 0.0, true)
+    GraphicEffect(17, 305, 0.0, 8.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+    FlashOverlayEffect(255, 255, 0, 120)
+    SynchronousTimer(1.0)
+    FlashOverlayEffect(128, 0, 0, 120)
+    SynchronousTimer(1.0)
+    ChangeFlashOverlayColor(5, 128, 0, 0, 0)
+    SynchronousTimer(5.0)
+    GraphicEffect(17, 305, 0.0, 8.0, 0.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+    FlashOverlayEffect(255, 255, 0, 120)
+    SynchronousTimer(1.0)
+    FlashOverlayEffect(128, 0, 0, 120)
+    SynchronousTimer(1.0)
+    ChangeFlashOverlayColor(5, 128, 0, 0, 0)
+    SynchronousTimer(5.0)
+    TerminateFlashEffect()
+  }
+  GraphicEffect(40, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  SetLoop(10) {
+    GraphicEffect(17, 305, 0.0, 8.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+    SynchronousTimer(1.0)
+  }
+}

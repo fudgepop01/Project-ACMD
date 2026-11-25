@@ -1,0 +1,33 @@
+[Dash] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xE: MAIN {
+  AsynchronousTimer(10.0)
+  EnableActionStatusId(10009)
+}
+
+Subaction 0xE: GFX {
+  AsynchronousTimer(4.0)
+  GraphicEffectStepping(10, 0, 0.0, 0.0, -4.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0xE: SOUND {
+  AsynchronousTimer(4.0)
+  SoundEffect(5976)
+  SynchronousTimer(10.0)
+  SoundEffect(5987)
+}
+
+Subaction 0xE: OTHER {
+  SlopeContourStand03(9, 5, true)
+  Rumble(21, 0)
+}
+

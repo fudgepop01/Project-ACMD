@@ -1,0 +1,34 @@
+Action 0x130: ENTRY {
+  BodyCollision(2)
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      ChangeSubAction(528, true)
+      if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+        BitVariableSet(RA-Bool[0x10])
+        SynchronousTimer(1.0)
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      ChangeSubAction(530, true)
+      if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+        BitVariableSet(RA-Bool[0x10])
+        SynchronousTimer(1.0)
+      }
+      SetRequirement(R(On Ground()))
+    }
+    BitVariableSet(RA-Bool[0x10])
+    LoadRest()
+  }
+}
+
+Action 0x130 : EXIT {
+}

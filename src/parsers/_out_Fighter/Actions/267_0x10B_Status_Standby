@@ -1,0 +1,20 @@
+// Status_Standby
+Action 0x10B: ENTRY {
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+  ChangeSubAction(-1)
+  DetachAttachCameraFar(false)
+  SetGimmickEffectFlag(false)
+  Visibility(false)
+  BodyCollision(3)
+  NothingDueToBug(false)
+  DisableMagifyingGlass()
+  Module1901()
+  HavokPhysicsDisable()
+}
+
+Action 0x10B : EXIT {
+  DetachAttachCameraFar(true)
+  Visibility(true)
+  BodyCollision(0)
+}

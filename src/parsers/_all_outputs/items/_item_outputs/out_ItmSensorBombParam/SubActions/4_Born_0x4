@@ -1,0 +1,33 @@
+[Born] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x4 : GAME {
+  Screenshake(1)
+  SpecialOffensiveCollision(Sp(0, 0), 25, 45, Sp(0, 100), Sp(0, 10), 13.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 202373, 16, 1048512)
+  SynchronousTimer(4.0)
+  ChangeHitboxSize(0, 5.12)
+  SynchronousTimer(4.0)
+  ChangeHitboxDamage(0, 20)
+  ChangeHitboxSize(0, 3.412)
+  SynchronousTimer(8.0)
+  ChangeHitboxDamage(0, 2)
+  ChangeHitboxSize(0, 0.4)
+  SynchronousTimer(2.0)
+}
+
+Subaction 0x4 : GFX {
+  GraphicEffect(24, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x4 : SOUND {
+  VictorySoundEffect(80)
+}
+

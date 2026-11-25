@@ -1,0 +1,42 @@
+[ThrowF] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x73: MAIN {
+  ThrowAttackCollision(0, 0, 4, 50, 45, 0, 70, 0, 0.0, 1.0, 1.0, 0, 0, 3, true, true, 8)
+  ThrowAttackCollision(1, 0, 3, 361, 100, 0, 40, 0, 0.0, 1.0, 1.0, 0, 0, 3, true, true, 8)
+  AsynchronousTimer(14.0)
+  ThrowCollision(0, 70, RA-Int[0x02], RA-Int[0x03], RA-Int[0x04])
+  AsynchronousTimer(31.0)
+  AllowInterrupt()
+}
+
+Subaction 0x73: GFX {
+  AsynchronousTimer(20.0)
+  GraphicEffect(17, 0, 0.0, 18.0, 8.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x73: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(112)
+  SoundEffect(114)
+  SynchronousTimer(11.0)
+  SoundEffect(111)
+  SoundEffect(112)
+  LowVoiceClip()
+}
+
+Subaction 0x73: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(14.0)
+  Screenshake(1)
+  Rumble(13, 0)
+}
+

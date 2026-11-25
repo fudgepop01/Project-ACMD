@@ -1,0 +1,12 @@
+Action 0x17: MAIN {
+}
+
+Action 0x17: EXIT {
+}
+
+Action 0x17: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_03_00_00()
+  (undef: Sp_AI) 6A_00_01_00(22)
+}
+

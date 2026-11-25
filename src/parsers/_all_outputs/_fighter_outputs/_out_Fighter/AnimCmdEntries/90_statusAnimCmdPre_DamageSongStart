@@ -1,0 +1,4 @@
+// @ 0x22E10
+DamageSongStart {
+  SubRoutine(hidden_subroutine_0x157B4)
+}

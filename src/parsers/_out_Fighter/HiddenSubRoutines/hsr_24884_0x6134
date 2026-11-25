@@ -1,0 +1,11 @@
+[hsr_6134]
+hidden_subroutine_0x6134 {
+  BasicVariableDecrement(RA-Int[0x01])
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    BitVariableSet(RA-Bool[0x11])
+  }
+  if (R(Bit is Set(RA-Bool[0x11])) && R(NOT Bit is Set(RA-Bool[0x10]))) {
+    SelectCliffHangData(0)
+    BitVariableClear(RA-Bool[0x11])
+  }
+}

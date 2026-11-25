@@ -1,0 +1,5 @@
+[hsr_C2B8]
+hidden_subroutine_0xC2B8 {
+  SubRoutine(hidden_subroutine_0xD490)
+  SubRoutine(hsr_23A68)
+}

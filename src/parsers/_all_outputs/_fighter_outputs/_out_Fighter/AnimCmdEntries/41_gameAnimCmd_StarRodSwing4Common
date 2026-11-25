@@ -1,0 +1,10 @@
+// @ 0x21538
+StarRodSwing4Common {
+  OffensiveCollision(Sp(305, 0), 18, 361, Sp(0, 100), Sp(6, 12), 5.76, 0.0, 7.4, 0.0, 0.0, 1.0, 1.0, 977470080)
+  OffensiveCollision(Sp(305, 1), 18, 361, Sp(0, 100), Sp(6, 12), 3.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 977470080)
+  OffensiveCollision(Sp(305, 2), 18, 361, Sp(0, 100), Sp(6, 12), 2.4, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 977470080)
+  OffensiveCollision(Sp(305, 3), 18, 361, Sp(0, 100), Sp(6, 12), 2.4, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 977470080)
+  PlaySoundFromProjectileItem(8077, 8080)
+  WeaponOperation(100)
+  SubRoutine(effectAnimCmd_Swing4Impact)
+}

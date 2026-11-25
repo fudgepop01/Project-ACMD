@@ -1,0 +1,26 @@
+[hsr_1C8]
+hidden_subroutine_0x1C8 {
+  BasicVariableSet(0, LA-Int[0x00])
+  if (R(Compare(LA-Int[0x01] == 2.0))) {
+    If_UNDOC5ARGS(R(0x271C()), 27.0, 5.0, false, 45.0)
+    BasicVariableSet(2, LA-Int[0x00])
+    ElseIf_UNDOC5ARGS(R(0x271C()), -27.0, 5.0, false, 45.0)
+    BasicVariableSet(1, LA-Int[0x00])
+  }
+} else {
+  If_UNDOC5ARGS(R(0x271C()), -27.0, 5.0, false, 45.0)
+  BasicVariableSet(1, LA-Int[0x00])
+  ElseIf_UNDOC5ARGS(R(0x271C()), 27.0, 5.0, false, 45.0)
+  BasicVariableSet(2, LA-Int[0x00])
+}
+}
+FloatVariableSet(Variable_Float_Posture_Pos_X, LA-Float[0x00])
+if (R(Compare(LA-Int[0x00] == 1.0))) {
+FloatVariableAdd(-27.0, LA-Float[0x00])
+} elif (R(Compare(LA-Int[0x00] == 2.0))) {
+FloatVariableAdd(27.0, LA-Float[0x00])
+} else {
+BasicVariableSet(2, LA-Int[0x00])
+}
+Return()
+}

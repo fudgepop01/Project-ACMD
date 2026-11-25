@@ -1,0 +1,12 @@
+Action 0x114: ENTRY {
+  BasicVariableSet(0, RA-Int[0x00])
+  if (R(On Ground())) {
+    ChangeSubAction(473)
+  } else {
+    ChangeSubAction(475)
+  }
+  ChangeAction(279, R(Animation End()))
+}
+
+Action 0x114 : EXIT {
+}

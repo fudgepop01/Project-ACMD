@@ -1,0 +1,17 @@
+Action 0x112: ENTRY {
+  BasicVariableSet(462, LA-Int[0x40])
+  BasicVariableSet(464, LA-Int[0x41])
+  SubRoutine(hidden_subroutine_0x1C3F8)
+
+  ChangeActionStatus(0, 0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus(1, 14, R(Animation End()))
+  BasicVariableSet(0, RA-Int[0x00])
+  BasicVariableSet(-1, RA-Int[0x01])
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1C9A8)
+  Goto(hidden_subroutine_0x1C878)
+}
+
+Action 0x112 : EXIT {
+}

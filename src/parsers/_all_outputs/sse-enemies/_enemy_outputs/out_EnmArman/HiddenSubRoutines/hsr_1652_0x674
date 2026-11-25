@@ -1,0 +1,9 @@
+[hsr_674]
+hidden_subroutine_0x674 {
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    (undef: Sp_CollisionHit) 6D_00_01_00(0)
+  } else {
+    (undef: Sp_CollisionHit) 6D_00_01_00(2)
+  }
+  Return()
+}

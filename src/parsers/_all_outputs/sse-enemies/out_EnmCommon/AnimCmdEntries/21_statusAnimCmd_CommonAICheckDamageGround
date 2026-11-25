@@ -1,0 +1,7 @@
+// @ 0x3C40
+CommonAICheckDamageGround {
+  if (R(Bit is Set(RA-Bool[0x02])) && R(NOT Bit is Set(RA-Bool[0x01]))) {
+    BitVariableSet(RA-Bool[0x04])
+  }
+  Return()
+}

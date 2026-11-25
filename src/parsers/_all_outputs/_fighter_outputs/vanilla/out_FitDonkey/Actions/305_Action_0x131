@@ -1,0 +1,17 @@
+Action 0x131: ENTRY {
+  BitVariableClear(RA-Bool[0x10])
+  ChangeSubAction(499)
+
+  ChangeAction(305, R(Animation End()))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x10])))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(306, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(In Air()))
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1CEE8)
+}
+
+Action 0x131 : EXIT {
+}

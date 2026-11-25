@@ -1,0 +1,8 @@
+// @ 0x22E50
+CliffCatchMove {
+  ChangeAction(14, R(In Air()))
+  ChangeAction(14, R(NOT Hasn't Tethered 3 Times()))
+  BasicVariableSet(Common_Param_Int_Cliff_Catch_Move_Frame, RA-Int[0x00])
+  ChangeAction(116, R(Compare(RA-Int[0x00] <= 0.0)))
+  ChangeAction(0, R(On Ground()))
+}

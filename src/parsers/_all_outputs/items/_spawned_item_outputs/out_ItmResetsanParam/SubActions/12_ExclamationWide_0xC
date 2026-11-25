@@ -1,0 +1,24 @@
+[ExclamationWide] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xC : GAME {
+}
+
+Subaction 0xC : GFX {
+  AsynchronousTimer(10.0)
+  GraphicEffect(13172737, 0, -6.0, 14.0, 0.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0xC : SOUND {
+  SoundEffect(7685)
+  SubRoutine(hidden_subroutine_0xD6C)
+}
+

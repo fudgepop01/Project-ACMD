@@ -1,0 +1,14 @@
+[hsr_128]
+hidden_subroutine_0x128 {
+  if (R(Compare(LA-Int[0x00] == 1.0))) {
+    FloatVariableRandom(0.0, 3.0, LA-Float[0x00])
+    (undef: Sp_base) 65_09_08_00(126, 0, LA-Float[0x02], LA-Float[0x01], 0.0, 5.0, LA-Float[0x00], 0.0)
+    BasicVariableSet(0, LA-Int[0x00])
+  } else {
+    FloatVariableRandom(-3.0, 0.0, LA-Float[0x00])
+    (undef: Sp_base) 65_09_08_00(126, 0, LA-Float[0x02], LA-Float[0x01], 0.0, 5.0, LA-Float[0x00], 0.0)
+    BasicVariableSet(1, LA-Int[0x00])
+  }
+  SynchronousTimer(5.0)
+  Return()
+}

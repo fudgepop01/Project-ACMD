@@ -1,0 +1,61 @@
+[AttackAirF] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x63: MAIN {
+  AsynchronousTimer(2.0)
+  BitVariableSet(RA-Bool[0x1E])
+  AsynchronousTimer(4.0)
+  SetLoop(5) {
+    SpecialOffensiveCollision(Sp(0, 0), 2, 130, Sp(30, 100), Sp(0, 0), 3.0, 0.0, 4.0, 10.0, 0.0, 1.0, 1.0, 994248194, 0, 5242819)
+    SpecialOffensiveCollision(Sp(0, 1), 1, 60, Sp(30, 100), Sp(0, 0), 3.0, 0.0, 4.0, 1.0, 0.0, 1.0, 1.0, 994248194, 0, 5242819)
+    SpecialOffensiveCollision(Sp(0, 2), 1, 200, Sp(30, 100), Sp(0, 0), 3.0, 0.0, 10.0, 10.0, 0.0, 1.0, 1.0, 994248194, 0, 5242819)
+    SpecialOffensiveCollision(Sp(0, 3), 1, 340, Sp(30, 100), Sp(0, 0), 3.0, 0.0, 10.0, 1.0, 0.0, 1.0, 1.0, 994248194, 0, 5242819)
+    SynchronousTimer(1.0)
+    TerminateCollisions()
+    SynchronousTimer(1.0)
+  }
+  OffensiveCollision(Sp(49, 0), 4, 361, Sp(0, 120), Sp(0, 60), 8.0, 0.0, 4.0, 0.0, 0.0, 1.0, 1.0, 994247808)
+  OffensiveCollision(Sp(49, 1), 4, 361, Sp(0, 120), Sp(0, 60), 7.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 994247808)
+  OffensiveCollision(Sp(21, 2), 4, 361, Sp(0, 120), Sp(0, 60), 6.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 994247808)
+  SynchronousTimer(1.0)
+  TerminateCollisions()
+  AsynchronousTimer(33.0)
+  BitVariableClear(RA-Bool[0x1E])
+  AsynchronousTimer(35.0)
+  AllowInterrupt()
+}
+
+Subaction 0x63: GFX {
+  AsynchronousTimer(3.0)
+  GraphicEffectAttached2(70, 0, 0.0, 7.0, 7.0, -90.0, 30.0, 0.0, 1.0, true)
+  AsynchronousTimer(6.0)
+  GraphicEffectAttached2(70, 0, 0.0, 7.0, 3.0, -90.0, 30.0, 0.0, 0.75, true)
+  AsynchronousTimer(9.0)
+  GraphicEffectAttached2(70, 0, 0.0, 7.0, -1.0, -90.0, 30.0, 0.0, 0.5, true)
+  AsynchronousTimer(11.0)
+  GraphicEffectAttached2(70, 0, 0.0, 7.0, -5.0, -90.0, 30.0, 0.0, 0.4, true)
+}
+
+Subaction 0x63: SOUND {
+  AsynchronousTimer(4.0)
+  LowVoiceClip()
+  SoundEffect(6563)
+  SynchronousTimer(4.0)
+  SoundEffect(6563)
+  SynchronousTimer(4.0)
+  SoundEffect(6563)
+}
+
+Subaction 0x63: OTHER {
+  AsynchronousTimer(5.0)
+  Rumble(18, 0)
+}
+

@@ -1,0 +1,17 @@
+// Status_Walk
+Action 0x1 {
+  (undef: Sp_base) 65_06_01_00(2)
+  (undef: Sp_base) 65_04_01_00(580)
+  (undef: Sp_base) 65_05_01_00(430)
+  DisableSpecifiedMovement(2)
+  BasicVariableSet(5, LA-Int[0x00])
+  ChangeSubAction(0)
+  SynchronousTimer(5.0)
+  EnableSpecifiedMovement(2)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 1.25, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+  SetRequirement(R(Animation has looped?()))
+  LoadRest()
+  ChangeActionStatus(13, 13, R(On Ground()))
+  ChangeSubAction(2)
+}
+

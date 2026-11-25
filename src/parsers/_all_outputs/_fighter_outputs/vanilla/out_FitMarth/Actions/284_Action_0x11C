@@ -1,0 +1,24 @@
+Action 0x11C: ENTRY {
+  BitVariableClear(RA-Bool[0x10])
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  if (R(Bit is Set(RA-Bool[0x15]))) {
+    BasicVariableSet(476, RA-Int[0x00])
+    BasicVariableSet(485, RA-Int[0x01])
+  } elif (R(Bit is Set(RA-Bool[0x16]))) {
+    BasicVariableSet(478, RA-Int[0x00])
+    BasicVariableSet(487, RA-Int[0x01])
+  } else {
+    BasicVariableSet(477, RA-Int[0x00])
+    BasicVariableSet(486, RA-Int[0x01])
+  }
+  SubRoutine(hidden_subroutine_0x1D388)
+}
+
+Action 0x11C : EXIT {
+}

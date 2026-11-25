@@ -1,0 +1,13 @@
+// Status_Jump_Squat
+Action 0xA {
+  ChangeAction(9, R(In Air()))
+  if (R(Compare(Variable_Int_Motion_Kind == 2.0))) {
+    ChangeSubAction(2, true)
+  } else {
+    ChangeSubAction(2)
+  }
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(6, R(Button Tap?()))
+}
+

@@ -1,0 +1,15 @@
+[hsr_430]
+hidden_subroutine_0x430 {
+  if (R(NOT Bit is Set(LA-Bool[0x08]))) {
+    (undef: Sp_Kinetic) 66_00_04_00(2, 14, 35791.0, 3)
+    (undef: Sp_Kinetic) 66_00_04_00(3, 16, 35791.0, 3)
+    (undef: Sp_Kinetic) 66_00_04_00(4, 18, 35791.0, 6)
+    (undef: Sp_Kinetic) 66_00_04_00(5, 19, 35791.0, 7)
+    (undef: Sp_Kinetic) 66_00_04_00(6, 20, 35791.0, 8)
+    (undef: Sp_base) 65_07_02_00(IC-Int[0xABE3], LA-Float[0x02])
+    (undef: Sp_base) 65_07_02_00(IC-Int[0xABE4], LA-Float[0x05])
+    (undef: Sp_base) 65_04_01_00(0)
+    (undef: Sp_base) 65_04_01_00(1)
+    BitVariableSet(LA-Bool[0x08])
+  }
+}

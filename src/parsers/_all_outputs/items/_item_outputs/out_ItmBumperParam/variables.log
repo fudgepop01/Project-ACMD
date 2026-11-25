@@ -1,0 +1,34 @@
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in Action 0x3 (Status_Dash) @ 1 : 1
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in Action 0x3 (Status_Dash) @ 2 : 1
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in Action 0x4 (Status_Run) @ 1 : 1
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in Action 0x4 (Status_Run) @ 10 : 1
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in Action 0x4 (Status_Run) @ 11 : 1
+
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x4 (Status_Run) @ 2 : 1
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x4 (Status_Run) @ 7 : 1
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x5 (Status_Run_Brake) @ 5 : 1
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x5 (Status_Run_Brake) @ 10 : 1
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x8 (Status_Turn_Run) @ 2 : 1
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0xB (Status_Jump) @ 4 : 1
+
+LA-Bool[0x00] in Action 0xC (Status_Jump_Aerial) @ 4 : 1
+LA-Bool[0x00] in Action 0xC (Status_Jump_Aerial) @ 7 : 0
+
+LA-Bool[0x08] in Action 0x8 (Status_Turn_Run) @ 14 : 0
+LA-Bool[0x08] in Action 0xA (Status_Jump_Squat) @ 3 : 0
+LA-Bool[0x08] in Action 0xC (Status_Jump_Aerial) @ 0 : 0
+LA-Bool[0x08] in Action 0xD (Status_Fly) @ 0 : 0
+LA-Bool[0x08] in Action 0xE (Status_Fall) @ 0 : 0
+
+LA-Bool[0x0C] in Action 0x1 (Status_Walk) @ 1 : 0
+LA-Bool[0x0C] in Action 0x2 (Status_Walk_Brake) @ 0 : 0
+LA-Bool[0x0C] in Action 0x3 (Status_Dash) @ 0 : 0
+LA-Bool[0x0C] in Action 0x8 (Status_Turn_Run) @ 0 : 0
+LA-Bool[0x0C] in Action 0x9 (Status_Turn_Run_Brake) @ 0 : 0
+LA-Bool[0x0C] in Action 0xC (Status_Jump_Aerial) @ 6 : 0
+
+LA-Bool[0x0E] in Action 0xA (Status_Jump_Squat) @ 2 : 0
+
+RA-Bool[0x05] in Action 0x8 (Status_Turn_Run) @ 17 : 2
+RA-Bool[0x05] in Action 0xA (Status_Jump_Squat) @ 7 : 2
+RA-Bool[0x05] in Action 0xD (Status_Fly) @ 6 : 2

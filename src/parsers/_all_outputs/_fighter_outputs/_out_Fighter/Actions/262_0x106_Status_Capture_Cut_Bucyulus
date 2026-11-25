@@ -1,0 +1,9 @@
+// Status_Capture_Cut_Bucyulus
+Action 0x106: ENTRY {
+  HeldItemsVisibility(false)
+  ChangeSubAction(14)
+  ChangeAction(261, R(On Ground()))
+}
+
+Action 0x106 : EXIT {
+}

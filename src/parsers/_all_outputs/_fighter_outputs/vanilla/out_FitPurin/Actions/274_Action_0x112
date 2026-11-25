@@ -1,0 +1,16 @@
+Action 0x112: ENTRY {
+  BitVariableClear(RA-Bool[0x10])
+  ChangeAction(279, R(Animation End()))
+  if (R(Facing Right())) {
+    BasicVariableSet(463, RA-Int[0x06])
+    BasicVariableSet(472, RA-Int[0x07])
+  } else {
+    BasicVariableSet(462, RA-Int[0x06])
+    BasicVariableSet(471, RA-Int[0x07])
+  }
+  FloatVariableSet(1.0, RA-Float[0x0F])
+  SubRoutine(hidden_subroutine_0x16DF8)
+}
+
+Action 0x112 : EXIT {
+}

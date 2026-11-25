@@ -1,0 +1,13 @@
+[hsr_1BA20]
+hidden_subroutine_0x1BA20 {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(300)
+    Case(301)
+    Case(302)
+      Break()
+    DefaultCase()
+      SuperHeavyArmor(0, 0.0)
+      BitVariableClear(LA-Bool[0x2F])
+      ExitFinalSmashState()
+  EndSwitch()
+}

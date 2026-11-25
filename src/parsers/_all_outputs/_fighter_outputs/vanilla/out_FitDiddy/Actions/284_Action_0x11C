@@ -1,0 +1,12 @@
+Action 0x11C: ENTRY {
+  ChangeAction(285, R(On Ground()))
+  ChangeAction(292, R(Animation End()))
+  ChangeSubAction(475)
+  SetAirGround(10)
+}
+
+Action 0x11C : EXIT {
+  if (R(Compare(Variable_Int_Status_Kind == 292.0))) {
+    BitVariableSet(LA-Bool[0x3F])
+  }
+}

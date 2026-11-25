@@ -1,0 +1,25 @@
+Action 0x14: MAIN {
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0x4F0)
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x14: EXIT {
+  SubRoutine(hidden_subroutine_0x13B0)
+}
+
+Action 0x14: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(28)
+  SubAction09(1)
+  if (R(0x2715())) {
+    (undef: Sp_Kinetic) 66_0A_02_00(3, 28)
+  } else {
+    (undef: Sp_Kinetic) 66_07_01_00(-1)
+  }
+  if (R(0x11())) {
+    (undef: territory) 15_00_00_00()
+  }
+}
+

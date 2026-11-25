@@ -1,0 +1,40 @@
+[Landing] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x5: MAIN {
+}
+
+Subaction 0x5: MAIN EXIT {
+}
+
+Subaction 0x5: MAIN INIT {
+}
+
+Subaction 0x5: GFX {
+  GraphicEffectLanding(8, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.85, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x5: GFX EXIT {
+}
+
+Subaction 0x5: GFX INIT {
+}
+
+Subaction 0x5: SFX {
+  LandingSoundEffect(9512)
+}
+
+Subaction 0x5: SFX EXIT {
+}
+
+Subaction 0x5: SFX INIT {
+}
+

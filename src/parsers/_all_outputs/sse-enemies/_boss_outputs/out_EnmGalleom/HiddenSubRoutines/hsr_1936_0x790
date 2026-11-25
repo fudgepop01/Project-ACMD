@@ -1,0 +1,16 @@
+[hsr_790]
+hidden_subroutine_0x790 {
+  (undef: Sp_base) 65_16_00_00()
+  Switch(1001, 4)
+    Case(-1)
+      Break()
+    Case(3)
+      (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE9], LA-Float[0x0A])
+      (undef: Sp_base) 65_14_01_00(LA-Float[0x0A])
+    Case(2)
+      (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE8], LA-Float[0x0A])
+      (undef: Sp_base) 65_14_01_00(LA-Float[0x0A])
+    DefaultCase()
+      (undef: unk_procedures) 1B_02_01_00(F(0x0000075C))
+  EndSwitch()
+}

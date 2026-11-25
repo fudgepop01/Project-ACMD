@@ -1,0 +1,8 @@
+// @ 0x225C8
+GuardOn {
+  } else {
+  if (R(Compare(Variable_Int_Status_Kind == 27.0)) || R(Compare(Variable_Int_Status_Kind == 29.0))) {
+    TerminateGraphicEffect(20, true, true)
+    TerminateGraphicEffect(21, true, true)
+  }
+}

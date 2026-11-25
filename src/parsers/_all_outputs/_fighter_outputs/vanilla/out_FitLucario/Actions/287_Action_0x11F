@@ -1,0 +1,10 @@
+Action 0x11F: ENTRY {
+  Visibility(false)
+  BodyCollision(2)
+  BasicVariableSet(0, RA-Int[0x01])
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x19BE0)
+}
+
+Action 0x11F : EXIT {
+  Visibility(true)
+}

@@ -1,0 +1,7 @@
+// Status_Run_Brake
+Action 0x5 {
+  ChangeAction(4, R(On Ground()))
+  ChangeActionStatus(8, 7, R(Compare(LA-Int[0x00] == 1.0)))
+  SynchronousTimer(5.0)
+}
+

@@ -1,0 +1,20 @@
+// Status_Jump_Aerial
+Action 0xC {
+  ChangeActionStatus(3, 3, R(In Air()))
+  ChangeSubAction(1)
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0x220)
+    if (R(Is within footstool range())) {
+      SubRoutine(hidden_subroutine_0x420)
+    } elif (R(Is within footstool range())) {
+      SubRoutine(hidden_subroutine_0x518)
+    } elif (R(Is within footstool range())) {
+      SubRoutine(hidden_subroutine_0x398)
+    } elif (R(Is within footstool range())) {
+      SubRoutine(hidden_subroutine_0x5F8)
+    } else {
+      SynchronousTimer(10.0)
+    }
+  }
+}
+

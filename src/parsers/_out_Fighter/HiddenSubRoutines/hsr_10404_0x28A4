@@ -1,0 +1,4 @@
+[hsr_28A4]
+hidden_subroutine_0x28A4 {
+  GraphicEffect(33, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}

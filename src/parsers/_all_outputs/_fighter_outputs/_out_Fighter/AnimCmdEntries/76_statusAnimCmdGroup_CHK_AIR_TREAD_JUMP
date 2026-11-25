@@ -1,0 +1,6 @@
+// @ 0x24268
+CHK_AIR_TREAD_JUMP {
+  ClearPreventInterrupt(AIR_TREAD_JUMP)
+  SubRoutine(statusAnimCmd_AIRChkTreadJump)
+  ClearPreventInterrupt(ALL?)
+}

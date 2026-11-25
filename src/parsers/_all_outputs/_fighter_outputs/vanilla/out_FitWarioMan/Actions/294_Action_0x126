@@ -1,0 +1,27 @@
+Action 0x126: ENTRY {
+  BitVariableClear(RA-Bool[0x10])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(6)
+      if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(489, false)
+      } else {
+        ChangeSubAction(489, true)
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAirGround(10)
+      if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(502, false)
+      } else {
+        ChangeSubAction(502, true)
+      }
+      SetRequirement(R(On Ground()))
+    }
+    BitVariableSet(RA-Bool[0x10])
+    LoadRest()
+  }
+}
+
+Action 0x126 : EXIT {
+}

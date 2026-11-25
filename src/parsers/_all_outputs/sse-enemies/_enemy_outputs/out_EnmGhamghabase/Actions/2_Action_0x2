@@ -1,0 +1,40 @@
+Action 0x2: MAIN {
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonBulletProcExec)
+}
+
+Action 0x2: EXIT {
+}
+
+Action 0x2: INIT {
+  SubRoutine(hidden_subroutine_0x56C)
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_03_00_00()
+  (undef: Sp_AI) 6A_01_01_00(3)
+  SubAction09(0)
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonBulletProcInit)
+  if (R(NOT Bit is Set(LA-Bool[0x06]))) {
+    Switch(1001, 3)
+      Case(-1)
+        if (R(Facing Right())) {
+          (undef: Sp_Kinetic) 66_0C_02_00(3, 0.0)
+        } else {
+          (undef: Sp_Kinetic) 66_0C_02_00(3, 180.0)
+        }
+      Case(3)
+        if (R(Facing Right())) {
+          (undef: Sp_Kinetic) 66_0C_02_00(3, 180.0)
+        } else {
+          (undef: Sp_Kinetic) 66_0C_02_00(3, 0.0)
+        }
+      Case(2)
+        if (R(Facing Right())) {
+          (undef: Sp_Kinetic) 66_0C_02_00(3, 0.0)
+        } else {
+          (undef: Sp_Kinetic) 66_0C_02_00(3, 180.0)
+        }
+      DefaultCase()
+        (undef: unk_procedures) 1B_02_01_00(F(0x000009D4))
+    EndSwitch()
+  }
+}
+

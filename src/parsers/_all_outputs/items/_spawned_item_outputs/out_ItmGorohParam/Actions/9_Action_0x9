@@ -1,0 +1,11 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  SubRoutine(hidden_subroutine_0xF90)
+  ChangeActionStatus(4, 4, R(On Ground()))
+  ChangeSubAction(9)
+  ReverseDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  ChangeActionStatus(8, 8, R(In Air()))
+}
+

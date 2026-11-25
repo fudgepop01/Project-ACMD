@@ -1,0 +1,30 @@
+[Attack] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x0 : GAME {
+  SpecialOffensiveCollision(Sp(0, 0), 4, 361, Sp(0, 130), Sp(8, 40), 7.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 268633152, 0, 30408643)
+}
+
+Subaction 0x0 : GFX {
+  SynchronousTimer(1.0)
+  GraphicEffectAttached(14090241, 0, 0.0, 0.0, 0.0, 0.0, 90.0, 0.0, 2.0, true)
+  GraphicEffectAttached(14090246, 0, 0.0, 0.0, 0.0, 0.0, 90.0, 0.0, 3.5, true)
+}
+
+Subaction 0x0 : SOUND {
+  (undef: Sp_base) 65_17_02_00(8114, 8135)
+  if (R(Is within footstool range())) {
+    VictorySoundEffect(7820)
+  } else {
+    VictorySoundEffect(7821)
+  }
+}
+

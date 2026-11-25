@@ -1,0 +1,41 @@
+[CatchDash] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x6D: MAIN {
+  AsynchronousTimer(3.0)
+  ModelChangerPermanent(1, 2)
+  AsynchronousTimer(9.0)
+  CatchCollision(0, 0, 4.0, 0.0, 8.0, 9.0, 61, 3)
+  CatchCollision(1, 0, 3.5, 0.0, 8.5, 5.0, 61, 3)
+  CatchCollision(2, 0, 3.5, 0.0, 9.0, 2.0, 61, 3)
+  SubRoutine(EXTERNAL: gameAnimCmd_CaptureCutCommon [Subaction 0x6C: MAIN])
+  SynchronousTimer(2.0)
+  TerminateCatchCollisions()
+  BitVariableSet(RA-Bool[0x10])
+}
+
+Subaction 0x6D: GFX {
+}
+
+Subaction 0x6D: SOUND {
+  AsynchronousTimer(5.0)
+  SoundEffect(109)
+  SynchronousTimer(4.0)
+  StopSoundEffect(109)
+  SynchronousTimer(11.0)
+  SoundEffect(611)
+}
+
+Subaction 0x6D: OTHER {
+  AsynchronousTimer(9.0)
+  SlopeContourStand02(6, 3)
+}
+

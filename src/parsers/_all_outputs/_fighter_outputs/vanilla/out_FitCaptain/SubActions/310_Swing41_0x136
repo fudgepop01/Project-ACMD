@@ -1,0 +1,39 @@
+[Swing41] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x136 : MAIN {
+  AsynchronousTimer(6.0)
+  OffensiveCollision(Sp(305, 0), 10, 90, Sp(0, 30), Sp(6, 12), 5.76, 0.0, 7.4, 0.0, 0.0, 1.0, 1.0, 977470080)
+  OffensiveCollision(Sp(305, 1), 10, 90, Sp(0, 30), Sp(6, 12), 3.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 977470080)
+  OffensiveCollision(Sp(21, 2), 10, 90, Sp(0, 30), Sp(6, 12), 2.4, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 977470080)
+  OffensiveCollision(Sp(40, 3), 10, 90, Sp(0, 30), Sp(6, 12), 2.4, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 977470080)
+  PlaySoundFromProjectileItem(8077, 8080)
+  WeaponOperation(100)
+  SubRoutine(EXTERNAL: effectAnimCmd_Swing4Impact [Subaction 0x124 : MAIN] [Subaction 0x125 : MAIN] [Subaction 0x12F : MAIN] [Subaction 0x130 : MAIN])
+  FireProjectile(1)
+  AsynchronousTimer(10.0)
+  TerminateCollisions()
+  AsynchronousTimer(19.0)
+  BitVariableSet(RA-Bool[0x10])
+}
+
+Subaction 0x136 : GFX {
+}
+
+Subaction 0x136 : SOUND {
+}
+
+Subaction 0x136 : OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(6.0)
+  Rumble(13, 0)
+}
+

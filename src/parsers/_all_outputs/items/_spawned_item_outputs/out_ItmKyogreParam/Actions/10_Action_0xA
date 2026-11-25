@@ -1,0 +1,11 @@
+// Status_Jump_Squat
+Action 0xA {
+  SubRoutine(hidden_subroutine_0x14)
+  ChangeSubAction(1)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  SynchronousTimer(1.0)
+  ChangeSubAction(0)
+  ChangeAction(11, R(Button Tap?()))
+}
+

@@ -1,0 +1,26 @@
+[BombL] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xE : GAME {
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 1.5, -1.0, 2.0, 0.0, 0.0, 0.0, -0.08, 0.0, 0.0, true, false, false)
+  AsynchronousTimer(13.0)
+  (undef: Sp_base) 65_0E_07_00(21, LA-Float[0x00], LA-Float[0x01], LA-Float[0x02], 3.0, 0.0, 0.0)
+  (undef: Sp_base) 65_0D_07_00(139, 0, LA-Float[0x00], LA-Float[0x01], LA-Float[0x02], 25.0, 3.5)
+}
+
+Subaction 0xE : GFX {
+  SynchronousTimer(13.0)
+  GraphicEffectAttached(14090244, 21, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+}
+
+Subaction 0xE : SOUND {
+}
+

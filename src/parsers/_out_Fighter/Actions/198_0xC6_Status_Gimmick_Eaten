@@ -1,0 +1,13 @@
+// Status_Gimmick_Eaten
+Action 0xC6: ENTRY {
+  BodyCollision(2)
+  NothingDueToBug(false)
+  SetGimmickEffectFlag(false)
+  Visibility(false)
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+  ChangeSubAction(-1)
+}
+
+Action 0xC6 : EXIT {
+}

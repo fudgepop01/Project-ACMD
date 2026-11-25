@@ -1,0 +1,26 @@
+[CaptureWaitSnake] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 1,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x88: MAIN {
+}
+
+Subaction 0x88: GFX {
+}
+
+Subaction 0x88: SOUND {
+}
+
+Subaction 0x88: OTHER {
+  ModelChanger(1, 1)
+  ModelChanger(0, -1)
+  SlopeContourStand(6)
+}
+

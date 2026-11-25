@@ -1,0 +1,8 @@
+// Status_Jump
+Action 0xB {
+  DisableActionStatusId(12)
+  ChangeActionStatus(3, 3, R(In Air()))
+  SubRoutine(hidden_subroutine_0x978)
+  ChangeAction(10, R(Button Tap?()))
+}
+

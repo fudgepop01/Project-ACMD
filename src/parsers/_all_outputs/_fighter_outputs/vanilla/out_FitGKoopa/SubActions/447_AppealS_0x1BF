@@ -1,0 +1,45 @@
+[AppealS] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1BF: MAIN {
+}
+
+Subaction 0x1BF: GFX {
+  Goto(Subaction_0x1BE : GFX)
+}
+
+Subaction 0x1BF: SOUND {
+  AsynchronousTimer(31.0)
+  SoundEffect(6725)
+  SynchronousTimer(22.0)
+  SoundEffect(6725)
+  SynchronousTimer(15.0)
+  SoundEffect(6725)
+  SynchronousTimer(16.0)
+  SoundEffect(6725)
+  SynchronousTimer(22.0)
+  SoundEffect(6725)
+}
+
+Subaction 0x1BF: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(33.0)
+  Rumble(17, 0)
+  AsynchronousTimer(53.0)
+  Rumble(17, 0)
+  AsynchronousTimer(68.0)
+  Rumble(17, 0)
+  AsynchronousTimer(85.0)
+  Rumble(17, 0)
+  AsynchronousTimer(107.0)
+  Rumble(17, 0)
+}
+

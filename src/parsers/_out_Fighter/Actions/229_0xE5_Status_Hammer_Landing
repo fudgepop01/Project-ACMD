@@ -1,0 +1,21 @@
+// Status_Hammer_Landing
+Action 0xE5: ENTRY {
+
+  ChangeAction(223, R(Compare(RA-Int[0x00] > Common_Param_Int_Hammer_Landing_Frame)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(228, R(In Air()))
+
+  ChangeAction(0, R(NOT Bit is Set(LA-Bool[0x0B])))
+  AdditionalRequirement(R(On Ground()))
+
+  BasicVariableSet(322, RA-Int[0x05])
+  SubRoutine(hidden_subroutine_0x8044)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x814C)
+}
+
+Action 0xE5 : EXIT {
+  if (R(Bit is Set(LA-Bool[0x0B]))) {
+    AttachItemHoldAnim_UNDOC1ARGS(2)
+  }
+}

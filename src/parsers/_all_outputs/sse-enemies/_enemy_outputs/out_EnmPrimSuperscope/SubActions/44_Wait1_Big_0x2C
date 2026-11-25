@@ -1,0 +1,55 @@
+[Wait1_Big] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x2C: MAIN {
+  SynchronousTimer(1.0)
+  if (R(Compare(Variable_Int_Controller_Flick_X_Dir == 31.0))) {
+    SubRoutine(hidden_subroutine_0xB788)
+  } else {
+  }
+}
+
+Subaction 0x2C: MAIN EXIT {
+}
+
+Subaction 0x2C: MAIN INIT {
+}
+
+Subaction 0x2C: GFX {
+  SynchronousTimer(70.0)
+  SetLoop(-1) {
+    GraphicEffectLanding(11, 0, 1.55, 0.0, -0.338, 0.0, 0.0, 0.0, 1.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+    SynchronousTimer(90.0)
+    GraphicEffectLanding(11, 0, -1.567, 0.0, 1.909, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+    SynchronousTimer(90.0)
+  }
+}
+
+Subaction 0x2C: GFX EXIT {
+}
+
+Subaction 0x2C: GFX INIT {
+}
+
+Subaction 0x2C: SFX {
+  SoundEffect(9567)
+  SynchronousTimer(71.0)
+  SoundEffect(9543)
+  SynchronousTimer(90.0)
+  SoundEffect(9543)
+}
+
+Subaction 0x2C: SFX EXIT {
+}
+
+Subaction 0x2C: SFX INIT {
+}
+

@@ -1,0 +1,10 @@
+Action 0x119: ENTRY {
+  BitVariableClear(RA-Bool[0x10])
+  ChangeAction(282, R(In Air()))
+  SetAerialOrOnstage(1)
+  ChangeSubAction(466)
+  FrameSpeedModifier(0.0)
+}
+
+Action 0x119 : EXIT {
+}

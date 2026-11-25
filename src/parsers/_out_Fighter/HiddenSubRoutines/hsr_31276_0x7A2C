@@ -1,0 +1,5 @@
+[hsr_7A2C]
+hidden_subroutine_0x7A2C {
+  SubRoutine(statusAnimCmd_AllowThrowItem)
+  SubRoutine(statusAnimCmd_ItemShootJumpSquat_Common)
+}

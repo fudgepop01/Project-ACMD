@@ -1,0 +1,37 @@
+[ItemLegsFastB] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x158: MAIN {
+}
+
+Subaction 0x158: GFX {
+  AsynchronousTimer(2.0)
+  GraphicEffectStepping(0, 9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(10.0)
+  GraphicEffectStepping(0, 14, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0x158 : GFX)
+}
+
+Subaction 0x158: SOUND {
+  AsynchronousTimer(7.0)
+  SteppingSoundEffect(5311)
+  SynchronousTimer(10.0)
+  SteppingSoundEffect(5309)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0x158 : SFX)
+}
+
+Subaction 0x158: OTHER {
+}
+

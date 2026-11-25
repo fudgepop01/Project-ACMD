@@ -1,0 +1,39 @@
+[CliffJumpSlow2] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xE0: MAIN {
+}
+
+Subaction 0xE0: GFX {
+  GraphicEffect(10, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0xE0: SOUND {
+  AsynchronousTimer(2.0)
+  SoundEffect(6518)
+  SynchronousTimer(2.0)
+  SoundEffect(6481)
+}
+
+Subaction 0xE0: OTHER {
+  HavokPhysicsDisable()
+  HeldItemsVisibility(false)
+  SetLoop(5) {
+    SubRoutine(hidden_subroutine_0x2430)
+    SynchronousTimer(1.0)
+    SubRoutine(hidden_subroutine_0x24C8)
+    SynchronousTimer(2.0)
+  }
+  AsynchronousTimer(18.0)
+  HavokPhysicsEnable()
+  HeldItemsVisibility(true)
+}
+

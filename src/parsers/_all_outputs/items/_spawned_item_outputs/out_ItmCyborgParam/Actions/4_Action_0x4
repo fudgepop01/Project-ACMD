@@ -1,0 +1,22 @@
+// Status_Run
+Action 0x4 {
+  SubRoutine(hidden_subroutine_0x68)
+  ChangeActionStatus(3, 3, R(In Air()))
+  SetAerialOrOnstage(3)
+  BasicVariableSet(0, LA-Int[0x00])
+  ChangeAction(6, R(Compare(LA-Int[0x0B] == 0.0)))
+  ChangeSubAction(2)
+  (undef: Sp_Kinetic) 66_02_02_00(0.08, 0.0)
+  if (R(Is within footstool range())) {
+    ChangeAction(14, R(On Ground()))
+    AdditionalRequirement_UNDOC5ARGS(R(Is falling+hit down()), 0.0, -15.0, 30.0, 20.0)
+  }
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(6, R(Compare(LA-Int[0x0B] == 0.0)))
+  SubRoutine(hidden_subroutine_0x1B0)
+  DisableActionStatusId(4)
+  SubRoutine(hidden_subroutine_0x2B8)
+  DisableActionStatusId(4)
+}
+

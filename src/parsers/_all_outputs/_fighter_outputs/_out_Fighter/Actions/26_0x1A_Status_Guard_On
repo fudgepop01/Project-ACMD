@@ -1,0 +1,30 @@
+// Status_Guard_On
+Action 0x1A: ENTRY {
+
+  ChangeAction(126, R(In Air()))
+  AdditionalRequirement(R(Has Passed Over an Edge Backward()))
+
+  ChangeAction(14, R(In Air()))
+  SubRoutine(statusAnimCmd_GuardCont)
+  ChangeAction(86, R(Compare(LA-Float[0x03] < 0.0)))
+
+  ChangeAction(27, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  BasicVariableSet(Common_Param_Int_Shield_Min_Frame, RA-Int[0x00])
+  BasicVariableSet(Common_Param_Int_Shield_Just_Frame, RA-Int[0x01])
+  ChangeSubAction(63)
+  SubActions0A(64)
+  SubActions0B(0.0)
+  ConcurrentInfiniteLoop(I(9), statusAnimCmd_GuardOnUniq)
+  SubRoutine(hidden_subroutine_0x2D9C)
+}
+
+[statusAnimCmdExit_GuardOn]
+Action 0x1A : EXIT {
+  } else {
+  if (R(Compare(Variable_Int_Status_Kind == 27.0)) || R(Compare(Variable_Int_Status_Kind == 29.0))) {
+    TerminateGraphicEffect(20, true, true)
+    TerminateGraphicEffect(21, true, true)
+  }
+}

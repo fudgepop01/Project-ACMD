@@ -1,0 +1,16 @@
+Action 0x121: ENTRY {
+  SetGimmickEffectFlag(false)
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+  SetEvtToGroundStatus(false)
+  ChangeAction(288, R(Animation End()))
+  ChangeAction(292, R(Compare(RA-Float[0x04] <= 0.0)))
+  ChangeSubAction(481)
+  SetArticleAction(2, 2)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x18470)
+}
+
+Action 0x121 : EXIT {
+  ReverseDirection()
+  DecideDirection()
+}

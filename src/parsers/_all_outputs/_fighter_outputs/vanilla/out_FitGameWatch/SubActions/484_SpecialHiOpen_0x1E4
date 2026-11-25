@@ -1,0 +1,31 @@
+[SpecialHiOpen] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1E4: MAIN {
+}
+
+Subaction 0x1E4: GFX {
+}
+
+Subaction 0x1E4: SOUND {
+  SoundEffect(4489)
+  SynchronousTimer(4.0)
+  StopSoundEffect(4489)
+  SynchronousTimer(4.0)
+  SoundEffect(4469)
+  SynchronousTimer(6.0)
+  StopSoundEffect(4469)
+}
+
+Subaction 0x1E4: OTHER {
+  Rumble(0, 0)
+}
+

@@ -1,0 +1,9 @@
+// Status_Passive_Ceil
+Action 0x64: ENTRY {
+  ResetComboMeter()
+  ChangeAction(14, R(Animation End()))
+  ConcurrentInfiniteLoop(I(9), statusAnimCmd_FALLCommonUniq)
+}
+
+Action 0x64 : EXIT {
+}

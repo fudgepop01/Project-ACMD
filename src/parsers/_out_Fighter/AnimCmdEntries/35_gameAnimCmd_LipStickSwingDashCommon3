@@ -1,0 +1,8 @@
+// @ 0x22034
+LipStickSwingDashCommon3 {
+  OffensiveCollision(Sp(305, 0), 11, 361, Sp(0, 80), Sp(0, 40), 5.7, 0.0, 4.8, 0.0, 0.0, 1.0, 1.0, 977470094)
+  OffensiveCollision(Sp(305, 1), 11, 361, Sp(0, 80), Sp(0, 40), 3.5, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 977470094)
+  OffensiveCollision(Sp(305, 2), 11, 361, Sp(0, 80), Sp(0, 40), 3.5, 0.0, -3.0, 0.0, 0.0, 1.0, 1.0, 977470094)
+  OffensiveCollision(Sp(305, 3), 11, 361, Sp(0, 80), Sp(0, 40), 3.5, 0.0, -6.0, 0.0, 0.0, 1.0, 1.0, 977470094)
+  PlaySoundFromProjectileItem(8069, 8071)
+}

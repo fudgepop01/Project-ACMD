@@ -1,0 +1,37 @@
+[Final] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1E6: MAIN {
+  BodyCollision(2)
+  SetCameraBoundaries(15.0, 0.0, 0.0, 0.0)
+  CameraCloseup(5, 0, 1.0, 0.0, 0.0)
+  SetSlowEffectEnemyFighter(4, 30)
+  AsynchronousTimer(37.0)
+  BitVariableSet(LA-Bool[0x44])
+  AsynchronousTimer(42.0)
+  NormalCamera()
+  (undef: camera) 1A_01_00_00()
+}
+
+Subaction 0x1E6: GFX {
+  AsynchronousTimer(36.0)
+  GraphicEffectAttached(2359307, 81, 0.0, -1.0, 4.0, -7.5, 0.0, 0.0, 1.5, true)
+}
+
+Subaction 0x1E6: SOUND {
+  AsynchronousTimer(40.0)
+}
+
+Subaction 0x1E6: OTHER {
+  HeldItemsVisibility(false)
+  SlopeContourStand(9)
+}
+

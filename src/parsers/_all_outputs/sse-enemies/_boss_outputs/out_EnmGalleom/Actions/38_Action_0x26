@@ -1,0 +1,26 @@
+Action 0x26: MAIN {
+  SubRoutine(hidden_subroutine_0x1280)
+}
+
+Action 0x26: EXIT {
+}
+
+Action 0x26: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(9)
+  BasicVariableSet(34, LA-Int[0x06])
+  SubAction09(26)
+  SubRoutine(hidden_subroutine_0x860)
+  (undef: Sp_Area) 69_08_02_00(Variable_Int_Controller_Flick_No_Reset_Y, LA-Float[0x08])
+  (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE9], LA-Float[0x0B])
+  (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE8], LA-Float[0x0D])
+  if (R(Compare(LA-Float[0x08] < LA-Float[0x0B]))) {
+    FloatVariableSet(LA-Float[0x0B], LA-Float[0x08])
+  } elif (R(Compare(LA-Float[0x08] > LA-Float[0x0D]))) {
+    FloatVariableSet(LA-Float[0x0D], LA-Float[0x08])
+  }
+  TeleportationStageBased(LA-Float[0x08], Variable_Float_Posture_Pos_Y, Variable_Float_Posture_Pos_Z)
+  CharacterSpecific01()
+  (undef: Sp_Kinetic) 66_00_02_00(3, 28)
+}
+

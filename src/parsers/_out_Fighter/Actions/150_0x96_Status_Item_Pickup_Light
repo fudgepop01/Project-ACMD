@@ -1,0 +1,33 @@
+// Status_Item_Pickup_Light
+Action 0x96: ENTRY {
+  SetAirGround(15)
+  if (R(Item of Type is in Grabbing Range(8192))) {
+    if (R(Compare(Variable_Float_Kinetic_Sum_Speed >= Variable_Float_Item_Pickup_Light_Range))) {
+      ChangeSubAction(250)
+    } else {
+      ChangeSubAction(249)
+    }
+  } else {
+    if (R(Compare(Variable_Float_Kinetic_Sum_Speed >= Variable_Float_Item_Pickup_Light_Range))) {
+      ChangeSubAction(248)
+    } else {
+      ChangeSubAction(247)
+    }
+  }
+
+  ChangeAction(173, R(In Air()))
+  AdditionalRequirement(R(Compare(Variable_Int_Have_Item_Kind == 13.0)))
+
+  ChangeAction(14, R(In Air()))
+  AdditionalRequirement(R(NOT Compare(Variable_Int_Have_Item_Kind == 13.0)))
+
+  ChangeAction(164, R(Animation End()))
+  AdditionalRequirement(R(Compare(Variable_Int_Have_Item_Kind == 13.0)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+}
+
+Action 0x96 : EXIT {
+}

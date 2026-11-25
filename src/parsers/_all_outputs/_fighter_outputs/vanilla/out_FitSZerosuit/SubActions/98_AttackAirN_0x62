@@ -1,0 +1,39 @@
+[AttackAirN] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x62: MAIN {
+  SetArticleAction(0, 5)
+  GenerateArticle(2)
+  SetArticleAction(2, 2)
+  AsynchronousTimer(3.0)
+  BitVariableSet(RA-Bool[0x1E])
+  AsynchronousTimer(41.0)
+  BitVariableClear(RA-Bool[0x1E])
+  RemoveArticle(2)
+}
+
+Subaction 0x62: GFX {
+  GraphicEffectAttached(1638408, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+}
+
+Subaction 0x62: SOUND {
+  AsynchronousTimer(9.0)
+  LowVoiceClip()
+  SoundEffect(4921)
+  SynchronousTimer(1.0)
+  SoundEffect(4998)
+}
+
+Subaction 0x62: OTHER {
+  AsynchronousTimer(9.0)
+  Rumble(13, 9)
+}
+

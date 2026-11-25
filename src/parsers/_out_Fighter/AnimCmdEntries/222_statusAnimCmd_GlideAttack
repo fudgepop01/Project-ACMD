@@ -1,0 +1,11 @@
+// @ 0x15364
+GlideAttack {
+  AllowSpecificInterrupt(AIR_LANDING)
+  if (R(Compare(LA-Int[0x01] < Customize_Param_Int_Jump_Count_Max))) {
+    ChangeAction(15, R(Animation End()))
+  } else {
+    ChangeAction(16, R(Animation End()))
+  }
+  ChangeSubAction(60)
+  ConcurrentInfiniteLoop(I(9), statusAnimCmd_FALLCommonUniq)
+}

@@ -1,0 +1,9 @@
+// @ 0x22B48
+AttackHi4 {
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeSubAction(93)
+}

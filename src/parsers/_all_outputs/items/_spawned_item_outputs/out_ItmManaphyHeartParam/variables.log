@@ -1,0 +1,16 @@
+IC-Int[0x03] ("Variable_Float_Posture_Pos_X") in Action 0x1 (Status_Walk) @ 12 : 3
+IC-Int[0x03] ("Variable_Float_Posture_Pos_X") in Action 0x1 (Status_Walk) @ 12 : 7
+
+IC-Int[0x04] ("Variable_Float_Posture_Pos_Y") in Action 0x1 (Status_Walk) @ 13 : 3
+IC-Int[0x04] ("Variable_Float_Posture_Pos_Y") in Action 0x1 (Status_Walk) @ 13 : 7
+
+LA-Float[0x07] in Action 0x1 (Status_Walk) @ 12 : 0
+LA-Float[0x07] in Action 0x1 (Status_Walk) @ 12 : 1
+
+LA-Float[0x08] in Action 0x1 (Status_Walk) @ 13 : 0
+LA-Float[0x08] in Action 0x1 (Status_Walk) @ 13 : 1
+
+RA-Float[0x02] in Action 0x1 (Status_Walk) @ 8 : 1
+RA-Float[0x02] in Action 0x1 (Status_Walk) @ 11 : 1
+RA-Float[0x02] in Action 0x1 (Status_Walk) @ 12 : 5
+RA-Float[0x02] in Action 0x1 (Status_Walk) @ 13 : 5

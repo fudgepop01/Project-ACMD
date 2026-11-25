@@ -1,0 +1,8 @@
+[hsr_2D14]
+hidden_subroutine_0x2D14 {
+  } else {
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    (undef: collision) 06_21_02_00(false, 0)
+  }
+  Return()
+}

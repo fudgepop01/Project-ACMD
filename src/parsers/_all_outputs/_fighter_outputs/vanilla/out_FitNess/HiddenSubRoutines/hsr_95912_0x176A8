@@ -1,0 +1,11 @@
+[hsr_176A8]
+hidden_subroutine_0x176A8 {
+  if (R(Bit is Set(RA-Bool[0x12])) && R(In Air())) {
+    EnableSpecifiedMovement(1)
+  } else {
+    DisableSpecifiedMovement(1)
+  }
+  if (R(Hitbox Connects())) {
+    Collisions2D()
+  }
+}

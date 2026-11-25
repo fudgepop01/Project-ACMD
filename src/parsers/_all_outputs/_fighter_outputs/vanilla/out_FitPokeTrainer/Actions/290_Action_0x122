@@ -1,0 +1,38 @@
+Action 0x122: ENTRY {
+  ChangeAction(291, R(0x4E23()))
+  ChangeAction(285, R(0x4E22()))
+
+  ChangeAction(283, R(In Air()))
+  AdditionalRequirement(R(NOT Bit is Set(LA-Bool[0x42])))
+
+  ChangeAction(282, R(In Air()))
+  AdditionalRequirement(R(Animation End()))
+
+  ChangeAction(287, R(Animation End()))
+  AdditionalRequirement(R(0x4E21()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(289, R(Animation End()))
+  AdditionalRequirement(R(0x4E20()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(281, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+  (undef: Sp_base) 65_2C_00_00()
+
+  ChangeSubAction(RA-Int[0x00])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(2)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x122 : EXIT {
+  BasicVariableSet(IC-Int[0x5DC2], LA-Int[0x42])
+}

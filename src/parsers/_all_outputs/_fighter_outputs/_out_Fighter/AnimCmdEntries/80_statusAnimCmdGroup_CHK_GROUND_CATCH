@@ -1,0 +1,6 @@
+// @ 0x240C8
+CHK_GROUND_CATCH {
+  ClearPreventInterrupt(GROUND_CATCH)
+  SubRoutine(hidden_subroutine_0x9B1C)
+  ClearPreventInterrupt(ALL?)
+}

@@ -1,0 +1,58 @@
+[ThrowLw] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x75: MAIN {
+  ThrowAttackCollision(0, 0, 4, 100, 60, 0, 60, 0, 0.0, 1.0, 1.0, 0, 0, 3, true, true, 8)
+  ThrowAttackCollision(1, 0, 3, 361, 100, 0, 40, 0, 0.0, 1.0, 1.0, 0, 0, 3, true, true, 8)
+  AsynchronousTimer(21.0)
+  SpecialOffensiveCollision(Sp(0, 0), 3, 361, Sp(120, 0), Sp(1, 0), 4.32, 0.0, 2.4, -8.4, 0.0, 1.0, 1.0, 558040128, 0, 135266243)
+  AsynchronousTimer(22.0)
+  ThrowCollision(0, 82, RA-Int[0x02], RA-Int[0x03], RA-Int[0x04])
+  TerminateCollisions()
+  AsynchronousTimer(49.0)
+  AllowInterrupt()
+}
+
+Subaction 0x75: GFX {
+  AsynchronousTimer(20.0)
+  GraphicEffectLanding(9, 0, -5.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x75: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(112)
+  SoundEffect(114)
+  SynchronousTimer(5.0)
+  ImpactSoundEffect(94)
+  SynchronousTimer(11.0)
+  SoundEffect(111)
+  SoundEffect(112)
+  LowVoiceClip()
+}
+
+Subaction 0x75: OTHER {
+  SlopeContourStand(6)
+  ModelChanger(2, 1)
+  AsynchronousTimer(7.0)
+  SlopeContourStand02(1, 3)
+  AsynchronousTimer(10.0)
+  SlopeContourStand03(1, 6, true)
+  AsynchronousTimer(22.0)
+  Screenshake(1)
+  Rumble(14, 0)
+  AsynchronousTimer(39.0)
+  SlopeContourStand02(2, 5)
+  AsynchronousTimer(47.0)
+  SlopeContourStand(6)
+  AsynchronousTimer(57.0)
+  ModelChanger(2, 0)
+}
+

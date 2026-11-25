@@ -1,0 +1,50 @@
+Action 0x114: ENTRY {
+  BasicVariableSet(2, RA-Int[0x00])
+  BasicVariableSet(2, RA-Int[0x02])
+  ChangeActionStatus(10029, 25, R(On Ground()))
+  DisableActionStatusId(10029)
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(16, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  GenerateArticle(2)
+  SetArticleAction(2, 0)
+  if (R(On Ground())) {
+    ChangeSubAction(471)
+    SetArticleAction(2, 0)
+    SetAerialOrOnstage(2)
+    SetAirGround(6)
+    SetRequirement(R(In Air()))
+  } else {
+    SubRoutine(EXTERNAL: statusAnimCmd_AirLasso)
+    ChangeSubAction(472)
+    SetArticleAction(2, 1)
+    SetAerialOrOnstage(5)
+    SetAirGround(10)
+    SetRequirement(R(On Ground()))
+  }
+  SetLoop(-1) {
+    LoadRest()
+    if (R(On Ground())) {
+      ChangeSubAction(471, true)
+      SetAnchoredArticleAction(2, 0, true)
+      SetAerialOrOnstage(2)
+      SetAirGround(6)
+      SetRequirement(R(In Air()))
+      DisableActionStatusId(10029)
+    } else {
+      ChangeSubAction(472, true)
+      SetAnchoredArticleAction(2, 1, true)
+      SetAerialOrOnstage(5)
+      SetAirGround(10)
+      SetRequirement(R(On Ground()))
+      EnableActionStatusId(10029)
+    }
+  }
+}
+
+Action 0x114 : EXIT {
+}

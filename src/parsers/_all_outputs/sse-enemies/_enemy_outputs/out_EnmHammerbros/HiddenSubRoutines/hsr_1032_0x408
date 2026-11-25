@@ -1,0 +1,7 @@
+[hsr_408]
+hidden_subroutine_0x408 {
+  if (R(Compare(Variable_Int_Combo_Count >= LA-Float[0x05])) && R(Compare(LA-Int[0x05] <= 0.0))) {
+    (undef: Sp_base) 65_06_02_00(IC-Int[0xABE5], LA-Int[0x05])
+  }
+  Return()
+}

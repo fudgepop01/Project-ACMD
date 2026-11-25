@@ -1,0 +1,24 @@
+[hsr_1999C]
+hidden_subroutine_0x1999C {
+  if (R(Bit is Set(RA-Bool[0x16])) && R(Compare(RA-Int[0x02] > 0.0)) && R(Compare(Variable_Float_Controller_Stick_Y >= -0.5)) && R(NOT Touching a Floor, Wall, or Ceiling(1)) && R(NOT Touching a Floor, Wall, or Ceiling(16)) && R(NOT Touching a Floor, Wall, or Ceiling(32))) {
+    if (R(Touching a Floor, Wall, or Ceiling(2)) || R(Touching a Floor, Wall, or Ceiling(4))) {
+      ReverseDirection()
+      DecideDirection()
+      ChangeAction(282, R(Button Tap?()))
+      BasicVariableDecrement(RA-Int[0x02])
+    }
+  }
+  if (R(Bit is Set(RA-Bool[0x18]))) {
+    if (R(Button Press(Special))) {
+      BitVariableSet(RA-Bool[0x19])
+    } elif (R(Button Press(Attack))) {
+      BitVariableSet(RA-Bool[0x19])
+    }
+    if (R(Button Press(Jump))) {
+      BitVariableSet(RA-Bool[0x1A])
+    }
+    if (R(Compare(Variable_Float_Controller_Stick_Y >= Common_Param_Float_Jump_Stick_Y)) && R(Compare(Variable_Int_Controller_Flick_Y < Common_Param_Int_Jump_Initial_Frame))) {
+      BitVariableSet(RA-Bool[0x1A])
+    }
+  }
+}

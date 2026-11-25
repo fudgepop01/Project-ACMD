@@ -1,0 +1,23 @@
+Action 0x116: ENTRY {
+  EnterFinalSmashState()
+  (undef: link) 0F_04_02_00(6, 1114)
+  SetAirGround(50)
+  HeldItemsVisibility(false)
+  Visibility(false)
+  BodyCollision(3)
+  Module1901()
+  SetGimmickEffectFlag(false)
+  DetachAttachCameraFar(false)
+  (undef: camera) 1A_0D_00_00()
+  SetAerialOrOnstage(0)
+  Module0900(2)
+  (undef: effect) 11_1D_01_00(8)
+  ChangeSubAction(-1)
+}
+
+Action 0x116 : EXIT {
+  DetachAttachCameraFar(true)
+  Visibility(true)
+  BodyCollision(0)
+  ExitFinalSmashState()
+}

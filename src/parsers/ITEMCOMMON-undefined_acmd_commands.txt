@@ -1,0 +1,135 @@
+undefined acmd commands:
+
+TEAM:
+	22_00_01_00
+		assist trophy
+		Barrel
+		Bombhei
+		Box
+		Bumper
+		Capsule	
+		CarrierBox
+		Chewing
+		Deku
+		Figure
+		Kusudama
+		LinkBomb
+		PowderBox
+		SensorBomb
+		SmartBomb
+		SmashBall
+		SnakeGrenade
+		ToonLinkBomb
+
+	22_02_01_00
+		assist trophy
+		Barrel
+		Bombhei
+		Box
+		Capsule
+		CarrierBox
+		Chewing
+		Doseisan
+		GreenShell
+		LinkBomb
+		Pasaran
+		PowderBox
+		SmartBomb
+		SmashBall
+		SoccerBall
+		ToonLinkBomb
+		Unira
+		WarioBike
+
+	22_01_01_00
+		SmartBomb
+
+DAMAGE:
+	1E_02_01_00
+		Barrel
+		CarrierBox
+		SmashBall
+		SoccerBall
+
+GROUND:
+	08_05_03_00
+		Barrel
+		Bumper
+		Coin
+		Seed
+		SensorBomb
+
+	08_0D_08_00
+		Pasaran
+
+	08_0F_03_00
+		Pasaran
+
+	08_10_04_00
+		Pasaran
+
+	08_12_00_00
+		Pasaran
+
+	08_10_05_00
+		Pasaran
+
+	08_0E_03_00
+		Pasaran
+
+KINETIC:
+	0E_01_03_00
+		Bumper
+
+CONTROL_FLOW:
+	00_00_02_00
+		CarrierBox
+
+	00_0A_03_00
+		Pasaran
+
+COLLISION:
+	06_22_01_00
+		GoldenHammer
+		TeamHealing
+
+MOTION:
+	04_10_02_00
+		Hammer
+		PeachDaikon
+		RayGun
+		SnakeGrenade
+		Tabemono
+		WarioBike
+
+	04_13_02_00
+		Hammer
+		PeachDaikon
+		SnakeGrenade
+		Tabemono
+		WarioBike
+
+	04_12_02_00
+		Hammer
+		PeachDaikon
+		SnakeGrenade
+		Tabemono
+		WarioBike
+
+AREA:
+	14_08_08_00
+		LinkBomb
+		ToonLinkBomb
+
+EFFECT:
+	11_17_08_00
+		ManaphyHeart
+		SmartBomb
+
+CONTROL_FLOW_LOOP:
+	01_04_02_00
+		SmashBall
+
+MODEL:
+	03_05_01_00
+		Warpstar

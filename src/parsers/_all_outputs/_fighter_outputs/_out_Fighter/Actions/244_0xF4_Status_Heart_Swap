@@ -1,0 +1,39 @@
+// Status_Heart_Swap
+Action 0xF4: ENTRY {
+  BodyCollision(3)
+  SetGimmickEffectFlag(false)
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      if (R(Bit is Set(RA-Bool[0x05]))) {
+        ChangeSubAction(157, true)
+      } else {
+        ChangeSubAction(157)
+        FrameSpeedModifier(0.0)
+        BitVariableSet(RA-Bool[0x05])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x05]))) {
+        ChangeSubAction(163, true)
+      } else {
+        ChangeSubAction(163)
+        FrameSpeedModifier(0.0)
+        BitVariableSet(RA-Bool[0x05])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0xF4 : EXIT {
+}

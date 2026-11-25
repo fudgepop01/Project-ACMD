@@ -1,0 +1,29 @@
+[SpecialAirSCatch] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D5: MAIN {
+  ThrowAttackCollision(1, 0, 4, 0, 10, 0, 100, 0, 1.0, 0.0, 1.0, 0, 2, 3, true, true, 0)
+  AsynchronousTimer(2.0)
+  BasicVariableSet(1, RA-Int[0x03])
+}
+
+Subaction 0x1D5: GFX {
+  GraphicEffectAttached(1376262, 41, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+}
+
+Subaction 0x1D5: SOUND {
+  SoundEffect(4763)
+}
+
+Subaction 0x1D5: OTHER {
+  Rumble(13, 0)
+}
+

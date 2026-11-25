@@ -1,0 +1,6 @@
+[hsr_40]
+hidden_subroutine_0x40 {
+  ChangeAction(6, R(Compare(LA-Int[0x0B] == 0.0)))
+  ChangeAction(6, R(In walljump situation()), 255)
+  Return()
+}

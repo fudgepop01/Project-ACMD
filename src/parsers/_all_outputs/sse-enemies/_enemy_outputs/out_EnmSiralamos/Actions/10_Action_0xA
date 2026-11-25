@@ -1,0 +1,17 @@
+Action 0xA: MAIN {
+  SubRoutine(hidden_subroutine_0x884)
+}
+
+Action 0xA: EXIT {
+}
+
+Action 0xA: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(19)
+  SubAction09(11)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 22)
+  if (R(Compare(LA-Float[0x0C] >= IC-Int[0x5DC2]))) {
+    (undef: Sp_Kinetic) 66_00_02_00(3, 21)
+  }
+}
+

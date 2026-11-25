@@ -1,0 +1,30 @@
+Action 0xF: MAIN {
+  SetLoop(-1) {
+    if (R(Animation End())) {
+      SubAction09(8)
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0xF: EXIT {
+}
+
+Action 0xF: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(21)
+  (undef: Sp_AI) 6A_00_01_00(15)
+  (undef: Sp_AI) 6A_00_01_00(17)
+  (undef: Sp_AI) 6A_00_01_00(18)
+  (undef: Sp_AI) 6A_01_01_00(9)
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 14.0))) {
+    SubAction09(11)
+    (undef: Sp_Kinetic) 66_07_01_00(-1)
+    (undef: Sp_Kinetic) 66_00_02_00(3, 23)
+  } elif (R(Compare(Variable_Int_Status_Prev_Kind != 15.0)) && R(Compare(Variable_Int_Status_Prev_Kind != 16.0))) {
+    SubAction09(8)
+    (undef: Sp_Kinetic) 66_07_01_00(-1)
+    (undef: Sp_Kinetic) 66_00_02_00(3, 23)
+  }
+}
+

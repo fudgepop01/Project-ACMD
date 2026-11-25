@@ -1,0 +1,4 @@
+[hsr_B48]
+hidden_subroutine_0xB48 {
+  GraphicEffect(94, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.35, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}

@@ -1,0 +1,33 @@
+[SpecialAirNStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D1: MAIN {
+  Goto(Subaction_0x1CE : MAIN)
+}
+
+Subaction 0x1D1: GFX {
+  AsynchronousTimer(10.0)
+  GraphicEffect(16, 60, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x1D1: SOUND {
+  AsynchronousTimer(12.0)
+  SoundEffect(6236)
+  SynchronousTimer(46.0)
+  VictorySoundEffect(6239)
+}
+
+Subaction 0x1D1: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(7.0)
+  HeldItemsVisibility(false)
+}
+

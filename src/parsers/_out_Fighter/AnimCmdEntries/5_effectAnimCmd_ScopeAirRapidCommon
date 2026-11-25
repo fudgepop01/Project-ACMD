@@ -1,0 +1,8 @@
+// @ 0x1F7D4
+ScopeAirRapidCommon {
+  GraphicEffect(26, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  FlashLightEffect(255, 220, 0, 100, 80.0, 0.0)
+  ChangeFlashLightColor(2, 255, 220, 0, 0)
+  SynchronousTimer(2.0)
+  TerminateFlashEffect()
+}

@@ -1,0 +1,7 @@
+// Status_Dash
+Action 0x3 {
+  ChangeSubAction(Variable_Int_Motion_Kind)
+  SetAnimationFrame(Variable_Float_Motion_Frame)
+  ChangeAction(4, R(On Ground()))
+}
+

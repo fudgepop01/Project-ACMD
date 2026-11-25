@@ -1,0 +1,8 @@
+// Status_Capture_Wait_Yoshi
+Action 0x108: ENTRY {
+  SubRoutine(hidden_subroutine_0x1054C)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x104A4)
+}
+
+Action 0x108 : EXIT {
+}

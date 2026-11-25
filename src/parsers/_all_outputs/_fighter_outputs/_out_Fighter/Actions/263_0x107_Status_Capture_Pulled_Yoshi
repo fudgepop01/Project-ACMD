@@ -1,0 +1,7 @@
+// Status_Capture_Pulled_Yoshi
+Action 0x107: ENTRY {
+  SubRoutine(hidden_subroutine_0x102F4)
+}
+
+Action 0x107 : EXIT {
+}

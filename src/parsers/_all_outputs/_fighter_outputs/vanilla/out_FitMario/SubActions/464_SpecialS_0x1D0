@@ -1,0 +1,53 @@
+[SpecialS] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D0: MAIN {
+  HeldItemsVisibility(false)
+  GenerateArticle(0)
+  AsynchronousTimer(5.0)
+  DefensiveCollision(3, 0, 2)
+  AsynchronousTimer(11.0)
+  OffensiveCollision(Sp(0, 0), 8, 110, Sp(0, 0), Sp(4, 0), 7.5, 0.0, 6.0, 9.0, 0.3, 1.0, 1.0, 574820423)
+  OffensiveCollision(Sp(0, 1), 8, 110, Sp(0, 0), Sp(4, 0), 5.0, 0.0, 6.0, 5.0, 0.3, 1.0, 1.0, 574820423)
+  AsynchronousTimer(14.0)
+  TerminateCollisions()
+  AsynchronousTimer(30.0)
+  DeleteDefensiveCollision(3, 0, 2)
+}
+
+Subaction 0x1D0: GFX {
+  AsynchronousTimer(10.0)
+  GraphicEffectAttached(65540, 48, 0.0, 8.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  SynchronousTimer(1.0)
+  GraphicEffectAttached(65541, 48, 0.0, 8.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectLanding(14, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x1D0: SOUND {
+  AsynchronousTimer(7.0)
+  SoundEffect(274)
+  SynchronousTimer(4.0)
+  SoundEffect(353)
+  SoundEffect(54)
+}
+
+Subaction 0x1D0: OTHER {
+  SlopeContourStand(4)
+  HeldItemsVisibility(false)
+  AsynchronousTimer(9.0)
+  SlopeContourStand02(6, 2)
+  AsynchronousTimer(12.0)
+  Rumble(13, 0)
+  CreateAestheticWindEffects(0, 1.0, 0.0, 300.0, 0.5, 12.0, 10.0, 30.0, 20.0, 50)
+  AsynchronousTimer(22.0)
+  TerminateWindEffect(0)
+}
+

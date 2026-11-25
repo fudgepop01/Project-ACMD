@@ -1,0 +1,9 @@
+// @ 0x3DE8
+CommonAICheckToFall {
+  if (R(In Air())) {
+    if (R(Compare(LA-Int[0x04] == 0.0))) {
+      BitVariableSet(RA-Bool[0x04])
+    }
+  }
+  Return()
+}

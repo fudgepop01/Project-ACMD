@@ -1,0 +1,31 @@
+Action 0xA: MAIN {
+  SetLoop(-1) {
+    if (R(Compare(Variable_Int_Controller_Trigger_2_Count == 2.0))) {
+      (undef: Sp_base) 65_1C_01_00(true)
+      (undef: StageObject) 0C_03_00_00()
+      SubRoutine(hidden_subroutine_0xC04)
+      BitVariableSet(LA-Bool[0x06])
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0xA: EXIT {
+  if (R(NOT Bit is Set(LA-Bool[0x06]))) {
+    (undef: Sp_base) 65_1C_01_00(true)
+    (undef: StageObject) 0C_03_00_00()
+  }
+}
+
+Action 0xA: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(11)
+  SubAction09(7)
+  (undef: Sp_base) 65_09_02_00(IC-Int[0xABE3], LA-Float[0x02])
+  (undef: Sp_base) 65_04_01_00(0)
+  (undef: Sp_base) 65_1A_05_00(80, 0, IC-Int[0xABE5], Variable_Float_Posture_Lr, Variable_Float_Posture_Scale)
+  (undef: StageObject) 0C_02_00_00()
+  (undef: Sp_Kinetic) 66_07_01_00(-1)
+  BitVariableClear(LA-Bool[0x06])
+}
+

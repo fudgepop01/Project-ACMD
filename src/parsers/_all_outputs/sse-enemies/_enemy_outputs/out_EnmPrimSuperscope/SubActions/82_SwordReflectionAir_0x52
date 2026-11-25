@@ -1,0 +1,43 @@
+[SwordReflectionAir] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x52: MAIN {
+  GenerateDefensiveCollisionBubble_UNDOC15ARG(3, 0, 6, 9.0, 0.0, 0.0, 10.0, 0.0, 0.0, 10.0, 1.0, 1.0, 50.0, false, 0.5)
+}
+
+Subaction 0x52: MAIN EXIT {
+}
+
+Subaction 0x52: MAIN INIT {
+}
+
+Subaction 0x52: GFX {
+  GraphicEffectAttached(11665439, 19, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  SwordGlow(24, 6, 19, 0.0, 2.408, 0.0, 19, 0.0, 14.0, 0.0, true, 0, 19, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  TerminateSwordGlow(16)
+}
+
+Subaction 0x52: GFX EXIT {
+}
+
+Subaction 0x52: GFX INIT {
+}
+
+Subaction 0x52: SFX {
+  SoundEffect(9565)
+}
+
+Subaction 0x52: SFX EXIT {
+}
+
+Subaction 0x52: SFX INIT {
+}
+

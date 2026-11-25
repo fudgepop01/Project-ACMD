@@ -1,0 +1,11 @@
+[hsr_300]
+hidden_subroutine_0x300 {
+  if (R(Compare(IC-Int[0x5DC0] == 0.0))) {
+    SubRoutine(hidden_subroutine_0x238)
+  } elif (R(Compare(IC-Int[0x5DC0] == 1.0))) {
+    SubRoutine(hidden_subroutine_0x278)
+  } elif (R(Compare(IC-Int[0x5DC0] == 2.0))) {
+    SubRoutine(hidden_subroutine_0x2C8)
+  }
+  Return()
+}

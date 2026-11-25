@@ -1,0 +1,30 @@
+[LandingAirHi] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x6A: MAIN {
+  ModelChanger(2, 2)
+  ModelChanger(3, 0)
+}
+
+Subaction 0x6A: GFX {
+  GraphicEffectLanding(15, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x6A: SOUND {
+  AsynchronousTimer(1.0)
+  LandingSoundEffect(4521)
+}
+
+Subaction 0x6A: OTHER {
+  SlopeContourStand(1)
+  Rumble(22, 0)
+}
+

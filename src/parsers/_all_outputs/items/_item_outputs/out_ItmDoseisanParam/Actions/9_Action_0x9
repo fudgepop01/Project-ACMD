@@ -1,0 +1,16 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  SubRoutine(hidden_subroutine_0x40)
+  FrameSpeedModifier(2.0)
+  DisableActionStatusId(9)
+  ChangeAction(8, R(In Air()))
+  (undef: Sp_Kinetic) 66_00_0D_00(0.25, 0.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+  SynchronousTimer(30.0)
+
+  ChangeActionStatus(110, 10, R(NOT 0x2715()), 10.0)
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus(10, 10, R(In walljump situation()), 6)
+  AdditionalRequirement(R(On Ground()))
+}
+

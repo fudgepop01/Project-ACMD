@@ -1,0 +1,20 @@
+Action 0x11F: ENTRY {
+  ChangeSubAction(478)
+  if (R(On Ground())) {
+    SetAerialOrOnstage(1)
+    SetAirGround(6)
+  } else {
+    SetAerialOrOnstage(5)
+    SetAirGround(10)
+  }
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(In Air()))
+  GenerateArticle(0)
+  GenerateArticle(0)
+}
+
+Action 0x11F : EXIT {
+}

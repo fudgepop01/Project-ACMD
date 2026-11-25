@@ -1,0 +1,17 @@
+// Status_Item_Shoot_Landing
+Action 0xAE: ENTRY {
+  SubRoutine(hidden_subroutine_0x1BB0C)
+  Switch(10000, Variable_Int_Have_Item_Kind)
+    Case(24)
+      SubRoutine(hidden_subroutine_0x1B2DC)
+    Case(44)
+      SubRoutine(hidden_subroutine_0x1B0FC)
+    Case(61)
+      SubRoutine(hidden_subroutine_0x1B594)
+    Case(13)
+      SubRoutine(hidden_subroutine_0x1BA7C)
+  EndSwitch()
+}
+
+Action 0xAE : EXIT {
+}

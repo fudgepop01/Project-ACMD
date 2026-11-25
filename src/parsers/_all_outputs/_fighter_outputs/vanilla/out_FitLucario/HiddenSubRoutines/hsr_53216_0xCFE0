@@ -1,0 +1,18 @@
+[hsr_CFE0]
+hidden_subroutine_0xCFE0 {
+
+  ChangeAction(42, R(Button Pressed(Attack)))
+  AdditionalRequirement(R(Compare(Variable_Float_Controller_Stick_X_Abs >= Common_Param_Float_Dash_Stick_X)))
+  AdditionalRequirement(R(Compare(IC-Int[0x5209] < Common_Param_Int_Escape_Fb_Flick_X)))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x20])))
+
+  ChangeAction(48, R(Button Pressed(Attack)))
+  AdditionalRequirement(R(Compare(Variable_Float_Controller_Stick_Y >= Common_Param_Float_Attack_Hi4_Stick_Y)))
+  AdditionalRequirement(R(Compare(Variable_Int_Controller_Flick_Y < Common_Param_Float_Attack_Hi4_Flick_Y)))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x20])))
+
+  ChangeAction(45, R(Button Pressed(Attack)))
+  AdditionalRequirement(R(Compare(Variable_Float_Controller_Stick_Y <= Common_Param_Float_Attack_Lw4_Stick_Y)))
+  AdditionalRequirement(R(Compare(Variable_Int_Controller_Flick_Y < Common_Param_Float_Attack_Lw4_Flick_Y)))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x20])))
+}

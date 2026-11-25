@@ -1,0 +1,19 @@
+Action 0x11D: ENTRY {
+  ChangeSubAction(484)
+  Module0900(2)
+  SetAerialOrOnstage(5)
+  AllowSpecificInterrupt(AIR_LANDING)
+  AllowSpecificInterrupt(AIR_CLIFF)
+  AllowSpecificInterrupt(AIR_SPECIAL)
+  AllowSpecificInterrupt(AIR_ITEM_THROW)
+  AllowSpecificInterrupt(AIR_ESCAPE)
+  AllowSpecificInterrupt(AIR_ATTACK)
+  AllowSpecificInterrupt(AIR_TREAD_JUMP)
+  AllowSpecificInterrupt(AIR_WALL_JUMP)
+  ChangeAction(14, R(Animation End()))
+  ChangeAction(22, R(On Ground()))
+}
+
+Action 0x11D : EXIT {
+  SetPassableCheck(true)
+}

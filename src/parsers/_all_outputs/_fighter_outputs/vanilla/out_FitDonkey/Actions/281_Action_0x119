@@ -1,0 +1,27 @@
+Action 0x119: ENTRY {
+  FloatVariableSet(Customize_Param_Float_Flip_Dir_Frame, RA-Float[0x05])
+  BitVariableClear(RA-Bool[0x12])
+
+  ChangeAction(279, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(285, R(In Air()))
+
+  ChangeActionStatus(10111, 157, R(Button Press(Attack)))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x12])))
+
+  ChangeAction(283, R(Button Press(Jump)))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x12])))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(282, R(Compare(Variable_Float_Controller_Stick_Y >= Common_Param_Float_Jump_Stick_Y)))
+  AdditionalRequirement(R(Compare(Variable_Int_Controller_Flick_Y < Common_Param_Int_Jump_Initial_Frame)))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x12])))
+  AdditionalRequirement(R(On Ground()))
+
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1E518)
+  ChangeSubAction(466)
+}
+
+Action 0x119 : EXIT {
+}

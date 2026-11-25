@@ -1,0 +1,13 @@
+// Status_Run
+Action 0x4 {
+  if (R(Bit is Set(LA-Bool[0x00]))) {
+    ChangeAction(6, R(On Ground()))
+  }
+  SubRoutine(hidden_subroutine_0x60)
+  DisableActionStatusId(4)
+  ChangeAction(3, R(In Air()))
+  SynchronousTimer(30.0)
+  ChangeSubAction(7)
+  ChangeAction(9, R(On Ground()))
+}
+

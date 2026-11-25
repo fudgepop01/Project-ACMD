@@ -1,0 +1,9 @@
+{
+	"extends": "../../tsconfig.json",
+	"compilerOptions": {
+		"strict": false,   /* enable all strict type-checking options */
+		/* Additional Checks */
+		"noImplicitAny": false,
+		"allowJs": true,
+	},
+	}

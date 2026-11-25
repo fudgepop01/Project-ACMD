@@ -1,0 +1,8 @@
+// Status_Slip_Dash
+Action 0x8C: ENTRY {
+  SubRoutine(hidden_subroutine_0x622C)
+  ChangeSubAction(228)
+}
+
+Action 0x8C : EXIT {
+}

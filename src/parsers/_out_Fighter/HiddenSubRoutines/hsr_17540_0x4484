@@ -1,0 +1,9 @@
+[hsr_4484]
+hidden_subroutine_0x4484 {
+  if (R(Compare(RA-Int[0x00] >= 0.0))) {
+    BasicVariableDecrement(RA-Int[0x00])
+    if (R(Compare(RA-Int[0x00] < 0.0))) {
+      DisableActionStatusId(10106)
+    }
+  }
+}

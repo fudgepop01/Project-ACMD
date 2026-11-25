@@ -1,0 +1,30 @@
+data {
+  subactionFlagsStart: 0x000002B0
+  hitDataSet: 0x00006214
+  hitWeaknessDataSet: 0x0000621C
+  params3: 0x00003770
+  unknownCount: 0x00000005
+  setableNodeData: 0x00006224
+  attributes1: 0x00000000
+  attributes2: 0x000000B0
+  unknownDatas8: 0x00005CF4
+  actionFlags: 0x00000360
+  subactionMainStart: 0x000038D0
+  subactionMainExitStart: 0x00003928
+  subactionMainInitStart: 0x00003980
+  subactionGfxStart: 0x00005798
+  subactionGfxExitStart: 0x000057F0
+  subactionGfxInitStart: 0x00005848
+  subactionSfxStart: 0x00005B60
+  subactionSfxExitStart: 0x00005BB8
+  subactionSfxInitStart: 0x00005C10
+  actionStart: 0x0000280C
+  actionExitStart: 0x00002854
+  actionInitStart: 0x0000289C
+  unknownDatas22: 0x00005C68
+  collisionData: 0x00003788
+  unkEventOffset: 0x00000654
+  cameraRangeSet: 0x0000623C
+  cameraClipSphereData: 0x00006244
+  grColDataSet: 0x00000000
+}

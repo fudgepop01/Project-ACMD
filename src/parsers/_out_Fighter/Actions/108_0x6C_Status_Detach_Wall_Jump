@@ -1,0 +1,7 @@
+// Status_Detach_Wall_Jump
+Action 0x6C: ENTRY {
+  SubRoutine(statusAnimCmd_JumpAerial)
+}
+
+Action 0x6C : EXIT {
+}

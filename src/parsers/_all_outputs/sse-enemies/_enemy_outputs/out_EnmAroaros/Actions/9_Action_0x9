@@ -1,0 +1,14 @@
+Action 0x9: MAIN {
+}
+
+Action 0x9: EXIT {
+}
+
+Action 0x9: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_02_00(13, 15)
+  SubAction09(6)
+  (undef: Sp_Kinetic) 66_07_01_00(-1)
+  BitVariableSet(LA-Bool[0x07])
+}
+

@@ -1,0 +1,39 @@
+[Attack13] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x4A: MAIN {
+  AsynchronousTimer(3.0)
+  OffensiveCollision(Sp(0, 0), 4, 55, Sp(0, 140), Sp(6, 40), 5.0, 0.0, 6.5, 9.0, 0.0, 2.0, 1.0, 998442626)
+  OffensiveCollision(Sp(0, 1), 4, 55, Sp(0, 140), Sp(6, 40), 4.0, 0.0, 6.5, 5.0, 0.0, 2.0, 1.0, 998442626)
+  OffensiveCollision(Sp(0, 2), 4, 55, Sp(0, 140), Sp(6, 40), 4.0, 0.0, 6.5, 1.0, 0.0, 2.0, 1.0, 998442626)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+  AsynchronousTimer(34.0)
+  AllowInterrupt()
+}
+
+Subaction 0x4A: GFX {
+}
+
+Subaction 0x4A: SOUND {
+  AsynchronousTimer(3.0)
+  LowVoiceClip()
+  SoundEffect(6349)
+}
+
+Subaction 0x4A: OTHER {
+  SlopeContourStand03(1, 6, true)
+  AsynchronousTimer(2.0)
+  Rumble(16, 0)
+  AsynchronousTimer(24.0)
+  SlopeContourStand02(6, 4)
+}
+

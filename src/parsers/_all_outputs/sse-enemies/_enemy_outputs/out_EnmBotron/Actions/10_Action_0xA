@@ -1,0 +1,13 @@
+Action 0xA: MAIN {
+}
+
+Action 0xA: EXIT {
+  (undef: targetSearch) 16_00_00_00()
+}
+
+Action 0xA: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(11)
+  SubAction09(5)
+}
+

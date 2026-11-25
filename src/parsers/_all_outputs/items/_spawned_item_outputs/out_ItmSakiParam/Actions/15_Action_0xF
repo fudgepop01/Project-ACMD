@@ -1,0 +1,8 @@
+// Status_Fall_Aerial
+Action 0xF {
+  ChangeAction(3, R(In Air()))
+  ChangeSubAction(15)
+  SynchronousTimer(30.0)
+  ChangeAction(4, R(Button Tap?()))
+}
+

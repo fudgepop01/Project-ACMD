@@ -1,0 +1,7 @@
+[hsr_1E5F8]
+hidden_subroutine_0x1E5F8 {
+  BasicVariableDecrement(RA-Int[0x03])
+  if (R(Compare(RA-Int[0x03] < 0.0))) {
+    TerminateConcurrentInfiniteLoop(9)
+  }
+}

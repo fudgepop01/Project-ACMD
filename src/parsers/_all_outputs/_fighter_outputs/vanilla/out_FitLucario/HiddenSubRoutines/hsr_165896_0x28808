@@ -1,0 +1,7 @@
+[hsr_28808]
+hidden_subroutine_0x28808 {
+  if (R(Compare(LA-Float[0x1B] >= 65.0)) && R(Compare(LA-Float[0x36] < 65.0)) || R(Compare(LA-Float[0x1B] >= 130.0)) && R(Compare(LA-Float[0x36] < 130.0))) {
+    SoundEffect(5731)
+    GraphicEffectAttached(17039439, 10, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, false)
+  }
+}

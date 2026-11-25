@@ -1,0 +1,19 @@
+Action 0xF: MAIN {
+  SubRoutine(hidden_subroutine_0x1170)
+  SubRoutine(hidden_subroutine_0x1188)
+  SubRoutine(hidden_subroutine_0x11A0)
+  if (R(Bit is Set(LA-Bool[0x07]))) {
+    (undef: Sp_base) 65_05_01_00(1000)
+  } else {
+    (undef: Sp_base) 65_05_01_00(1001)
+  }
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonDyingFigureProc)
+}
+
+Action 0xF: EXIT {
+}
+
+Action 0xF: INIT {
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonDyingFigureProcInit)
+}
+

@@ -1,0 +1,18 @@
+[hsr_6A8]
+hidden_subroutine_0x6A8 {
+  SWITCH_3ARG(1000, IC-Int[0xABEB], 2)
+    Case(0)
+      SubAction09(10)
+      (undef: Sp_Link) 6E_00_03_00(0, 5104, 10)
+      (undef: Sp_Link) 6E_00_03_00(1, 5104, 10)
+    Case(1)
+      SubAction09(11)
+      (undef: Sp_Link) 6E_00_03_00(0, 5104, 11)
+      (undef: Sp_Link) 6E_00_03_00(1, 5104, 11)
+    DefaultCase()
+      SubAction09(10)
+      (undef: Sp_Link) 6E_00_03_00(0, 5104, 10)
+      (undef: Sp_Link) 6E_00_03_00(1, 5104, 10)
+  EndSwitch()
+  Return()
+}

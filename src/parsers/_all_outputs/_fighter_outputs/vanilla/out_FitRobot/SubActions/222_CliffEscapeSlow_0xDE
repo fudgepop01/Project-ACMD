@@ -1,0 +1,52 @@
+[CliffEscapeSlow] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xDE: MAIN {
+  BodyCollision(2)
+  AsynchronousTimer(58.0)
+  BodyCollision(0)
+}
+
+Subaction 0xDE: GFX {
+  AsynchronousTimer(46.0)
+  GraphicEffect(10, 0, 0.0, 0.0, -4.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  SetLoop(-1) {
+    GraphicEffect(2359297, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+    SynchronousTimer(5.0)
+  }
+}
+
+Subaction 0xDE: SOUND {
+  AsynchronousTimer(4.0)
+  SoundEffect(5946)
+  SynchronousTimer(16.0)
+  SoundEffect(5976)
+  SynchronousTimer(12.0)
+  SoundEffect(5988)
+  SynchronousTimer(12.0)
+  SoundEffect(5933)
+  SynchronousTimer(12.0)
+  SoundEffect(5933)
+  SynchronousTimer(12.0)
+  SoundEffect(5933)
+  SynchronousTimer(12.0)
+  SoundEffect(5933)
+  SynchronousTimer(2.0)
+  SoundEffect(5941)
+  SynchronousTimer(8.0)
+  SoundEffect(5937)
+}
+
+Subaction 0xDE: OTHER {
+  AsynchronousTimer(34.0)
+  SlopeContourStand02(9, 4)
+}
+

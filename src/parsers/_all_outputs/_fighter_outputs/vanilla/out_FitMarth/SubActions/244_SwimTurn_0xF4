@@ -1,0 +1,26 @@
+[SwimTurn] (flags) {
+  No Out Transition: 1,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xF4: MAIN {
+}
+
+Subaction 0xF4: GFX {
+}
+
+Subaction 0xF4: SOUND {
+  AsynchronousTimer(3.0)
+  SoundEffect(180)
+}
+
+Subaction 0xF4: OTHER {
+  ModelChanger(1, 1)
+}
+

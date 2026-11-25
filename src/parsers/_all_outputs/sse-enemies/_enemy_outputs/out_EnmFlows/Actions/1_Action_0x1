@@ -1,0 +1,16 @@
+Action 0x1: MAIN {
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonBulletProc)
+}
+
+Action 0x1: EXIT {
+}
+
+Action 0x1: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_03_00_00()
+  (undef: Sp_AI) 6A_01_01_00(11)
+  (undef: Sp_AI) 6A_01_01_00(12)
+  SubAction09(0)
+  (undef: motion) 04_11_01_00(0)
+}
+

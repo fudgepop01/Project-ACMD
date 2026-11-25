@@ -1,0 +1,24 @@
+[hsr_4F2C]
+hidden_subroutine_0x4F2C {
+  SubRoutine(hidden_subroutine_0xAA64)
+  if (R(Button Press(Attack)) && R(Bit is Set(RA-Bool[0x10]))) {
+    BitVariableSet(RA-Bool[0x15])
+  }
+  if (R(Button Pressed(Attack))) {
+    if (R(Hitbox has Connected())) {
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        BitVariableSet(RA-Bool[0x15])
+      }
+    } else {
+      if (R(Bit is Set(RA-Bool[0x16])) && R(NOT Bit is Set(RA-Bool[0x1C]))) {
+        BitVariableSet(RA-Bool[0x1D])
+        (undef: combo) 13_01_00_00()
+      }
+      if (R(Bit is Set(RA-Bool[0x11]))) {
+        BitVariableSet(RA-Bool[0x15])
+      }
+    }
+  } else {
+    BitVariableSet(RA-Bool[0x1C])
+  }
+}

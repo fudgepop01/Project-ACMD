@@ -1,0 +1,18 @@
+// Status_Item_Shoot_Jump_Squat
+Action 0xAB: ENTRY {
+  ResetFlickX()
+  SubRoutine(hidden_subroutine_0x7A9C)
+  Switch(10000, Variable_Int_Have_Item_Kind)
+    Case(24)
+      SubRoutine(hidden_subroutine_0x7524)
+    Case(44)
+      SubRoutine(hidden_subroutine_0x7344)
+    Case(61)
+      SubRoutine(hidden_subroutine_0x77DC)
+    Case(13)
+      SubRoutine(hidden_subroutine_0x7A2C)
+  EndSwitch()
+}
+
+Action 0xAB : EXIT {
+}

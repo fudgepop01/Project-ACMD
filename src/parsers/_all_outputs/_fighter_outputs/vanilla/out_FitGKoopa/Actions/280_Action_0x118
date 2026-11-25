@@ -1,0 +1,22 @@
+Action 0x118: ENTRY {
+  if (R(Bit is Set(RA-Bool[0x15]))) {
+    ChangeSubAction(469)
+    BitVariableClear(RA-Bool[0x15])
+  } else {
+    ChangeSubAction(469, true)
+  }
+  SetAerialOrOnstage(5)
+  AllowSpecificInterrupt(AIR_CLIFF)
+
+  ChangeAction(16, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  SynchronousTimer(1.0)
+  ChangeAction(279, R(On Ground()))
+}
+
+Action 0x118 : EXIT {
+}

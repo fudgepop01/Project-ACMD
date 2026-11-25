@@ -1,0 +1,7 @@
+[hsr_994]
+hidden_subroutine_0x994 {
+  if (R(NOT Bit is Set(LA-Bool[0x08]))) {
+    EndBoneMotionOverride(0)
+  }
+  Return()
+}

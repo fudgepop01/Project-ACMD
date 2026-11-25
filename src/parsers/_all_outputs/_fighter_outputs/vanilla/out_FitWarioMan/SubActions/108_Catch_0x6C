@@ -1,0 +1,36 @@
+[Catch] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x6C: MAIN {
+  AsynchronousTimer(4.0)
+  CatchCollision(0, 0, 4.5, 0.0, 7.0, 11.0, 61, 3)
+  CatchCollision(1, 0, 3.5, 0.0, 7.0, 7.0, 61, 3)
+  SubRoutine(EXTERNAL: gameAnimCmd_CaptureCutCommon)
+  SynchronousTimer(2.0)
+  TerminateCatchCollisions()
+  BitVariableSet(RA-Bool[0x10])
+}
+
+Subaction 0x6C: GFX {
+}
+
+Subaction 0x6C: SOUND {
+  AsynchronousTimer(5.0)
+  SoundEffect(4892)
+  SynchronousTimer(7.0)
+  StopSoundEffect(4892)
+}
+
+Subaction 0x6C: OTHER {
+  AsynchronousTimer(18.0)
+  SlopeContourStand(6)
+}
+

@@ -1,0 +1,42 @@
+[AttackSword1] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xB : GAME {
+  (undef: Sp_Kinetic) 66_02_02_00(0.3, 0.3)
+  AsynchronousTimer(4.0)
+  OffensiveCollision(Sp(0, 0), 11, 70, Sp(0, 130), Sp(0, 0), 16.0, 0.0, 5.0, 18.0, 0.0, 1.2, 1.0, 198274)
+  OffensiveCollision(Sp(0, 1), 11, 70, Sp(0, 130), Sp(0, 0), 8.0, 0.0, 5.0, 3.0, 0.0, 1.2, 1.0, 198274)
+  AsynchronousTimer(6.0)
+  TerminateCollisions()
+}
+
+Subaction 0xB : GFX {
+  SwordGlow(19, 3, 30, 0.0, 0.0, 0.0, 30, -15.595, 0.0, 0.544, true, 0, 29, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  SwordGlow(19, 3, 30, 0.0, 0.0, 0.0, 30, 4.705, 0.0, -2.224, true, 0, 29, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  SwordGlow(20, 3, 30, 0.0, 0.0, 0.0, 30, -15.595, 0.0, 0.544, true, 0, 29, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  SynchronousTimer(6.0)
+  GraphicEffect(39, 0, 0.0, 0.0, -6.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0xB : SOUND {
+  AsynchronousTimer(1.0)
+  if (R(Bit is Set(LA-Bool[0x00]))) {
+    BitVariableClear(LA-Bool[0x00])
+    if (R(Is within footstool range())) {
+      SoundEffect(7839)
+    } else {
+      SoundEffect(7840)
+    }
+  }
+  SynchronousTimer(2.0)
+  SoundEffect(7834)
+}
+

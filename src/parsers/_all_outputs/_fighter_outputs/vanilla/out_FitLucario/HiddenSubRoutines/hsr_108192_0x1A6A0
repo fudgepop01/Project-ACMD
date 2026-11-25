@@ -1,0 +1,7 @@
+[hsr_1A6A0]
+hidden_subroutine_0x1A6A0 {
+  if (R(Compare(Variable_Float_Motion_Frame > 0.0)) && R(Button Press(Special))) {
+    DisableActionStatusId(10146)
+    EnableActionStatusId(10147)
+  }
+}

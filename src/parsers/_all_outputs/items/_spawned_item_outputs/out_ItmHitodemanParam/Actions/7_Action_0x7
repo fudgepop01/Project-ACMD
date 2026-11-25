@@ -1,0 +1,12 @@
+// Status_Turn_Dash
+Action 0x7 {
+  (undef: Sp_Kinetic) 66_05_01_00(0)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false, false, false)
+  ChangeSubAction(2)
+  SetLoop(38) {
+    (undef: Sp_base) 65_09_08_00(109, 0, Variable_Float_Posture_Pos_X, Variable_Float_Posture_Pos_Y, 0.0, 6.0, 0.0, 0.0)
+    SynchronousTimer(6.0)
+  }
+  ChangeAction(6, R(Button Tap?()))
+}
+

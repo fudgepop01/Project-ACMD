@@ -1,0 +1,6 @@
+// @ 0x23078
+AirLassoHang {
+  if (R(Compare(Variable_Int_Status_Kind != 130.0))) {
+    RemoveArticle(RA-Int[0x00])
+  }
+}

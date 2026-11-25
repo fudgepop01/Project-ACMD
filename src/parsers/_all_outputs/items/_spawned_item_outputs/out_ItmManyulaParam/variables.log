@@ -1,0 +1,7 @@
+IC-Int[0x08] ("Variable_Float_Posture_Lr") in Action 0x8 (Status_Turn_Run) @ 6 : 1
+IC-Int[0x08] ("Variable_Float_Posture_Lr") in Action 0x8 (Status_Turn_Run) @ 11 : 1
+
+IC-Int[0x3EF] ("Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv") in Action 0xA (Status_Jump_Squat) @ 16 : 2
+IC-Int[0x3EF] ("Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv") in Action 0xA (Status_Jump_Squat) @ 17 : 1
+
+LA-Int[0x1B] in Subaction 0x3 : SOUND @ 0 : 1

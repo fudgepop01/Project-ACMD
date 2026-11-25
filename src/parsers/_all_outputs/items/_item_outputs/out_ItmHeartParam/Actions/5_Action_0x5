@@ -1,0 +1,7 @@
+// Status_Run_Brake
+Action 0x5 {
+  SubRoutine(hidden_subroutine_0xA0)
+  DisableActionStatusId(3)
+  ChangeSubAction(3)
+}
+

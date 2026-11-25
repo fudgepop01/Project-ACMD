@@ -1,0 +1,9 @@
+[hsr_334]
+hidden_subroutine_0x334 {
+  if (R(Compare(LA-Int[0x01] == 0.0))) {
+    (undef: Sp_base) 65_07_04_00(9, 70.0, 10.0, 0.0)
+  } else {
+    (undef: Sp_base) 65_07_04_00(9, -70.0, 10.0, 0.0)
+  }
+  Return()
+}

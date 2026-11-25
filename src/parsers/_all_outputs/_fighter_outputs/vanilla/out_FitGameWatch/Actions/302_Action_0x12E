@@ -1,0 +1,7 @@
+Action 0x12E: ENTRY {
+  SetGimmickEffectFlag(false)
+  SetShapeFlag(3)
+}
+
+Action 0x12E : EXIT {
+}

@@ -1,0 +1,43 @@
+[Fall] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x5: MAIN {
+  AsynchronousTimer(3.0)
+  ModifyRhombusX17_UNDOC1ARGS(31.0)
+  ModifyRhombusX18_UNDOC1ARGS(0.0)
+  ModifyRhombusX19_UNDOC1ARGS(20.5)
+}
+
+Subaction 0x5: MAIN EXIT {
+  InitializeEcb()
+}
+
+Subaction 0x5: MAIN INIT {
+}
+
+Subaction 0x5: GFX {
+}
+
+Subaction 0x5: GFX EXIT {
+}
+
+Subaction 0x5: GFX INIT {
+}
+
+Subaction 0x5: SFX {
+}
+
+Subaction 0x5: SFX EXIT {
+}
+
+Subaction 0x5: SFX INIT {
+}
+

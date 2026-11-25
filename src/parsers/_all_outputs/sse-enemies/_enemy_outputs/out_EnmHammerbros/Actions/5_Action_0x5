@@ -1,0 +1,15 @@
+Action 0x5: MAIN {
+}
+
+Action 0x5: EXIT {
+}
+
+Action 0x5: INIT {
+  (undef: Sp_base) 65_04_01_00(0)
+  (undef: Sp_base) 65_09_02_00(IC-Int[0xABE4], LA-Float[0x05])
+  BasicVariableSet(0, LA-Int[0x05])
+  SubRoutine(hidden_subroutine_0xAA0)
+  SubRoutine(hidden_subroutine_0xAB8)
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonDyingProc)
+}
+

@@ -1,0 +1,5 @@
+IC-Int[0x5213] ("Variable_Int_Controller_Trigger_2_Count") in hsr_A0 @ 0 : 1
+
+LA-Bool[0x08] in hsr_A0 @ 1 : 0
+
+RA-Bool[0x02] in hsr_A0 @ 3 : 3

@@ -1,0 +1,17 @@
+Action 0x118: ENTRY {
+  BitVariableClear(RA-Bool[0x10])
+
+  ChangeAction(281, R(Button Not Pressed(Special)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(282, R(Button Not Pressed(Special)))
+  AdditionalRequirement(R(In Air()))
+
+  BasicVariableSet(465, RA-Int[0x06])
+  BasicVariableSet(474, RA-Int[0x07])
+  FloatVariableSet(0.0, RA-Float[0x0F])
+  SubRoutine(hidden_subroutine_0x16DF8)
+}
+
+Action 0x118 : EXIT {
+}

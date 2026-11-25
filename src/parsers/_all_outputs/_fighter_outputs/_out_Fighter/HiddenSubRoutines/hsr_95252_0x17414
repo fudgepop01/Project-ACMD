@@ -1,0 +1,7 @@
+[hsr_17414]
+hidden_subroutine_0x17414 {
+  BasicVariableDecrement(RA-Int[0x01])
+  if (R(Compare(Variable_Float_Controller_Stick_Prev_Y > Common_Param_Float_Squat_Stick_Y))) {
+    BitVariableSet(RA-Bool[0x13])
+  }
+}

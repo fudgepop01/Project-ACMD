@@ -1,0 +1,29 @@
+Action 0x6: MAIN {
+  SetLoop(-1) {
+    if (R(NOT 0x2742())) {
+      if (R(Is Being Thrown by Someone 2())) {
+        (undef: link) 0F_02_00_00()
+        (undef: link) 0F_01_01_00(false)
+        (undef: Sp_base) 65_02_01_00(0)
+        TeleportationStageBased(Variable_Float_Posture_Pos_X, Variable_Float_Posture_Pos_Y, Variable_Float_Posture_Pos_Z)
+        CharacterSpecific01()
+      }
+      (undef: Sp_base) 65_00_00_00()
+      Return()
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x6: EXIT {
+}
+
+Action 0x6: INIT {
+  SubRoutine(hidden_subroutine_0x56C)
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(12)
+  SubAction09(4)
+  BasicVariableSet(7, LA-Int[0x06])
+  (undef: Sp_Kinetic) 66_07_01_00(-1)
+}
+

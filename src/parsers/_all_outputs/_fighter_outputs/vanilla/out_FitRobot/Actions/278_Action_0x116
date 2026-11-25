@@ -1,0 +1,29 @@
+Action 0x116: ENTRY {
+  EnterFinalSmashState()
+  SetGimmickEffectFlag(false)
+  SetFlashingEffect(38)
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeSubAction(486)
+}
+
+Action 0x116 : EXIT {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(0)
+    Case(14)
+      ModelChangerPermanent(0, -1)
+      (undef: effect) 11_1D_01_00(8)
+      EndScreenTint(0, 120)
+      NormalCamera()
+      ResetStageSpeed()
+      (undef: slow) 23_01_00_00()
+      Break()
+    DefaultCase()
+      ExitFinalSmashState()
+  EndSwitch()
+}

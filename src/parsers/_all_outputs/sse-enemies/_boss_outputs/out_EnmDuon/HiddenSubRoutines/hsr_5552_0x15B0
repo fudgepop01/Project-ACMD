@@ -1,0 +1,9 @@
+[hsr_15B0]
+hidden_subroutine_0x15B0 {
+  if (R(Bit is Set(LA-Bool[0x07]))) {
+    BitVariableClear(LA-Bool[0x07])
+  } else {
+    BitVariableSet(LA-Bool[0x07])
+  }
+  Return()
+}

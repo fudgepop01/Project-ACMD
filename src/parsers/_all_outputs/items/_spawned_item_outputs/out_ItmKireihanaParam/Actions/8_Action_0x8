@@ -1,0 +1,18 @@
+// Status_Turn_Run
+Action 0x8 {
+  ChangeAction(3, R(In Air()))
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 3.0))) {
+    SetRequirement(R(Animation has looped?()))
+    LoadRest()
+  }
+  while (R(Compare(LA-Int[0x00] > 0.0))) {
+    ChangeSubAction(1)
+    BasicVariableDecrement(LA-Int[0x00])
+    SetRequirement(R(Animation has looped?()))
+    LoadRest()
+    EndWhile()
+    (undef: status) 02_0E_00_00()
+    ChangeAction(9, R(In Air()))
+    ChangeAction(10, R(On Ground()))
+}
+

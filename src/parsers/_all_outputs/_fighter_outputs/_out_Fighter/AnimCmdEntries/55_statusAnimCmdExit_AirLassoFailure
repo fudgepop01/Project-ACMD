@@ -1,0 +1,4 @@
+// @ 0x23100
+AirLassoFailure {
+  RemoveArticle(RA-Int[0x00])
+}

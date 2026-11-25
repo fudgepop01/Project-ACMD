@@ -1,0 +1,9 @@
+// @ 0x225D4
+StarRodSwing3Common {
+  OffensiveCollision(Sp(305, 0), 13, 361, Sp(0, 100), Sp(4, 8), 5.76, 0.0, 7.4, 0.0, 0.0, 1.0, 1.0, 977470080)
+  OffensiveCollision(Sp(305, 1), 13, 361, Sp(0, 100), Sp(4, 8), 3.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 977470080)
+  OffensiveCollision(Sp(305, 2), 13, 361, Sp(0, 100), Sp(4, 8), 2.4, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 977470080)
+  OffensiveCollision(Sp(305, 3), 13, 361, Sp(0, 100), Sp(4, 8), 2.4, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 977470080)
+  PlaySoundFromProjectileItem(8078, 8080)
+  WeaponOperation(100)
+}

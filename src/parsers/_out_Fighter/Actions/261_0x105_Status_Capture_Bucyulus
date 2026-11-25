@@ -1,0 +1,13 @@
+// Status_Capture_Bucyulus
+Action 0x105: ENTRY {
+  HeldItemsVisibility(false)
+  ChangeAction(262, R(In Air()))
+  ChangeSubAction(129)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeSubAction(130)
+  ChangeActionStatus(10036, 64, R(Button Mashable Status Expired()))
+}
+
+Action 0x105 : EXIT {
+}

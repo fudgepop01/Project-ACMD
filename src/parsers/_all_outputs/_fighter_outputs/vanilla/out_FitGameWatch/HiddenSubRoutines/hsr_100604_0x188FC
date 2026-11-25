@@ -1,0 +1,6 @@
+[hsr_188FC]
+hidden_subroutine_0x188FC {
+
+  ChangeActionStatus(10048, 309, R(Compare(Variable_Float_Controller_Stick_X_Lr_Rv >= Common_Param_Float_Dash_Stick_X)))
+  AdditionalRequirement(R(Compare(IC-Int[0x5209] < Common_Param_Int_Dash_Flick_X)))
+}

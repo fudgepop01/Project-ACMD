@@ -1,0 +1,9 @@
+// Status_Clung_Captain
+Action 0xCF: ENTRY {
+  (undef: StageObject) 0C_29_00_00()
+  (undef: motion) 04_1A_01_00(459)
+  ChangeSubAction(412)
+}
+
+Action 0xCF : EXIT {
+}

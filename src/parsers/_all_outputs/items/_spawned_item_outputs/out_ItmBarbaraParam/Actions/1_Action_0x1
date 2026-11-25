@@ -1,0 +1,9 @@
+// Status_Walk
+Action 0x1 {
+  ChangeSubAction(0)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(3, R(In Air()))
+  ChangeAction(4, R(On Ground()))
+}
+

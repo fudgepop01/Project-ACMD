@@ -1,0 +1,24 @@
+// Status_Walk
+Action 0x1 {
+  SynchronousTimer(1.0)
+  (undef: Sp_base) 65_09_08_00(154, 0, Variable_Float_Posture_Pos_X, Variable_Float_Posture_Pos_Y, 0.0, 0.0, 0.0, 0.0)
+  (undef: Sp_base) 65_04_01_00(1400)
+  ChangeSubAction(0)
+  DisableSpecifiedMovement(2)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  FrameSpeedModifier(0.0)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, 7.0, 7.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, false, false, false)
+  SynchronousTimer(10.0)
+  while (R(Is Not in Damaging Magnifier())) {
+    SynchronousTimer(5.0)
+    EndWhile()
+    BasicVariableSet(1, LA-Int[0x0D])
+    while (R(Compare(Variable_Int_Controller_Trigger_1_Count == 0.0))) {
+      SynchronousTimer(1.0)
+      EndWhile()
+      SynchronousTimer(1.0)
+      (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false, false, false)
+      ChangeAction(5, R(Button Tap?()))
+}
+

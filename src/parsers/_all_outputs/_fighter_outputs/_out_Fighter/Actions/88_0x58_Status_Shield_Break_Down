@@ -1,0 +1,21 @@
+// Status_Shield_Break_Down
+Action 0x58: ENTRY {
+  ChangeAction(14, R(NOT Touching a Floor, Wall, or Ceiling(8)))
+
+  ChangeAction(89, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  if (R(0x2715())) {
+    BitVariableSet(RA-Bool[0x19])
+  } else {
+    BitVariableClear(RA-Bool[0x19])
+  }
+  if (R(Bit is Set(RA-Bool[0x19]))) {
+    ChangeSubAction(170)
+  } else {
+    ChangeSubAction(179)
+  }
+}
+
+Action 0x58 : EXIT {
+}

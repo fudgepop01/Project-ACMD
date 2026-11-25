@@ -1,0 +1,36 @@
+Action 0x9: MAIN {
+  SetLoop(-1) {
+    if (R(Compare(Variable_Int_Controller_Flick_Y >= LA-Float[0x05]))) {
+      SubRoutine(hidden_subroutine_0xD30)
+      SWITCH_3ARG(1000, IC-Int[0xABE8], 3)
+        Case(0)
+          (undef: Sp_base) 65_0E_01_00(IC-Int[0xABE5])
+          (undef: Sp_Link) 6E_00_03_00(0, 5103, 9)
+        Case(1)
+          (undef: Sp_base) 65_0E_01_00(IC-Int[0xABE6])
+          (undef: Sp_Link) 6E_00_03_00(1, 5103, 9)
+        Case(2)
+          (undef: Sp_base) 65_0E_01_00(IC-Int[0xABE7])
+          (undef: Sp_Link) 6E_00_03_00(2, 5103, 9)
+        DefaultCase()
+          (undef: unk_procedures) 1B_02_01_00(F(0x00000E40))
+      EndSwitch()
+      (undef: Sp_base) 65_07_02_00(IC-Int[0xABE4], LA-Float[0x05])
+      (undef: Sp_base) 65_04_01_00(2)
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x9: EXIT {
+}
+
+Action 0x9: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(19)
+  SubAction09(6)
+  (undef: Sp_base) 65_07_02_00(IC-Int[0xABE3], LA-Float[0x02])
+  (undef: Sp_base) 65_07_02_00(IC-Int[0xABE4], LA-Float[0x05])
+  (undef: Sp_base) 65_04_01_00(0)
+}
+

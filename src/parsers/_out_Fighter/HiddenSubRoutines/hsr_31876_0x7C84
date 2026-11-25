@@ -1,0 +1,4 @@
+[hsr_7C84]
+hidden_subroutine_0x7C84 {
+  BasicVariableDecrement(RA-Int[0x00])
+}

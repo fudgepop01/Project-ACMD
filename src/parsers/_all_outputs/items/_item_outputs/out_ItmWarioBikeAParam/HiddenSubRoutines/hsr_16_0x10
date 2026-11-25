@@ -1,0 +1,5 @@
+[hsr_10]
+hidden_subroutine_0x10 {
+  ChangeAction(6, R(On Ground()))
+  Return()
+}

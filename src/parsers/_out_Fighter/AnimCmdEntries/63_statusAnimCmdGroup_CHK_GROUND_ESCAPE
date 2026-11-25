@@ -1,0 +1,6 @@
+// @ 0x23ADC
+CHK_GROUND_ESCAPE {
+  ClearPreventInterrupt(GROUND_ESCAPE)
+  SubRoutine(statusAnimCmd_GROUNDChkEscape)
+  ClearPreventInterrupt(ALL?)
+}

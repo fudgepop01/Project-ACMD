@@ -1,0 +1,9 @@
+// Status_Walk
+Action 0x1 {
+  ChangeSubAction(0)
+  SubRoutine(hidden_subroutine_0x88)
+  DisableActionStatusId(1)
+  SynchronousTimer(1.0)
+  ChangeActionStatus(3, 3, R(In Air()))
+}
+

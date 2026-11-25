@@ -1,0 +1,15 @@
+Action 0x121: ENTRY {
+  SetGimmickEffectFlag(false)
+  SubRoutine(hidden_subroutine_0x19ED0)
+  SetAerialOrOnstage(0)
+  Module0900(2)
+  ChangeSubAction(487)
+  ChangeAction(290, R(Animation End()))
+}
+
+Action 0x121 : EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 290.0)) && R(Compare(Variable_Int_Status_Kind != 291.0)) && R(Compare(Variable_Int_Status_Kind != 292.0))) {
+    BitVariableClear(LA-Bool[0x01])
+    ExitFinalSmashState()
+  }
+}

@@ -1,0 +1,12 @@
+// Status_Jump
+Action 0xB {
+  DisableSpecifiedMovement(2)
+  ChangeSubAction(2)
+  SynchronousTimer(420.0)
+  EnableSpecifiedMovement(2)
+  SetAerialOrOnstage(5)
+  SynchronousTimer(1.0)
+  ChangeAction(12, R(On Ground()))
+  ChangeSubAction(4)
+}
+

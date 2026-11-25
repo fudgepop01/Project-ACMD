@@ -1,0 +1,29 @@
+Action 0x113: ENTRY {
+  SetDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  ChangeAction(281, R(Animation End()))
+  BitVariableClear(RA-Bool[0x15])
+  BitVariableClear(LA-Bool[0x3D])
+  BasicVariableSet(464, LA-Int[0x40])
+  BasicVariableSet(469, LA-Int[0x41])
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0x16298)
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      Module0900(0)
+      BitVariableClear(RA-Bool[0x16])
+      SetAirGround(6)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      Module0900(2)
+      BitVariableSet(RA-Bool[0x16])
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x113 : EXIT {
+}

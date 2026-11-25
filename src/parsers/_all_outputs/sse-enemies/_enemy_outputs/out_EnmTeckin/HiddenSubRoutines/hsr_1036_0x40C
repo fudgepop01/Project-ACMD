@@ -1,0 +1,5 @@
+[hsr_40C]
+hidden_subroutine_0x40C {
+  (undef: Sp_AI) 6A_00_05_00(13, 14, 15, 16, 17)
+  Return()
+}

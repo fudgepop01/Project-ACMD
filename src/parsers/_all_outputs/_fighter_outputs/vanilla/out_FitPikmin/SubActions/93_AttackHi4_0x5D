@@ -1,0 +1,38 @@
+[AttackHi4] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x5D: MAIN {
+  AsynchronousTimer(3.0)
+  BitVariableSet(RA-Bool[0x10])
+  AsynchronousTimer(28.0)
+  AllowInterrupt()
+}
+
+Subaction 0x5D: GFX {
+  AsynchronousTimer(3.0)
+  GraphicEffectAttached(1703939, 30, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+}
+
+Subaction 0x5D: SOUND {
+  AsynchronousTimer(1.0)
+  StopSoundEffect(191)
+  SoundEffect(53)
+}
+
+Subaction 0x5D: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(18.0)
+  SlopeContourStand(4)
+  HeldItemsVisibility(false)
+  AsynchronousTimer(31.0)
+  SlopeContourStand(6)
+}
+

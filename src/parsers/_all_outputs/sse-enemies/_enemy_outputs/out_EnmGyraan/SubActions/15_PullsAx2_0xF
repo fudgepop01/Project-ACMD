@@ -1,0 +1,58 @@
+[PullsAx2] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xF: MAIN {
+}
+
+Subaction 0xF: MAIN EXIT {
+  (undef: Sp_Link) 6E_02_02_00(0, O(0x000026F8))
+}
+
+Subaction 0xF: MAIN INIT {
+  SubRoutine(hidden_subroutine_0x2898)
+}
+
+Subaction 0xF: GFX {
+  AsynchronousTimer(25.0)
+  GraphicEffect(10, 0, 0.0, 0.0, 35.0, 0.0, 180.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(8, 0, 0.0, 0.0, 20.0, 0.0, 180.0, 0.0, 1.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  SynchronousTimer(10.0)
+  GraphicEffect(10, 0, 0.0, 0.0, 35.0, 0.0, 180.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(8, 0, 0.0, 0.0, 20.0, 0.0, 180.0, 0.0, 1.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  SynchronousTimer(40.0)
+  GraphicEffect(10, 0, 0.0, 0.0, 35.0, 0.0, 180.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(8, 0, 0.0, 0.0, 20.0, 0.0, 180.0, 0.0, 1.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  SynchronousTimer(10.0)
+  GraphicEffect(10, 0, 0.0, 0.0, 35.0, 0.0, 180.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(8, 0, 0.0, 0.0, 20.0, 0.0, 180.0, 0.0, 1.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0xF: GFX EXIT {
+}
+
+Subaction 0xF: GFX INIT {
+}
+
+Subaction 0xF: SFX {
+  SoundEffect(9332)
+  SynchronousTimer(1.0)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0x8 : SFX)
+}
+
+Subaction 0xF: SFX EXIT {
+}
+
+Subaction 0xF: SFX INIT {
+  SoundEffect(9331)
+}
+

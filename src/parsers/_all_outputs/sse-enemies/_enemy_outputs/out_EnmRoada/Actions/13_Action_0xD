@@ -1,0 +1,38 @@
+Action 0xD: MAIN {
+  SetLoop(-1) {
+    if (R(Successfully tethered ledge())) {
+      if [IF_REQ_UNKNOWN_3ARG] (R(0x12()), 1, Variable_Int_Controller_Flick_No_Reset_Y) {
+        (undef: Sp_Area) 69_00_01_00(Variable_Int_Controller_Flick_No_Reset_Y)
+      }
+    }
+    if (R(Compare(Variable_Int_Motion_Kind == 2.0)) && R(Animation End())) {
+      if (R(Compare(Variable_Int_Combo_Count >= IC-Int[0x5DC2]))) {
+        SubAction09(0)
+        (undef: Sp_AI) 6A_00_01_00(23)
+      } else {
+        SubAction09(1)
+      }
+    }
+    if (R(Compare(Variable_Int_Motion_Kind == 1.0)) && R(Compare(Variable_Int_Combo_Count >= IC-Int[0x5DC2]))) {
+      SubAction09(0)
+      (undef: Sp_AI) 6A_00_01_00(23)
+    }
+    if (R(Compare(Variable_Int_Motion_Kind == 1.0)) && R(0x2727())) {
+      SubAction09(0)
+      (undef: Sp_AI) 6A_00_01_00(23)
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0xD: EXIT {
+}
+
+Action 0xD: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  SubAction09(2)
+  (undef: Sp_Kinetic) 66_0B_02_00(3, 21)
+  (undef: Sp_base) 65_04_01_00(0)
+  ReverseDirection()
+}
+

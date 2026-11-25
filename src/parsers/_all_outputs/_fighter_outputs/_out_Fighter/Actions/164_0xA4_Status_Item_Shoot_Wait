@@ -1,0 +1,18 @@
+// Status_Item_Shoot_Wait
+Action 0xA4: ENTRY {
+  ResetButtonPress()
+  SubRoutine(hidden_subroutine_0x1BB0C)
+  Switch(10000, Variable_Int_Have_Item_Kind)
+    Case(24)
+      SubRoutine(hidden_subroutine_0x1B19C)
+    Case(44)
+      SubRoutine(hidden_subroutine_0x1AFBC)
+    Case(61)
+      SubRoutine(hidden_subroutine_0x1B3FC)
+    Case(13)
+      SubRoutine(hidden_subroutine_0x1B89C)
+  EndSwitch()
+}
+
+Action 0xA4 : EXIT {
+}

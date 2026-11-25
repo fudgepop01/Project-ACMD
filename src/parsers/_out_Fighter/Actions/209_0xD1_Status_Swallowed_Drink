@@ -1,0 +1,10 @@
+// Status_Swallowed_Drink
+Action 0xD1: ENTRY {
+  SetGimmickEffectFlag(false)
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+  ChangeSubAction(RA-Int[0x03])
+}
+
+Action 0xD1 : EXIT {
+}

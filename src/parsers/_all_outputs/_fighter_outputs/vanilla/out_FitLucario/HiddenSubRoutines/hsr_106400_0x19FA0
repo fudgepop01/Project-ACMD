@@ -1,0 +1,5 @@
+[hsr_19FA0]
+hidden_subroutine_0x19FA0 {
+  Module0900(0)
+  SetAerialOrOnstage(1)
+}

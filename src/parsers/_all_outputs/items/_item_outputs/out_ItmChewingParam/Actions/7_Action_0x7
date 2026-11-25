@@ -1,0 +1,10 @@
+// Status_Turn_Dash
+Action 0x7 {
+  BasicVariableSet(-1, LA-Int[0x0B])
+  BasicVariableSet(-1, LA-Int[0x0C])
+  (undef: team) 22_00_01_00(-1)
+  ChangeSubAction(4)
+  SynchronousTimer(1.0)
+  ChangeAction(6, R(Button Tap?()))
+}
+

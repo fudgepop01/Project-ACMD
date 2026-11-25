@@ -1,0 +1,10 @@
+// Status_Dash
+Action 0x3 {
+  TerminateCollisions()
+  BodyCollision(0)
+  SubRoutine(hidden_subroutine_0x5B4)
+  ChangeAction(5, R(Compare(Variable_Float_Kinetic_Sum_Speed_X_Abs > 0.44998333333333335)))
+  ChangeSubAction(2)
+  ChangeAction(4, R(On Ground()))
+}
+

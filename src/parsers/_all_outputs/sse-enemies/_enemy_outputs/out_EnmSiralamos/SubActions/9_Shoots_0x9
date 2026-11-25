@@ -1,0 +1,59 @@
+[Shoots] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x9: MAIN {
+  SynchronousTimer(35.0)
+  (undef: Sp_Link) 6E_00_02_00(1, 5102)
+  (undef: Sp_base) 65_0E_02_00(IC-Int[0xABE8], 1)
+  (undef: Sp_Link) 6E_00_03_00(2, 5103, 49)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 27, 6, 1.8, 65, 10, 1.5, 0, 0.0, 82, 1.0, 5.0, 0.0, -2.0, 0.0, 15.0, 2, 0.0, 0.6, 1.0, false, true, 5, 0, 3, 3, true, 0, 311, false, 9, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 1, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 22, 6, 1.8, 65, 10, 1.5, 0, 0.0, 82, 1.0, 4.5, 0.0, 3.0, 4.0, 0.0, 2, 0.0, 0.6, 1.0, false, true, 5, 0, 3, 3, true, 0, 311, false, 9, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 1, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(2, 0, 21, 6, 1.8, 65, 10, 1.5, 0, 0.0, 82, 1.0, 4.5, 0.0, 0.0, 3.0, 0.0, 2, 0.0, 0.6, 1.0, false, true, 5, 0, 3, 3, true, 0, 311, false, 9, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 1, LA-Float[0x0C])
+  SynchronousTimer(1.0)
+  TerminateCollisions()
+  SynchronousTimer(44.0)
+  (undef: Sp_Link) 6E_00_02_00(0, 5102)
+  (undef: Sp_base) 65_0E_02_00(IC-Int[0xABE9], 1)
+  (undef: Sp_Link) 6E_00_03_00(3, 5103, 49)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 10, 6, 1.8, 65, 15, 1.5, 0, 0.0, 82, 1.0, 4.5, 0.0, 0.0, 4.0, 0.0, 2, 0.0, 0.6, 1.0, false, true, 5, 0, 3, 3, true, 0, 311, false, 9, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 1, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 9, 6, 1.8, 65, 15, 1.5, 0, 0.0, 82, 1.0, 4.5, 0.0, 0.0, 3.0, 0.0, 2, 0.0, 0.6, 1.0, false, true, 5, 0, 3, 3, true, 0, 311, false, 9, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 1, LA-Float[0x0C])
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+}
+
+Subaction 0x9: MAIN EXIT {
+}
+
+Subaction 0x9: MAIN INIT {
+}
+
+Subaction 0x9: GFX {
+}
+
+Subaction 0x9: GFX EXIT {
+}
+
+Subaction 0x9: GFX INIT {
+}
+
+Subaction 0x9: SFX {
+  SynchronousTimer(35.0)
+  SoundEffect(9499)
+  SynchronousTimer(45.0)
+  SoundEffect(9500)
+}
+
+Subaction 0x9: SFX EXIT {
+}
+
+Subaction 0x9: SFX INIT {
+}
+

@@ -1,0 +1,13 @@
+// Status_Run
+Action 0x4 {
+  ChangeAction(3, R(In Air()))
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 1.0))) {
+    ChangeSubAction(3)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ChangeAction(12, R(Button Tap?()))
+  } else {
+    ChangeAction(13, R(Button Tap?()))
+  }
+}
+

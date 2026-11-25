@@ -1,0 +1,5 @@
+[hsr_2CDC]
+hidden_subroutine_0x2CDC {
+  SpecialOffensiveCollisionEnemyHitbox(4, 4, 7, 0, 0.0, 0, 100, 0.0, 11, 0.0, 0, 0.0, 5.0, 0.0, -6.0, 0.0, 0.0, 0, 0.0, 0.0, 1.0, false, true, 0, 0, 0, 3, true, 0, 311, false, 9, false, false, false, false, 2, true, false, 2, false, false, true, true, true, 0, LA-Float[0x0C])
+  Return()
+}

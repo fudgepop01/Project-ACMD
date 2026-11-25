@@ -1,0 +1,25 @@
+// @ 0x21CD8
+Jump {
+  ResetFlickY()
+  ResetButtonPress()
+  SubRoutine(statusAnimCmd_AIRChkFallCommon)
+  SubRoutine(statusAnimCmd_AIRChkStopCeil)
+  ChangeAction(14, R(Animation End()))
+  if (R(Compare(Variable_Float_Controller_Stick_X_Lr_Rv >= Common_Param_Float_Jump_Neutral_X))) {
+    if (R(Bit is Set(RA-Bool[0x06]))) {
+      ChangeSubAction(24)
+    } else {
+      ChangeSubAction(23)
+    }
+  } else {
+    if (R(Bit is Set(RA-Bool[0x06]))) {
+      ChangeSubAction(22)
+    } else {
+      ChangeSubAction(21)
+    }
+  }
+  if (R(Bit is Set(LA-Bool[0x13]))) {
+    SoundEffect(8107)
+  }
+  ConcurrentInfiniteLoop(I(9), statusAnimCmd_FALLCommonUniq)
+}

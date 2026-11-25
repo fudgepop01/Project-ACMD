@@ -1,0 +1,6 @@
+[hsr_79FC]
+hidden_subroutine_0x79FC {
+  SubRoutine(statusAnimCmd_ItemShootDashB_Common)
+  SubRoutine(statusAnimCmd_AllowThrowItem)
+  SubRoutine(hidden_subroutine_0xC894)
+}

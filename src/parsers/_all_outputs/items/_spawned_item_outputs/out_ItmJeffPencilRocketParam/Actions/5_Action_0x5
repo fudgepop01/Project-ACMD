@@ -1,0 +1,40 @@
+// Status_Run_Brake
+Action 0x5 {
+  (undef: Sp_base) 65_04_01_00(420)
+  DisableSpecifiedMovement(2)
+  (undef: Sp_Kinetic) 66_05_01_00(1)
+  (undef: Sp_Kinetic) 66_09_01_00(true)
+  ChangeSubAction(1)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.25, 3.0, 3.0, 0.0, 0.0, 0.0, 0.008, 0.0, 0.0, false, false, false)
+  ChangeAction(7, R(Bit is Set(RA-Bool[0x05])))
+  FloatVariableRandom(-400.0, 400.0, RA-Float[0x00])
+  (undef: Sp_base) 65_07_03_00(1, RA-Float[0x00], 1000.0)
+  SynchronousTimer(60.0)
+  ChangeAction(7, R(In walljump situation()), 255)
+  (undef: Sp_base) 65_07_01_00(3)
+  while (R(Button Tap?())) {
+    if (R(Is within footstool range())) {
+      (undef: Sp_Kinetic) 66_08_01_00(0.0)
+    } else {
+      FloatVariableRandom(0.02, 0.12, RA-Float[0x00])
+      (undef: Sp_Kinetic) 66_08_01_00(RA-Float[0x00])
+    }
+    if (R(Is within footstool range())) {
+      SynchronousTimer(10.0)
+    } elif (R(Is within footstool range())) {
+      SynchronousTimer(20.0)
+    } else {
+      SynchronousTimer(30.0)
+    }
+    if (R(Is within footstool range())) {
+      if (R(Is within footstool range())) {
+        (undef: Sp_base) 65_07_01_00(4)
+      } else {
+        (undef: Sp_base) 65_07_01_00(3)
+      }
+    } else {
+      (undef: Sp_base) 65_07_01_00(9)
+    }
+    EndWhile()
+}
+

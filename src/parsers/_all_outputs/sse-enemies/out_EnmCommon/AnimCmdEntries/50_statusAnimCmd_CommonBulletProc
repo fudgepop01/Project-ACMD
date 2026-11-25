@@ -1,0 +1,6 @@
+// @ 0x3590
+CommonBulletProc {
+  SubRoutine(statusAnimCmd_CommonBulletProcInit)
+  SubRoutine(statusAnimCmd_CommonBulletProcExec)
+  Return()
+}

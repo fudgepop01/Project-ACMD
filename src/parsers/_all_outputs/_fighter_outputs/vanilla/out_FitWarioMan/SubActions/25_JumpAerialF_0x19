@@ -1,0 +1,32 @@
+[JumpAerialF] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x19: MAIN {
+}
+
+Subaction 0x19: GFX {
+  GraphicEffect(30, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x19: SOUND {
+  StopSoundEffect(4848)
+  AsynchronousTimer(4.0)
+  SoundEffect(4849)
+  SetLoop(3) {
+    SynchronousTimer(2.0)
+    SoundEffect(111)
+    SynchronousTimer(10.0)
+  }
+}
+
+Subaction 0x19: OTHER {
+}
+

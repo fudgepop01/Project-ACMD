@@ -1,0 +1,21 @@
+Action 0x0: MAIN {
+  if (R(Compare(LA-Int[0x0A] <= IC-Int[0xFA2]))) {
+    SubRoutine(hidden_subroutine_0x498)
+  } else {
+    SubRoutine(hidden_subroutine_0x4B8)
+  }
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonDamageProc)
+}
+
+Action 0x0: EXIT {
+  if (R(Bit is Set(LA-Bool[0x04])) && R(Compare(Variable_Int_Status_Kind != 0.0))) {
+    SubRoutine(EXTERNAL: statusAnimCmd_CommonDamageCancel)
+  }
+}
+
+Action 0x0: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(7)
+  SubAction09(2)
+}
+

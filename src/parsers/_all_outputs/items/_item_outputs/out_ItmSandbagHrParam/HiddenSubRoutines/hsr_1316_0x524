@@ -1,0 +1,5 @@
+[hsr_524]
+hidden_subroutine_0x524 {
+  SoundEffect(8010)
+  Return()
+}

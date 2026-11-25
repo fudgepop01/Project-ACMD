@@ -1,0 +1,4 @@
+[hsr_7344]
+hidden_subroutine_0x7344 {
+  SubRoutine(statusAnimCmd_ItemShootJumpSquat_Common)
+}

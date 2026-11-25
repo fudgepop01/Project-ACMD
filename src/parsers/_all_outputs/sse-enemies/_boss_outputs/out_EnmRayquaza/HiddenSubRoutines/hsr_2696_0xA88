@@ -1,0 +1,6 @@
+[hsr_A88]
+hidden_subroutine_0xA88 {
+  SubRoutine(hsr_5B8)
+  (undef: Sp_Area) 69_08_02_00(Variable_Int_Controller_Flick_No_Reset_Y, LA-Float[0x0A])
+  FloatVariableSet(IC-Int[0xFA2], LA-Float[0x0B])
+}

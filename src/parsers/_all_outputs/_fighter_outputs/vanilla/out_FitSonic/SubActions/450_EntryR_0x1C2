@@ -1,0 +1,53 @@
+[EntryR] (flags) {
+  No Out Transition: 1,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1C2: MAIN {
+}
+
+Subaction 0x1C2: GFX {
+  GraphicEffectAttached(3145733, 81, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(3145734, 80, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(40.0)
+  TerminateGraphicEffect(3145733, false, true)
+  TerminateGraphicEffect(3145734, false, true)
+}
+
+Subaction 0x1C2: SOUND {
+  SoundEffect(6478)
+  SynchronousTimer(18.0)
+  SoundEffect(6483)
+  SynchronousTimer(40.0)
+  StopSoundEffect(6478)
+  SoundEffect(6520)
+}
+
+Subaction 0x1C2: OTHER {
+  SubRoutine(hidden_subroutine_0x2430)
+  WearableItemsVisibility(false)
+  UnkRaBit27(false)
+  SetTagDisplay(false)
+  AsynchronousTimer(30.0)
+  SetLoop(2) {
+    SubRoutine(hidden_subroutine_0x2430)
+    SynchronousTimer(2.0)
+    SubRoutine(hidden_subroutine_0x24C8)
+    SynchronousTimer(2.0)
+  }
+  SubRoutine(hidden_subroutine_0x2430)
+  SynchronousTimer(2.0)
+  SubRoutine(hidden_subroutine_0x24C8)
+  WearableItemsVisibility(true)
+  UnkRaBit27(true)
+  SetTagDisplay(true)
+  AsynchronousTimer(100.0)
+  SlopeContourStand02(6, 10)
+}
+

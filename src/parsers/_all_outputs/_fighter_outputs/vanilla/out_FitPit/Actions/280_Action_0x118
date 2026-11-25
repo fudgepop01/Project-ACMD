@@ -1,0 +1,52 @@
+Action 0x118: ENTRY {
+  ChangeAction(282, R(Button Not Pressed(Special)))
+  ChangeAction(279, R(Animation End()))
+  if (R(Bit is Set(RA-Bool[0x11]))) {
+    BasicVariableSet(465, RA-Int[0x01])
+    BasicVariableSet(473, RA-Int[0x02])
+    BasicVariableSet(3, RA-Int[0x03])
+    BasicVariableSet(11, RA-Int[0x04])
+  } else {
+    BasicVariableSet(466, RA-Int[0x01])
+    BasicVariableSet(474, RA-Int[0x02])
+    BasicVariableSet(4, RA-Int[0x03])
+    BasicVariableSet(12, RA-Int[0x04])
+  }
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(6)
+      SetAerialOrOnstage(1)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(RA-Int[0x01], true)
+        SetAnchoredArticleAction(0, RA-Int[0x03], true)
+      } else {
+        ChangeSubAction(RA-Int[0x01])
+        SetArticleAction(0, RA-Int[0x03])
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement01(0, R(In Air()))
+    } else {
+      SetAirGround(100)
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(RA-Int[0x02], true)
+        SetAnchoredArticleAction(0, RA-Int[0x04], true)
+      } else {
+        ChangeSubAction(RA-Int[0x02])
+        SetArticleAction(0, RA-Int[0x04])
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement01(1, R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x118 : EXIT {
+  if (R(Bit is Set(RA-Bool[0x11]))) {
+    BitVariableClear(RA-Bool[0x11])
+  } else {
+    BitVariableSet(RA-Bool[0x11])
+  }
+  SubRoutine(Action_0x8 : EXIT)
+}

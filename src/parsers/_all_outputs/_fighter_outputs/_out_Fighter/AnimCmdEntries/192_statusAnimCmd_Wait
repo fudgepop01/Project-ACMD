@@ -1,0 +1,5 @@
+// @ 0x21AF8
+Wait {
+  SubRoutine(statusAnimCmd_WaitCommon)
+  SubRoutine(hidden_subroutine_0xBC74)
+}

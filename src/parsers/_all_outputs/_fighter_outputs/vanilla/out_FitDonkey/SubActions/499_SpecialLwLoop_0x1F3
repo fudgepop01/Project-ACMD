@@ -1,0 +1,57 @@
+[SpecialLwLoop] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1F3: MAIN {
+  AsynchronousTimer(5.0)
+  OffensiveCollision(Sp(0, 0), 14, 78, Sp(0, 23), Sp(1, 82), 13.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 805373056)
+  OffensiveCollision(Sp(0, 1), 14, 84, Sp(0, 23), Sp(1, 82), 13.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 805373056)
+  OffensiveCollision(Sp(0, 2), 14, 84, Sp(0, 23), Sp(1, 82), 13.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 805373056)
+  OffensiveCollision(Sp(0, 3), 14, 78, Sp(0, 23), Sp(1, 82), 13.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 805373056)
+  BitVariableSet(RA-Bool[0x11])
+  SynchronousTimer(1.0)
+  BitVariableSet(RA-Bool[0x11])
+  SynchronousTimer(1.0)
+  TerminateCollisions()
+  SynchronousTimer(9.0)
+  OffensiveCollision(Sp(0, 0), 14, 78, Sp(0, 23), Sp(1, 82), 13.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 805373056)
+  OffensiveCollision(Sp(0, 1), 14, 84, Sp(0, 23), Sp(1, 82), 13.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 805373056)
+  OffensiveCollision(Sp(0, 2), 14, 84, Sp(0, 23), Sp(1, 82), 13.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 805373056)
+  OffensiveCollision(Sp(0, 3), 14, 78, Sp(0, 23), Sp(1, 82), 13.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 805373056)
+  BitVariableSet(RA-Bool[0x11])
+  SynchronousTimer(1.0)
+  BitVariableSet(RA-Bool[0x11])
+  SynchronousTimer(1.0)
+  TerminateCollisions()
+}
+
+Subaction 0x1F3: GFX {
+  AsynchronousTimer(5.0)
+  GraphicEffectAttached(131077, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectLanding(0, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x1F3: SOUND {
+  AsynchronousTimer(5.0)
+  SoundEffect(2708)
+  SynchronousTimer(11.0)
+  SoundEffect(2708)
+}
+
+Subaction 0x1F3: OTHER {
+  SlopeContourStand(0)
+  AsynchronousTimer(5.0)
+  Screenshake(0)
+  Rumble(13, 0)
+  AsynchronousTimer(16.0)
+  Screenshake(0)
+  Rumble(13, 0)
+}
+

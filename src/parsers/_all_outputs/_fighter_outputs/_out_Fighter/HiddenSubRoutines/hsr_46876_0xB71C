@@ -1,0 +1,9 @@
+[hsr_B71C]
+hidden_subroutine_0xB71C {
+
+  ChangeActionStatus(10020, 98, R(Touching a Floor, Wall, or Ceiling(6)))
+  AdditionalRequirement(R(Compare(Variable_Int_Controller_Trigger_5_Count < Common_Param_Int_Passive_Wall_Stop_Frame)))
+  AdditionalRequirement(R(Compare(Variable_Int_Controller_Trigger_5_Count_Prev >= Common_Param_Int_No_Rapid_Frame_Value)))
+  AdditionalRequirement(R(NOT 0x2723()))
+  AdditionalRequirement(R(In Air()))
+}

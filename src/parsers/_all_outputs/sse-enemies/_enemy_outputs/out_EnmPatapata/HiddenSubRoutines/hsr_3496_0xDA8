@@ -1,0 +1,15 @@
+[hsr_DA8]
+hidden_subroutine_0xDA8 {
+  if (R(Bit is Set(LA-Bool[0x06]))) {
+    if (R(Compare(Variable_Float_Motion_Other_1_Frame == 0.0))) {
+      (undef: Sp_base) 65_1D_01_00(329)
+    } else {
+      (undef: Sp_base) 65_1D_01_00(328)
+    }
+  } else {
+    if (R(Compare(Variable_Float_Motion_Other_1_Frame == 0.0))) {
+      (undef: Sp_base) 65_1D_01_00(331)
+    } else {
+      (undef: Sp_base) 65_1D_01_00(330)
+    }
+}

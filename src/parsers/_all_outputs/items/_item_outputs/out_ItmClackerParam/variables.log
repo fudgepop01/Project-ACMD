@@ -1,0 +1,6 @@
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 2 : 1
+LA-Int[0x00] in Action 0x4 (Status_Run) @ 2 : 2
+
+LA-Float[0x00] in Action 0x1 (Status_Walk) @ 3 : 1
+LA-Float[0x00] in Action 0x2 (Status_Walk_Brake) @ 1 : 1
+LA-Float[0x00] in Action 0x2 (Status_Walk_Brake) @ 2 : 1

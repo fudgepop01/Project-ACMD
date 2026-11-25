@@ -1,0 +1,13 @@
+IC-Int[0x5213] ("Variable_Int_Controller_Trigger_2_Count") in Action 0x1 (Status_Walk) @ 4 : 1
+
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 6 : 1
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 8 : 1
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 11 : 1
+
+LA-Int[0x0C] in Action 0x1 (Status_Walk) @ 1 : 1
+LA-Int[0x0C] in hsr_F4 @ 0 : 1
+
+LA-Float[0x00] in Action 0x1 (Status_Walk) @ 14 : 2
+LA-Float[0x00] in Action 0x1 (Status_Walk) @ 15 : 1
+
+RA-Bool[0x05] in hsr_F4 @ 2 : 3

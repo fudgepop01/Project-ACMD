@@ -1,0 +1,7 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  SubRoutine(hidden_subroutine_0x27C)
+  SynchronousTimer(120.0)
+  ChangeAction(5, R(NOT In walljump situation()), 255)
+}
+

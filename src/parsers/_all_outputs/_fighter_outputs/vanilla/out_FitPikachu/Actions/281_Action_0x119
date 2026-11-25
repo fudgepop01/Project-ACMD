@@ -1,0 +1,35 @@
+Action 0x119: ENTRY {
+  BasicVariableSet(0, RA-Int[0x00])
+  ChangeAction(282, R(Compare(RA-Int[0x00] >= IC-Int[0xFA6])))
+  ChangeAction(282, R(Button Not Pressed(Special)))
+  BitVariableClear(LA-Bool[0x3D])
+  BasicVariableSet(465, LA-Int[0x40])
+  BasicVariableSet(470, LA-Int[0x41])
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x164B8)
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0x16298)
+    if (R(On Ground())) {
+      if (R(Bit is Set(RA-Bool[0x16]))) {
+        BitVariableSet(RA-Bool[0x15])
+      }
+      BitVariableClear(RA-Bool[0x16])
+      SetAirGround(6)
+      SetAerialOrOnstage(1)
+      Module0900(0)
+      SetRequirement(R(In Air()))
+    } else {
+      if (R(NOT Bit is Set(RA-Bool[0x16]))) {
+        BitVariableSet(RA-Bool[0x15])
+      }
+      BitVariableSet(RA-Bool[0x16])
+      SetAirGround(10)
+      SetAerialOrOnstage(5)
+      Module0900(2)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x119 : EXIT {
+}

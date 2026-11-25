@@ -1,0 +1,13 @@
+// Status_Hammer_Fall
+Action 0xE4: ENTRY {
+  ChangeAction(14, R(NOT Bit is Set(LA-Bool[0x0B])))
+  ChangeAction(229, R(On Ground()))
+  BasicVariableSet(323, RA-Int[0x05])
+  SubRoutine(hidden_subroutine_0x8044)
+}
+
+Action 0xE4 : EXIT {
+  if (R(Bit is Set(LA-Bool[0x0B]))) {
+    AttachItemHoldAnim_UNDOC1ARGS(2)
+  }
+}

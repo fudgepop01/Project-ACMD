@@ -1,0 +1,9 @@
+Action 0x123: ENTRY {
+  BasicVariableSet(IC-Int[0xFD3], RA-Int[0x02])
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1D2E0)
+  ChangeAction(14, R(Animation End()))
+  ChangeSubAction(485)
+}
+
+Action 0x123 : EXIT {
+}

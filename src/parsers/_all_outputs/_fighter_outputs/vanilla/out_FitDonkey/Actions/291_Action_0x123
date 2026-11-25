@@ -1,0 +1,16 @@
+Action 0x123: ENTRY {
+  FloatVariableSet(Customize_Param_Float_Flip_Dir_Frame, RA-Float[0x05])
+  BitVariableClear(RA-Bool[0x12])
+  SubRoutine(hidden_subroutine_0x1EC18)
+  SubRoutine(hidden_subroutine_0x1ED40)
+
+  ChangeAction(289, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(295, R(In Air()))
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1F080)
+  ChangeSubAction(475)
+}
+
+Action 0x123 : EXIT {
+}

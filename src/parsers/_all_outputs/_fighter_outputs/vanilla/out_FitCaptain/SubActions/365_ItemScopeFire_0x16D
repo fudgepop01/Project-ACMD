@@ -1,0 +1,25 @@
+[ItemScopeFire] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x16D : MAIN {
+  AsynchronousTimer(2.0)
+  FireProjectile(RA-Int[0x0E])
+}
+
+Subaction 0x16D : GFX {
+}
+
+Subaction 0x16D : SOUND {
+}
+
+Subaction 0x16D : OTHER {
+}
+

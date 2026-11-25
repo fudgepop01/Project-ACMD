@@ -1,0 +1,13 @@
+// Status_Jump_Squat
+Action 0xA {
+  ChangeSubAction(2)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, -1.25, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, false)
+  (undef: Sp_Kinetic) 66_02_02_00(0.1, 0.05)
+  PassThroughFloorIfPossible_UNDOC0ARGS()
+  Module0900(2)
+  SetAerialOrOnstage(5)
+  ChangeSubAction(2)
+  (undef: Sp_Kinetic) 66_02_02_00(0.05, 0.0)
+  ChangeActionStatus(4, 4, R(On Ground()))
+}
+

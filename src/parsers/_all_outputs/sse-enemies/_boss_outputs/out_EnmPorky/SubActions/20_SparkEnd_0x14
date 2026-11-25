@@ -1,0 +1,49 @@
+[SparkEnd] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x14: MAIN {
+  AsynchronousTimer(0.0)
+  (undef: Sp_Link) 6E_00_03_00(2, 5103, 46)
+}
+
+Subaction 0x14: MAIN EXIT {
+}
+
+Subaction 0x14: MAIN INIT {
+}
+
+Subaction 0x14: GFX {
+  GraphicEffectAttached(12320770, 36, 0.0, 0.0, 0.0, 0.0, 90.0, 0.0, 0.5, false)
+  GraphicEffectAttached(12320770, 45, 0.0, 0.0, 0.0, 0.0, -90.0, 0.0, 0.5, false)
+  GraphicEffectAttached(12320770, 39, 0.0, 0.0, 0.0, 0.0, 90.0, 0.0, 0.5, false)
+  GraphicEffectAttached(12320770, 48, 0.0, 0.0, 0.0, 0.0, -90.0, 0.0, 0.5, false)
+  GraphicEffectAttached(12320770, 42, 0.0, 0.0, 0.0, 0.0, 90.0, 0.0, 0.5, false)
+  GraphicEffectAttached(12320770, 51, 0.0, 0.0, 0.0, 0.0, -90.0, 0.0, 0.5, false)
+  GraphicEffectAttached(12320770, 10, 17.0, 24.0, -4.0, 0.0, 90.0, 0.0, 0.5, false)
+  GraphicEffectAttached(12320770, 10, -17.0, 24.0, -4.0, 0.0, -90.0, 0.0, 0.5, false)
+}
+
+Subaction 0x14: GFX EXIT {
+}
+
+Subaction 0x14: GFX INIT {
+}
+
+Subaction 0x14: SFX {
+  SoundEffect(9662)
+}
+
+Subaction 0x14: SFX EXIT {
+}
+
+Subaction 0x14: SFX INIT {
+}
+

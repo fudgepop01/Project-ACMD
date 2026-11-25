@@ -1,0 +1,13 @@
+Action 0x11E: ENTRY {
+  BasicVariableSet(IC-Int[0x5DCB], RA-Int[0x00])
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1A810)
+  ChangeSubAction(-1)
+  BodyCollision(3)
+  Visibility(false)
+  SetGimmickEffectFlag(false)
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+}
+
+Action 0x11E : EXIT {
+}

@@ -1,0 +1,5 @@
+[hsr_53C]
+hidden_subroutine_0x53C {
+  SoundEffectTransient(8012)
+  Return()
+}

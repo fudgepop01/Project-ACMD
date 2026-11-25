@@ -1,0 +1,17 @@
+Action 0x11B: ENTRY {
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  BasicVariableSet(467, RA-Int[0x00])
+  BasicVariableSet(478, RA-Int[0x01])
+  BitVariableClear(RA-Bool[0x10])
+  SubRoutine(hidden_subroutine_0x19A08)
+}
+
+Action 0x11B : EXIT {
+  BasicVariableSet(IC-Int[0x5DC2], LA-Int[0x40])
+}

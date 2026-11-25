@@ -1,0 +1,28 @@
+Action 0x7: MAIN {
+  SetLoop(-1) {
+    if (R(Compare(Variable_Int_Motion_Kind != 13.0)) && R(Compare(Variable_Int_Motion_Kind != 14.0)) || R(Animation has looped?())) {
+      SWITCH_3ARG(1000, IC-Int[0xABEC], 2)
+        Case(0)
+          SubAction09(13)
+        Case(1)
+          SubAction09(14)
+        DefaultCase()
+          (undef: unk_procedures) 1B_02_01_00(F(0x00001084))
+      EndSwitch()
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x7: EXIT {
+  (undef: Sp_Kinetic) 66_07_01_00(-1)
+}
+
+Action 0x7: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(9)
+  BasicVariableSet(2, LA-Int[0x06])
+  (undef: Sp_base) 65_07_02_00(IC-Int[0xABE4], LA-Float[0x02])
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+}
+

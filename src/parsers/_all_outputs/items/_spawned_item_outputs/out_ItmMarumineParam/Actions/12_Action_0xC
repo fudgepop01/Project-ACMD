@@ -1,0 +1,11 @@
+// Status_Jump_Aerial
+Action 0xC {
+  ChangeActionStatus(9, 9, R(In Air()))
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeSubAction(1)
+  DisableActionStatusId(9)
+  ChangeAction(3, R(In Air()))
+  ChangeAction(4, R(On Ground()))
+}
+

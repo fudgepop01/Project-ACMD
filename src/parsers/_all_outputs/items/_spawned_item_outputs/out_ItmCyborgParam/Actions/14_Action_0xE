@@ -1,0 +1,21 @@
+// Status_Fall
+Action 0xE {
+  SubRoutine(hidden_subroutine_0x68)
+  BasicVariableSet(0, LA-Int[0x00])
+  ChangeSubAction(10)
+  SetAerialOrOnstage(3)
+  (undef: Sp_Kinetic) 66_02_02_00(0.08, 0.04)
+  SynchronousTimer(5.0)
+
+  ChangeAction(13, R(NOT 0x2715()), 18.0)
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(13, R(In walljump situation()), 6)
+  AdditionalRequirement(R(On Ground()))
+
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  SubRoutine(hidden_subroutine_0x1B0)
+  SubRoutine(hidden_subroutine_0x2B8)
+}
+

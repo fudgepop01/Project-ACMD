@@ -1,0 +1,13 @@
+[hsr_19508]
+hidden_subroutine_0x19508 {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(279)
+    Case(280)
+    Case(15)
+      Break()
+    DefaultCase()
+      if (R(Article Exists())) {
+        ArticleEvent02(3)
+      }
+  EndSwitch()
+}

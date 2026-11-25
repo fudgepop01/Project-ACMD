@@ -1,0 +1,19 @@
+Action 0x7: MAIN {
+}
+
+Action 0x7: EXIT {
+}
+
+Action 0x7: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(27)
+  (undef: Sp_AI) 6A_00_01_00(23)
+  SubAction09(7)
+  (undef: Sp_Kinetic) 66_0B_02_00(3, 14)
+  if (R(Compare(Variable_Int_Status_Prev_Kind == -1.0))) {
+    if (R(0x11())) {
+      (undef: territory) 15_00_00_00()
+    }
+  }
+}
+

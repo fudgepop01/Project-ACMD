@@ -1,0 +1,22 @@
+Action 0x15: MAIN {
+}
+
+Action 0x15: EXIT {
+}
+
+Action 0x15: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(30)
+  (undef: Sp_AI) 6A_00_01_00(9)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 34)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 40)
+  (undef: Sp_Kinetic) 66_00_02_00(5, 35)
+  if (R(Compare(LA-Float[0x04] >= IC-Int[0xFA0]))) {
+    SubAction09(9)
+  } elif (R(Compare(LA-Float[0x04] >= IC-Int[0xFA1]))) {
+    SubAction09(8)
+  } else {
+    SubAction09(7)
+  }
+}
+

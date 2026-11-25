@@ -1,0 +1,57 @@
+[LowSparkBall] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xA: MAIN {
+  AsynchronousTimer(29.0)
+  (undef: Sp_base) 65_0E_01_00(IC-Int[0xABF9])
+  (undef: Sp_Link) 6E_00_03_00(2, 5103, 29)
+  AsynchronousTimer(30.0)
+  TerminateCollisions()
+}
+
+Subaction 0xA: MAIN EXIT {
+}
+
+Subaction 0xA: MAIN INIT {
+  (undef: collision) 06_07_02_00(7, 2)
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 24, 2, 2.0, 361, 100, 0.0, 24, 1.6, 0, 0.0, 15.0, 0.0, 0.0, 0.0, 10.0, 3, 0.0, 0.4, 0.8, false, true, 15, 2, 7, 3, true, 0, 311, false, 9, false, true, false, false, 20, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+}
+
+Subaction 0xA: GFX {
+  GraphicEffectAttached(12189699, 25, 0.0, 0.0, 10.0, 0.0, 0.0, 0.0, 0.75, true)
+  AsynchronousTimer(10.0)
+  GraphicEffectAttached(12189699, 25, 0.0, 0.0, 10.0, 0.0, 0.0, 0.0, 0.75, true)
+  AsynchronousTimer(20.0)
+  GraphicEffectAttached(12189699, 25, 0.0, 0.0, 10.0, 0.0, 0.0, 0.0, 0.75, true)
+  GraphicEffect(12189709, 3, 0.0, -3.0, -20.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(30.0)
+  GraphicEffect(12189708, 3, 0.0, -3.0, -20.0, 0.0, -50.0, 0.0, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  Screenshake(1)
+}
+
+Subaction 0xA: GFX EXIT {
+  TerminateAllGraphicEffect(0, false)
+}
+
+Subaction 0xA: GFX INIT {
+}
+
+Subaction 0xA: SFX {
+  SynchronousTimer(26.0)
+  SoundEffect(9631)
+}
+
+Subaction 0xA: SFX EXIT {
+}
+
+Subaction 0xA: SFX INIT {
+}
+

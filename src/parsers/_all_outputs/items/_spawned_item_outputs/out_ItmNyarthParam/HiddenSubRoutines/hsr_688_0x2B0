@@ -1,0 +1,12 @@
+[hsr_2B0]
+hidden_subroutine_0x2B0 {
+  (undef: Sp_base) 65_07_01_00(19)
+  SubRoutine(hsr_1C8)
+  SubRoutine(hidden_subroutine_0x248)
+  SubRoutine(hidden_subroutine_0x128)
+  SubRoutine(hidden_subroutine_0x248)
+  SubRoutine(hidden_subroutine_0x128)
+  SubRoutine(hidden_subroutine_0x248)
+  SubRoutine(hidden_subroutine_0x128)
+  Return()
+}

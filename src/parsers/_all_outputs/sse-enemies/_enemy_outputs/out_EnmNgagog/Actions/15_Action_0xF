@@ -1,0 +1,21 @@
+Action 0xF: MAIN {
+}
+
+Action 0xF: EXIT {
+}
+
+Action 0xF: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(9)
+  SubAction09(6)
+  (undef: Sp_Kinetic) 66_0B_02_00(3, 28)
+  (undef: Sp_Kinetic) 66_00_02_00(4, 33)
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    (undef: Sp_Kinetic) 66_00_02_00(5, 32)
+  } elif (R(Bit is Set(LA-Bool[0x07]))) {
+    (undef: Sp_Kinetic) 66_00_02_00(5, 31)
+  } else {
+    (undef: Sp_Kinetic) 66_00_02_00(5, 30)
+  }
+}
+

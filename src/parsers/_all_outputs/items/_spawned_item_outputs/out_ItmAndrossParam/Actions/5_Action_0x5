@@ -1,0 +1,26 @@
+// Status_Run_Brake
+Action 0x5 {
+  SetLoop(3) {
+    ChangeSubAction(2)
+    SynchronousTimer(60.0)
+    SetLoop(12) {
+      (undef: Sp_base) 65_0E_04_00(6, RA-Float[0x00], RA-Float[0x01], RA-Float[0x02])
+      (undef: Sp_base) 65_07_01_00(3)
+      FloatVariableRandom(-20.0, 20.0, LA-Float[0x00])
+      FloatVariableRandom(-20.0, 20.0, LA-Float[0x01])
+      FloatVariableAdd(LA-Float[0x07], LA-Float[0x00])
+      FloatVariableAdd(LA-Float[0x08], LA-Float[0x01])
+      (undef: Sp_base) 65_0F_0A_00(RA-Float[0x00], RA-Float[0x01], RA-Float[0x02], LA-Float[0x00], LA-Float[0x01], 0.0, RA-Float[0x03], RA-Float[0x04], RA-Float[0x05], 3.5)
+      (undef: Sp_base) 65_09_08_00(135, 0, RA-Float[0x00], RA-Float[0x01], RA-Float[0x02], RA-Float[0x03], RA-Float[0x04], RA-Float[0x05])
+      SynchronousTimer(15.0)
+    }
+    ChangeSubAction(1)
+    SynchronousTimer(120.0)
+  }
+  if (R(Bit is Set(LA-Bool[0x06]))) {
+    ChangeAction(6, R(Button Tap?()))
+  } else {
+    ChangeAction(5, R(Button Tap?()))
+  }
+}
+

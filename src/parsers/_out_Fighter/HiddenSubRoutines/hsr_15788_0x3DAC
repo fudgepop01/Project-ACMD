@@ -1,0 +1,7 @@
+[hsr_3DAC]
+hidden_subroutine_0x3DAC {
+  ResetFlickY()
+  PassThroughFloorIfPossible_UNDOC0ARGS()
+  SetStateAerial()
+  AddSubtractMomentum(0.0, Common_Param_Float_Pass_Speed_Y)
+}

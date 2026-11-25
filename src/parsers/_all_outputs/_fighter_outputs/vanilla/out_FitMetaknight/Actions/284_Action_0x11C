@@ -1,0 +1,40 @@
+Action 0x11C: ENTRY {
+  ChangeActionStatus(10000, 0, R(Animation End()))
+  ChangeActionStatus(10002, 16, R(Animation End()))
+  BasicVariableSet(480, RA-Int[0x00])
+  BasicVariableSet(481, RA-Int[0x01])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      if (R(Compare(Variable_Int_Motion_Kind == RA-Int[0x01]))) {
+        SetAnchoredArticleAction(0, 8, true)
+        ChangeSubAction(RA-Int[0x00], true)
+      } else {
+        ChangeSubAction(RA-Int[0x00])
+      }
+      SetRequirement(R(In Air()))
+      EnableActionStatusId(10000)
+      DisableActionStatusId(10002)
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(Compare(Variable_Int_Motion_Kind == RA-Int[0x00]))) {
+        SetAnchoredArticleAction(0, 9, true)
+        ChangeSubAction(RA-Int[0x01], true)
+      } else {
+        ChangeSubAction(RA-Int[0x01])
+      }
+      SetRequirement(R(On Ground()))
+      DisableActionStatusId(10000)
+      EnableActionStatusId(10002)
+    }
+    LoadRest()
+  }
+}
+
+Action 0x11C : EXIT {
+  ResetCertainMomentum(2)
+  BodyCollision(0)
+  Visibility(true)
+  OnlyArticleEvent(0)
+  ModelChangerPermanent(2, 0)
+}

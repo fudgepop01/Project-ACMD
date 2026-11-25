@@ -1,0 +1,9 @@
+// Status_Jump
+Action 0xB {
+  ChangeSubAction(9)
+  SetRequirement(R(Animation has looped?()))
+  LoadRest()
+  ChangeAction(12, R(In Air()))
+  ChangeAction(4, R(On Ground()))
+}
+

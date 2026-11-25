@@ -1,0 +1,19 @@
+[hsr_1C878]
+hidden_subroutine_0x1C878 {
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SubRoutine(hsr_1B030)
+      SubRoutine(hsr_1C478)
+      SubRoutine(hidden_subroutine_0x1C770)
+      SetAirGround(15)
+      SetRequirement(R(In Air()))
+    } else {
+      SubRoutine(hsr_1B0D0)
+      SubRoutine(hsr_1C4D0)
+      SubRoutine(hidden_subroutine_0x1C798)
+      SetAirGround(0)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}

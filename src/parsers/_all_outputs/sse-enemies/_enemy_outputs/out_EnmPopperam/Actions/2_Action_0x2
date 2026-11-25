@@ -1,0 +1,27 @@
+Action 0x2: MAIN {
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonDamageProc)
+}
+
+Action 0x2: EXIT {
+  if (R(Bit is Set(LA-Bool[0x04])) && R(Compare(Variable_Int_Status_Kind != 2.0)) && R(Compare(Variable_Int_Status_Kind != 3.0))) {
+    SubRoutine(EXTERNAL: statusAnimCmd_CommonDamageCancel)
+  }
+}
+
+Action 0x2: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_03_00_00()
+  (undef: Sp_AI) 6A_01_01_00(8)
+  (undef: Sp_AI) 6A_00_02_00(10, 7)
+  SubAction09(0)
+  if (R(NOT Bit is Set(LA-Bool[0x04]))) {
+    if (R(Compare(LA-Float[0x09] <= IC-Int[0xFA0]))) {
+      SubRoutine(hidden_subroutine_0x7A0)
+    } elif (R(Compare(LA-Float[0x09] <= IC-Int[0xFA1]))) {
+      SubRoutine(hidden_subroutine_0x7D8)
+    } else {
+      SubRoutine(hidden_subroutine_0x7F0)
+    }
+  }
+}
+

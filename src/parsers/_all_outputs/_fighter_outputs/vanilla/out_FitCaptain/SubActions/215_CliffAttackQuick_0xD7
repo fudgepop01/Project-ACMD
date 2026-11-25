@@ -1,0 +1,46 @@
+[CliffAttackQuick] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xD7 : MAIN {
+  BodyCollision(2)
+  AsynchronousTimer(22.0)
+  BodyCollision(0)
+  AsynchronousTimer(23.0)
+  OffensiveCollision(Sp(13, 0), 10, 361, Sp(110, 100), Sp(1, 0), 5.76, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 696452160)
+  OffensiveCollision(Sp(14, 1), 10, 361, Sp(110, 100), Sp(1, 0), 7.68, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 696452160)
+  OffensiveCollision(Sp(9, 2), 10, 361, Sp(110, 100), Sp(1, 0), 5.76, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 696452160)
+  SynchronousTimer(5.0)
+  TerminateCollisions()
+  AsynchronousTimer(54.0)
+  AllowInterrupt()
+}
+
+Subaction 0xD7 : GFX {
+  AsynchronousTimer(19.0)
+  GraphicEffect(16, 15, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(22.0)
+  GraphicEffect(33, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0xD7 : SOUND {
+  AsynchronousTimer(2.0)
+  SoundEffect(3552)
+  SynchronousTimer(21.0)
+  SoundEffect(3595)
+}
+
+Subaction 0xD7 : OTHER {
+  AsynchronousTimer(23.0)
+  Rumble(17, 0)
+  AsynchronousTimer(29.0)
+  SlopeContourStand02(6, 3)
+}
+

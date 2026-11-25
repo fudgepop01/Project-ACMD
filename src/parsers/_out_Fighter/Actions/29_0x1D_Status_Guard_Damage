@@ -1,0 +1,31 @@
+// Status_Guard_Damage
+Action 0x1D: ENTRY {
+
+  ChangeAction(126, R(In Air()))
+  AdditionalRequirement(R(Has Passed Over an Edge Backward()))
+
+  ChangeAction(73, R(In Air()))
+  ResetFlickX()
+  if (R(Compare(RA-Int[0x01] > 0.0))) {
+    BasicVariableSet(0, RA-Int[0x00])
+    BasicVariableSet(Common_Param_Int_Continue_Just_Shield_Count, RA-Int[0x03])
+    SoundEffect(217)
+  } else {
+    SubRoutine(hidden_subroutine_0x2034)
+  }
+  ChangeActionStatus(10041, 27, R(Compare(RA-Int[0x05] == 0.0)))
+
+  ChangeAction(28, R(Compare(RA-Int[0x05] == 0.0)))
+  AdditionalRequirement(R(On Ground()))
+
+  ConcurrentInfiniteLoop(I(9), statusAnimCmd_GuardDamageUniq)
+}
+
+[statusAnimCmdExit_GuardDamage]
+Action 0x1D : EXIT {
+  SubRoutine(statusAnimCmdExit_Guard)
+  if (R(Compare(Variable_Int_Status_Kind == 27.0))) {
+    SubActions0A(64)
+    SubActions0B(0.0)
+  }
+}

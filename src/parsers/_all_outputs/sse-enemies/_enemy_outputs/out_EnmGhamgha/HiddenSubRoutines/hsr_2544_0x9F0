@@ -1,0 +1,5 @@
+[hsr_9F0]
+hidden_subroutine_0x9F0 {
+  GraphicEffectAttached(10354692, 0, -5.5, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(10354692, 0, 5.5, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+}

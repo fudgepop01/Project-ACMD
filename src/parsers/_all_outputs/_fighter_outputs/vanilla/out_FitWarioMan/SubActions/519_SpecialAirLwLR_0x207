@@ -1,0 +1,27 @@
+[SpecialAirLwLR] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x207: MAIN {
+  Goto(Subaction_0x1FF : MAIN)
+}
+
+Subaction 0x207: GFX {
+  Goto(Subaction_0x1FF : GFX)
+}
+
+Subaction 0x207: SOUND {
+  Goto(Subaction_0x1FF : SFX)
+}
+
+Subaction 0x207: OTHER {
+  Goto(Subaction_0x1FF : OTHER)
+}
+

@@ -1,0 +1,4 @@
+[hsr_77F4]
+hidden_subroutine_0x77F4 {
+  SubRoutine(statusAnimCmd_ItemShootLanding_Common)
+}

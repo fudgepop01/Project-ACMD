@@ -1,0 +1,10 @@
+// Status_Walk_Brake
+Action 0x2 {
+  BasicVariableSet(IC-Int[0x5B7A], LA-Int[0x15])
+  (undef: Sp_base) 65_03_03_00(0.0, 0.0, 0.0)
+  DecideDirection()
+  CharacterSpecific01()
+  ChangeSubAction(6)
+  FrameSpeedModifier(5.0)
+}
+

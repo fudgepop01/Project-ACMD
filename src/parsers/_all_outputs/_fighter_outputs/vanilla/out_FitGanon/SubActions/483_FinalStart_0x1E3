@@ -1,0 +1,52 @@
+[FinalStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1E3: MAIN {
+  CameraCloseup(5, 0, 1.5, 0.0, 0.0)
+  SetSlowEffectEnemyFighter(4, 30)
+  GenerateArticle(0)
+  AsynchronousTimer(40.0)
+}
+
+Subaction 0x1E3: GFX {
+  SynchronousTimer(142.0)
+  GraphicEffect(15859726, 0, 0.0, 10.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  SynchronousTimer(3.0)
+  GraphicEffect(15859725, 0, 0.0, 10.0, 0.0, 0.0, 0.0, 0.0, 1.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GraphicEffectAttached(15859727, 46, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  GraphicEffectAttached(15859727, 54, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  GraphicEffectAttached(15859727, 55, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  GraphicEffectAttached(15859727, 59, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  GraphicEffectAttached(15859727, 30, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  GraphicEffectAttached(15859727, 31, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  GraphicEffectAttached(15859727, 35, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  GraphicEffectAttached(15859727, 13, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  GraphicEffectAttached(15859727, 14, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  GraphicEffectAttached(15859727, 15, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  GraphicEffectAttached(15859727, 16, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  GraphicEffectAttached(15859727, 8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  GraphicEffectAttached(15859727, 9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  GraphicEffectAttached(15859727, 10, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  GraphicEffectAttached(15859727, 11, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+}
+
+Subaction 0x1E3: SOUND {
+  SoundEffect(4723)
+  SoundEffect(4699)
+}
+
+Subaction 0x1E3: OTHER {
+  HeldItemsVisibility(false)
+  RumbleLoop(8, 17)
+  AsynchronousTimer(18.0)
+  BitVariableClear(RA-Bool[0x10])
+}
+

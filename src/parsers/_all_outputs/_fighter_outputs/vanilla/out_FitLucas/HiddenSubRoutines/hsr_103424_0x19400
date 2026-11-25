@@ -1,0 +1,15 @@
+[hsr_19400]
+hidden_subroutine_0x19400 {
+  if (R(Compare(RA-Int[0x00] > 0.0))) {
+    BasicVariableDecrement(RA-Int[0x00])
+  }
+  BasicVariableDecrement(RA-Int[0x01])
+  if (R(Compare(RA-Int[0x01] <= 0.0)) && R(In Air())) {
+    EnableSpecifiedMovement(1)
+  } else {
+    DisableSpecifiedMovement(1)
+  }
+  if (R(Button Not Pressed(Special))) {
+    BitVariableSet(RA-Bool[0x11])
+  }
+}

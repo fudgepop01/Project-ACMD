@@ -1,0 +1,20 @@
+// Status_Turn_Run
+Action 0x8 {
+  ChangeAction(3, R(In Air()))
+  ChangeSubAction(7)
+  (undef: control_flow_loop) 01_04_02_00(20, 110)
+  if (R(Is within footstool range())) {
+    (undef: Sp_base) 65_07_01_00(5)
+    if (R(2714(1))) {
+      if (R(Compare(Variable_Float_Posture_Lr == -1.0)) && R(NOT In walljump situation())) {
+        ChangeAction(9, R(Button Tap?()))
+      }
+    } else {
+      if (R(Compare(Variable_Float_Posture_Lr == 1.0)) && R(NOT In walljump situation())) {
+        ChangeAction(9, R(Button Tap?()))
+      }
+    }
+  }
+  ChangeAction(10, R(Button Tap?()))
+}
+

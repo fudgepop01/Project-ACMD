@@ -1,0 +1,70 @@
+[AttackAirLw] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x66: MAIN {
+  AsynchronousTimer(3.0)
+  BitVariableSet(RA-Bool[0x1E])
+  OffensiveCollision(Sp(0, 0), 5, 90, Sp(0, 10), Sp(0, 50), 7.0, 0.0, -5.0, 0.7, 0.0, 0.5, 1.0, 1006837824)
+  OffensiveCollision(Sp(0, 1), 5, 270, Sp(20, 100), Sp(0, 0), 5.0, 0.0, 1.0, 0.7, 0.0, 0.5, 1.0, 1006837824)
+  SynchronousTimer(3.0)
+  TerminateCollisions()
+  SynchronousTimer(4.0)
+  SetLoop(2) {
+    OffensiveCollision(Sp(0, 0), 5, 90, Sp(0, 10), Sp(0, 50), 7.0, 0.0, -5.0, 0.7, 0.0, 0.5, 1.0, 1006837824)
+    OffensiveCollision(Sp(0, 1), 5, 270, Sp(20, 100), Sp(0, 0), 5.0, 0.0, 1.0, 0.7, 0.0, 0.5, 1.0, 1006837824)
+    SynchronousTimer(3.0)
+    TerminateCollisions()
+    SynchronousTimer(5.0)
+  }
+  OffensiveCollision(Sp(0, 0), 5, 270, Sp(0, 110), Sp(0, 10), 8.0, 0.0, -5.0, 0.7, 0.0, 1.0, 1.0, 1006837888)
+  OffensiveCollision(Sp(0, 1), 5, 361, Sp(0, 130), Sp(0, 10), 6.5, 0.0, 1.0, 0.7, 0.0, 1.0, 1.0, 1006837888)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+  AsynchronousTimer(34.0)
+  BitVariableClear(RA-Bool[0x1E])
+}
+
+Subaction 0x66: GFX {
+  AsynchronousTimer(3.0)
+  GraphicEffect(1769474, 16, 0.0, 0.0, -2.0, 180.0, 0.0, 0.0, 1.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(18.0)
+  GraphicEffect(1769474, 16, 0.0, 0.0, -2.0, 180.0, 0.0, 0.0, 1.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x66: SOUND {
+  AsynchronousTimer(2.0)
+  LowVoiceClip()
+  SoundEffect(55)
+  SynchronousTimer(1.0)
+  SoundEffect(5131)
+  SynchronousTimer(7.0)
+  SoundEffect(55)
+  SynchronousTimer(1.0)
+  SoundEffect(5131)
+  SynchronousTimer(7.0)
+  SoundEffect(55)
+  SynchronousTimer(1.0)
+  SoundEffect(5131)
+  SynchronousTimer(7.0)
+  SoundEffect(55)
+  SynchronousTimer(1.0)
+  SoundEffect(5131)
+}
+
+Subaction 0x66: OTHER {
+  AsynchronousTimer(3.0)
+  Rumble(18, 0)
+  AsynchronousTimer(10.0)
+  Rumble(18, 0)
+  AsynchronousTimer(24.0)
+  Rumble(18, 0)
+}
+

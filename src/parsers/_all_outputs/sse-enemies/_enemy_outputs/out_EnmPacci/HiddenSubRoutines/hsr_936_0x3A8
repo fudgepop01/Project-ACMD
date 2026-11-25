@@ -1,0 +1,5 @@
+[hsr_3A8]
+hidden_subroutine_0x3A8 {
+  (undef: Sp_AI) 6A_00_03_00(12, 14, 10)
+  Return()
+}

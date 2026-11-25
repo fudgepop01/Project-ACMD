@@ -1,0 +1,22 @@
+// Status_Jump_Aerial
+Action 0xC {
+  ChangeAction(7, R(Bit is Set(RA-Bool[0x03])))
+  (undef: Sp_base) 65_04_01_00(-1)
+  (undef: Sp_base) 65_05_01_00(1200)
+  ChangeSubAction(7)
+  ChangeAction(5, R(In Air()))
+  (undef: Sp_base) 65_1F_01_00(2)
+  BitVariableClear(LA-Bool[0x08])
+  (undef: team) 22_00_01_00(-1)
+  SynchronousTimer(1.0)
+  if (R(0x3E())) {
+    DetachFromSurface()
+  }
+  if (R(NOT Bit is Set(LA-Bool[0x00]))) {
+    SynchronousTimer(100.0)
+    BitVariableSet(LA-Bool[0x00])
+  }
+  ChangeSubAction(8)
+  ChangeAction(7, R(Bit is Set(RA-Bool[0x05])))
+}
+

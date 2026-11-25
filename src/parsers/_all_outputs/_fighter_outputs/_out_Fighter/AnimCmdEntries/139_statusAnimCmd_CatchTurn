@@ -1,0 +1,16 @@
+// @ 0x221A8
+CatchTurn {
+  ChangeAction(14, R(In Air()))
+
+  ChangeActionStatus(10000, 0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 8.0))) {
+    FloatVariableSet(Variable_Float_Motion_Frame, RA-Float[0x04])
+    ChangeSubAction(110)
+    SetAnimationFrame(RA-Float[0x04])
+  } else {
+    ChangeSubAction(110)
+  }
+  ReverseDirection()
+}

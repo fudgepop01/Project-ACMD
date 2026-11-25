@@ -1,0 +1,35 @@
+// Status_Attack_S4
+[statusAnimCmd_AttackS4]
+Action 0x2C: ENTRY {
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  if (R(Compare(Variable_Float_Controller_Stick_Dir > Common_Param_Float_Attack_S4_Stick_Dir_Hi))) {
+    BasicVariableSet(87, RA-Int[0x00])
+  } elif (R(Compare(Variable_Float_Controller_Stick_Dir < Common_Param_Float_Attack_S4_Stick_Dir_Lw))) {
+    BasicVariableSet(90, RA-Int[0x00])
+  } else {
+    BasicVariableSet(88, RA-Int[0x00])
+  }
+  SetLoop(-1) {
+    ResetButtonPress()
+    BitVariableClear(RA-Bool[0x10])
+    (undef: combo) 13_00_01_00(3)
+    Switch(10000, Variable_Int_Combo_Count)
+      Case(1)
+        ChangeSubAction(RA-Int[0x00])
+      Case(2)
+        ChangeSubAction(89)
+        CharacterSpecific27()
+    EndSwitch()
+    SetRequirement(R(Compare(Variable_Int_Combo_Count < Info_Param_Int_S4_Combo_Max)))
+    SetExtraRequirement(R(Button Press(Attack)))
+    SetExtraRequirement(R(Bit is Set(RA-Bool[0x10])))
+    LoadRest()
+  }
+}
+
+Action 0x2C : EXIT {
+}

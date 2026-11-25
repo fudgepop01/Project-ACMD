@@ -1,0 +1,6 @@
+// Status_Walk
+Action 0x1 {
+  (undef: Sp_base) 65_04_01_00(36)
+  ChangeAction(5, R(Button Tap?()))
+}
+

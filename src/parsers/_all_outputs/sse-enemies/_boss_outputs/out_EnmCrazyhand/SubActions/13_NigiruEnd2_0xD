@@ -1,0 +1,46 @@
+[NigiruEnd2] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xD: MAIN {
+  AsynchronousTimer(32.0)
+  if (R(Is Holding Someone in a Grab())) {
+    (undef: Sp_base) 65_28_04_00(LA-Int[0x18], LA-Int[0x19], LA-Int[0x1A], -1)
+    ThrowCollision(0, 5, LA-Int[0x18], LA-Int[0x19], LA-Int[0x1A])
+  }
+}
+
+Subaction 0xD: MAIN EXIT {
+}
+
+Subaction 0xD: MAIN INIT {
+  (undef: collision) 06_1A_16_00(0, 0, 22, 1.8, 270, 50, 0.0, 0, 0.0, 115, 2.0, 0, 1.0, 1.0, 1.0, 1, 0, 3, true, true, 0, LA-Float[0x0C])
+}
+
+Subaction 0xD: GFX {
+}
+
+Subaction 0xD: GFX EXIT {
+}
+
+Subaction 0xD: GFX INIT {
+}
+
+Subaction 0xD: SFX {
+  SynchronousTimer(21.0)
+  SoundEffect(9933)
+}
+
+Subaction 0xD: SFX EXIT {
+}
+
+Subaction 0xD: SFX INIT {
+}
+

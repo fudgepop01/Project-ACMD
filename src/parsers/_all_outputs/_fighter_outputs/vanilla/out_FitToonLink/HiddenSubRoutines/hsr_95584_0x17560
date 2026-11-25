@@ -1,0 +1,6 @@
+[hsr_17560]
+hidden_subroutine_0x17560 {
+  if (R(Compare(Variable_Int_Status_Prev_Kind != 69.0))) {
+    BitVariableSet(RA-Bool[0x00])
+  }
+}

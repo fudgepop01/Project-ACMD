@@ -1,0 +1,19 @@
+// Status_Turn_Run
+Action 0x8 {
+  SetAerialOrOnstage(0)
+  DisableSpecifiedMovement(2)
+  ChangeSubAction(0)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeSubAction(2)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, -1.0, 2.0, 0.0, 0.0, 0.0, 0.08, 0.0, 0.0, false, false, false)
+  SynchronousTimer(60.0)
+  BasicVariableSet(0, LA-Int[0x00])
+  while (R(Is Not in Damaging Magnifier())) {
+    BasicVariableAdd(5, LA-Int[0x00])
+    SynchronousTimer(5.0)
+    EndWhile()
+    (undef: Sp_Kinetic) 66_02_02_00(0.0, 0.3)
+    ChangeAction(9, R(Button Tap?()))
+}
+

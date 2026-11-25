@@ -1,0 +1,16 @@
+Action 0x2E: MAIN {
+}
+
+Action 0x2E: EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 48.0))) {
+    SubRoutine(hidden_subroutine_0x6E70)
+  }
+}
+
+Action 0x2E: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(8)
+  BasicVariableSet(10, LA-Int[0x06])
+  SubAction09(12)
+}
+

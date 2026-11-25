@@ -1,0 +1,12 @@
+Action 0x11B: ENTRY {
+  ChangeSubAction(472)
+  SetAirGround(50)
+  SetAerialOrOnstage(1)
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+}
+
+Action 0x11B : EXIT {
+}

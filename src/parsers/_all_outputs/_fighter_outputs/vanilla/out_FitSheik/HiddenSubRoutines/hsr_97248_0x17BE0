@@ -1,0 +1,8 @@
+[hsr_17BE0]
+hidden_subroutine_0x17BE0 {
+  BasicVariableDecrement(RA-Int[0x00])
+  BasicVariableDecrement(RA-Int[0x01])
+  if (R(Compare(RA-Int[0x01] <= 0.0)) && R(In Air())) {
+    SetPassableCheck(true)
+  }
+}

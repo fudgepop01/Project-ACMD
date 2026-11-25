@@ -1,0 +1,31 @@
+// Status_Item_Swing_Dash
+Action 0xA3: ENTRY {
+  SubRoutine(hidden_subroutine_0x63CC)
+  ChangeSubAction(Variable_Int_Item_Swing_Dash_Motion_Kind, false, Variable_Float_Item_Swing_Motion_Rate)
+  Switch(10000, Variable_Int_Item_Swing_Dash_Motion_Kind)
+    Case(295)
+      SetStalingId(2, 81, true)
+      SubRoutine(hidden_subroutine_0x2304)
+    Case(299)
+      SetStalingId(2, 85, true)
+      SubRoutine(hidden_subroutine_0x24B4)
+    Case(313)
+      SetStalingId(2, 93, true)
+      SubRoutine(hidden_subroutine_0x2934)
+    Case(320)
+      SetStalingId(2, 97, true)
+      SubRoutine(hidden_subroutine_0x2B74)
+    Case(306)
+      SetStalingId(2, 89, true)
+      SubRoutine(hidden_subroutine_0x26F4)
+  EndSwitch()
+}
+
+Action 0xA3 : EXIT {
+  if (R(Holding Item())) {
+    WeaponOperation(101)
+    if (R(Compare(Variable_Int_Have_Item_Kind == 4.0))) {
+      ChangeBeamSwordSize(0, 1.0)
+    }
+  }
+}

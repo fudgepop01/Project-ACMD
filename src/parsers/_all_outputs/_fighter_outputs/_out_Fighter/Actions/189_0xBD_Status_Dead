@@ -1,0 +1,14 @@
+// Status_Dead
+[statusAnimCmd_Dead]
+Action 0xBD: ENTRY {
+  BodyCollision(3)
+  NothingDueToBug(false)
+  DeleteHeldItem()
+  Module1901()
+  SetGimmickEffectFlag(false)
+  DisableMagifyingGlass()
+  ChangeAction(267, R(Bit is Set(RA-Bool[0x10])))
+}
+
+Action 0xBD : EXIT {
+}

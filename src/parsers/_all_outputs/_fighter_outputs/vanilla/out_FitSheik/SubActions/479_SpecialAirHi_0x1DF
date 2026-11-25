@@ -1,0 +1,34 @@
+[SpecialAirHi] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1DF: MAIN {
+  EnableDisableLedgegrab(2)
+  SpecialOffensiveCollision(Sp(0, 0), 0, 60, Sp(62, 100), Sp(0, 0), 9.0, 0.0, 10.0, 0.0, 0.0, 0.0, 0.0, 537067520, 0, -531693504)
+  SpecialOffensiveCollision(Sp(0, 1), 0, 60, Sp(30, 100), Sp(0, 0), 19.0, 0.0, 10.0, 0.0, 0.0, 0.0, 0.0, 537067520, 0, -531693504)
+  AsynchronousTimer(2.0)
+  TerminateCollisions()
+  AsynchronousTimer(10.0)
+  BitVariableSet(RA-Bool[0x11])
+}
+
+Subaction 0x1DF: GFX {
+  Goto(Subaction_0x1DD : GFX)
+}
+
+Subaction 0x1DF: SOUND {
+  AsynchronousTimer(1.0)
+  VictorySoundEffect(4134)
+}
+
+Subaction 0x1DF: OTHER {
+  SubRoutine(Subaction_0x1DD : OTHER)
+}
+

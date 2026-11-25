@@ -1,0 +1,10 @@
+// Status_Capture_Jump
+Action 0x41: ENTRY {
+  AllowSpecificInterrupt(AIR_LANDING)
+  ChangeActionStatus(10002, 14, R(Animation End()))
+  BasicVariableSet(Common_Param_Int_Capture_Cut_Jump_Button_Count, RA-Int[0x00])
+  ChangeSubAction(151)
+}
+
+Action 0x41 : EXIT {
+}

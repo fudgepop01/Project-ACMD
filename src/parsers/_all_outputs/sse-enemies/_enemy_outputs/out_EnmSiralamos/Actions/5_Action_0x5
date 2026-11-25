@@ -1,0 +1,21 @@
+Action 0x5: MAIN {
+}
+
+Action 0x5: EXIT {
+}
+
+Action 0x5: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(25)
+  (undef: Sp_AI) 6A_00_01_00(17)
+  if (R(Facing Right())) {
+    SubAction09(8)
+  } else {
+    SubAction09(7)
+  }
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 17)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 16)
+  (undef: Sp_Kinetic) 66_00_02_00(5, 15)
+  (undef: model) 03_00_01_00(6)
+}
+

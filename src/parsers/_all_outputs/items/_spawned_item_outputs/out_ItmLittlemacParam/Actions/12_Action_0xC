@@ -1,0 +1,22 @@
+// Status_Jump_Aerial
+Action 0xC {
+  (undef: Sp_base) 65_07_01_00(3)
+  ChangeActionStatus(3, 3, R(In Air()))
+  (undef: Sp_base) 65_13_04_00(LA-Int[0x01], 1.0, 2.0, 2.0)
+  Switch(10000, LA-Int[0x01])
+    Case(2)
+      ChangeSubAction(12)
+      SetRequirement(R(Animation End()))
+      LoadRest()
+      ReverseDirection()
+      DecideDirection()
+      CharacterSpecific01()
+      ChangeAction(8, R(Button Tap?()))
+    Case(1)
+      SubRoutine(hidden_subroutine_0xC60)
+    Case(0)
+      SubRoutine(hidden_subroutine_0xC80)
+  EndSwitch()
+  ChangeAction(10, R(Button Tap?()))
+}
+

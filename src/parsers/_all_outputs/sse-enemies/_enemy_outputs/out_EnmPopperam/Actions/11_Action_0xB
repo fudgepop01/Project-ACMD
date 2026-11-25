@@ -1,0 +1,19 @@
+Action 0xB: MAIN {
+}
+
+Action 0xB: EXIT {
+}
+
+Action 0xB: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(15)
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 9.0))) {
+    SubAction09(10)
+    (undef: Sp_Kinetic) 66_0B_02_00(4, 24)
+  } else {
+    SubAction09(9)
+    (undef: Sp_Kinetic) 66_0B_02_00(4, 22)
+  }
+  ReverseDirection()
+}
+

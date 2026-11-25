@@ -1,0 +1,7 @@
+// Status_Dash
+Action 0x3 {
+  SubRoutine(hidden_subroutine_0x98)
+  DisableActionStatusId(3)
+  ChangeSubAction(2)
+}
+

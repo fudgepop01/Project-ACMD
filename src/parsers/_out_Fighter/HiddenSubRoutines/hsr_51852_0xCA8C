@@ -1,0 +1,7 @@
+[hsr_CA8C]
+hidden_subroutine_0xCA8C {
+  if (R(Is falling+hit down())) {
+    ResetFlickY()
+    BitVariableSet(RA-Bool[0x02])
+  }
+}

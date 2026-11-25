@@ -1,0 +1,11 @@
+// Status_Turn_Run
+Action 0x8 {
+  ChangeAction(3, R(In Air()))
+  if (R(Compare(LA-Int[0x00] < 0.0))) {
+    ChangeAction(6, R(Button Tap?()))
+  }
+  (undef: Sp_base) 65_07_01_00(2)
+  ChangeAction(10, R(Compare(Variable_Float_Controller_Stick_Y <= 10.0)))
+  ChangeAction(9, R(Button Tap?()))
+}
+

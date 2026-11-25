@@ -1,0 +1,41 @@
+[SwordRunStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1E: MAIN {
+}
+
+Subaction 0x1E: MAIN EXIT {
+}
+
+Subaction 0x1E: MAIN INIT {
+}
+
+Subaction 0x1E: GFX {
+  GraphicEffect(26, 0, 18.846, 0.0, -5.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(26, 0, -18.846, 0.0, -5.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x1E: GFX EXIT {
+}
+
+Subaction 0x1E: GFX INIT {
+}
+
+Subaction 0x1E: SFX {
+  SoundEffect(9768)
+}
+
+Subaction 0x1E: SFX EXIT {
+}
+
+Subaction 0x1E: SFX INIT {
+}
+

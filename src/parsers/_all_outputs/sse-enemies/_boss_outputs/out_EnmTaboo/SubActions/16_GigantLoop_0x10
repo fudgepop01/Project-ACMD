@@ -1,0 +1,41 @@
+[GigantLoop] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x10: MAIN {
+  AsynchronousTimer(1.0)
+  SubRoutine(hidden_subroutine_0x6174)
+}
+
+Subaction 0x10: MAIN EXIT {
+}
+
+Subaction 0x10: MAIN INIT {
+}
+
+Subaction 0x10: GFX {
+}
+
+Subaction 0x10: GFX EXIT {
+}
+
+Subaction 0x10: GFX INIT {
+}
+
+Subaction 0x10: SFX {
+  SoundEffectTransient(9861)
+}
+
+Subaction 0x10: SFX EXIT {
+}
+
+Subaction 0x10: SFX INIT {
+}
+

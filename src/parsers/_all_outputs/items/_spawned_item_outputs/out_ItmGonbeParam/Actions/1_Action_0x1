@@ -1,0 +1,10 @@
+// Status_Walk
+Action 0x1 {
+  SubRoutine(hidden_subroutine_0x84)
+  DisableActionStatusId(1)
+  (undef: Sp_base) 65_05_01_00(1500)
+  ChangeSubAction(4)
+  (undef: Sp_base) 65_06_01_00(2)
+  ChangeAction(3, R(In Air()))
+}
+

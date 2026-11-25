@@ -1,0 +1,71 @@
+[GigantAttack] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xF: MAIN {
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 97, 16, 2.0, 75, 60, 0.0, 0, 0.0, 50, -0.8, 0.05, 0.0, 0.0, -120.0, 0.0, 3, 0.0, 0.1, 1.0, false, true, 0, 2, 7, 3, true, 0, 311, false, 9, false, true, false, false, 15, false, false, 0, false, false, false, true, false, 1, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 99, 16, 2.0, 75, 60, 0.0, 0, 0.0, 50, -0.8, 0.05, 0.0, 0.0, -115.0, 5.0, 3, 0.0, 0.1, 1.0, false, true, 0, 2, 7, 3, true, 0, 311, false, 9, false, true, false, false, 15, false, false, 0, false, false, false, true, false, 1, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(2, 0, 98, 16, 2.0, 75, 60, 0.0, 0, 0.0, 50, -0.8, 0.05, 0.0, 0.0, 110.0, 0.0, 3, 0.0, 0.1, 1.0, false, true, 0, 2, 7, 3, true, 0, 311, false, 9, false, true, false, false, 15, false, false, 0, false, false, false, true, false, 1, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(3, 0, 100, 16, 2.0, 75, 60, 0.0, 0, 0.0, 50, -0.8, 0.05, 0.0, 0.0, 105.0, 0.0, 3, 0.0, 0.1, 1.0, false, true, 0, 2, 7, 3, true, 0, 311, false, 9, false, true, false, false, 15, false, false, 0, false, false, false, true, false, 1, LA-Float[0x0C])
+  SubRoutine(hidden_subroutine_0x6174)
+  AsynchronousTimer(72.0)
+  TerminateCollisions()
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 97, 16, 2.0, 75, 60, 0.0, 0, 0.0, 50, -0.8, 0.05, 0.0, 0.0, -125.0, 7.0, 3, 0.0, 0.1, 1.0, false, true, 0, 2, 7, 3, true, 0, 311, false, 9, false, true, false, false, 15, false, false, 0, false, false, false, true, false, 1, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 99, 16, 2.0, 75, 60, 0.0, 0, 0.0, 50, -0.8, 0.05, 0.0, 0.0, -115.0, 0.0, 3, 0.0, 0.1, 1.0, false, true, 0, 2, 7, 3, true, 0, 311, false, 9, false, true, false, false, 15, false, false, 0, false, false, false, true, false, 1, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(2, 0, 98, 16, 2.0, 75, 60, 0.0, 0, 0.0, 50, -0.8, 0.05, 0.0, 0.0, 115.0, -7.0, 3, 0.0, 0.1, 1.0, false, true, 0, 2, 7, 3, true, 0, 311, false, 9, false, true, false, false, 15, false, false, 0, false, false, false, true, false, 1, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(3, 0, 100, 16, 2.0, 75, 60, 0.0, 0, 0.0, 50, -0.8, 0.05, 0.0, 0.0, 105.0, 0.0, 3, 0.0, 0.1, 1.0, false, true, 0, 2, 7, 3, true, 0, 311, false, 9, false, true, false, false, 15, false, false, 0, false, false, false, true, false, 1, LA-Float[0x0C])
+  SubRoutine(hidden_subroutine_0x6174)
+  AsynchronousTimer(169.0)
+  TerminateCollisions()
+}
+
+Subaction 0xF: MAIN EXIT {
+}
+
+Subaction 0xF: MAIN INIT {
+}
+
+Subaction 0xF: GFX {
+  GraphicEffectAttached(12648465, 98, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12648465, 100, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12648466, 97, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12648466, 99, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  SetLoop(5) {
+    Screenshake(1)
+    SynchronousTimer(10.0)
+    Screenshake(0)
+    SynchronousTimer(10.0)
+  }
+  AsynchronousTimer(220.0)
+  SubRoutine(hidden_subroutine_0xBAD4)
+}
+
+Subaction 0xF: GFX EXIT {
+}
+
+Subaction 0xF: GFX INIT {
+}
+
+Subaction 0xF: SFX {
+  SoundEffectTransient(9846)
+  SynchronousTimer(170.0)
+  StopTransientSoundEffect()
+  SynchronousTimer(6.0)
+  SoundEffectTransient(9862)
+  SynchronousTimer(40.0)
+  StopTransientSoundEffect()
+}
+
+Subaction 0xF: SFX EXIT {
+}
+
+Subaction 0xF: SFX INIT {
+}
+

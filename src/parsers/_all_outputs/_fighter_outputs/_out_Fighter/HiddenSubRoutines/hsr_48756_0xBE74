@@ -1,0 +1,11 @@
+[hsr_BE74]
+hidden_subroutine_0xBE74 {
+  AllowSpecificInterrupt(GROUND_SPECIAL)
+  AllowSpecificInterrupt(GROUND_ITEM)
+  AllowSpecificInterrupt(GROUND_CATCH)
+  AllowSpecificInterrupt(GROUND_ATTACK)
+  AllowSpecificInterrupt(GROUND_ESCAPE)
+  AllowSpecificInterrupt(GROUND_GUARD)
+  AllowSpecificInterrupt(GROUND_JUMP)
+  AllowSpecificInterrupt(GROUND)
+}

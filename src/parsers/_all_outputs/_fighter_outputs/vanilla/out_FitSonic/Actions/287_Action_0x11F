@@ -1,0 +1,94 @@
+Action 0x11F: ENTRY {
+  BasicVariableSet(477, RA-Int[0x00])
+  BasicVariableSet(478, RA-Int[0x01])
+  SetLoop(-1) {
+    if (R(Animation End())) {
+      LoopBreak()
+    } elif (R(On Ground())) {
+      SetAirGround(110)
+      SetAerialOrOnstage(1)
+      if (R(Compare(Variable_Int_Motion_Kind == RA-Int[0x01]))) {
+        ChangeSubAction(RA-Int[0x00], true)
+      } else {
+        ChangeSubAction(RA-Int[0x00])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAirGround(111)
+      SetAerialOrOnstage(5)
+      if (R(Compare(Variable_Int_Motion_Kind == RA-Int[0x00]))) {
+        ChangeSubAction(RA-Int[0x01], true)
+      } else {
+        ChangeSubAction(RA-Int[0x01])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    SetRequirement(R(Animation End()))
+    LoadRest()
+  }
+  BasicVariableSet(479, RA-Int[0x00])
+  BasicVariableSet(480, RA-Int[0x01])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      if (R(Compare(Variable_Float_Kinetic_Sum_Speed_X_Abs <= IC-Int[0xFC4]))) {
+        LoopBreak()
+      }
+      SetAirGround(110)
+      SetAerialOrOnstage(1)
+      if (R(Compare(Variable_Int_Motion_Kind == RA-Int[0x01]))) {
+        ChangeSubAction(RA-Int[0x00], true)
+      } else {
+        ChangeSubAction(RA-Int[0x00])
+      }
+      SetRequirement(R(In Air()))
+      SetRequirement01_UNDOC5ARGS(0, R(Compare(Variable_Float_Kinetic_Sum_Speed_X_Abs <= IC-Int[0xFC4])))
+    } else {
+      if (R(Compare(Variable_Float_Kinetic_Sum_Speed_X_Abs <= IC-Int[0xFC5]))) {
+        LoopBreak()
+      }
+      SetAirGround(111)
+      SetAerialOrOnstage(5)
+      if (R(Compare(Variable_Int_Motion_Kind == RA-Int[0x00]))) {
+        ChangeSubAction(RA-Int[0x01], true)
+      } else {
+        ChangeSubAction(RA-Int[0x01])
+      }
+      SetRequirement(R(On Ground()))
+      SetRequirement01_UNDOC5ARGS(0, R(Compare(Variable_Float_Kinetic_Sum_Speed_X_Abs <= IC-Int[0xFC5])))
+    }
+    LoadRest()
+  }
+  ChangeActionStatus(10000, 0, R(Animation End()))
+  ChangeActionStatus(10002, 14, R(Animation End()))
+  BasicVariableSet(481, RA-Int[0x00])
+  BasicVariableSet(482, RA-Int[0x01])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(110)
+      SetAerialOrOnstage(1)
+      if (R(Compare(Variable_Int_Motion_Kind == RA-Int[0x01]))) {
+        ChangeSubAction(RA-Int[0x00], true)
+      } else {
+        ChangeSubAction(RA-Int[0x00])
+      }
+      SetRequirement(R(In Air()))
+      EnableActionStatusId(10000)
+      DisableActionStatusId(10002)
+    } else {
+      SetAirGround(111)
+      SetAerialOrOnstage(5)
+      if (R(Compare(Variable_Int_Motion_Kind == RA-Int[0x00]))) {
+        ChangeSubAction(RA-Int[0x01], true)
+      } else {
+        ChangeSubAction(RA-Int[0x01])
+      }
+      SetRequirement(R(On Ground()))
+      DisableActionStatusId(10000)
+      EnableActionStatusId(10002)
+    }
+    LoadRest()
+  }
+}
+
+Action 0x11F : EXIT {
+}

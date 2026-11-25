@@ -1,0 +1,26 @@
+// Status_Glide
+[statusAnimCmd_Glide]
+Action 0x85: ENTRY {
+  BitVariableSet(LA-Bool[0x16])
+
+  ChangeActionStatus(10032, 134, R(On Ground()))
+  AdditionalRequirement(R(Compare(Variable_Float_Motion_Frame >= IC-Int[0xC61])))
+  AdditionalRequirement(R(Compare(Variable_Float_Kinetic_Sum_Speed >= IC-Int[0xC62])))
+
+  AllowSpecificInterrupt(AIR_LANDING)
+
+  ChangeAction(136, R(Button Press(Jump)))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeAction(136, R(Button Press(Special)))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeAction(136, R(Bit is Set(RA-Bool[0x10])))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeActionStatus(10078, 135, R(Button Press(Attack)))
+  AdditionalRequirement(R(In Air()))
+}
+
+Action 0x85 : EXIT {
+}

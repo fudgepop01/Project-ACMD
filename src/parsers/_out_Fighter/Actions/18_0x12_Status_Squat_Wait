@@ -1,0 +1,8 @@
+// Status_Squat_Wait
+Action 0x12: ENTRY {
+  SubRoutine(statusAnimCmd_SquatWaitCommon)
+  SubRoutine(statusAnimCmd_SquatWaitCommonAnim)
+}
+
+Action 0x12 : EXIT {
+}

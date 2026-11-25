@@ -1,0 +1,11 @@
+// Status_Pass
+Action 0x72: ENTRY {
+  SubRoutine(hidden_subroutine_0xB7FC)
+  SubRoutine(statusAnimCmd_AIRChkFallCommon)
+  ChangeAction(14, R(Animation End()))
+  ChangeSubAction(205)
+  ConcurrentInfiniteLoop(I(9), statusAnimCmd_FALLCommonUniq)
+}
+
+Action 0x72 : EXIT {
+}

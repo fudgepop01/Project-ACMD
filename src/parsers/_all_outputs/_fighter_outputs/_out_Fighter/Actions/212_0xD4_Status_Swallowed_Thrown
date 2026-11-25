@@ -1,0 +1,7 @@
+// Status_Swallowed_Thrown
+Action 0xD4: ENTRY {
+  ChangeSubAction(161)
+}
+
+Action 0xD4 : EXIT {
+}

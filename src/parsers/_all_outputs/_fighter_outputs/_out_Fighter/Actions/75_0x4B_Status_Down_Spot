@@ -1,0 +1,7 @@
+// Status_Down_Spot
+Action 0x4B: ENTRY {
+  SubRoutine(Action_0x4A : ENTRY)
+}
+
+Action 0x4B : EXIT {
+}

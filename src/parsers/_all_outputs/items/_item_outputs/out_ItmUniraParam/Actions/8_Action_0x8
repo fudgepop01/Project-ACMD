@@ -1,0 +1,11 @@
+// Status_Turn_Run
+Action 0x8 {
+  if (R(Is within footstool range())) {
+    SubRoutine(hidden_subroutine_0xE0)
+  } else {
+    ChangeAction(3, R(In Air()))
+    ChangeAction(3, R(Bit is Set(LA-Bool[0x05])))
+    SubRoutine(hidden_subroutine_0x220)
+  }
+}
+

@@ -1,0 +1,30 @@
+[FinalStartR] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1EC: MAIN {
+  Goto(Subaction_0x1EB : MAIN)
+}
+
+Subaction 0x1EC: GFX {
+  Goto(Subaction_0x1EB : GFX)
+}
+
+Subaction 0x1EC: SOUND {
+  AsynchronousTimer(33.0)
+  SoundEffectTransient(6053)
+  SoundEffect(6132)
+  SynchronousTimer(67.0)
+}
+
+Subaction 0x1EC: OTHER {
+  Goto(Subaction_0x1EB : OTHER)
+}
+

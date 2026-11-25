@@ -1,0 +1,13 @@
+[hsr_1785C]
+hidden_subroutine_0x1785C {
+  ModelChanger(5, 3)
+  if (R(Compare(LA-Float[0x13] >= 3.0))) {
+    ModelChanger(6, 3)
+  } elif (R(Compare(LA-Float[0x13] >= 2.0))) {
+    ModelChanger(6, 2)
+  } elif (R(Compare(LA-Float[0x13] >= 1.0))) {
+    ModelChanger(6, 1)
+  } else {
+    ModelChanger(6, 0)
+  }
+}

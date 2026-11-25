@@ -1,0 +1,5 @@
+[hsr_7814]
+hidden_subroutine_0x7814 {
+  SubRoutine(hidden_subroutine_0xC77C)
+  SubRoutine(statusAnimCmd_ItemShootAir_Common)
+}

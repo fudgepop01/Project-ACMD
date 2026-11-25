@@ -1,0 +1,55 @@
+[EntryR] (flags) {
+  No Out Transition: 1,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1C2: MAIN {
+  AsynchronousTimer(40.0)
+  GenerateArticle(0)
+  AsynchronousTimer(58.0)
+  GenerateArticle(0)
+  AsynchronousTimer(75.0)
+  GenerateArticle(0)
+}
+
+Subaction 0x1C2: GFX {
+  AsynchronousTimer(25.0)
+  GraphicEffect(8, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.85, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(39.0)
+  GraphicEffect(1703938, 0, -2.0, 0.0, -1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(56.0)
+  GraphicEffect(1703938, 0, -1.0, 0.0, 2.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(73.0)
+  GraphicEffect(1703938, 0, 0.0, 0.0, 3.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x1C2: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffectTransient(5019)
+  SynchronousTimer(25.0)
+  SoundEffect(5079)
+  SynchronousTimer(14.0)
+  SoundEffect(5105)
+  SynchronousTimer(17.0)
+  SoundEffect(5105)
+  SynchronousTimer(17.0)
+  SoundEffect(5105)
+  SynchronousTimer(44.0)
+  VictorySoundEffect(79)
+}
+
+Subaction 0x1C2: OTHER {
+  UnkRaBit27(false)
+  SetTagDisplay(false)
+  AsynchronousTimer(25.0)
+  SlopeContourStand(6)
+  UnkRaBit27(true)
+  SetTagDisplay(true)
+}
+

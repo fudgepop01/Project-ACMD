@@ -1,0 +1,30 @@
+Action 0x13: MAIN {
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0x4F0)
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x13: EXIT {
+}
+
+Action 0x13: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(17)
+  (undef: Sp_AI) 6A_00_01_00(19)
+  (undef: Sp_AI) 6A_00_01_00(15)
+  (undef: Sp_AI) 6A_00_01_00(20)
+  (undef: Sp_AI) 6A_00_01_00(36)
+  (undef: Sp_AI) 6A_00_01_00(30)
+  SubAction09(9)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 28)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 17)
+  if (R(NOT Bit is Set(LA-Bool[0x06]))) {
+    (undef: Sp_base) 65_04_01_00(0)
+    (undef: Sp_base) 65_09_02_00(IC-Int[0xABE5], LA-Float[0x05])
+    (undef: Sp_base) 65_04_01_00(1)
+    (undef: Sp_base) 65_09_02_00(IC-Int[0xABE7], LA-Float[0x02])
+    BitVariableSet(LA-Bool[0x06])
+  }
+}
+

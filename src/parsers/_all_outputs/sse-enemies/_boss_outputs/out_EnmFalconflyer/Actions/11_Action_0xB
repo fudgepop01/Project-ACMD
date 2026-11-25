@@ -1,0 +1,25 @@
+Action 0xB: MAIN {
+}
+
+Action 0xB: EXIT {
+  (undef: Sp_Kinetic) 66_07_01_00(-1)
+  (undef: Sp_base) 65_16_00_00()
+}
+
+Action 0xB: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(2)
+  (undef: Sp_AI) 6A_01_01_00(3)
+  (undef: Sp_AI) 6A_01_01_00(4)
+  SubAction09(7)
+  FrameSpeedModifier(0.0)
+  (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE3], LA-Float[0x02])
+  (undef: Sp_base) 65_20_02_00(IC-Int[0xABE3], LA-Float[0x05])
+  (undef: Sp_base) 65_16_00_00()
+  (undef: Sp_base) 65_14_01_00(LA-Float[0x02])
+  (undef: Sp_base) 65_15_01_00(LA-Float[0x05])
+  (undef: Sp_Area) 69_02_05_00(7, LA-Float[0x02], LA-Float[0x05], LA-Float[0x02], true)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 24)
+  (undef: Sp_Kinetic) 66_00_03_00(4, 25, LA-Float[0x02])
+}
+

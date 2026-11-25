@@ -1,0 +1,12 @@
+// Status_Turn_Run
+Action 0x8 {
+  SubRoutine(hidden_subroutine_0x27C)
+  DisableActionStatusId(8)
+  (undef: Sp_base) 65_07_03_00(1, 0.0, 1000.0)
+  (undef: Sp_Kinetic) 66_00_0D_00(Variable_Float_Kinetic_Energy_Damage_Speed_Y_Rv, IC-Int[0x3F2], -1.0, -1.0, 0.0, 0.0, 0.0, 0.005, 0.0, 0.0, false, false, false)
+  (undef: Sp_Kinetic) 66_05_01_00(1)
+  (undef: Sp_Kinetic) 66_08_01_00(0.5)
+  SynchronousTimer(300.0)
+  ChangeAction(6, R(NOT Is Not in Damaging Magnifier()))
+}
+

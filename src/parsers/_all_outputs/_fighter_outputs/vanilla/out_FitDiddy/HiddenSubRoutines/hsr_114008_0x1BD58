@@ -1,0 +1,12 @@
+[hsr_1BD58]
+hidden_subroutine_0x1BD58 {
+  if (R(Compare(Variable_Float_Controller_Stick_Y_Abs > 0.0))) {
+    if (R(Compare(Variable_Float_Controller_Stick_Y < 0.0))) {
+      FrameSpeedModifier(IC-Int[0xFC4])
+    } elif (R(Compare(Variable_Float_Controller_Stick_Y > 0.0))) {
+      FrameSpeedModifier(IC-Int[0xFC3])
+    } else {
+      FrameSpeedModifier(1.0)
+    }
+  }
+}

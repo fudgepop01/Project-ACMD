@@ -1,0 +1,6 @@
+// @ 0x239FC
+CHK_AIR_WALL_JUMP {
+  ClearPreventInterrupt(AIR_WALL_JUMP)
+  SubRoutine(statusAnimCmd_AIRChkWallJump)
+  ClearPreventInterrupt(ALL?)
+}

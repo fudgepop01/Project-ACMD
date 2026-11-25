@@ -1,0 +1,13 @@
+Action 0x120: ENTRY {
+  ChangeActionStatus(10146, 291, R(On Ground()))
+  DisableActionStatusId(10146)
+  ChangeAction(292, R(Animation End()))
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1AC10)
+  ChangeSubAction(479)
+}
+
+Action 0x120 : EXIT {
+  if (R(Compare(Variable_Int_Status_Kind == 292.0))) {
+    BitVariableSet(LA-Bool[0x3F])
+  }
+}

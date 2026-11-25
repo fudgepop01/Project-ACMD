@@ -1,0 +1,10 @@
+Action 0x11A: ENTRY {
+  BitVariableClear(RA-Bool[0x10])
+  AllowSpecificInterrupt(AIR_CLIFF)
+  SetAerialOrOnstage(5)
+  ChangeSubAction(475)
+  FrameSpeedModifier(0.0)
+}
+
+Action 0x11A : EXIT {
+}

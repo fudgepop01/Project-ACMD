@@ -1,0 +1,10 @@
+[hsr_58]
+hidden_subroutine_0x58 {
+  (undef: Sp_base) 65_07_01_00(10)
+  if (R(2714(1))) {
+    BasicVariableSet(1, LA-Int[0x00])
+  } else {
+    BasicVariableSet(0, LA-Int[0x00])
+  }
+  Return()
+}

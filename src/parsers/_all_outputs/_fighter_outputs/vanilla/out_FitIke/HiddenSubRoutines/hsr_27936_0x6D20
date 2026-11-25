@@ -1,0 +1,6 @@
+[hsr_6D20]
+hidden_subroutine_0x6D20 {
+  Rumble(14, 0)
+  Screenshake(1)
+  Return()
+}

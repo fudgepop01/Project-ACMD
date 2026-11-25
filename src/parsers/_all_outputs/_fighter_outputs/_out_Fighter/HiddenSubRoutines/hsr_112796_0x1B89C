@@ -1,0 +1,7 @@
+[hsr_1B89C]
+hidden_subroutine_0x1B89C {
+  SubRoutine(statusAnimCmd_ItemShootWait_Common)
+  SubRoutine(hsr_9A84)
+  SubRoutine(hidden_subroutine_0x1B7A4)
+  SubRoutine(hidden_subroutine_0x1B854)
+}

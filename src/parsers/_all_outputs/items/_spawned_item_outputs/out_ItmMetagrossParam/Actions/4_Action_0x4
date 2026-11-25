@@ -1,0 +1,18 @@
+// Status_Run
+Action 0x4 {
+  if (R(On a Passable Floor())) {
+    (undef: Sp_Kinetic) 66_00_0D_00(0.0, -0.5, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, false)
+    PassThroughFloorIfPossible_UNDOC0ARGS()
+    Module0900(2)
+    SetAerialOrOnstage(5)
+    ChangeAction(4, R(On Ground()))
+  } else {
+    ChangeAction(3, R(In Air()))
+    (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, false)
+    ChangeSubAction(5)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ChangeAction(12, R(Button Tap?()))
+  }
+}
+

@@ -1,0 +1,15 @@
+// Status_Fall_Aerial
+Action 0xF {
+  ChangeAction(3, R(In Air()))
+  DisableActionStatusId(15)
+  SubRoutine(hidden_subroutine_0x240)
+  ChangeSubAction(7)
+  (undef: Sp_Kinetic) 66_02_03_00(0.2, 0.0, true)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ReverseDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  ChangeAction(12, R(Button Tap?()))
+}
+

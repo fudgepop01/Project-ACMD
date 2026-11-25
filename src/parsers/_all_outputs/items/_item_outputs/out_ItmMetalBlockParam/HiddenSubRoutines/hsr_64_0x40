@@ -1,0 +1,5 @@
+[hsr_40]
+hidden_subroutine_0x40 {
+  ChangeActionStatus(4, 4, R(On Ground()))
+  Return()
+}

@@ -1,0 +1,16 @@
+[hsr_16FE0]
+hidden_subroutine_0x16FE0 {
+  SynchronousTimer(1.0)
+  OffensiveCollision(Sp(39, 0), 1, 80, Sp(0, 1), Sp(0, 1), 7.68, 0.0, 0.0, 3.2, 0.0, 1.0, 1.0, 956500038)
+  OffensiveCollision(Sp(9, 1), 1, 80, Sp(0, 1), Sp(0, 1), 6.24, 0.0, 0.0, 4.8, 0.0, 1.0, 1.0, 956500038)
+  SynchronousTimer(1.0)
+  BitVariableSet(RA-Bool[0x10])
+  SynchronousTimer(1.0)
+  BodyCollision(0)
+  Module0900(2)
+  BitVariableSet(RA-Bool[0x12])
+  AsynchronousTimer(10.0)
+  EnableDisableLedgegrab(1)
+  AsynchronousTimer(24.0)
+  TerminateCollisions()
+}

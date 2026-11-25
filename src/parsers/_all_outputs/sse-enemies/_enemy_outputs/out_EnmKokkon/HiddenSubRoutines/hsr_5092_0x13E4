@@ -1,0 +1,4 @@
+[hsr_13E4]
+hidden_subroutine_0x13E4 {
+  VictorySoundEffect(8836)
+}

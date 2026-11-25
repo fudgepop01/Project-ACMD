@@ -1,0 +1,7 @@
+[hsr_4F8]
+hidden_subroutine_0x4F8 {
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0x4B0)
+    SynchronousTimer(1.0)
+  }
+}

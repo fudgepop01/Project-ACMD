@@ -1,0 +1,8 @@
+Action 0x12A: ENTRY {
+  Link03(6, 1110)
+  ChangeAction(299, R(Animation End()))
+  ChangeSubAction(494)
+}
+
+Action 0x12A : EXIT {
+}

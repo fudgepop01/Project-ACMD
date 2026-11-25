@@ -1,0 +1,41 @@
+[AttackAirB] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x64: MAIN {
+  AsynchronousTimer(5.0)
+  BitVariableSet(RA-Bool[0x1E])
+  OffensiveCollision(Sp(16, 0), 12, 361, Sp(0, 100), Sp(0, 12), 4.5, 0.0, 4.0, 0.0, 0.0, 1.0, 1.0, 964887616)
+  OffensiveCollision(Sp(15, 1), 12, 361, Sp(0, 100), Sp(0, 12), 5.76, 0.0, 1.6, 0.0, 0.0, 1.0, 1.0, 964887616)
+  AsynchronousTimer(10.0)
+  ChangeHitboxDamage(0, 8)
+  ChangeHitboxDamage(1, 8)
+  AsynchronousTimer(16.0)
+  TerminateCollisions()
+  AsynchronousTimer(32.0)
+  BitVariableClear(RA-Bool[0x1E])
+  AsynchronousTimer(36.0)
+  AllowInterrupt()
+}
+
+Subaction 0x64: GFX {
+}
+
+Subaction 0x64: SOUND {
+  AsynchronousTimer(5.0)
+  LowVoiceClip()
+  SoundEffect(53)
+}
+
+Subaction 0x64: OTHER {
+  AsynchronousTimer(6.0)
+  Rumble(16, 0)
+}
+

@@ -1,0 +1,5 @@
+[hsr_7A54]
+hidden_subroutine_0x7A54 {
+  SubRoutine(statusAnimCmd_AllowThrowItem)
+  SubRoutine(statusAnimCmd_ItemShootLanding_Common)
+}

@@ -1,0 +1,41 @@
+[Win1] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1C4: MAIN {
+}
+
+Subaction 0x1C4: GFX {
+  AsynchronousTimer(15.0)
+  SetLoop(4) {
+    GraphicEffect(8, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 360.0, 0.0, true)
+    SynchronousTimer(10.0)
+  }
+  AsynchronousTimer(60.0)
+  GraphicEffect(1769476, 0, 0.0, 20.0, 0.0, 0.0, 0.0, 0.0, 1.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GraphicEffect(9, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x1C4: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(5149)
+  SynchronousTimer(19.0)
+  SoundEffect(2108)
+  SynchronousTimer(37.0)
+  StopSoundEffect(2108)
+  SoundEffect(2066)
+}
+
+Subaction 0x1C4: OTHER {
+  GenerateArticleWin(6, 0)
+  if (R(Article Exists())) {
+    SetArticleAction(6, 0)
+}
+

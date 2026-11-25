@@ -1,0 +1,8 @@
+// @ 0x21C20
+FALLCommonUniq {
+  if (R(0x1E())) {
+    SubRoutine(hidden_subroutine_0xDF94)
+    SubRoutine(hidden_subroutine_0xDEAC)
+  }
+  SubRoutine(hidden_subroutine_0xDDBC)
+}

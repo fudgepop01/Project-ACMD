@@ -1,0 +1,12 @@
+// @ 0x24ACC
+HopHeight {
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    if (R(Button Not Pressed(Jump))) {
+      BitVariableSet(RA-Bool[0x06])
+    }
+  } else {
+    if (R(Compare(Variable_Float_Controller_Stick_Y < Common_Param_Float_Jump_Neutral_Y))) {
+      BitVariableSet(RA-Bool[0x06])
+    }
+  }
+}

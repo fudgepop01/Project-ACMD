@@ -1,0 +1,11 @@
+[hsr_F960]
+hidden_subroutine_0xF960 {
+  Switch(10000, LA-Int[0x40])
+    Case(0)
+      SubRoutine(hidden_subroutine_0xF858)
+    Case(1)
+      SubRoutine(hidden_subroutine_0xF8B8)
+    Case(2)
+      SubRoutine(hidden_subroutine_0xF910)
+  EndSwitch()
+}

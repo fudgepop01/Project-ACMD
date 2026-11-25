@@ -1,0 +1,37 @@
+Action 0x12: MAIN {
+  SubRoutine(hidden_subroutine_0x1280)
+}
+
+Action 0x12: EXIT {
+}
+
+Action 0x12: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(9)
+  BasicVariableSet(19, LA-Int[0x06])
+  if (R(Compare(Variable_Int_Motion_Kind == 15.0))) {
+    SubAction09(7)
+  } elif (R(Compare(Variable_Int_Motion_Kind == 12.0))) {
+    SubAction09(8)
+  } elif (R(Compare(Variable_Int_Motion_Kind == 13.0))) {
+    SubAction09(9)
+  } elif (R(Compare(Variable_Int_Motion_Kind == 14.0))) {
+    SubAction09(10)
+  }
+  (undef: Sp_Kinetic) 66_00_02_00(3, 19)
+  (undef: Sp_Kinetic) 66_00_02_00(4, 18)
+  (undef: Sp_base) 65_16_00_00()
+  Switch(1001, 3)
+    Case(-1)
+      Break()
+    Case(3)
+      (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE9], LA-Float[0x0A])
+      (undef: Sp_base) 65_14_01_00(LA-Float[0x0A])
+    Case(2)
+      (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE8], LA-Float[0x0A])
+      (undef: Sp_base) 65_14_01_00(LA-Float[0x0A])
+    DefaultCase()
+      (undef: unk_procedures) 1B_02_01_00(F(0x0000075C))
+  EndSwitch()
+}
+

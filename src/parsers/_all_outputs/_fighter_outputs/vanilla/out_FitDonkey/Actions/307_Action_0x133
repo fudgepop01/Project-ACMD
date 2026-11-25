@@ -1,0 +1,33 @@
+Action 0x133: ENTRY {
+  ChangeAction(308, R(Compare(RA-Int[0x00] <= 0.0)))
+  ChangeSubAction(505)
+  SetBoneMotionOverride(2, 506, 18)
+  SetBoneMotionOverride(3, 506, 42)
+  SetArticleAction(0, 4)
+  BasicVariableSet(IC-Int[0x5DCD], RA-Int[0x00])
+  BasicVariableSet(IC-Int[0x5DC2], RA-Int[0x01])
+  BasicVariableSet(IC-Int[0x5DC7], RA-Int[0x06])
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1D458)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x133 : EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 308.0))) {
+    ExitFinalSmashState()
+  }
+  if (R(Compare(RA-Float[0x04] == -1.0))) {
+    LeftDirection()
+    DecideDirection()
+  }
+  EndBoneMotionOverride(2)
+  EndBoneMotionOverride(3)
+}

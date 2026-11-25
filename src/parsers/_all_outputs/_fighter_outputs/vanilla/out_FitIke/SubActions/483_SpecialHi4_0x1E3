@@ -1,0 +1,35 @@
+[SpecialHi4] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1E3: MAIN {
+  OffensiveCollision(Sp(0, 0), 6, 60, Sp(0, 60), Sp(0, 50), 6.0, 0.0, 4.0, 15.0, 0.0, 1.0, 1.0, 981671042)
+  OffensiveCollision(Sp(0, 1), 6, 60, Sp(0, 60), Sp(0, 50), 6.0, 0.0, 4.0, 10.0, 0.0, 1.0, 1.0, 981671042)
+  OffensiveCollision(Sp(0, 2), 6, 60, Sp(0, 60), Sp(0, 50), 6.0, 0.0, 4.0, 5.0, 0.0, 1.0, 1.0, 981671042)
+  AsynchronousTimer(4.0)
+  TerminateCollisions()
+}
+
+Subaction 0x1E3: GFX {
+  GraphicEffect(13, 0, 8.0, 0.0, 0.0, 0.0, 180.0, 0.0, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GraphicEffectLanding(33, 0, 6.0, 0.0, 0.0, 0.0, 180.0, 0.0, 0.6, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x1E3: SOUND {
+  StopSoundEffect(5900)
+  SoundEffect(5844)
+}
+
+Subaction 0x1E3: OTHER {
+  Rumble(19, 0)
+  Screenshake(1)
+  SlopeContourStand(6)
+}
+

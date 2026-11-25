@@ -1,0 +1,12 @@
+Action 0x12A: ENTRY {
+  SetGimmickEffectFlag(false)
+  SetShapeFlag(3)
+  ResetFlickY()
+  PassThroughFloorIfPossible_UNDOC0ARGS()
+  Module0900(2)
+  SetAerialOrOnstage(5)
+  SubRoutine(Action_0x16 : ENTRY)
+}
+
+Action 0x12A : EXIT {
+}

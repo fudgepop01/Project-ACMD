@@ -1,0 +1,39 @@
+[Damage2] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x22: MAIN {
+}
+
+Subaction 0x22: MAIN EXIT {
+}
+
+Subaction 0x22: MAIN INIT {
+  FrameSpeedModifier(IC-Int[0xFA6])
+}
+
+Subaction 0x22: GFX {
+}
+
+Subaction 0x22: GFX EXIT {
+}
+
+Subaction 0x22: GFX INIT {
+}
+
+Subaction 0x22: SFX {
+}
+
+Subaction 0x22: SFX EXIT {
+}
+
+Subaction 0x22: SFX INIT {
+}
+

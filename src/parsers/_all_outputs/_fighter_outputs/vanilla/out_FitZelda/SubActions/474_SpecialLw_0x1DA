@@ -1,0 +1,42 @@
+[SpecialLw] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1DA: MAIN {
+  AsynchronousTimer(40.0)
+  BodyCollision(2)
+}
+
+Subaction 0x1DA: GFX {
+  GraphicEffectAttached(917517, 69, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(917517, 99, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectLanding(15, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(10.0)
+  FlashOverlayEffect(200, 255, 200, 0)
+  ChangeFlashOverlayColor(38, 255, 255, 255, 230)
+  AsynchronousTimer(38.0)
+  GraphicEffect(917524, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(48.0)
+  TerminateFlashEffect()
+}
+
+Subaction 0x1DA: SOUND {
+  AsynchronousTimer(1.0)
+  VictorySoundEffect(4043)
+  SynchronousTimer(30.0)
+  VictorySoundEffect(4042)
+  SynchronousTimer(18.0)
+  VictorySoundEffect(3987)
+}
+
+Subaction 0x1DA: OTHER {
+  Rumble(2, 30)
+}
+

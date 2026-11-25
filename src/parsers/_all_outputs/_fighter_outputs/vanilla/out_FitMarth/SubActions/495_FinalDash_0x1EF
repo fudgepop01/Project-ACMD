@@ -1,0 +1,37 @@
+[FinalDash] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1EF: MAIN {
+  NormalCamera()
+  BodyCollision(2)
+  SpecialOffensiveCollision(Sp(65, 1), 0, 361, Sp(0, 0), Sp(0, 0), 10.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 579010688, 0, 638517312)
+}
+
+Subaction 0x1EF: GFX {
+  GraphicEffect(39, 0, 0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 1.6, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffectAttached2(15728643, 64, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached2(15728644, 64, 0.0, -2.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  SwordGlow(9, 10, 65, 0.0, 0.0, 1.6, 65, 0.0, 0.0, 10.75, true, 1179649, 65, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  SetLoop(-1) {
+    GraphicEffectAttached2(15728645, 0, 0.0, 4.0, -2.0, 0.0, 0.0, 0.0, 1.0, true)
+    SynchronousTimer(7.0)
+  }
+}
+
+Subaction 0x1EF: SOUND {
+  VictorySoundEffect(4393)
+}
+
+Subaction 0x1EF: OTHER {
+  Rumble(13, 0)
+  CreateAestheticWindEffects(0, 3.0, 200.0, 8.0, 1.0, -4.0, 8.0, 30.0, 20.0, 50)
+}
+

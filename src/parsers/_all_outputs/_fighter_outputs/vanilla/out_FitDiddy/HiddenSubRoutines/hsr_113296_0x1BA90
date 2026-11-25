@@ -1,0 +1,6 @@
+[hsr_1BA90]
+hidden_subroutine_0x1BA90 {
+  if (R(Bit is Set(RA-Bool[0x12]))) {
+    SetEvtToGroundStatus(false)
+  }
+}

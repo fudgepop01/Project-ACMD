@@ -1,0 +1,38 @@
+IC-Int[0x5208] ("Variable_Int_Combo_Count") in hsr_628 @ 1 : 1
+
+IC-Int[0x5209] in hsr_628 @ 10 : 1
+
+IC-Int[0x5DC0] in hsr_300 @ 0 : 1
+IC-Int[0x5DC0] in hsr_300 @ 2 : 1
+IC-Int[0x5DC0] in hsr_300 @ 4 : 1
+IC-Int[0x5DC0] in hsr_5E0 @ 0 : 1
+IC-Int[0x5DC0] in hsr_5E0 @ 1 : 1
+IC-Int[0x5DC0] in hsr_5E0 @ 5 : 1
+IC-Int[0x5DC0] in Subaction 0x0: MAIN @ 0 : 1
+IC-Int[0x5DC0] in Subaction 0x0: MAIN @ 2 : 1
+IC-Int[0x5DC0] in Subaction 0x0: MAIN @ 4 : 1
+
+IC-Int[0xA028] in Action 0x1: INIT @ 3 : 2
+
+IC-Int[0xABE3] in hsr_430 @ 6 : 0
+IC-Int[0xABE3] in hsr_628 @ 8 : 0
+
+IC-Int[0xABE4] in hsr_430 @ 7 : 0
+IC-Int[0xABE4] in hsr_628 @ 17 : 0
+
+LA-Float[0x02] in hsr_430 @ 6 : 1
+LA-Float[0x02] in hsr_628 @ 1 : 3
+LA-Float[0x02] in hsr_628 @ 8 : 1
+
+LA-Float[0x05] in hsr_430 @ 7 : 1
+LA-Float[0x05] in hsr_628 @ 10 : 3
+LA-Float[0x05] in hsr_628 @ 17 : 1
+
+LA-Float[0x0C] in Subaction 0x0: MAIN @ 1 : 46
+LA-Float[0x0C] in Subaction 0x0: MAIN @ 3 : 46
+LA-Float[0x0C] in Subaction 0x0: MAIN @ 5 : 46
+
+LA-Bool[0x05] in hsr_628 @ 19 : 1
+
+LA-Bool[0x08] in hsr_430 @ 0 : 1
+LA-Bool[0x08] in hsr_430 @ 10 : 0

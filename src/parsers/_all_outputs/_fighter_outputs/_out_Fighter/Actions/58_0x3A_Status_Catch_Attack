@@ -1,0 +1,45 @@
+// Status_Catch_Attack
+Action 0x3A: ENTRY {
+  ChangeAction(266, R(In Air()))
+
+  ChangeAction(57, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeSubAction(112)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0xFE7C)
+}
+
+[statusAnimCmdExit_CatchWait]
+Action 0x3A : EXIT {
+  if (R(Compare(Variable_Int_Status_Kind == 60.0))) {
+    if (R(Current Triggered Status ID())) {
+      if (R(Compare(Variable_Float_Controller_Stick_X_Abs >= Common_Param_Float_Dash_Stick_X))) {
+        if (R(Compare(Variable_Float_Controller_Stick_X_Lr < 0.0))) {
+          BasicVariableSet(114, RA-Int[0x00])
+        } else {
+          BasicVariableSet(115, RA-Int[0x00])
+        }
+      } elif (R(Compare(Variable_Float_Controller_Stick_Y >= Common_Param_Float_Attack_Hi4_Stick_Y))) {
+        BasicVariableSet(116, RA-Int[0x00])
+      } elif (R(Compare(Variable_Float_Controller_Stick_Y <= Common_Param_Float_Attack_Lw4_Stick_Y))) {
+        BasicVariableSet(117, RA-Int[0x00])
+      } else {
+        BasicVariableSet(115, RA-Int[0x00])
+      }
+    } else {
+      if (R(Current Triggered Status ID())) {
+        if (R(Compare(Variable_Float_Controller_Stick_X_Lr > 0.0))) {
+          BasicVariableSet(115, RA-Int[0x00])
+        } else {
+          BasicVariableSet(114, RA-Int[0x00])
+        }
+      } else {
+        if (R(Current Triggered Status ID())) {
+          BasicVariableSet(116, RA-Int[0x00])
+        } else {
+          BasicVariableSet(117, RA-Int[0x00])
+        }
+      }
+    }
+  }
+}

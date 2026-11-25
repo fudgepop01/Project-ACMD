@@ -1,0 +1,10 @@
+[hsr_AAE4]
+hidden_subroutine_0xAAE4 {
+  if (R(NOT Bit is Set(LA-Bool[0x04]))) {
+    PickupItem_UNDOC4ARGS(0, 0, -1, 1)
+    if (R(Pick up an Item())) {
+      BitVariableSet(LA-Bool[0x04])
+      ResetButtonPress()
+    }
+  }
+}

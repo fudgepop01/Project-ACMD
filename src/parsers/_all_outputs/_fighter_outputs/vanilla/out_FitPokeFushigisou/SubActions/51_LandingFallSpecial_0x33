@@ -1,0 +1,32 @@
+[LandingFallSpecial] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x33: MAIN {
+}
+
+Subaction 0x33: GFX {
+  GraphicEffectLanding(11, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x33: SOUND {
+  AsynchronousTimer(3.0)
+  LandingSoundEffect(5668)
+  SynchronousTimer(1.0)
+  SoundEffect(5707)
+  SynchronousTimer(3.0)
+  SoundEffect(5705)
+}
+
+Subaction 0x33: OTHER {
+  SlopeContourStand03(1, 4, true)
+  Rumble(4, 0)
+}
+

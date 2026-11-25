@@ -1,0 +1,20 @@
+Action 0x11D: ENTRY {
+  SetGimmickEffectFlag(false)
+  SetShapeFlag(3)
+  ChangeAction(296, R(In Air()))
+  SubRoutine(hidden_subroutine_0x18524)
+  SubRoutine(hidden_subroutine_0x185AC)
+  SubRoutine(hidden_subroutine_0x18624)
+
+  ChangeAction(298, R(Compare(Variable_Float_Controller_Stick_Y <= Common_Param_Float_Pass_Stick_Y)))
+  AdditionalRequirement(R(Compare(Variable_Int_Controller_Flick_Y < Common_Param_Int_Pass_Flick_Y)))
+  AdditionalRequirement(R(On a Passable Floor()))
+
+  SubRoutine(hidden_subroutine_0x1867C)
+  SubRoutine(hidden_subroutine_0x186CC)
+  ChangeSubAction(-1)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x18A44)
+}
+
+Action 0x11D : EXIT {
+}

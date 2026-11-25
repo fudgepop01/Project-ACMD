@@ -1,0 +1,36 @@
+Action 0x138: ENTRY {
+  SetGimmickEffectFlag(false)
+  SetShapeFlag(3)
+  Visibility(true)
+  SetArticleAction07(5, 3)
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(496, true)
+      } else {
+        ChangeSubAction(496, false)
+        BitVariableSet(RA-Bool[0x10])
+      }
+    } else {
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(497, true)
+      } else {
+        ChangeSubAction(497, false)
+        BitVariableSet(RA-Bool[0x10])
+      }
+    }
+    (undef: motion) 04_05_01_00(24)
+    SetRequirement(R(Change in Air/Ground State()))
+    LoadRest()
+  }
+}
+
+Action 0x138 : EXIT {
+}

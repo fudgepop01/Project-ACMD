@@ -1,0 +1,23 @@
+Action 0x7: MAIN {
+  SetLoop(-1) {
+    FloatVariableAdd(LA-Float[0x05], LA-Float[0x01])
+    (undef: damage) 1E_04_01_00(LA-Float[0x05])
+    (undef: Sp_base) 65_1B_04_00(Variable_Float_Motion_End_Frame, Variable_Float_Controller_Stick_Prev_Y, LA-Float[0x02], true)
+    SetAnimationFrame(LA-Float[0x02])
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x7: EXIT {
+}
+
+Action 0x7: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(8)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 21)
+  (undef: Sp_base) 65_09_02_00(IC-Int[0xABE4], LA-Float[0x05])
+  (undef: Sp_base) 65_1B_04_00(Variable_Float_Motion_End_Frame, Variable_Float_Controller_Stick_Prev_Y, LA-Float[0x02], true)
+  SetAnimationFrame(LA-Float[0x02])
+  SubRoutine(hidden_subroutine_0x35C)
+}
+

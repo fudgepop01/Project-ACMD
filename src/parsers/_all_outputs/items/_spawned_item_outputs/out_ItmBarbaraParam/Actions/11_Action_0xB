@@ -1,0 +1,9 @@
+// Status_Jump
+Action 0xB {
+  ChangeAction(10, R(In Air()))
+  ChangeSubAction(2, true)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(6, R(Button Tap?()))
+}
+

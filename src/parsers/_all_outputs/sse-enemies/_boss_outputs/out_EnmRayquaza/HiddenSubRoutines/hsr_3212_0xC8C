@@ -1,0 +1,4 @@
+[hsr_C8C]
+hidden_subroutine_0xC8C {
+  TerminateCollisions()
+}

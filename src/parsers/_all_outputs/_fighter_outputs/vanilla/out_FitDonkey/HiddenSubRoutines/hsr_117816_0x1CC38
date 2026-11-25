@@ -1,0 +1,7 @@
+[hsr_1CC38]
+hidden_subroutine_0x1CC38 {
+  if (R(Bit is Set(RA-Bool[0x12]))) {
+    BitVariableClear(RA-Bool[0x12])
+    SetCliffCheck(2)
+  }
+}

@@ -1,0 +1,19 @@
+Action 0x11: MAIN {
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0x4F0)
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x11: EXIT {
+}
+
+Action 0x11: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(23)
+  SubAction09(11)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 32)
+  (undef: Sp_base) 65_04_01_00(2)
+  (undef: Sp_base) 65_09_02_00(IC-Int[0xABE9], LA-Float[0x07])
+}
+

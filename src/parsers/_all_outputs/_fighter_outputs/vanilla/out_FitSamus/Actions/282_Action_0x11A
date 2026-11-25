@@ -1,0 +1,23 @@
+Action 0x11A: ENTRY {
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    ChangeSubAction(462)
+    BitVariableClear(RA-Bool[0x10])
+  } else {
+    ChangeSubAction(462, true)
+  }
+  SetAerialOrOnstage(1)
+  SetAirGround(6)
+  ChangeAction(284, R(In Air()))
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  DisableActionStatusId(0)
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+}
+
+Action 0x11A : EXIT {
+}

@@ -1,0 +1,46 @@
+[WheelSpin] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x17: MAIN {
+  SubRoutine(hidden_subroutine_0x2930)
+}
+
+Subaction 0x17: MAIN EXIT {
+}
+
+Subaction 0x17: MAIN INIT {
+}
+
+Subaction 0x17: GFX {
+  GraphicEffectAttached(9437188, 5, -5.776, 2.271, -9.508, 13.5, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(9437188, 5, 5.776, 2.27, -9.508, 13.5, 0.0, 0.0, 1.0, true)
+  SetLoop(-1) {
+    GraphicEffect(10, 0, 0.0, 0.0, -15.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+    SynchronousTimer(8.0)
+  }
+}
+
+Subaction 0x17: GFX EXIT {
+}
+
+Subaction 0x17: GFX INIT {
+}
+
+Subaction 0x17: SFX {
+  SoundEffect(9311)
+}
+
+Subaction 0x17: SFX EXIT {
+}
+
+Subaction 0x17: SFX INIT {
+}
+

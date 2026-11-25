@@ -1,0 +1,38 @@
+Action 0x5: MAIN {
+  SetLoop(-1) {
+    BasicVariableSet(3, RA-Int[0x01])
+    BasicVariableSet(4, RA-Int[0x02])
+    BasicVariableSet(16, RA-Int[0x03])
+    BasicVariableSet(17, RA-Int[0x04])
+    BasicVariableSet(5, RA-Int[0x05])
+    SubRoutine(EXTERNAL: statusAnimCmd_CommonPathMotProc)
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x5: EXIT {
+  (undef: Sp_base) 65_10_01_00(1)
+  BitVariableSet(LA-Bool[0x06])
+}
+
+Action 0x5: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(9)
+  (undef: Sp_Kinetic) 66_07_02_00(4, 3)
+  BasicVariableSet(3, RA-Int[0x01])
+  BasicVariableSet(4, RA-Int[0x02])
+  BasicVariableSet(16, RA-Int[0x03])
+  BasicVariableSet(17, RA-Int[0x04])
+  BasicVariableSet(5, RA-Int[0x05])
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonPathMotInit)
+  if (R(Bit is Set(LA-Bool[0x06]))) {
+    (undef: Sp_base) 65_11_01_00(1)
+    BitVariableClear(LA-Bool[0x06])
+  }
+  if (R(Bit is Set(LA-Bool[0x07]))) {
+    FloatVariableSet(IC-Int[0xFA1], LA-Float[0x05])
+    (undef: Sp_base) 65_04_01_00(1)
+    BitVariableClear(LA-Bool[0x07])
+  }
+}
+

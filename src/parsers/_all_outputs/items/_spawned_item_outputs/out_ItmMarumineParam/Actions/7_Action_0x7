@@ -1,0 +1,21 @@
+// Status_Turn_Dash
+Action 0x7 {
+  if (R(Compare(LA-Int[0x00] == 1.0))) {
+    (undef: Sp_base) 65_1E_01_00(2)
+    ChangeSubAction(3)
+    (undef: Sp_base) 65_05_02_00(120, 360)
+    BasicVariableSet(2, LA-Int[0x00])
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ChangeSubAction(4)
+  } else {
+    (undef: Sp_base) 65_1F_01_00(2)
+    (undef: team) 22_00_01_00(-1)
+    ChangeSubAction(2)
+    Screenshake(2)
+    Visibility(false)
+    SynchronousTimer(1.0)
+    ChangeAction(6, R(Button Tap?()))
+  }
+}
+

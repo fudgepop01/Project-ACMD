@@ -1,0 +1,26 @@
+// Status_Dash
+Action 0x3 {
+  SetAerialOrOnstage(0)
+  DisableSpecifiedMovement(2)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.05, -1.0, 0.05, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+  ChangeSubAction(6)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  if (R(Is within footstool range())) {
+    ChangeSubAction(8)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ChangeSubAction(10, true)
+  } else {
+    ChangeSubAction(7)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ChangeSubAction(9, true)
+    LeftDirection()
+    DecideDirection()
+    CharacterSpecific01()
+  }
+  (undef: Sp_Kinetic) 66_00_0D_00(0.27, -0.67, -1.0, -1.0, 0.0, 0.0, 0.0, 0.03, 0.0, 0.0, true, false, true)
+  ChangeAction(7, R(Button Tap?()))
+}
+

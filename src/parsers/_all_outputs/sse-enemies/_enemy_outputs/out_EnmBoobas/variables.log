@@ -1,0 +1,43 @@
+IC-Int[0x08] ("Variable_Float_Posture_Lr") in Subaction 0x9: MAIN @ 6 : 1
+
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x2: EXIT @ 1 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x2: EXIT @ 2 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x3: EXIT @ 1 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x3: EXIT @ 2 : 1
+
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x7: INIT @ 5 : 1
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x9: INIT @ 1 : 1
+
+IC-Int[0x5208] ("Variable_Int_Combo_Count") in hsr_9D0 @ 1 : 1
+
+IC-Int[0x520B] ("Variable_Int_Controller_Flick_No_Reset_X") in Action 0xA: INIT @ 1 : 1
+
+IC-Int[0x5DC1] in hsr_9D0 @ 1 : 3
+
+IC-Int[0xABE3] in Action 0xE: INIT @ 6 : 0
+
+LA-Int[0x05] in Action 0xE: INIT @ 5 : 1
+LA-Int[0x05] in hsr_9D0 @ 0 : 1
+LA-Int[0x05] in hsr_9D0 @ 2 : 1
+
+LA-Float[0x02] in Action 0xE: INIT @ 6 : 1
+
+LA-Float[0x05] in Subaction 0x9: MAIN @ 6 : 3
+
+LA-Float[0x0C] in Subaction 0x0: MAIN @ 1 : 46
+LA-Float[0x0C] in Subaction 0x9: MAIN @ 1 : 9
+LA-Float[0x0C] in Subaction 0x9: MAIN @ 2 : 9
+LA-Float[0x0C] in Subaction 0x9: MAIN @ 3 : 9
+LA-Float[0x0C] in Subaction 0x9: MAIN @ 10 : 9
+LA-Float[0x0C] in Subaction 0x9: MAIN @ 11 : 9
+LA-Float[0x0C] in Subaction 0x9: MAIN @ 12 : 9
+LA-Float[0x0C] in Subaction 0xB: MAIN @ 2 : 46
+LA-Float[0x0C] in Subaction 0xB: MAIN @ 3 : 46
+
+LA-Bool[0x04] in Action 0x2: EXIT @ 0 : 1
+LA-Bool[0x04] in Action 0x3: EXIT @ 0 : 1
+
+LA-Bool[0x07] in Action 0xE: EXIT @ 0 : 0
+LA-Bool[0x07] in Action 0xE: INIT @ 7 : 0
+LA-Bool[0x07] in Subaction 0x9: MAIN @ 5 : 1
+LA-Bool[0x07] in Subaction 0x9: MAIN @ 13 : 0

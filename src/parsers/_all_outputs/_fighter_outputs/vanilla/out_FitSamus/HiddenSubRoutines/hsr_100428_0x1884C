@@ -1,0 +1,14 @@
+[hsr_1884C]
+hidden_subroutine_0x1884C {
+  if (R(Compare(LA-Int[0x43] == 1.0))) {
+    SubRoutine(hsr_F5F0)
+  } elif (R(Compare(LA-Int[0x43] == 2.0))) {
+    SubRoutine(hsr_F610)
+  }
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+}

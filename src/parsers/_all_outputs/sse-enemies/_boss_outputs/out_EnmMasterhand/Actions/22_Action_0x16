@@ -1,0 +1,20 @@
+Action 0x16: MAIN {
+  FloatVariableSet(IC-Int[0xFAA], LA-Float[0x0A])
+  FloatVariableSet(IC-Int[0xFAB], LA-Float[0x0B])
+  SubRoutine(hidden_subroutine_0x199C)
+}
+
+Action 0x16: EXIT {
+  (undef: Sp_Kinetic) 66_07_01_00(4)
+}
+
+Action 0x16: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(9)
+  BasicVariableSet(23, LA-Int[0x06])
+  BasicVariableSet(IC-Int[0x5DC4], LA-Int[0x05])
+  SubAction09(38)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 31)
+  (undef: Sp_Kinetic) 66_00_02_00(4, 32)
+}
+

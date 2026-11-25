@@ -1,0 +1,10 @@
+// Status_Run_Brake
+Action 0x5 {
+  (undef: Sp_Kinetic) 66_06_01_00(3)
+  ModifyRhombusX05_UNDOC3ARGS(0.35, -0.38, 0.3)
+  (undef: Sp_Kinetic) 66_06_01_00(3)
+  ChangeAction(12, R(On Ground()))
+  ChangeAction(8, R(In walljump situation()), 7)
+  ChangeSubAction(3)
+}
+

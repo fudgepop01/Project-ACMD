@@ -1,0 +1,5 @@
+// Status_Turn_Run
+Action 0x8 {
+  BasicVariableSet(3, LA-Int[0x0E])
+}
+

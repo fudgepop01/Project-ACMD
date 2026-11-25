@@ -1,0 +1,27 @@
+Action 0x11B: ENTRY {
+  BasicVariableIncrement(LA-Int[0x35])
+  BasicVariableSet(0, RA-Int[0x00])
+  SetPassableCheck(false)
+  SelectCliffHangData(2)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x79A0)
+  ChangeSubAction(475)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+    }
+    LoadRest()
+  }
+  NoEvent()
+  NoEvent()
+  NoEvent()
+  NoEvent()
+  NoEvent()
+  NoEvent()
+  NoEvent()
+}
+
+Action 0x11B : EXIT {
+}

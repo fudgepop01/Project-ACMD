@@ -1,0 +1,26 @@
+Action 0x117: ENTRY {
+
+  ChangeAction(281, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(282, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeSubAction(462)
+  (undef: Sp_base) 65_2C_00_00()
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(2)
+      SetAirGround(50)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetAirGround(50)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x117 : EXIT {
+}

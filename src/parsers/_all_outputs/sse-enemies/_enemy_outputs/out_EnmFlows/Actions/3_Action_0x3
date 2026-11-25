@@ -1,0 +1,12 @@
+Action 0x3: MAIN {
+}
+
+Action 0x3: EXIT {
+}
+
+Action 0x3: INIT {
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonAreaOutProc)
+  (undef: Sp_AI) 6A_01_01_00(11)
+  (undef: Sp_AI) 6A_01_01_00(12)
+}
+

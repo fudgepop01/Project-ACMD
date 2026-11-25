@@ -1,0 +1,6 @@
+// @ 0x23954
+CHK_AIR_LASSO {
+  ClearPreventInterrupt(AIR_LASSO)
+  SubRoutine(hidden_subroutine_0x3ABC)
+  ClearPreventInterrupt(ALL?)
+}

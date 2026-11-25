@@ -1,0 +1,26 @@
+// Status_Walk
+Action 0x1 {
+  Visibility(false)
+  SynchronousTimer(1.0)
+  if (R(Compare(Variable_Int_Controller_Flick_X_Dir == 143.0))) {
+    Visibility(true)
+    (undef: Sp_base) 65_05_01_00(360)
+    (undef: motion) 04_10_02_00(0, 9)
+    SubRoutine(hidden_subroutine_0x38)
+    DisableActionStatusId(1)
+    BasicVariableSet(0, LA-Int[0x00])
+    ChangeAction(3, R(In Air()))
+  } else {
+    DisableSpecifiedMovement(2)
+    SynchronousTimer(1.0)
+    BasicVariableRandom(6, 8, LA-Int[0x00])
+    while (R(Compare(LA-Int[0x00] > 0.0))) {
+      BasicVariableRandom(0, 2, LA-Int[0x01])
+      (undef: Sp_base) 65_09_08_00(143, LA-Int[0x01], Variable_Float_Posture_Pos_X, Variable_Float_Posture_Pos_Y, 0.0, 0.0, 0.0, 0.0)
+      BasicVariableDecrement(LA-Int[0x00])
+      SynchronousTimer(10.0)
+      EndWhile()
+      (undef: Sp_base) 65_00_00_00()
+    }
+}
+

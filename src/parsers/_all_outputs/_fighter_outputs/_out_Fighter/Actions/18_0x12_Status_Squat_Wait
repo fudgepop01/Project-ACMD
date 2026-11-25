@@ -1,0 +1,39 @@
+// Status_Squat_Wait
+Action 0x12: ENTRY {
+  UnkRaBit27Variable(true, IC-Int[0x5A16])
+  ChangeAction(14, R(In Air()))
+  SubRoutine(hidden_subroutine_0xEABC)
+  InvertActionStatusId(1, 10097)
+  InvertActionStatusId(1, 10098)
+  InvertActionStatusId(8, 10059)
+  if (R(Compare(Info_Param_Int_Squat_Walk_Type == 1.0))) {
+    InvertActionStatusId(8, 10044)
+    SubRoutine(hidden_subroutine_0xEC64)
+    SubRoutine(hidden_subroutine_0xECDC)
+  }
+
+  ChangeActionStatus(10052, 21, R(Compare(Variable_Float_Controller_Stick_Y > Common_Param_Float_Squat_Stick_Y)))
+  AdditionalRequirement(R(On Ground()))
+
+  SetLoop(-1) {
+    if (R(Compare(Variable_Int_Item_Squat_Wait_Motion_Kind == 45.0))) {
+      ChangeSubAction(45)
+      SetRequirement(R(NOT Compare(Variable_Int_Item_Squat_Wait_Motion_Kind == 45.0)))
+    } else {
+      Switch(1001, 43)
+        Case(1)
+          ChangeSubAction(44)
+        Case(-1)
+          SetAnimationTimerFrame(0.0)
+        DefaultCase()
+          ChangeSubAction(43)
+      EndSwitch()
+      SynchronousTimer(1.0)
+      SetRequirement(R(Animation End()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x12 : EXIT {
+}

@@ -1,0 +1,8 @@
+[hsr_622C]
+hidden_subroutine_0x622C {
+  BasicVariableSet(Common_Param_Int_Slip_Disable_Frame, LA-Int[0x09])
+  SubRoutine(hsr_61EC)
+
+  ChangeAction(141, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+}

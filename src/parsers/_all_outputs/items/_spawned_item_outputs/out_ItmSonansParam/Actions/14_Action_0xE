@@ -1,0 +1,13 @@
+// Status_Fall
+Action 0xE {
+  ChangeAction(6, R(Compare(LA-Int[0x0B] == 0.0)))
+  SubRoutine(hidden_subroutine_0x70)
+  DisableActionStatusId(14)
+  ChangeAction(3, R(In Air()))
+  ChangeAction(12, R(Bit is Set(RA-Bool[0x01])))
+  ChangeSubAction(1)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(12, R(Button Tap?()))
+}
+

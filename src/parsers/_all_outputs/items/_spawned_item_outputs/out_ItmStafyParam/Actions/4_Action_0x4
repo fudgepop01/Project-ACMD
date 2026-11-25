@@ -1,0 +1,15 @@
+// Status_Run
+Action 0x4 {
+  ChangeAction(3, R(In Air()))
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+  ChangeSubAction(6)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  SubRoutine(hidden_subroutine_0x2F8)
+  ChangeSubAction(8)
+  (undef: control_flow_loop) 01_04_02_00(20, 120)
+  (undef: Sp_base) 65_07_01_00(2)
+  SubRoutine(hidden_subroutine_0xD0)
+  ChangeAction(9, R(Button Tap?()))
+}
+

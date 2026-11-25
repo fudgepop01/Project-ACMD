@@ -1,0 +1,43 @@
+[FlameBreath] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x3C: MAIN {
+  SynchronousTimer(40.0)
+  (undef: Sp_base) 65_0E_02_00(IC-Int[0xABFD], 1)
+  (undef: Sp_Link) 6E_00_03_00(1, 5103, 49)
+}
+
+Subaction 0x3C: MAIN EXIT {
+}
+
+Subaction 0x3C: MAIN INIT {
+}
+
+Subaction 0x3C: GFX {
+}
+
+Subaction 0x3C: GFX EXIT {
+}
+
+Subaction 0x3C: GFX INIT {
+}
+
+Subaction 0x3C: SFX {
+  SynchronousTimer(46.0)
+  SoundEffect(9552)
+}
+
+Subaction 0x3C: SFX EXIT {
+}
+
+Subaction 0x3C: SFX INIT {
+}
+

@@ -1,0 +1,29 @@
+[FuraSleepEnd] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xCB: MAIN {
+}
+
+Subaction 0xCB: GFX {
+  AsynchronousTimer(8.0)
+  GraphicEffect(46, 0, 0.0, 8.0, 2.0, 0.0, 0.0, 0.0, 1.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0xCB: SOUND {
+}
+
+Subaction 0xCB: OTHER {
+  Rumble(14, 0)
+  SlopeContourStand03(1, 6, true)
+  AsynchronousTimer(48.0)
+  SlopeContourStand02(6, 6)
+}
+

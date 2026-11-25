@@ -1,0 +1,11 @@
+Action 0x120: ENTRY {
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1CF90)
+  ChangeAction(287, R(Compare(RA-Int[0x03] < 0.0)))
+  ChangeAction(286, R(Animation End()))
+  ChangeAction(286, R(In Air()))
+  ChangeSubAction(474)
+  SetAirGround(109)
+}
+
+Action 0x120 : EXIT {
+}

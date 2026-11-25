@@ -1,0 +1,26 @@
+// @ 0x39B8
+CommonPathMotProc {
+  if (R(Compare(RA-Int[0x02] != -1.0)) && R(Compare(Variable_Int_Motion_Kind == RA-Int[0x02]))) {
+    if (R(Animation End())) {
+      SubRoutine(statusAnimCmd_CommonPathMotSubReverseLrRot)
+    }
+  }
+  if (R(Compare(RA-Int[0x02] != -1.0)) && R(Compare(Variable_Int_Motion_Kind != RA-Int[0x02]))) {
+    Switch(1003, RA-Int[0x05])
+      Case(2)
+        if (R(Facing Left())) {
+          SubRoutine(statusAnimCmd_CommonPathMotSubReverseLr)
+        }
+      Case(3)
+        if (R(Facing Right())) {
+          SubRoutine(statusAnimCmd_CommonPathMotSubReverseLr)
+        }
+      DefaultCase()
+        (undef: unk_procedures) 1B_02_01_00(F(0x000022D8))
+    EndSwitch()
+  }
+  if [IF_REQ_UNKNOWN_3ARG] (R(Tap Jump On & C-Stick not Held()), RA-Int[0x05], RA-Int[0x03]) {
+    SubAction09(RA-Int[0x01])
+  }
+  Return()
+}

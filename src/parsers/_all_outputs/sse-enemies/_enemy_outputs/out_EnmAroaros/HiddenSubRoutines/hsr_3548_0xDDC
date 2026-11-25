@@ -1,0 +1,4 @@
+[hsr_DDC]
+hidden_subroutine_0xDDC {
+  VictorySoundEffect(8836)
+}

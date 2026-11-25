@@ -1,0 +1,4 @@
+[hsr_E1D0]
+hidden_subroutine_0xE1D0 {
+  Rumble(5, 17)
+}

@@ -1,0 +1,23 @@
+[hsr_1CA20]
+hidden_subroutine_0x1CA20 {
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      Module0900(0)
+      SetAerialOrOnstage(2)
+      SubRoutine(hidden_subroutine_0x1B270)
+      EnableActionStatusId(0)
+      DisableActionStatusId(1)
+      SetAirGround(15)
+      SetRequirement(R(In Air()))
+    } elif (R(In Air())) {
+      Module0900(2)
+      SetAerialOrOnstage(5)
+      SubRoutine(hidden_subroutine_0x1B2B0)
+      EnableActionStatusId(1)
+      DisableActionStatusId(0)
+      SetAirGround(0)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}

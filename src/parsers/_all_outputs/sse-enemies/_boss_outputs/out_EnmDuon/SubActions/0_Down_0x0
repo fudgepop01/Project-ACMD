@@ -1,0 +1,169 @@
+[Down] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x0: MAIN {
+  SetGrCollisionMode(false)
+  SubRoutine(EXTERNAL: gameAnimCmd_CommonBossDown)
+}
+
+Subaction 0x0: MAIN EXIT {
+}
+
+Subaction 0x0: MAIN INIT {
+}
+
+Subaction 0x0: GFX {
+  Screenshake(2)
+  SynchronousTimer(1.0)
+  Screenshake(2)
+  GraphicEffect(77, 5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(10.0)
+  GraphicEffect(77, 41, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.6, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(20.0)
+  GraphicEffect(77, 15, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.7, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(25.0)
+  GraphicEffect(35, 52, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(48.0)
+  GraphicEffect(35, 30, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(60.0)
+  GraphicEffect(35, 9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(50.0)
+  GraphicEffectAttached(12517456, 46, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12517456, 48, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12517456, 54, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12517456, 56, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12517456, 23, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12517456, 25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12517456, 33, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12517456, 35, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12517456, 16, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12517456, 15, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12517456, 41, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  Screenshake(1)
+  GraphicEffect(77, 38, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(78.0)
+  GraphicEffect(35, 12, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(80.0)
+  GraphicEffect(77, 15, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(87.0)
+  GraphicEffect(35, 5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(90.0)
+  Screenshake(0)
+  GraphicEffect(35, 26, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(97.0)
+  GraphicEffect(35, 44, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(102.0)
+  GraphicEffect(35, 21, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(120.0)
+  GraphicEffect(35, 5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(132.0)
+  GraphicEffect(35, 15, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(146.0)
+  GraphicEffect(35, 9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(150.0)
+  GraphicEffect(77, 0, 7.712, 50.027, 26.423, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(163.0)
+  GraphicEffect(35, 15, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(170.0)
+  GraphicEffect(35, 5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(180.0)
+  GraphicEffectAttached(12517457, 0, 8.812, 12.0, 10.741, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12517457, 0, -5.811, 12.0, -12.88, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12517457, 0, 5.799, 5.0, 22.976, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12517457, 0, 20.867, 9.0, 9.943, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12517457, 0, 18.138, 8.0, 4.72, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12517457, 0, 1.526, 7.5, -20.78, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12517457, 0, -1.058, 11.0, -25.0, 0.0, 0.0, 0.0, 1.0, true)
+  SetLoop(-1) {
+    GraphicEffectAttached(12517506, 0, -17.164, 0.0, -14.498, 0.0, 0.0, 0.0, 1.0, true)
+    GraphicEffectAttached(12517507, 0, -14.162, 0.0, -9.71, 0.0, 0.0, 0.0, 1.0, true)
+    GraphicEffectAttached(12517508, 0, -5.811, 0.0, -12.88, 0.0, 0.0, 0.0, 1.0, true)
+    GraphicEffectAttached(12517509, 0, -0.799, 0.0, -24.767, 0.0, 0.0, 0.0, 1.0, true)
+    GraphicEffectAttached(12517506, 0, 1.993, 0.0, -20.596, 0.0, 0.0, 0.0, 1.0, true)
+    GraphicEffectAttached(12517510, 0, 5.787, 0.0, 22.818, 0.0, 0.0, 0.0, 1.0, true)
+    GraphicEffectAttached(12517511, 0, 8.812, 0.0, 10.741, 0.0, 0.0, 0.0, 1.0, true)
+    GraphicEffectAttached(12517512, 0, 18.138, 0.0, 4.516, 0.0, 0.0, 0.0, 1.0, true)
+    GraphicEffectAttached(12517513, 0, 20.919, 0.0, 9.707, 0.0, 0.0, 0.0, 1.0, true)
+    SynchronousTimer(45.0)
+    GraphicEffectAttached(12517506, 0, -17.164, 0.0, -14.498, 0.0, 0.0, 0.0, 1.0, true)
+    GraphicEffectAttached(12517507, 0, -14.162, 0.0, -9.71, 0.0, 0.0, 0.0, 1.0, true)
+    GraphicEffectAttached(12517508, 0, -5.811, 0.0, -12.88, 0.0, 0.0, 0.0, 1.0, true)
+    GraphicEffectAttached(12517509, 0, -0.799, 0.0, -24.767, 0.0, 0.0, 0.0, 1.0, true)
+    GraphicEffectAttached(12517506, 0, 1.993, 0.0, -20.596, 0.0, 0.0, 0.0, 1.0, true)
+    GraphicEffectAttached(12517510, 0, 5.787, 0.0, 22.818, 0.0, 0.0, 0.0, 1.0, true)
+    GraphicEffectAttached(12517511, 0, 8.812, 0.0, 10.741, 0.0, 0.0, 0.0, 1.0, true)
+    GraphicEffectAttached(12517512, 0, 18.138, 0.0, 4.516, 0.0, 0.0, 0.0, 1.0, true)
+    GraphicEffectAttached(12517513, 0, 20.919, 0.0, 9.707, 0.0, 0.0, 0.0, 1.0, true)
+    SynchronousTimer(45.0)
+  }
+}
+
+Subaction 0x0: GFX EXIT {
+}
+
+Subaction 0x0: GFX INIT {
+}
+
+Subaction 0x0: SFX {
+  SoundEffect(9782)
+  SynchronousTimer(1.0)
+  AsynchronousTimer(2.0)
+  SynchronousTimer(10.0)
+  SoundEffect(9783)
+  SoundEffect(9757)
+  SynchronousTimer(8.0)
+  SoundEffect(9783)
+  SynchronousTimer(8.0)
+  SoundEffect(9782)
+  SynchronousTimer(8.0)
+  SoundEffect(9783)
+  SynchronousTimer(8.0)
+  SoundEffect(9783)
+  SynchronousTimer(8.0)
+  SoundEffect(9782)
+  SynchronousTimer(8.0)
+  SoundEffect(9783)
+  SynchronousTimer(8.0)
+  SoundEffect(9783)
+  SynchronousTimer(8.0)
+  SoundEffect(9782)
+  SynchronousTimer(8.0)
+  SoundEffect(9783)
+  SynchronousTimer(8.0)
+  SoundEffect(9783)
+  SynchronousTimer(8.0)
+  SoundEffect(9782)
+  SynchronousTimer(8.0)
+  SoundEffect(9783)
+  SynchronousTimer(8.0)
+  SoundEffect(9783)
+  SynchronousTimer(8.0)
+  SoundEffect(9782)
+  SynchronousTimer(8.0)
+  SoundEffect(9783)
+  SynchronousTimer(8.0)
+  SoundEffect(9783)
+  SynchronousTimer(8.0)
+  SoundEffect(9782)
+  SynchronousTimer(8.0)
+  SoundEffect(9783)
+  SynchronousTimer(8.0)
+  SoundEffect(9783)
+  SynchronousTimer(8.0)
+  SoundEffect(9783)
+}
+
+Subaction 0x0: SFX EXIT {
+}
+
+Subaction 0x0: SFX INIT {
+}
+

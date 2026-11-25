@@ -1,0 +1,45 @@
+[AttackAirLw] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x66: MAIN {
+  SetAddMomentum(0.0, 1.0, 0.0, 1)
+  ModelChanger(5, 6)
+  AsynchronousTimer(5.0)
+  BitVariableSet(RA-Bool[0x1E])
+  AsynchronousTimer(11.0)
+  SetAddMomentum(0.0, -3.1, 0.0, 1)
+  BitVariableSet(RA-Bool[0x00])
+  OffensiveCollision(Sp(0, 0), 14, 270, Sp(0, 100), Sp(0, 20), 4.32, 0.0, 0.0, 0.8, 0.0, 1.0, 1.0, 977470592)
+  OffensiveCollision(Sp(0, 1), 13, 60, Sp(0, 100), Sp(0, 20), 6.24, 0.0, -4.4, 0.8, 0.0, 1.0, 1.0, 977470592)
+  SynchronousTimer(1.0)
+  BitVariableClear(RA-Bool[0x00])
+  OffensiveCollision(Sp(0, 0), 13, 60, Sp(0, 100), Sp(0, 20), 4.32, 0.0, 0.0, 0.8, 0.0, 1.0, 1.0, 977470592)
+  AsynchronousTimer(38.0)
+  TerminateCollisions()
+}
+
+Subaction 0x66: GFX {
+  AsynchronousTimer(1.0)
+  GraphicEffect(16, 29, 0.0, -4.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x66: SOUND {
+  AsynchronousTimer(11.0)
+  SoundEffect(4484)
+  SynchronousTimer(3.0)
+  SoundEffect(4483)
+}
+
+Subaction 0x66: OTHER {
+  HeldItemsVisibility(false)
+  Rumble(16, 0)
+}
+

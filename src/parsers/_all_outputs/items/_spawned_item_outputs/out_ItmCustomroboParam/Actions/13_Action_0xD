@@ -1,0 +1,51 @@
+// Status_Fly
+Action 0xD {
+  ChangeAction(4, R(On Ground()))
+  if (R(Is within footstool range())) {
+    SubRoutine(hidden_subroutine_0x190)
+  }
+  SetAerialOrOnstage(0)
+  DisableSpecifiedMovement(2)
+  BasicVariableSet(LA-Int[0x03], LA-Int[0x00])
+  BasicVariableAdd(LA-Int[0x02], LA-Int[0x00])
+  BasicVariableAdd(LA-Int[0x01], LA-Int[0x00])
+  if (R(Compare(LA-Int[0x00] >= 6.0))) {
+    BasicVariableSet(100, LA-Int[0x00])
+  } else {
+    BasicVariableSet(LA-Int[0x03], LA-Int[0x00])
+    BasicVariableAdd(LA-Int[0x02], LA-Int[0x00])
+    if (R(Compare(LA-Int[0x00] >= 5.0)) && R(Compare(LA-Int[0x01] >= 5.0))) {
+      BasicVariableSet(100, LA-Int[0x00])
+    } elif (R(Compare(LA-Int[0x00] >= 5.0))) {
+      (undef: Sp_base) 65_13_05_00(LA-Int[0x00], 29.0, 11.0, 0.0, 0.0)
+    } elif (R(Compare(LA-Int[0x01] >= 5.0))) {
+      if (R(Compare(LA-Int[0x03] >= 3.0))) {
+        BasicVariableSet(3, LA-Int[0x00])
+      } elif (R(Compare(LA-Int[0x02] >= 2.0))) {
+        BasicVariableSet(2, LA-Int[0x00])
+      } else {
+        (undef: Sp_base) 65_13_05_00(LA-Int[0x00], 0.0, 0.0, 70.0, 35.0)
+      }
+    } elif (R(Compare(LA-Int[0x03] >= 3.0)) && R(Compare(LA-Int[0x02] >= 2.0))) {
+      (undef: Sp_base) 65_13_05_00(LA-Int[0x00], 29.0, 11.0, 0.0, 0.0)
+    } elif (R(Compare(LA-Int[0x03] >= 3.0))) {
+      (undef: Sp_base) 65_13_05_00(LA-Int[0x00], 29.0, 11.0, 0.0, 35.0)
+    } elif (R(Compare(LA-Int[0x02] >= 2.0))) {
+      (undef: Sp_base) 65_13_05_00(LA-Int[0x00], 29.0, 11.0, 70.0, 0.0)
+    } else {
+      (undef: Sp_base) 65_13_05_00(LA-Int[0x00], 29.0, 11.0, 70.0, 35.0)
+    }
+  }
+  Switch(10000, LA-Int[0x00])
+    Case(1)
+    Case(0)
+      ChangeAction(10, R(Button Tap?()))
+    Case(3)
+      ChangeAction(12, R(Button Tap?()))
+    Case(2)
+      ChangeAction(11, R(Button Tap?()))
+    Case(100)
+      ChangeAction(3, R(Button Tap?()))
+  EndSwitch()
+}
+

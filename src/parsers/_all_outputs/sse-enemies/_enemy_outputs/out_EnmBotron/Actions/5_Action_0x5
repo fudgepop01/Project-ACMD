@@ -1,0 +1,27 @@
+Action 0x5: MAIN {
+  SetLoop(-1) {
+    BasicVariableSet(4, RA-Int[0x01])
+    BasicVariableSet(8, RA-Int[0x02])
+    BasicVariableSet(15, RA-Int[0x03])
+    BasicVariableSet(16, RA-Int[0x04])
+    BasicVariableSet(5, RA-Int[0x05])
+    SubRoutine(EXTERNAL: statusAnimCmd_CommonPathMotProc)
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x5: EXIT {
+}
+
+Action 0x5: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(17)
+  (undef: Sp_Kinetic) 66_07_02_00(4, 3)
+  BasicVariableSet(4, RA-Int[0x01])
+  BasicVariableSet(8, RA-Int[0x02])
+  BasicVariableSet(15, RA-Int[0x03])
+  BasicVariableSet(16, RA-Int[0x04])
+  BasicVariableSet(5, RA-Int[0x05])
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonPathMotInit)
+}
+

@@ -1,0 +1,49 @@
+[SpecialLw] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1EA: MAIN {
+  AsynchronousTimer(4.0)
+  BodyCollision(2)
+  BitVariableSet(RA-Bool[0x11])
+  AsynchronousTimer(6.0)
+  BodyCollision(0)
+  AsynchronousTimer(29.0)
+  BitVariableClear(RA-Bool[0x11])
+}
+
+Subaction 0x1EA: GFX {
+  AsynchronousTimer(4.0)
+  GraphicEffect(1179651, 0, 0.0, 11.0, 3.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  FlashOverlayEffect(255, 255, 255, 190)
+  SynchronousTimer(1.0)
+  SetLoop(4) {
+    FlashOverlayEffect(180, 180, 180, 130)
+    SynchronousTimer(2.0)
+    FlashOverlayEffect(170, 0, 200, 80)
+    SynchronousTimer(2.0)
+    TerminateFlashEffect()
+    SynchronousTimer(2.0)
+  }
+}
+
+Subaction 0x1EA: SOUND {
+  AsynchronousTimer(3.0)
+  SoundEffect(4371)
+}
+
+Subaction 0x1EA: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(4.0)
+  CreateAestheticWindEffects(0, 1.0, 100.0, 300.0, 0.5, 0.0, 12.0, 15.0, 30.0, 100)
+  AsynchronousTimer(21.0)
+  TerminateWindEffect(0)
+}
+

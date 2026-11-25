@@ -1,0 +1,13 @@
+[hsr_CA0]
+hidden_subroutine_0xCA0 {
+  SetLoop(-1) {
+    (undef: model) 03_0A_04_00(4, LA-Float[0x05], LA-Float[0x07], LA-Float[0x08])
+    FloatVariableSubtract(Variable_Float_Posture_Pos_X, LA-Float[0x05])
+    FloatVariableAdd(LA-Float[0x0A], LA-Float[0x05])
+    FloatVariableSubtract(Variable_Float_Posture_Pos_Y, LA-Float[0x07])
+    FloatVariableAdd(LA-Float[0x0B], LA-Float[0x07])
+    (undef: Sp_Area) 69_02_05_00(7, LA-Float[0x05], LA-Float[0x07], LA-Float[0x04], true)
+    (undef: Sp_Kinetic) 66_0C_02_00(4, LA-Float[0x04])
+    SynchronousTimer(1.0)
+  }
+}

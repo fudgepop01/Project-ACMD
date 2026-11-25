@@ -1,0 +1,5 @@
+[hsr_EE68]
+hidden_subroutine_0xEE68 {
+  GraphicEffectLanding(15, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  FloatVariableSet(500.0, RA-Float[0x04])
+}

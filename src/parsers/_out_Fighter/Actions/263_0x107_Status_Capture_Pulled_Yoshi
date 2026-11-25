@@ -1,0 +1,7 @@
+// Status_Capture_Pulled_Yoshi
+Action 0x107: ENTRY {
+  SubRoutine(statusAnimCmd_CapturePulledCommon)
+}
+
+Action 0x107 : EXIT {
+}

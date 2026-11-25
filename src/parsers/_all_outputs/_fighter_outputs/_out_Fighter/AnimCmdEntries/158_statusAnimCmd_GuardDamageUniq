@@ -1,0 +1,9 @@
+// @ 0x226C8
+GuardDamageUniq {
+  if (R(Button Release(Shield)) && R(Compare(RA-Int[0x00] <= 0.0))) {
+    DisableActionStatusId(10041)
+  }
+  if (R(Compare(RA-Int[0x05] > 0.0))) {
+    BasicVariableDecrement(RA-Int[0x05])
+  }
+}

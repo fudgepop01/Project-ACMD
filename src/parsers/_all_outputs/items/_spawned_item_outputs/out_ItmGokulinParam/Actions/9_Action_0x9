@@ -1,0 +1,25 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  BasicVariableSet(LA-Int[0x09], LA-Int[0x00])
+  (undef: Sp_base) 65_04_01_00(-1)
+  ChangeAction(3, R(In Air()))
+  (undef: Sp_base) 65_07_01_00(2)
+  if (R(2714(1))) {
+    ChangeSubAction(2)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    RightDirection()
+    DecideDirection()
+    CharacterSpecific01()
+  } else {
+    ChangeSubAction(3)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    LeftDirection()
+    DecideDirection()
+    CharacterSpecific01()
+  }
+  ChangeAction(10, R(Is Holding Someone in a Grab()))
+  ChangeAction(4, R(On Ground()))
+}
+

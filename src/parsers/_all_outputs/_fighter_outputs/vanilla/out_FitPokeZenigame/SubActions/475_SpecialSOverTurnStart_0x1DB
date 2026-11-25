@@ -1,0 +1,27 @@
+[SpecialSOverTurnStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1DB: MAIN {
+}
+
+Subaction 0x1DB: GFX {
+}
+
+Subaction 0x1DB: SOUND {
+}
+
+Subaction 0x1DB: OTHER {
+  SlopeContourStand(1)
+  HeldItemsVisibility(false)
+  (undef: item_manage) 1F_10_02_00(false, 1)
+  (undef: item_manage) 1F_10_02_00(false, 2)
+}
+

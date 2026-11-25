@@ -1,0 +1,30 @@
+[AirCatchPose] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xEB: MAIN {
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 275.0))) {
+    BasicVariableSet(475, RA-Int[0x02])
+    FloatVariableSet(32.0, RA-Float[0x04])
+  } else {
+    BasicVariableSet(479, RA-Int[0x02])
+    FloatVariableSet(22.0, RA-Float[0x04])
+  }
+}
+
+Subaction 0xEB: GFX {
+}
+
+Subaction 0xEB: SOUND {
+}
+
+Subaction 0xEB: OTHER {
+}
+

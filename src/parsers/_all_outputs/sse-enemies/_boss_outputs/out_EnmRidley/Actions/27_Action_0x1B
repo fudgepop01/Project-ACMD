@@ -1,0 +1,33 @@
+Action 0x1B: MAIN {
+  SetLoop(-1) {
+    if [IF_REQ_UNKNOWN_3ARG] (R(0x2718()), 7, 2) {
+      (undef: Sp_Kinetic) 66_0C_02_00(4, 0.0)
+    } else {
+      (undef: Sp_Kinetic) 66_0C_02_00(4, 180.0)
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x1B: EXIT {
+}
+
+Action 0x1B: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(8)
+  (undef: Sp_AI) 6A_01_01_00(3)
+  BasicVariableSet(0, LA-Int[0x06])
+  if (R(Facing Left())) {
+    SubAction09(1)
+  } else {
+    SubAction09(2)
+  }
+  (undef: Sp_Kinetic) 66_07_01_00(-1)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 31)
+  (undef: Sp_Kinetic) 66_00_02_00(4, 32)
+  DisableSpecifiedMovement(8)
+  (undef: Sp_Area) 69_07_02_00(7, LA-Float[0x0A])
+  (undef: Sp_base) 65_16_00_00()
+  (undef: Sp_base) 65_14_01_00(LA-Float[0x0A])
+}
+

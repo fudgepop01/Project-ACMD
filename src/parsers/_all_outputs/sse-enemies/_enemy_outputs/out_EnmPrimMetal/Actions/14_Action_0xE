@@ -1,0 +1,26 @@
+Action 0xE: MAIN {
+  SetLoop(-1) {
+    if (R(Animation has looped?())) {
+      SubRoutine(hidden_subroutine_0x3D5C)
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0xE: EXIT {
+}
+
+Action 0xE: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(23)
+  (undef: Sp_AI) 6A_00_01_00(25)
+  SubRoutine(hidden_subroutine_0x3D5C)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+  } else {
+  if (R(Compare(LA-Int[0x12] != 0.0))) {
+    (undef: Sp_base) 65_04_01_00(1)
+  }
+  (undef: Sp_base) 65_07_02_00(IC-Int[0xABE4], LA-Float[0x02])
+  SubRoutine(hidden_subroutine_0x1270)
+}
+

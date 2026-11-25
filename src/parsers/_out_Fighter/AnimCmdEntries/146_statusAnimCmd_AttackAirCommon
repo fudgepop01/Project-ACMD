@@ -1,0 +1,13 @@
+// @ 0x9F14
+AttackAirCommon {
+  ResetButtonPress()
+  ChangeAction(14, R(Animation End()))
+  SubRoutine(hidden_subroutine_0xCCAC)
+  SubRoutine(hidden_subroutine_0xCD5C)
+
+  ChangeActionStatus(10028, 24, R(On Ground()))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x1E])))
+
+  AllowSpecificInterrupt(AIR_LANDING)
+  ConcurrentInfiniteLoop(I(9), statusAnimCmd_AttackAirUniq)
+}

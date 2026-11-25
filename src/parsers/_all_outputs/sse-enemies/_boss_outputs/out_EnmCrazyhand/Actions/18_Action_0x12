@@ -1,0 +1,18 @@
+Action 0x12: MAIN {
+  SubRoutine(hidden_subroutine_0x1818)
+}
+
+Action 0x12: EXIT {
+  EnableSpecifiedMovement(8)
+  (undef: Sp_Kinetic) 66_07_01_00(4)
+}
+
+Action 0x12: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(8)
+  BasicVariableSet(19, LA-Int[0x06])
+  SubAction09(24)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 25)
+  (undef: Sp_Kinetic) 66_00_03_00(4, 26, 0.0)
+}
+

@@ -1,0 +1,5 @@
+// @ 0x3930
+CommonCaptureProcExit {
+  (undef: Sp_base) 65_24_00_00()
+  Return()
+}

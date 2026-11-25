@@ -1,0 +1,74 @@
+IC-Int[0x03] ("Variable_Float_Posture_Pos_X") in hsr_418 @ 3 : 1
+
+IC-Int[0x04] ("Variable_Float_Posture_Pos_Y") in Action 0x8 (Status_Turn_Run) @ 6 : 3
+IC-Int[0x04] ("Variable_Float_Posture_Pos_Y") in Action 0xA (Status_Jump_Squat) @ 13 : 3
+IC-Int[0x04] ("Variable_Float_Posture_Pos_Y") in Action 0xA (Status_Jump_Squat) @ 19 : 3
+IC-Int[0x04] ("Variable_Float_Posture_Pos_Y") in hsr_418 @ 8 : 0
+
+IC-Int[0x08] ("Variable_Float_Posture_Lr") in hsr_E8 @ 1 : 1
+IC-Int[0x08] ("Variable_Float_Posture_Lr") in hsr_E8 @ 10 : 1
+
+IC-Int[0x3F8] in Action 0xA (Status_Jump_Squat) @ 6 : 2
+IC-Int[0x3F8] in hsr_418 @ 9 : 2
+
+IC-Int[0x3F9] ("Variable_Float_Controller_Stick_X_Kinetic_Sum_Speed_Lr") in hsr_B90 @ 0 : 0
+
+IC-Int[0x3FA] ("Variable_Float_Controller_Stick_Y") in hsr_B90 @ 1 : 0
+
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 1 : 1
+LA-Int[0x00] in Action 0xA (Status_Jump_Squat) @ 23 : 1
+LA-Int[0x00] in hsr_258 @ 2 : 0
+LA-Int[0x00] in hsr_418 @ 21 : 0
+LA-Int[0x00] in hsr_798 @ 46 : 0
+LA-Int[0x00] in hsr_978 @ 9 : 0
+
+LA-Int[0x01] in Action 0xC (Status_Jump_Aerial) @ 2 : 0
+LA-Int[0x01] in Action 0xC (Status_Jump_Aerial) @ 3 : 1
+
+LA-Int[0x02] in hsr_258 @ 3 : 0
+LA-Int[0x02] in hsr_798 @ 6 : 1
+LA-Int[0x02] in hsr_798 @ 8 : 0
+LA-Int[0x02] in hsr_798 @ 11 : 0
+LA-Int[0x02] in hsr_798 @ 14 : 0
+
+LA-Int[0x03] in hsr_798 @ 15 : 2
+LA-Int[0x03] in hsr_798 @ 16 : 1
+LA-Int[0x03] in hsr_798 @ 28 : 0
+LA-Int[0x03] in hsr_798 @ 29 : 1
+
+LA-Int[0x0B] in Action 0xA (Status_Jump_Squat) @ 0 : 1
+LA-Int[0x0B] in hsr_798 @ 5 : 1
+
+LA-Int[0x1B] in Subaction 0x5 : SOUND @ 0 : 1
+
+LA-Float[0x00] in hsr_B90 @ 0 : 1
+LA-Float[0x00] in hsr_B90 @ 2 : 1
+LA-Float[0x00] in hsr_B90 @ 4 : 1
+LA-Float[0x00] in hsr_B90 @ 6 : 1
+LA-Float[0x00] in hsr_B90 @ 7 : 1
+LA-Float[0x00] in hsr_B90 @ 8 : 1
+LA-Float[0x00] in hsr_B90 @ 9 : 1
+LA-Float[0x00] in hsr_B90 @ 17 : 0
+LA-Float[0x00] in hsr_D28 @ 3 : 1
+LA-Float[0x00] in hsr_D28 @ 5 : 0
+
+LA-Float[0x01] in hsr_B90 @ 1 : 1
+LA-Float[0x01] in hsr_B90 @ 3 : 1
+LA-Float[0x01] in hsr_B90 @ 5 : 1
+LA-Float[0x01] in hsr_B90 @ 11 : 1
+LA-Float[0x01] in hsr_B90 @ 12 : 1
+LA-Float[0x01] in hsr_B90 @ 13 : 1
+LA-Float[0x01] in hsr_B90 @ 14 : 1
+LA-Float[0x01] in hsr_B90 @ 17 : 1
+LA-Float[0x01] in hsr_D28 @ 4 : 1
+LA-Float[0x01] in hsr_D28 @ 5 : 1
+
+LA-Float[0x07] in hsr_418 @ 3 : 3
+LA-Float[0x07] in hsr_418 @ 4 : 1
+LA-Float[0x07] in hsr_418 @ 6 : 1
+
+LA-Float[0x08] in Action 0x8 (Status_Turn_Run) @ 6 : 1
+LA-Float[0x08] in Action 0xA (Status_Jump_Squat) @ 8 : 1
+LA-Float[0x08] in Action 0xA (Status_Jump_Squat) @ 13 : 1
+LA-Float[0x08] in Action 0xA (Status_Jump_Squat) @ 19 : 1
+LA-Float[0x08] in hsr_418 @ 8 : 1

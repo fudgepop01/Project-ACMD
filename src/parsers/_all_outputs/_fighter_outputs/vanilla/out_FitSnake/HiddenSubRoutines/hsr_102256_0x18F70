@@ -1,0 +1,11 @@
+[hsr_18F70]
+hidden_subroutine_0x18F70 {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(287)
+    Case(288)
+    Case(289)
+      Break()
+    DefaultCase()
+      RemoveArticle(6)
+  EndSwitch()
+}

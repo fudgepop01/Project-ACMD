@@ -1,0 +1,37 @@
+[RunBrake] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x10: MAIN {
+  AsynchronousTimer(11.0)
+  BitVariableSet(RA-Bool[0x10])
+  BitVariableClear(RA-Bool[0x12])
+  AsynchronousTimer(14.0)
+  AllowInterrupt()
+}
+
+Subaction 0x10: GFX {
+  SetLoop(2) {
+    GraphicEffectStepping(28, 0, 8.0, 0.0, 0.0, 0.0, 180.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+    SynchronousTimer(8.0)
+  }
+}
+
+Subaction 0x10: SOUND {
+  AsynchronousTimer(3.0)
+  SoundEffect(2957)
+}
+
+Subaction 0x10: OTHER {
+  SlopeContourStand03(1, 4, true)
+  AsynchronousTimer(20.0)
+  SlopeContourStand02(0, 5)
+}
+

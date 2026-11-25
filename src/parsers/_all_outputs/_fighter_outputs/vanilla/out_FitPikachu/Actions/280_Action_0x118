@@ -1,0 +1,14 @@
+Action 0x118: ENTRY {
+  if (R(On Ground())) {
+    ChangeSubAction(474)
+    ChangeAction(14, R(In Air()))
+    ChangeAction(0, R(Animation End()))
+  } else {
+    ChangeSubAction(476)
+    ChangeAction(16, R(Animation End()))
+    ChangeAction(25, R(On Ground()))
+  }
+}
+
+Action 0x118 : EXIT {
+}

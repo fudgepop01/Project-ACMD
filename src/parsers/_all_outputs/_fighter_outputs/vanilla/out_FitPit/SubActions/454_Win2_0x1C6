@@ -1,0 +1,30 @@
+[Win2] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1C6: MAIN {
+  ModelChangerPermanent(1, 2)
+}
+
+Subaction 0x1C6: GFX {
+  AsynchronousTimer(115.0)
+  GraphicEffect(17, 74, 0.0, 0.0, 8.0, 0.0, 0.0, 0.0, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x1C6: SOUND {
+  AsynchronousTimer(50.0)
+  VictorySoundEffect(708)
+  SynchronousTimer(62.0)
+  SoundEffect(56)
+}
+
+Subaction 0x1C6: OTHER {
+}
+

@@ -1,0 +1,48 @@
+[Stepped] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xE: MAIN {
+  SpecialOffensiveCollisionEnemyHitbox(2, 2, 0, 0, 0.0, 0, 100, 0.0, 6, 0.0, 0, 0.0, 6.0, 0.0, 0.0, 2.0, 0.0, 0, 0.0, 0.0, 1.0, false, true, 0, 0, 0, 3, true, 0, 1, false, 9, false, false, false, false, 3, true, false, 0, false, false, true, true, true, 1, LA-Float[0x0C])
+}
+
+Subaction 0xE: MAIN EXIT {
+  SubRoutine(hidden_subroutine_0x2608)
+  ToggleFighterAreaFrames_UNDOC1ARG(9)
+  InitializeEcb()
+}
+
+Subaction 0xE: MAIN INIT {
+  ToggleFighterArea(9)
+  ModifyRhombusX17_UNDOC1ARGS(7.5)
+  ModifyRhombusX18_UNDOC1ARGS(0.0)
+  ModifyRhombusX19_UNDOC1ARGS(14.5)
+}
+
+Subaction 0xE: GFX {
+  (undef: animCmd) 0D_03_02_00(5, 0)
+}
+
+Subaction 0xE: GFX EXIT {
+}
+
+Subaction 0xE: GFX INIT {
+}
+
+Subaction 0xE: SFX {
+  SoundEffect(9292)
+}
+
+Subaction 0xE: SFX EXIT {
+}
+
+Subaction 0xE: SFX INIT {
+}
+

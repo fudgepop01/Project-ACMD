@@ -1,0 +1,5 @@
+[hsr_308]
+hidden_subroutine_0x308 {
+  (undef: Sp_base) 65_17_0A_00(Variable_Int_Controller_Trigger_1_Count, -1, 0, 0.0, 0.0, 0.0, Variable_Float_Posture_Lr, 5, Variable_Int_Controller_Trigger_1_Count_Prev, LA-Bool[0x0B])
+  BitVariableSet(LA-Bool[0x08])
+}

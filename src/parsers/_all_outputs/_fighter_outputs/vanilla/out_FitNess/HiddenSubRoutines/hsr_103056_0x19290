@@ -1,0 +1,11 @@
+[hsr_19290]
+hidden_subroutine_0x19290 {
+  if (R(NOT On Ground())) {
+    BasicVariableDecrement(RA-Int[0x02])
+    if (R(Compare(RA-Int[0x02] <= 0.0))) {
+      EnableSpecifiedMovement(1)
+    } else {
+      DisableSpecifiedMovement(1)
+    }
+  }
+}

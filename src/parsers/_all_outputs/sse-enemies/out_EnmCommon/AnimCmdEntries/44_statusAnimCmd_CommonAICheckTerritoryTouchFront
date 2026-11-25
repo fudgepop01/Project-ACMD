@@ -1,0 +1,13 @@
+// @ 0x3EB0
+CommonAICheckTerritoryTouchFront {
+  if (R(Facing Left())) {
+    if (R(0x10()) && R(NOT 0x10())) {
+      BitVariableSet(RA-Bool[0x04])
+    }
+  } else {
+    if (R(0x10()) && R(NOT 0x10())) {
+      BitVariableSet(RA-Bool[0x04])
+    }
+  }
+  Return()
+}

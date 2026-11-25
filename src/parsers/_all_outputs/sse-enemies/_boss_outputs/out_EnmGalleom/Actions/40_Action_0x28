@@ -1,0 +1,15 @@
+Action 0x28: MAIN {
+}
+
+Action 0x28: EXIT {
+}
+
+Action 0x28: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(9)
+  BasicVariableSet(2, LA-Int[0x06])
+  SubAction09(6)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 16)
+  SubRoutine(hidden_subroutine_0x790)
+}
+

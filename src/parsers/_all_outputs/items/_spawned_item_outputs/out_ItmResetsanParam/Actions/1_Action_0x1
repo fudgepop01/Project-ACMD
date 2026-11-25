@@ -1,0 +1,47 @@
+// Status_Walk
+Action 0x1 {
+  (undef: Sp_base) 65_06_01_00(2)
+  (undef: Sp_base) 65_03_02_00(0.0, -90.0)
+  CharacterSpecific01()
+  ChangeSubAction(0)
+  Visibility(false)
+  FloatVariableSet(-1.0, LA-Float[0x01])
+  BasicVariableSet(-1, LA-Int[0x02])
+  if (R(Compare(IC-Int[0x5B79] >= 1.0)) && R(Compare(IC-Int[0x5B79] <= 4.0))) {
+    BasicVariableSet(IC-Int[0x5B79], RA-Int[0x00])
+    BasicVariableDecrement(RA-Int[0x00])
+  } elif (R(F-Smash Shortcut(ERRVALUE))) {
+    BasicVariableSet(0, RA-Int[0x00])
+  } else {
+    (undef: Sp_base) 65_13_04_00(RA-Int[0x00], 1.0, 1.0, 1.0)
+    BasicVariableIncrement(RA-Int[0x00])
+  }
+  Switch(10000, RA-Int[0x00])
+    Case(0)
+      BasicVariableSet(4, LA-Int[0x0D])
+      BasicVariableSet(27, LA-Int[0x01])
+      (undef: unk_procedures) 1B_00_01_00(F(0x00001F14))
+    Case(1)
+      BasicVariableSet(28, LA-Int[0x0D])
+      BasicVariableSet(61, LA-Int[0x01])
+      BitVariableSet(LA-Bool[0x01])
+      (undef: unk_procedures) 1B_00_01_00(F(0x00001F68))
+    Case(2)
+      BasicVariableSet(62, LA-Int[0x0D])
+      BasicVariableSet(95, LA-Int[0x01])
+      BitVariableSet(LA-Bool[0x01])
+      (undef: unk_procedures) 1B_00_01_00(F(0x00001FC4))
+    Case(3)
+      BasicVariableSet(99, LA-Int[0x0D])
+      BasicVariableSet(130, LA-Int[0x01])
+      BitVariableSet(LA-Bool[0x01])
+      (undef: unk_procedures) 1B_00_01_00(F(0x00002020))
+  EndSwitch()
+  BasicVariableSet(-1, LA-Int[0x00])
+  BitVariableSet(LA-Bool[0x02])
+  (undef: team) 22_02_01_00(-1)
+  SubRoutine(hidden_subroutine_0x10F4)
+  DisableActionStatusId(1)
+  ChangeAction(12, R(On Ground()))
+}
+

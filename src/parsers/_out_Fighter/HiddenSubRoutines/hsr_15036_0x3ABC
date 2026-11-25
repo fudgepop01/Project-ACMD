@@ -1,0 +1,8 @@
+[hsr_3ABC]
+hidden_subroutine_0x3ABC {
+
+  ChangeActionStatus:01(10080, 127, R(Compare(Info_Param_Int_Air_Lasso_Type != 0.0)))
+  AdditionalRequirement(R(Button Press(Attack)))
+  AdditionalRequirement(R(Button Pressed(Shield)))
+  AdditionalRequirement(R(In Air()))
+}

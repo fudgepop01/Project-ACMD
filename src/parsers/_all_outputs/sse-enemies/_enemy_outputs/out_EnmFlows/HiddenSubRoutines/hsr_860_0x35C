@@ -1,0 +1,5 @@
+[hsr_35C]
+hidden_subroutine_0x35C {
+  SubRoutine(hidden_subroutine_0x34C)
+  Return()
+}

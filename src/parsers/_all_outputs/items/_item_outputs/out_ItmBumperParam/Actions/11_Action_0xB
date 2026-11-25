@@ -1,0 +1,13 @@
+// Status_Jump
+Action 0xB {
+  ChangeSubAction(7)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  TerminateCollisions()
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 8.0))) {
+    ChangeAction(8, R(Button Tap?()))
+  } else {
+    ChangeAction(10, R(Button Tap?()))
+  }
+}
+

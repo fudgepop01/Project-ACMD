@@ -1,0 +1,6 @@
+Action 0x124: ENTRY {
+  ChangeAction(285, R(Animation End()))
+}
+
+Action 0x124 : EXIT {
+}

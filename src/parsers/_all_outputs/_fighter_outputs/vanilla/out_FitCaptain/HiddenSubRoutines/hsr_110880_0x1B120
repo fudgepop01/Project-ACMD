@@ -1,0 +1,8 @@
+[hsr_1B120]
+hidden_subroutine_0x1B120 {
+  if (R(Bit is Set(RA-Bool[0x13]))) {
+    EnableSpecifiedMovement(1)
+  } else {
+    DisableSpecifiedMovement(1)
+  }
+}

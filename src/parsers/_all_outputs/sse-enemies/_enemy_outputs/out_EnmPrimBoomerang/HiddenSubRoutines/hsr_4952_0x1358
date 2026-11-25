@@ -1,0 +1,7 @@
+[hsr_1358]
+hidden_subroutine_0x1358 {
+  if (R(Compare(Variable_Int_Status_Prev_Kind == -1.0))) {
+    BitVariableSet(LA-Bool[0x07])
+  }
+  Return()
+}

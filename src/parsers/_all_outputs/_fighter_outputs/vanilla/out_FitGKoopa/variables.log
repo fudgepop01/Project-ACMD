@@ -1,0 +1,102 @@
+IC-Int[0x5DC3] in Action 0x112 (): ENTRY @ 31 : 3
+IC-Int[0x5DC3] in Action 0x112 (): ENTRY @ 64 : 3
+IC-Int[0x5DC3] in Action 0x112 (): ENTRY @ 84 : 3
+
+RA-Int[0x00] in Action 0x112 (): ENTRY @ 31 : 1
+RA-Int[0x00] in Action 0x112 (): ENTRY @ 64 : 1
+RA-Int[0x00] in Action 0x112 (): ENTRY @ 84 : 1
+
+RA-Int[0x01] in Action 0x112 (): ENTRY @ 30 : 1
+RA-Int[0x01] in Action 0x112 (): ENTRY @ 63 : 1
+RA-Int[0x01] in Action 0x112 (): ENTRY @ 83 : 1
+RA-Int[0x01] in hsr_101F8 @ 1 : 0
+
+RA-Int[0x02] in Action 0x112 (): ENTRY @ 3 : 1
+RA-Int[0x02] in Action 0x112 (): ENTRY @ 13 : 1
+RA-Int[0x02] in Action 0x112 (): ENTRY @ 46 : 1
+RA-Int[0x02] in Action 0x112 (): ENTRY @ 78 : 1
+RA-Int[0x02] in Action 0x112 (): ENTRY @ 80 : 1
+RA-Int[0x02] in Action 0x112 (): ENTRY @ 85 : 1
+RA-Int[0x02] in Subaction 0x72: MAIN @ 3 : 2
+RA-Int[0x02] in Subaction 0x73: MAIN @ 3 : 2
+RA-Int[0x02] in Subaction 0x74: MAIN @ 10 : 2
+RA-Int[0x02] in Subaction 0x75: MAIN @ 8 : 2
+
+RA-Int[0x03] in Subaction 0x72: MAIN @ 3 : 3
+RA-Int[0x03] in Subaction 0x73: MAIN @ 3 : 3
+RA-Int[0x03] in Subaction 0x74: MAIN @ 10 : 3
+RA-Int[0x03] in Subaction 0x75: MAIN @ 8 : 3
+
+RA-Int[0x04] in Subaction 0x72: MAIN @ 3 : 4
+RA-Int[0x04] in Subaction 0x73: MAIN @ 3 : 4
+RA-Int[0x04] in Subaction 0x74: MAIN @ 10 : 4
+RA-Int[0x04] in Subaction 0x75: MAIN @ 8 : 4
+
+RA-Bool[0x10] in Action 0x112 (): ENTRY @ 0 : 0
+RA-Bool[0x10] in Action 0x112 (): ENTRY @ 15 : 1
+RA-Bool[0x10] in Action 0x112 (): ENTRY @ 19 : 0
+RA-Bool[0x10] in Action 0x112 (): ENTRY @ 48 : 1
+RA-Bool[0x10] in Action 0x112 (): ENTRY @ 52 : 0
+RA-Bool[0x10] in Action 0x122 (): ENTRY @ 9 : 1
+RA-Bool[0x10] in Action 0x122 (): ENTRY @ 10 : 0
+RA-Bool[0x10] in Action 0x122 (): ENTRY @ 17 : 1
+RA-Bool[0x10] in Action 0x122 (): ENTRY @ 18 : 0
+RA-Bool[0x10] in Subaction 0x10: MAIN @ 1 : 0
+RA-Bool[0x10] in Subaction 0x12: MAIN @ 1 : 0
+RA-Bool[0x10] in Subaction 0x1D4: MAIN @ 28 : 0
+RA-Bool[0x10] in Subaction 0x1D5: MAIN @ 23 : 0
+RA-Bool[0x10] in Subaction 0x1D6: MAIN @ 4 : 0
+RA-Bool[0x10] in Subaction 0x1D6: MAIN @ 6 : 0
+RA-Bool[0x10] in Subaction 0x1D7: MAIN @ 1 : 0
+RA-Bool[0x10] in Subaction 0x1DD: MAIN @ 3 : 0
+RA-Bool[0x10] in Subaction 0x48: MAIN @ 9 : 0
+RA-Bool[0x10] in Subaction 0x6C: MAIN @ 7 : 0
+RA-Bool[0x10] in Subaction 0x6D: MAIN @ 7 : 0
+RA-Bool[0x10] in Subaction 0x6E: MAIN @ 7 : 0
+RA-Bool[0x10] in Subaction 0xD3: MAIN @ 1 : 0
+
+RA-Bool[0x11] in Action 0x112 (): ENTRY @ 1 : 0
+RA-Bool[0x11] in Action 0x112 (): ENTRY @ 23 : 1
+RA-Bool[0x11] in Action 0x112 (): ENTRY @ 27 : 0
+RA-Bool[0x11] in Action 0x112 (): ENTRY @ 56 : 1
+RA-Bool[0x11] in Action 0x112 (): ENTRY @ 60 : 0
+
+RA-Bool[0x12] in Action 0x112 (): ENTRY @ 2 : 0
+RA-Bool[0x12] in Action 0x112 (): ENTRY @ 33 : 1
+RA-Bool[0x12] in Action 0x112 (): ENTRY @ 37 : 0
+RA-Bool[0x12] in Action 0x112 (): ENTRY @ 66 : 1
+RA-Bool[0x12] in Action 0x112 (): ENTRY @ 70 : 0
+RA-Bool[0x12] in Action 0x11A (): ENTRY @ 0 : 1
+RA-Bool[0x12] in Action 0x11A (): ENTRY @ 3 : 0
+RA-Bool[0x12] in Subaction 0x10: MAIN @ 2 : 0
+RA-Bool[0x12] in Subaction 0x1D4: MAIN @ 10 : 0
+RA-Bool[0x12] in Subaction 0x1D4: MAIN @ 30 : 0
+RA-Bool[0x12] in Subaction 0x1D5: MAIN @ 6 : 0
+RA-Bool[0x12] in Subaction 0x1D5: MAIN @ 25 : 0
+
+RA-Bool[0x13] in hsr_101F8 @ 3 : 1
+RA-Bool[0x13] in hsr_101F8 @ 4 : 0
+RA-Bool[0x13] in Subaction 0x1D4: MAIN @ 7 : 0
+RA-Bool[0x13] in Subaction 0x1D4: MAIN @ 26 : 0
+RA-Bool[0x13] in Subaction 0x1D5: MAIN @ 4 : 0
+RA-Bool[0x13] in Subaction 0x1D5: MAIN @ 22 : 0
+
+RA-Bool[0x14] in Subaction 0x1D4: MAIN @ 2 : 0
+RA-Bool[0x14] in Subaction 0x1D4: MAIN @ 25 : 0
+RA-Bool[0x14] in Subaction 0x1D5: MAIN @ 1 : 0
+RA-Bool[0x14] in Subaction 0x1D5: MAIN @ 21 : 0
+
+RA-Bool[0x15] in Action 0x118 (): ENTRY @ 0 : 1
+RA-Bool[0x15] in Action 0x118 (): ENTRY @ 2 : 0
+
+RA-Bool[0x1E] in Subaction 0x62: MAIN @ 4 : 0
+RA-Bool[0x1E] in Subaction 0x62: MAIN @ 14 : 0
+RA-Bool[0x1E] in Subaction 0x63: MAIN @ 1 : 0
+RA-Bool[0x1E] in Subaction 0x63: MAIN @ 9 : 0
+RA-Bool[0x1E] in Subaction 0x64: MAIN @ 1 : 0
+RA-Bool[0x1E] in Subaction 0x64: MAIN @ 6 : 0
+RA-Bool[0x1E] in Subaction 0x65: MAIN @ 1 : 0
+RA-Bool[0x1E] in Subaction 0x65: MAIN @ 9 : 0
+RA-Bool[0x1E] in Subaction 0x66: MAIN @ 3 : 0
+RA-Bool[0x1E] in Subaction 0x66: MAIN @ 11 : 0
+RA-Bool[0x1E] in Subaction 0x66: MAIN @ 15 : 0

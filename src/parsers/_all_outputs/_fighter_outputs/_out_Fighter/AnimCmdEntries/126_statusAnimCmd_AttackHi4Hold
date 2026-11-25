@@ -1,0 +1,12 @@
+// @ 0x22B10
+AttackHi4Hold {
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(50, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(50, R(Button Not Pressed(Attack)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeSubAction(94)
+}

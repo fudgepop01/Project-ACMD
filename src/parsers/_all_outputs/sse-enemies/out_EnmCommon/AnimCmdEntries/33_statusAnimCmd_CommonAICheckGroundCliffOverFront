@@ -1,0 +1,15 @@
+// @ 0x4008
+CommonAICheckGroundCliffOverFront {
+  if (R(Compare(Common_Param_Int_Turn_Dash_Frame == 1.0))) {
+    if (R(Facing Right())) {
+      if (R(Is Overstepping an Edge()) && R(NOT Is Overstepping an Edge())) {
+        BitVariableSet(RA-Bool[0x04])
+      }
+    } else {
+      if (R(Is Overstepping an Edge()) && R(NOT Is Overstepping an Edge())) {
+        BitVariableSet(RA-Bool[0x04])
+      }
+    }
+  }
+  Return()
+}

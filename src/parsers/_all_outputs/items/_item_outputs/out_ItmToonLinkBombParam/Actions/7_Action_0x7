@@ -1,0 +1,12 @@
+// Status_Turn_Dash
+Action 0x7 {
+  (undef: team) 22_00_01_00(-1)
+  ChangeSubAction(4)
+  SetAddMomentum(0.0, 0.0, 1, 7)
+  SetAirGround(7)
+  Visibility(false)
+  BodyCollision(3)
+  SynchronousTimer(11.0)
+  ChangeAction(6, R(Button Tap?()))
+}
+

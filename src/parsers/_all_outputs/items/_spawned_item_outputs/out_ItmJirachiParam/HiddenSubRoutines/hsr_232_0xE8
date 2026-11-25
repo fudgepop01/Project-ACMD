@@ -1,0 +1,12 @@
+[hsr_E8]
+hidden_subroutine_0xE8 {
+  BasicVariableRandom(10, 22, LA-Int[0x0C])
+  SetLoop(22) {
+    SynchronousTimer(1.0)
+    if (R(Compare(LA-Int[0x0C] == 0.0))) {
+      LoopBreak()
+    }
+  }
+  (undef: Sp_base) 65_09_08_00(51, 5000, Variable_Float_Posture_Pos_X, Variable_Float_Posture_Pos_Y, 0.0, 0.0, 0.0, 0.0)
+  Return()
+}

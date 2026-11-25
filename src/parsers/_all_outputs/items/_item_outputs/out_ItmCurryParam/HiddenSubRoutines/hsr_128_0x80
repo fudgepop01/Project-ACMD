@@ -1,0 +1,6 @@
+[hsr_80]
+hidden_subroutine_0x80 {
+  RightDirection()
+  DecideDirection()
+  CharacterSpecific01()
+}

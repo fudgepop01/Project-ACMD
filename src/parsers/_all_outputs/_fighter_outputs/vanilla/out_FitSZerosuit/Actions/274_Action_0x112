@@ -1,0 +1,35 @@
+Action 0x112: ENTRY {
+  if (R(On Ground())) {
+    SetAerialOrOnstage(2)
+    SetAirGround(6)
+    ChangeSubAction(462)
+    SetRequirement(R(In Air()))
+  } else {
+    SetAerialOrOnstage(5)
+    SetAirGround(10)
+    ChangeSubAction(465)
+    SetRequirement(R(On Ground()))
+  }
+
+  ChangeAction(280, R(Animation End()))
+  AdditionalRequirement(R(Button Pressed(Special)))
+
+  ChangeAction(279, R(Animation End()))
+  SetLoop(-1) {
+    LoadRest()
+    if (R(On Ground())) {
+      SetAerialOrOnstage(2)
+      SetAirGround(6)
+      ChangeSubAction(462, true)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetAirGround(10)
+      ChangeSubAction(465, true)
+      SetRequirement(R(On Ground()))
+    }
+  }
+}
+
+Action 0x112 : EXIT {
+}

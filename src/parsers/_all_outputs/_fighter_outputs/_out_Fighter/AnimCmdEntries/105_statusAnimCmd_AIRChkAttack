@@ -1,0 +1,10 @@
+// @ 0x218C0
+AIRChkAttack {
+
+  ChangeActionStatus:01(10133, 173, R(Button Press(Attack)))
+  AdditionalRequirement(R(0x2722()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeActionStatus:01(10096, 51, R(Button Press(Attack)))
+  AdditionalRequirement(R(In Air()))
+}

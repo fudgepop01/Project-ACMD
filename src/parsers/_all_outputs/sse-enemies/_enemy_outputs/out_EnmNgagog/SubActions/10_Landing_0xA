@@ -1,0 +1,48 @@
+[Landing] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xA: MAIN {
+  FrameSpeedModifier(LA-Float[0x04])
+}
+
+Subaction 0xA: MAIN EXIT {
+}
+
+Subaction 0xA: MAIN INIT {
+  SubRoutine(hidden_subroutine_0x2C6C)
+}
+
+Subaction 0xA: GFX {
+  GraphicEffect(11, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.2, 0.0, 0.0, 0.0, 0.0, 360.0, 0.0, true)
+}
+
+Subaction 0xA: GFX EXIT {
+}
+
+Subaction 0xA: GFX INIT {
+}
+
+Subaction 0xA: SFX {
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    LandingSoundEffect(9465)
+  } elif (R(Bit is Set(LA-Bool[0x07]))) {
+    LandingSoundEffect(9450)
+  } else {
+    LandingSoundEffect(9435)
+  }
+}
+
+Subaction 0xA: SFX EXIT {
+}
+
+Subaction 0xA: SFX INIT {
+}
+

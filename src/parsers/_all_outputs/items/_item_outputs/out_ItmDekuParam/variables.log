@@ -1,0 +1,13 @@
+IC-Int[0x3EE] ("Variable_Float_Kinetic_Energy_Damage_Speed_X") in Action 0x4 (Status_Run) @ 3 : 1
+
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x4 (Status_Run) @ 2 : 1
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x5 (Status_Run_Brake) @ 1 : 1
+
+LA-Int[0x0B] in Action 0x2 (Status_Walk_Brake) @ 2 : 3
+LA-Int[0x0B] in hsr_98 @ 1 : 2
+
+LA-Int[0x0C] in Action 0x1 (Status_Walk) @ 2 : 1
+
+RA-Bool[0x01] in hsr_98 @ 0 : 2
+
+RA-Bool[0x03] in hsr_98 @ 2 : 2

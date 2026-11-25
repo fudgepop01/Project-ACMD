@@ -1,0 +1,18 @@
+Action 0xB: MAIN {
+  SetLoop(-1) {
+    FloatVariableSet(Variable_Float_Posture_Lr, LA-Float[0x07])
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0xB: EXIT {
+}
+
+Action 0xB: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(25)
+  SubAction09(3)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 15)
+  FloatVariableSet(Variable_Float_Posture_Lr, LA-Float[0x07])
+}
+

@@ -1,0 +1,16 @@
+[hsr_1BF88]
+hidden_subroutine_0x1BF88 {
+  if (R(On Ground())) {
+    if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+      ChangeSubAction(509, false)
+    } else {
+      ChangeSubAction(509, true)
+    }
+  } else {
+    if (R(NOT Bit is Set(RA-Bool[0x10]))) {
+      ChangeSubAction(517, false)
+    } else {
+      ChangeSubAction(517, true)
+    }
+  }
+}

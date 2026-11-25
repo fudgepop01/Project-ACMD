@@ -1,0 +1,5 @@
+[hsr_190]
+hidden_subroutine_0x190 {
+  InertCollision(0, 0, 0, 2.0, 0.0, 0.0, 0.0, 14, 383, 3, false, 15, 3, false, 180, false, 0)
+  Return()
+}

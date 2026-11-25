@@ -1,0 +1,43 @@
+[ShootsEnd] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xA: MAIN {
+  SynchronousTimer(62.0)
+  (undef: Sp_Link) 6E_00_02_00(0, 5101)
+  (undef: Sp_Link) 6E_00_02_00(1, 5101)
+}
+
+Subaction 0xA: MAIN EXIT {
+}
+
+Subaction 0xA: MAIN INIT {
+}
+
+Subaction 0xA: GFX {
+}
+
+Subaction 0xA: GFX EXIT {
+}
+
+Subaction 0xA: GFX INIT {
+}
+
+Subaction 0xA: SFX {
+  SynchronousTimer(50.0)
+  SoundEffect(9501)
+}
+
+Subaction 0xA: SFX EXIT {
+}
+
+Subaction 0xA: SFX INIT {
+}
+

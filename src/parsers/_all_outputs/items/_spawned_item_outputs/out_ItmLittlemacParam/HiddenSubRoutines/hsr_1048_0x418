@@ -1,0 +1,26 @@
+[hsr_418]
+hidden_subroutine_0x418 {
+  ChangeActionStatus(3, 3, R(In Air()))
+  ChangeAction(11, R(In walljump situation()), 6)
+  (undef: Sp_base) 65_07_01_00(2)
+  if (R(Compare(Variable_Float_Posture_Pos_X <= LA-Float[0x07]))) {
+    FloatVariableSubtract(8.0, LA-Float[0x07])
+  } else {
+    FloatVariableAdd(8.0, LA-Float[0x07])
+  }
+  FloatVariableSet(Variable_Float_Posture_Pos_Y, LA-Float[0x08])
+  ChangeAction(13, R(Compare(IC-Int[0x3F8] <= 8.0)))
+  SubRoutine(hsr_E8)
+  ChangeSubAction(10)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeSubAction(9)
+  (undef: Sp_Kinetic) 66_00_0D_00(2.0, 0.0, 5.0, 1.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, true, false, true)
+  (undef: control_flow_loop) 01_04_02_00(10, 20)
+  (undef: Sp_Kinetic) 66_02_03_00(0.45, 0.0, true)
+  ChangeSubAction(11)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  (undef: Sp_base) 65_13_04_00(LA-Int[0x00], 0.0, 3.0, 0.0)
+  Return()
+}

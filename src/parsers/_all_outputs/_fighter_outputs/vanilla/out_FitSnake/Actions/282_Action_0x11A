@@ -1,0 +1,10 @@
+Action 0x11A: ENTRY {
+  ChangeAction(283, R(Animation End()))
+  BasicVariableSet(474, RA-Int[0x00])
+  BasicVariableSet(468, RA-Int[0x01])
+  Goto(hidden_subroutine_0x18E40)
+}
+
+Action 0x11A : EXIT {
+  SubRoutine(hidden_subroutine_0x19928)
+}

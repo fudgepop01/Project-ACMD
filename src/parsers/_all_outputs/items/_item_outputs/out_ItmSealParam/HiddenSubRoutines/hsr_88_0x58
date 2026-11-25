@@ -1,0 +1,6 @@
+[hsr_58]
+hidden_subroutine_0x58 {
+  ChangeActionStatus(3, 3, R(In Air()))
+  ChangeActionStatus(4, 4, R(On Ground()))
+  Return()
+}

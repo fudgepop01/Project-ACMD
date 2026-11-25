@@ -1,0 +1,6 @@
+// @ 0x241C8
+CHK_AIR_SPECIAL {
+  ClearPreventInterrupt(AIR_SPECIAL)
+  SubRoutine(hidden_subroutine_0xA9AC)
+  ClearPreventInterrupt(ALL?)
+}

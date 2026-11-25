@@ -1,0 +1,7 @@
+// Status_Jump_Squat
+Action 0xA {
+  DisableSpecifiedMovement(2)
+  (undef: Sp_base) 65_19_02_00(4, 420)
+  ChangeAction(11, R(Button Tap?()))
+}
+

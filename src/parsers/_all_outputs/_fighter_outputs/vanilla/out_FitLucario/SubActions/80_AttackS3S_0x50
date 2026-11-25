@@ -1,0 +1,47 @@
+[AttackS3S] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x50: MAIN {
+  SubRoutine(hidden_subroutine_0x230F4)
+  FrameSpeedModifier(1.1112)
+  AsynchronousTimer(10.0)
+  FrameSpeedModifier(1.0)
+  BoneCollision(49, 2)
+  BoneCollision(48, 2)
+  BoneCollision(47, 2)
+  SpecialOffensiveCollision(Sp(46, 0), 10, 37, Sp(0, 35), Sp(0, 40), 3.0, 0.0, 0.0, 0.0, 0.0, 0.825, 1.0, 956509269, 0, 5242819)
+  OffensiveCollision(Sp(49, 1), 10, 40, Sp(0, 35), Sp(0, 40), 3.75, 0.0, 0.0, 0.0, 0.0, 0.825, 1.0, 956509269)
+  SynchronousTimer(5.0)
+  UndoBoneCollision(0)
+  TerminateCollisions()
+  AsynchronousTimer(27.0)
+  AllowInterrupt()
+}
+
+Subaction 0x50: GFX {
+  AsynchronousTimer(9.0)
+  GraphicEffectAttached(2228226, 29, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, true)
+  GraphicEffectAttached(2228227, 49, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, true)
+  GraphicEffect(2228228, 50, -1.0, 2.0, 1.5, 0.0, 0.0, 0.0, 0.825, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  Goto(hidden_subroutine_0xC2F8)
+}
+
+Subaction 0x50: SOUND {
+  AsynchronousTimer(9.0)
+  SoundEffect(5832)
+}
+
+Subaction 0x50: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(10.0)
+  Rumble(17, 0)
+}
+

@@ -1,0 +1,36 @@
+Action 0x112: ENTRY {
+  BitVariableClear(LA-Bool[0x3E])
+  BasicVariableSet(462, LA-Int[0x45])
+  BasicVariableSet(463, LA-Int[0x46])
+  SubRoutine(hidden_subroutine_0x26DA8)
+
+  ChangeAction(280, R(Button Press(Attack)))
+  AdditionalRequirement(R(Compare(LA-Float[0x1B] >= 65.0)))
+  AdditionalRequirement(R(NOT Button Press(CStick)))
+
+  ChangeActionStatus(10146, 279, R(Animation End()))
+  ChangeActionStatus(10147, 281, R(Animation End()))
+  EnableActionStatusId(10146)
+  DisableActionStatusId(10147)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1A6A0)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SubRoutine(hidden_subroutine_0x190C8)
+      SubRoutine(hidden_subroutine_0x18FA8)
+      SetAirGround(6)
+      SetRequirement(R(In Air()))
+    } else {
+      SubRoutine(hidden_subroutine_0x19110)
+      SubRoutine(hidden_subroutine_0x18FE8)
+      SetAirGround(10)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x112 : EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 279.0)) && R(Compare(Variable_Int_Status_Kind != 280.0)) && R(Compare(Variable_Int_Status_Kind != 281.0))) {
+    SubRoutine(hidden_subroutine_0xD808)
+  }
+}

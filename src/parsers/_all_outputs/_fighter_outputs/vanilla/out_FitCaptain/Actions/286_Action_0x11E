@@ -1,0 +1,11 @@
+Action 0x11E: ENTRY {
+  SetGimmickEffectFlag(false)
+  SetTagDisplay(false)
+  GenerateArticle(1)
+  Visibility(false)
+  SynchronousTimer(60.0)
+  ChangeAction(287, R(Button Tap?()))
+}
+
+Action 0x11E : EXIT {
+}

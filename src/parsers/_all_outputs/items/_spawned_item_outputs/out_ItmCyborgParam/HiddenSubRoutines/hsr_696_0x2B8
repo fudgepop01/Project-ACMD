@@ -1,0 +1,14 @@
+[hsr_2B8]
+hidden_subroutine_0x2B8 {
+  if (R(Is within footstool range())) {
+    ChangeActionStatus(12, 12, R(On Ground()))
+
+  } elif (R(Is within footstool range())) {
+    ChangeActionStatus(8, 8, R(On Ground()))
+    AdditionalRequirement(R(Compare(LA-Int[0x00] < 3.0)))
+
+  } else {
+    ChangeActionStatus(16, 16, R(On Ground()))
+  }
+  Return()
+}

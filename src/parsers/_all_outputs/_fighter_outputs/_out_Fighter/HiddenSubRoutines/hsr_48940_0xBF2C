@@ -1,0 +1,9 @@
+[hsr_BF2C]
+hidden_subroutine_0xBF2C {
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    EnableActionStatusId(10010)
+    BitVariableClear(RA-Bool[0x10])
+  } else {
+    DisableActionStatusId(10010)
+  }
+}

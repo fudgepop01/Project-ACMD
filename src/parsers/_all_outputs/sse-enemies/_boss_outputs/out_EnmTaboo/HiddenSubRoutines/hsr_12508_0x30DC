@@ -1,0 +1,12 @@
+[hsr_30DC]
+hidden_subroutine_0x30DC {
+  (undef: collision) 06_07_02_00(0, 2)
+  (undef: collision) 06_07_02_00(2, 2)
+  (undef: collision) 06_07_02_00(3, 2)
+  (undef: collision) 06_07_02_00(4, 2)
+  (undef: collision) 06_07_02_00(5, 2)
+  (undef: collision) 06_07_02_00(6, 2)
+  (undef: collision) 06_07_02_00(7, 2)
+  (undef: collision) 06_07_02_00(8, 2)
+  (undef: collision) 06_07_02_00(9, 2)
+}

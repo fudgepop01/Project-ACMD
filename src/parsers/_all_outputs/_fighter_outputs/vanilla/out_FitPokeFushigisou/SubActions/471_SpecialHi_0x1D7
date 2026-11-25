@@ -1,0 +1,64 @@
+[SpecialHi] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D7: MAIN {
+  ModelChanger(1, 1)
+  AsynchronousTimer(21.0)
+  OffensiveCollision(Sp(49, 0), 7, 50, Sp(0, 80), Sp(0, 50), 4.5, -1.0, 0.0, 0.0, 0.0, 1.0, 1.0, 767754897)
+  OffensiveCollision(Sp(50, 1), 8, 50, Sp(0, 80), Sp(0, 50), 4.2, -1.0, 0.0, 0.0, 0.0, 1.0, 1.0, 767754897)
+  OffensiveCollision(Sp(51, 2), 9, 50, Sp(0, 80), Sp(0, 50), 3.8, -1.0, 0.0, 0.0, 0.0, 1.0, 1.0, 767754897)
+  OffensiveCollision(Sp(52, 3), 10, 50, Sp(0, 80), Sp(0, 50), 3.5, -1.0, 0.0, 0.0, 0.0, 1.0, 1.0, 767754897)
+  OffensiveCollision(Sp(52, 4), 13, 50, Sp(0, 80), Sp(0, 70), 5.5, -8.0, 0.0, 0.0, 0.0, 0.5, 1.0, 767757969)
+  AsynchronousTimer(24.0)
+  TerminateCollisions()
+}
+
+Subaction 0x1D7: GFX {
+  GraphicEffectAttached(2097165, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(13.0)
+  GraphicEffectLanding(41, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(19.0)
+  FlashOverlayEffect(255, 255, 255, 150)
+  AsynchronousTimer(20.0)
+  GraphicEffectAttached(2097166, 52, -5.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffect(2097156, 33, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 360.0, 0.0, true)
+  FlashOverlayEffect(255, 255, 128, 150)
+  ChangeFlashOverlayColor(10, 255, 255, 255, 0)
+  AsynchronousTimer(22.0)
+  GraphicEffect(2097156, 33, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 360.0, 0.0, true)
+  GraphicEffect(29, 52, -5.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(30.0)
+  TerminateFlashEffect()
+}
+
+Subaction 0x1D7: SOUND {
+  AsynchronousTimer(11.0)
+  SoundEffect(2262)
+  SoundEffect(5613)
+  SynchronousTimer(3.0)
+  SoundEffect(5665)
+  SynchronousTimer(7.0)
+  SoundEffect(5684)
+  SynchronousTimer(10.0)
+  SoundEffect(5667)
+}
+
+Subaction 0x1D7: OTHER {
+  SlopeContourStand(1)
+  AsynchronousTimer(12.0)
+  SlopeContourStand02(0, 3)
+  Rumble(16, 0)
+  AsynchronousTimer(21.0)
+  Rumble(13, 0)
+  AsynchronousTimer(25.0)
+  SlopeContourStand02(1, 5)
+}
+

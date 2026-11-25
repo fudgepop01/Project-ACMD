@@ -1,0 +1,49 @@
+[AttackDash] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x4E: MAIN {
+  AsynchronousTimer(11.0)
+  OffensiveCollision(Sp(25, 0), 6, 35, Sp(0, 100), Sp(0, 30), 4.0, 2.5, -3.0, 0.0, 0.2, 1.0, 1.0, 860030016)
+  OffensiveCollision(Sp(25, 1), 6, 35, Sp(0, 100), Sp(0, 30), 4.0, -2.5, -3.0, 0.0, 0.2, 1.0, 1.0, 860030016)
+  OffensiveCollision(Sp(32, 2), 6, 35, Sp(0, 100), Sp(0, 30), 4.0, 2.5, -3.0, 0.0, 0.2, 1.0, 1.0, 860030016)
+  OffensiveCollision(Sp(32, 3), 6, 35, Sp(0, 100), Sp(0, 30), 4.0, -2.5, -3.0, 0.0, 0.2, 1.0, 1.0, 860030016)
+  AsynchronousTimer(35.0)
+  TerminateCollisions()
+}
+
+Subaction 0x4E: GFX {
+  AsynchronousTimer(8.0)
+  GraphicEffect(33, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(12.0)
+  GraphicEffect(14, 0, 8.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x4E: SOUND {
+  AsynchronousTimer(11.0)
+  LowVoiceClip()
+  SoundEffect(107)
+  SynchronousTimer(2.0)
+  SoundEffect(113)
+  SynchronousTimer(5.0)
+  SoundEffect(107)
+  SynchronousTimer(2.0)
+  SoundEffect(113)
+  SynchronousTimer(5.0)
+  SoundEffect(107)
+  SynchronousTimer(2.0)
+  SoundEffect(113)
+  SynchronousTimer(22.0)
+  SoundEffect(6780)
+}
+
+Subaction 0x4E: OTHER {
+}
+

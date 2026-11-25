@@ -1,0 +1,4 @@
+[hsr_753C]
+hidden_subroutine_0x753C {
+  SubRoutine(statusAnimCmd_ItemShootLanding_Common)
+}

@@ -1,0 +1,26 @@
+[AttackGun] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x5 : GAME {
+  AsynchronousTimer(4.0)
+  (undef: Sp_base) 65_0E_07_00(29, LA-Float[0x00], LA-Float[0x01], RA-Float[0x05], -5.0, 0.0, 1.0)
+  (undef: Sp_base) 65_09_08_00(165, 0, LA-Float[0x00], LA-Float[0x01], RA-Float[0x05], 7.0, 0.0, 0.0)
+}
+
+Subaction 0x5 : GFX {
+  SynchronousTimer(5.0)
+  GraphicEffect(10, 0, 0.0, 0.0, -10.0, 0.0, 0.0, 0.0, 0.9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffectAttached2(14548994, 29, -7.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.5, false)
+}
+
+Subaction 0x5 : SOUND {
+}
+

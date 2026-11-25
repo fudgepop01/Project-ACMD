@@ -1,0 +1,8 @@
+[hsr_19ED0]
+hidden_subroutine_0x19ED0 {
+  BitVariableSet(LA-Bool[0x01])
+  BitVariableClear(LA-Bool[0x19])
+  BitVariableClear(LA-Bool[0x1A])
+  BitVariableClear(LA-Bool[0x1B])
+  BitVariableClear(LA-Bool[0x1C])
+}

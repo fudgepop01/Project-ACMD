@@ -1,0 +1,4 @@
+[hsr_4FF4]
+hidden_subroutine_0x4FF4 {
+  GraphicEffect(10, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}

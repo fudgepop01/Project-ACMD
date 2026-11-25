@@ -1,0 +1,8 @@
+[hsr_78]
+hidden_subroutine_0x78 {
+  ChangeAction(6, R(Compare(LA-Int[0x0B] == 0.0)))
+  ChangeAction(6, R(Bit is Set(RA-Bool[0x03])))
+  ChangeAction(7, R(In walljump situation()), 255)
+  ChangeActionStatus(7, 7, R(Bit is Set(RA-Bool[0x02])))
+  Return()
+}

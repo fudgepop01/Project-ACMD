@@ -1,0 +1,17 @@
+// Status_Run_Brake
+Action 0x5 {
+  DisableSpecifiedMovement(2)
+  SetAerialOrOnstage(0)
+  ChangeSubAction(2)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeSubAction(3)
+  if (R(Is within footstool range())) {
+    (undef: Sp_Kinetic) 66_00_0D_00(0.3, 0.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.01, 0.005, 0.0, true, false, true)
+  } else {
+    (undef: Sp_Kinetic) 66_00_0D_00(-0.3, 0.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.01, 0.005, 0.0, true, false, true)
+  }
+  SynchronousTimer(300.0)
+  ChangeAction(6, R(Button Tap?()))
+}
+

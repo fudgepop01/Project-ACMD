@@ -1,0 +1,7 @@
+// Status_Turn_Run
+Action 0x8 {
+  ChangeSubAction(7)
+  ChangeAction(3, R(In Air()))
+  ChangeAction(4, R(On Ground()))
+}
+

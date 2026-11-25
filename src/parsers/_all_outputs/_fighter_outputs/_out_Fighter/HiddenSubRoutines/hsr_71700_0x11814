@@ -1,0 +1,16 @@
+[hsr_11814]
+hidden_subroutine_0x11814 {
+  ResetFlickX()
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus:01(10111, 155, R(Button Press(Attack)))
+  AdditionalRequirement(R(Holding Item()))
+  AdditionalRequirement(R(NOT Holding Item of Type(4194304)))
+  AdditionalRequirement(R(Compare(RA-Int[0x00] <= IC-Int[0x5A5C])))
+
+  Rumble(24, 0)
+  ConcurrentInfiniteLoop(I(9), hsr_116A4)
+}

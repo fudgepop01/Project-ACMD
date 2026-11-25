@@ -1,0 +1,11 @@
+// @ 0x31D0
+CommonDamageProcEnd {
+  BitVariableSet(RA-Bool[0x00])
+  if (R(Bit is Set(LA-Bool[0x00]))) {
+    BitVariableSet(RA-Bool[0x03])
+  }
+  BasicVariableSet(-1, LA-Int[0x00])
+  BitVariableClear(LA-Bool[0x04])
+  BitVariableClear(RA-Bool[0x02])
+  Return()
+}

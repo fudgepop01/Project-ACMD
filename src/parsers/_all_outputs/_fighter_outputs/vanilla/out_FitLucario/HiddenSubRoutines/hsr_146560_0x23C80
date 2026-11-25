@@ -1,0 +1,7 @@
+[hsr_23C80]
+hidden_subroutine_0x23C80 {
+  SubRoutine(hidden_subroutine_0x28808)
+  if (R(Compare(LA-Float[0x1B] > 130.0))) {
+    FloatVariableSet(130.0, LA-Float[0x1B])
+  }
+}

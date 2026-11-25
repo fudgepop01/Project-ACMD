@@ -1,0 +1,14 @@
+// Status_Capture_Masterhand
+Action 0xFA: ENTRY {
+  Visibility(false)
+  SetGimmickEffectFlag(false)
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+  BodyCollision(2)
+  ChangeSubAction(-1)
+  ChangeActionStatus(10036, 64, R(Button Mashable Status Expired()))
+}
+
+Action 0xFA : EXIT {
+  Visibility(true)
+}

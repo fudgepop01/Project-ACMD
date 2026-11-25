@@ -1,0 +1,4 @@
+[hsr_2048]
+hidden_subroutine_0x2048 {
+  SoundEffect(9304)
+}

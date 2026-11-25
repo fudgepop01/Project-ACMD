@@ -1,0 +1,18 @@
+[hsr_CB54]
+hidden_subroutine_0xCB54 {
+  BasicVariableIncrement(RA-Int[0x00])
+  if (R(Compare(RA-Int[0x00] <= Common_Param_Int_Item_Air_Catch_Frame_Escape))) {
+    SubRoutine(hsr_AAE4)
+  }
+  if (R(Holding Item()) && R(Compare(RA-Int[0x00] <= IC-Int[0x5A5C]))) {
+    SubRoutine(hsr_B5C4)
+  }
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    if (R(NOT Bit is Set(RA-Bool[0x11]))) {
+      SetAirGround(0)
+      BitVariableSet(RA-Bool[0x11])
+      EnableDisableLedgegrab(4)
+    }
+    SubRoutine(statusAnimCmd_FALLCommonUniq)
+  }
+}

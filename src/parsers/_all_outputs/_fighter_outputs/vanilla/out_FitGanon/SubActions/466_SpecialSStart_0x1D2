@@ -1,0 +1,50 @@
+[SpecialSStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D2: MAIN {
+  ThrowAttackCollision(1, 0, 4, 0, 10, 0, 100, 0, 1.0, 0.0, 1.0, 0, 2, 3, true, true, 0)
+  AsynchronousTimer(15.0)
+  CatchCollision_UNDOC9ARGS(0, 0, 5.0, 0.0, 8.0, 4.5, 231, 1, 2)
+  CatchCollision_UNDOC9ARGS(1, 0, 1.0, 0.0, 8.0, 4.2, 231, 3, 2)
+  BitVariableSet(RA-Bool[0x10])
+  SpecialOffensiveCollision(Sp(0, 2), 12, 25, Sp(0, 100), Sp(0, 60), 6.0, 0.0, 10.0, 7.0, 0.0, 1.0, 1.0, 553845395, 0, 5177475)
+  SpecialOffensiveCollision(Sp(31, 3), 12, 25, Sp(0, 100), Sp(0, 60), 4.8, 6.0, 0.0, 0.0, 0.0, 1.0, 1.0, 553845395, 0, 5177475)
+  AsynchronousTimer(30.0)
+  TerminateCatchCollisions()
+  TerminateCollisions()
+  BitVariableClear(RA-Bool[0x10])
+}
+
+Subaction 0x1D2: GFX {
+  GraphicEffectAttached(1376261, 41, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(15.0)
+  GraphicEffectLanding(10, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  SetLoop(5) {
+    GraphicEffectStepping(26, 0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 2.0, 0.0, 4.0, 0.0, 0.0, 0.0, false)
+    SynchronousTimer(5.0)
+  }
+  GraphicEffectLanding(10, 0, 8.0, 0.0, 0.0, 0.0, 180.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x1D2: SOUND {
+  SoundEffect(4761)
+  SynchronousTimer(19.0)
+  SoundEffect(4762)
+  SynchronousTimer(30.0)
+  SoundEffect(4769)
+  SynchronousTimer(5.0)
+  SoundEffect(4767)
+}
+
+Subaction 0x1D2: OTHER {
+  SlopeContourStand(6)
+}
+

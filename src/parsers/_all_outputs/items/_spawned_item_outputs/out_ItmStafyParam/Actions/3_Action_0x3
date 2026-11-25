@@ -1,0 +1,7 @@
+// Status_Dash
+Action 0x3 {
+  EnableSpecifiedMovement(2)
+  ChangeActionStatus(4, 4, R(On Ground()))
+  ChangeSubAction(4)
+}
+

@@ -1,0 +1,8 @@
+// @ 0x1FB24
+ScopeRapidUpperCommon {
+  GraphicEffect(26, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  FlashLightEffect(255, 220, 0, 100, 75.0, -10.0)
+  ChangeFlashLightColor(2, 255, 220, 0, 0)
+  SynchronousTimer(2.0)
+  TerminateFlashEffect()
+}

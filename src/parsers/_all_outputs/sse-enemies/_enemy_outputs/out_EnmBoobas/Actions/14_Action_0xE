@@ -1,0 +1,18 @@
+Action 0xE: MAIN {
+}
+
+Action 0xE: EXIT {
+  BitVariableClear(LA-Bool[0x07])
+}
+
+Action 0xE: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(25)
+  SubAction09(9)
+  (undef: Sp_Kinetic) 66_0B_02_00(3, 14)
+  (undef: Sp_base) 65_04_01_00(0)
+  BasicVariableSet(0, LA-Int[0x05])
+  (undef: Sp_base) 65_07_02_00(IC-Int[0xABE3], LA-Float[0x02])
+  BitVariableClear(LA-Bool[0x07])
+}
+

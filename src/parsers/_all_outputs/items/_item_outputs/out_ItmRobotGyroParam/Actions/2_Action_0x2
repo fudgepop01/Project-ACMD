@@ -1,0 +1,10 @@
+// Status_Walk_Brake
+Action 0x2 {
+  BodyCollision(3)
+  ChangeSubAction(1)
+  if (R(Bit is Set(LA-Bool[0x00]))) {
+    BitVariableSet(LA-Bool[0x01])
+    (undef: Sp_Kinetic) 66_01_06_00(0.0, 0.0, 0.0, 0.0, 0.0, 0.0)
+  }
+}
+

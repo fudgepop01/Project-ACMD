@@ -1,0 +1,43 @@
+[AttackAirF] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x63: MAIN {
+  ModelChanger(5, 2)
+  AsynchronousTimer(2.0)
+  BitVariableSet(RA-Bool[0x1E])
+  AsynchronousTimer(9.0)
+  OffensiveCollision(Sp(0, 0), 16, 361, Sp(0, 80), Sp(0, 30), 7.0, 0.0, 3.3, 11.0, 0.0, 1.0, 1.0, 977470080)
+  OffensiveCollision(Sp(0, 1), 16, 361, Sp(0, 80), Sp(0, 30), 5.5, 0.0, 3.3, 6.4, 0.0, 1.0, 1.0, 977470080)
+  SynchronousTimer(3.0)
+  OffensiveCollision(Sp(0, 0), 6, 361, Sp(0, 80), Sp(0, 10), 5.0, 0.0, 3.3, 11.0, 0.0, 1.0, 1.0, 977470016)
+  OffensiveCollision(Sp(0, 1), 6, 361, Sp(0, 80), Sp(0, 10), 4.0, 0.0, 3.3, 6.4, 0.0, 1.0, 1.0, 977470016)
+  AsynchronousTimer(32.0)
+  TerminateCollisions()
+}
+
+Subaction 0x63: GFX {
+  AsynchronousTimer(3.0)
+  GraphicEffect(16, 59, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x63: SOUND {
+  AsynchronousTimer(9.0)
+  SoundEffect(4484)
+  SynchronousTimer(3.0)
+  SoundEffect(4483)
+}
+
+Subaction 0x63: OTHER {
+  HeldItemsVisibility(false)
+  AsynchronousTimer(9.0)
+  Rumble(16, 0)
+}
+

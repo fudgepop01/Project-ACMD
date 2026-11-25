@@ -1,0 +1,38 @@
+[SpecialS] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D0: MAIN {
+  SubRoutine(hidden_subroutine_0x15670)
+  OffensiveCollision(Sp(29, 0), 2, 361, Sp(0, 0), Sp(0, 0), 6.0, 0.0, 6.0, 0.0, 0.0, 1.0, 1.0, 977478272)
+  OffensiveCollision(Sp(29, 1), 2, 361, Sp(0, 0), Sp(0, 0), 3.0, 0.0, 1.2, 0.0, 0.0, 1.0, 1.0, 977478272)
+  FloatVariableSet(12.0, RA-Float[0x04])
+  SubRoutine(hidden_subroutine_0x156A0)
+}
+
+Subaction 0x1D0: GFX {
+  AsynchronousTimer(15.0)
+  GraphicEffectLanding(33, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x1D0: SOUND {
+  AsynchronousTimer(16.0)
+  SoundEffect(4472)
+  SynchronousTimer(3.0)
+  StopSoundEffect(4472)
+}
+
+Subaction 0x1D0: OTHER {
+  AsynchronousTimer(15.0)
+  HeldItemsVisibility(false)
+  UnkRaBit27(false)
+  SetTagDisplay(false)
+}
+

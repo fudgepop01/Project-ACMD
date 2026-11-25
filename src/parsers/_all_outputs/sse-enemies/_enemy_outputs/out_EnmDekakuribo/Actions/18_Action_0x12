@@ -1,0 +1,15 @@
+Action 0x12: MAIN {
+  SubRoutine(hidden_subroutine_0x1A48)
+  SubRoutine(hidden_subroutine_0x1A60)
+  SubRoutine(hidden_subroutine_0x1A78)
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonDyingFigureProc)
+}
+
+Action 0x12: EXIT {
+}
+
+Action 0x12: INIT {
+  SubAction09(3)
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonDyingFigureProcInit)
+}
+

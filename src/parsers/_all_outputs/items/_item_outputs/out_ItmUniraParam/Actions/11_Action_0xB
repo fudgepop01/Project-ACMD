@@ -1,0 +1,9 @@
+// Status_Jump
+Action 0xB {
+  if (R(Compare(LA-Int[0x0B] == 0.0))) {
+    ChangeAction(6, R(Button Tap?()))
+  }
+  SubRoutine(hidden_subroutine_0x220)
+  ChangeAction(3, R(In Air()))
+}
+

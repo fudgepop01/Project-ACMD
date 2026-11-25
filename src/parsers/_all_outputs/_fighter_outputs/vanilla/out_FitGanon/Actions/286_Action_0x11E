@@ -1,0 +1,14 @@
+Action 0x11E: ENTRY {
+  if (R(Compare(RA-Int[0x00] == 0.0)) && R(On Ground())) {
+    Goto(hidden_subroutine_0x1BD20)
+  } elif (R(Compare(RA-Int[0x00] == 0.0)) && R(In Air())) {
+    Goto(hidden_subroutine_0x1BD80)
+  } elif (R(Compare(RA-Int[0x00] == 2.0)) && R(On Ground())) {
+    Goto(hidden_subroutine_0x1BDD0)
+  } elif (R(Compare(RA-Int[0x00] == 2.0)) && R(In Air())) {
+    Goto(hidden_subroutine_0x1BE38)
+  }
+}
+
+Action 0x11E : EXIT {
+}

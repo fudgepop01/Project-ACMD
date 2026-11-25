@@ -1,0 +1,21 @@
+// Status_Walk
+Action 0x1 {
+  DisableSpecifiedMovement(2)
+  (undef: Sp_base) 65_04_01_00(600)
+  SubRoutine(hidden_subroutine_0x8)
+  DisableActionStatusId(1)
+  (undef: Sp_base) 65_03_03_00(0.0, 270.0, 0.0)
+  DecideDirection()
+  CharacterSpecific01()
+  (undef: Sp_base) 65_07_01_00(3)
+  SubRoutine(hidden_subroutine_0x38)
+  ChangeSubAction(0)
+  ChangeSubAction(1)
+  FrameSpeedModifier(0.0)
+  (undef: Sp_base) 65_07_01_00(16)
+  FloatVariableSet(Variable_Float_Posture_Pos_X, LA-Float[0x07])
+  (undef: Sp_Kinetic) 66_05_01_00(3)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, -1.0, 1.5, 0.0, 0.0, 0.0, 0.05, 0.0, 0.0, false, false, false)
+  ChangeAction(8, R(Compare(Variable_Float_Controller_Stick_Y <= 1.0)))
+}
+

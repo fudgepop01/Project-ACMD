@@ -1,0 +1,12 @@
+[hsr_60]
+hidden_subroutine_0x60 {
+  if (R(Compare(Variable_Int_Motion_Kind == 1.0))) {
+    ChangeSubAction(1, true)
+    (undef: Sp_base) 65_0C_01_00(2.0)
+  } else {
+    ChangeSubAction(0, true)
+  }
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(6, R(Button Tap?()))
+}

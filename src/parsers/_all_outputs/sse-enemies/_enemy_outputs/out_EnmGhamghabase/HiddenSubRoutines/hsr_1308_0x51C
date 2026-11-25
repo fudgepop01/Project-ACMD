@@ -1,0 +1,12 @@
+[hsr_51C]
+hidden_subroutine_0x51C {
+  if (R(Compare(Variable_Int_Controller_Flick_X_Dir == 47.0))) {
+    (undef: shadow) 19_02_01_00(12.0)
+  } elif (R(Compare(Variable_Int_Controller_Flick_X_Dir == 48.0))) {
+    (undef: shadow) 19_02_01_00(18.6)
+  } elif (R(Compare(Variable_Int_Controller_Flick_X_Dir == 49.0))) {
+    (undef: shadow) 19_02_01_00(27.0)
+  } elif (R(Compare(Variable_Int_Controller_Flick_X_Dir == 50.0))) {
+    (undef: shadow) 19_02_01_00(35.2)
+  }
+}

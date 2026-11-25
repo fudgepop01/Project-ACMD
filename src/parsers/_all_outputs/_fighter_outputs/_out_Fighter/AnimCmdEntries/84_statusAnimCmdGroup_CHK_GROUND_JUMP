@@ -1,0 +1,6 @@
+// @ 0x24148
+CHK_GROUND_JUMP {
+  ClearPreventInterrupt(GROUND_JUMP)
+  SubRoutine(hidden_subroutine_0xA38C)
+  ClearPreventInterrupt(ALL?)
+}

@@ -1,0 +1,11 @@
+// Status_Fly
+Action 0xD {
+  BitVariableClear(LA-Bool[0x08])
+  (undef: Sp_Kinetic) 66_06_01_00(3)
+  ChangeAction(5, R(NOT In walljump situation()), 255)
+  ChangeAction(5, R(In Air()))
+  ChangeSubAction(1)
+  SubRoutine(hidden_subroutine_0xB0)
+  ChangeAction(14, R(Bit is Set(RA-Bool[0x05])))
+}
+

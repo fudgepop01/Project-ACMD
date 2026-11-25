@@ -1,0 +1,11 @@
+[hsr_1054C]
+hidden_subroutine_0x1054C {
+
+  ChangeAction(65, R(Button Mashable Status Expired()))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x11])))
+
+  ChangeAction(65, R(Button Mashable Status Expired()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeActionStatus(10036, 64, R(Button Mashable Status Expired()))
+}

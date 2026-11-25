@@ -1,0 +1,10 @@
+// Status_Fall
+Action 0xE {
+  ChangeActionStatus(3, 3, R(In Air()))
+  (undef: Sp_Kinetic) 66_02_02_00(0.1, 0.0)
+  ChangeSubAction(6)
+  SetRequirement(R(Animation has looped?()))
+  LoadRest()
+  ChangeActionStatus(11, 11, R(On Ground()))
+}
+

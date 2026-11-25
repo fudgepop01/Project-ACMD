@@ -1,0 +1,64 @@
+[CometAttack] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x9: MAIN {
+  BitVariableSet(LA-Bool[0x06])
+  AsynchronousTimer(80.0)
+  SubRoutine(hidden_subroutine_0x6B14)
+  BitVariableClear(LA-Bool[0x06])
+  AsynchronousTimer(85.0)
+  SubRoutine(hidden_subroutine_0x6B14)
+  AsynchronousTimer(90.0)
+  SubRoutine(hidden_subroutine_0x6B14)
+  AsynchronousTimer(95.0)
+  SubRoutine(hidden_subroutine_0x6B14)
+  AsynchronousTimer(100.0)
+  SubRoutine(hidden_subroutine_0x6B14)
+}
+
+Subaction 0x9: MAIN EXIT {
+}
+
+Subaction 0x9: MAIN INIT {
+}
+
+Subaction 0x9: GFX {
+  AsynchronousTimer(260.0)
+  SubRoutine(hidden_subroutine_0xBAD4)
+}
+
+Subaction 0x9: GFX EXIT {
+}
+
+Subaction 0x9: GFX INIT {
+  SubRoutine(hidden_subroutine_0xBB8C)
+}
+
+Subaction 0x9: SFX {
+  SoundEffect(9856)
+  SynchronousTimer(83.0)
+  SoundEffectTransient(9840)
+  SynchronousTimer(5.0)
+  StopTransientSoundEffect()
+  SynchronousTimer(6.0)
+  SoundEffectTransient(9840)
+  SynchronousTimer(15.0)
+  StopTransientSoundEffect()
+  SynchronousTimer(63.0)
+  SoundEffect(9841)
+}
+
+Subaction 0x9: SFX EXIT {
+}
+
+Subaction 0x9: SFX INIT {
+}
+

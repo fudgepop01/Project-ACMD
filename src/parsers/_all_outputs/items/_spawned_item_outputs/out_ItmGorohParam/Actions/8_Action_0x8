@@ -1,0 +1,12 @@
+// Status_Turn_Run
+Action 0x8 {
+  SubRoutine(hidden_subroutine_0xF90)
+  ChangeSubAction(8)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.5, 2.5, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+  ChangeActionStatus(4, 4, R(On Ground()))
+  SynchronousTimer(55.0)
+
+  ChangeActionStatus(9, 9, R(NOT 0x2715()), 20.0)
+  AdditionalRequirement(R(In Air()))
+}
+

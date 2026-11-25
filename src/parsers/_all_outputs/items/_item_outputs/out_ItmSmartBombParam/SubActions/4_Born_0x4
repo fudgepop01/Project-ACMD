@@ -1,0 +1,77 @@
+[Born] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x4 : GAME {
+  SpecialOffensiveCollision(Sp(0, 0), 1, 160, Sp(0, 100), Sp(0, 50), 10.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 50533957, 4, 1048512)
+  SynchronousTimer(6.0)
+  ChangeHitboxSize(0, 12.0)
+  SynchronousTimer(6.0)
+  ChangeHitboxSize(0, 14.0)
+  SynchronousTimer(6.0)
+  ChangeHitboxSize(0, 16.0)
+  SynchronousTimer(6.0)
+  ChangeHitboxSize(0, 18.0)
+  SynchronousTimer(6.0)
+  ChangeHitboxSize(0, 20.0)
+  SynchronousTimer(6.0)
+  ChangeHitboxSize(0, 22.0)
+  SynchronousTimer(6.0)
+  ChangeHitboxSize(0, 24.0)
+  SynchronousTimer(6.0)
+  ChangeHitboxSize(0, 26.0)
+  SynchronousTimer(6.0)
+  ChangeHitboxSize(0, 28.0)
+  SynchronousTimer(6.0)
+  ChangeHitboxSize(0, 30.0)
+  SynchronousTimer(6.0)
+  ChangeHitboxSize(0, 32.0)
+  SynchronousTimer(6.0)
+  ChangeHitboxSize(0, 34.0)
+  SynchronousTimer(6.0)
+  ChangeHitboxSize(0, 36.0)
+  SynchronousTimer(6.0)
+  ChangeHitboxSize(0, 38.0)
+  SynchronousTimer(6.0)
+  ChangeHitboxSize(0, 40.0)
+  SynchronousTimer(6.0)
+  ChangeHitboxSize(0, 42.0)
+  SynchronousTimer(6.0)
+  ChangeHitboxSize(0, 44.0)
+  SynchronousTimer(6.0)
+  ChangeHitboxSize(0, 46.0)
+  SynchronousTimer(6.0)
+  ChangeHitboxSize(0, 48.0)
+  SynchronousTimer(6.0)
+  ChangeHitboxSize(0, 50.0)
+  SynchronousTimer(6.0)
+  ChangeHitboxSize(0, 52.0)
+  SynchronousTimer(6.0)
+  TerminateCollisions()
+  SynchronousTimer(1.0)
+  SpecialOffensiveCollision(Sp(0, 256), 1, 65, Sp(0, 250), Sp(0, 60), 52.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.4, 50532485, 60, 1048512)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+}
+
+Subaction 0x4 : GFX {
+  GraphicEffectAttached(101, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  ScreenTintFull_UNDOC8ARGS(0, 60, 128, 64, 0, 150, 0, 127)
+  SynchronousTimer(140.0)
+  ScreenTintFull_UNDOC8ARGS(0, 90, 255, 128, 0, 0, 0, 127)
+  SynchronousTimer(90.0)
+  EndScreenTint(0, 0)
+}
+
+Subaction 0x4 : SOUND {
+  StopSoundEffect(8027)
+  VictorySoundEffect(8026)
+}
+

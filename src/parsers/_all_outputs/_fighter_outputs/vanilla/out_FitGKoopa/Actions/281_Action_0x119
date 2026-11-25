@@ -1,0 +1,9 @@
+Action 0x119: ENTRY {
+  ChangeSubAction(470)
+  SetAirGround(17)
+  SetAerialOrOnstage(5)
+  ChangeAction(282, R(Animation End()))
+}
+
+Action 0x119 : EXIT {
+}

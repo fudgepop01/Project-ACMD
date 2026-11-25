@@ -1,0 +1,22 @@
+[hsr_E0]
+hidden_subroutine_0xE0 {
+  if (R(Compare(LA-Int[0x00] == 0.0))) {
+    BasicVariableSet(1, LA-Int[0x00])
+    (undef: Sp_base) 65_04_01_00(-1)
+    (undef: Sp_base) 65_04_01_00(1000)
+  }
+  if (R(Compare(Variable_Int_Motion_Kind != 0.0))) {
+    BitVariableSet(LA-Bool[0x0C])
+    (undef: Sp_Kinetic) 66_06_01_00(3)
+    BitVariableClear(LA-Bool[0x08])
+    ChangeSubAction(0)
+    (undef: Sp_base) 65_1F_01_00(2)
+    ChangeAction(5, R(NOT In walljump situation()), 255)
+  } else {
+    ChangeSubAction(0)
+    SetAnimationFrame(1.0)
+    FrameSpeedModifier(0.0)
+    ChangeSubAction(0, true)
+  }
+  Return()
+}

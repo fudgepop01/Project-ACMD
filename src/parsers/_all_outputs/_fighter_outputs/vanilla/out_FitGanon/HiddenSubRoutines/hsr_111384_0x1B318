@@ -1,0 +1,6 @@
+[hsr_1B318]
+hidden_subroutine_0x1B318 {
+  SetDirection()
+  DecideDirection()
+  CharacterSpecific01()
+}

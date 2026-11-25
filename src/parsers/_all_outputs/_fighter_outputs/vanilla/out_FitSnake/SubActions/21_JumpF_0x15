@@ -1,0 +1,27 @@
+[JumpF] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x15: MAIN {
+}
+
+Subaction 0x15: GFX {
+  GraphicEffectAttached(27, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+}
+
+Subaction 0x15: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(2649)
+  SoundEffect(6423)
+}
+
+Subaction 0x15: OTHER {
+}
+

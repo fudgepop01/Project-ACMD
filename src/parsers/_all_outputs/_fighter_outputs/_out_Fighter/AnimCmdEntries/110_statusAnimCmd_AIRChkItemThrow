@@ -1,0 +1,13 @@
+// @ 0x21860
+AIRChkItemThrow {
+
+  ChangeActionStatus:01(10113, 155, R(Holding Item()))
+  AdditionalRequirement(R(Button Press(Attack)))
+  AdditionalRequirement(R(Button Pressed(Shield)))
+  AdditionalRequirement(R(NOT Holding Item of Type(4194304)))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeActionStatus:01(10111, 155, R(Holding Item of Type(8)))
+  AdditionalRequirement(R(Button Press(Attack)))
+  AdditionalRequirement(R(In Air()))
+}

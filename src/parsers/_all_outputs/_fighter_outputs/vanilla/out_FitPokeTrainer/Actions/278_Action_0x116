@@ -1,0 +1,47 @@
+Action 0x116: ENTRY {
+  if (R(Compare(Variable_Int_Situation_Kind == 5.0))) {
+    ChangeAction(285, R(Animation End()))
+  } else {
+    SetAirGround(50)
+
+    ChangeAction(281, R(Animation End()))
+    AdditionalRequirement(R(On Ground()))
+
+    ChangeAction(283, R(In Air()))
+    AdditionalRequirement(R(NOT Bit is Set(LA-Bool[0x42])))
+
+    ChangeAction(282, R(Animation End()))
+    AdditionalRequirement(R(In Air()))
+
+    ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x57C4)
+  }
+  if (R(Compare(LA-Float[0x15] < 0.0))) {
+    ChangeSubAction(497)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ChangeSubAction(498)
+    SetLoop(5) {
+      SetRequirement(R(Animation has looped?()))
+      LoadRest()
+    }
+    ChangeSubAction(499)
+  } else {
+    ChangeSubAction(494)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ChangeSubAction(495)
+    SetLoop(5) {
+      SetRequirement(R(Animation has looped?()))
+      LoadRest()
+    }
+    ChangeSubAction(496)
+  }
+}
+
+Action 0x116 : EXIT {
+  SubRoutine(hidden_subroutine_0x440C)
+  (undef: Sp_base) 65_2F_01_00(8)
+  if (R(Article Exists())) {
+    OnlyArticleEvent(1)
+  }
+}

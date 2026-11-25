@@ -1,0 +1,10 @@
+// @ 0x10C9C
+AttackLw3 {
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(18, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  InvertActionStatusId(8, 10051)
+  ChangeSubAction(85)
+}

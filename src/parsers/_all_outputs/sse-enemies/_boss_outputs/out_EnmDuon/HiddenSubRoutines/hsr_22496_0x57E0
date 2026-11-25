@@ -1,0 +1,10 @@
+[hsr_57E0]
+hidden_subroutine_0x57E0 {
+  (undef: collision) 06_07_02_00(9, 0)
+  Screenshake(2)
+  SpecialOffensiveCollisionEnemyHitbox(1, 1, 7, 16, 1.5, 70, 35, 0.1, 0, 0.0, 85, 0.25, 64.0, 0.0, 0.0, -10.0, 0.0, 0, 0.5, 0.5, 1.0, false, true, 40, 1, 1, 1, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(8.0)
+  TerminateCollisions()
+  AsynchronousTimer(56.0)
+  (undef: collision) 06_07_02_00(9, 2)
+}

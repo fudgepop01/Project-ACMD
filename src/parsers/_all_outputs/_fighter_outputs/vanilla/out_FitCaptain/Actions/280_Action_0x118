@@ -1,0 +1,24 @@
+Action 0x118: ENTRY {
+  if (R(Compare(RA-Int[0x00] == 0.0))) {
+    ChangeSubAction(467)
+    SubRoutine(hidden_subroutine_0x1B030)
+    SetAirGround(6)
+    ChangeAction(14, R(In Air()))
+
+    ChangeAction(0, R(Animation End()))
+    AdditionalRequirement(R(On Ground()))
+
+  } else {
+    ChangeSubAction(469)
+    SubRoutine(hidden_subroutine_0x1B0D0)
+    SetAirGround(0)
+    ChangeAction(16, R(Animation End()))
+
+    ChangeAction(25, R(On Ground()))
+    AdditionalRequirement(R(On Ground()))
+
+  }
+}
+
+Action 0x118 : EXIT {
+}

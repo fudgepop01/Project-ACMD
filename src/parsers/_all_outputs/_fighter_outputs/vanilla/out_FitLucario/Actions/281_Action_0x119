@@ -1,0 +1,36 @@
+Action 0x119: ENTRY {
+  BitVariableClear(LA-Bool[0x3E])
+  BasicVariableSet(468, LA-Int[0x45])
+  BasicVariableSet(469, LA-Int[0x46])
+  if (R(Compare(Variable_Int_Motion_Kind == 60.0))) {
+    BasicVariableSet(61, LA-Int[0x45])
+    BasicVariableSet(61, LA-Int[0x46])
+  }
+
+  ChangeActionStatus(0, 0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus(1, 14, R(Animation End()))
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SubRoutine(hidden_subroutine_0x190C8)
+      SubRoutine(hidden_subroutine_0x18FA8)
+      SetAirGround(6)
+      SetRequirement(R(In Air()))
+      EnableActionStatusId(0)
+      DisableActionStatusId(1)
+    } else {
+      SubRoutine(hidden_subroutine_0x19110)
+      SubRoutine(hidden_subroutine_0x18FE8)
+      SetAirGround(10)
+      SetRequirement(R(On Ground()))
+      DisableActionStatusId(0)
+      EnableActionStatusId(1)
+    }
+    LoadRest()
+  }
+}
+
+Action 0x119 : EXIT {
+  SubRoutine(hidden_subroutine_0xD808)
+}

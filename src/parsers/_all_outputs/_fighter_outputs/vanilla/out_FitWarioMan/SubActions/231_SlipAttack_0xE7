@@ -1,0 +1,53 @@
+[SlipAttack] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xE7: MAIN {
+  BodyCollision(2)
+  AsynchronousTimer(8.0)
+  BodyCollision(0)
+  AsynchronousTimer(18.0)
+  OffensiveCollision(Sp(0, 0), 10, 361, Sp(0, 50), Sp(1, 60), 4.5, 0.0, 5.0, 14.0, 0.0, 1.0, 1.0, 939721792)
+  OffensiveCollision(Sp(0, 1), 10, 361, Sp(0, 50), Sp(1, 60), 4.5, 0.0, 5.0, 7.0, 0.0, 1.0, 1.0, 939721792)
+  OffensiveCollision(Sp(0, 2), 10, 361, Sp(0, 50), Sp(1, 60), 4.5, 0.0, 5.0, 0.0, 0.0, 1.0, 1.0, 939721792)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+  AsynchronousTimer(29.0)
+  OffensiveCollision(Sp(0, 0), 10, 361, Sp(0, 50), Sp(1, 60), 4.5, 0.0, 5.0, -14.0, 0.0, 1.0, 1.0, 939721792)
+  OffensiveCollision(Sp(0, 1), 10, 361, Sp(0, 50), Sp(1, 60), 4.5, 0.0, 5.0, -7.0, 0.0, 1.0, 1.0, 939721792)
+  OffensiveCollision(Sp(0, 2), 10, 361, Sp(0, 50), Sp(1, 60), 4.5, 0.0, 5.0, 0.0, 0.0, 1.0, 1.0, 939721792)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+}
+
+Subaction 0xE7: GFX {
+  AsynchronousTimer(5.0)
+  GraphicEffectLanding(11, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0xE7: SOUND {
+  AsynchronousTimer(18.0)
+  SoundEffect(4892)
+  SynchronousTimer(11.0)
+  SoundEffect(112)
+}
+
+Subaction 0xE7: OTHER {
+  SlopeContourStand03(1, 4, true)
+  AsynchronousTimer(12.0)
+  Rumble(16, 0)
+  AsynchronousTimer(18.0)
+  Rumble(16, 0)
+  AsynchronousTimer(29.0)
+  Rumble(16, 0)
+  AsynchronousTimer(47.0)
+  SlopeContourStand(6)
+}
+

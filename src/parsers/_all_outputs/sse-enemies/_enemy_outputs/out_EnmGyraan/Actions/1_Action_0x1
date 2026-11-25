@@ -1,0 +1,20 @@
+Action 0x1: MAIN {
+}
+
+Action 0x1: EXIT {
+}
+
+Action 0x1: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(14)
+  SubAction09(5)
+  (undef: Sp_Kinetic) 66_07_01_00(-1)
+  BitVariableClear(LA-Bool[0x07])
+  (undef: Sp_Link) 6E_02_02_00(0, O(0x00000430))
+  if (R(0x2715())) {
+    (undef: Sp_Kinetic) 66_0A_02_00(4, 19)
+  } else {
+    (undef: Sp_Kinetic) 66_07_01_00(-1)
+  }
+}
+

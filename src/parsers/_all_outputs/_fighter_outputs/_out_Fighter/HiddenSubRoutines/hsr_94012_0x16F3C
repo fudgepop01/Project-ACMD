@@ -1,0 +1,11 @@
+[hsr_16F3C]
+hidden_subroutine_0x16F3C {
+  if (R(Compare(RA-Int[0x01] <= 0.0))) {
+    AllowSpecificInterrupt(AIR_SPECIAL)
+    AllowSpecificInterrupt(AIR_ITEM_THROW)
+    AllowSpecificInterrupt(AIR_ATTACK)
+    SubRoutine(hsr_DF94)
+    SubRoutine(hsr_DEAC)
+  }
+  SubRoutine(statusAnimCmd_FALLCommonUniq)
+}

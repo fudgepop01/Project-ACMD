@@ -1,0 +1,22 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  SubRoutine(hidden_subroutine_0x68)
+  ChangeAction(4, R(On Ground()))
+  BasicVariableIncrement(LA-Int[0x00])
+  ChangeSubAction(9)
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 10.0))) {
+    (undef: Sp_Kinetic) 66_00_0D_00(1.2, 4.2, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.01, 0.0, true, false, true)
+  } else {
+    (undef: Sp_Kinetic) 66_00_0D_00(1.2, 4.2, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.005, 0.0, true, false, true)
+  }
+  (undef: control_flow_loop) 01_04_02_00(10, 55)
+
+  if (R(Compare(LA-Int[0x00] < 3.0)) && R(Compare(Variable_Int_Status_Prev_Kind != 10.0))) {
+    ChangeActionStatus(10, 10, R(NOT 0x2715()), 18.0)
+    AdditionalRequirement(R(In Air()))
+
+  }
+  SubRoutine(hidden_subroutine_0x1B0)
+  SubRoutine(hidden_subroutine_0x2B8)
+}
+

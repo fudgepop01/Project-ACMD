@@ -1,0 +1,54 @@
+[hsr_19834]
+hidden_subroutine_0x19834 {
+  if (R(Compare(Variable_Float_Controller_Stick_X_Abs < Common_Param_Float_Attack_Air_Neutral_X)) && R(Compare(Variable_Float_Controller_Stick_Y_Abs < Common_Param_Float_Attack_Air_Neutral_Y))) {
+    BasicVariableSet(264, RA-Int[0x00])
+    BasicVariableSet(255, RA-Int[0x01])
+  } else {
+    if (R(Stick Direction Pressed())) {
+      if (R(Compare(Variable_Float_Controller_Stick_X_Lr >= 0.0))) {
+        if (R(Compare(Variable_Int_Controller_Flick_No_Reset_X < Common_Param_Int_Item_Air_Throw_4_Flick))) {
+          BasicVariableSet(268, RA-Int[0x00])
+          BasicVariableSet(259, RA-Int[0x01])
+          BitVariableSet(LA-Bool[0x2A])
+          AddIntStatToLog(1, 25)
+        } else {
+          BasicVariableSet(264, RA-Int[0x00])
+          BasicVariableSet(255, RA-Int[0x01])
+        }
+      } else {
+        if (R(Compare(Variable_Int_Controller_Flick_No_Reset_X < Common_Param_Int_Item_Air_Throw_4_Flick))) {
+          BasicVariableSet(269, RA-Int[0x00])
+          BasicVariableSet(260, RA-Int[0x01])
+          BitVariableSet(LA-Bool[0x2A])
+          AddIntStatToLog(1, 25)
+        } else {
+          BasicVariableSet(265, RA-Int[0x00])
+          BasicVariableSet(256, RA-Int[0x01])
+        }
+        FloatVariableSet(Variable_Float_Posture_Lr_Rv, RA-Float[0x04])
+      }
+    } else {
+      if (R(Compare(Variable_Float_Controller_Stick_Y >= 0.0))) {
+        if (R(Compare(Variable_Int_Controller_Flick_No_Reset_Y < Common_Param_Int_Item_Air_Throw_4_Flick))) {
+          BasicVariableSet(270, RA-Int[0x00])
+          BasicVariableSet(261, RA-Int[0x01])
+          BitVariableSet(LA-Bool[0x2A])
+          AddIntStatToLog(1, 25)
+        } else {
+          BasicVariableSet(266, RA-Int[0x00])
+          BasicVariableSet(257, RA-Int[0x01])
+        }
+      } else {
+        if (R(Compare(Variable_Int_Controller_Flick_No_Reset_Y < Common_Param_Int_Item_Air_Throw_4_Flick))) {
+          BasicVariableSet(271, RA-Int[0x00])
+          BasicVariableSet(262, RA-Int[0x01])
+          BitVariableSet(LA-Bool[0x2A])
+          AddIntStatToLog(1, 25)
+        } else {
+          BasicVariableSet(267, RA-Int[0x00])
+          BasicVariableSet(258, RA-Int[0x01])
+        }
+      }
+    }
+  }
+}

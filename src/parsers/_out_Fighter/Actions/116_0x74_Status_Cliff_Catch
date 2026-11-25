@@ -1,0 +1,12 @@
+// Status_Cliff_Catch
+[statusAnimCmd_CliffCatch]
+Action 0x74: ENTRY {
+  FrameSpeedModifier(1.0)
+  ChangeAction(0, R(On Ground()))
+  ChangeAction(14, R(In Air()))
+  ChangeAction(14, R(NOT Hasn't Tethered 3 Times()))
+  ChangeAction(117, R(Animation End()))
+}
+
+Action 0x74 : EXIT {
+}

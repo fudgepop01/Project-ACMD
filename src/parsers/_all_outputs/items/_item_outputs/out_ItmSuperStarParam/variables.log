@@ -1,0 +1,25 @@
+IC-Int[0x3F0] ("Variable_Float_Kinetic_Energy_Damage_Speed_Y") in Action 0x8 (Status_Turn_Run) @ 13 : 0
+
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 8 : 1
+
+LA-Int[0x0C] in Action 0x1 (Status_Walk) @ 1 : 1
+LA-Int[0x0C] in hsr_B0 @ 0 : 1
+
+LA-Float[0x00] in Action 0x1 (Status_Walk) @ 3 : 1
+LA-Float[0x00] in Action 0x1 (Status_Walk) @ 5 : 1
+LA-Float[0x00] in Action 0x8 (Status_Turn_Run) @ 3 : 1
+LA-Float[0x00] in Action 0x8 (Status_Turn_Run) @ 7 : 1
+LA-Float[0x00] in Action 0x8 (Status_Turn_Run) @ 15 : 0
+LA-Float[0x00] in Action 0xA (Status_Jump_Squat) @ 1 : 0
+
+LA-Float[0x01] in Action 0x1 (Status_Walk) @ 7 : 1
+LA-Float[0x01] in Action 0x4 (Status_Run) @ 1 : 1
+LA-Float[0x01] in Action 0x8 (Status_Turn_Run) @ 11 : 0
+LA-Float[0x01] in Action 0x9 (Status_Turn_Run_Brake) @ 1 : 1
+LA-Float[0x01] in Action 0xA (Status_Jump_Squat) @ 1 : 1
+
+RA-Float[0x01] in Action 0x8 (Status_Turn_Run) @ 11 : 1
+RA-Float[0x01] in Action 0x8 (Status_Turn_Run) @ 13 : 1
+RA-Float[0x01] in Action 0x8 (Status_Turn_Run) @ 15 : 1
+
+RA-Bool[0x05] in hsr_F8 @ 1 : 3

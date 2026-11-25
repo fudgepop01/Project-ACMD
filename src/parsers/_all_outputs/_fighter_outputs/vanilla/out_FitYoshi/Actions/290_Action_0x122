@@ -1,0 +1,33 @@
+Action 0x122: ENTRY {
+  SetGimmickEffectFlag(false)
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+  SetEvtToGroundStatus(false)
+
+  ChangeAction(292, R(0x25()), 3)
+  AdditionalRequirement(R(Compare(RA-Float[0x04] <= 0.0)))
+  AdditionalRequirement(R(Compare(RA-Int[0x00] == 486.0)))
+
+  ChangeAction(288, R(0x25()), 3)
+  AdditionalRequirement(R(Compare(RA-Int[0x00] == 486.0)))
+
+  ChangeAction(291, R(Button Press(Attack)))
+  AdditionalRequirement(R(Compare(RA-Float[0x0A] <= 0.0)))
+
+  ChangeAction(291, R(Button Press(Special)))
+  AdditionalRequirement(R(Compare(RA-Float[0x0A] <= 0.0)))
+
+  SetBoneMotionOverride(3, 484, 38)
+  BasicVariableSet(484, RA-Int[0x00])
+  FloatVariableSet(IC-Int[0xFE8], RA-Float[0x05])
+  FloatVariableSet(0.0, RA-Float[0x07])
+  FloatVariableSet(IC-Int[0xFE3], RA-Float[0x08])
+  FloatVariableSet(-1.0, RA-Float[0x09])
+  BitVariableSet(RA-Bool[0x10])
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x18928)
+  FloatVariableSet(0.0, RA-Float[0x06])
+}
+
+Action 0x122 : EXIT {
+  EndBoneMotionOverride(3)
+}

@@ -1,0 +1,35 @@
+Action 0x1C: MAIN {
+  SetLoop(-1) {
+    if (R(0x2743())) {
+      (undef: Sp_Kinetic) 66_07_01_00(4)
+    }
+    SynchronousTimer(1.0)
+  }
+  SubRoutine(hidden_subroutine_0xAA4)
+}
+
+Action 0x1C: EXIT {
+}
+
+Action 0x1C: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(7)
+  BasicVariableSet(29, LA-Int[0x06])
+  SubAction09(8)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 26)
+  if (R(Successfully tethered ledge())) {
+    (undef: Sp_Area) 69_01_05_00(Variable_Int_Controller_Flick_No_Reset_Y, 0.0, 0.0, LA-Float[0x04], true)
+    if (R(Compare(LA-Float[0x04] <= 90.0))) {
+      FloatVariableSet(0.0, LA-Float[0x04])
+    } elif (R(Compare(LA-Float[0x04] < 270.0))) {
+      FloatVariableSet(180.0, LA-Float[0x04])
+    } else {
+      FloatVariableSet(0.0, LA-Float[0x04])
+    }
+    (undef: Sp_Kinetic) 66_00_03_00(4, 27, LA-Float[0x04])
+    (undef: Sp_Kinetic) 66_0C_02_00(4, LA-Float[0x04])
+  }
+  BasicVariableSet(0, LA-Int[0x05])
+  SubRoutine(hidden_subroutine_0x964)
+}
+

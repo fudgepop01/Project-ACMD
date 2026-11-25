@@ -1,0 +1,4 @@
+[hsr_2E04]
+hidden_subroutine_0x2E04 {
+  GraphicEffectAttached(22, 300, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, true)
+}

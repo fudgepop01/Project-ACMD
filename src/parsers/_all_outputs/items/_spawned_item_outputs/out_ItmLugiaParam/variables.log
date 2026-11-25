@@ -1,0 +1,24 @@
+LA-Int[0x1B] in Subaction 0x0 : SOUND @ 1 : 1
+
+RA-Int[0x00] in Action 0x5 (Status_Run_Brake) @ 6 : 1
+RA-Int[0x00] in Action 0x5 (Status_Run_Brake) @ 8 : 1
+RA-Int[0x00] in Action 0x5 (Status_Run_Brake) @ 17 : 1
+RA-Int[0x00] in Action 0x5 (Status_Run_Brake) @ 18 : 1
+
+RA-Float[0x00] in Action 0x7 (Status_Turn_Dash) @ 4 : 2
+RA-Float[0x00] in Action 0x7 (Status_Turn_Dash) @ 7 : 1
+RA-Float[0x00] in Action 0x7 (Status_Turn_Dash) @ 10 : 2
+
+RA-Float[0x01] in Action 0x7 (Status_Turn_Dash) @ 5 : 2
+RA-Float[0x01] in Action 0x7 (Status_Turn_Dash) @ 8 : 1
+RA-Float[0x01] in Action 0x7 (Status_Turn_Dash) @ 9 : 1
+RA-Float[0x01] in Action 0x7 (Status_Turn_Dash) @ 10 : 3
+
+RA-Float[0x02] in Action 0x7 (Status_Turn_Dash) @ 6 : 3
+RA-Float[0x02] in Action 0x7 (Status_Turn_Dash) @ 10 : 4
+
+RA-Float[0x03] in Action 0x7 (Status_Turn_Dash) @ 6 : 1
+RA-Float[0x03] in Action 0x7 (Status_Turn_Dash) @ 7 : 0
+
+RA-Float[0x04] in Action 0x7 (Status_Turn_Dash) @ 6 : 2
+RA-Float[0x04] in Action 0x7 (Status_Turn_Dash) @ 8 : 0

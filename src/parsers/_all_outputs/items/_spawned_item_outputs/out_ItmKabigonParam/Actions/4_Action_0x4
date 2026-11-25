@@ -1,0 +1,10 @@
+// Status_Run
+Action 0x4 {
+  ChangeAction(3, R(In Air()))
+  ModifyRhombusX05_UNDOC3ARGS(0.21, 0.21, 0.21)
+  Screenshake(1)
+  ChangeSubAction(1)
+  SynchronousTimer(28.0)
+  ChangeAction(5, R(Button Tap?()))
+}
+

@@ -1,0 +1,7 @@
+[hsr_17508]
+hidden_subroutine_0x17508 {
+  BasicVariableDecrement(RA-Int[0x01])
+  if (R(Bit is Set(RA-Bool[0x12]))) {
+    SubRoutine(hidden_subroutine_0xB538)
+  }
+}

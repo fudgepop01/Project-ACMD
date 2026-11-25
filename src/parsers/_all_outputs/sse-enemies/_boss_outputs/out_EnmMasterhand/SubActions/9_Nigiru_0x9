@@ -1,0 +1,63 @@
+[Nigiru] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x9: MAIN {
+  AsynchronousTimer(20.0)
+  (undef: collision) 06_1A_17_00(0, 0, 10, 1.5, 361, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 1.0, 1.0, 2, 3, 0, false, false, 0, LA-Float[0x0C], true)
+  ThrowCollision(0, 5, LA-Int[0x18], 0, 0)
+  AsynchronousTimer(23.0)
+  TerminateCollisions()
+  AsynchronousTimer(70.0)
+  (undef: collision) 06_1A_17_00(0, 1, 10, 1.5, 361, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 1.0, 1.0, 2, 3, 0, false, false, 0, LA-Float[0x0C], true)
+  ThrowCollision(0, 5, LA-Int[0x18], 0, 0)
+  AsynchronousTimer(73.0)
+  TerminateCollisions()
+  AsynchronousTimer(134.0)
+  (undef: collision) 06_1A_17_00(0, 2, 10, 1.5, 361, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 1.0, 1.0, 2, 3, 0, false, false, 0, LA-Float[0x0C], true)
+  ThrowCollision(0, 5, LA-Int[0x18], 0, 0)
+  AsynchronousTimer(138.0)
+  TerminateCollisions()
+}
+
+Subaction 0x9: MAIN EXIT {
+}
+
+Subaction 0x9: MAIN INIT {
+}
+
+Subaction 0x9: GFX {
+  AsynchronousTimer(65.0)
+  GraphicEffectAttached2(12713989, 7, 2.0, -15.0, -10.0, 0.0, 0.0, 0.0, 1.5, true)
+  Screenshake(1)
+  AsynchronousTimer(125.0)
+  GraphicEffectAttached2(12713989, 7, 2.0, -15.0, -10.0, 0.0, 0.0, 0.0, 1.5, true)
+  Screenshake(1)
+}
+
+Subaction 0x9: GFX EXIT {
+}
+
+Subaction 0x9: GFX INIT {
+}
+
+Subaction 0x9: SFX {
+  SynchronousTimer(61.0)
+  SoundEffect(9886)
+  SynchronousTimer(64.0)
+  SoundEffect(9886)
+}
+
+Subaction 0x9: SFX EXIT {
+}
+
+Subaction 0x9: SFX INIT {
+}
+

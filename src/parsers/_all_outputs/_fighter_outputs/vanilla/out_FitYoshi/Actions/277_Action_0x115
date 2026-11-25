@@ -1,0 +1,14 @@
+Action 0x115: ENTRY {
+  if (R(On Ground())) {
+    ChangeSubAction(476)
+    Module0900(2)
+    SetAerialOrOnstage(5)
+    ChangeAction(285, R(Animation End()))
+  } else {
+    ChangeAction(286, R(Button Tap?()))
+  }
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x17F28)
+}
+
+Action 0x115 : EXIT {
+}

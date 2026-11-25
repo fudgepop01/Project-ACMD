@@ -1,0 +1,6 @@
+// Status_Jump
+Action 0xB {
+  (undef: Sp_base) 65_07_01_00(2)
+  SubRoutine(hidden_subroutine_0x298)
+}
+

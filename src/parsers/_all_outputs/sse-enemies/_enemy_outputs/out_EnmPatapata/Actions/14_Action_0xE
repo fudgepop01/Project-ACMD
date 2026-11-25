@@ -1,0 +1,17 @@
+Action 0xE: MAIN {
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonDamageProc [Action 0x0: MAIN] [Action 0x1: MAIN])
+}
+
+Action 0xE: EXIT {
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonDamageCancel [Action 0x0: EXIT] [Action 0x1: EXIT])
+  (undef: motion) 04_10_02_00(1, 16)
+}
+
+Action 0xE: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(21)
+  SubAction09(9)
+  SubRoutine(hidden_subroutine_0x19B0)
+  BitVariableSet(LA-Bool[0x06])
+}
+

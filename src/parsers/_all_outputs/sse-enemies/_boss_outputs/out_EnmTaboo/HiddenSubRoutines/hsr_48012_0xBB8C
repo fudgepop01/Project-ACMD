@@ -1,0 +1,5 @@
+[hsr_BB8C]
+hidden_subroutine_0xBB8C {
+  GraphicEffectAttached2(12648474, 40, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  GraphicEffectAttached2(12648479, 17, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+}

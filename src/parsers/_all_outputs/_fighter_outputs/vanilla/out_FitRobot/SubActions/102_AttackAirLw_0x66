@@ -1,0 +1,55 @@
+[AttackAirLw] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x66: MAIN {
+  BitVariableSet(RA-Bool[0x1E])
+  AsynchronousTimer(1.0)
+  SetAddMomentum(0.0, 0.1, 0.0, 1)
+  DisallowCertainMovements(2)
+  AsynchronousTimer(19.0)
+  SetAddMomentum(-0.3, 1.18, 0.0, 1)
+  OffensiveCollision(Sp(96, 0), 11, 280, Sp(0, 100), Sp(0, 30), 8.0, -5.0, 0.0, 0.0, 0.0, 1.0, 1.0, 453185669)
+  OffensiveCollision(Sp(96, 1), 13, 280, Sp(0, 100), Sp(0, 30), 7.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 453185669)
+  OffensiveCollision(Sp(96, 2), 12, 80, Sp(0, 100), Sp(0, 30), 4.0, 4.0, 0.0, 0.0, 0.0, 1.0, 1.0, 453185669)
+  OffensiveCollision(Sp(96, 3), 6, 361, Sp(0, 100), Sp(0, 10), 5.0, -11.0, 0.0, 0.0, 0.0, 1.0, 1.0, 453185669)
+  AsynchronousTimer(21.0)
+  ReallowCertainMovements(2)
+  AsynchronousTimer(24.0)
+  TerminateCollisions()
+  AsynchronousTimer(26.0)
+  BitVariableClear(RA-Bool[0x1E])
+}
+
+Subaction 0x66: GFX {
+  GraphicEffectAttached(2359299, 96, 0.0, 0.0, 0.0, 0.0, 0.0, -90.0, 1.0, true)
+  AsynchronousTimer(1.0)
+  GraphicEffect(16, 96, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(15.0)
+  GraphicEffectAttached(2359300, 96, 0.0, 0.0, 0.0, 0.0, 0.0, -90.0, 1.0, true)
+  AsynchronousTimer(18.0)
+  GraphicEffectAttached(2359301, 96, 0.0, 0.0, 0.0, 0.0, 0.0, -90.0, 1.0, true)
+  GraphicEffectAttached(2359303, 96, 0.0, 0.0, 0.0, 0.0, 0.0, -90.0, 1.0, true)
+  AsynchronousTimer(20.0)
+  GraphicEffectAttached(2359299, 96, 0.0, 0.0, 0.0, 0.0, 0.0, -90.0, 1.0, true)
+}
+
+Subaction 0x66: SOUND {
+  AsynchronousTimer(18.0)
+  LowVoiceClip()
+  SoundEffect(5939)
+}
+
+Subaction 0x66: OTHER {
+  AsynchronousTimer(18.0)
+  Screenshake(0)
+  Rumble(13, 0)
+}
+

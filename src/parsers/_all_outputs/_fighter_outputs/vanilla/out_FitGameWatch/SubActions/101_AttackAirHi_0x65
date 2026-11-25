@@ -1,0 +1,59 @@
+[AttackAirHi] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x65: MAIN {
+  ModelChanger(2, 2)
+  ModelChanger(3, 0)
+  BasicVariableSet(4, LA-Int[0x45])
+  GenerateArticle(6)
+  SetArticleAction(6, 8)
+  AsynchronousTimer(5.0)
+  BitVariableSet(RA-Bool[0x1E])
+  OffensiveCollision(Sp(0, 0), 7, 94, Sp(0, 60), Sp(0, 20), 6.5, 0.0, 14.0, -0.4, 0.0, 1.0, 1.0, 939724800)
+  OffensiveCollision(Sp(0, 1), 7, 94, Sp(0, 60), Sp(0, 20), 4.3, 0.0, 8.0, -0.4, 0.0, 1.0, 1.0, 939724800)
+  SpecialOffensiveCollision(Sp(45, 2), 0, 80, Sp(120, 100), Sp(0, 0), 13.0, 0.0, 11.0, -0.4, 0.0, 1.0, 1.0, 939720768, 0, -535822381)
+  SpecialOffensiveCollision(Sp(45, 3), 0, 80, Sp(70, 100), Sp(0, 0), 15.0, 0.0, 33.0, -0.4, 0.0, 1.0, 1.0, 939720768, 0, -535822381)
+  AsynchronousTimer(12.0)
+  TerminateCollisions()
+  AsynchronousTimer(19.0)
+  OffensiveCollision(Sp(0, 0), 9, 90, Sp(0, 98), Sp(0, 55), 6.5, 0.0, 14.0, -0.4, 0.0, 1.0, 1.0, 939724800)
+  OffensiveCollision(Sp(0, 1), 9, 90, Sp(0, 98), Sp(0, 55), 4.3, 0.0, 8.0, -0.4, 0.0, 1.0, 1.0, 939724800)
+  SpecialOffensiveCollision(Sp(45, 2), 0, 80, Sp(120, 100), Sp(0, 0), 13.0, 0.0, 11.0, -0.4, 0.0, 1.0, 1.0, 939720768, 0, -535822381)
+  SpecialOffensiveCollision(Sp(45, 3), 0, 80, Sp(70, 100), Sp(0, 0), 15.0, 0.0, 33.0, -0.4, 0.0, 1.0, 1.0, 939720768, 0, -535822381)
+  SynchronousTimer(3.0)
+  TerminateCollisions()
+}
+
+Subaction 0x65: GFX {
+}
+
+Subaction 0x65: SOUND {
+  AsynchronousTimer(6.0)
+  SoundEffect(4484)
+  SynchronousTimer(14.0)
+  SoundEffect(4484)
+}
+
+Subaction 0x65: OTHER {
+  AsynchronousTimer(6.0)
+  Rumble(16, 0)
+  AsynchronousTimer(8.0)
+  CreateAestheticWindEffects(0, 1.0, 90.0, 300.0, 1.0, 0.0, 30.0, 32.0, 60.0, 50)
+  AsynchronousTimer(18.0)
+  TerminateWindEffect(0)
+  AsynchronousTimer(18.0)
+  Rumble(16, 0)
+  AsynchronousTimer(22.0)
+  CreateAestheticWindEffects(0, 2.0, 90.0, 300.0, 1.0, 0.0, 30.0, 32.0, 60.0, 50)
+  AsynchronousTimer(26.0)
+  TerminateWindEffect(0)
+}
+

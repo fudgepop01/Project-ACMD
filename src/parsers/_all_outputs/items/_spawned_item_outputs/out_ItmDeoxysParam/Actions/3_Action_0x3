@@ -1,0 +1,11 @@
+// Status_Dash
+Action 0x3 {
+  ChangeAction(4, R(On Ground()))
+  SynchronousTimer(60.0)
+  if (R(Compare(Variable_Int_Motion_Kind == 1.0))) {
+    SetRequirement(R(Animation End()))
+    LoadRest()
+  }
+  ChangeAction(8, R(In Air()))
+}
+

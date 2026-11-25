@@ -1,0 +1,49 @@
+[SpecialNShootH] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D0: MAIN {
+  AsynchronousTimer(21.0)
+  BitVariableSet(RA-Bool[0x10])
+  GenerateArticle(1)
+}
+
+Subaction 0x1D0: GFX {
+  GraphicEffectAttached(1638405, 54, 0.0, 1.3, 3.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectStepping(13, 0, 0.0, 0.0, 12.0, 0.0, 0.0, 0.0, 0.6, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(6.0)
+  GraphicEffectAttached(1638405, 54, 0.0, 1.3, 3.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(12.0)
+  GraphicEffectAttached(1638405, 54, 0.0, 1.3, 3.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectStepping(13, 0, 0.0, 0.0, 7.5, 0.0, 0.0, 0.0, 0.6, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(21.0)
+  GraphicEffect(1638406, 54, 0.0, 1.3, 3.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(1638402, 54, 0.0, 1.3, 3.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffectLanding(10, 0, 0.0, 0.0, -5.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(24.0)
+  GraphicEffect(1638406, 54, 0.0, 1.3, 3.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x1D0: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffectTransient(4914)
+  SynchronousTimer(20.0)
+  StopTransientSoundEffect()
+  SoundEffect(4915)
+}
+
+Subaction 0x1D0: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(1.0)
+  RumbleLoop(2, 20)
+  AsynchronousTimer(23.0)
+  Rumble(12, 0)
+}
+

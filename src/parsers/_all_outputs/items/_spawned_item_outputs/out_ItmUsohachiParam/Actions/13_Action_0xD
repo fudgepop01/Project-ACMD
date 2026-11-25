@@ -1,0 +1,14 @@
+// Status_Fly
+Action 0xD {
+  (undef: Sp_Kinetic) 66_02_02_00(0.14, 0.0)
+  ChangeAction(3, R(In Air()))
+  BasicVariableSet(0, LA-Int[0x15])
+  ChangeSubAction(3)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ReverseDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  ChangeAction(4, R(Button Tap?()))
+}
+

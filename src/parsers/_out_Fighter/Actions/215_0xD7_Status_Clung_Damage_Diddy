@@ -1,0 +1,23 @@
+// Status_Clung_Damage_Diddy
+Action 0xD7: ENTRY {
+  ChangeSubAction(RA-Int[0x00])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(6)
+      SetAerialOrOnstage(1)
+      SetRequirement(R(In Air()))
+    } else {
+      if (R(Compare(RA-Int[0x00] == 416.0))) {
+        SetAirGround(13)
+      } else {
+        SetAirGround(10)
+      }
+      SetAerialOrOnstage(5)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0xD7 : EXIT {
+}

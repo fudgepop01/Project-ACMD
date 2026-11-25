@@ -1,0 +1,15 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  ChangeAction(4, R(On Ground()))
+  SetLoop(5) {
+    ChangeSubAction(6)
+    SynchronousTimer(5.0)
+    if (R(NOT 0x2715())) {
+      ChangeAction(11, R(Button Tap?()))
+    }
+  }
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(3, R(In Air()))
+}
+

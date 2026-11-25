@@ -1,0 +1,9 @@
+[hsr_765C]
+hidden_subroutine_0x765C {
+
+  ChangeActionStatus(10000, 0, R(0x25()), 1)
+  AdditionalRequirement(R(Compare(RA-Int[0x0C] >= 3.0)))
+  AdditionalRequirement(R(On Ground()))
+
+  SubRoutine(statusAnimCmd_ItemShootWait_Common)
+}

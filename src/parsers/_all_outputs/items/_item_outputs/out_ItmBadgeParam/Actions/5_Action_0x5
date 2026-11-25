@@ -1,0 +1,10 @@
+// Status_Run_Brake
+Action 0x5 {
+  DisableActionStatusId(5)
+  RightDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  ChangeSubAction(3)
+  ChangeAction(4, R(On Ground()))
+}
+

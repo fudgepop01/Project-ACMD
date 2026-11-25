@@ -1,0 +1,15 @@
+[hsr_1BF70]
+hidden_subroutine_0x1BF70 {
+  if (R(Compare(Variable_Float_Controller_Stick_Y > 0.0))) {
+    FrameSpeedModifier(IC-Int[0xFB4])
+  } else {
+    FrameSpeedModifier(IC-Int[0xFB5])
+  }
+  BasicVariableDecrement(RA-Int[0x01])
+  if (R(Compare(RA-Int[0x00] > 0.0))) {
+    BasicVariableDecrement(RA-Int[0x00])
+    if (R(Compare(RA-Int[0x00] <= 0.0))) {
+      ChangeAction(286, R(On Ground()))
+    }
+  }
+}

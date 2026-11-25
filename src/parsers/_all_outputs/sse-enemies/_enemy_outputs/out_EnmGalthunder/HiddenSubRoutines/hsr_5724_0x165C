@@ -1,0 +1,17 @@
+[hsr_165C]
+hidden_subroutine_0x165C {
+  ModuleGetTraceVecFromLine_UNDOC2ARGS(LA-Float[0x0A], LA-Float[0x0B])
+  (undef: Sp_Kinetic) 66_1C_04_00(Variable_Float_Posture_Lr, LA-Float[0x0A], LA-Float[0x0B], LA-Float[0x04])
+  (undef: Sp_Kinetic) 66_0C_02_00(3, LA-Float[0x04])
+  ModuleGetDistFromCurrentTrace_UNDOC1ARGS(LA-Float[0x05])
+  if (R(Compare(LA-Float[0x05] <= IC-Int[0x41A]))) {
+    if (R(NOT In walljump situation())) {
+      (undef: Sp_Kinetic) 66_04_01_00(3)
+    }
+  } else {
+    if (R(In walljump situation())) {
+      (undef: Sp_Kinetic) 66_05_01_00(3)
+    }
+  }
+  Return()
+}

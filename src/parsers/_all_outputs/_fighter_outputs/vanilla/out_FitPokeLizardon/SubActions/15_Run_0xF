@@ -1,0 +1,32 @@
+[Run] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xF: MAIN {
+}
+
+Subaction 0xF: GFX {
+  SetLoop(-1) {
+    SynchronousTimer(6.0)
+    GraphicEffectStepping(28, 0, -8.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+    SynchronousTimer(5.0)
+    GraphicEffectStepping(28, 0, 8.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  }
+}
+
+Subaction 0xF: SOUND {
+  AsynchronousTimer(4.0)
+  SoundEffectTransient(5412)
+}
+
+Subaction 0xF: OTHER {
+  SlopeContourStand03(1, 10, true)
+}
+

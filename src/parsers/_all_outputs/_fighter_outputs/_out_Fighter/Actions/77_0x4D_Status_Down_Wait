@@ -1,0 +1,17 @@
+// Status_Down_Wait
+Action 0x4D: ENTRY {
+  FloatVariableSet(Common_Param_Float_Down_Frame, RA-Float[0x09])
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 134.0))) {
+    ChangeSubAction(180)
+  } else {
+    if (R(Bit is Set(RA-Bool[0x19]))) {
+      ChangeSubAction(171)
+    } else {
+      ChangeSubAction(180)
+    }
+  }
+  SubRoutine(hidden_subroutine_0x14B8C)
+}
+
+Action 0x4D : EXIT {
+}

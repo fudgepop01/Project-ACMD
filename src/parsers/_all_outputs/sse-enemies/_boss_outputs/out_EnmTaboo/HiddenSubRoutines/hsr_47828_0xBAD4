@@ -1,0 +1,5 @@
+[hsr_BAD4]
+hidden_subroutine_0xBAD4 {
+  GraphicEffectAttached2(12648474, 18, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  GraphicEffectAttached2(12648479, 17, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+}

@@ -1,0 +1,8 @@
+// @ 0x1434C
+CliffCatch {
+  FrameSpeedModifier(1.0)
+  ChangeAction(0, R(On Ground()))
+  ChangeAction(14, R(In Air()))
+  ChangeAction(14, R(NOT Hasn't Tethered 3 Times()))
+  ChangeAction(117, R(Animation End()))
+}

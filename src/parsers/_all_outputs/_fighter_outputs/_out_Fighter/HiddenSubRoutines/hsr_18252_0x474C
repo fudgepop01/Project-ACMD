@@ -1,0 +1,4 @@
+[hsr_474C]
+hidden_subroutine_0x474C {
+  GraphicEffect(26, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}

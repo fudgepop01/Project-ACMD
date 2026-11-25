@@ -1,0 +1,22 @@
+[hsr_1BE38]
+hidden_subroutine_0x1BE38 {
+  ChangeSubAction(479)
+  ChangeActionStatus(0, 14, R(Animation End()))
+  SetRequirement01(0, R(On Ground()))
+  EnableActionStatusId(0)
+  (undef: motion) 04_04_01_00(0)
+  ChangeActionStatus(2, 14, R(In Air()))
+  ChangeActionStatus(1, 0, R(Animation End()))
+  DisableActionStatusId(1)
+  DisableActionStatusId(2)
+  LoadRest()
+  if (R(On Ground())) {
+    DisableActionStatusId(0)
+    (undef: motion) 04_05_01_00(0)
+    SubRoutine(hsr_1B1E0)
+    SetAirGround(6)
+    EnableActionStatusId(1)
+    EnableActionStatusId(2)
+    ChangeSubAction(481)
+  }
+}

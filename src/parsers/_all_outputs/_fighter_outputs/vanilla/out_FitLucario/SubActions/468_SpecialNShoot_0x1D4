@@ -1,0 +1,61 @@
+[SpecialNShoot] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D4: MAIN {
+  AsynchronousTimer(5.0)
+  SetExAnchoredArticleAction(0, 2)
+  BasicVariableSet(0.0, LA-Int[0x41])
+  AsynchronousTimer(35.0)
+  AllowInterrupt()
+}
+
+Subaction 0x1D4: GFX {
+  AsynchronousTimer(6.0)
+  GraphicEffectLanding(40, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  FlashOverlayEffect(255, 255, 255, 240)
+  SynchronousTimer(1.0)
+  FlashOverlayEffect(80, 120, 255, 100)
+  SynchronousTimer(1.0)
+  ChangeFlashOverlayColor(5, 0, 0, 80, 0)
+  SynchronousTimer(5.0)
+  TerminateFlashEffect()
+}
+
+Subaction 0x1D4: SOUND {
+  Switch(10000, LA-Int[0x41])
+    Case(0)
+      Goto(hidden_subroutine_0x10A48)
+    Case(1)
+      Goto(hidden_subroutine_0x10A48)
+    Case(2)
+      Goto(hidden_subroutine_0x10A48)
+    Case(3)
+      Goto(hidden_subroutine_0x10AD8)
+    Case(4)
+      Goto(hidden_subroutine_0x10AD8)
+    Case(5)
+      Goto(hidden_subroutine_0x10AD8)
+    Case(6)
+      Goto(hidden_subroutine_0x10AD8)
+    Case(7)
+      NoEvent()
+  EndSwitch()
+}
+
+Subaction 0x1D4: OTHER {
+  HeldItemsVisibility(false)
+  SlopeContourStand(6)
+  AsynchronousTimer(7.0)
+  Rumble(14, 0)
+  AsynchronousTimer(20.0)
+  HeldItemsVisibility(true)
+}
+

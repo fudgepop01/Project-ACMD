@@ -1,0 +1,18 @@
+[hsr_17248]
+hidden_subroutine_0x17248 {
+  BasicVariableDecrement(RA-Int[0x01])
+  BasicVariableIncrement(RA-Int[0x03])
+  if (R(Compare(RA-Int[0x03] == IC-Int[0x5DC2]))) {
+    GenerateArticle(2)
+    SetArticleAction(2, 0)
+    BitVariableSet(RA-Bool[0x15])
+  } elif (R(Bit is Set(RA-Bool[0x15]))) {
+    SetArticleAction07(2, 1)
+    BitVariableClear(RA-Bool[0x15])
+  }
+  if (R(Bit is Set(RA-Bool[0x13])) && R(In Air())) {
+    EnableSpecifiedMovement(1)
+  } else {
+    DisableSpecifiedMovement(1)
+  }
+}

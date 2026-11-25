@@ -1,0 +1,65 @@
+[SpecialN] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1E8: MAIN {
+  AsynchronousTimer(16.0)
+  SuperHeavyArmor(1, 0.0)
+  AsynchronousTimer(17.0)
+  OffensiveCollision(Sp(20, 0), 18, 80, Sp(0, 80), Sp(0, 40), 5.7, 8.0, 0.0, 0.0, 0.0, 1.0, 1.0, 956499072)
+  SynchronousTimer(1.0)
+  OffensiveCollision(Sp(20, 0), 28, 361, Sp(0, 80), Sp(0, 10), 6.0, 8.0, 0.0, 0.0, 0.0, 1.0, 1.0, 956499072)
+  OffensiveCollision(Sp(20, 1), 28, 361, Sp(0, 80), Sp(0, 10), 5.0, -1.0, 0.0, 0.0, 0.0, 1.0, 1.0, 956499072)
+  OffensiveCollision(Sp(19, 2), 28, 361, Sp(0, 80), Sp(0, 10), 4.0, -1.5, 0.0, 0.0, 0.0, 1.0, 1.0, 956499072)
+  OffensiveCollision(Sp(16, 3), 18, 361, Sp(0, 50), Sp(0, 10), 3.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 956499008)
+  SynchronousTimer(2.0)
+  SuperHeavyArmor(0, 0.0)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+  AsynchronousTimer(45.0)
+  AllowInterrupt()
+}
+
+Subaction 0x1E8: GFX {
+  GraphicEffectAttached(131074, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  SetLoop(3) {
+    SynchronousTimer(4.0)
+    GraphicEffect(16, 30, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 5.0, 5.0, 5.0, 0.0, 0.0, 0.0, false)
+  }
+  AsynchronousTimer(12.0)
+  FlashOverlayEffect(255, 255, 128, 160)
+  AsynchronousTimer(13.0)
+  ChangeFlashOverlayColor(5, 255, 255, 128, 0)
+  AsynchronousTimer(18.0)
+  TerminateFlashEffect()
+  GraphicEffectLanding(40, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(20.0)
+  GraphicEffectAttached(131075, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+}
+
+Subaction 0x1E8: SOUND {
+  AsynchronousTimer(18.0)
+  SoundEffect(1039)
+  SoundEffect(2794)
+  SoundEffect(2779)
+  SoundEffect(169)
+}
+
+Subaction 0x1E8: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(1.0)
+  SlopeContourStand02(2, 5)
+  Rumble(12, 0)
+  AsynchronousTimer(18.0)
+  Screenshake(1)
+  Rumble(15, 0)
+  SlopeContourStand02(6, 3)
+}
+

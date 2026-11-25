@@ -1,0 +1,16 @@
+Action 0x1: MAIN {
+}
+
+Action 0x1: EXIT {
+}
+
+Action 0x1: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  SubAction09(5)
+  (undef: Sp_Link) 6E_00_03_00(0, 5104, 5)
+  (undef: Sp_Link) 6E_00_03_00(1, 5104, 5)
+  (undef: Sp_Kinetic) 66_07_01_00(-1)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+  BodyCollision(2)
+}
+

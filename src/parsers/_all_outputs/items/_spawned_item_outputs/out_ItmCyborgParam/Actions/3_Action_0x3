@@ -1,0 +1,17 @@
+// Status_Dash
+Action 0x3 {
+  SubRoutine(hidden_subroutine_0x68)
+  ChangeSubAction(1)
+  ChangeActionStatus(4, 4, R(On Ground()))
+  (undef: Sp_Kinetic) 66_02_02_00(0.04, 0.0)
+  if (R(Is within footstool range())) {
+    ChangeAction(15, R(In Air()))
+    AdditionalRequirement_UNDOC5ARGS(R(Is falling+hit down()), -15.0, -30.0, 15.0, 20.0)
+  }
+  SynchronousTimer(20.0)
+
+  ChangeActionStatus(10, 10, R(NOT 0x2715()), 18.0)
+  AdditionalRequirement(R(In Air()))
+  AdditionalRequirement(R(Compare(LA-Int[0x00] < 3.0)))
+}
+

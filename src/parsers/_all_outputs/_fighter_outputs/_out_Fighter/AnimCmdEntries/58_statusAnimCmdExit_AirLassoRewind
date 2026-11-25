@@ -1,0 +1,4 @@
+// @ 0x230C0
+AirLassoRewind {
+  RemoveArticle(RA-Int[0x00])
+}

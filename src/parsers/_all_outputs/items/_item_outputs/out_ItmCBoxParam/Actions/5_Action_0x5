@@ -1,0 +1,11 @@
+// Status_Run_Brake
+Action 0x5 {
+  (undef: Sp_base) 65_1F_01_00(2)
+  SubRoutine(hidden_subroutine_0x88)
+  if (R(Bit is Set(LA-Bool[0x00]))) {
+    ChangeSubAction(2)
+  } else {
+    ChangeSubAction(3)
+  }
+}
+

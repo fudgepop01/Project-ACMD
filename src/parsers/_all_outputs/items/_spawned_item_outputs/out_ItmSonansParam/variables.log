@@ -1,0 +1,10 @@
+LA-Int[0x0B] in Action 0xC (Status_Jump_Aerial) @ 0 : 2
+LA-Int[0x0B] in Action 0xD (Status_Fly) @ 0 : 2
+LA-Int[0x0B] in Action 0xE (Status_Fall) @ 0 : 2
+
+LA-Int[0x1B] in Subaction 0x0 : SOUND @ 0 : 1
+
+LA-Bool[0x00] in Action 0x3 (Status_Dash) @ 1 : 1
+LA-Bool[0x00] in Action 0xC (Status_Jump_Aerial) @ 6 : 0
+
+RA-Bool[0x01] in Action 0xE (Status_Fall) @ 4 : 2

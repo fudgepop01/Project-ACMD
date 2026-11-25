@@ -1,0 +1,34 @@
+Action 0x114: ENTRY {
+
+  ChangeActionStatus(10146, 279, R(Animation End()))
+  AdditionalRequirement(R(Button Pressed(Special)))
+
+  ChangeActionStatus(10147, 280, R(Animation End()))
+  BasicVariableSet(0, RA-Int[0x00])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(6)
+      SetAerialOrOnstage(1)
+      Module0900(0)
+      ChangeSubAction(474)
+      SetRequirement(R(In Air()))
+      BitVariableSet(RA-Bool[0x10])
+    } else {
+      DisableActionStatusId(10146)
+      DisableActionStatusId(10147)
+      ChangeAction(16, R(Animation End()))
+      ChangeAction(25, R(On Ground()))
+      BasicVariableSet(Customize_Param_Int_Jump_Count_Max, LA-Int[0x01])
+      SetCliffCheck(4)
+      SetAirGround(100)
+      SetAerialOrOnstage(5)
+      Module0900(2)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(477, true)
+      } else {
+        ChangeSubAction(477)
+      }
+}
+
+Action 0x114 : EXIT {
+}

@@ -1,0 +1,12 @@
+// Status_Walk
+Action 0x1 {
+  SubRoutine(hidden_subroutine_0x10)
+  (undef: Sp_base) 65_04_01_00(600)
+  (undef: Sp_base) 65_03_03_00(0.0, 270.0, 0.0)
+  ChangeSubAction(0)
+  (undef: Sp_Kinetic) 66_01_03_00(0.0, 0.0, -0.7)
+  DecideDirection()
+  CharacterSpecific01()
+  ChangeAction(9, R(Button Tap?()))
+}
+

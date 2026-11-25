@@ -1,0 +1,7 @@
+[hsr_2E1C]
+hidden_subroutine_0x2E1C {
+
+  ChangeActionStatus:01(10104, 52, R(Button Pressed(Shield)))
+  AdditionalRequirement(R(Button Press(Attack)))
+  AdditionalRequirement(R(On Ground()))
+}

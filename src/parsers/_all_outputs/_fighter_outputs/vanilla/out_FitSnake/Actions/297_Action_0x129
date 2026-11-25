@@ -1,0 +1,7 @@
+Action 0x129: ENTRY {
+  SubRoutine(EXTERNAL: statusAnimCmd_ItemShootJumpSquat_Common)
+}
+
+Action 0x129 : EXIT {
+  SubRoutine(hidden_subroutine_0x1B0F4)
+}

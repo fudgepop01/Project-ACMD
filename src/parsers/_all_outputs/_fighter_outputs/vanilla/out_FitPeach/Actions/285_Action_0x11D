@@ -1,0 +1,38 @@
+Action 0x11D: ENTRY {
+  ChangeActionStatus(10000, 0, R(Animation End()))
+  ChangeActionStatus(10002, 14, R(Animation End()))
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      Module0900(0)
+      SetAerialOrOnstage(1)
+      SetAirGround(6)
+      if (R(Compare(Variable_Int_Motion_Kind == 476.0))) {
+        ChangeSubAction(475, true)
+      } else {
+        ChangeSubAction(475)
+      }
+      (undef: motion) 04_05_01_00(24)
+      SetRequirement(R(In Air()))
+      EnableActionStatusId(10000)
+      DisableActionStatusId(10002)
+    } else {
+      Module0900(2)
+      SetAerialOrOnstage(5)
+      SetAirGround(108)
+      if (R(Compare(Variable_Int_Motion_Kind == 475.0))) {
+        ChangeSubAction(476, true)
+      } else {
+        ChangeSubAction(476)
+      }
+      (undef: motion) 04_05_01_00(24)
+      SetRequirement(R(On Ground()))
+      DisableActionStatusId(10000)
+      EnableActionStatusId(10002)
+    }
+    LoadRest()
+  }
+}
+
+Action 0x11D : EXIT {
+  SubRoutine(hidden_subroutine_0x17CE0)
+}

@@ -1,0 +1,22 @@
+Action 0x25: MAIN {
+  SubRoutine(hidden_subroutine_0x1280)
+}
+
+Action 0x25: EXIT {
+}
+
+Action 0x25: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(11)
+  BasicVariableSet(38, LA-Int[0x06])
+  SubAction09(25)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 27)
+  if (R(Facing Left())) {
+    (undef: Sp_base) 65_1F_02_00(IC-Int[0xABEC], LA-Float[0x0A])
+  } else {
+    (undef: Sp_base) 65_1F_02_00(IC-Int[0xABEA], LA-Float[0x0A])
+  }
+  (undef: Sp_base) 65_16_00_00()
+  (undef: Sp_base) 65_14_01_00(LA-Float[0x0A])
+}
+

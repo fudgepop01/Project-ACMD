@@ -1,0 +1,7 @@
+// @ 0x3F18
+CommonAICheckEnergyEnd {
+  if (R(0x2710())) {
+    BitVariableSet(RA-Bool[0x04])
+  }
+  Return()
+}

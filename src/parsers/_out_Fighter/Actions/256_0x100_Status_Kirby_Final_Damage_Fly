@@ -1,0 +1,13 @@
+// Status_Kirby_Final_Damage_Fly
+Action 0x100: ENTRY {
+  BodyCollision(3)
+  SetGimmickEffectFlag(false)
+  ChangeSubAction(RA-Int[0x00])
+}
+
+Action 0x100 : EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 257.0))) {
+    BodyCollision(0)
+    SetGimmickEffectFlag(true)
+  }
+}

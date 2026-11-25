@@ -1,0 +1,5 @@
+// @ 0x3780
+CommonDyingWaterProc {
+  SubRoutine(hidden_subroutine_0x2D0)
+  Return()
+}

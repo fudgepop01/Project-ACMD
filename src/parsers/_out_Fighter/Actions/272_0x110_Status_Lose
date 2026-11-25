@@ -1,0 +1,15 @@
+// Status_Lose
+[statusAnimCmd_Lose]
+Action 0x110: ENTRY {
+  BitVariableSet(LA-Bool[0x01])
+  NothingDueToBug(false)
+  if (R(NOT Subaction Exists())) {
+    ChangeSubAction(229)
+  } else {
+    ChangeSubAction(458)
+  }
+}
+
+Action 0x110 : EXIT {
+  BroadcastResultEnd()
+}

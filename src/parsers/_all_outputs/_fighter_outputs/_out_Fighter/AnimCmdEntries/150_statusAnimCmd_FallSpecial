@@ -1,0 +1,6 @@
+// @ 0x21F60
+FallSpecial {
+  ChangeActionStatus(10029, 25, R(On Ground()))
+  ChangeSubAction(38)
+  ConcurrentInfiniteLoop(I(9), statusAnimCmd_FALLCommonUniq)
+}

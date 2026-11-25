@@ -1,0 +1,23 @@
+Action 0x4: MAIN {
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonBulletProc)
+}
+
+Action 0x4: EXIT {
+}
+
+Action 0x4: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_03_00_00()
+  SubAction09(1)
+  SubRoutine(hidden_subroutine_0x420)
+  if (R(NOT Bit is Set(LA-Bool[0x04]))) {
+    if (R(Compare(LA-Float[0x09] <= IC-Int[0xFA0]))) {
+      SubRoutine(hidden_subroutine_0x7A0)
+    } elif (R(Compare(LA-Float[0x09] <= IC-Int[0xFA1]))) {
+      SubRoutine(hidden_subroutine_0x7D8)
+    } else {
+      SubRoutine(hidden_subroutine_0x7F0)
+    }
+  }
+}
+

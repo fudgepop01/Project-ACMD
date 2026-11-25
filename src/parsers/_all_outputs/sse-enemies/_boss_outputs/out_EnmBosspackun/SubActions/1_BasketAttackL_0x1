@@ -1,0 +1,59 @@
+[BasketAttackL] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1: MAIN {
+  AsynchronousTimer(69.0)
+  TerminateCollisions()
+  AsynchronousTimer(70.0)
+  (undef: Sp_Link) 6E_02_02_00(0, O(0x0000297C))
+  SetLoop(20) {
+    Screenshake(0)
+    AsynchronousTimer(6.0)
+  }
+  AsynchronousTimer(115.0)
+  (undef: Sp_Link) 6E_02_02_00(0, O(0x00002C9C))
+}
+
+Subaction 0x1: MAIN EXIT {
+}
+
+Subaction 0x1: MAIN INIT {
+  SubRoutine(hidden_subroutine_0x2FB4)
+}
+
+Subaction 0x1: GFX {
+  AsynchronousTimer(70.0)
+  GraphicEffectAttached2(12124190, 0, 0.0, 0.0, 0.0, 0.0, 90.0, 0.0, 1.0, true)
+  GraphicEffectAttached2(12124191, 0, 0.0, 0.0, 0.0, 0.0, 90.0, 0.0, 1.0, true)
+  GraphicEffectAttached2(12124192, 0, 0.0, 0.0, 0.0, 0.0, 90.0, 0.0, 1.0, true)
+}
+
+Subaction 0x1: GFX EXIT {
+}
+
+Subaction 0x1: GFX INIT {
+}
+
+Subaction 0x1: SFX {
+  SynchronousTimer(17.0)
+  SoundEffect(9593)
+  SynchronousTimer(59.0)
+  if (R(Compare(IC-Int[0x5DC0] == 0.0))) {
+    SoundEffect(9606)
+  }
+}
+
+Subaction 0x1: SFX EXIT {
+}
+
+Subaction 0x1: SFX INIT {
+}
+

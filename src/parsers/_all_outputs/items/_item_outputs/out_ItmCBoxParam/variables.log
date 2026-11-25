@@ -1,0 +1,7 @@
+LA-Bool[0x00] in Action 0x4 (Status_Run) @ 5 : 2
+LA-Bool[0x00] in Action 0x5 (Status_Run_Brake) @ 2 : 1
+LA-Bool[0x00] in hsr_88 @ 2 : 1
+
+LA-Bool[0x08] in hsr_88 @ 5 : 0
+
+RA-Bool[0x02] in hsr_88 @ 0 : 3

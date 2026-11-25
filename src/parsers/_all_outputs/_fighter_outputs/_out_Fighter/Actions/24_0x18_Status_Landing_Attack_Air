@@ -1,0 +1,14 @@
+// Status_Landing_Attack_Air
+[statusAnimCmd_LandingAttackAir]
+Action 0x18: ENTRY {
+  ChangeAction(14, R(In Air()))
+  if (R(NOT Bit is Set(LA-Bool[0x0B])) && R(NOT Compare(Variable_Int_Have_Item_Kind == 0.0))) {
+    SubRoutine(hidden_subroutine_0xF6BC)
+    ConcurrentInfiniteLoop(I(9), hidden_subroutine_0xF5D4)
+  } else {
+    ChangeAction(0, R(Animation End()))
+  }
+}
+
+Action 0x18 : EXIT {
+}

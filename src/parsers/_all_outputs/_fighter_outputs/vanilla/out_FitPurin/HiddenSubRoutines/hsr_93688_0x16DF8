@@ -1,0 +1,29 @@
+[hsr_16DF8]
+hidden_subroutine_0x16DF8 {
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(RA-Int[0x06], true)
+        FrameSpeedModifier(RA-Float[0x0F])
+      } else {
+        ChangeSubAction(RA-Int[0x06])
+        FrameSpeedModifier(RA-Float[0x0F])
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(RA-Int[0x07], true)
+        FrameSpeedModifier(RA-Float[0x0F])
+      } else {
+        ChangeSubAction(RA-Int[0x07])
+        FrameSpeedModifier(RA-Float[0x0F])
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}

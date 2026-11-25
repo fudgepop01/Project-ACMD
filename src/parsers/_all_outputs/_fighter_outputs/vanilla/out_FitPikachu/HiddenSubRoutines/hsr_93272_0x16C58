@@ -1,0 +1,5 @@
+[hsr_16C58]
+hidden_subroutine_0x16C58 {
+  BasicVariableDecrement(RA-Int[0x01])
+  SubRoutine(hidden_subroutine_0xAE18)
+}

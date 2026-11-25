@@ -1,0 +1,8 @@
+// Status_Capture_Damage
+Action 0x3F: ENTRY {
+  ChangeActionStatus(10035, 62, R(Animation End()))
+  SubRoutine(hidden_subroutine_0x107FC)
+}
+
+Action 0x3F : EXIT {
+}

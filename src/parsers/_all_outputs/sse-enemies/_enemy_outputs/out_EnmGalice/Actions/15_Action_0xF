@@ -1,0 +1,29 @@
+Action 0xF: MAIN {
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0xECC)
+    if (R(NOT 0x3F())) {
+      LoopBreak()
+    }
+    SubRoutine(hidden_subroutine_0x165C)
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0xF: EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 8.0)) && R(Compare(Variable_Int_Status_Kind != 0.0)) && R(Compare(Variable_Int_Status_Kind != 13.0)) && R(Compare(Variable_Int_Status_Kind != 15.0))) {
+    SubRoutine(hidden_subroutine_0xBBC)
+  }
+  (undef: collision) 06_2A_00_00()
+}
+
+Action 0xF: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_01_01_00(8)
+  (undef: Sp_AI) 6A_00_01_00(14)
+  BasicVariableSet(13, LA-Int[0x06])
+  (undef: Sp_base) 65_09_02_00(IC-Int[0xABE3], LA-Float[0x02])
+  SubAction09(6)
+  SubRoutine(hidden_subroutine_0x43C)
+  (undef: collision) 06_29_01_00(0)
+}
+

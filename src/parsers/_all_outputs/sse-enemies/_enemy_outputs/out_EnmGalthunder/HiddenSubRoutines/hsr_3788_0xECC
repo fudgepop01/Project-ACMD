@@ -1,0 +1,51 @@
+[hsr_ECC]
+hidden_subroutine_0xECC {
+  if (R(NOT 0x3F())) {
+    SubRoutine(hsr_BBC)
+    Return()
+  }
+  if (R(0x41())) {
+    if (R(NOT 0x44()) && R(0x45())) {
+      ModuleGetTraceTargetPosturePos_UNDOC3ARGS(IC-Int[0xFA1], LA-Float[0x0A], LA-Float[0x0B])
+      TeleportationStageBased2(LA-Float[0x0A], LA-Float[0x0B], 0.0)
+      CharacterSpecific01()
+      ModuleRenewTarce_UNDOC4ARGS(IC-Int[0xFA1], IC-Int[0xFA0], IC-Int[0x5DC0], LA-Bool[0x06])
+      GroundModuleUpdate()
+      (undef: ground) 08_12_00_00()
+      CharacterSpecific01()
+    } else {
+      ModuleRenewTarce_UNDOC4ARGS(IC-Int[0xFA1], IC-Int[0xFA0], IC-Int[0x5DC0], LA-Bool[0x06])
+    }
+    if (R(Bit is Set(LA-Bool[0x06]))) {
+      SubRoutine(hsr_BBC)
+      Return()
+    }
+  } elif (R(Compare(IC-Int[0x5DC1] != 0.0))) {
+    if (R(Touching a Floor, Wall, or Ceiling(8))) {
+      if (R(0x42())) {
+        ModuleRenewTarce_UNDOC5ARGS(IC-Int[0xFA1], IC-Int[0xFA0], IC-Int[0x5DC0], LA-Bool[0x06], 8)
+      }
+    }
+    if (R(Touching a Floor, Wall, or Ceiling(4))) {
+      if (R(0x42())) {
+        ModuleRenewTarce_UNDOC5ARGS(IC-Int[0xFA1], IC-Int[0xFA0], IC-Int[0x5DC0], LA-Bool[0x06], 4)
+      }
+    }
+    if (R(Touching a Floor, Wall, or Ceiling(2))) {
+      if (R(0x42())) {
+        ModuleRenewTarce_UNDOC5ARGS(IC-Int[0xFA1], IC-Int[0xFA0], IC-Int[0x5DC0], LA-Bool[0x06], 2)
+      }
+    }
+    if (R(Touching a Floor, Wall, or Ceiling(1))) {
+      if (R(0x42())) {
+        ModuleRenewTarce_UNDOC5ARGS(IC-Int[0xFA1], IC-Int[0xFA0], IC-Int[0x5DC0], LA-Bool[0x06], 1)
+      }
+    }
+  }
+  ModuleGetDistFromCurrentTrace_UNDOC1ARGS(LA-Float[0x05])
+  if (R(Compare(LA-Float[0x05] >= IC-Int[0xFA2]))) {
+    SubRoutine(hsr_BBC)
+    Return()
+  }
+  Return()
+}

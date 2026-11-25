@@ -1,0 +1,54 @@
+Action 0x134: ENTRY {
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  if (R(Compare(Variable_Float_Posture_Lr == 1.0))) {
+    if (R(Bit is Set(RA-Bool[0x14]))) {
+      BasicVariableSet(513, RA-Int[0x0B])
+      BasicVariableSet(515, RA-Int[0x0C])
+    } else {
+      BasicVariableSet(509, RA-Int[0x0B])
+      BasicVariableSet(511, RA-Int[0x0C])
+    }
+  } else {
+    if (R(Bit is Set(RA-Bool[0x14]))) {
+      BasicVariableSet(512, RA-Int[0x0B])
+      BasicVariableSet(514, RA-Int[0x0C])
+    } else {
+      BasicVariableSet(508, RA-Int[0x0B])
+      BasicVariableSet(510, RA-Int[0x0C])
+    }
+  }
+  BitVariableClear(RA-Bool[0x10])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(RA-Int[0x0B], true)
+      } else {
+        ChangeSubAction(RA-Int[0x0B], false)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(RA-Int[0x0C], true)
+      } else {
+        ChangeSubAction(RA-Int[0x0C], false)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x134 : EXIT {
+  RemoveArticle(0)
+  ExitFinalSmashState()
+}

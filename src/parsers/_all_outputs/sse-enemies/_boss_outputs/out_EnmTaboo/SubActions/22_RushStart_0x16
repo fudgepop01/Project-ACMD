@@ -1,0 +1,41 @@
+[RushStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x16: MAIN {
+}
+
+Subaction 0x16: MAIN EXIT {
+}
+
+Subaction 0x16: MAIN INIT {
+}
+
+Subaction 0x16: GFX {
+}
+
+Subaction 0x16: GFX EXIT {
+}
+
+Subaction 0x16: GFX INIT {
+  SubRoutine(hidden_subroutine_0xBB8C)
+}
+
+Subaction 0x16: SFX {
+  SynchronousTimer(52.0)
+  SoundEffect(9850)
+}
+
+Subaction 0x16: SFX EXIT {
+}
+
+Subaction 0x16: SFX INIT {
+}
+

@@ -1,0 +1,6 @@
+[hsr_177D4]
+hidden_subroutine_0x177D4 {
+  if (R(Compare(RA-Int[0x00] > 0.0))) {
+    BasicVariableDecrement(RA-Int[0x00])
+  }
+}

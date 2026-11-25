@@ -1,0 +1,4 @@
+[hsr_4B94]
+hidden_subroutine_0x4B94 {
+  VictorySoundEffect(9637)
+}

@@ -1,0 +1,10 @@
+// Status_Jump_Squat
+Action 0xA {
+  SubRoutine(hidden_subroutine_0x68)
+  ChangeAction(4, R(On Ground()))
+  ReverseDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  ChangeAction(9, R(In Air()))
+}
+

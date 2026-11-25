@@ -1,0 +1,10 @@
+// @ 0x1768
+GFXEvent_0x14 {
+  SetLoop(4) {
+    SubRoutine(hidden_subroutine_0x1608)
+  }
+  SetLoop(2) {
+    SubRoutine(hidden_subroutine_0x16A0)
+  }
+  Return()
+}

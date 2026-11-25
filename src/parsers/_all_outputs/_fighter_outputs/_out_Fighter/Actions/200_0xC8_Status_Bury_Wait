@@ -1,0 +1,12 @@
+// Status_Bury_Wait
+Action 0xC8: ENTRY {
+  SetGimmickEffectFlag(false)
+  HeldItemsVisibility(false)
+  ChangeAction(201, R(Button Mashable Status Expired()))
+  ChangeAction(201, R(In Air()))
+  SuperHeavyArmor(2, Common_Param_Float_Damage_Bury_Damage_Reaction_Sub)
+}
+
+Action 0xC8 : EXIT {
+  SuperHeavyArmor(0, 0.0)
+}

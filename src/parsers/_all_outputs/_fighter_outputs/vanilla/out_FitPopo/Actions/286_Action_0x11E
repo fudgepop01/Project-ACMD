@@ -1,0 +1,9 @@
+Action 0x11E: ENTRY {
+  ChangeAction(16, R(In Air()))
+  ChangeAction(16, R(NOT Hasn't Tethered 3 Times()))
+  ChangeAction(117, R(Animation End()))
+  ChangeSubAction(481)
+}
+
+Action 0x11E : EXIT {
+}

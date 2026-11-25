@@ -1,0 +1,25 @@
+[Damage] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1 : GAME {
+  SpecialOffensiveCollision(Sp(2, 0), 15, 361, Sp(0, 0), Sp(0, 0), 8.0, 0.0, -11.0, 9.0, 0.0, 1.0, 1.0, 268633216, 0, 1611661248)
+  SpecialOffensiveCollision(Sp(2, 1), 15, 361, Sp(0, 0), Sp(0, 0), 8.0, 0.0, 0.0, 9.0, 0.0, 1.0, 1.0, 268633216, 0, 1611661248)
+  SpecialOffensiveCollision(Sp(2, 2), 15, 361, Sp(0, 0), Sp(0, 0), 8.0, 0.0, 11.0, 9.0, 0.0, 1.0, 1.0, 268633216, 0, 1611661248)
+  SpecialOffensiveCollision(Sp(2, 259), 0, 25, Sp(120, 100), Sp(0, 0), 3.0, 0.0, -11.0, 0.0, 0.0, 1.0, 1.0, 268632064, 1, 1645215696)
+  SpecialOffensiveCollision(Sp(2, 260), 0, 25, Sp(120, 100), Sp(0, 0), 3.0, 0.0, 11.0, 0.0, 0.0, 1.0, 1.0, 268632064, 1, 1645215696)
+}
+
+Subaction 0x1 : GFX {
+}
+
+Subaction 0x1 : SOUND {
+}
+

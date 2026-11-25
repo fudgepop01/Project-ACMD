@@ -1,0 +1,10 @@
+[hsr_10]
+hidden_subroutine_0x10 {
+  BodyCollision(0)
+  if (R(Facing Left())) {
+    RightDirection()
+    DecideDirection()
+    CharacterSpecific01()
+  }
+  Return()
+}

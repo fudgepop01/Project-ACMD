@@ -1,0 +1,6 @@
+// @ 0x218A8
+AIRChkEscape {
+
+  ChangeActionStatus:01(10060, 33, R(Button Press(Shield)))
+  AdditionalRequirement(R(In Air()))
+}

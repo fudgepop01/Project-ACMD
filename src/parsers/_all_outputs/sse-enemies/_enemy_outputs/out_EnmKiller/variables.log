@@ -1,0 +1,94 @@
+IC-Int[0x3FC] ("Variable_Float_Controller_Stick_Y_Rv") in hsr_A1C @ 17 : 1
+IC-Int[0x3FC] ("Variable_Float_Controller_Stick_Y_Rv") in hsr_A1C @ 21 : 1
+IC-Int[0x3FC] ("Variable_Float_Controller_Stick_Y_Rv") in hsr_A1C @ 32 : 5
+IC-Int[0x3FC] ("Variable_Float_Controller_Stick_Y_Rv") in hsr_A1C @ 44 : 1
+IC-Int[0x3FC] ("Variable_Float_Controller_Stick_Y_Rv") in hsr_A1C @ 47 : 1
+IC-Int[0x3FC] ("Variable_Float_Controller_Stick_Y_Rv") in hsr_C44 @ 4 : 1
+IC-Int[0x3FC] ("Variable_Float_Controller_Stick_Y_Rv") in hsr_C44 @ 8 : 1
+IC-Int[0x3FC] ("Variable_Float_Controller_Stick_Y_Rv") in hsr_D44 @ 4 : 1
+IC-Int[0x3FC] ("Variable_Float_Controller_Stick_Y_Rv") in hsr_D44 @ 8 : 1
+
+IC-Int[0x403] ("Variable_Float_Controller_Stick_Prev_Y_Abs") in Action 0x5: MAIN @ 34 : 1
+IC-Int[0x403] ("Variable_Float_Controller_Stick_Prev_Y_Abs") in Action 0x6: MAIN @ 25 : 1
+
+IC-Int[0xFA1] in hsr_A1C @ 42 : 1
+
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in Action 0x6: MAIN @ 41 : 1
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in hsr_54C @ 0 : 1
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in hsr_54C @ 5 : 1
+
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x0: EXIT @ 1 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Subaction 0x6: MAIN INIT @ 0 : 1
+
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x6: INIT @ 7 : 1
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Subaction 0x1: MAIN @ 0 : 1
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Subaction 0x1: MAIN @ 1 : 1
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Subaction 0x2: MAIN @ 0 : 1
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Subaction 0x2: MAIN @ 1 : 1
+
+IC-Int[0x520C] ("Variable_Int_Controller_Flick_No_Reset_Y") in Action 0x5: MAIN @ 2 : 2
+IC-Int[0x520C] ("Variable_Int_Controller_Flick_No_Reset_Y") in Action 0x5: MAIN @ 3 : 0
+IC-Int[0x520C] ("Variable_Int_Controller_Flick_No_Reset_Y") in hsr_A1C @ 1 : 2
+IC-Int[0x520C] ("Variable_Int_Controller_Flick_No_Reset_Y") in hsr_A1C @ 13 : 2
+IC-Int[0x520C] ("Variable_Int_Controller_Flick_No_Reset_Y") in hsr_A1C @ 32 : 2
+
+IC-Int[0x5DC0] in Action 0x4: INIT @ 2 : 1
+IC-Int[0x5DC0] in Action 0x6: INIT @ 2 : 1
+
+IC-Int[0x5DC1] in Action 0x5: MAIN @ 34 : 3
+IC-Int[0x5DC1] in Action 0x6: MAIN @ 25 : 3
+
+IC-Int[0xA028] in Action 0x4: INIT @ 7 : 2
+
+LA-Int[0x05] in Subaction 0x1: MAIN @ 3 : 1
+LA-Int[0x05] in Subaction 0x1: MAIN @ 5 : 1
+LA-Int[0x05] in Subaction 0x2: MAIN @ 3 : 1
+LA-Int[0x05] in Subaction 0x2: MAIN @ 5 : 1
+
+LA-Float[0x0C] in Subaction 0x1: MAIN @ 7 : 46
+LA-Float[0x0C] in Subaction 0x2: MAIN @ 7 : 46
+LA-Float[0x0C] in Subaction 0x3: MAIN INIT @ 5 : 46
+LA-Float[0x0C] in Subaction 0x4: MAIN @ 0 : 46
+
+LA-Bool[0x00] in Action 0x7: MAIN @ 3 : 0
+
+LA-Bool[0x04] in Action 0x0: EXIT @ 0 : 1
+
+LA-Bool[0x06] in hsr_A1C @ 0 : 0
+LA-Bool[0x06] in hsr_A1C @ 5 : 0
+LA-Bool[0x06] in hsr_A1C @ 7 : 0
+LA-Bool[0x06] in hsr_A1C @ 12 : 1
+LA-Bool[0x06] in hsr_A1C @ 41 : 1
+
+LA-Bool[0x07] in hsr_A1C @ 11 : 0
+LA-Bool[0x07] in hsr_A1C @ 18 : 0
+LA-Bool[0x07] in hsr_A1C @ 22 : 0
+LA-Bool[0x07] in hsr_A1C @ 29 : 1
+LA-Bool[0x07] in hsr_C44 @ 5 : 0
+LA-Bool[0x07] in hsr_C44 @ 9 : 0
+LA-Bool[0x07] in hsr_D44 @ 5 : 0
+LA-Bool[0x07] in hsr_D44 @ 9 : 0
+LA-Bool[0x07] in hsr_ED4 @ 5 : 0
+LA-Bool[0x07] in hsr_ED4 @ 24 : 1
+
+LA-Bool[0x08] in Action 0x5: INIT @ 8 : 0
+LA-Bool[0x08] in Action 0x5: MAIN @ 41 : 0
+LA-Bool[0x08] in Action 0x6: INIT @ 15 : 0
+LA-Bool[0x08] in Action 0x6: MAIN @ 38 : 0
+LA-Bool[0x08] in hsr_ED4 @ 3 : 1
+LA-Bool[0x08] in hsr_ED4 @ 29 : 0
+
+LA-Bool[0x0B] in Action 0x7: INIT @ 5 : 0
+LA-Bool[0x0B] in Action 0x7: MAIN @ 1 : 1
+LA-Bool[0x0B] in Subaction 0x4: MAIN @ 3 : 0
+
+LA-Bool[0x0C] in Action 0x5: MAIN @ 4 : 0
+LA-Bool[0x0C] in Action 0x5: MAIN @ 6 : 0
+LA-Bool[0x0C] in Action 0x5: MAIN @ 9 : 0
+LA-Bool[0x0C] in Action 0x5: MAIN @ 38 : 1
+
+RA-Int[0x05] in Action 0x5: MAIN @ 35 : 1
+RA-Int[0x05] in Action 0x6: MAIN @ 27 : 1
+RA-Int[0x05] in hsr_ED4 @ 27 : 1
+
+RA-Bool[0x03] in Action 0x7: MAIN @ 2 : 0

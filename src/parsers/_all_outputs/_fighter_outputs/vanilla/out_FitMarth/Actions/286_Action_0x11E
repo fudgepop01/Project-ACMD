@@ -1,0 +1,15 @@
+Action 0x11E: ENTRY {
+  BitVariableClear(RA-Bool[0x10])
+  SetGimmickEffectFlag(false)
+  BasicVariableSet(IC-Int[0x5DC5], RA-Int[0x02])
+  ChangeAction(288, R(Button Press(Special)))
+  ChangeAction(288, R(Button Press(Attack)))
+  ChangeAction(287, R(Compare(RA-Int[0x02] <= 0.0)))
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1E088)
+  BasicVariableSet(495, RA-Int[0x00])
+  BasicVariableSet(495, RA-Int[0x01])
+  SubRoutine(hidden_subroutine_0x1DF38)
+}
+
+Action 0x11E : EXIT {
+}

@@ -1,0 +1,18 @@
+[hsr_1D9E8]
+hidden_subroutine_0x1D9E8 {
+  BodyCollision(2)
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    (undef: camera) 1A_01_00_00()
+    (undef: camera) 1A_02_02_00(8.0, -3.0)
+    SetCameraBoundaries(15.0, -4.0, 7.0, -7.0)
+  } else {
+  }
+  BitVariableSet(RA-Bool[0x11])
+  ThrowAttackCollision(0, 0, 40, 74, 50, 0, 60, 0, 0.0, 1.0, 1.0, 2, 1, 1, false, false, 0)
+  EndScreenTint(0, 0)
+  EndScreenTint(1, 0)
+  ScreenTintFull_UNDOC8ARGS(0, 1, 255, 255, 255, 255, 0, 255)
+  SynchronousTimer(3.0)
+  EndScreenTint(0, 0)
+  ScreenTintFull_UNDOC8ARGS(1, 5, 0, 0, 0, 255, 6, 255)
+}

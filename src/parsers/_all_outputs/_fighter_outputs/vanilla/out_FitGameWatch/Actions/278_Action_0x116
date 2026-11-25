@@ -1,0 +1,43 @@
+Action 0x116: ENTRY {
+  EnterFinalSmashState()
+  (undef: item_manage) 1F_11_01_00(2)
+  SetGimmickEffectFlag(false)
+  SetShapeFlag(3)
+  GenerateArticle(5)
+  SetArticleAction07(5, 0)
+
+  ChangeAction(285, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(296, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(494, true)
+      } else {
+        ChangeSubAction(494, false)
+        BitVariableSet(RA-Bool[0x10])
+      }
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(495, true)
+      } else {
+        ChangeSubAction(495, false)
+        BitVariableSet(RA-Bool[0x10])
+      }
+    }
+    (undef: motion) 04_05_01_00(24)
+    SetRequirement(R(Change in Air/Ground State()))
+    LoadRest()
+  }
+}
+
+Action 0x116 : EXIT {
+  Visibility(false)
+  ChangeSubAction(-1)
+  SetArticleAction07(5, 1)
+}

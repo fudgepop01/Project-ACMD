@@ -1,0 +1,25 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  Visibility(false)
+  AddSubtractMomentum_UNDOC3ARGS(0.0, 0.0, -2.0)
+  SetLoop(-1) {
+    SynchronousTimer(1.0)
+    if (R(Compare(Variable_Float_Posture_Pos_Z <= -100.0))) {
+      LoopBreak()
+    }
+  }
+  ResetMomentum()
+  Visibility(true)
+  ChangeSubAction(3)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, -1.0, 2.0, 0.0, 0.0, 0.0, -0.15, 0.0, 0.0, false, false, false)
+  SynchronousTimer(45.0)
+  while (R(Compare(LA-Int[0x00] > 0.0))) {
+    BasicVariableSubtract(5, LA-Int[0x00])
+    SynchronousTimer(5.0)
+    EndWhile()
+    (undef: Sp_Kinetic) 66_02_02_00(0.2, 0.3)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ChangeAction(10, R(Button Tap?()))
+}
+

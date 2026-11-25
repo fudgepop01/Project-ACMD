@@ -1,0 +1,4 @@
+[hsr_1B2AC]
+hidden_subroutine_0x1B2AC {
+  SubRoutine(statusAnimCmd_ItemShootDashB_Common)
+}

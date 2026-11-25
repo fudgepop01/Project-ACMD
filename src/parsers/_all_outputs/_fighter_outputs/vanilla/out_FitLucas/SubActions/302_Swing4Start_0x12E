@@ -1,0 +1,27 @@
+[Swing4Start] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x12E: MAIN {
+  WeaponOperation(2)
+}
+
+Subaction 0x12E: GFX {
+}
+
+Subaction 0x12E: SOUND {
+}
+
+Subaction 0x12E: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(1.0)
+  SlopeContourStand02(1, 2)
+}
+

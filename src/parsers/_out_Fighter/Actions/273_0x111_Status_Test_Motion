@@ -1,0 +1,6 @@
+// Status_Test_Motion
+Action 0x111: ENTRY {
+}
+
+Action 0x111 : EXIT {
+}

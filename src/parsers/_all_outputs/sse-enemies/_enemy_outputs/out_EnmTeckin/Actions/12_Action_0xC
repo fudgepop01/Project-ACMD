@@ -1,0 +1,19 @@
+Action 0xC: MAIN {
+  SetLoop(-1) {
+    if (R(2714(ERRVALUE)) && R(In Air())) {
+      (undef: Sp_Kinetic) 66_09_02_00(4, 21)
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0xC: EXIT {
+}
+
+Action 0xC: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_02_00(9, 23)
+  SubAction09(6)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 21)
+}
+

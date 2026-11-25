@@ -1,0 +1,54 @@
+[FlyStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x6: MAIN {
+}
+
+Subaction 0x6: MAIN EXIT {
+}
+
+Subaction 0x6: MAIN INIT {
+  (undef: collision) 06_07_02_00(7, 2)
+  Module1901()
+}
+
+Subaction 0x6: GFX {
+  GraphicEffect(12189709, 0, 0.0, -3.0, 0.0, 0.0, -90.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(25.0)
+  GraphicEffectAttached2(12189707, 24, 0.0, 0.0, 0.0, 0.0, 40.0, 0.0, 1.0, true)
+  AsynchronousTimer(27.0)
+  GraphicEffectAttached2(12189707, 6, 0.0, 0.0, 0.0, 0.0, -90.0, 0.0, 1.0, true)
+  AsynchronousTimer(29.0)
+  GraphicEffectAttached2(12189707, 61, 0.0, 0.0, 0.0, 0.0, 20.0, 0.0, 1.0, true)
+  AsynchronousTimer(100.0)
+  GraphicEffectAttached2(12189707, 53, 0.0, 0.0, 0.0, 0.0, 40.0, 0.0, 1.0, true)
+  AsynchronousTimer(102.0)
+  GraphicEffectAttached2(12189707, 61, 0.0, 0.0, 0.0, 0.0, 40.0, 0.0, 1.0, true)
+  AsynchronousTimer(160.0)
+  GraphicEffectAttached2(12189707, 67, 0.0, 0.0, 0.0, 0.0, 40.0, 0.0, 1.0, true)
+}
+
+Subaction 0x6: GFX EXIT {
+}
+
+Subaction 0x6: GFX INIT {
+}
+
+Subaction 0x6: SFX {
+  SoundEffect(9623)
+}
+
+Subaction 0x6: SFX EXIT {
+}
+
+Subaction 0x6: SFX INIT {
+}
+

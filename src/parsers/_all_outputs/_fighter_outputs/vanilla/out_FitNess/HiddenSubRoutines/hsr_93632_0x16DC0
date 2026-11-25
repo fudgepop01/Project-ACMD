@@ -1,0 +1,9 @@
+[hsr_16DC0]
+hidden_subroutine_0x16DC0 {
+  BasicVariableDecrement(RA-Int[0x02])
+  if (R(Compare(RA-Int[0x02] <= 0.0)) && R(In Air())) {
+    EnableSpecifiedMovement(1)
+  } else {
+    DisableSpecifiedMovement(1)
+  }
+}

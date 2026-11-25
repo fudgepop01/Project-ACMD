@@ -1,0 +1,4 @@
+[hsr_C77C]
+hidden_subroutine_0xC77C {
+  AllowSpecificInterrupt(AIR_ITEM_THROW)
+}

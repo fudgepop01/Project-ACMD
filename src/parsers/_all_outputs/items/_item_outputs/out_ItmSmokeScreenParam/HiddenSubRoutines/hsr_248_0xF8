@@ -1,0 +1,10 @@
+[hsr_F8]
+hidden_subroutine_0xF8 {
+  BitVariableSet(LA-Bool[0x0C])
+  if (R(Compare(Variable_Int_Motion_Kind != 7.0))) {
+    BitVariableSet(LA-Bool[0x0C])
+    ChangeSubAction(6)
+    ChangeSubAction(7)
+  }
+  BitVariableSet(LA-Bool[0x01])
+}

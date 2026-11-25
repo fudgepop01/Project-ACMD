@@ -1,0 +1,22 @@
+Action 0x11E: ENTRY {
+  BitVariableClear(RA-Bool[0x10])
+  SetGimmickEffectFlag(false)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      ChangeSubAction(493)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      ChangeSubAction(498)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x11E : EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 287.0))) {
+    ExitFinalSmashState()
+  }
+}

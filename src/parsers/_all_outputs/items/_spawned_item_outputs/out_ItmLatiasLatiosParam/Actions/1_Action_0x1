@@ -1,0 +1,48 @@
+// Status_Walk
+Action 0x1 {
+  DisableSpecifiedMovement(2)
+  if (R(Is within footstool range())) {
+    BitVariableSet(LA-Bool[0x00])
+  }
+  (undef: Sp_base) 65_06_01_00(2)
+  if (R(Bit is Set(LA-Bool[0x00]))) {
+    ChangeSubAction(0)
+    (undef: Sp_base) 65_0C_01_00(0.8)
+  } else {
+    ChangeSubAction(4)
+    (undef: Sp_base) 65_0C_01_00(1.2)
+  }
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  if (R(Bit is Set(LA-Bool[0x00]))) {
+    ChangeSubAction(1)
+  } else {
+    ChangeSubAction(5)
+  }
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  EnableSpecifiedMovement(2)
+  if (R(Bit is Set(LA-Bool[0x00]))) {
+    (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, 13.0, 13.0, 0.0, 0.0, -0.1, 0.08, 0.0, 0.0, false, false, false)
+  } else {
+    (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, 13.0, 13.0, 0.0, 0.0, 0.1, 0.08, 0.0, 0.0, false, false, false)
+    ReverseDirection()
+    DecideDirection()
+    CharacterSpecific01()
+  }
+  if (R(Bit is Set(LA-Bool[0x00]))) {
+    ChangeSubAction(2)
+  } else {
+    ChangeSubAction(6)
+  }
+  SynchronousTimer(30.0)
+  while (R(Is Not in Damaging Magnifier())) {
+    SynchronousTimer(5.0)
+    EndWhile()
+    DisableSpecifiedMovement(2)
+    (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false, false, false)
+    (undef: Sp_Kinetic) 66_0B_03_00(90.0, 90.0, 0.0)
+    (undef: Sp_Kinetic) 66_09_01_00(true)
+    ChangeAction(5, R(Button Tap?()))
+}
+

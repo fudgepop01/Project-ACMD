@@ -1,0 +1,12 @@
+[hsr_1098]
+hidden_subroutine_0x1098 {
+  (undef: Sp_base) 65_07_01_00(2)
+  if (R(2714(1)) && R(Is within footstool range())) {
+    ChangeActionStatus(8, 8, R(On Ground()))
+  } elif (R(On a Passable Floor()) && R(2714(0)) && R(Is within footstool range())) {
+    ChangeActionStatus(10, 10, R(On Ground()))
+  } elif (R(NOT 2714(1))) {
+    ChangeActionStatus(12, 12, R(On Ground()))
+  }
+  Return()
+}

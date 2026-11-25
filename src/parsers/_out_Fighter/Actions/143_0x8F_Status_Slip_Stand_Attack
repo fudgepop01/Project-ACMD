@@ -1,0 +1,8 @@
+// Status_Slip_Stand_Attack
+Action 0x8F: ENTRY {
+  SubRoutine(hidden_subroutine_0x62B4)
+  ChangeSubAction(231)
+}
+
+Action 0x8F : EXIT {
+}

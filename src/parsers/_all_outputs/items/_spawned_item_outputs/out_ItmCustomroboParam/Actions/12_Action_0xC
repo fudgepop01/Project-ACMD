@@ -1,0 +1,15 @@
+// Status_Jump_Aerial
+Action 0xC {
+  BasicVariableIncrement(LA-Int[0x02])
+  ChangeAction(4, R(On Ground()))
+  (undef: Sp_base) 65_07_01_00(3)
+  if (R(2714(1))) {
+    ChangeSubAction(14)
+  } else {
+    ChangeSubAction(15)
+  }
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(13, R(Button Tap?()))
+}
+

@@ -1,0 +1,8 @@
+// Status_Tread_Damage_Air
+Action 0x70: ENTRY {
+  ChangeSubAction(55)
+  ChangeAction(113, R(Animation End()))
+}
+
+Action 0x70 : EXIT {
+}

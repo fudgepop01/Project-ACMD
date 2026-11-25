@@ -1,0 +1,26 @@
+[SpecialAirNHitoS] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1DA: MAIN {
+  Goto(Subaction_0x1D2 : MAIN)
+}
+
+Subaction 0x1DA: GFX {
+}
+
+Subaction 0x1DA: SOUND {
+}
+
+Subaction 0x1DA: OTHER {
+  SlopeContourStand(6)
+  HeldItemsVisibility(false)
+}
+

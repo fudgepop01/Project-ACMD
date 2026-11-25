@@ -1,0 +1,11 @@
+Action 0x119: ENTRY {
+  BitVariableSet(LA-Bool[0x3A])
+  ChangeAction(14, R(Animation End()))
+  ChangeSubAction(467)
+  SetAerialOrOnstage(5)
+  Module0900(2)
+  ChangeAction(282, R(On Ground()))
+}
+
+Action 0x119 : EXIT {
+}

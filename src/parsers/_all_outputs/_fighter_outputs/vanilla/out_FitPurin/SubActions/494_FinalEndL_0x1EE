@@ -1,0 +1,37 @@
+[FinalEndL] (flags) {
+  No Out Transition: 1,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1EE: MAIN {
+  (undef: effect) 11_1D_01_00(8)
+  BodyCollision(2)
+  SpecialOffensiveCollision(Sp(3, 0), 17, 0, Sp(0, 100), Sp(0, 80), 7.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 591594624, 30, 873463744)
+  SpecialOffensiveCollision(Sp(13, 1), 17, 0, Sp(0, 100), Sp(0, 80), 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 591594624, 30, 873463744)
+  SpecialOffensiveCollision(Sp(29, 2), 17, 0, Sp(0, 100), Sp(0, 80), 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 591594624, 30, 873463744)
+}
+
+Subaction 0x1EE: GFX {
+}
+
+Subaction 0x1EE: SOUND {
+  SoundEffect(6054)
+}
+
+Subaction 0x1EE: OTHER {
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+  UnkRaBit27(false)
+  SetTagDisplay(false)
+  RumbleLoop(2, 110)
+  AsynchronousTimer(111.0)
+  HeldItemsVisibility(true)
+  WearableItemsVisibility(true)
+}
+

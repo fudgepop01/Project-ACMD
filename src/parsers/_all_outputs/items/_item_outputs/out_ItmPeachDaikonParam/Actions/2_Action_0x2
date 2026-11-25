@@ -1,0 +1,15 @@
+// Status_Walk_Brake
+Action 0x2 {
+  BitVariableClear(LA-Bool[0x0C])
+  ChangeSubAction(1)
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 1.0))) {
+    (undef: motion) 04_10_02_00(1, 8)
+    (undef: motion) 04_13_02_00(1, 0.0)
+    (undef: motion) 04_12_02_00(1, 0.0)
+    SynchronousTimer(13.0)
+  }
+  (undef: motion) 04_10_02_00(1, 8)
+  (undef: motion) 04_13_02_00(1, 0.0)
+  (undef: motion) 04_12_02_00(1, 1.0)
+}
+

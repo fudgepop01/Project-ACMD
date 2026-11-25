@@ -1,0 +1,69 @@
+[AttackHi4] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x5D: MAIN {
+  AsynchronousTimer(10.0)
+  BoneCollision(39, 2)
+  AsynchronousTimer(23.0)
+  OffensiveCollision(Sp(0, 0), 2, 110, Sp(110, 90), Sp(0, 0), 6.0, 0.0, 5.0, -8.0, 0.0, 1.0, 1.0, 67313666)
+  OffensiveCollision(Sp(0, 1), 2, 110, Sp(110, 90), Sp(0, 0), 6.0, 0.0, 5.0, 8.0, 0.0, 1.0, 1.0, 67313666)
+  SynchronousTimer(1.0)
+  TerminateCollisions()
+  AsynchronousTimer(25.0)
+  UndoBoneCollision(0)
+  OffensiveCollision(Sp(0, 0), 19, 95, Sp(0, 85), Sp(0, 50), 14.0, 0.0, 10.0, 0.0, 0.0, 1.0, 1.0, 469967043)
+  AsynchronousTimer(28.0)
+  OffensiveCollision(Sp(0, 1), 18, 95, Sp(0, 85), Sp(0, 45), 13.0, 0.0, 16.0, 0.0, 0.0, 1.0, 1.0, 469967043)
+  DeleteHitbox(0)
+  AsynchronousTimer(33.0)
+  OffensiveCollision(Sp(0, 2), 16, 95, Sp(0, 85), Sp(0, 40), 12.0, 0.0, 23.0, 0.0, 0.0, 1.0, 1.0, 469967043)
+  DeleteHitbox(1)
+  AsynchronousTimer(38.0)
+  OffensiveCollision(Sp(0, 3), 14, 95, Sp(0, 85), Sp(0, 35), 10.0, 0.0, 30.0, 0.0, 0.0, 1.0, 1.0, 469966979)
+  DeleteHitbox(2)
+  AsynchronousTimer(43.0)
+  OffensiveCollision(Sp(0, 0), 12, 95, Sp(0, 90), Sp(0, 30), 10.0, 0.0, 38.0, 0.0, 0.0, 1.0, 1.0, 469966979)
+  DeleteHitbox(3)
+  AsynchronousTimer(48.0)
+  TerminateCollisions()
+}
+
+Subaction 0x5D: GFX {
+  TerminateAllGraphicEffect(1, false)
+  AsynchronousTimer(16.0)
+  GraphicEffectLanding(9, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(24.0)
+  GraphicEffect(1769476, 0, 0.0, 20.0, 0.0, 0.0, 0.0, 0.0, 1.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x5D: SOUND {
+  AsynchronousTimer(25.0)
+  StopSoundEffect(191)
+  SoundEffect(2089)
+  SoundEffect(5133)
+  SynchronousTimer(49.0)
+  SoundEffect(5178)
+}
+
+Subaction 0x5D: OTHER {
+  HeldItemsVisibility(false)
+  SlopeContourStand(6)
+  AsynchronousTimer(1.0)
+  Rumble(16, 0)
+  AsynchronousTimer(18.0)
+  HeldItemsVisibility(true)
+  SlopeContourStand(0)
+  AsynchronousTimer(17.0)
+  Rumble(17, 0)
+  AsynchronousTimer(72.0)
+  SlopeContourStand02(6, 6)
+}
+

@@ -1,0 +1,11 @@
+[hsr_420]
+hidden_subroutine_0x420 {
+  if (R(Compare(LA-Float[0x09] >= IC-Int[0xFA4])) && R(NOT Bit is Set(LA-Bool[0x07]))) {
+    SWITCH_3ARG(1000, IC-Int[0xABE5], 2)
+      Case(0)
+        BitVariableSet(LA-Bool[0x0A])
+    EndSwitch()
+    BitVariableSet(LA-Bool[0x07])
+  }
+  Return()
+}

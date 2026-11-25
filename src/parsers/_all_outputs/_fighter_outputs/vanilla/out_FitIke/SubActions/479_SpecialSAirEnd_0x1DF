@@ -1,0 +1,27 @@
+[SpecialSAirEnd] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1DF: MAIN {
+}
+
+Subaction 0x1DF: GFX {
+}
+
+Subaction 0x1DF: SOUND {
+}
+
+Subaction 0x1DF: OTHER {
+  SlopeContourStand(6)
+  CreateAestheticWindEffects_UNDOC9ARGS(0, 2.0, 160.0, 10.0, 0.6, 0.0, 12.0, 24.0, 24.0)
+  AsynchronousTimer(10.0)
+  TerminateWindEffect(0)
+}
+

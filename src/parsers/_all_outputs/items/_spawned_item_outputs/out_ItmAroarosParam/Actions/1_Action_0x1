@@ -1,0 +1,9 @@
+// Status_Walk
+Action 0x1 {
+  BasicVariableSet(0, LA-Int[0x0E])
+  ChangeSubAction(0)
+  SubRoutine(hidden_subroutine_0x18)
+  DisableActionStatusId(1)
+  ChangeAction(3, R(In Air()))
+}
+

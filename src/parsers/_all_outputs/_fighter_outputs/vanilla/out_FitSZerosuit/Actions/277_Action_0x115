@@ -1,0 +1,8 @@
+Action 0x115: ENTRY {
+  BasicVariableSet(IC-Int[0x5DC0], RA-Int[0x02])
+  BitVariableSet(LA-Bool[0x3D])
+  SubRoutine(Action_0x8 : ENTRY)
+}
+
+Action 0x115 : EXIT {
+}

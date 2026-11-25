@@ -1,0 +1,30 @@
+[SpecialS] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D9: MAIN {
+}
+
+Subaction 0x1D9: GFX {
+  GraphicEffectAttached(2031627, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+}
+
+Subaction 0x1D9: SOUND {
+  SoundEffectTransient(5579)
+}
+
+Subaction 0x1D9: OTHER {
+  SlopeContourStand03(1, 2, true)
+  HeldItemsVisibility(false)
+  (undef: item_manage) 1F_10_02_00(false, 1)
+  (undef: item_manage) 1F_10_02_00(false, 2)
+  RumbleLoop(2, 0)
+}
+

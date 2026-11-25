@@ -1,0 +1,13 @@
+// Status_Ladder_Wait
+Action 0x94: ENTRY {
+  BitVariableSet(RA-Bool[0x08])
+  AllowSpecificInterrupt(AIR_LANDING)
+  ChangeAction(11, R(Button Press(Jump)))
+  ChangeAction(14, R(Bit is Set(RA-Bool[0x10])))
+  ChangeAction(14, R(Touching a Floor, Wall, or Ceiling(6)))
+  ChangeSubAction(383)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x633C)
+}
+
+Action 0x94 : EXIT {
+}

@@ -1,0 +1,42 @@
+Action 0x19: MAIN {
+}
+
+Action 0x19: EXIT {
+  (undef: Sp_base) 65_16_00_00()
+  (undef: Sp_Kinetic) 66_07_01_00(-1)
+}
+
+Action 0x19: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(11)
+  BasicVariableSet(2, LA-Int[0x06])
+  SubAction09(17)
+  (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE7], LA-Float[0x05])
+  (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE8], LA-Float[0x07])
+  FloatVariableSubtract(LA-Float[0x07], LA-Float[0x05])
+  FloatVariableMultiply(0.5, LA-Float[0x05])
+  FloatVariableAdd(LA-Float[0x07], LA-Float[0x05])
+  if (R(Compare(Variable_Float_Posture_Pos_X < LA-Float[0x05]))) {
+    BitVariableClear(LA-Bool[0x08])
+    (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE8], LA-Float[0x0A])
+    if (R(Facing Right())) {
+      FloatVariableSet(180.0, LA-Float[0x07])
+    } else {
+      FloatVariableSet(0.0, LA-Float[0x07])
+      BasicVariableSet(26, LA-Int[0x06])
+    }
+  } else {
+    BitVariableSet(LA-Bool[0x08])
+    (undef: Sp_base) 65_1F_02_00(IC-Int[0xABE7], LA-Float[0x0A])
+    if (R(Facing Right())) {
+      FloatVariableSet(0.0, LA-Float[0x07])
+      BasicVariableSet(26, LA-Int[0x06])
+    } else {
+      FloatVariableSet(180.0, LA-Float[0x07])
+    }
+  }
+  (undef: Sp_base) 65_16_00_00()
+  (undef: Sp_base) 65_14_01_00(LA-Float[0x0A])
+  (undef: Sp_Kinetic) 66_00_03_00(3, 29, LA-Float[0x07])
+}
+

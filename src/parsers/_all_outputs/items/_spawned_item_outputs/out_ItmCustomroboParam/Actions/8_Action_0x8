@@ -1,0 +1,12 @@
+// Status_Turn_Run
+Action 0x8 {
+  SetAerialOrOnstage(0)
+  DisableSpecifiedMovement(2)
+  DisableActionStatusId(4)
+  (undef: Sp_base) 65_07_03_00(16, 0.0, -50.0)
+  ChangeAction(9, R(Compare(LA-Float[0x08] <= Variable_Float_Posture_Pos_Y)))
+  ChangeSubAction(1, true)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+}
+

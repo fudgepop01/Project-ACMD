@@ -1,0 +1,15 @@
+// Status_Item_Assist_Hoist
+Action 0xB2: ENTRY {
+  ChangeAction(14, R(In Air()))
+  ChangeAction(0, R(Animation End()))
+  ChangeSubAction(379)
+  RemoveItemHoldAnim()
+  AsynchronousTimer(12.0)
+  ReleaseAssist()
+}
+
+Action 0xB2 : EXIT {
+  if (R(Compare(Variable_Int_Have_Item_Kind == 0.0))) {
+    AttachItemHoldAnim_UNDOC1ARGS(0)
+  }
+}

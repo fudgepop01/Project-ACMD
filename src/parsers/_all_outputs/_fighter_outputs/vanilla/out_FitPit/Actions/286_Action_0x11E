@@ -1,0 +1,7 @@
+Action 0x11E: ENTRY {
+  SubRoutine(EXTERNAL: statusAnimCmd_LandingFallSpecial)
+  ChangeSubAction(489)
+}
+
+Action 0x11E : EXIT {
+}

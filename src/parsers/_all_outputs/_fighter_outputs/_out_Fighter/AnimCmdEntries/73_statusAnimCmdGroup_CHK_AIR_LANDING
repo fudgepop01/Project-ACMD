@@ -1,0 +1,6 @@
+// @ 0x24188
+CHK_AIR_LANDING {
+  ClearPreventInterrupt(AIR_LANDING)
+  SubRoutine(statusAnimCmd_AIRChkLanding)
+  ClearPreventInterrupt(ALL?)
+}

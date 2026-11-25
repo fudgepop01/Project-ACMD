@@ -1,0 +1,28 @@
+[SpecialAirNDanger] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D5: MAIN {
+}
+
+Subaction 0x1D5: GFX {
+  Goto(Subaction_0x1D4 : GFX)
+}
+
+Subaction 0x1D5: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffectTransient(5300)
+}
+
+Subaction 0x1D5: OTHER {
+  SlopeContourStand(6)
+  RumbleLoop(2, 0)
+}
+

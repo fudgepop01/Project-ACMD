@@ -1,0 +1,4 @@
+[hsr_19D0]
+hidden_subroutine_0x19D0 {
+  GraphicEffect(94, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}

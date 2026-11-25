@@ -1,0 +1,7 @@
+// @ 0x3D40
+CommonAICheckDamageInvalidity {
+  if (R(Bit is Set(RA-Bool[0x07]))) {
+    BitVariableSet(RA-Bool[0x04])
+  }
+  Return()
+}

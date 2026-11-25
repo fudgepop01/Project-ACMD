@@ -1,0 +1,52 @@
+[LaunchingEnd] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xF: MAIN {
+  SlopeContourStand(1)
+  SynchronousTimer(5.0)
+  (undef: Sp_base) 65_0E_02_00(IC-Int[0xABED], 2)
+  (undef: Sp_Link) 6E_00_03_00(4, 5103, 4)
+}
+
+Subaction 0xF: MAIN EXIT {
+  (undef: Sp_Link) 6E_00_02_00(3, 5101)
+}
+
+Subaction 0xF: MAIN INIT {
+  (undef: Sp_Link) 6E_00_02_00(3, 5102)
+}
+
+Subaction 0xF: GFX {
+  AsynchronousTimer(5.0)
+  GraphicEffectAttached(73, 6, 0.0, 2.0, 5.0, 0.0, 0.0, 0.0, 1.2, true)
+  SetLoop(-1) {
+    GraphicEffectLanding(11, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+    SynchronousTimer(15.0)
+  }
+}
+
+Subaction 0xF: GFX EXIT {
+}
+
+Subaction 0xF: GFX INIT {
+}
+
+Subaction 0xF: SFX {
+  SynchronousTimer(4.0)
+  SoundEffect(9489)
+}
+
+Subaction 0xF: SFX EXIT {
+}
+
+Subaction 0xF: SFX INIT {
+}
+

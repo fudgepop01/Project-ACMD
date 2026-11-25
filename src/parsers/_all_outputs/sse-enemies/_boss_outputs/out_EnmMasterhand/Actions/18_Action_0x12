@@ -1,0 +1,24 @@
+Action 0x12: MAIN {
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0x13AC)
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x12: EXIT {
+  EnableSpecifiedMovement(8)
+  (undef: Sp_Kinetic) 66_07_01_00(4)
+}
+
+Action 0x12: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(8)
+  BasicVariableSet(19, LA-Int[0x06])
+  SubAction09(22)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 26)
+  (undef: Sp_Kinetic) 66_00_02_00(4, 27)
+  DisableSpecifiedMovement(8)
+  (undef: targetSearch) 16_00_00_00()
+  SubRoutine(hidden_subroutine_0x124C)
+}
+

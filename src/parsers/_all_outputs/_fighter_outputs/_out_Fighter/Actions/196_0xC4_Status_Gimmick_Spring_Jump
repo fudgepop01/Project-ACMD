@@ -1,0 +1,7 @@
+// Status_Gimmick_Spring_Jump
+Action 0xC4: ENTRY {
+  SubRoutine(statusAnimCmd_Jump)
+}
+
+Action 0xC4 : EXIT {
+}

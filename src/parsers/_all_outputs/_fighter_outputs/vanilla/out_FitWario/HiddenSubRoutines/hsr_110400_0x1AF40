@@ -1,0 +1,5 @@
+[hsr_1AF40]
+hidden_subroutine_0x1AF40 {
+  BasicVariableDecrement(RA-Int[0x02])
+  BasicVariableDecrement(RA-Int[0x03])
+}

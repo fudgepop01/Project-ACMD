@@ -1,0 +1,50 @@
+Action 0x11E: ENTRY {
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1C598)
+  ChangeAction(287, R(Compare(RA-Int[0x03] < 0.0)))
+
+  ChangeAction(287, R(Compare(Variable_Float_Controller_Stick_X_Lr <= Common_Param_Float_Turn_Stick_X)))
+  AdditionalRequirement(R(On Ground()))
+  AdditionalRequirement(R(Compare(Variable_Float_Kinetic_Sum_Speed_X_Abs <= IC-Int[0xFCB])))
+
+  ChangeAction(288, R(Compare(Variable_Float_Controller_Stick_X_Lr <= Common_Param_Float_Turn_Stick_X)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(26, R(Button Pressed(Shield)))
+  AdditionalRequirement(R(On Ground()))
+  AdditionalRequirement(R(Compare(Variable_Int_Motion_Kind == 473.0)))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x13])))
+
+  ChangeAction(289, R(On Ground()))
+  AdditionalRequirement(R(Touching a Floor, Wall, or Ceiling(4)))
+  AdditionalRequirement(R(Compare(Variable_Float_Posture_Lr > 0.0)))
+
+  ChangeAction(289, R(On Ground()))
+  AdditionalRequirement(R(Touching a Floor, Wall, or Ceiling(2)))
+  AdditionalRequirement(R(Compare(Variable_Float_Posture_Lr < 0.0)))
+
+  SubRoutine(hidden_subroutine_0x1C038)
+  if (R(Bit is Set(RA-Bool[0x12]))) {
+    SetAerialOrOnstage(5)
+    Module0900(2)
+    SetAirGround(108)
+    ChangeSubAction(484)
+    SynchronousTimer(2.0)
+    SetRequirement(R(On Ground()))
+    LoadRest()
+  }
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      SetAirGround(107)
+    } else {
+      SetAerialOrOnstage(5)
+      SetAirGround(108)
+      ChangeSubAction(473)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x11E : EXIT {
+}

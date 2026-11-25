@@ -1,0 +1,50 @@
+[Collapses] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x2: MAIN {
+  AsynchronousTimer(34.0)
+  ModifyRhombusX17_UNDOC1ARGS(4.0)
+  ModifyRhombusX18_UNDOC1ARGS(0.0)
+  ModifyRhombusX19_UNDOC1ARGS(14.5)
+}
+
+Subaction 0x2: MAIN EXIT {
+  InitializeEcb()
+}
+
+Subaction 0x2: MAIN INIT {
+  ToggleFighterArea(9)
+  BodyCollision(2)
+  ModifyRhombusX17_UNDOC1ARGS(7.5)
+  ModifyRhombusX18_UNDOC1ARGS(0.0)
+  ModifyRhombusX19_UNDOC1ARGS(14.5)
+}
+
+Subaction 0x2: GFX {
+}
+
+Subaction 0x2: GFX EXIT {
+}
+
+Subaction 0x2: GFX INIT {
+  (undef: animCmd) 0D_03_02_00(5, 0)
+}
+
+Subaction 0x2: SFX {
+  SoundEffect(9291)
+}
+
+Subaction 0x2: SFX EXIT {
+}
+
+Subaction 0x2: SFX INIT {
+}
+

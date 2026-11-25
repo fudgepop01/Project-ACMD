@@ -1,0 +1,42 @@
+[hsr_56C]
+hidden_subroutine_0x56C {
+  if (R(Compare(Variable_Int_Controller_Flick_X_Dir == 47.0))) {
+    (undef: collision) 06_07_02_00(0, 0)
+    (undef: collision) 06_07_02_00(1, 2)
+    (undef: collision) 06_07_02_00(2, 2)
+    (undef: collision) 06_07_02_00(3, 2)
+    (undef: collision) 06_07_02_00(4, 0)
+    (undef: collision) 06_07_02_00(5, 2)
+    (undef: collision) 06_07_02_00(6, 2)
+    (undef: collision) 06_07_02_00(7, 2)
+  } elif (R(Compare(Variable_Int_Controller_Flick_X_Dir == 48.0))) {
+    (undef: collision) 06_07_02_00(0, 2)
+    (undef: collision) 06_07_02_00(1, 0)
+    (undef: collision) 06_07_02_00(2, 2)
+    (undef: collision) 06_07_02_00(3, 2)
+    (undef: collision) 06_07_02_00(4, 2)
+    (undef: collision) 06_07_02_00(5, 0)
+    (undef: collision) 06_07_02_00(6, 2)
+    (undef: collision) 06_07_02_00(7, 2)
+  } elif (R(Compare(Variable_Int_Controller_Flick_X_Dir == 49.0))) {
+    (undef: collision) 06_07_02_00(0, 2)
+    (undef: collision) 06_07_02_00(1, 2)
+    (undef: collision) 06_07_02_00(2, 0)
+    (undef: collision) 06_07_02_00(3, 2)
+    (undef: collision) 06_07_02_00(4, 2)
+    (undef: collision) 06_07_02_00(5, 2)
+    (undef: collision) 06_07_02_00(6, 0)
+    (undef: collision) 06_07_02_00(7, 2)
+  } elif (R(Compare(Variable_Int_Controller_Flick_X_Dir == 50.0))) {
+    (undef: collision) 06_07_02_00(0, 2)
+    (undef: collision) 06_07_02_00(1, 2)
+    (undef: collision) 06_07_02_00(2, 2)
+    (undef: collision) 06_07_02_00(3, 0)
+    (undef: collision) 06_07_02_00(4, 2)
+    (undef: collision) 06_07_02_00(5, 2)
+    (undef: collision) 06_07_02_00(6, 2)
+    (undef: collision) 06_07_02_00(7, 0)
+  }
+  SubRoutine(hidden_subroutine_0x51C)
+  Return()
+}

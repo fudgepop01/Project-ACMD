@@ -1,0 +1,12 @@
+// Status_Jump_Aerial
+Action 0xC {
+  if (R(In wallcling situation())) {
+    (undef: Sp_Kinetic) 66_00_0B_00(0.5, 0.0, 0.9, 0.6, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  } else {
+    (undef: Sp_Kinetic) 66_00_0B_00(-0.5, 0.0, 0.9, 0.6, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  }
+  SynchronousTimer(10.0)
+  SubRoutine(hidden_subroutine_0x70)
+  DisableActionStatusId(12)
+}
+

@@ -1,0 +1,10 @@
+[hsr_15E14]
+hidden_subroutine_0x15E14 {
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    if (R(Compare(Variable_Int_Motion_Kind != 32.0))) {
+      ChangeSubAction(32)
+      SubRoutine(statusAnimCmd_AIRChkFallCommon)
+    }
+    SubRoutine(statusAnimCmd_FALLCommonUniq)
+  }
+}

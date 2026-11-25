@@ -1,0 +1,24 @@
+[hsr_257AC]
+hidden_subroutine_0x257AC {
+  if (R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed > 3.7))) {
+    StopSoundEffect(1376)
+    StopSoundEffect(1377)
+    StopSoundEffect(1378)
+    StopSoundEffect(1379)
+    if (R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed > 6.7))) {
+      if (R(Roll A Die())) {
+        SoundEffect(1378)
+        SoundEffect(1378)
+      } else {
+        SoundEffect(1379)
+        SoundEffect(1379)
+      }
+    } else {
+      if (R(Roll A Die())) {
+        SoundEffect(1376)
+      } else {
+        SoundEffect(1377)
+      }
+    }
+  }
+}

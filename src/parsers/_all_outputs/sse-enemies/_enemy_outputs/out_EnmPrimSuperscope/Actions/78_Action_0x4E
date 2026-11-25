@@ -1,0 +1,34 @@
+Action 0x4E: MAIN {
+  SetLoop(-1) {
+    if (R(Animation has looped?())) {
+      SubRoutine(hidden_subroutine_0x3D8C)
+    }
+    if (R(Compare(LA-Float[0x02] < 0.0)) && R(Is Not in Damaging Magnifier())) {
+      FloatVariableSet(0.0, LA-Float[0x02])
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x4E: EXIT {
+}
+
+Action 0x4E: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(83)
+  (undef: Sp_AI) 6A_00_01_00(85)
+  BasicVariableSet(1, LA-Int[0x11])
+  SubRoutine(hidden_subroutine_0x3D8C)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+  SubRoutine(hidden_subroutine_0x1270)
+  if (R(Compare(Variable_Int_Status_Prev_Kind == -1.0))) {
+    if (R(Is Not in Damaging Magnifier())) {
+      FloatVariableSet(0.0, LA-Float[0x02])
+    } else {
+      FloatVariableSet(-1.0, LA-Float[0x02])
+    }
+  } else {
+    (undef: Sp_base) 65_07_02_00(IC-Int[0xABFA], LA-Float[0x02])
+  }
+}
+

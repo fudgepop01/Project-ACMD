@@ -1,0 +1,20 @@
+// Status_Run
+Action 0x4 {
+  SubRoutine(hidden_subroutine_0x554)
+  DisableActionStatusId(4)
+  ChangeAction(3, R(In Air()))
+  if (R(Compare(Variable_Int_Motion_Kind >= 17.0)) && R(Compare(Variable_Int_Motion_Kind <= 25.0))) {
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ChangeSubAction(35)
+  } elif (R(Compare(Variable_Int_Motion_Kind >= 12.0)) && R(Compare(Variable_Int_Motion_Kind <= 14.0))) {
+    ChangeAction(11, R(On Ground()))
+  } elif (R(Compare(Variable_Int_Motion_Kind == 16.0)) || R(Compare(Variable_Int_Motion_Kind == 15.0)) || R(Compare(Variable_Int_Motion_Kind == 11.0))) {
+    ChangeAction(11, R(On Ground()))
+  } elif (R(Compare(Variable_Int_Motion_Kind == 27.0)) || R(Compare(Variable_Int_Motion_Kind == 26.0))) {
+    ChangeAction(11, R(On Ground()))
+  } else {
+    ChangeSubAction(35)
+  }
+}
+

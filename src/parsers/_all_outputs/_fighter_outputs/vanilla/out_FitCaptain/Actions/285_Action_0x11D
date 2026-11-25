@@ -1,0 +1,29 @@
+Action 0x11D: ENTRY {
+  SetGimmickEffectFlag(false)
+  SetAerialOrOnstage(0)
+  SetRemoteArticleAction(0, 1)
+  if (R(Compare(Variable_Float_Posture_Lr >= 0.0))) {
+    BasicVariableSet(483, LA-Int[0x40])
+    BasicVariableSet(487, LA-Int[0x41])
+  } else {
+    BasicVariableSet(482, LA-Int[0x40])
+    BasicVariableSet(486, LA-Int[0x41])
+  }
+  if (R(On Ground())) {
+    ChangeSubAction(LA-Int[0x40])
+  } else {
+    ChangeSubAction(LA-Int[0x41])
+  }
+  ChangeAction(286, R(Animation End()))
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetRequirement(R(In Air()))
+    } else {
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x11D : EXIT {
+}

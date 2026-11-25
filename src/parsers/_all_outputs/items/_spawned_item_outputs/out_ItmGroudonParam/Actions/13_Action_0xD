@@ -1,0 +1,13 @@
+// Status_Fly
+Action 0xD {
+  DisableActionStatusId(13)
+  ChangeAction(3, R(In Air()))
+  ChangeSubAction(3)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ReverseDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  ChangeAction(4, R(Button Tap?()))
+}
+

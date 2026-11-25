@@ -1,0 +1,19 @@
+Action 0x10: MAIN {
+  SubRoutine(hidden_subroutine_0x175C)
+  SubRoutine(hidden_subroutine_0x1774)
+  SubRoutine(hidden_subroutine_0x178C)
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonDyingFigureProc)
+}
+
+Action 0x10: EXIT {
+}
+
+Action 0x10: INIT {
+  if (R(Facing Left())) {
+    SubAction09(8)
+  } else {
+    SubAction09(9)
+  }
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonDyingFigureProcInit)
+}
+

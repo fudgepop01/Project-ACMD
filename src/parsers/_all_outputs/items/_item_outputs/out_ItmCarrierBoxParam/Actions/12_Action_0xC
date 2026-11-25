@@ -1,0 +1,13 @@
+// Status_Jump_Aerial
+Action 0xC {
+  BitVariableSet(RA-Bool[0x00])
+  ChangeAction(5, R(In Air()))
+  SubRoutine(hidden_subroutine_0x5B4)
+  DisableActionStatusId(12)
+  ChangeSubAction(3)
+  FloatVariableSetAbsolute(Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv, RA-Float[0x00])
+  if (R(Compare(RA-Float[0x00] > 0.5))) {
+    SubRoutine(hidden_subroutine_0x53C)
+  }
+}
+

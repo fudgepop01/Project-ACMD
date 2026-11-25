@@ -1,0 +1,30 @@
+[hsr_E4C]
+hidden_subroutine_0xE4C {
+  SetLoop(-1) {
+    if (R(Successfully tethered ledge())) {
+      if [IF_REQ_UNKNOWN_3ARG] (R(0x12()), 3, Variable_Int_Controller_Flick_No_Reset_Y ||[3A] R(0x12()), 1, Variable_Int_Controller_Flick_No_Reset_Y) {
+        (undef: Sp_Area) 69_00_01_00(Variable_Int_Controller_Flick_No_Reset_Y)
+      }
+      if (R(0x2710())) {
+        if [IF_REQ_UNKNOWN_3ARG] (R(Can Pick Up Another Item()), Variable_Int_Controller_Flick_No_Reset_Y, 3) {
+          (undef: Sp_Kinetic) 66_00_02_00(5, 24)
+        } ELSEIF_REQ_UNKNOWN_3ARG (R(Can Pick Up Another Item()), Variable_Int_Controller_Flick_No_Reset_Y, 2) {
+          (undef: Sp_Kinetic) 66_00_02_00(5, 23)
+        }
+      } else {
+        if [IF_REQ_UNKNOWN_3ARG] (R(Tap Jump On & C-Stick not Held()), 5, 23 &&[3A] R(Can Pick Up Another Item()), Variable_Int_Controller_Flick_No_Reset_Y, 3) {
+          (undef: Sp_Kinetic) 66_00_02_00(5, 24)
+        }
+        if [IF_REQ_UNKNOWN_3ARG] (R(Tap Jump On & C-Stick not Held()), 5, 24 &&[3A] R(Can Pick Up Another Item()), Variable_Int_Controller_Flick_No_Reset_Y, 2) {
+          (undef: Sp_Kinetic) 66_00_02_00(5, 23)
+        }
+      }
+    }
+    if (R(2714(ERRVALUE)) && R(In Air())) {
+      (undef: Sp_Kinetic) 66_09_02_00(4, 30)
+      (undef: Sp_Kinetic) 66_00_02_00(3, 29)
+    }
+    SynchronousTimer(1.0)
+  }
+  Return()
+}

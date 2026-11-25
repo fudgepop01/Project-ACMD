@@ -1,0 +1,29 @@
+[hsr_18928]
+hidden_subroutine_0x18928 {
+  FloatVariableAdd(-1.0, RA-Float[0x04])
+  if (R(Compare(RA-Float[0x04] <= IC-Int[0xFEF])) && R(NOT Bit is Set(RA-Bool[0x11]))) {
+    BitVariableSet(RA-Bool[0x11])
+    SetFlashingEffect(37)
+  }
+  FloatVariableAdd(-1.0, RA-Float[0x0A])
+  if (R(Compare(RA-Int[0x00] == 484.0))) {
+    if (R(0x25())) {
+      SetBoneMotionOverride(3, 485, 38)
+      BasicVariableSet(485, RA-Int[0x00])
+    }
+  }
+  if (R(Compare(RA-Int[0x00] == 485.0))) {
+    FloatVariableAdd(-1.0, RA-Float[0x05])
+    if (R(0x26()) && R(Compare(RA-Float[0x05] <= 0.0))) {
+      SetBoneMotionOverride(3, 486, 38)
+      BasicVariableSet(486, RA-Int[0x00])
+    }
+    FloatVariableAdd(-1.0, RA-Float[0x07])
+    if (R(Compare(RA-Float[0x07] <= 0.0))) {
+      if (R(Article Available())) {
+        GenerateArticle(3)
+      }
+      FloatVariableSet(IC-Int[0xFE2], RA-Float[0x07])
+    }
+  }
+}

@@ -1,0 +1,30 @@
+// Status_Run_Brake
+Action 0x5 {
+  (undef: Sp_base) 65_07_01_00(3)
+  SetLoop(7) {
+    BasicVariableSet(0, LA-Int[0x0D])
+    TerminateCollisions()
+    (undef: Sp_base) 65_0A_01_00(4)
+    SynchronousTimer(1.0)
+    ChangeSubAction(1)
+    SubRoutine(hidden_subroutine_0x88)
+    (undef: Sp_Kinetic) 66_05_01_00(2)
+    SynchronousTimer(30.0)
+    while (R(Is Not in Damaging Magnifier())) {
+      SynchronousTimer(5.0)
+      EndWhile()
+      BasicVariableSet(1, LA-Int[0x0D])
+      while (R(Compare(Variable_Int_Controller_Trigger_1_Count == 0.0))) {
+        SynchronousTimer(1.0)
+        EndWhile()
+        SynchronousTimer(1.0)
+      }
+      (undef: Sp_base) 65_07_03_00(5, -4.0, 0.0)
+      ChangeSubAction(1)
+      (undef: Sp_base) 65_0A_03_00(5, -100.0, 50.0)
+      SubRoutine(hidden_subroutine_0x88)
+      (undef: Sp_Kinetic) 66_05_01_00(3)
+      SynchronousTimer(1.0)
+      ChangeAction(7, R(Bit is Set(RA-Bool[0x04])))
+}
+

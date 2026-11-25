@@ -1,0 +1,43 @@
+[DownBound_Big] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x3B: MAIN {
+}
+
+Subaction 0x3B: MAIN EXIT {
+}
+
+Subaction 0x3B: MAIN INIT {
+}
+
+Subaction 0x3B: GFX {
+  GraphicEffect(9, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GraphicEffectLanding(11, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x3B: GFX EXIT {
+}
+
+Subaction 0x3B: GFX INIT {
+}
+
+Subaction 0x3B: SFX {
+  SoundEffect(9544)
+  SynchronousTimer(26.0)
+  SoundEffect(9544)
+}
+
+Subaction 0x3B: SFX EXIT {
+}
+
+Subaction 0x3B: SFX INIT {
+}
+

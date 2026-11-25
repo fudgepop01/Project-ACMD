@@ -1,0 +1,11 @@
+Action 0x12D: ENTRY {
+  SetEvtToGroundStatus(false)
+  ChangeAction(300, R(Animation End()))
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1BF50)
+  ChangeSubAction(504)
+  FrameSpeedModifier(1.0)
+}
+
+Action 0x12D : EXIT {
+  SubRoutine(hidden_subroutine_0x1BA20)
+}

@@ -1,0 +1,6 @@
+[hsr_B684]
+hidden_subroutine_0xB684 {
+  if (R(Button Press(Attack)) && R(Button Pressed(Shield)) && R(Compare(Variable_Int_Controller_Trigger_1_Count_Prev >= Common_Param_Int_No_Rapid_Frame_Value))) {
+    SubRoutine(hsr_AAE4)
+  }
+}

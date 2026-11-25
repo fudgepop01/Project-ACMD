@@ -1,0 +1,16 @@
+Action 0x11B: ENTRY {
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    ChangeAction(303, R(Button Tap?()))
+    ElseIf_UNDOC5ARGS(R(0x19()), 34, 8.0, 0.0, 0.0)
+    ChangeAction(286, R(Button Tap?()))
+  } else {
+    if (R(On Ground())) {
+      ChangeAction(284, R(Button Tap?()))
+    } else {
+      ChangeAction(285, R(Button Tap?()))
+    }
+  }
+}
+
+Action 0x11B : EXIT {
+}

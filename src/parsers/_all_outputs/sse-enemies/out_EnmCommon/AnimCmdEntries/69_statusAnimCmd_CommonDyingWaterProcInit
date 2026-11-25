@@ -1,0 +1,10 @@
+// @ 0x3740
+CommonDyingWaterProcInit {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_03_00_00()
+  (undef: Sp_AI) 6A_01_01_00(-1)
+  (undef: Sp_Kinetic) 66_07_01_00(-1)
+  BodyCollision(2)
+  SetGimmickEffectFlag(false)
+  Return()
+}

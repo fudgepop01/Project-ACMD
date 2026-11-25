@@ -1,0 +1,44 @@
+[AttackLw4] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x60: MAIN {
+  SubRoutine(hidden_subroutine_0xF8A8)
+  AsynchronousTimer(7.0)
+  OffensiveCollision(Sp(0, 0), 13, 20, Sp(0, 68), Sp(0, 60), 4.5, 0.0, 3.6, -4.8, 0.0, 1.0, 1.0, 977470528)
+  OffensiveCollision(Sp(0, 1), 13, 20, Sp(0, 68), Sp(0, 60), 4.5, 0.0, 3.6, 4.8, 0.0, 1.0, 1.0, 977470528)
+  OffensiveCollision(Sp(0, 2), 15, 80, Sp(0, 98), Sp(0, 60), 7.0, 0.0, 3.6, -12.0, 0.0, 1.0, 1.0, 977470592)
+  OffensiveCollision(Sp(0, 3), 15, 80, Sp(0, 98), Sp(0, 60), 7.0, 0.0, 3.6, 12.0, 0.0, 1.0, 1.0, 977470592)
+  SynchronousTimer(5.0)
+  TerminateCollisions()
+}
+
+Subaction 0x60: GFX {
+  AsynchronousTimer(5.0)
+  GraphicEffectLanding(41, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x60: SOUND {
+  AsynchronousTimer(1.0)
+  StopSoundEffect(4497)
+  SynchronousTimer(6.0)
+  SoundEffect(4475)
+  SoundEffect(4478)
+  SoundEffect(4462)
+}
+
+Subaction 0x60: OTHER {
+  HeldItemsVisibility(false)
+  SlopeContourStand(1)
+  AsynchronousTimer(7.0)
+  Screenshake(1)
+  Rumble(13, 0)
+}
+

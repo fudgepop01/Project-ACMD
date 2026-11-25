@@ -1,0 +1,23 @@
+[hsr_62C]
+hidden_subroutine_0x62C {
+  SWITCH_3ARG(1000, IC-Int[0xABEA], 8)
+    Case(0)
+      FloatVariableSet(0.0, LA-Float[0x02])
+    Case(1)
+      FloatVariableSet(1.0, LA-Float[0x02])
+    Case(2)
+      FloatVariableSet(2.0, LA-Float[0x02])
+    Case(3)
+      FloatVariableSet(3.0, LA-Float[0x02])
+    Case(4)
+      FloatVariableSet(4.0, LA-Float[0x02])
+    Case(5)
+      FloatVariableSet(5.0, LA-Float[0x02])
+    Case(6)
+      FloatVariableSet(6.0, LA-Float[0x02])
+    Case(7)
+      FloatVariableSet(7.0, LA-Float[0x02])
+    DefaultCase()
+  EndSwitch()
+  (undef: motion) 04_12_02_00(0, LA-Float[0x02])
+}

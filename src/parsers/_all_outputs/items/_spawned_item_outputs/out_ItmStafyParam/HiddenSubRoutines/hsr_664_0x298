@@ -1,0 +1,8 @@
+[hsr_298]
+hidden_subroutine_0x298 {
+  SubRoutine(hsr_D0)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.8, 2.0, 2.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+  ChangeSubAction(5)
+  ChangeActionStatus(4, 4, R(On Ground()))
+  Return()
+}

@@ -1,0 +1,6 @@
+// @ 0x23950
+ItemShootJumpSquat_Common {
+  ChangeSubAction(347)
+  ChangeActionStatus(10133, RA-Int[0x08], R(In Air()))
+  ChangeActionStatus(10136, RA-Int[0x09], R(Animation End()))
+}

@@ -1,0 +1,43 @@
+[hsr_1F47C]
+hidden_subroutine_0x1F47C {
+  SetGimmickEffectFlag(false)
+  EndBoneMotionOverride(1)
+  Switch(10000, Variable_Int_Status_Prev_Kind)
+    Case(15)
+
+      ChangeAction(15, R(Compare(RA-Int[0x00] >= RA-Int[0x01])))
+      AdditionalRequirement(R(In Air()))
+
+    Case(16)
+
+      ChangeAction(16, R(Compare(RA-Int[0x00] >= RA-Int[0x01])))
+      AdditionalRequirement(R(In Air()))
+
+    DefaultCase()
+
+      ChangeAction(14, R(Compare(RA-Int[0x00] >= RA-Int[0x01])))
+      AdditionalRequirement(R(In Air()))
+
+  EndSwitch()
+
+  ChangeAction(0, R(Compare(RA-Int[0x00] >= RA-Int[0x01])))
+  AdditionalRequirement(R(On Ground()))
+  AdditionalRequirement(R(Animation End()))
+
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      SetAirGround(6)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      DisableSpecifiedMovement(0)
+      DisableSpecifiedMovement(1)
+      DisableSpecifiedMovement(3)
+      DisableSpecifiedMovement(2)
+      DisableSpecifiedMovement(4)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}

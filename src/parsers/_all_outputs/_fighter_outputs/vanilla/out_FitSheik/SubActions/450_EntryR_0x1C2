@@ -1,0 +1,30 @@
+[EntryR] (flags) {
+  No Out Transition: 1,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1C2: MAIN {
+}
+
+Subaction 0x1C2: GFX {
+  GraphicEffect(917523, 0, 0.0, 0.0, 4.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(917524, 0, 0.0, 0.0, 4.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(20.0)
+  GraphicEffectAttached(917518, 0, 0.0, 8.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  TerminateGraphicEffect(917523, false, true)
+}
+
+Subaction 0x1C2: SOUND {
+  SoundEffect(4084)
+}
+
+Subaction 0x1C2: OTHER {
+  SlopeContourStand(6)
+}
+

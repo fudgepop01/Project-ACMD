@@ -1,0 +1,8 @@
+[hsr_270]
+hidden_subroutine_0x270 {
+  (undef: Sp_base) 65_0E_07_00(2, RA-Float[0x00], RA-Float[0x01], RA-Float[0x02], 0.0, 1.0, 8.0)
+  FloatVariableSet(Variable_Float_Posture_Rot_Z, RA-Float[0x04])
+  FloatVariableMultiply(Variable_Float_Posture_Lr, RA-Float[0x04])
+  (undef: Sp_base) 65_0D_07_00(172, 0, RA-Float[0x00], RA-Float[0x01], 0.0, RA-Float[0x04], 3.0)
+  Return()
+}

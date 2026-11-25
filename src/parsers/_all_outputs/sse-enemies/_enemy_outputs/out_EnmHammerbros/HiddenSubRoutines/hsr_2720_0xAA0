@@ -1,0 +1,4 @@
+[hsr_AA0]
+hidden_subroutine_0xAA0 {
+  GraphicEffect(16973834, 4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}

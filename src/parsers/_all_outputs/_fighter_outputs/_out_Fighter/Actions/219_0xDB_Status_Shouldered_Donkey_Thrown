@@ -1,0 +1,9 @@
+// Status_Shouldered_Donkey_Thrown
+Action 0xDB: ENTRY {
+  (undef: StageObject) 0C_29_00_00()
+  (undef: motion) 04_1A_01_00(459)
+  ChangeSubAction(RA-Int[0x00])
+}
+
+Action 0xDB : EXIT {
+}

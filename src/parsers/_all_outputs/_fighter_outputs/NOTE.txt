@@ -1,0 +1,2 @@
+THESE DO NOT CONTAIN THE DATA FOR THEIR ARTICLES
+this is due to the character-specific nature of finding and specifying the param locations for them

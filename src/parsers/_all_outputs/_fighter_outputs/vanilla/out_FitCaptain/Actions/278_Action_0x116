@@ -1,0 +1,42 @@
+Action 0x116: ENTRY {
+  EnterFinalSmashState()
+  SetGimmickEffectFlag(false)
+  if (R(On Ground())) {
+    ChangeSubAction(481)
+    SetAirGround(6)
+  } else {
+    ChangeSubAction(485)
+    SetAirGround(12)
+  }
+
+  ChangeActionStatus(0, 0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus(1, 14, R(Animation End()))
+  ChangeAction(285, R(Bit is Set(RA-Bool[0x10])))
+  GenerateArticle(0)
+  SetRemoteArticleAction(0, 0)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SubRoutine(hidden_subroutine_0x1B030)
+      EnableActionStatusId(0)
+      DisableActionStatusId(1)
+      SetRequirement(R(In Air()))
+    } else {
+      SubRoutine(hidden_subroutine_0x1B0D0)
+      EnableActionStatusId(1)
+      DisableActionStatusId(0)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x116 : EXIT {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(285)
+      Break()
+    DefaultCase()
+      ExitFinalSmashState()
+  EndSwitch()
+}

@@ -1,0 +1,47 @@
+[hsr_23A68]
+hidden_subroutine_0x23A68 {
+  BitVariableClear(RA-Bool[0x20])
+  BitVariableClear(RA-Bool[0x21])
+  SetLoop(-1) {
+    if (R(Button Pressed(Attack))) {
+      BitVariableSet(RA-Bool[0x22])
+    } else {
+      BitVariableClear(RA-Bool[0x22])
+    }
+    if (R(Button Pressed(Special))) {
+      BitVariableSet(RA-Bool[0x23])
+    } else {
+      BitVariableClear(RA-Bool[0x23])
+    }
+      SetLoop(20) {
+      if (R(Is in Hitlag())) {
+        if (R(Is in Hitlag())) {
+          SubRoutine(hsr_23C58)
+          SubRoutine(Subaction_0x3 : MAIN)
+        }
+        NoEvent()
+        if (R(Button Pressed(Attack))) {
+          BitVariableSet(RA-Bool[0x22])
+        } else {
+          BitVariableClear(RA-Bool[0x22])
+        }
+        if (R(Button Pressed(Special))) {
+          BitVariableSet(RA-Bool[0x23])
+        } else {
+          BitVariableClear(RA-Bool[0x23])
+        }
+        if (R(NOT Bit is Set(RA-Bool[0x22]))) {
+          BitVariableSet(RA-Bool[0x20])
+        }
+        if (R(NOT Bit is Set(RA-Bool[0x23]))) {
+          BitVariableSet(RA-Bool[0x21])
+        }
+        SynchronousTimer(1.0)
+      }
+      BitVariableClear(RA-Bool[0x20])
+      BitVariableClear(RA-Bool[0x21])
+    }
+    SynchronousTimer(1.0)
+  }
+  NoEvent()
+}

@@ -1,0 +1,26 @@
+[SpecialLwLandingLL] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x20C: MAIN {
+}
+
+Subaction 0x20C: GFX {
+}
+
+Subaction 0x20C: SOUND {
+  AsynchronousTimer(2.0)
+  LandingSoundEffect(4850)
+}
+
+Subaction 0x20C: OTHER {
+  Rumble(14, 0)
+}
+

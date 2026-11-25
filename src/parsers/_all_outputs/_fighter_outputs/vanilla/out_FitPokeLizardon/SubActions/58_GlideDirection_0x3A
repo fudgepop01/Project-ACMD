@@ -1,0 +1,25 @@
+[GlideDirection] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x3A: MAIN {
+}
+
+Subaction 0x3A: GFX {
+}
+
+Subaction 0x3A: SOUND {
+  AsynchronousTimer(90.0)
+  SoundEffect(5420)
+}
+
+Subaction 0x3A: OTHER {
+}
+

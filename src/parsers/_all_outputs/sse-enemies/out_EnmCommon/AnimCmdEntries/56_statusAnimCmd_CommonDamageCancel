@@ -1,0 +1,7 @@
+// @ 0x3248
+CommonDamageCancel {
+  SubRoutine(statusAnimCmd_CommonDamageProcEnd)
+  BitVariableClear(RA-Bool[0x00])
+  TerminateConcurrentInfiniteLoop(4)
+  Return()
+}

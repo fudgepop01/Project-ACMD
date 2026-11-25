@@ -1,0 +1,17 @@
+Action 0x114: ENTRY {
+  BasicVariableSet(466, RA-Int[0x00])
+  BasicVariableSet(467, RA-Int[0x01])
+  FloatVariableSet(IC-Int[0xFA0], RA-Float[0x04])
+  FloatVariableSet(IC-Int[0xFA1], RA-Float[0x05])
+  FloatVariableSet(IC-Int[0xFA2], RA-Float[0x06])
+  FloatVariableSet(IC-Int[0xFA6], RA-Float[0x08])
+  FloatVariableSet(IC-Int[0xFA5], RA-Float[0x07])
+  FloatVariableSet(IC-Int[0xFA7], RA-Float[0x09])
+  FloatVariableSet(IC-Int[0xFA3], RA-Float[0x0A])
+  BasicVariableSet(IC-Int[0xFA4], RA-Int[0x03])
+  BasicVariableSet(16, RA-Int[0x02])
+  SubRoutine(EXTERNAL: statusAnimCmd_SpecialJumpAttack)
+}
+
+Action 0x114 : EXIT {
+}

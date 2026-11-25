@@ -1,0 +1,14 @@
+Action 0x11E: ENTRY {
+  SoundEffect(1133)
+  ChangeSubAction(477)
+  AllowSpecificInterrupt(AIR_CLIFF)
+
+  ChangeAction(287, R(On Ground()))
+  AdditionalRequirement(R(Compare(IC-Int[0x3EA] <= 0.0)))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x10])))
+
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x17F98)
+}
+
+Action 0x11E : EXIT {
+}

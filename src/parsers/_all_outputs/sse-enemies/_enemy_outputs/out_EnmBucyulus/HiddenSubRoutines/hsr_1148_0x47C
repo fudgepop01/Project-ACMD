@@ -1,0 +1,7 @@
+[hsr_47C]
+hidden_subroutine_0x47C {
+  if (R(Compare(LA-Int[0x05] >= 2.0))) {
+    BitVariableSet(LA-Bool[0x0A])
+  }
+  Return()
+}

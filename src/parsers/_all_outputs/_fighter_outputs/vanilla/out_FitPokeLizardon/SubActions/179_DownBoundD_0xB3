@@ -1,0 +1,33 @@
+[DownBoundD] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xB3: MAIN {
+}
+
+Subaction 0xB3: GFX {
+  Goto(Subaction_0xAA : GFX)
+}
+
+Subaction 0xB3: SOUND {
+  AsynchronousTimer(1.0)
+  StopSoundEffect(68)
+  StopSoundEffect(69)
+  StopSoundEffect(70)
+  ImpactSoundEffect(94)
+}
+
+Subaction 0xB3: OTHER {
+  Screenshake(2)
+  Rumble(14, 0)
+  AsynchronousTimer(14.0)
+  SlopeContourStand02(1, 3)
+}
+

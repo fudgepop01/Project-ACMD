@@ -1,0 +1,7 @@
+// @ 0x3FE0
+CommonAICheckEnergyZeroMain {
+  if (R(0x2727())) {
+    BitVariableSet(RA-Bool[0x04])
+  }
+  Return()
+}

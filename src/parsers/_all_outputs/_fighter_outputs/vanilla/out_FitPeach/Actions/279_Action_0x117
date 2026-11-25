@@ -1,0 +1,10 @@
+Action 0x117: ENTRY {
+  ChangeAction(281, R(Animation End()))
+  ChangeAction(281, R(On Ground()))
+  ChangeActionStatus(10147, 281, R(Button Tap?()))
+  DisableActionStatusId(10147)
+  ChangeSubAction(463)
+}
+
+Action 0x117 : EXIT {
+}

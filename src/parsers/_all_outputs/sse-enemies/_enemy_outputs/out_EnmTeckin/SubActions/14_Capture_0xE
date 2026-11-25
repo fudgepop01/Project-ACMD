@@ -1,0 +1,40 @@
+[Capture] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xE: MAIN {
+  SetAnimationFrame(0.0)
+  FrameSpeedModifier(0.0)
+}
+
+Subaction 0xE: MAIN EXIT {
+}
+
+Subaction 0xE: MAIN INIT {
+}
+
+Subaction 0xE: GFX {
+}
+
+Subaction 0xE: GFX EXIT {
+}
+
+Subaction 0xE: GFX INIT {
+}
+
+Subaction 0xE: SFX {
+}
+
+Subaction 0xE: SFX EXIT {
+}
+
+Subaction 0xE: SFX INIT {
+}
+

@@ -1,0 +1,16 @@
+// Status_Jump_Squat
+Action 0xA {
+  ChangeSubAction(9)
+  if (R(Is within footstool range())) {
+    (undef: Sp_Kinetic) 66_00_0D_00(0.5, 0.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.01, 0.0, false, false, true)
+  } else {
+    (undef: Sp_Kinetic) 66_00_0D_00(-0.5, 0.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.01, 0.0, false, false, true)
+  }
+  EnableSpecifiedMovement(2)
+  SetRequirement(R(Animation has looped?()))
+  LoadRest()
+  SetAnimationFrame(1.0)
+  FrameSpeedModifier(0.0)
+  ChangeActionStatus(4, 4, R(On Ground()))
+}
+

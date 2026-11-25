@@ -1,0 +1,8 @@
+[hsr_11FE8]
+hidden_subroutine_0x11FE8 {
+  SubRoutine(hsr_11F98)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+  BitVariableSet(RA-Bool[0x19])
+  Return()
+}

@@ -1,0 +1,6 @@
+// Status_Turn_Run
+Action 0x8 {
+  SubRoutine(hidden_subroutine_0x40)
+  ChangeAction(4, R(On Ground()))
+}
+

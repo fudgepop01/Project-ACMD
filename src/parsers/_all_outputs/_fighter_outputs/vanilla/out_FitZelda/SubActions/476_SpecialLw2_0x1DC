@@ -1,0 +1,35 @@
+[SpecialLw2] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1DC: MAIN {
+  AsynchronousTimer(30.0)
+  AllowInterrupt()
+}
+
+Subaction 0x1DC: GFX {
+  GraphicEffectAttached(917518, 0, 0.0, 8.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(1.0)
+  FlashOverlayEffect(255, 255, 255, 200)
+  ChangeFlashOverlayColor(34, 255, 255, 255, 0)
+  AsynchronousTimer(35.0)
+  TerminateFlashEffect()
+}
+
+Subaction 0x1DC: SOUND {
+  AsynchronousTimer(5.0)
+  VictorySoundEffect(4044)
+}
+
+Subaction 0x1DC: OTHER {
+  AsynchronousTimer(1.0)
+  Rumble(2, 30)
+}
+

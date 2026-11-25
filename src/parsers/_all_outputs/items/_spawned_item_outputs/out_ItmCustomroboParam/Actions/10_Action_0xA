@@ -1,0 +1,22 @@
+// Status_Jump_Squat
+Action 0xA {
+  BasicVariableIncrement(LA-Int[0x01])
+  ChangeAction(4, R(On Ground()))
+  if (R(Compare(LA-Int[0x00] == 1.0))) {
+    (undef: Sp_base) 65_07_01_00(5)
+    if (R(2714(1))) {
+      SubRoutine(hidden_subroutine_0x58)
+    } else {
+      SubRoutine(hidden_subroutine_0xF8)
+    }
+  } else {
+    if (R(Is within footstool range())) {
+      SubRoutine(hidden_subroutine_0x58)
+    } else {
+      SubRoutine(hidden_subroutine_0xF8)
+    }
+  }
+  SubRoutine(hidden_subroutine_0x190)
+  ChangeAction(13, R(Button Tap?()))
+}
+

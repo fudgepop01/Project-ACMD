@@ -1,0 +1,30 @@
+Action 0xC: MAIN {
+  SetLoop(-1) {
+    if (R(Bit is Set(LA-Bool[0x0C]))) {
+      (undef: Sp_Kinetic) 66_00_04_00(3, 20, 35791.0, 13)
+      (undef: Sp_Kinetic) 66_00_04_00(5, 20, 35791.0, 19)
+      BitVariableClear(LA-Bool[0x0C])
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0xC: EXIT {
+  (undef: Sp_Kinetic) 66_07_01_00(3)
+  (undef: Sp_Kinetic) 66_07_01_00(5)
+  (undef: Sp_Link) 6E_02_02_00(0, O(0x00000430))
+}
+
+Action 0xC: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  if (R(Bit is Set(LA-Bool[0x07]))) {
+    (undef: Sp_AI) 6A_00_01_00(20)
+  } else {
+    (undef: Sp_AI) 6A_00_01_00(25)
+  }
+  SubAction09(9)
+  BitVariableClear(LA-Bool[0x0C])
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+  (undef: Sp_Link) 6E_00_04_00(0, 5103, 63, 1)
+}
+

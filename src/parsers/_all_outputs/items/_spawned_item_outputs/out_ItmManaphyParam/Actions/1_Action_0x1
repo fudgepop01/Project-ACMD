@@ -1,0 +1,11 @@
+// Status_Walk
+Action 0x1 {
+  DisableActionStatusId(1)
+  DisableSpecifiedMovement(2)
+  (undef: Sp_base) 65_06_01_00(2)
+  ChangeSubAction(0)
+  SetRequirement(R(Animation has looped?()))
+  LoadRest()
+  ChangeAction(8, R(Button Tap?()))
+}
+

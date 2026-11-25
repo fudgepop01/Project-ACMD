@@ -1,0 +1,14 @@
+[hsr_328]
+hidden_subroutine_0x328 {
+  ChangeSubAction(4, true)
+  SynchronousTimer(65.0)
+  if (R(Compare(LA-Int[0x02] == 0.0))) {
+    SubRoutine(hsr_1C8)
+    FloatVariableSet(Variable_Float_Posture_Pos_Y, RA-Float[0x00])
+    FloatVariableAdd(27.0, RA-Float[0x00])
+    (undef: Sp_base) 65_09_05_00(177, 0, LA-Float[0x00], RA-Float[0x00], 0.0)
+    BasicVariableSet(1, LA-Int[0x02])
+  }
+  SetRequirement(R(Animation End()))
+  LoadRest()
+}

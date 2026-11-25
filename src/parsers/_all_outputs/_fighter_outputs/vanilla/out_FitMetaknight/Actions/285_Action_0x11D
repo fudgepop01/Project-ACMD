@@ -1,0 +1,19 @@
+Action 0x11D: ENTRY {
+
+  ChangeAction(133, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeAction(286, R(On Ground()))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x10])))
+
+  ChangeAction(14, R(Animation End()))
+  ResetMomentum()
+  ChangeSubAction(484)
+}
+
+Action 0x11D : EXIT {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(133)
+      BitVariableSet(LA-Bool[0x3D])
+  EndSwitch()
+}

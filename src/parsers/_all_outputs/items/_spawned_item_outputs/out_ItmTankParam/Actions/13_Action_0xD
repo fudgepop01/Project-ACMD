@@ -1,0 +1,11 @@
+// Status_Fly
+Action 0xD {
+  ChangeAction(3, R(In Air()))
+  (undef: Sp_Kinetic) 66_02_02_00(0.45, 0.0)
+  ReverseDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  SynchronousTimer(6.0)
+  ChangeAction(12, R(Button Tap?()))
+}
+

@@ -1,0 +1,48 @@
+[SwordTurnRun] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x24: MAIN {
+  AsynchronousTimer(17.0)
+  ReverseDirection()
+}
+
+Subaction 0x24: MAIN EXIT {
+}
+
+Subaction 0x24: MAIN INIT {
+}
+
+Subaction 0x24: GFX {
+  SetLoop(5) {
+    GraphicEffectAttached(12517596, 7, 34.369, -20.668, 12.747, 0.0, 70.713, 0.0, 1.0, false)
+    GraphicEffectAttached(12517597, 7, 34.369, -20.668, 12.747, 0.0, 70.713, 0.0, 1.0, false)
+    GraphicEffectAttached(12517596, 7, -8.420983333333334, -20.668, 34.587, 0.0, -20.918, 0.0, 1.0, false)
+    GraphicEffectAttached(12517597, 7, -8.420983333333334, -20.668, 34.587, 0.0, -20.918, 0.0, 1.0, false)
+    SynchronousTimer(5.0)
+  }
+}
+
+Subaction 0x24: GFX EXIT {
+}
+
+Subaction 0x24: GFX INIT {
+}
+
+Subaction 0x24: SFX {
+  SoundEffect(9772)
+}
+
+Subaction 0x24: SFX EXIT {
+}
+
+Subaction 0x24: SFX INIT {
+}
+

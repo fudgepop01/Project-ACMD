@@ -1,0 +1,16 @@
+[hsr_19BE0]
+hidden_subroutine_0x19BE0 {
+  Switch(10000, RA-Int[0x01])
+    Case(0)
+      Visibility(false)
+      BasicVariableIncrement(RA-Int[0x01])
+    Case(1)
+      BasicVariableSet(IC-Int[0x5DC5], RA-Int[0x00])
+      ChangeAction(288, R(Compare(RA-Int[0x00] <= 0.0)))
+      SubRoutine(hsr_19110)
+      Visibility(true)
+      ChangeSubAction(482)
+      BasicVariableIncrement(RA-Int[0x01])
+  EndSwitch()
+  BasicVariableDecrement(RA-Int[0x00])
+}

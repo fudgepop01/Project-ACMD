@@ -1,0 +1,20 @@
+Action 0x114: ENTRY {
+  ChangeAction(282, R(Animation End()))
+  if (R(On Ground())) {
+    SetAirGround(6)
+    Module0900(0)
+    SetAerialOrOnstage(1)
+    ChangeSubAction(468)
+  } else {
+    SetAirGround(100)
+    Module0900(2)
+    SetAerialOrOnstage(5)
+    ChangeSubAction(469)
+  }
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x17208)
+  AllowSpecificInterrupt(AIR_CLIFF)
+}
+
+Action 0x114 : EXIT {
+  SubRoutine(hidden_subroutine_0x172F8)
+}

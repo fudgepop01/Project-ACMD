@@ -1,0 +1,12 @@
+// Status_Fall_Special
+Action 0x10 {
+  SubRoutine(hidden_subroutine_0x68)
+  BasicVariableSet(0, LA-Int[0x00])
+  ChangeActionStatus(3, 3, R(In Air()))
+  (undef: Sp_Kinetic) 66_02_02_00(0.08, 0.0)
+  ChangeSubAction(3)
+  SetRequirement(R(Animation has looped?()))
+  LoadRest()
+  ChangeActionStatus(12, 12, R(On Ground()))
+}
+

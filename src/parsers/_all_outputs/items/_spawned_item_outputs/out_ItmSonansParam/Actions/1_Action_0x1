@@ -1,0 +1,14 @@
+// Status_Walk
+Action 0x1 {
+  (undef: Sp_base) 65_05_01_00(600)
+  ChangeSubAction(0)
+  (undef: Sp_base) 65_06_01_00(2)
+  (undef: Sp_base) 65_03_02_00(0.0, -90.0)
+  CharacterSpecific01()
+  SetAnimationFrame(1.0)
+  FrameSpeedModifier(0.0)
+  SubRoutine(hidden_subroutine_0x70)
+  DisableActionStatusId(1)
+  ChangeAction(14, R(On Ground()))
+}
+

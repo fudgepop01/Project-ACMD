@@ -1,0 +1,9 @@
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x4 (Status_Run) @ 7 : 1
+
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 1 : 1
+LA-Int[0x00] in Action 0x4 (Status_Run) @ 0 : 2
+
+LA-Bool[0x05] in Action 0x4 (Status_Run) @ 9 : 2
+LA-Bool[0x05] in Action 0x4 (Status_Run) @ 12 : 2
+
+RA-Bool[0x02] in hsr_60 @ 0 : 3

@@ -1,0 +1,45 @@
+[Explode] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x4: MAIN {
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 3, 6, 3.2, 90, 35, 0.0, 0, 0.0, 120, -5.0, 14.0, 0.0, 0.0, 0.0, -4.0, 5, 0.0, 1.0, 1.0, false, true, 5, 2, 11, 3, true, 0, 311, false, 15, false, true, false, false, 120, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SynchronousTimer(15.0)
+  TerminateCollisions()
+  BitVariableSet(LA-Bool[0x0B])
+}
+
+Subaction 0x4: MAIN EXIT {
+}
+
+Subaction 0x4: MAIN INIT {
+  Module1901()
+}
+
+Subaction 0x4: GFX {
+  GraphicEffect(35, 5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x4: GFX EXIT {
+}
+
+Subaction 0x4: GFX INIT {
+}
+
+Subaction 0x4: SFX {
+  VictorySoundEffect(9279)
+}
+
+Subaction 0x4: SFX EXIT {
+}
+
+Subaction 0x4: SFX INIT {
+}
+

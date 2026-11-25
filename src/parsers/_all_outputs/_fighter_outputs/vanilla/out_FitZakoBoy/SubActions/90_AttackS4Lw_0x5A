@@ -1,0 +1,32 @@
+[AttackS4Lw] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x5A: MAIN {
+  AsynchronousTimer(6.0)
+  OffensiveCollision(Sp(21, 0), 17, 361, Sp(0, 100), Sp(0, 20), 4.5, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 960692869)
+  OffensiveCollision(Sp(20, 1), 17, 361, Sp(0, 100), Sp(0, 20), 4.5, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 960692869)
+  OffensiveCollision(Sp(20, 2), 17, 361, Sp(0, 100), Sp(0, 20), 3.0, -4.5, 0.0, 0.0, 0.0, 1.0, 1.0, 960692869)
+  Goto(hidden_subroutine_0x7A0C)
+}
+
+Subaction 0x5A: GFX {
+}
+
+Subaction 0x5A: SOUND {
+  AsynchronousTimer(6.0)
+  SoundEffect(168)
+  SynchronousTimer(1.0)
+  SoundEffect(6804)
+}
+
+Subaction 0x5A: OTHER {
+}
+

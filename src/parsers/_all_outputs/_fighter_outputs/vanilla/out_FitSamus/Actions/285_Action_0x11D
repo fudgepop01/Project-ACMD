@@ -1,0 +1,9 @@
+Action 0x11D: ENTRY {
+  SubRoutine(hidden_subroutine_0x18714)
+  SubRoutine(hidden_subroutine_0x1884C)
+  SynchronousTimer(1.0)
+  ChangeAction(286, R(In Air()))
+}
+
+Action 0x11D : EXIT {
+}

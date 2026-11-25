@@ -1,0 +1,5 @@
+[hsr_F610]
+hidden_subroutine_0xF610 {
+  ModelChanger(1, 1)
+  Return()
+}

@@ -1,0 +1,8 @@
+// @ 0xA48
+GFXEvent_0x8 {
+  SetLoop(8) {
+    GraphicEffect(19, -1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+    SubRoutine(hidden_subroutine_0x8B8)
+  }
+  Return()
+}

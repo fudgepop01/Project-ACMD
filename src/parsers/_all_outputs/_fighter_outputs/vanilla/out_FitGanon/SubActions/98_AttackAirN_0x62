@@ -1,0 +1,58 @@
+[AttackAirN] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x62: MAIN {
+  AsynchronousTimer(3.0)
+  BitVariableSet(RA-Bool[0x1E])
+  AsynchronousTimer(6.0)
+  OffensiveCollision(Sp(14, 0), 11, 55, Sp(0, 100), Sp(0, 30), 4.3, 0.0, 6.0, 0.0, 0.0, 1.0, 1.0, 964887616)
+  OffensiveCollision(Sp(14, 1), 11, 60, Sp(0, 100), Sp(0, 30), 5.7, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 964887616)
+  OffensiveCollision(Sp(6, 2), 11, 65, Sp(0, 100), Sp(0, 30), 6.2, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 964887616)
+  SynchronousTimer(2.0)
+  ChangeHitboxDamage(0, 7)
+  ChangeHitboxDamage(1, 7)
+  ChangeHitboxDamage(2, 7)
+  SynchronousTimer(5.0)
+  TerminateCollisions()
+  AsynchronousTimer(19.0)
+  OffensiveCollision(Sp(9, 0), 7, 361, Sp(0, 100), Sp(0, 25), 4.3, 0.0, -5.0, 0.0, 0.0, 1.0, 1.0, 964887552)
+  OffensiveCollision(Sp(9, 1), 7, 361, Sp(0, 100), Sp(0, 25), 5.7, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 964887552)
+  OffensiveCollision(Sp(6, 2), 7, 361, Sp(0, 100), Sp(0, 25), 6.2, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 964887552)
+  SynchronousTimer(2.0)
+  ChangeHitboxDamage(0, 5)
+  ChangeHitboxDamage(1, 5)
+  ChangeHitboxDamage(2, 5)
+  SynchronousTimer(11.0)
+  TerminateCollisions()
+  AsynchronousTimer(40.0)
+  BitVariableClear(RA-Bool[0x1E])
+  AsynchronousTimer(44.0)
+  AllowInterrupt()
+}
+
+Subaction 0x62: GFX {
+}
+
+Subaction 0x62: SOUND {
+  AsynchronousTimer(6.0)
+  LowVoiceClip()
+  SoundEffect(4771)
+  SynchronousTimer(13.0)
+  SoundEffect(4771)
+}
+
+Subaction 0x62: OTHER {
+  AsynchronousTimer(7.0)
+  Rumble(17, 0)
+  AsynchronousTimer(19.0)
+  Rumble(17, 0)
+}
+

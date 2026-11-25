@@ -1,0 +1,7 @@
+// Status_Jump
+Action 0xB {
+  ChangeAction(10, R(In Air()))
+  ChangeSubAction(8, true)
+  (undef: Sp_base) 65_1E_01_00(2)
+}
+

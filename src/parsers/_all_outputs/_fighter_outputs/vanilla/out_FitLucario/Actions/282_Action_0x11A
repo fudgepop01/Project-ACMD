@@ -1,0 +1,34 @@
+Action 0x11A: ENTRY {
+  BitVariableClear(LA-Bool[0x3E])
+  if (R(On Ground())) {
+    BasicVariableSet(28, LA-Int[0x45])
+  } else {
+    BasicVariableSet(472, LA-Int[0x45])
+  }
+  BasicVariableSet(-1, RA-Int[0x00])
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(In Air()))
+  AdditionalRequirement(R(Animation End()))
+
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x192B0)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SubRoutine(hidden_subroutine_0x190C8)
+      SubRoutine(hidden_subroutine_0x18FA8)
+      SetAirGround(6)
+      SetRequirement(R(In Air()))
+    } else {
+      SubRoutine(hidden_subroutine_0x19110)
+      SubRoutine(hidden_subroutine_0x18FA8)
+      SetAirGround(10)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x11A : EXIT {
+}

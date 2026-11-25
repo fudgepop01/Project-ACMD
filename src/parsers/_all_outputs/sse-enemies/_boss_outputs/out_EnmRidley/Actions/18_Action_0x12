@@ -1,0 +1,44 @@
+Action 0x12: MAIN {
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0x53C)
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x12: EXIT {
+  EnableSpecifiedMovement(8)
+}
+
+Action 0x12: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(10)
+  BitVariableClear(LA-Bool[0x0B])
+  SWITCH_3ARG(1000, IC-Int[0xABED], 3)
+    Case(0)
+      BasicVariableSet(19, LA-Int[0x06])
+      if (R(Facing Right())) {
+        SubAction09(6)
+      } else {
+        SubAction09(5)
+      }
+    Case(1)
+      BasicVariableSet(20, LA-Int[0x06])
+      if (R(Facing Right())) {
+        SubAction09(8)
+      } else {
+        SubAction09(7)
+      }
+    Case(2)
+      BasicVariableSet(21, LA-Int[0x06])
+      if (R(Facing Right())) {
+        SubAction09(6)
+      } else {
+        SubAction09(5)
+      }
+    DefaultCase()
+      (undef: unk_procedures) 1B_02_01_00(F(0x000015E8))
+  EndSwitch()
+  (undef: Sp_Kinetic) 66_00_02_00(3, 23)
+  DisableSpecifiedMovement(8)
+}
+

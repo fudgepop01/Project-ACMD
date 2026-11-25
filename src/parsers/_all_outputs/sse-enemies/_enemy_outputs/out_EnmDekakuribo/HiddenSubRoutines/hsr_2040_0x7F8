@@ -1,0 +1,7 @@
+[hsr_7F8]
+hidden_subroutine_0x7F8 {
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 10.0))) {
+    (undef: targetSearch) 16_00_01_00(2)
+  }
+  Return()
+}

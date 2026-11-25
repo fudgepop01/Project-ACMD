@@ -1,0 +1,5 @@
+IC-Int[0xD71] in Action 0x3 (Status_Dash) @ 7 : 0
+
+LA-Int[0x00] in Action 0x1 (Status_Walk) @ 1 : 1
+LA-Int[0x00] in Action 0x2 (Status_Walk_Brake) @ 0 : 1
+LA-Int[0x00] in Action 0x3 (Status_Dash) @ 5 : 1

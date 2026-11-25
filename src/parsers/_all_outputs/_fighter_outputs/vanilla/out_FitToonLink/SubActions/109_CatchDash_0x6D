@@ -1,0 +1,59 @@
+[CatchDash] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x6D: MAIN {
+  AsynchronousTimer(6.0)
+  GenerateArticle(4)
+  GenerateArticle(5)
+  AsynchronousTimer(13.0)
+  SetArticleAction07(4, 1)
+  SetArticleAction(5, 0)
+  CatchCollision(0, 82, 2.8, 0.0, 0.0, 0.0, 61, 1)
+  CatchCollision(1, 60, 1.5, 0.0, 0.0, 0.0, 61, 3)
+  CatchCollision(2, 60, 4.0, 0.0, 0.0, 0.0, 61, 1)
+  SubRoutine(EXTERNAL: gameAnimCmd_CaptureCutCommon [Subaction 0x6C: MAIN])
+  SynchronousTimer(8.0)
+  TerminateCatchCollisions()
+  AsynchronousTimer(69.0)
+  SetRemoteArticleAction(4, 3)
+  SetArticleAction(5, 1)
+  AsynchronousTimer(86.0)
+  RemoveArticle(4)
+  RemoveArticle(5)
+}
+
+Subaction 0x6D: GFX {
+  Goto(Subaction_0x6C : GFX)
+}
+
+Subaction 0x6D: SOUND {
+  AsynchronousTimer(13.0)
+  SoundEffect(6177)
+  SynchronousTimer(17.0)
+  SoundEffect(6178)
+  SynchronousTimer(40.0)
+  SoundEffect(6178)
+  SynchronousTimer(10.0)
+  SoundEffect(6178)
+}
+
+Subaction 0x6D: OTHER {
+  SlopeContourStand(2)
+  AsynchronousTimer(4.0)
+  ModelChanger(2, 1)
+  AsynchronousTimer(5.0)
+  SlopeContourStand(6)
+  AsynchronousTimer(12.0)
+  Rumble(16, 0)
+  AsynchronousTimer(87.0)
+  ModelChanger(2, 0)
+}
+

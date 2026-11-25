@@ -1,0 +1,10 @@
+// Status_Walk
+Action 0x1 {
+  (undef: Sp_base) 65_04_01_00(1400)
+  (undef: damage) 1E_02_01_00(125.0)
+  BitVariableSet(LA-Bool[0x04])
+  SubRoutine(hidden_subroutine_0x18)
+  DisableActionStatusId(1)
+  ChangeAction(3, R(In Air()))
+}
+

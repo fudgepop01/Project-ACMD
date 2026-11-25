@@ -1,0 +1,8 @@
+[hsr_758C]
+hidden_subroutine_0x758C {
+
+  ChangeActionStatus(10002, 14, R(Animation End()))
+  AdditionalRequirement(R(Compare(RA-Int[0x0C] >= 3.0)))
+
+  SubRoutine(statusAnimCmd_ItemShootAir_Common)
+}

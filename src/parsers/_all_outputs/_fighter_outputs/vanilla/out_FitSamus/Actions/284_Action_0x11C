@@ -1,0 +1,23 @@
+Action 0x11C: ENTRY {
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    ChangeSubAction(466)
+    BitVariableClear(RA-Bool[0x10])
+  } else {
+    ChangeSubAction(466, true)
+  }
+  SetAerialOrOnstage(5)
+  SetAirGround(10)
+  ChangeActionStatus(0, 282, R(On Ground()))
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  DisableActionStatusId(0)
+  if (R(Compare(IC-Int[0xFA2] >= 1.0))) {
+    FloatVariableSet(4002.0, LA-Float[0x00])
+    ChangeAction(25, R(Button Tap?()))
+  } else {
+    ChangeAction(14, R(Button Tap?()))
+  }
+}
+
+Action 0x11C : EXIT {
+}

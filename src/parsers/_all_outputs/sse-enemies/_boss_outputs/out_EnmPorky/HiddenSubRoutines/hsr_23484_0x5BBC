@@ -1,0 +1,5 @@
+[hsr_5BBC]
+hidden_subroutine_0x5BBC {
+  SpecialOffensiveCollisionEnemyHitbox(3, 4, 7, 0, 0.0, 0, 100, 0.0, 16, 0.0, 0, 0.0, 22.0, 0.0, 0.0, -6.5, 0.0, 0, 0.0, 0.0, 1.0, false, true, 0, 0, 0, 3, true, 0, 1, false, 15, false, false, false, false, 3, true, false, 0, false, false, true, true, true, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(4, 4, 7, 0, 0.0, 0, 100, 0.0, 3, 0.0, 0, 0.0, 24.0, 0.0, 0.0, -12.0, 0.0, 0, 0.0, 0.0, 1.0, false, true, 0, 0, 0, 3, true, 0, 1, false, 15, false, false, false, false, 3, true, false, 0, false, false, true, true, true, 0, LA-Float[0x0C])
+}

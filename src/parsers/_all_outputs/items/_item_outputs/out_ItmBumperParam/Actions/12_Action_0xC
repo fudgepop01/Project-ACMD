@@ -1,0 +1,16 @@
+// Status_Jump_Aerial
+Action 0xC {
+  BitVariableClear(LA-Bool[0x08])
+  (undef: Sp_Kinetic) 66_06_01_00(3)
+  ChangeAction(5, R(NOT In walljump situation()), 255)
+  ChangeAction(5, R(In Air()))
+  if (R(NOT Bit is Set(LA-Bool[0x00]))) {
+    (undef: Sp_base) 65_04_01_00(960)
+    BitVariableSet(LA-Bool[0x0C])
+    BitVariableSet(LA-Bool[0x00])
+  }
+  ChangeSubAction(6)
+  SynchronousTimer(1.0)
+  ChangeAction(13, R(On Ground()))
+}
+

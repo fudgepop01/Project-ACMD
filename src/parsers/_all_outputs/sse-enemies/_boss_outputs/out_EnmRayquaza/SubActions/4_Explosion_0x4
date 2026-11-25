@@ -1,0 +1,60 @@
+[Explosion] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x4: MAIN {
+  AsynchronousTimer(34.0)
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 24, 16, 1.8, -75, 100, 0.0, 35, 0.0, 0, 0.0, 18.0, 0.0, 0.0, 0.0, 0.0, 0, 0.5, 0.6, 0.6, false, true, 15, 2, 2, 3, true, 0, 311, false, 9, false, true, false, false, 30, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SubRoutine(hidden_subroutine_0x4B5C)
+  SubRoutine(hidden_subroutine_0xA40)
+  AsynchronousTimer(64.0)
+  TerminateCollisions()
+  AsynchronousTimer(72.0)
+  TerminateCollisions()
+  (undef: Sp_base) 65_0E_01_00(IC-Int[0xABFA])
+  SubRoutine(hidden_subroutine_0x4B94)
+}
+
+Subaction 0x4: MAIN EXIT {
+}
+
+Subaction 0x4: MAIN INIT {
+}
+
+Subaction 0x4: GFX {
+  GraphicEffect(12189709, 3, 0.0, -3.0, 0.0, 0.0, 0.0, 0.0, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(30.0)
+  GraphicEffectAttached(12189716, 24, -5.0, 1.9, 9.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12189716, 24, 5.0, 1.9, 9.0, 0.0, 0.0, 0.0, 1.0, true)
+  Screenshake(1)
+  AsynchronousTimer(75.0)
+  Screenshake(2)
+  AsynchronousTimer(85.0)
+  Screenshake(2)
+  AsynchronousTimer(95.0)
+  Screenshake(1)
+}
+
+Subaction 0x4: GFX EXIT {
+}
+
+Subaction 0x4: GFX INIT {
+}
+
+Subaction 0x4: SFX {
+  SoundEffect(9622)
+}
+
+Subaction 0x4: SFX EXIT {
+}
+
+Subaction 0x4: SFX INIT {
+}
+

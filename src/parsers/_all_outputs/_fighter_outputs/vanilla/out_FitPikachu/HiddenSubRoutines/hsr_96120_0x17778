@@ -1,0 +1,12 @@
+[hsr_17778]
+hidden_subroutine_0x17778 {
+  if (R(In Air())) {
+    if (R(Bit is Set(RA-Bool[0x10]))) {
+      EnableSpecifiedMovement(1)
+      EnableSpecifiedMovement(2)
+    } else {
+      DisableSpecifiedMovement(1)
+      DisableSpecifiedMovement(2)
+    }
+  }
+}

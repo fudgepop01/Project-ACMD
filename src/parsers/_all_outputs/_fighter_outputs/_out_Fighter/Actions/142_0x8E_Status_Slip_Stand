@@ -1,0 +1,8 @@
+// Status_Slip_Stand
+Action 0x8E: ENTRY {
+  SubRoutine(hidden_subroutine_0x179F4)
+  ChangeSubAction(230)
+}
+
+Action 0x8E : EXIT {
+}

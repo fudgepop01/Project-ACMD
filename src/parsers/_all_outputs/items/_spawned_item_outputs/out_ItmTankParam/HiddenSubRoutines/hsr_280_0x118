@@ -1,0 +1,17 @@
+[hsr_118]
+hidden_subroutine_0x118 {
+  DisableSpecifiedMovement(2)
+  SynchronousTimer(1.0)
+  BasicVariableRandom(4, 6, LA-Int[0x00])
+  while (R(Compare(LA-Int[0x00] > 0.0))) {
+    (undef: Sp_base) 65_13_03_00(LA-Int[0x01], 5.0, 3.0)
+    if (R(Compare(LA-Int[0x01] == 0.0))) {
+      (undef: Sp_base) 65_09_08_00(171, 0, Variable_Float_Posture_Pos_X, Variable_Float_Posture_Pos_Y, 0.0, 0.0, 0.0, 0.0)
+    } else {
+      (undef: Sp_base) 65_09_08_00(168, 0, Variable_Float_Posture_Pos_X, Variable_Float_Posture_Pos_Y, 0.0, 0.0, 0.0, 0.0)
+    }
+    BasicVariableDecrement(LA-Int[0x00])
+    (undef: control_flow_loop) 01_04_02_00(25, 50)
+    EndWhile()
+    Return()
+}

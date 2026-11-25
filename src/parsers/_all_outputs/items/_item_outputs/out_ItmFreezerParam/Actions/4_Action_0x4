@@ -1,0 +1,26 @@
+// Status_Run
+Action 0x4 {
+  SubRoutine(hidden_subroutine_0x70)
+  DisableActionStatusId(4)
+  ChangeAction(3, R(In Air()))
+  if (R(Compare(LA-Int[0x00] == 0.0))) {
+    (undef: Sp_base) 65_07_01_00(2)
+    if (R(NOT 2714(1))) {
+      (undef: Sp_Kinetic) 66_00_0B_00(-0.4, 0.0, 0.8, -1.0, -0.4, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+    } else {
+      (undef: Sp_Kinetic) 66_00_0B_00(0.4, 0.0, 0.8, -1.0, 0.4, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+    }
+    BasicVariableSet(1, LA-Int[0x00])
+  } else {
+    if (R(In wallcling situation())) {
+      (undef: Sp_Kinetic) 66_00_0B_00(-0.4, 0.0, 0.8, -1.0, -0.4, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+    } else {
+      (undef: Sp_Kinetic) 66_00_0B_00(0.4, 0.0, 0.8, -1.0, 0.4, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+    }
+  }
+  ChangeSubAction(6)
+
+  ChangeAction(12, R(In walljump situation()), 6)
+  AdditionalRequirement(R(On Ground()))
+}
+

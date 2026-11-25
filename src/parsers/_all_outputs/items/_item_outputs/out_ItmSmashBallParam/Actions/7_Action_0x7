@@ -1,0 +1,16 @@
+// Status_Turn_Dash
+Action 0x7 {
+  if (R(Compare(Variable_Int_Controller_Trigger_4_Count_Prev == LA-Int[0x00])) && R(Compare(LA-Int[0x0B] >= 1140.0))) {
+    BitVariableClear(RA-Bool[0x02])
+    FloatVariableSet(10.0, LA-Float[0x06])
+    (undef: damage) 1E_02_01_00(10.0)
+    SynchronousTimer(1.0)
+    ChangeAction(5, R(Button Tap?()))
+    Return()
+  }
+  ChangeSubAction(4)
+  SynchronousTimer(1.0)
+  (undef: Sp_base) 65_16_02_00(LA-Int[0x01], LA-Int[0x00])
+  ChangeAction(6, R(Button Tap?()))
+}
+

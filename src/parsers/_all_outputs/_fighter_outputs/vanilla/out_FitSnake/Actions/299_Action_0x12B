@@ -1,0 +1,9 @@
+Action 0x12B: ENTRY {
+  SubRoutine(EXTERNAL: statusAnimCmd_ItemShootAir_Common)
+  FloatVariableSet(-1.0, RA-Float[0x08])
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1B5CC)
+}
+
+Action 0x12B : EXIT {
+  SubRoutine(hidden_subroutine_0x1B0F4)
+}

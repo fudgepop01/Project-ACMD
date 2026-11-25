@@ -1,0 +1,6 @@
+[hsr_25050]
+hidden_subroutine_0x25050 {
+  if (R(On Ground())) {
+    BitVariableClear(LA-Bool[0x3E])
+  }
+}

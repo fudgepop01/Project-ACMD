@@ -1,0 +1,49 @@
+Action 0x13: MAIN {
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0x784)
+    if (R(Bit is Set(LA-Bool[0x06]))) {
+      LoopBreak()
+    }
+    SynchronousTimer(1.0)
+  }
+  (undef: Sp_Area) 69_0A_02_00(Variable_Int_Controller_Flick_No_Reset_Y, LA-Float[0x05])
+  FloatVariableSet(Variable_Float_Posture_Pos_Y, LA-Float[0x07])
+  FloatVariableSubtract(IC-Int[0xFA5], LA-Float[0x07])
+  FloatVariableSubtract(IC-Int[0xFA5], LA-Float[0x05])
+  FloatVariableDivide(LA-Float[0x07], LA-Float[0x05])
+  if (R(Compare(LA-Float[0x05] < 0.0))) {
+    FloatVariableSet(0.0, LA-Float[0x05])
+  } elif (R(Compare(LA-Float[0x05] > 1.0))) {
+    FloatVariableSet(1.0, LA-Float[0x05])
+  }
+  (undef: motion) 04_17_01_00(LA-Float[0x05])
+}
+
+Action 0x13: EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 20.0))) {
+    SubRoutine(EXTERNAL: statusAnimCmd_CommonCatchProcExit)
+  }
+}
+
+Action 0x13: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(8)
+  BasicVariableSet(16, LA-Int[0x06])
+  SubRoutine(hidden_subroutine_0x784)
+  SWITCH_3ARG(1000, IC-Int[0xAC18], 2)
+    Case(0)
+      (undef: Sp_base) 65_1E_01_00(IC-Int[0xABFB])
+    Case(1)
+      (undef: Sp_base) 65_1E_01_00(IC-Int[0xABFA])
+    DefaultCase()
+      (undef: unk_procedures) 1B_02_01_00(F(0x000025FC))
+  EndSwitch()
+  (undef: Sp_Area) 69_0A_02_00(Variable_Int_Controller_Flick_No_Reset_Y, LA-Float[0x05])
+  FloatVariableSet(Variable_Float_Posture_Pos_Y, LA-Float[0x07])
+  SubRoutine(hidden_subroutine_0x14AC)
+  SubAction09(12)
+  SubActions0A(11)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 17)
+  SubRoutine(hidden_subroutine_0x1D14)
+}
+

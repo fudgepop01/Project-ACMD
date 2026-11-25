@@ -1,0 +1,7 @@
+[hsr_278]
+hidden_subroutine_0x278 {
+  GraphicEffectAttached2(10092575, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached2(10092579, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached2(10092576, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached2(10092580, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+}

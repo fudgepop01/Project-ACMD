@@ -1,0 +1,6 @@
+// Status_Walk
+Action 0x1 {
+  ChangeSubAction(0)
+  ChangeAction(3, R(In Air()))
+}
+

@@ -1,0 +1,17 @@
+// Status_Down_Eat
+Action 0x4F: ENTRY {
+  ChangeAction(14, R(In Air()))
+  ChangeAction(77, R(Animation End()))
+  if (R(0x48())) {
+    (undef: area) 14_06_02_00(6, true)
+  }
+  if (R(Bit is Set(RA-Bool[0x19]))) {
+    ChangeSubAction(174)
+  } else {
+    ChangeSubAction(183)
+  }
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x584C)
+}
+
+Action 0x4F : EXIT {
+}

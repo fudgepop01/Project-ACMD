@@ -1,0 +1,4 @@
+[hsr_14A0C]
+hidden_subroutine_0x14A0C {
+  FloatVariableSubtract(1.0, RA-Float[0x09])
+}

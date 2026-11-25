@@ -1,0 +1,31 @@
+Action 0x115: ENTRY {
+  DefensiveCollisionProperty(2, true, 1)
+  ChangeAction(287, R(Animation End()))
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(6)
+      SetAerialOrOnstage(1)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(490, true)
+      } else {
+        ChangeSubAction(490)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement01(0, R(In Air()))
+    } else {
+      SetAirGround(0)
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(493, true)
+      } else {
+        ChangeSubAction(493)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement01(1, R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x115 : EXIT {
+}

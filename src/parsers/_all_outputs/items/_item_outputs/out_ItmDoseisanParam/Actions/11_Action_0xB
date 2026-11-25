@@ -1,0 +1,17 @@
+// Status_Jump
+Action 0xB {
+  SubRoutine(hidden_subroutine_0x40)
+  ChangeAction(3, R(In Air()))
+  DisableActionStatusId(11)
+  DisableSpecifiedMovement(0)
+  ChangeSubAction(7)
+  SetAnimationFrame(1.0)
+  FrameSpeedModifier(0.0)
+  BodyCollision(2)
+  SynchronousTimer(30.0)
+  BodyCollision(0)
+  ChangeSubAction(7)
+  FrameSpeedModifier(2.0)
+  ChangeAction(4, R(On Ground()))
+}
+

@@ -1,0 +1,43 @@
+[Absorption] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x0: MAIN {
+  AsynchronousTimer(10.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 5, 10, 0.7, 361, 100, 0.0, 100, 0.0, 0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 2, 0.0, 1.0, 1.0, false, true, 0, 2, 3, 3, true, 0, 311, false, 15, false, false, false, false, 0, false, false, 0, true, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(13.0)
+  TerminateCollisions()
+}
+
+Subaction 0x0: MAIN EXIT {
+}
+
+Subaction 0x0: MAIN INIT {
+}
+
+Subaction 0x0: GFX {
+}
+
+Subaction 0x0: GFX EXIT {
+}
+
+Subaction 0x0: GFX INIT {
+}
+
+Subaction 0x0: SFX {
+  SoundEffect(9336)
+}
+
+Subaction 0x0: SFX EXIT {
+}
+
+Subaction 0x0: SFX INIT {
+}
+

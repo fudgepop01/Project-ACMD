@@ -1,0 +1,12 @@
+[hsr_4F0]
+hidden_subroutine_0x4F0 {
+  if (R(Successfully tethered ledge())) {
+    if [IF_REQ_UNKNOWN_3ARG] (R(0x12()), 2, Variable_Int_Controller_Flick_No_Reset_Y) {
+      (undef: Sp_Area) 69_00_01_00(Variable_Int_Controller_Flick_No_Reset_Y)
+    }
+  }
+  if (R(Bit is Set(LA-Bool[0x07])) && R(Compare(Variable_Int_Controller_Flick_Y_Dir >= LA-Float[0x08]))) {
+    BitVariableClear(LA-Bool[0x07])
+  }
+  Return()
+}

@@ -1,0 +1,13 @@
+[hsr_5F8]
+hidden_subroutine_0x5F8 {
+  if (R(On a Passable Floor())) {
+    DisableActionStatusId(3)
+    (undef: Sp_Kinetic) 66_00_0D_00(0.0, -0.5, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+    PassThroughFloorIfPossible_UNDOC0ARGS()
+    Module0900(2)
+    SetAerialOrOnstage(5)
+    ChangeSubAction(4)
+    ChangeAction(4, R(On Ground()))
+  }
+  Return()
+}

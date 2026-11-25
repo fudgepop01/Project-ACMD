@@ -1,0 +1,10 @@
+// Status_Fall_Aerial
+[statusAnimCmd_FallAerial]
+Action 0xF: ENTRY {
+  SubRoutine(statusAnimCmd_AIRChkFallCommon)
+  ChangeSubAction(35)
+  ConcurrentInfiniteLoop(I(9), statusAnimCmd_FALLCommonUniq)
+}
+
+Action 0xF : EXIT {
+}

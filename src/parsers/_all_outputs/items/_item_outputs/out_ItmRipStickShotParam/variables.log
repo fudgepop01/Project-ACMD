@@ -1,0 +1,8 @@
+IC-Int[0x3EF] ("Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv") in Action 0x5 (Status_Run_Brake) @ 1 : 0
+IC-Int[0x3EF] ("Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv") in Action 0x5 (Status_Run_Brake) @ 3 : 0
+
+IC-Int[0x3F0] ("Variable_Float_Kinetic_Energy_Damage_Speed_Y") in Action 0x5 (Status_Run_Brake) @ 3 : 1
+
+RA-Float[0x00] in Action 0x5 (Status_Run_Brake) @ 1 : 1
+RA-Float[0x00] in Action 0x5 (Status_Run_Brake) @ 2 : 1
+RA-Float[0x00] in Action 0x5 (Status_Run_Brake) @ 3 : 8

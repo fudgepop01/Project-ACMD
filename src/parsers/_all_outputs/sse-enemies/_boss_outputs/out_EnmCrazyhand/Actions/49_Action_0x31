@@ -1,0 +1,15 @@
+Action 0x31: MAIN {
+}
+
+Action 0x31: EXIT {
+}
+
+Action 0x31: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(8)
+  (undef: Sp_AI) 6A_00_01_00(23)
+  BasicVariableSet(9, LA-Int[0x06])
+  SubAction09(27)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 51)
+}
+

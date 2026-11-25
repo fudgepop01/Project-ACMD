@@ -1,0 +1,6 @@
+[hsr_18210]
+hidden_subroutine_0x18210 {
+  if (R(Animation End())) {
+    TerminateArticleFtTransform()
+  }
+}

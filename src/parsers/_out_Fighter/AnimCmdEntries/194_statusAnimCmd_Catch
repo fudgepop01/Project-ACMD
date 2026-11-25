@@ -1,0 +1,9 @@
+// @ 0x115A4
+Catch {
+  ChangeAction(14, R(In Air()))
+
+  ChangeActionStatus(10000, 0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeSubAction(108)
+}

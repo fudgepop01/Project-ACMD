@@ -1,0 +1,12 @@
+[hsr_29EC4]
+hidden_subroutine_0x29EC4 {
+  SetAirGround(10)
+  if (R(Compare(Variable_Float_Kinetic_Sum_Speed_Y < -2.9))) {
+    BitVariableSet(LA-Bool[0x39])
+    FloatVariableSet(Variable_Float_Kinetic_Sum_Speed_X_Lr, RA-Float[0x07])
+    SetMomentum(0.0, 0.0)
+    AddSubtractMomentum(RA-Float[0x07], -2.9)
+    BitVariableClear(LA-Bool[0x39])
+  }
+  ChangeSubAction(477)
+}

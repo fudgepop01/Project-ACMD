@@ -1,0 +1,50 @@
+[Run] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xF: MAIN {
+}
+
+Subaction 0xF: GFX {
+  AsynchronousTimer(1.0)
+  GraphicEffect(33, 0, 20.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(38, 0, -20.0, 1.0, 20.0, 0.0, 45.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(4.0)
+  GraphicEffect(38, 0, 16.0, 1.0, 14.0, 0.0, -45.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(7.0)
+  GraphicEffect(38, 0, -14.0, 1.0, -14.0, 0.0, 45.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(13.0)
+  GraphicEffect(33, 0, -20.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(38, 0, -20.0, 1.0, 20.0, 0.0, 45.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(15.0)
+  GraphicEffect(38, 0, 16.0, 1.0, 14.0, 0.0, -45.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(17.0)
+  GraphicEffect(38, 0, -14.0, 1.0, -14.0, 0.0, 45.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0xF : GFX)
+}
+
+Subaction 0xF: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffectTransient(6614)
+}
+
+Subaction 0xF: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(1.0)
+  Rumble(14, 0)
+  AsynchronousTimer(16.0)
+  Rumble(14, 0)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0xF : OTHER)
+}
+

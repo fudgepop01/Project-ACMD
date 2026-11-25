@@ -1,0 +1,17 @@
+[hsr_437C]
+hidden_subroutine_0x437C {
+  SetLoop(-1) {
+    Switch(1000, 463)
+      Case(1)
+        ChangeSubAction(464)
+      Case(2)
+        ChangeSubAction(465)
+      Case(-1)
+        SetAnimationTimerFrame(0.0)
+      DefaultCase()
+        ChangeSubAction(463)
+    EndSwitch()
+    SetRequirement(R(Animation End()))
+    LoadRest()
+  }
+}

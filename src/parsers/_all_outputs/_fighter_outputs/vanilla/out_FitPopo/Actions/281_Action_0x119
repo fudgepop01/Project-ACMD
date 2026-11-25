@@ -1,0 +1,47 @@
+Action 0x119: ENTRY {
+  GenerateArticle(3)
+
+  ChangeAction(284, R(Bit is Set(RA-Bool[0x10])))
+  AdditionalRequirement(R(NOT Bit is Set(RA-Bool[0x12])))
+
+  ChangeAction(25, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  BitVariableSet(RA-Bool[0x11])
+  BasicVariableSet(474, RA-Int[0x00])
+  BasicVariableSet(475, RA-Int[0x01])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      Module0900(0)
+      SetAerialOrOnstage(1)
+      SetAirGround(6)
+      if (R(Compare(Variable_Int_Motion_Kind == RA-Int[0x01]))) {
+        ChangeSubAction(RA-Int[0x00], true)
+      } else {
+        ChangeSubAction(RA-Int[0x00])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      Module0900(2)
+      SetAerialOrOnstage(5)
+      SetAirGround(108)
+      if (R(Compare(Variable_Int_Motion_Kind == RA-Int[0x00]))) {
+        ChangeSubAction(RA-Int[0x01], true)
+      } else {
+        ChangeSubAction(RA-Int[0x01])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x119 : EXIT {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(284)
+    Case(287)
+      Break()
+    DefaultCase()
+      RemoveArticle(3)
+  EndSwitch()
+}

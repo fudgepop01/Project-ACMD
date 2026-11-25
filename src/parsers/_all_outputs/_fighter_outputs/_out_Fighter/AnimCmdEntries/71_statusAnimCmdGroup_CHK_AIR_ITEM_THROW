@@ -1,0 +1,6 @@
+// @ 0x241E8
+CHK_AIR_ITEM_THROW {
+  ClearPreventInterrupt(AIR_ITEM_THROW)
+  SubRoutine(statusAnimCmd_AIRChkItemThrow)
+  ClearPreventInterrupt(ALL?)
+}

@@ -1,0 +1,7 @@
+// Status_Run_Brake
+Action 0x5 {
+  BasicVariableSet(8, LA-Int[0x0B])
+  SubRoutine(hidden_subroutine_0x48)
+  ChangeSubAction(3)
+}
+

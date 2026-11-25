@@ -1,0 +1,20 @@
+// Status_Final_Visual_Attack_Other
+Action 0xFB: ENTRY {
+  FrameSpeedModifier(0.0)
+  SetAirGround(12)
+  SetGimmickEffectFlag(false)
+  BodyCollision(3)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x81BC)
+  BitVariableSet(RA-Bool[0x10])
+  SetRequirement(R(NOT Bit is Set(RA-Bool[0x10])))
+  LoadRest()
+  Visibility(true)
+  if (R(On Ground())) {
+    ChangeAction(0, R(Button Tap?()))
+  } else {
+    ChangeAction(14, R(Button Tap?()))
+  }
+}
+
+Action 0xFB : EXIT {
+}

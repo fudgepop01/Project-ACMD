@@ -1,0 +1,32 @@
+[FinalStartHit] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1ED: MAIN {
+  BodyCollision(2)
+  NormalCamera()
+  ModelChanger(2, 1)
+  AsynchronousTimer(6.0)
+  BitVariableSet(RA-Bool[0x12])
+  ArticleEvent02(0)
+}
+
+Subaction 0x1ED: GFX {
+}
+
+Subaction 0x1ED: SOUND {
+}
+
+Subaction 0x1ED: OTHER {
+  HeldItemsVisibility(false)
+  Rumble(15, 0)
+  Screenshake(2)
+}
+

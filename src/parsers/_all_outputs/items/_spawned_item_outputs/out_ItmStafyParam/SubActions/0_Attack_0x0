@@ -1,0 +1,50 @@
+[Attack] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x0 : GAME {
+  SetLoop(-1) {
+    OffensiveCollision(Sp(2, 0), 1, 180, Sp(40, 100), Sp(0, 0), 5.0, 0.0, 2.5, -5.0, 0.0, 1.0, 1.0, 197120)
+    OffensiveCollision(Sp(2, 1), 1, 180, Sp(60, 100), Sp(0, 0), 5.0, 0.0, 2.5, 5.0, 0.0, 1.0, 1.0, 197120)
+    SynchronousTimer(2.0)
+    TerminateCollisions()
+    SynchronousTimer(2.0)
+  }
+}
+
+Subaction 0x0 : GFX {
+  AsynchronousTimer(10.0)
+  GraphicEffectAttached2(13828098, 0, 0.0, 2.7, 0.0, 0.0, 0.0, 0.0, 2.0, false)
+  GraphicEffectAttached2(13828099, 0, 0.0, 2.7, 0.0, 0.0, 0.0, 0.0, 2.0, false)
+  SynchronousTimer(4.0)
+  GraphicEffectAttached2(13828098, 0, 0.0, 2.7, 0.0, 0.0, 180.0, 0.0, 2.0, false)
+  GraphicEffectAttached2(13828099, 0, 0.0, 2.7, 0.0, 0.0, 180.0, 0.0, 2.0, false)
+  SynchronousTimer(4.0)
+  GraphicEffectAttached2(13828098, 0, 0.0, 3.0, 0.0, 0.0, 0.0, 4.0, 2.0, false)
+  GraphicEffectAttached2(13828099, 0, 0.0, 3.0, 0.0, 0.0, 0.0, 4.0, 2.0, false)
+  SynchronousTimer(4.0)
+  GraphicEffectAttached2(13828098, 0, 0.0, 2.5, 0.0, 0.0, 180.0, -4.0, 2.0, false)
+  GraphicEffectAttached2(13828099, 0, 0.0, 2.5, 0.0, 0.0, 180.0, -4.0, 2.0, false)
+  SynchronousTimer(4.0)
+  GraphicEffectAttached2(13828098, 0, 0.0, 2.6, 0.0, 0.0, 0.0, 2.0, 2.0, false)
+  GraphicEffectAttached2(13828099, 0, 0.0, 2.6, 0.0, 0.0, 0.0, 2.0, 2.0, false)
+  SynchronousTimer(4.0)
+  GraphicEffectAttached2(13828098, 0, 0.0, 2.7, 0.0, 0.0, 180.0, -2.0, 2.0, false)
+  GraphicEffectAttached2(13828099, 0, 0.0, 2.7, 0.0, 0.0, 180.0, -2.0, 2.0, false)
+  SynchronousTimer(4.0)
+  GraphicEffectAttached2(13828098, 0, 0.0, 2.4, 0.0, 0.0, 0.0, 3.0, 2.0, false)
+  GraphicEffectAttached2(13828099, 0, 0.0, 2.4, 0.0, 0.0, 0.0, 3.0, 2.0, false)
+}
+
+Subaction 0x0 : SOUND {
+  AsynchronousTimer(7.0)
+  SoundEffect(7740)
+}
+

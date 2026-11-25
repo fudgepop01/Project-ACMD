@@ -1,0 +1,45 @@
+Action 0x115: ENTRY {
+  BitVariableClear(RA-Bool[0x10])
+  BitVariableClear(RA-Bool[0x11])
+  BitVariableClear(RA-Bool[0x12])
+  BitVariableClear(RA-Bool[0x13])
+  BasicVariableSet(IC-Int[0x5DC0], RA-Int[0x01])
+  FloatVariableSet(1.0, RA-Float[0x04])
+  ChangeAction(286, R(Animation End()))
+  if (R(On Ground())) {
+    BasicVariableSet(0, RA-Int[0x00])
+    ChangeSubAction(476)
+
+    if (R(Compare(Variable_Float_Posture_Lr >= 0.0))) {
+      ChangeAction(287, R(Touching a Floor, Wall, or Ceiling(4)))
+      AdditionalRequirement(R(Bit is Set(RA-Bool[0x12])))
+
+    } else {
+
+      ChangeAction(287, R(Touching a Floor, Wall, or Ceiling(2)))
+      AdditionalRequirement(R(Bit is Set(RA-Bool[0x12])))
+
+    }
+    SetLoop(-1) {
+      if (R(On Ground())) {
+        SetAirGround(15)
+        SubRoutine(hidden_subroutine_0x1B208)
+        SetRequirement(R(In Air()))
+      } else {
+        SetAirGround(17)
+        SubRoutine(hidden_subroutine_0x1B230)
+        SetRequirement(R(On Ground()))
+      }
+      LoadRest()
+    }
+  } else {
+    BasicVariableSet(2, RA-Int[0x00])
+    ChangeSubAction(478)
+    SetAirGround(17)
+    SubRoutine(hidden_subroutine_0x1B230)
+    ChangeAction(286, R(Touching a Floor, Wall, or Ceiling(8)))
+  }
+}
+
+Action 0x115 : EXIT {
+}

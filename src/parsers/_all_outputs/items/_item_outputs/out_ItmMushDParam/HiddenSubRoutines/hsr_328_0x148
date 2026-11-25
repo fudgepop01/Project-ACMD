@@ -1,0 +1,8 @@
+[hsr_148]
+hidden_subroutine_0x148 {
+  ChangeActionStatus(7, 7, R(Bit is Set(RA-Bool[0x05])))
+  ChangeActionStatus(3, 3, R(In Air()))
+  ChangeActionStatus(4, 4, R(On Ground()))
+  SubRoutine(hsr_D0)
+  Return()
+}

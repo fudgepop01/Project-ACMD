@@ -1,0 +1,8 @@
+[hsr_1BC68]
+hidden_subroutine_0x1BC68 {
+  if (R(Bit is Set(RA-Bool[0x13]))) {
+    SetAirGround(0)
+  } else {
+    SetAirGround(17)
+  }
+}

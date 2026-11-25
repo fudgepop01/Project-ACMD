@@ -1,0 +1,6 @@
+[hsr_A2EC]
+hidden_subroutine_0xA2EC {
+
+  ChangeActionStatus(10040, 26, R(Button Pressed(Shield)))
+  AdditionalRequirement(R(On Ground()))
+}

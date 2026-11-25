@@ -1,0 +1,13 @@
+// @ 0x247BC
+AllowThrowItem {
+
+  ChangeActionStatus:01(10113, 155, R(Holding Item()))
+  AdditionalRequirement(R(Button Pressed(Shield)))
+  AdditionalRequirement(R(Button Press(Attack)))
+  AdditionalRequirement(R(NOT Holding Item of Type(4194304)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus:01(10111, 155, R(Holding Item of Type(8)))
+  AdditionalRequirement(R(Button Press(Attack)))
+  AdditionalRequirement(R(On Ground()))
+}

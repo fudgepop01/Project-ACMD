@@ -1,0 +1,29 @@
+[CatchWait] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x6F: MAIN {
+}
+
+Subaction 0x6F: GFX {
+  SetLoop(-1) {
+    GraphicEffectAttached(917505, 99, 1.0, -0.5, 0.0, 0.0, 0.0, 0.0, 0.75, true)
+    GraphicEffectAttached(917505, 69, -1.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.75, true)
+    SynchronousTimer(12.0)
+  }
+}
+
+Subaction 0x6F: SOUND {
+  SoundEffectTransient(3986)
+}
+
+Subaction 0x6F: OTHER {
+}
+

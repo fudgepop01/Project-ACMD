@@ -1,0 +1,6 @@
+// @ 0x240E8
+CHK_GROUND_ATTACK {
+  ClearPreventInterrupt(GROUND_ATTACK)
+  SubRoutine(hidden_subroutine_0x9FBC)
+  ClearPreventInterrupt(ALL?)
+}

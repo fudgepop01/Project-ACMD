@@ -1,0 +1,18 @@
+// Status_Damage_Song_End
+Action 0x5E: ENTRY {
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeSubAction(203)
+}
+
+Action 0x5E : EXIT {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(93)
+      Break()
+    DefaultCase()
+      EndFlashingEffect(30)
+  EndSwitch()
+}

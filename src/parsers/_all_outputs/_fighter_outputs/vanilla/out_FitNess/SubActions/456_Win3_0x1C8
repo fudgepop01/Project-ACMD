@@ -1,0 +1,42 @@
+[Win3] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1C8: MAIN {
+}
+
+Subaction 0x1C8: GFX {
+  AsynchronousTimer(10.0)
+  GraphicEffect(37, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6, 0.0, 0.0, 0.0, 0.0, 360.0, 0.0, true)
+  AsynchronousTimer(32.0)
+  GraphicEffect(37, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.85, 0.0, 0.0, 0.0, 0.0, 360.0, 0.0, true)
+  AsynchronousTimer(55.0)
+  GraphicEffect(37, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6, 0.0, 0.0, 0.0, 0.0, 360.0, 0.0, true)
+  AsynchronousTimer(72.0)
+  GraphicEffect(37, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.85, 0.0, 0.0, 0.0, 0.0, 360.0, 0.0, true)
+}
+
+Subaction 0x1C8: SOUND {
+  AsynchronousTimer(6.0)
+  SoundEffect(3655)
+  SynchronousTimer(22.0)
+  SoundEffect(3655)
+  SynchronousTimer(22.0)
+  SoundEffect(3655)
+  SynchronousTimer(17.0)
+  SoundEffect(3655)
+  SynchronousTimer(50.0)
+  SoundEffect(3655)
+}
+
+Subaction 0x1C8: OTHER {
+  ModelChanger(2, 0)
+}
+

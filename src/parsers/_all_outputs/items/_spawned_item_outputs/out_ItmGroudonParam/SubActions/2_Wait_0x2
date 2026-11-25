@@ -1,0 +1,29 @@
+[Wait] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x2 : GAME {
+  TerminateCollisions()
+  SpecialOffensiveCollision(Sp(27, 0), 10, 361, Sp(0, 60), Sp(0, 70), 5.0, -2.0, 0.0, 0.0, 0.0, 1.0, 1.0, 200773, 50, 1048528)
+  SpecialOffensiveCollision(Sp(25, 1), 7, 70, Sp(0, 60), Sp(0, 70), 6.0, 3.0, 0.0, 0.0, 0.0, 1.0, 1.0, 200773, 50, 1048528)
+  SpecialOffensiveCollision(Sp(18, 2), 7, 70, Sp(0, 60), Sp(0, 70), 7.0, 0.0, 0.0, -2.0, 0.0, 1.0, 1.0, 200773, 50, 1048528)
+  SpecialOffensiveCollision(Sp(22, 3), 7, 70, Sp(0, 60), Sp(0, 70), 5.0, 2.0, 1.0, -2.0, 0.0, 1.0, 1.0, 200773, 50, 1048528)
+}
+
+Subaction 0x2 : GFX {
+  SetLoop(-1) {
+    GraphicEffectAttached(17039437, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+    SynchronousTimer(30.0)
+  }
+}
+
+Subaction 0x2 : SOUND {
+}
+

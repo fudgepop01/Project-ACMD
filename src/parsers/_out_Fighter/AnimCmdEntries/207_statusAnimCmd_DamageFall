@@ -1,0 +1,14 @@
+// @ 0x12934
+DamageFall {
+  ChangeActionStatus(10012, 74, R(On Ground()))
+  ChangeSubAction(41)
+
+  if (R(NOT Bit is Set(LA-Bool[0x18]))) {
+    ChangeAction(14, R(Compare(Variable_Float_Controller_Stick_X_Abs >= IC-Int[0xCE3])))
+    AdditionalRequirement(R(Compare(IC-Int[0x5209] < IC-Int[0x5A37])))
+    AdditionalRequirement(R(Compare(RA-Int[0x00] <= 0.0)))
+    AdditionalRequirement(R(NOT Bit is Set(LA-Bool[0x0B])))
+
+    ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x548C)
+  }
+}

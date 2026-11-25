@@ -1,0 +1,6 @@
+// @ 0x3CC0
+CommonAIExecDamageTurn {
+  SubRoutine(statusAnimCmd_CommonTurnDamage)
+  (undef: Sp_Turn) 6C_00_02_00(0, 0)
+  Return()
+}

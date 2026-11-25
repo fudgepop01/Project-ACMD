@@ -1,0 +1,11 @@
+Action 0x11D: ENTRY {
+  Visibility(false)
+  ChangeSubAction(-1)
+
+  ChangeAction(292, R(Button Press(Special)))
+  AdditionalRequirement(R(Compare(Variable_Float_Controller_Stick_Y_Rv >= Common_Param_Float_Special_Stick_Y)))
+  AdditionalRequirement(R(NOT Article Exists()), 0)
+}
+
+Action 0x11D : EXIT {
+}

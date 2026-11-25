@@ -1,0 +1,11 @@
+// Status_Walk
+Action 0x1 {
+  SubRoutine(hidden_subroutine_0x78)
+  DisableActionStatusId(1)
+  BodyCollision(2)
+  (undef: Sp_base) 65_04_01_00(500)
+  (undef: Sp_base) 65_03_03_00(90.0, 270.0, 0.0)
+  BasicVariableSet(0, LA-Int[0x00])
+  ChangeSubAction(0)
+}
+

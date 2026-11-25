@@ -1,0 +1,13 @@
+// Status_Turn_Run
+Action 0x8 {
+  ChangeAction(12, R(On Ground()))
+  SynchronousTimer(10.0)
+  ChangeSubAction(5, true)
+  EnableSpecifiedMovement(2)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(6, R(On Ground()))
+  SynchronousTimer(60.0)
+  ChangeAction(6, R(NOT Is Not in Damaging Magnifier()))
+}
+

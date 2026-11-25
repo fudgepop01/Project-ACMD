@@ -1,0 +1,44 @@
+[NigiruStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xF: MAIN {
+  AsynchronousTimer(28.0)
+  CatchCollision_UNDOC10ARGS(0, 5, 23.0, 0.0, 0.0, 0.0, Common_Param_Int_Escape_Fb_Flick_X, 3, 0, true)
+  AsynchronousTimer(30.0)
+  TerminateCatchCollisions()
+}
+
+Subaction 0xF: MAIN EXIT {
+}
+
+Subaction 0xF: MAIN INIT {
+}
+
+Subaction 0xF: GFX {
+}
+
+Subaction 0xF: GFX EXIT {
+}
+
+Subaction 0xF: GFX INIT {
+}
+
+Subaction 0xF: SFX {
+  SynchronousTimer(7.0)
+  SoundEffect(9889)
+}
+
+Subaction 0xF: SFX EXIT {
+}
+
+Subaction 0xF: SFX INIT {
+}
+

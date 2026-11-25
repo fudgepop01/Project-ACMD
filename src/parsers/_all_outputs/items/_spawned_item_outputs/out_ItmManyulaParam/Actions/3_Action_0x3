@@ -1,0 +1,12 @@
+// Status_Dash
+Action 0x3 {
+  ChangeAction(4, R(On Ground()))
+  DisableSpecifiedMovement(2)
+  SynchronousTimer(5.0)
+  EnableSpecifiedMovement(2)
+  (undef: Sp_Kinetic) 66_02_02_00(0.05, 0.0)
+  ChangeSubAction(4)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+}
+

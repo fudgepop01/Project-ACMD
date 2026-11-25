@@ -1,0 +1,25 @@
+Action 0x7: MAIN {
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0x470)
+    (undef: Sp_Area) 69_01_05_00(Variable_Int_Controller_Flick_No_Reset_Y, 0.0, 0.0, LA-Float[0x04], true)
+    (undef: Sp_Kinetic) 66_0C_02_00(3, LA-Float[0x04])
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x7: EXIT {
+}
+
+Action 0x7: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(21)
+  (undef: Sp_AI) 6A_00_01_00(22)
+  (undef: Sp_AI) 6A_00_01_00(23)
+  (undef: Sp_AI) 6A_00_01_00(17)
+  SubRoutine(hidden_subroutine_0x470)
+  SubAction09(12)
+  (undef: Sp_Area) 69_01_05_00(Variable_Int_Controller_Flick_No_Reset_Y, 0.0, 0.0, LA-Float[0x04], true)
+  (undef: Sp_Kinetic) 66_00_03_00(3, 14, LA-Float[0x04])
+  (undef: Sp_Kinetic) 66_0C_02_00(3, LA-Float[0x04])
+}
+

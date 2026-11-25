@@ -1,0 +1,17 @@
+Action 0xA: MAIN {
+}
+
+Action 0xA: EXIT {
+}
+
+Action 0xA: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_03_00_00()
+  (undef: Sp_AI) 6A_00_01_00(19)
+  BasicVariableSet(11, LA-Int[0x06])
+  if (R(Compare(Variable_Int_Motion_Partial_1_Kind != 13.0))) {
+    SetBoneMotionOverride(0, 13, 10)
+  }
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+}
+

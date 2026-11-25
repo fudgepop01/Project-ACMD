@@ -1,0 +1,6 @@
+[hsr_1B9E8]
+hidden_subroutine_0x1B9E8 {
+  ChangeAction(14, R(Animation End()))
+  ChangeSubAction(478)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1BC68)
+}

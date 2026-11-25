@@ -1,0 +1,127 @@
+[HandSlap] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x7: MAIN {
+  SubRoutine(hidden_subroutine_0x2C6C)
+  FrameSpeedModifier(LA-Float[0x04])
+  AsynchronousTimer(27.0)
+  TerminateCollisions()
+  SlopeContourStand(1)
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    SpecialOffensiveCollisionEnemyHitbox(0, 0, 33, 18, 3.0, 80, 100, 0.0, 168, 0.0, 0, 0.0, 3.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 1.0, 1.0, false, false, 20, 2, 2, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+    AsynchronousTimer(30.0)
+    SpecialOffensiveCollisionEnemyHitbox(1, 0, 0, 6, 1.8, 90, 100, 0.0, 162, 0.0, 0, 0.0, 8.0, 0.0, 0.0, 0.0, 10.5, 0, 0.0, 1.0, 1.0, false, false, 5, 1, 1, 1, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+  } elif (R(Bit is Set(LA-Bool[0x07]))) {
+    SpecialOffensiveCollisionEnemyHitbox(0, 0, 33, 12, 2.4, 80, 100, 0.0, 144, 0.0, 0, 0.0, 2.4, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 1.0, 1.0, false, false, 10, 1, 2, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+    AsynchronousTimer(30.0)
+    SpecialOffensiveCollisionEnemyHitbox(1, 0, 0, 4, 1.2, 90, 100, 0.0, 132, 0.0, 0, 0.0, 9.0, 0.0, 0.0, 0.0, 13.0, 0, 0.0, 1.0, 1.0, false, false, 2, 1, 1, 1, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+  } else {
+    SpecialOffensiveCollisionEnemyHitbox(0, 0, 33, 6, 1.8, 80, 100, 0.0, 120, 0.0, 0, 0.0, 2.2, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 1.0, 1.0, false, false, 5, 1, 2, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+    AsynchronousTimer(30.0)
+    SpecialOffensiveCollisionEnemyHitbox(1, 0, 33, 3, 0.8, 90, 100, 0.0, 108, 0.0, 0, 0.0, 10.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 1.0, 1.0, false, false, 1, 0, 1, 1, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+  }
+  AsynchronousTimer(32.0)
+  TerminateCollisions()
+  AsynchronousTimer(51.0)
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    SpecialOffensiveCollisionEnemyHitbox(0, 0, 17, 18, 3.0, 80, 100, 0.0, 168, 0.0, 0, 0.0, 3.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 1.0, 1.0, false, false, 20, 2, 2, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+    AsynchronousTimer(54.0)
+    SpecialOffensiveCollisionEnemyHitbox(1, 0, 0, 6, 1.8, 90, 100, 0.0, 162, 0.0, 0, 0.0, 8.0, 0.0, 0.0, 0.0, 10.5, 0, 0.0, 1.0, 1.0, false, false, 5, 1, 1, 1, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+  } elif (R(Bit is Set(LA-Bool[0x07]))) {
+    SpecialOffensiveCollisionEnemyHitbox(0, 0, 17, 12, 2.4, 80, 100, 0.0, 144, 0.0, 0, 0.0, 2.4, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 1.0, 1.0, false, false, 10, 2, 2, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+    AsynchronousTimer(54.0)
+    SpecialOffensiveCollisionEnemyHitbox(1, 0, 0, 4, 1.2, 90, 100, 0.0, 132, 0.0, 0, 0.0, 9.0, 0.0, 0.0, 0.0, 13.0, 0, 0.0, 1.0, 1.0, false, false, 2, 1, 1, 1, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+  } else {
+    SpecialOffensiveCollisionEnemyHitbox(0, 0, 17, 5, 1.8, 80, 100, 0.0, 120, 0.0, 0, 0.0, 2.2, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 1.0, 1.0, false, false, 5, 1, 2, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+    AsynchronousTimer(54.0)
+    SpecialOffensiveCollisionEnemyHitbox(1, 0, 17, 3, 0.8, 90, 100, 0.0, 108, 0.0, 0, 0.0, 10.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 1.0, 1.0, false, false, 1, 0, 1, 1, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+  }
+  AsynchronousTimer(56.0)
+  TerminateCollisions()
+  AsynchronousTimer(91.0)
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    SpecialOffensiveCollisionEnemyHitbox(0, 0, 33, 18, 3.0, 80, 100, 0.0, 168, 0.0, 0, 0.0, 3.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 1.0, 1.0, false, false, 20, 2, 2, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+    AsynchronousTimer(94.0)
+    SpecialOffensiveCollisionEnemyHitbox(1, 0, 0, 6, 1.8, 90, 100, 0.0, 162, 0.0, 0, 0.0, 8.0, 0.0, 0.0, 0.0, 10.5, 0, 0.0, 1.0, 1.0, false, false, 5, 1, 1, 1, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+  } elif (R(Bit is Set(LA-Bool[0x07]))) {
+    SpecialOffensiveCollisionEnemyHitbox(0, 0, 33, 12, 2.4, 80, 100, 0.0, 144, 0.0, 0, 0.0, 2.4, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 1.0, 1.0, false, false, 10, 1, 2, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+    AsynchronousTimer(94.0)
+    SpecialOffensiveCollisionEnemyHitbox(1, 0, 0, 4, 1.2, 90, 100, 0.0, 132, 0.0, 0, 0.0, 9.0, 0.0, 0.0, 0.0, 13.0, 0, 0.0, 1.0, 1.0, false, false, 2, 1, 1, 1, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+  } else {
+    SpecialOffensiveCollisionEnemyHitbox(0, 0, 33, 5, 1.8, 80, 100, 0.0, 120, 0.0, 0, 0.0, 2.2, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 1.0, 1.0, false, false, 5, 1, 2, 3, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+    AsynchronousTimer(94.0)
+    SpecialOffensiveCollisionEnemyHitbox(1, 0, 33, 3, 0.8, 90, 100, 0.0, 108, 0.0, 0, 0.0, 10.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 1.0, 1.0, false, false, 1, 0, 1, 1, true, 0, 311, false, 15, false, true, false, false, 60, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+  }
+  AsynchronousTimer(96.0)
+  TerminateCollisions()
+  AsynchronousTimer(106.0)
+  SubRoutine(hidden_subroutine_0x2C6C)
+  AsynchronousTimer(113.0)
+  SlopeContourStand(0)
+}
+
+Subaction 0x7: MAIN EXIT {
+}
+
+Subaction 0x7: MAIN INIT {
+}
+
+Subaction 0x7: GFX {
+  AsynchronousTimer(29.0)
+  Screenshake(1)
+  GraphicEffect(7, 0, -1.744, 0.0, 10.083, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 360.0, 0.0, true)
+  AsynchronousTimer(54.0)
+  Screenshake(1)
+  GraphicEffect(7, 0, 1.0469833333333334, 0.0, 9.372, 0.0, 0.0, 0.0, 0.6, 0.0, 0.0, 0.0, 0.0, 360.0, 0.0, true)
+  AsynchronousTimer(94.0)
+  Screenshake(1)
+  GraphicEffect(7, 0, 0.1, 0.0, 10.958, 0.0, 0.0, 0.0, 0.7, 0.0, 0.0, 0.0, 0.0, 360.0, 0.0, true)
+}
+
+Subaction 0x7: GFX EXIT {
+}
+
+Subaction 0x7: GFX INIT {
+}
+
+Subaction 0x7: SFX {
+  SynchronousTimer(29.0)
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    ImpactSoundEffect(9461)
+  } elif (R(Bit is Set(LA-Bool[0x07]))) {
+    ImpactSoundEffect(9446)
+  } else {
+    ImpactSoundEffect(9431)
+  }
+  SynchronousTimer(25.0)
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    ImpactSoundEffect(9462)
+  } elif (R(Bit is Set(LA-Bool[0x07]))) {
+    ImpactSoundEffect(9447)
+  } else {
+    ImpactSoundEffect(9432)
+  }
+  SynchronousTimer(40.0)
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    ImpactSoundEffect(9463)
+  } elif (R(Bit is Set(LA-Bool[0x07]))) {
+    ImpactSoundEffect(9448)
+  } else {
+    ImpactSoundEffect(9433)
+  }
+}
+
+Subaction 0x7: SFX EXIT {
+}
+
+Subaction 0x7: SFX INIT {
+}
+

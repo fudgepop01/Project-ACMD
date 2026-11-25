@@ -1,0 +1,8 @@
+// Status_Escape_F
+Action 0x1F: ENTRY {
+  SubRoutine(hidden_subroutine_0x11814)
+  ChangeSubAction(68)
+}
+
+Action 0x1F : EXIT {
+}

@@ -1,0 +1,8 @@
+// Status_Escape_Air
+Action 0x21: ENTRY {
+  SubRoutine(statusAnimCmd_EscapeAirCommon)
+  ChangeSubAction(70)
+}
+
+Action 0x21 : EXIT {
+}

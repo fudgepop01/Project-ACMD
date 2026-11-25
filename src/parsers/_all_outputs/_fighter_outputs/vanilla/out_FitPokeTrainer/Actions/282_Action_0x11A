@@ -1,0 +1,15 @@
+Action 0x11A: ENTRY {
+  ChangeAction(291, R(0x4E23()))
+  ChangeAction(285, R(0x4E22()))
+  ChangeAction(298, R(Compare(Owner_Param_Int_Stock_Count == 0.0)))
+  ChangeAction(281, R(On Ground()))
+
+  ChangeAction(289, R(Animation End()))
+  AdditionalRequirement(R(0x2D()), IC-Int[0xFA0])
+  AdditionalRequirement(R(0x4E20()))
+
+  SubRoutine(hidden_subroutine_0x437C)
+}
+
+Action 0x11A : EXIT {
+}

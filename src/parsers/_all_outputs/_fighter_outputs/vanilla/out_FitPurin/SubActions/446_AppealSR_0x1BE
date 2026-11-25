@@ -1,0 +1,64 @@
+[AppealSR] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1BE: MAIN {
+  AsynchronousTimer(126.0)
+  AllowInterrupt()
+}
+
+Subaction 0x1BE: GFX {
+  AsynchronousTimer(10.0)
+  SetLoop(6) {
+    GraphicEffectAttached2(70, 7, 0.0, 0.0, 0.0, 180.0, 0.0, 0.0, 1.2, true)
+    SynchronousTimer(3.0)
+    GraphicEffectAttached2(70, 7, 0.0, 3.5, 0.0, 180.0, 0.0, 0.0, 1.0, true)
+    SynchronousTimer(3.0)
+    GraphicEffectAttached2(70, 7, 0.0, -2.5, 0.0, 180.0, 0.0, 0.0, 0.9, true)
+    SynchronousTimer(3.0)
+  }
+  AsynchronousTimer(75.0)
+  GraphicEffectStepping(28, 0, 0.0, 0.0, 0.0, 0.0, 180.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x1BE: SOUND {
+  AsynchronousTimer(13.0)
+  SoundEffect(6057)
+  SynchronousTimer(6.0)
+  SoundEffect(6058)
+  SynchronousTimer(6.0)
+  SoundEffect(6059)
+  SynchronousTimer(6.0)
+  SoundEffect(6060)
+  SynchronousTimer(6.0)
+  SoundEffect(6061)
+  SynchronousTimer(6.0)
+  SoundEffect(6062)
+  SynchronousTimer(6.0)
+  SoundEffect(6062)
+  SynchronousTimer(6.0)
+  SoundEffect(6061)
+  SynchronousTimer(6.0)
+  SoundEffect(6060)
+  SynchronousTimer(6.0)
+  SoundEffect(6059)
+  SynchronousTimer(11.0)
+  SoundEffect(6082)
+  SynchronousTimer(37.0)
+  SoundEffect(6090)
+  SynchronousTimer(13.0)
+  SoundEffect(6092)
+}
+
+Subaction 0x1BE: OTHER {
+  AsynchronousTimer(15.0)
+  RumbleLoop(2, 60)
+}
+

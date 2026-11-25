@@ -1,0 +1,43 @@
+[hsr_6ADC]
+hidden_subroutine_0x6ADC {
+  if (R(Compare(Variable_Float_Controller_Stick_X_Abs >= Common_Param_Float_Dash_Stick_X)) && R(Compare(Variable_Int_Controller_Flick_No_Reset_X < Common_Param_Int_Item_Throw_4_Flick))) {
+    if (R(Compare(Variable_Float_Controller_Stick_X_Lr >= 0.0))) {
+      BasicVariableSet(259, RA-Int[0x00])
+      BasicVariableSet(268, RA-Int[0x01])
+    } else {
+      BasicVariableSet(260, RA-Int[0x00])
+      BasicVariableSet(269, RA-Int[0x01])
+      FloatVariableSet(Variable_Float_Posture_Lr_Rv, RA-Float[0x04])
+    }
+    BitVariableSet(LA-Bool[0x2A])
+    AddIntStatToLog(1, 25)
+  } elif (R(Compare(Variable_Float_Controller_Stick_Y >= Common_Param_Float_Attack_Hi4_Stick_Y)) && R(Compare(Variable_Int_Controller_Flick_No_Reset_Y < Common_Param_Float_Attack_Hi4_Flick_Y))) {
+    BasicVariableSet(261, RA-Int[0x00])
+    BasicVariableSet(270, RA-Int[0x01])
+    BitVariableSet(LA-Bool[0x2A])
+    AddIntStatToLog(1, 25)
+  } elif (R(Compare(Variable_Float_Controller_Stick_Y <= Common_Param_Float_Attack_Lw4_Stick_Y)) && R(Compare(Variable_Int_Controller_Flick_No_Reset_Y < Common_Param_Float_Attack_Lw4_Flick_Y))) {
+    BasicVariableSet(262, RA-Int[0x00])
+    BasicVariableSet(271, RA-Int[0x01])
+    BitVariableSet(LA-Bool[0x2A])
+    AddIntStatToLog(1, 25)
+  } elif (R(Compare(Variable_Float_Controller_Stick_Y >= Common_Param_Float_Attack_Hi3_Stick_Y))) {
+    BasicVariableSet(257, RA-Int[0x00])
+    BasicVariableSet(266, RA-Int[0x01])
+  } elif (R(Compare(Variable_Float_Controller_Stick_Y <= Common_Param_Float_Attack_Lw3_Stick_Y))) {
+    BasicVariableSet(258, RA-Int[0x00])
+    BasicVariableSet(267, RA-Int[0x01])
+  } else {
+    if (R(Compare(Variable_Float_Controller_Stick_X_Abs <= Common_Param_Float_Walk_Stick_X)) && R(Button Pressed(Shield)) && R(NOT Holding Item of Type(8))) {
+      BasicVariableSet(254, RA-Int[0x00])
+      BasicVariableSet(254, RA-Int[0x01])
+    } elif (R(Compare(Variable_Float_Controller_Stick_X_Lr >= 0.0))) {
+      BasicVariableSet(255, RA-Int[0x00])
+      BasicVariableSet(264, RA-Int[0x01])
+    } else {
+      BasicVariableSet(256, RA-Int[0x00])
+      BasicVariableSet(265, RA-Int[0x01])
+      FloatVariableSet(Variable_Float_Posture_Lr_Rv, RA-Float[0x04])
+    }
+  }
+}

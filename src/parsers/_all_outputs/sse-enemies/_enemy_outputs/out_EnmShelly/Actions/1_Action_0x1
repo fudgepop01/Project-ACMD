@@ -1,0 +1,21 @@
+Action 0x1: MAIN {
+}
+
+Action 0x1: EXIT {
+}
+
+Action 0x1: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_03_00(17, 18, 16)
+  SubAction09(6)
+  if (R(0x2715())) {
+    (undef: Sp_Kinetic) 66_0A_02_00(3, 17)
+  } else {
+    (undef: Sp_Kinetic) 66_07_01_00(-1)
+  }
+  if (R(0x11())) {
+    (undef: territory) 15_00_00_00()
+  }
+  SubRoutine(hidden_subroutine_0x37C)
+}
+

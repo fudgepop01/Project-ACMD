@@ -1,0 +1,40 @@
+[SquatF] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x2E: MAIN {
+  BitVariableClear(LA-Bool[0x83])
+  AsynchronousTimer(4.0)
+  BitVariableSet(LA-Bool[0x83])
+}
+
+Subaction 0x2E: GFX {
+}
+
+Subaction 0x2E: SOUND {
+  AsynchronousTimer(10.0)
+  SteppingSoundEffect(5722)
+  SynchronousTimer(15.0)
+  SteppingSoundEffect(5723)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0x2E : SFX)
+}
+
+Subaction 0x2E: OTHER {
+  HeldItemsVisibility(false)
+  SlopeContourStand03(1, 5, true)
+  AsynchronousTimer(15.0)
+  Rumble(20, 0)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0x2E : OTHER)
+}
+

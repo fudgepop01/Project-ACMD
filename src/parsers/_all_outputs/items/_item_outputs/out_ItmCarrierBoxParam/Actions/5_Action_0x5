@@ -1,0 +1,9 @@
+// Status_Run_Brake
+Action 0x5 {
+  BodyCollision(0)
+  SubRoutine(hidden_subroutine_0x5B4)
+  DisableActionStatusId(5)
+  ChangeSubAction(3)
+  ChangeAction(12, R(On Ground()))
+}
+

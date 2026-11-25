@@ -1,0 +1,31 @@
+[DownWaitU] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xAB: MAIN {
+}
+
+Subaction 0xAB: GFX {
+}
+
+Subaction 0xAB: SOUND {
+  AsynchronousTimer(1.0)
+  StopSoundEffect(68)
+  StopSoundEffect(70)
+  ImpactSoundEffect(95)
+}
+
+Subaction 0xAB: OTHER {
+  HeldItemsVisibility(false)
+  (undef: item_manage) 1F_10_02_00(false, 1)
+  (undef: item_manage) 1F_10_02_00(false, 2)
+  SlopeContourStand03(1, 6, true)
+}
+

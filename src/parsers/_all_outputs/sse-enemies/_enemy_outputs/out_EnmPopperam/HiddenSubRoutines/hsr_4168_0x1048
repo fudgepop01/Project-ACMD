@@ -1,0 +1,55 @@
+[hsr_1048]
+hidden_subroutine_0x1048 {
+  SWITCH_3ARG(1000, IC-Int[0xABE9], 8)
+    Case(0)
+      (undef: Sp_base) 65_0E_01_00(IC-Int[0xABE6])
+      (undef: Sp_Link) 6E_00_03_00(0, 5103, 49)
+    Case(1)
+      (undef: Sp_base) 65_0E_01_00(IC-Int[0xABE7])
+      (undef: Sp_Link) 6E_00_03_00(1, 5103, 49)
+    Case(2)
+      (undef: Sp_base) 65_1A_03_00(64, 0, IC-Int[0xABEA])
+      BasicVariableAdd(1, LA-Int[0x06])
+      BasicVariableRandom(0, 1, LA-Int[0x05])
+      if (R(Compare(LA-Int[0x05] == 0.0))) {
+        SubRoutine(hidden_subroutine_0x2010)
+      } elif (R(Compare(LA-Int[0x05] == 1.0))) {
+        SubRoutine(hidden_subroutine_0x2048)
+      }
+    Case(3)
+      (undef: Sp_base) 65_1A_03_00(2, 0, IC-Int[0xABEB])
+      BasicVariableRandom(0, 1, LA-Int[0x05])
+      if (R(Compare(LA-Int[0x05] == 0.0))) {
+        SubRoutine(hidden_subroutine_0x2010)
+      } elif (R(Compare(LA-Int[0x05] == 1.0))) {
+        SubRoutine(hidden_subroutine_0x2048)
+      }
+    Case(4)
+      (undef: Sp_base) 65_1A_03_00(9, 0, IC-Int[0xABEC])
+      BasicVariableAdd(1, LA-Int[0x06])
+      BasicVariableRandom(0, 1, LA-Int[0x05])
+      if (R(Compare(LA-Int[0x05] == 0.0))) {
+        SubRoutine(hidden_subroutine_0x2010)
+      } elif (R(Compare(LA-Int[0x05] == 1.0))) {
+        SubRoutine(hidden_subroutine_0x2048)
+      }
+    Case(5)
+      (undef: Sp_base) 65_1A_03_00(16, 0, IC-Int[0xABED])
+      BasicVariableRandom(0, 1, LA-Int[0x05])
+      if (R(Compare(LA-Int[0x05] == 0.0))) {
+        SubRoutine(hidden_subroutine_0x2010)
+      } elif (R(Compare(LA-Int[0x05] == 1.0))) {
+        SubRoutine(hidden_subroutine_0x2048)
+      }
+    Case(6)
+      (undef: Sp_base) 65_1A_03_00(67, 0, IC-Int[0xABEE])
+    Case(7)
+      (undef: Sp_base) 65_1A_03_00(19, 0, IC-Int[0xABEF])
+      BasicVariableRandom(0, 1, LA-Int[0x05])
+      if (R(Compare(LA-Int[0x05] == 0.0))) {
+        SubRoutine(hidden_subroutine_0x2010)
+      } elif (R(Compare(LA-Int[0x05] == 1.0))) {
+        SubRoutine(hidden_subroutine_0x2048)
+      }
+  EndSwitch()
+}

@@ -1,0 +1,16 @@
+Action 0x124: ENTRY {
+  SetGimmickEffectFlag(false)
+  SubRoutine(hidden_subroutine_0x19ED0)
+  ExitFinalSmashState()
+  SetAerialOrOnstage(5)
+  Module0900(2)
+  ChangeSubAction(490)
+  SetAirGround(0)
+  ChangeAction(15, R(Animation End()))
+  ChangeAction(22, R(On Ground()))
+}
+
+Action 0x124 : EXIT {
+  BitVariableClear(LA-Bool[0x01])
+  ExitFinalSmashState()
+}

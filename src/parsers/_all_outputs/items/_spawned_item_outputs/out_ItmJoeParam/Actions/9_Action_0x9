@@ -1,0 +1,13 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  SubRoutine(hidden_subroutine_0x88)
+  DisableSpecifiedMovement(2)
+  ChangeSubAction(6)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  EnableSpecifiedMovement(2)
+  AddSubtractMomentum(0.0, -1.3)
+  ChangeAction(3, R(In Air()))
+  ChangeAction(4, R(On Ground()))
+}
+

@@ -1,0 +1,9 @@
+[hsr_1E280]
+hidden_subroutine_0x1E280 {
+  BasicVariableIncrement(RA-Int[0x02])
+  if (R(Compare(RA-Int[0x02] == RA-Int[0x03]))) {
+    SubRoutine(hidden_subroutine_0x1AFE0)
+  } elif (R(Compare(RA-Int[0x02] > IC-Int[0x5DC1]))) {
+    TerminateConcurrentInfiniteLoop(9)
+  }
+}

@@ -1,0 +1,38 @@
+[FinalEndL] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1FC: MAIN {
+  AsynchronousTimer(4.0)
+  RemoveArticle(0)
+}
+
+Subaction 0x1FC: GFX {
+  AsynchronousTimer(10.0)
+  GraphicEffectAttached2(14745605, 34, 0.0, 5.0, -3.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(12.0)
+  GraphicEffect(14745609, 17, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(20.0)
+  GraphicEffect(14745607, 34, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(14745607, 34, 8.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(14745607, 34, -8.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(14745607, 21, -3.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(14745607, 45, 3.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x1FC: SOUND {
+}
+
+Subaction 0x1FC: OTHER {
+  HeldItemsVisibility(false)
+  AsynchronousTimer(15.0)
+  HeldItemsVisibility(true)
+}
+

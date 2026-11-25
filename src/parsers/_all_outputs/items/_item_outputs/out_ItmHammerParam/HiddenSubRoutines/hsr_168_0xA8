@@ -1,0 +1,12 @@
+[hsr_A8]
+hidden_subroutine_0xA8 {
+  ChangeActionStatus(7, 7, R(Bit is Set(RA-Bool[0x02])))
+  ChangeActionStatus(4, 4, R(On Ground()))
+  if (R(Bit is Set(LA-Bool[0x00]))) {
+    (undef: motion) 04_10_02_00(0, 8)
+    (undef: motion) 04_13_02_00(0, 0.0)
+    (undef: motion) 04_12_02_00(0, 1.0)
+    (undef: Sp_base) 65_1F_01_00(2)
+  }
+  Return()
+}

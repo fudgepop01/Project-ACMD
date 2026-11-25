@@ -1,0 +1,5 @@
+[hsr_1D30C]
+hidden_subroutine_0x1D30C {
+  BasicVariableIncrement(RA-Int[0x00])
+  SubRoutine(statusAnimCmd_FALLCommonUniq)
+}

@@ -1,0 +1,9 @@
+// Status_Swim_Drown_Out
+Action 0xBC: ENTRY {
+  BodyCollision(3)
+  SetGimmickEffectFlag(false)
+  ChangeSubAction(246)
+}
+
+Action 0xBC : EXIT {
+}

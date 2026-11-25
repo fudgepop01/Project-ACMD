@@ -1,0 +1,17 @@
+Action 0xB: MAIN {
+}
+
+Action 0xB: EXIT {
+  (undef: Sp_base) 65_04_01_00(1)
+}
+
+Action 0xB: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(22)
+  (undef: Sp_AI) 6A_00_01_00(24)
+  (undef: Sp_AI) 6A_00_01_00(17)
+  (undef: Sp_AI) 6A_00_01_00(18)
+  (undef: Sp_base) 65_04_01_00(1)
+  (undef: Sp_base) 65_09_02_00(IC-Int[0xABE4], LA-Float[0x02])
+}
+

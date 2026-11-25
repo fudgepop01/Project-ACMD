@@ -1,0 +1,10 @@
+// Status_Turn_Run
+Action 0x8 {
+  SynchronousTimer(20.0)
+  (undef: Sp_base) 65_11_07_00(-1, 3.4, 9.0, 38.0, 0.0, 50.0, LA-Float[0x01])
+  ChangeSubAction(2)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(6, R(Button Tap?()))
+}
+

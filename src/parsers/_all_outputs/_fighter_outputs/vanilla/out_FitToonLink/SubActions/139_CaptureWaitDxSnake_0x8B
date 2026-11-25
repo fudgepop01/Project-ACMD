@@ -1,0 +1,24 @@
+[CaptureWaitDxSnake] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 1,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x8B: MAIN {
+}
+
+Subaction 0x8B: GFX {
+}
+
+Subaction 0x8B: SOUND {
+}
+
+Subaction 0x8B: OTHER {
+  SlopeContourStand(6)
+}
+

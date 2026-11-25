@@ -1,0 +1,9 @@
+[hsr_1129C]
+hidden_subroutine_0x1129C {
+  if (R(Compare(RA-Int[0x05] > 0.0))) {
+    BasicVariableDecrement(RA-Int[0x05])
+    if (R(Compare(RA-Int[0x05] == 0.0))) {
+      AllowInterrupt()
+    }
+  }
+}

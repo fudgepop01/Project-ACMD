@@ -1,0 +1,7 @@
+// Status_Cliff_Jump3
+Action 0x7B: ENTRY {
+  SubRoutine(Action_0x7A : ENTRY)
+}
+
+Action 0x7B : EXIT {
+}

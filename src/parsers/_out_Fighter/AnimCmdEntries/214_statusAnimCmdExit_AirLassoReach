@@ -1,0 +1,6 @@
+// @ 0x14D24
+AirLassoReach {
+  if (R(Compare(Variable_Int_Status_Kind != 129.0)) && R(Compare(Variable_Int_Status_Kind != 131.0))) {
+    RemoveArticle(RA-Int[0x00])
+  }
+}

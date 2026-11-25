@@ -1,0 +1,18 @@
+// Status_Gimmick_Barrel
+Action 0xC0: ENTRY {
+  BodyCollision(2)
+  SetGimmickEffectFlag(false)
+  Visibility(false)
+  UnkRaBit27(true)
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+  ChangeSubAction(-1)
+  SubRoutine(hidden_subroutine_0x3D7C)
+  ChangeActionStatus(10012, 74, R(On Ground()))
+  SubRoutine(hidden_subroutine_0x3C34)
+  SubRoutine(hidden_subroutine_0x3D24)
+  AllowSpecificInterrupt(AIR_LANDING)
+}
+
+Action 0xC0 : EXIT {
+}

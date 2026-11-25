@@ -1,0 +1,7 @@
+[hsr_B0]
+hidden_subroutine_0xB0 {
+  (undef: Sp_base) 65_1F_01_00(2)
+  (undef: team) 22_00_01_00(-1)
+  InertCollision(0, 0, 0, 6.0, 0.0, 0.0, 0.0, 2, 319, 3, false, 9, 1, false, 1, true, 0)
+  Return()
+}

@@ -1,0 +1,87 @@
+[WaitGround] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x6 : GAME {
+  SynchronousTimer(125.0)
+  Screenshake(3)
+  SetLoop(72) {
+    SpecialOffensiveCollision(Sp(0, 0), 1, 120, Sp(100, 100), Sp(0, 0), 28.8, 0.0, 8.0, 0.0, 0.0, 0.2, 0.3, 200837, 0, 1048512)
+    SpecialOffensiveCollision(Sp(0, 1), 1, 120, Sp(80, 100), Sp(0, 0), 18.0, 0.0, 32.0, 0.0, 0.0, 0.2, 0.3, 200837, 0, 1048512)
+    SpecialOffensiveCollision(Sp(0, 2), 1, 120, Sp(70, 100), Sp(0, 0), 18.0, 0.0, 56.0, 0.0, 0.0, 0.2, 0.3, 200837, 0, 1048512)
+    SpecialOffensiveCollision(Sp(0, 3), 1, 250, Sp(50, 100), Sp(0, 0), 18.0, 0.0, 80.0, 0.0, 0.0, 0.2, 0.3, 200837, 0, 1048512)
+    SynchronousTimer(2.0)
+    TerminateCollisions()
+    SynchronousTimer(2.0)
+  }
+  (undef: camera) 1A_0A_01_00(3)
+  SpecialOffensiveCollision(Sp(0, 0), 5, 361, Sp(0, 50), Sp(0, 80), 12.0, 0.0, 5.0, 0.0, 0.0, 1.5, 0.0, 200837, 0, 1048512)
+  TerminateCollisions()
+}
+
+Subaction 0x6 : GFX {
+  AsynchronousTimer(0.0)
+  GraphicEffect(17039422, 40, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GraphicEffect(17039422, 10, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GraphicEffect(17039422, 14, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GraphicEffect(17039422, 37, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GraphicEffect(7, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.6, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(120.0)
+  ScreenTintFull(0, 200, 250, 100, 0, 50)
+  GraphicEffectAttached(17039364, 0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 9.0, true)
+  GraphicEffectAttached(17039366, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, true)
+  AsynchronousTimer(120.0)
+  SetLoop(12) {
+    GraphicEffectAttached(17039365, 0, 0.0, 10.0, 0.0, 0.0, 0.0, 0.0, 5.0, true)
+    SynchronousTimer(24.0)
+  }
+  ScreenTintFull(0, 100, 250, 100, 0, 0)
+}
+
+Subaction 0x6 : SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(8142)
+  SynchronousTimer(116.0)
+  SoundEffect(8142)
+  SoundEffect(7987)
+  SetLoop(3) {
+    SynchronousTimer(34.0)
+    if (R(Is within footstool range())) {
+      SoundEffect(7988)
+    } else {
+      if (R(Is within footstool range())) {
+        SoundEffect(7989)
+      } else {
+        SoundEffect(7990)
+      }
+    }
+    SynchronousTimer(35.0)
+    if (R(Is within footstool range())) {
+      SoundEffect(7988)
+    } else {
+      if (R(Is within footstool range())) {
+        SoundEffect(7989)
+      } else {
+        SoundEffect(7990)
+      }
+    }
+    SynchronousTimer(35.0)
+    if (R(Is within footstool range())) {
+      SoundEffect(7988)
+    } else {
+      if (R(Is within footstool range())) {
+        SoundEffect(7989)
+      } else {
+        SoundEffect(7990)
+      }
+    }
+  }
+}
+

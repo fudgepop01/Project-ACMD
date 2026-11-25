@@ -1,0 +1,7 @@
+[hsr_F8A8]
+hidden_subroutine_0xF8A8 {
+  ModelChanger(5, 8)
+  ModelChanger(7, 1)
+  ModelChanger(2, 1)
+  Return()
+}

@@ -1,0 +1,7 @@
+[hsr_B504]
+hidden_subroutine_0xB504 {
+  SubRoutine(hidden_subroutine_0xB48C)
+
+  ChangeActionStatus(10012, 74, R(On Ground()))
+  AdditionalRequirement(R(NOT 0x2723()))
+}

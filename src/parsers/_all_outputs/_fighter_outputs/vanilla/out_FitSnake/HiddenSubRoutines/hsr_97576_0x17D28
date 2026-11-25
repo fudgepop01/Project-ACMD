@@ -1,0 +1,5 @@
+[hsr_17D28]
+hidden_subroutine_0x17D28 {
+  EnableActionStatusId(10146)
+  SubRoutine(hidden_subroutine_0x18B50)
+}

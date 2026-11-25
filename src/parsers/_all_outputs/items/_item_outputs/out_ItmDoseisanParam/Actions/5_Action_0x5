@@ -1,0 +1,11 @@
+// Status_Run_Brake
+Action 0x5 {
+  ChangeSubAction(3)
+  FrameSpeedModifier(10.0)
+  SubRoutine(hidden_subroutine_0x40)
+  ChangeAction(4, R(On Ground()))
+  BodyCollision(2)
+  SynchronousTimer(30.0)
+  BodyCollision(0)
+}
+

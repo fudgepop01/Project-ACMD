@@ -1,0 +1,15 @@
+// Status_Turn_Dash
+Action 0x7 {
+  (undef: Sp_Kinetic) 66_07_00_00()
+  (undef: Sp_base) 65_03_02_00(0.0, 0.0)
+  RightDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  ChangeSubAction(4)
+  SynchronousTimer(10.0)
+  (undef: Sp_base) 65_01_00_00()
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(6, R(Button Tap?()))
+}
+

@@ -1,0 +1,10 @@
+// Status_Item_Screw_Fall
+Action 0xB1: ENTRY {
+  HeldItemsVisibility(false)
+  ChangeSubAction(330)
+  ChangeAction(14, R(Animation End()))
+  SubRoutine(statusAnimCmd_AIRChkFallCommon)
+}
+
+Action 0xB1 : EXIT {
+}

@@ -1,0 +1,12 @@
+// Status_Run
+Action 0x4 {
+  ChangeAction(3, R(In Air()))
+  Switch(10000, LA-Int[0x00])
+    Case(0)
+    Case(1)
+      ChangeAction(11, R(Button Tap?()))
+    Case(2)
+      ChangeAction(9, R(Button Tap?()))
+  EndSwitch()
+}
+

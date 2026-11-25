@@ -1,0 +1,42 @@
+// Status_Attack_S3
+Action 0x27: ENTRY {
+  ResetButtonPress()
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x5164)
+  SetLoop(-1) {
+    ResetButtonPress()
+    BitVariableClear(RA-Bool[0x10])
+    BitVariableClear(RA-Bool[0x13])
+    BitVariableSet(RA-Bool[0x12])
+    (undef: combo) 13_00_01_00(2)
+    Switch(10000, Variable_Int_Combo_Count)
+      Case(1)
+        if (R(Compare(Variable_Float_Controller_Stick_Dir > Common_Param_Float_Attack_S3_Stick_Dir_Hi))) {
+          ChangeSubAction(79)
+        } elif (R(Compare(Variable_Float_Controller_Stick_Dir < Common_Param_Float_Attack_S3_Stick_Dir_Lw))) {
+          ChangeSubAction(83)
+        } else {
+          ChangeSubAction(80)
+        }
+      Case(2)
+        ChangeSubAction(81)
+        SetStalingIdWith0(2, 7)
+        CharacterSpecific27()
+      Case(3)
+        ChangeSubAction(82)
+        SetStalingIdWith0(2, 8)
+        CharacterSpecific27()
+    EndSwitch()
+    SetRequirement(R(Compare(Variable_Int_Combo_Count < Info_Param_Int_S3_Combo_Max)))
+    SetExtraRequirement(R(Bit is Set(RA-Bool[0x13])))
+    SetExtraRequirement(R(Bit is Set(RA-Bool[0x10])))
+    LoadRest()
+  }
+}
+
+Action 0x27 : EXIT {
+}

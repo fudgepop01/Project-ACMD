@@ -1,0 +1,9 @@
+// Status_Ottoto
+Action 0x7C: ENTRY {
+  SubRoutine(hidden_subroutine_0x60B4)
+  ChangeAction(125, R(Animation End()))
+  ChangeSubAction(206)
+}
+
+Action 0x7C : EXIT {
+}

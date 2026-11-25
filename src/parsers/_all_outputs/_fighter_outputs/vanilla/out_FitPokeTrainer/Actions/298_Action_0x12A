@@ -1,0 +1,16 @@
+Action 0x12A: ENTRY {
+  ChangeSubAction(514)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(2)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x12A : EXIT {
+}

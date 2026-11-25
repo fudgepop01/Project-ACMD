@@ -1,0 +1,6 @@
+[hsr_1FE20]
+hidden_subroutine_0x1FE20 {
+  BasicVariableSet(RA-Int[0x01], RA-Int[0x00])
+  SubRoutine(hidden_subroutine_0x1FF98)
+  Return()
+}

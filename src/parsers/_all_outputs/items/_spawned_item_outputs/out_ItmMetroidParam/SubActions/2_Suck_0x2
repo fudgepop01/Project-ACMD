@@ -1,0 +1,41 @@
+[Suck] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x2 : GAME {
+  SetLoop(-1) {
+    ThrowAttackCollision(0, 0, 2, 0, 0, 0, 0, 0, 0.0, 1.0, 1.0, 0, 0, 0, true, true, 0)
+    ThrowCollision(0, 0, Variable_Int_Controller_Trigger_2_Count_Prev, 0, Variable_Int_Controller_Trigger_5_Count)
+    SynchronousTimer(14.0)
+  }
+}
+
+Subaction 0x2 : GFX {
+  GraphicEffectAttached(13631489, 7, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.6, true)
+  GraphicEffectAttached(13631490, 7, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6, true)
+  SetLoop(-1) {
+    GraphicEffect(19, 0, 0.0, 9.0, 0.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 360.0, true)
+    SynchronousTimer(3.0)
+    GraphicEffect(19, 0, 0.0, 9.0, 0.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 360.0, true)
+    SynchronousTimer(3.0)
+    GraphicEffect(19, 0, 0.0, 9.0, 0.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 360.0, true)
+    SynchronousTimer(3.0)
+    GraphicEffect(19, 0, 0.0, 9.0, 0.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 360.0, true)
+    SynchronousTimer(3.0)
+    GraphicEffect(19, 0, 0.0, 9.0, 0.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 360.0, true)
+    SynchronousTimer(3.0)
+  }
+}
+
+Subaction 0x2 : SOUND {
+  AsynchronousTimer(4.0)
+  SoundEffect(7724)
+}
+

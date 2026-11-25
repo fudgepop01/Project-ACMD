@@ -1,0 +1,18 @@
+[hsr_7684]
+hidden_subroutine_0x7684 {
+  if (R(Compare(Variable_Int_Controller_Flick_X_Dir == 23.0))) {
+    (undef: Sp_base) 65_1D_01_00(369)
+  } elif (R(Compare(Variable_Int_Controller_Flick_X_Dir == 35.0))) {
+    (undef: Sp_base) 65_1D_01_00(370)
+  } elif (R(Compare(Variable_Int_Controller_Flick_X_Dir == 32.0))) {
+    (undef: Sp_base) 65_1D_01_00(371)
+  } elif (R(Compare(Variable_Int_Controller_Flick_X_Dir == 34.0))) {
+    (undef: Sp_base) 65_1D_01_00(372)
+  } elif (R(Compare(Variable_Int_Controller_Flick_X_Dir == 31.0))) {
+    (undef: Sp_base) 65_1D_01_00(373)
+  } elif (R(Compare(Variable_Int_Controller_Flick_X_Dir == 28.0))) {
+    (undef: Sp_base) 65_1D_01_00(374)
+  } elif (R(Compare(Variable_Int_Controller_Flick_X_Dir == 33.0))) {
+    (undef: Sp_base) 65_1D_01_00(375)
+  }
+}

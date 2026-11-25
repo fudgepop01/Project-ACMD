@@ -1,0 +1,10 @@
+[hsr_F238]
+hidden_subroutine_0xF238 {
+  OffensiveCollision(Sp(18, 0), 2, 361, Sp(0, 20), Sp(0, 8), 4.5, 0.0, 0.0, 0.0, 0.0, 1.0, 0.7, 956499458)
+  OffensiveCollision(Sp(19, 1), 2, 361, Sp(0, 20), Sp(0, 8), 3.0, 3.0, 0.0, 0.0, 0.0, 1.0, 0.7, 956499458)
+  OffensiveCollision(Sp(19, 2), 1, 361, Sp(0, 20), Sp(0, 8), 2.5, 8.0, 0.0, 0.0, 0.0, 1.0, 0.7, 956499458)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+  BitVariableSet(RA-Bool[0x19])
+  Return()
+}

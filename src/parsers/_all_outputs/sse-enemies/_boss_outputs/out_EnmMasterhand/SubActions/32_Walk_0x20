@@ -1,0 +1,87 @@
+[Walk] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x20: MAIN {
+  AsynchronousTimer(68.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 6, 12, 1.8, 361, 100, 0.0, 65, 0.0, 0, 0.0, 10.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 1.0, 1.0, false, false, 0, 2, 2, 3, true, 0, 311, false, 15, false, true, false, false, 30, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 7, 12, 1.8, 361, 100, 0.0, 65, 0.0, 0, 0.0, 10.0, 0.0, 0.0, -21.0, 0.0, 0, 0.0, 1.0, 1.0, false, false, 0, 2, 2, 3, true, 0, 311, false, 15, false, true, false, false, 30, false, false, 0, false, false, false, false, false, 1, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(2, 0, 17, 8, 1.5, 361, 100, 0.0, 25, 0.0, 0, 0.0, 6.0, 0.0, 0.0, -7.0, 0.0, 0, 0.0, 1.0, 1.0, false, false, 0, 2, 2, 3, true, 0, 311, false, 15, false, true, false, false, 30, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(3, 0, 11, 8, 1.5, 361, 100, 0.0, 25, 0.0, 0, 0.0, 6.0, 0.0, 0.0, -7.0, 0.0, 0, 0.0, 1.0, 1.0, false, false, 0, 2, 2, 3, true, 0, 311, false, 15, false, true, false, false, 30, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(170.0)
+  TerminateCollisions()
+}
+
+Subaction 0x20: MAIN EXIT {
+}
+
+Subaction 0x20: MAIN INIT {
+}
+
+Subaction 0x20: GFX {
+  AsynchronousTimer(51.0)
+  GraphicEffect(11, 13, 0.0, 3.5, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(56.0)
+  GraphicEffect(11, 19, 0.0, 3.5, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(60.0)
+  GraphicEffect(11, 13, 0.0, 3.5, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(79.0)
+  GraphicEffect(11, 19, 0.0, 3.5, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(93.0)
+  GraphicEffect(11, 13, 0.0, 3.5, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(105.0)
+  GraphicEffect(11, 19, 0.0, 3.5, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(119.0)
+  GraphicEffect(11, 13, 0.0, 3.5, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(130.0)
+  GraphicEffect(11, 19, 0.0, 3.5, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(146.0)
+  GraphicEffect(11, 13, 0.0, 3.5, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(156.0)
+  GraphicEffect(11, 19, 0.0, 3.5, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(169.0)
+  GraphicEffect(11, 13, 0.0, 3.5, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x20: GFX EXIT {
+}
+
+Subaction 0x20: GFX INIT {
+}
+
+Subaction 0x20: SFX {
+  SynchronousTimer(48.0)
+  SoundEffect(9901)
+  SynchronousTimer(4.0)
+  SoundEffect(9902)
+  SynchronousTimer(22.0)
+  SoundEffect(9901)
+  SynchronousTimer(16.0)
+  SoundEffect(9902)
+  SynchronousTimer(12.0)
+  SoundEffect(9901)
+  SynchronousTimer(12.0)
+  SoundEffect(9902)
+  SynchronousTimer(13.0)
+  SoundEffect(9901)
+  SynchronousTimer(13.0)
+  SoundEffect(9902)
+  SynchronousTimer(13.0)
+  SoundEffect(9901)
+  SynchronousTimer(13.0)
+  SoundEffect(9902)
+}
+
+Subaction 0x20: SFX EXIT {
+}
+
+Subaction 0x20: SFX INIT {
+}
+

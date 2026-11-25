@@ -1,0 +1,7 @@
+[hsr_15670]
+hidden_subroutine_0x15670 {
+  AsynchronousTimer(1.0)
+  ModelChanger(5, 8)
+  AsynchronousTimer(15.0)
+  BitVariableSet(RA-Bool[0x13])
+}

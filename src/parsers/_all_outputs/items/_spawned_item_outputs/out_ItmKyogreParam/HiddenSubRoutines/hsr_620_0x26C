@@ -1,0 +1,15 @@
+[hsr_26C]
+hidden_subroutine_0x26C {
+  (undef: Sp_base) 65_07_01_00(2)
+  if (R(2714(1))) {
+    BasicVariableSet(1, LA-Int[0x01])
+    BasicVariableSet(1, LA-Int[0x02])
+  } else {
+    LeftDirection()
+    DecideDirection()
+    CharacterSpecific01()
+    BasicVariableSet(0, LA-Int[0x01])
+    BasicVariableSet(0, LA-Int[0x02])
+  }
+  Return()
+}

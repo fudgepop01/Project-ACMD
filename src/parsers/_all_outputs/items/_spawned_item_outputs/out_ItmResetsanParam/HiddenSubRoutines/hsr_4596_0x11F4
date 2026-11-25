@@ -1,0 +1,22 @@
+[hsr_11F4]
+hidden_subroutine_0x11F4 {
+  Switch(10000, LA-Int[0x00])
+    Case(1)
+    Case(2)
+      if (R(Is within footstool range())) {
+        SubRoutine(hidden_subroutine_0x114C)
+      }
+      BitVariableClear(LA-Bool[0x00])
+      Return()
+    Case(3)
+      Return()
+  EndSwitch()
+  Switch(10000, LA-Int[0x0D])
+    Case(57)
+      if (R(Bit is Set(LA-Bool[0x00]))) {
+        SubRoutine(hidden_subroutine_0x114C)
+      }
+  EndSwitch()
+  SubRoutine(hidden_subroutine_0x440)
+  Return()
+}

@@ -1,0 +1,56 @@
+Action 0x8: MAIN {
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0x3C0)
+    (undef: Sp_Area) 69_01_05_00(Variable_Int_Controller_Flick_No_Reset_Y, 0.0, 0.0, LA-Float[0x04], true)
+    (undef: Sp_Kinetic) 66_0C_02_00(3, LA-Float[0x04])
+    SubRoutine(hidden_subroutine_0x508)
+    SubRoutine(hidden_subroutine_0x790)
+    if (R(Bit is Set(LA-Bool[0x08]))) {
+      (undef: Sp_Kinetic) 66_0B_02_00(5, 23)
+    } else {
+      if (R(Compare(Variable_Float_Motion_Trans_Move_Speed_X <= IC-Int[0xFA2])) || R(Compare(Variable_Float_Motion_Trans_Move_Speed_X >= IC-Int[0xFA3]))) {
+        if [IF_REQ_UNKNOWN_3ARG] (R(NOT Tap Jump On & C-Stick not Held()), 3, 16) {
+          (undef: Sp_Kinetic) 66_0B_02_00(4, 18)
+          (undef: Sp_Kinetic) 66_00_03_00(3, 16, LA-Float[0x04])
+        }
+      } else {
+        if [IF_REQ_UNKNOWN_3ARG] (R(NOT Tap Jump On & C-Stick not Held()), 3, 17) {
+          (undef: Sp_Kinetic) 66_0B_02_00(4, 18)
+          (undef: Sp_Kinetic) 66_00_02_00(3, 17)
+        }
+      }
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x8: EXIT {
+  if (R(NOT Bit is Set(LA-Bool[0x07])) && R(NOT Bit is Set(LA-Bool[0x08]))) {
+    (undef: Sp_base) 65_10_01_00(1)
+  }
+}
+
+Action 0x8: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(15)
+  (undef: Sp_AI) 6A_00_01_00(13)
+  if (R(NOT Bit is Set(LA-Bool[0x07])) && R(NOT Bit is Set(LA-Bool[0x08]))) {
+    (undef: Sp_AI) 6A_00_01_00(14)
+  }
+  SubAction09(2)
+  SubRoutine(hidden_subroutine_0x3C0)
+  (undef: Sp_Area) 69_01_05_00(Variable_Int_Controller_Flick_No_Reset_Y, 0.0, 0.0, LA-Float[0x04], true)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 18)
+  (undef: Sp_Kinetic) 66_00_03_00(3, 16, LA-Float[0x04])
+  (undef: Sp_Kinetic) 66_0C_02_00(3, LA-Float[0x04])
+  if (R(NOT Bit is Set(LA-Bool[0x07])) && R(NOT Bit is Set(LA-Bool[0x08]))) {
+    if (R(Bit is Set(LA-Bool[0x06]))) {
+      (undef: Sp_base) 65_07_02_00(IC-Int[0xABE5], LA-Float[0x05])
+      (undef: Sp_base) 65_04_01_00(1)
+      BitVariableClear(LA-Bool[0x06])
+    } else {
+      (undef: Sp_base) 65_11_01_00(1)
+    }
+  }
+}
+

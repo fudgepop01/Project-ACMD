@@ -1,0 +1,17 @@
+[hsr_29C]
+hidden_subroutine_0x29C {
+  if (R(2714(1))) {
+    if (R(Compare(Variable_Float_Posture_Lr == -1.0))) {
+      RightDirection()
+      DecideDirection()
+      CharacterSpecific01()
+    }
+  } else {
+    if (R(Compare(Variable_Float_Posture_Lr == 1.0))) {
+      LeftDirection()
+      DecideDirection()
+      CharacterSpecific01()
+    }
+  }
+  Return()
+}

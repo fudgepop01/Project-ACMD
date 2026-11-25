@@ -1,0 +1,7 @@
+[hsr_848]
+hidden_subroutine_0x848 {
+  if (R(Compare(Variable_Int_Motion_Other_1_Kind != -1.0))) {
+    (undef: motion) 04_11_01_00(0)
+  }
+  Return()
+}

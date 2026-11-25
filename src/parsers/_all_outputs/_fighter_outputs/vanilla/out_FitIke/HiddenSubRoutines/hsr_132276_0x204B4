@@ -1,0 +1,14 @@
+[hsr_204B4]
+hidden_subroutine_0x204B4 {
+  if (R(NOT Bit is Set(RA-Bool[0x13]))) {
+    if (R(Bit is Set(RA-Bool[0x11]))) {
+      if (R(In Air())) {
+        BitVariableSet(RA-Bool[0x14])
+      }
+      SetAirGround(18)
+      SetAerialOrOnstage(5)
+      Module0900(2)
+      BitVariableSet(RA-Bool[0x13])
+    }
+  }
+}

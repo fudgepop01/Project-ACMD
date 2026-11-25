@@ -1,0 +1,19 @@
+// Status_Cliff_Jump2
+Action 0x7A: ENTRY {
+  ClearBuffer()
+  SubRoutine(statusAnimCmd_AIRChkFallCommon)
+  SubRoutine(statusAnimCmd_AIRChkStopCeil)
+  PreventSpecificInterrupt(AIR_SPECIAL)
+  PreventSpecificInterrupt(AIR_ITEM_THROW)
+  PreventSpecificInterrupt(AIR_ATTACK)
+  ChangeAction(14, R(Animation End()))
+  if (R(Compare(Variable_Float_Damage < IC-Int[0xC79]))) {
+    ChangeSubAction(219)
+  } else {
+    ChangeSubAction(224)
+  }
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x16F3C)
+}
+
+Action 0x7A : EXIT {
+}

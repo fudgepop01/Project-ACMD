@@ -1,0 +1,49 @@
+[Landing] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xC: MAIN {
+}
+
+Subaction 0xC: MAIN EXIT {
+}
+
+Subaction 0xC: MAIN INIT {
+  FrameSpeedModifier(IC-Int[0xFA6])
+  if (R(Compare(Variable_Int_Controller_Flick_X_Dir == 31.0))) {
+    SubRoutine(hidden_subroutine_0xB748)
+  } else {
+  }
+}
+
+Subaction 0xC: GFX {
+  GraphicEffectLanding(7, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0xC: GFX EXIT {
+}
+
+Subaction 0xC: GFX INIT {
+}
+
+Subaction 0xC: SFX {
+  if (R(Compare(Variable_Int_Controller_Flick_X_Dir == 28.0))) {
+    LandingSoundEffect(9546)
+  } else {
+    LandingSoundEffect(9536)
+  }
+}
+
+Subaction 0xC: SFX EXIT {
+}
+
+Subaction 0xC: SFX INIT {
+}
+

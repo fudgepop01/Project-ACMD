@@ -1,0 +1,53 @@
+[FinalAir] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1E9: MAIN {
+  SubRoutine(Subaction_0x1E8 : MAIN)
+}
+
+Subaction 0x1E9: GFX {
+}
+
+Subaction 0x1E9: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffectTransient(3609)
+}
+
+Subaction 0x1E9: OTHER {
+  HeldItemsVisibility(false)
+  AsynchronousTimer(20.0)
+  Rumble(9, 60)
+  AsynchronousTimer(70.0)
+  Rumble(15, 0)
+  AsynchronousTimer(115.0)
+  Rumble(15, 0)
+  AsynchronousTimer(140.0)
+  Rumble(15, 0)
+  AsynchronousTimer(160.0)
+  Rumble(15, 0)
+  AsynchronousTimer(180.0)
+  Rumble(15, 0)
+  AsynchronousTimer(210.0)
+  Rumble(15, 0)
+  AsynchronousTimer(228.0)
+  Rumble(15, 0)
+  AsynchronousTimer(250.0)
+  Rumble(15, 0)
+  AsynchronousTimer(265.0)
+  Rumble(15, 0)
+  AsynchronousTimer(275.0)
+  HeldItemsVisibility(true)
+  AsynchronousTimer(280.0)
+  Rumble(15, 0)
+  AsynchronousTimer(290.0)
+  Rumble(15, 0)
+}
+

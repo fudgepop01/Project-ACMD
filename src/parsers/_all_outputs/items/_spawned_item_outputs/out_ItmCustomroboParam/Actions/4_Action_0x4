@@ -1,0 +1,19 @@
+// Status_Run
+Action 0x4 {
+  (undef: Sp_Kinetic) 66_02_02_00(100.0, 100.0)
+  if (R(Compare(1.0 != 0.0))) {
+    BasicVariableSet(0, LA-Int[0x01])
+    BasicVariableSet(0, LA-Int[0x02])
+    BasicVariableSet(0, LA-Int[0x03])
+  }
+  EnableSpecifiedMovement(2)
+  ChangeAction(3, R(In Air()))
+  ChangeSubAction(5)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeSubAction(1)
+  SynchronousTimer(25.0)
+  DisableActionStatusId(3)
+  ChangeAction(8, R(Button Tap?()))
+}
+

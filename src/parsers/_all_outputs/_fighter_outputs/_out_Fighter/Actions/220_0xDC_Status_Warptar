@@ -1,0 +1,16 @@
+// Status_Warptar
+Action 0xDC: ENTRY {
+  BodyCollision(2)
+  SetGimmickEffectFlag(false)
+  HeldItemsVisibility(false)
+  DisableMagifyingGlass()
+  (undef: posture) 05_0D_01_00(0)
+  BitVariableSet(LA-Bool[0x01])
+  ChangeSubAction(327)
+}
+
+Action 0xDC : EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 221.0))) {
+    DeleteHeldItem_UNDOC1ARGS(1)
+  }
+}

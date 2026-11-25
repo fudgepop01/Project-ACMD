@@ -1,0 +1,38 @@
+// Status_Jump_Squat
+Action 0xA {
+  if (R(Compare(LA-Int[0x0B] == 0.0))) {
+    ChangeAction(6, R(Button Tap?()))
+  }
+  ChangeActionStatus(3, 3, R(In Air()))
+  ChangeAction(12, R(NOT 0x2715()), 2.0)
+  (undef: Sp_base) 65_07_01_00(2)
+  ChangeAction(13, R(Compare(IC-Int[0x3F8] <= 8.0)))
+  if (R(Is within footstool range())) {
+    FloatVariableAdd(-7.0, LA-Float[0x08])
+    If_UNDOC5ARGS(R(Is falling+hit down()), -20.0, 1.0, 20.0, 9.0)
+    SubRoutine(hidden_subroutine_0x1A0)
+    ElseIf_UNDOC5ARGS(R(Is falling+hit down()), -17.0, 1.0, 17.0, 20.0)
+    SubRoutine(hidden_subroutine_0x1D8)
+  } elif (R(Compare(LA-Float[0x08] >= Variable_Float_Posture_Pos_Y))) {
+    ChangeAction(8, R(Button Tap?()))
+  }
+}
+(undef: Sp_base) 65_07_03_00(2, 0.0, 0.0)
+if (R(On a Passable Floor())) {
+  if (R(Compare(LA-Float[0x08] <= Variable_Float_Posture_Pos_Y))) {
+    ChangeAction(9, R(Button Tap?()))
+  }
+}
+Switch(10000, LA-Int[0x00])
+  Case(4)
+    SubRoutine(hidden_subroutine_0x258)
+  Case(0)
+    SubRoutine(hidden_subroutine_0x418)
+  Case(1)
+    SubRoutine(hidden_subroutine_0x798)
+  Case(2)
+    SubRoutine(hidden_subroutine_0x978)
+EndSwitch()
+ChangeAction(10, R(Button Tap?()))
+}
+

@@ -1,0 +1,21 @@
+Action 0x127: ENTRY {
+  SetGimmickEffectFlag(false)
+  BodyCollision(3)
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    ChangeSubAction(486)
+    BitVariableClear(RA-Bool[0x10])
+  } else {
+    ChangeSubAction(486, true)
+  }
+  SetAerialOrOnstage(1)
+  ChangeActionStatus(0, 296, R(In Air()))
+
+  ChangeAction(297, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(298, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+}
+
+Action 0x127 : EXIT {
+}

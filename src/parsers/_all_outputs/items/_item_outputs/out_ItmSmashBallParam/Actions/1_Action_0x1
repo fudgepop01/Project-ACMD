@@ -1,0 +1,14 @@
+// Status_Walk
+Action 0x1 {
+  BasicVariableSet(-1, LA-Int[0x00])
+  ChangeSubAction(0)
+  (undef: Sp_base) 65_05_01_00(1200)
+  BasicVariableSet(60, LA-Int[0x0C])
+  DisableSpecifiedMovement(2)
+  SubRoutine(hidden_subroutine_0x27C)
+  DisableActionStatusId(1)
+  ChangeSubAction(6)
+  (undef: Sp_Kinetic) 66_05_03_00(4, 0.01, 0.8)
+  ChangeAction(5, R(Button Tap?()))
+}
+

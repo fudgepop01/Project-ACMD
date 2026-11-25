@@ -1,0 +1,43 @@
+Action 0x9: MAIN {
+  SetLoop(-1) {
+    if (R(Successfully tethered ledge())) {
+      if [IF_REQ_UNKNOWN_3ARG] (R(0x12()), 2, Variable_Int_Controller_Flick_No_Reset_Y) {
+        (undef: Sp_Area) 69_00_01_00(Variable_Int_Controller_Flick_No_Reset_Y)
+        if (R(Compare(IC-Int[0x5209] >= LA-Float[0x05]))) {
+          if (R(0x274A())) {
+            SubRoutine(hidden_subroutine_0x1048)
+            (undef: Sp_base) 65_07_02_00(IC-Int[0xABE8], LA-Float[0x05])
+            (undef: Sp_base) 65_04_01_00(1)
+          } else {
+          }
+        }
+      }
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x9: EXIT {
+  BitVariableClear(LA-Bool[0x08])
+}
+
+Action 0x9: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  SubRoutine(hidden_subroutine_0x398)
+  SubAction09(6)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 15)
+  if (R(Compare(Variable_Float_Controller_Stick_Prev_Y <= IC-Int[0xFA3]))) {
+    (undef: Sp_Kinetic) 66_00_02_00(3, 18)
+  } else {
+    if (R(Compare(Variable_Float_Controller_Stick_Prev_Y <= IC-Int[0xFA2]))) {
+      (undef: Sp_Kinetic) 66_00_02_00(3, 17)
+    } else {
+      (undef: Sp_Kinetic) 66_00_02_00(3, 16)
+    }
+  }
+  if (R(Successfully tethered ledge())) {
+    (undef: Sp_Area) 69_00_01_00(Variable_Int_Controller_Flick_No_Reset_Y)
+  }
+  (undef: Sp_base) 65_04_01_00(1)
+}
+

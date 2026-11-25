@@ -1,0 +1,8 @@
+IC-Int[0x03] ("Variable_Float_Posture_Pos_X") in hsr_E8 @ 7 : 2
+
+IC-Int[0x04] ("Variable_Float_Posture_Pos_Y") in hsr_E8 @ 7 : 3
+
+LA-Int[0x0C] in hsr_E8 @ 0 : 2
+LA-Int[0x0C] in hsr_E8 @ 3 : 1
+
+LA-Int[0x1B] in Subaction 0x0 : SOUND @ 1 : 1

@@ -1,0 +1,12 @@
+[hsr_1E750]
+hidden_subroutine_0x1E750 {
+  if (R(Compare(Variable_Int_Status_Kind == 283.0))) {
+    if (R(Button Not Pressed(Jump))) {
+      BitVariableSet(RA-Bool[0x06])
+    }
+  } else {
+    if (R(Compare(Variable_Float_Controller_Stick_Y < Common_Param_Float_Jump_Neutral_Y))) {
+      BitVariableSet(RA-Bool[0x06])
+    }
+  }
+}

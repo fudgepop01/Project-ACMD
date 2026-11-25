@@ -1,0 +1,16 @@
+// Status_Down_Stand_Attack
+Action 0x53: ENTRY {
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  if (R(Bit is Set(RA-Bool[0x19]))) {
+    ChangeSubAction(176)
+  } else {
+    ChangeSubAction(185)
+  }
+}
+
+Action 0x53 : EXIT {
+}

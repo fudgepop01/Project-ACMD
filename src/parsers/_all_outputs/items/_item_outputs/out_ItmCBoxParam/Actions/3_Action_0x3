@@ -1,0 +1,7 @@
+// Status_Dash
+Action 0x3 {
+  (undef: Sp_base) 65_1F_01_00(2)
+  SubRoutine(hidden_subroutine_0x88)
+  ChangeSubAction(2)
+}
+

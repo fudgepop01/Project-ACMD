@@ -1,0 +1,9 @@
+[hsr_508]
+hidden_subroutine_0x508 {
+  if (R(Compare(IC-Int[0x5209] >= LA-Float[0x05])) && R(NOT Bit is Set(LA-Bool[0x07])) && R(NOT Bit is Set(LA-Bool[0x08])) && R(Is Not in Damaging Magnifier())) {
+    SubRoutine(hidden_subroutine_0x468)
+  } elif (R(NOT Is Not in Damaging Magnifier())) {
+    (undef: Sp_base) 65_07_02_00(IC-Int[0xABE5], LA-Float[0x05])
+    (undef: Sp_base) 65_04_01_00(1)
+  }
+}

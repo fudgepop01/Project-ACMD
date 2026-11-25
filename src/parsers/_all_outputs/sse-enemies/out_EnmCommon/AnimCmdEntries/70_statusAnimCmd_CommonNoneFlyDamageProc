@@ -1,0 +1,7 @@
+// @ 0x35B0
+CommonNoneFlyDamageProc {
+  (undef: shake) 1D_00_03_00(1, LA-Int[0x02], 255)
+  SubRoutine(statusAnimCmd_CommonDamageProcEnd)
+  BitVariableClear(RA-Bool[0x00])
+  Return()
+}

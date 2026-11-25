@@ -1,0 +1,25 @@
+// Status_Fly
+Action 0xD {
+  (undef: Sp_Kinetic) 66_06_01_00(1)
+  ChangeAction(3, R(In Air()))
+  DisableActionStatusId(13)
+
+  ChangeAction(14, R(NOT 0x2715()), 20.0)
+  AdditionalRequirement(R(On Ground()))
+
+  if (R(Facing Left())) {
+    ChangeAction(15, R(In walljump situation()), 82)
+    ChangeAction(8, R(In walljump situation()), 4)
+  } else {
+    ChangeAction(15, R(In walljump situation()), 164)
+    ChangeAction(8, R(In walljump situation()), 2)
+  }
+  ChangeSubAction(8)
+  FrameSpeedModifier(2.0)
+  if (R(2714(0)) && R(0x271C())) {
+    ChangeAction(8, R(Button Tap?()))
+  } else {
+    (undef: Sp_Kinetic) 66_00_0D_00(0.5, 0.0, 1.5, 0.0, 0.0, 0.0, 0.01, 0.0, 0.0, 0.0, true, false, true)
+  }
+}
+

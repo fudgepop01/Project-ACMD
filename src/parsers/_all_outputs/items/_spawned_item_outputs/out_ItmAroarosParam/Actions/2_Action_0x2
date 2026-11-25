@@ -1,0 +1,7 @@
+// Status_Walk_Brake
+Action 0x2 {
+  BasicVariableSet(1, LA-Int[0x0E])
+  BitVariableSet(LA-Bool[0x00])
+  ChangeSubAction(2)
+}
+

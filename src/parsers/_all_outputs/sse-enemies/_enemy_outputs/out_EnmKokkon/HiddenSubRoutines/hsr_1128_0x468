@@ -1,0 +1,8 @@
+[hsr_468]
+hidden_subroutine_0x468 {
+  SubRoutine(hidden_subroutine_0x3F8)
+  (undef: Sp_base) 65_04_01_00(1)
+  BitVariableSet(LA-Bool[0x07])
+  (undef: Sp_AI) 6A_01_01_00(14)
+  (undef: Sp_base) 65_08_02_00(IC-Int[0xABE6], LA-Int[0x05])
+}

@@ -1,0 +1,22 @@
+// Status_Turn_Run
+Action 0x8 {
+  SubRoutine(hidden_subroutine_0xF8)
+  if (R(Touching a Floor, Wall, or Ceiling(4))) {
+    if (R(NOT Touching a Floor, Wall, or Ceiling(2))) {
+      FloatVariableSet(-0.4, LA-Float[0x00])
+    }
+  } else {
+    if (R(NOT Touching a Floor, Wall, or Ceiling(4))) {
+      FloatVariableSet(0.4, LA-Float[0x00])
+    }
+  }
+  if (R(Touching a Floor, Wall, or Ceiling(8))) {
+    FloatVariableMultiply(LA-Float[0x01], RA-Float[0x01])
+  } else {
+    FloatVariableMultiply(Variable_Float_Kinetic_Energy_Damage_Speed_Y, RA-Float[0x01])
+  }
+  (undef: Sp_Kinetic) 66_00_0D_00(LA-Float[0x00], RA-Float[0x01], -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+  SynchronousTimer(10.0)
+  ChangeAction(3, R(Button Tap?()))
+}
+

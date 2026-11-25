@@ -1,0 +1,15 @@
+Action 0x2E: MAIN {
+}
+
+Action 0x2E: EXIT {
+  BasicVariableSet(-1, LA-Int[0x08])
+}
+
+Action 0x2E: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(22)
+  SubAction09(33)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+  BasicVariableSet(LA-Int[0x06], LA-Int[0x08])
+}
+

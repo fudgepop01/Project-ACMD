@@ -1,0 +1,12 @@
+Action 0x117: ENTRY {
+  BitVariableSet(LA-Bool[0x3A])
+  ChangeAction(281, R(Touching a Floor, Wall, or Ceiling(ERRVALUE)))
+  ChangeAction(284, R(Hitbox Connects()))
+  ChangeSubAction(465)
+  BasicVariableSet(IC-Int[0x5DC2], RA-Int[0x03])
+  ChangeAction(283, R(Compare(RA-Int[0x03] < 0.0)))
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1E620)
+}
+
+Action 0x117 : EXIT {
+}

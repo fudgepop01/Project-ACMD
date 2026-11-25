@@ -1,0 +1,9 @@
+[hsr_239D8]
+hidden_subroutine_0x239D8 {
+  if (R(Compare(LA-Float[0x1B] >= 65.0)) && R(Button Pressed(Attack)) && R(NOT Button Press(CStick))) {
+    FloatVariableSubtract(65.0, LA-Float[0x1B])
+    FloatVariableSet(10.0, LA-Float[0x1C])
+    ChangeAction(284, R(Character Exists(ERRVALUE)))
+  }
+  BasicVariableIncrement(RA-Int[0x00])
+}

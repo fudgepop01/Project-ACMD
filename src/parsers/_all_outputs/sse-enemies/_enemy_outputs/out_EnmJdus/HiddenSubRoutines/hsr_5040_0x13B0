@@ -1,0 +1,7 @@
+[hsr_13B0]
+hidden_subroutine_0x13B0 {
+  BitVariableSet(LA-Bool[0x07])
+  (undef: Sp_base) 65_04_01_00(3)
+  (undef: Sp_base) 65_09_02_00(IC-Int[0xABE6], LA-Float[0x08])
+  Return()
+}

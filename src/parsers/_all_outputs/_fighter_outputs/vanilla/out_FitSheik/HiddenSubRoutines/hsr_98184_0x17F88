@@ -1,0 +1,6 @@
+[hsr_17F88]
+hidden_subroutine_0x17F88 {
+  if (R(Animation End())) {
+    TerminateArticleFtTransform()
+  }
+}

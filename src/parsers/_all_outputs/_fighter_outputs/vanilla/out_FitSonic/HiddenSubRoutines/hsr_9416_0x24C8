@@ -1,0 +1,21 @@
+[hsr_24C8]
+hidden_subroutine_0x24C8 {
+  ModelChanger(1, 0)
+  if (R(Bit is Set(LA-Bool[0x06]))) {
+    ModelChanger(0, 0)
+  }
+  BoneCollision(31, 0)
+  BoneCollision(49, 0)
+  BoneCollision(50, 0)
+  BoneCollision(65, 0)
+  BoneCollision(34, 0)
+  BoneCollision(66, 0)
+  BoneCollision(35, 0)
+  BoneCollision(26, 0)
+  BoneCollision(22, 0)
+  BoneCollision(27, 0)
+  BoneCollision(23, 0)
+  BoneCollision(28, 0)
+  BoneCollision(24, 0)
+  BoneCollision(19, 3)
+}

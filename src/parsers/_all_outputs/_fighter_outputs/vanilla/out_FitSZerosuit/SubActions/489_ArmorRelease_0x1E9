@@ -1,0 +1,49 @@
+[ArmorRelease] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1E9: MAIN {
+  AsynchronousTimer(25.0)
+  BodyCollision(2)
+  AsynchronousTimer(70.0)
+  BitVariableSet(RA-Bool[0x14])
+}
+
+Subaction 0x1E9: GFX {
+  AsynchronousTimer(26.0)
+  GraphicEffectAttached(1638415, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  SetLoop(6) {
+    SynchronousTimer(4.0)
+    GraphicEffect(134, -2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 360.0, 360.0, 360.0, true)
+    GraphicEffect(133, -2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 360.0, 360.0, 360.0, true)
+  }
+  SetLoop(6) {
+    SynchronousTimer(6.0)
+    GraphicEffect(133, -2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 360.0, 360.0, 360.0, true)
+  }
+}
+
+Subaction 0x1E9: SOUND {
+  AsynchronousTimer(1.0)
+  VictorySoundEffect(4947)
+  SynchronousTimer(29.0)
+  SoundEffectTransient(2846)
+}
+
+Subaction 0x1E9: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(70.0)
+  Rumble(14, 6)
+  AsynchronousTimer(85.0)
+  Rumble(14, 6)
+  AsynchronousTimer(95.0)
+  Rumble(14, 6)
+}
+

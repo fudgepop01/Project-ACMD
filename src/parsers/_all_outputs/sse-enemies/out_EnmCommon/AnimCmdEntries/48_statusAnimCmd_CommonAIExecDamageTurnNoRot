@@ -1,0 +1,5 @@
+// @ 0x3D00
+CommonAIExecDamageTurnNoRot {
+  (undef: Sp_Damage) 6B_01_00_00()
+  Return()
+}

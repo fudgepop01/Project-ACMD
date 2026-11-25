@@ -1,0 +1,33 @@
+[FinalEnd] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1EF: MAIN {
+  BodyCollision(2)
+  Visibility(true)
+  DetachAttachCameraFar(true)
+}
+
+Subaction 0x1EF: GFX {
+  GraphicEffect(16908291, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x1EF: SOUND {
+  SoundEffect(6516)
+}
+
+Subaction 0x1EF: OTHER {
+  SlopeContourStand(0)
+  ModelChangerPermanent(0, -1)
+  TerminateAllGraphicEffect(8, false)
+  AsynchronousTimer(22.0)
+  SlopeContourStand(6)
+}
+

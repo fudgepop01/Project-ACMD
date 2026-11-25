@@ -1,0 +1,7 @@
+// @ 0x40A8
+CommonAICheckRotDamageFinish {
+  SubRoutine(statusAnimCmd_CommonAICheckReactionEnd)
+  SubRoutine(statusAnimCmd_CommonAICheckEnergyZeroMain)
+  SubRoutine(statusAnimCmd_CommonAICheckEnergyEndMain)
+  Return()
+}

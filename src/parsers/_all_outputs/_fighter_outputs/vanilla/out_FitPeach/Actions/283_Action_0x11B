@@ -1,0 +1,10 @@
+Action 0x11B: ENTRY {
+  ChangeAction(25, R(On Ground()))
+  ChangeAction(16, R(Animation End()))
+  ChangeSubAction(472)
+  AllowSpecificInterrupt(AIR_CLIFF)
+}
+
+Action 0x11B : EXIT {
+  SubRoutine(hidden_subroutine_0x172F8)
+}

@@ -1,0 +1,35 @@
+Action 0x5: MAIN {
+  SetLoop(-1) {
+    if (R(2714(ERRVALUE))) {
+      (undef: Sp_Kinetic) 66_09_02_00(6, 21)
+    }
+    if [IF_REQ_UNKNOWN_3ARG] (R(Tap Jump On & C-Stick not Held()), 6, 21 && R(Is within footstool range())) {
+      (undef: Sp_Area) 69_02_05_00(6, 0.0, 0.0, LA-Float[0x04], true)
+      (undef: Sp_Kinetic) 66_00_03_00(3, 14, LA-Float[0x04])
+      (undef: Sp_Kinetic) 66_07_01_00(6)
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x5: EXIT {
+}
+
+Action 0x5: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(14)
+  (undef: Sp_AI) 6A_00_01_00(15)
+  (undef: Sp_AI) 6A_00_01_00(16)
+  if (R(Facing Left())) {
+    SubAction09(12)
+  } else {
+    SubAction09(13)
+  }
+  (undef: Sp_Kinetic) 66_00_03_00(3, 14, LA-Float[0x04])
+  if (R(NOT Bit is Set(LA-Bool[0x07]))) {
+    (undef: Sp_base) 65_07_02_00(IC-Int[0xABE3], LA-Float[0x04])
+    (undef: Sp_Kinetic) 66_0C_02_00(3, LA-Float[0x04])
+    BitVariableSet(LA-Bool[0x07])
+  }
+}
+

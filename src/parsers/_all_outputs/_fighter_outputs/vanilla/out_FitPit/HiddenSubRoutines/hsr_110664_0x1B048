@@ -1,0 +1,5 @@
+[hsr_1B048]
+hidden_subroutine_0x1B048 {
+  SuperHeavyArmor(0, 0.0)
+  SpecialOffensiveCollision(Sp(46, 0), 7, 70, Sp(0, 100), Sp(0, 30), 5.0, 7.5, 0.0, -2.108, 0.0, 1.0, 1.0, 574816903, 0, 5177475)
+}

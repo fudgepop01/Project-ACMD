@@ -1,0 +1,23 @@
+// @ 0x34E8
+CommonBulletProcExec {
+  SetLoop(-1) {
+    if (R(Compare(LA-Int[0x00] <= 0.0))) {
+      LoopBreak()
+    }
+    if (R(2714(ERRVALUE))) {
+      (undef: Sp_Kinetic) 66_09_02_00(3, 7)
+      SetHitlagForce(IC-Int[0x59DD])
+      (undef: camera) 1A_05_01_00(IC-Int[0x59DE])
+      SubRoutine(hidden_subroutine_0x340)
+      FloatVariableAdd(IC-Int[0x419], LA-Float[0x0F])
+      if (R(Compare(LA-Float[0x0F] >= Customize_Param_Int_Dead_Rare_SE_Rate))) {
+        BasicVariableSet(IC-Int[0x59DD], LA-Int[0x00])
+        (undef: Sp_Kinetic) 66_07_01_00(3)
+        (undef: Sp_Kinetic) 66_07_01_00(4)
+        LoopBreak()
+      }
+    }
+    SynchronousTimer(1.0)
+  }
+  Return()
+}

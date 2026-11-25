@@ -1,0 +1,6 @@
+// @ 0x22138
+CatchPull {
+  if (R(Compare(Variable_Int_Status_Kind == 57.0))) {
+    SubRoutine(hidden_subroutine_0x351C)
+  }
+}

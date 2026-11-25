@@ -1,0 +1,29 @@
+// Status_Run_Brake
+Action 0x5 {
+  ChangeSubAction(0, true)
+  SetRequirement(R(Animation has looped?()))
+  LoadRest()
+  ChangeSubAction(3, false)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, -1.0, 3.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, false, false, false)
+  SynchronousTimer(90.0)
+  BasicVariableSet(0, RA-Int[0x00])
+  while (R(Is Not in Damaging Magnifier())) {
+    BasicVariableAdd(5, RA-Int[0x00])
+    SynchronousTimer(5.0)
+    EndWhile()
+    (undef: Sp_Kinetic) 66_02_02_00(0.0, 0.3)
+    (undef: Sp_base) 65_0A_04_00(1, 0.0, 0.0, -120.0)
+    ChangeSubAction(6, false)
+    ChangeSubAction(2, false)
+    (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, -1.0, 3.0, 0.0, 0.0, 0.0, -0.1, 0.0, 0.0, false, false, false)
+    SynchronousTimer(94.0)
+    while (R(Compare(RA-Int[0x00] > 0.0))) {
+      BasicVariableSubtract(5, RA-Int[0x00])
+      SynchronousTimer(5.0)
+      EndWhile()
+      (undef: Sp_Kinetic) 66_02_02_00(0.2, 0.3)
+      SetRequirement(R(Animation has looped?()))
+      LoadRest()
+      ChangeAction(7, R(Button Tap?()))
+}
+

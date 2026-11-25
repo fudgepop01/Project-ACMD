@@ -1,0 +1,44 @@
+[Final] (flags) {
+  No Out Transition: 1,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1F8: MAIN {
+  BodyCollision(2)
+  ModelChanger(2, 0)
+  AsynchronousTimer(5.0)
+  BitVariableSet(RA-Bool[0x11])
+  GenerateArticle(2)
+  AsynchronousTimer(14.0)
+  BitVariableSet(RA-Bool[0x10])
+  GenerateArticle(2)
+}
+
+Subaction 0x1F8: GFX {
+  AsynchronousTimer(4.0)
+  GraphicEffectAttached(16318468, 57, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  AsynchronousTimer(13.0)
+  GraphicEffectAttached(16318468, 34, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+}
+
+Subaction 0x1F8: SOUND {
+  AsynchronousTimer(5.0)
+  SoundEffect(5298)
+  SynchronousTimer(14.0)
+  SoundEffect(5298)
+}
+
+Subaction 0x1F8: OTHER {
+  HeldItemsVisibility(false)
+  AsynchronousTimer(5.0)
+  Rumble(19, 0)
+  AsynchronousTimer(17.0)
+  Rumble(19, 0)
+}
+

@@ -1,0 +1,57 @@
+Action 0x118: ENTRY {
+  if (R(Button Press(Attack)) && R(Compare(LA-Float[0x1B] >= 65.0)) && R(NOT Button Press(CStick))) {
+    SubRoutine(hidden_subroutine_0x24D08)
+    SoundEffect(2369)
+    GenerateArticle(0)
+    SetArticleAction07(0, 1)
+    ChangeAction(281, R(Compare(LA-Int[0x41] >= 7.0)))
+    BasicVariableSet(60, LA-Int[0x45])
+    BasicVariableSet(60, LA-Int[0x46])
+    FloatVariableSubtract(65.0, LA-Float[0x1B])
+    SubRoutine(Subaction_0x3 : MAIN)
+    SetLoop(-1) {
+      SubRoutine(hidden_subroutine_0x18FA8)
+      if (R(On Ground())) {
+        SetAerialOrOnstage(2)
+        SetAirGround(6)
+        SetRequirement(R(In Air()))
+      } else {
+        SetAerialOrOnstage(5)
+        SetAirGround(10)
+        SetRequirement(R(On Ground()))
+      }
+      LoadRest()
+    }
+  } else {
+    if (R(Compare(Variable_Int_Status_Kind == 274.0))) {
+      GenerateArticle(0)
+      SetArticleAction07(0, 1)
+    }
+    BitVariableClear(LA-Bool[0x3E])
+    BasicVariableSet(466, LA-Int[0x45])
+    BasicVariableSet(467, LA-Int[0x46])
+    SubRoutine(hidden_subroutine_0x1A950)
+    ChangeAction(286, R(0x4F()))
+    ChangeAction(281, R(Button Press(Special)))
+    SetLoop(-1) {
+      if (R(On Ground())) {
+        SubRoutine(hidden_subroutine_0x190C8)
+        SubRoutine(hidden_subroutine_0x18FA8)
+        SubRoutine(hidden_subroutine_0x1A9A8)
+        SetAirGround(6)
+        SetRequirement(R(In Air()))
+      } else {
+        SubRoutine(hidden_subroutine_0x19110)
+        SubRoutine(hidden_subroutine_0x18FE8)
+        SubRoutine(hidden_subroutine_0x1A9F0)
+        SetAirGround(10)
+        SetRequirement(R(On Ground()))
+      }
+      LoadRest()
+    }
+  }
+}
+
+Action 0x118 : EXIT {
+  Goto(Action_0x5 : EXIT)
+}

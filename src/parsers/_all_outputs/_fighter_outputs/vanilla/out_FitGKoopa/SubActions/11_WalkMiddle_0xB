@@ -1,0 +1,48 @@
+[WalkMiddle] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xB: MAIN {
+}
+
+Subaction 0xB: GFX {
+  AsynchronousTimer(27.0)
+  GraphicEffect(11, 0, 20.0, 0.0, 10.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(10, 0, 20.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(78.0)
+  GraphicEffect(11, 0, -20.0, 0.0, 10.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(10, 0, -20.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0xB : GFX)
+}
+
+Subaction 0xB: SOUND {
+  AsynchronousTimer(22.0)
+  SteppingSoundEffect(6701)
+  SynchronousTimer(49.0)
+  SteppingSoundEffect(6699)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0xB : SFX)
+}
+
+Subaction 0xB: OTHER {
+  AsynchronousTimer(22.0)
+  Screenshake(0)
+  Rumble(12, 0)
+  AsynchronousTimer(72.0)
+  Screenshake(0)
+  Rumble(12, 0)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0xB : OTHER)
+}
+

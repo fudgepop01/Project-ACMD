@@ -1,0 +1,24 @@
+Action 0x1A: MAIN {
+  SubRoutine(hidden_subroutine_0xCA0)
+}
+
+Action 0x1A: EXIT {
+  (undef: Sp_Kinetic) 66_07_01_00(-1)
+  (undef: Sp_base) 65_16_00_00()
+}
+
+Action 0x1A: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(10)
+  BasicVariableSet(2, LA-Int[0x06])
+  SubAction09(13)
+  (undef: Sp_base) 65_1E_01_00(IC-Int[0xABE5])
+  CharacterSpecific01()
+  SubRoutine(hidden_subroutine_0xB78)
+  (undef: Sp_base) 65_16_00_00()
+  (undef: Sp_base) 65_14_01_00(LA-Float[0x0A])
+  (undef: Sp_base) 65_15_01_00(LA-Float[0x0B])
+  (undef: Sp_Kinetic) 66_07_01_00(3)
+  (undef: Sp_Kinetic) 66_00_03_00(4, 33, 0.0)
+}
+

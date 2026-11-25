@@ -1,0 +1,15 @@
+// Status_Run_Brake
+Action 0x5 {
+  if (R(Facing Left())) {
+    (undef: Sp_base) 65_03_02_00(0.0, 90.0)
+  } else {
+    (undef: Sp_base) 65_03_02_00(0.0, -90.0)
+  }
+  DecideDirection()
+  CharacterSpecific01()
+  SubRoutine(hidden_subroutine_0x128)
+  ChangeAction(8, R(Compare(LA-Int[0x00] == 3.0)))
+  SubRoutine(hidden_subroutine_0x58)
+  DisableActionStatusId(5)
+}
+

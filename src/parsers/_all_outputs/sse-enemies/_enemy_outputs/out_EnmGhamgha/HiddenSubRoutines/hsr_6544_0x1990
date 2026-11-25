@@ -1,0 +1,5 @@
+[hsr_1990]
+hidden_subroutine_0x1990 {
+  SpecialOffensiveCollisionEnemyHitbox(3, 3, 13, 0, 0.0, 0, 100, 0.0, 20, 0.0, 0, 0.0, 13.4, 0.0, 0.0, 11.5, 0.0, 0, 0.0, 0.0, 1.0, false, true, 0, 0, 0, 3, true, 0, 311, false, 9, false, false, false, false, 1, true, false, 0, false, false, true, true, true, 1, LA-Float[0x0C])
+  Return()
+}

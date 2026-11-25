@@ -1,0 +1,5 @@
+LA-Bool[0x00] in Action 0x7 (Status_Turn_Dash) @ 2 : 1
+
+RA-Bool[0x03] in hsr_118 @ 3 : 2
+
+RA-Bool[0x05] in hsr_118 @ 1 : 3

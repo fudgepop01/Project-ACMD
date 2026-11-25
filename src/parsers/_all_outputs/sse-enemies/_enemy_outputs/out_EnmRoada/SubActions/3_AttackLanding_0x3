@@ -1,0 +1,43 @@
+[AttackLanding] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x3: MAIN {
+  SubRoutine(hidden_subroutine_0x2DE0)
+}
+
+Subaction 0x3: MAIN EXIT {
+}
+
+Subaction 0x3: MAIN INIT {
+}
+
+Subaction 0x3: GFX {
+  GraphicEffectAttached(9437189, 5, -5.776, 2.271, -9.508, 13.5, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(9437189, 5, 5.776, 2.27, -9.508, 13.5, 0.0, 0.0, 1.0, true)
+  GraphicEffect(7, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x3: GFX EXIT {
+}
+
+Subaction 0x3: GFX INIT {
+}
+
+Subaction 0x3: SFX {
+  LandingSoundEffect(9319)
+}
+
+Subaction 0x3: SFX EXIT {
+}
+
+Subaction 0x3: SFX INIT {
+}
+

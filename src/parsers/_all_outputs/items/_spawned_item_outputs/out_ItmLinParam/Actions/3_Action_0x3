@@ -1,0 +1,13 @@
+// Status_Dash
+Action 0x3 {
+  SubRoutine(hidden_subroutine_0x8)
+  DisableActionStatusId(1)
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 4.0))) {
+    ChangeSubAction(1)
+    ChangeAction(13, R(On Ground()))
+  } else {
+    ChangeActionStatus(4, 4, R(On Ground()))
+    ChangeSubAction(1)
+  }
+}
+

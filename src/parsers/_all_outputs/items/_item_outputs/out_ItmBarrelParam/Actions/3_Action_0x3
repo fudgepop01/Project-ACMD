@@ -1,0 +1,11 @@
+// Status_Dash
+Action 0x3 {
+  SubRoutine(hidden_subroutine_0xC8)
+  DisableActionStatusId(3)
+  if (R(Bit is Set(LA-Bool[0x04]))) {
+    ChangeAction(5, R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed_X > 1.7999833333333333)))
+  }
+  ChangeSubAction(2)
+  ChangeAction(4, R(On Ground()))
+}
+

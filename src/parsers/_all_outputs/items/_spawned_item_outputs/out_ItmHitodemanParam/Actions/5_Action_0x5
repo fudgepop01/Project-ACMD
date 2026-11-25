@@ -1,0 +1,27 @@
+// Status_Run_Brake
+Action 0x5 {
+  ChangeSubAction(1)
+  DisableSpecifiedMovement(2)
+  SynchronousTimer(1.0)
+  (undef: Sp_base) 65_07_01_00(2)
+  if (R(NOT 2714(1))) {
+    FloatVariableSet(60.0, RA-Float[0x00])
+    ReverseDirection()
+    DecideDirection()
+    CharacterSpecific01()
+  } else {
+    FloatVariableSet(-60.0, RA-Float[0x00])
+  }
+  (undef: Sp_Kinetic) 66_05_01_00(1)
+  (undef: Sp_Kinetic) 66_08_01_00(0.1)
+  (undef: Sp_Kinetic) 66_0A_01_00(0.2)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, 3.0, 3.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false, false, false)
+  BasicVariableRandom(100, 200, RA-Int[0x00])
+  while (R(Compare(RA-Int[0x00] > 0.0))) {
+    (undef: Sp_base) 65_07_03_00(9, RA-Float[0x00], 10.0)
+    SynchronousTimer(3.0)
+    BasicVariableSubtract(3, RA-Int[0x00])
+    EndWhile()
+    ChangeAction(7, R(Button Tap?()))
+}
+

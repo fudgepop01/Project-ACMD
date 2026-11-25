@@ -1,0 +1,6 @@
+// @ 0x4170
+CommonBossDownPre {
+  (undef: Sp_base) 65_05_01_00(5)
+  SynchronousTimer(1.0)
+  Return()
+}

@@ -1,0 +1,7 @@
+// @ 0x3AF0
+CommonAICheckMotionEnd {
+  if (R(Animation End())) {
+    BitVariableSet(RA-Bool[0x04])
+  }
+  Return()
+}

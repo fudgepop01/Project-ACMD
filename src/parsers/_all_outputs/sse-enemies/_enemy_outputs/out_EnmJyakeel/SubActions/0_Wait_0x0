@@ -1,0 +1,50 @@
+[Wait] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x0: MAIN {
+  if (R(Compare(IC-Int[0x5DC0] == 0.0))) {
+    SpecialOffensiveCollisionEnemyHitbox(0, 0, 3, 5, 2.5, 60, 15, 0.0, 0, 0.0, 97, 1.5, 3.7, 0.4, 0.0, 0.0, 0.0, 5, 0.0, 1.0, 1.0, false, true, 20, 2, 8, 3, true, 0, 311, false, 15, false, true, false, false, 120, false, false, 1, false, false, true, false, false, 0, LA-Float[0x0C])
+  } elif (R(Compare(IC-Int[0x5DC0] == 1.0))) {
+    SpecialOffensiveCollisionEnemyHitbox(0, 0, 3, 5, 2.5, 60, 15, 0.0, 0, 0.0, 97, 1.5, 3.7, 0.4, 0.0, 0.0, 0.0, 18, 0.0, 1.0, 1.0, false, true, 20, 2, 7, 3, true, 0, 311, false, 15, false, true, false, false, 120, false, false, 1, false, false, true, false, false, 0, LA-Float[0x0C])
+  } elif (R(Compare(IC-Int[0x5DC0] == 2.0))) {
+    SpecialOffensiveCollisionEnemyHitbox(0, 0, 3, 5, 2.5, 60, 15, 0.0, 0, 0.0, 97, 1.5, 3.7, 0.4, 0.0, 0.0, 0.0, 3, 0.0, 1.0, 1.0, false, true, 20, 2, 9, 3, true, 0, 311, false, 15, false, true, false, false, 120, false, false, 1, false, false, true, false, false, 0, LA-Float[0x0C])
+  }
+}
+
+Subaction 0x0: MAIN EXIT {
+}
+
+Subaction 0x0: MAIN INIT {
+}
+
+Subaction 0x0: GFX {
+  GraphicEffectAttached(10092545, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(10092549, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(10092549, 3, 0.0, 0.0, 0.0, 0.0, 90.0, 0.0, 1.0, true)
+}
+
+Subaction 0x0: GFX EXIT {
+  EndGraphicEffectReoccursWhenMove(0)
+}
+
+Subaction 0x0: GFX INIT {
+}
+
+Subaction 0x0: SFX {
+  SoundEffectTransient(9372)
+}
+
+Subaction 0x0: SFX EXIT {
+}
+
+Subaction 0x0: SFX INIT {
+}
+

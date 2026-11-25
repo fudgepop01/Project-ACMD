@@ -1,0 +1,17 @@
+Action 0x1F: MAIN {
+}
+
+Action 0x1F: EXIT {
+  SubRoutine(hidden_subroutine_0x15B0)
+  ReverseDirection()
+}
+
+Action 0x1F: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(12)
+  BasicVariableSet(5, LA-Int[0x15])
+  BasicVariableSet(2, LA-Int[0x06])
+  SubAction09(34)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+}
+

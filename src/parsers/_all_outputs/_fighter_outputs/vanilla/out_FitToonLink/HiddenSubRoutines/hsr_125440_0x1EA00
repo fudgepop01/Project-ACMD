@@ -1,0 +1,7 @@
+[hsr_1EA00]
+hidden_subroutine_0x1EA00 {
+  SpecialOffensiveCollision(Sp(0, 0), 4, 361, Sp(0, 200), Sp(0, 60), 18.0, 0.0, 9.0, 14.0, 0.0, 0.5, 0.0, 847447682, 0, 135266243)
+  SynchronousTimer(1.0)
+  TerminateCollisions()
+  Return()
+}

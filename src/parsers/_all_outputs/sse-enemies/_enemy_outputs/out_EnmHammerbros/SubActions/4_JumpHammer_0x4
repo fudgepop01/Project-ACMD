@@ -1,0 +1,49 @@
+[JumpHammer] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x4: MAIN {
+  AsynchronousTimer(9.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 30, 4, 1.2, 55, 15, 0.0, 0, 0.0, 84, 1.0, 3.0, 0.0, 0.0, 4.0, 0.0, 0, 0.0, 1.0, 1.0, false, false, 5, 1, 2, 3, true, 0, 311, false, 15, false, true, true, false, 60, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(10.0)
+  (undef: Sp_base) 65_0E_01_00(IC-Int[0xABE6])
+  (undef: Sp_Link) 6E_00_03_00(0, 5103, 28)
+  (undef: Sp_Link) 6E_00_04_00(0, 5106, 0, IC-Int[0x5DC0])
+  (undef: Sp_Link) 6E_00_04_00(0, 5107, 1, IC-Int[0xFA0])
+  SynchronousTimer(1.0)
+  TerminateCollisions()
+}
+
+Subaction 0x4: MAIN EXIT {
+}
+
+Subaction 0x4: MAIN INIT {
+}
+
+Subaction 0x4: GFX {
+}
+
+Subaction 0x4: GFX EXIT {
+}
+
+Subaction 0x4: GFX INIT {
+}
+
+Subaction 0x4: SFX {
+  SynchronousTimer(8.0)
+  SoundEffect(9276)
+}
+
+Subaction 0x4: SFX EXIT {
+}
+
+Subaction 0x4: SFX INIT {
+}
+

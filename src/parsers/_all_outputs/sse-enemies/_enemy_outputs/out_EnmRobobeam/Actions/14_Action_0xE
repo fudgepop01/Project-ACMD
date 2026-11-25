@@ -1,0 +1,15 @@
+Action 0xE: MAIN {
+}
+
+Action 0xE: EXIT {
+}
+
+Action 0xE: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(14)
+  BasicVariableSet(7, LA-Int[0x06])
+  SubAction09(25)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 15)
+  ReverseDirection()
+}
+

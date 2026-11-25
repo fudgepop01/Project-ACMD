@@ -1,0 +1,27 @@
+[DamageN2] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x9C: MAIN {
+}
+
+Subaction 0x9C: GFX {
+}
+
+Subaction 0x9C: SOUND {
+}
+
+Subaction 0x9C: OTHER {
+  SlopeContourStand(9)
+  ModelChanger(0, 1)
+  AsynchronousTimer(21.0)
+  ModelChanger(0, -1)
+}
+

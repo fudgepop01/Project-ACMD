@@ -1,0 +1,11 @@
+// Status_Captain_Final_Clash
+Action 0xFE: ENTRY {
+  SetGimmickEffectFlag(false)
+  SetRequirement(R(Compare(Variable_Float_Motion_Frame >= 3.0)))
+  LoadRest()
+  ChangeSubAction(41)
+  FrameSpeedModifier(4.0)
+}
+
+Action 0xFE : EXIT {
+}

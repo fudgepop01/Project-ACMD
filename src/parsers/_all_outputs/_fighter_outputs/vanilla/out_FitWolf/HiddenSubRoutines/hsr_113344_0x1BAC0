@@ -1,0 +1,4 @@
+[hsr_1BAC0]
+hidden_subroutine_0x1BAC0 {
+  BasicVariableDecrement(RA-Int[0x00])
+}

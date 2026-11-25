@@ -1,0 +1,8 @@
+[hsr_5380]
+hidden_subroutine_0x5380 {
+  if (R(NOT Article Exists())) {
+    GenerateArticle(14)
+    LinkArticleToBone_UNDOC2ARGS(14, 57)
+    (undef: generateArticleManage) 10_10_02_00(14, 1)
+  }
+}

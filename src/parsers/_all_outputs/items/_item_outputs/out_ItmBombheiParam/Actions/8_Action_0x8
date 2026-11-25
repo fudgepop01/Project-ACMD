@@ -1,0 +1,18 @@
+// Status_Turn_Run
+Action 0x8 {
+  SubRoutine(hidden_subroutine_0x4E4)
+  ChangeAction(3, R(In Air()))
+  ChangeAction(7, R(Bit is Set(RA-Bool[0x01])))
+  ChangeSubAction(8)
+  (undef: Sp_Kinetic) 66_02_02_00(100.0, 0.0)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ReverseDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  DisableActionStatusId(3)
+  SubRoutine(hidden_subroutine_0x404)
+  DisableActionStatusId(8)
+  ChangeAction(4, R(On Ground()))
+}
+

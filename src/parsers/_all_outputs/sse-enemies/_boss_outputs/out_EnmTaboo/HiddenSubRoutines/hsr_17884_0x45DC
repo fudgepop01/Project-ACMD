@@ -1,0 +1,4 @@
+[hsr_45DC]
+hidden_subroutine_0x45DC {
+  VictorySoundEffect(8837)
+}

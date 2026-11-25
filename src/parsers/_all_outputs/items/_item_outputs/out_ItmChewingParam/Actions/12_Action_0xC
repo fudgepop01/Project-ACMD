@@ -1,0 +1,13 @@
+// Status_Jump_Aerial
+Action 0xC {
+  ChangeAction(8, R(In Air()))
+  BitVariableClear(LA-Bool[0x08])
+  (undef: Sp_base) 65_1F_01_00(2)
+  SubRoutine(hidden_subroutine_0x464)
+  DisableActionStatusId(4)
+  SynchronousTimer(1.0)
+  if (R(0x3E())) {
+    DetachFromSurface()
+  }
+}
+

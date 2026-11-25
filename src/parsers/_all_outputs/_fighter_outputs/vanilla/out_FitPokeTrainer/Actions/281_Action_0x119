@@ -1,0 +1,28 @@
+Action 0x119: ENTRY {
+  ChangeAction(291, R(0x4E23()))
+  ChangeAction(285, R(0x4E22()))
+
+  ChangeAction(283, R(In Air()))
+  AdditionalRequirement(R(NOT Bit is Set(LA-Bool[0x42])))
+
+  ChangeAction(298, R(Compare(Owner_Param_Int_Stock_Count == 0.0)))
+  ChangeAction(282, R(In Air()))
+
+  ChangeAction(287, R(0x4E21()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(289, R(Animation End()))
+  AdditionalRequirement(R(0x2D()), IC-Int[0xFA0])
+  AdditionalRequirement(R(0x4E20()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(286, R(Compare(LA-Int[0x41] <= 0.0)))
+  AdditionalRequirement(R(NOT Bit is Set(LA-Bool[0x41])))
+  AdditionalRequirement(R(On Ground()))
+
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x4694)
+  SubRoutine(hidden_subroutine_0x437C)
+}
+
+Action 0x119 : EXIT {
+}

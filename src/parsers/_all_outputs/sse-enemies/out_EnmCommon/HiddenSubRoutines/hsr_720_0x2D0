@@ -1,0 +1,5 @@
+[hsr_2D0]
+hidden_subroutine_0x2D0 {
+  SubRoutine(hidden_subroutine_0x38)
+  Return()
+}

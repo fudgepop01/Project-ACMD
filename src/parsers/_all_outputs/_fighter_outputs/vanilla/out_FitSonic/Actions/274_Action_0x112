@@ -1,0 +1,44 @@
+Action 0x112: ENTRY {
+  if (R(On Ground())) {
+    ChangeSubAction(462)
+  } else {
+    ChangeSubAction(463)
+  }
+  SetAerialOrOnstage(5)
+  Module0900(2)
+  BitVariableSet(LA-Bool[0x3A])
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1E280)
+  BasicVariableSet(IC-Int[0x5DC0], RA-Int[0x03])
+  BasicVariableDecrement(RA-Int[0x03])
+  SetRequirement(R(Animation End()))
+  LoadRest()
+
+  ChangeAction(279, R(Button Press(Special)))
+  AdditionalRequirement(R(Compare(RA-Int[0x02] > IC-Int[0x5DC0])))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x10])))
+
+  ChangeAction(279, R(Button Press(Attack)))
+  AdditionalRequirement(R(Compare(RA-Int[0x02] > IC-Int[0x5DC0])))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x10])))
+
+  ChangeAction(279, R(Compare(RA-Int[0x02] > IC-Int[0x5DC1])))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x10])))
+
+  ChangeAction(280, R(Button Press(Special)))
+  AdditionalRequirement(R(Compare(RA-Int[0x02] > IC-Int[0x5DC0])))
+
+  ChangeAction(280, R(Button Press(Attack)))
+  AdditionalRequirement(R(Compare(RA-Int[0x02] > IC-Int[0x5DC0])))
+
+  ChangeAction(280, R(Compare(RA-Int[0x02] > IC-Int[0x5DC1])))
+  ChangeSubAction(464)
+}
+
+Action 0x112 : EXIT {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(279)
+      Break()
+    DefaultCase()
+      ModelChanger(1, 0)
+  EndSwitch()
+}

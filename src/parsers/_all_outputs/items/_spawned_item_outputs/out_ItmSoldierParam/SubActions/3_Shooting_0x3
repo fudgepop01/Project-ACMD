@@ -1,0 +1,26 @@
+[Shooting] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x3 : GAME {
+  GraphicEffectAttached(14221315, 3, 0.0, -1.0, 3.0, 0.0, 0.0, 0.0, 1.0, false)
+}
+
+Subaction 0x3 : GFX {
+  AsynchronousTimer(1.0)
+  if (R(Is within footstool range())) {
+    VictorySoundEffect(7797)
+  } else {
+    VictorySoundEffect(7798)
+}
+
+Subaction 0x3 : SOUND {
+}
+

@@ -1,0 +1,20 @@
+Action 0x113: ENTRY {
+
+  ChangeAction(288, R(Animation End()))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x10])))
+
+  ChangeAction(289, R(Animation End()))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x11])))
+
+  ChangeAction(287, R(Animation End()))
+  SetDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  BasicVariableSet(496, RA-Int[0x00])
+  BasicVariableSet(492, RA-Int[0x01])
+  SubRoutine(hidden_subroutine_0x18E40)
+}
+
+Action 0x113 : EXIT {
+  SubRoutine(hidden_subroutine_0x18F70)
+}

@@ -1,0 +1,8 @@
+[hsr_1BD2C]
+hidden_subroutine_0x1BD2C {
+  if (R(Bit is Set(RA-Bool[0x11]))) {
+    if (R(Button Press(Special))) {
+      BitVariableSet(RA-Bool[0x12])
+    }
+  }
+}

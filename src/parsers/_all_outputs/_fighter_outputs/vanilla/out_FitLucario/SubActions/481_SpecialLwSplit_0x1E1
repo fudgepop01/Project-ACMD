@@ -1,0 +1,63 @@
+[SpecialLwSplit] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1E1: MAIN {
+  FloatVariableSet(0.0, LA-Float[0x06])
+  FloatVariableSet(Variable_Float_Kinetic_Sum_Speed_X_Lr, RA-Float[0x05])
+  FloatVariableMultiply(0.75, RA-Float[0x05])
+  AsynchronousTimer(1.0)
+  BitVariableSet(LA-Bool[0x39])
+  AddSubtractMomentum(RA-Float[0x05], 0.0)
+  BitVariableClear(LA-Bool[0x39])
+  AsynchronousTimer(12.0)
+  SoundEffect(5733)
+  SetAirGround(17)
+  BodyCollision(2)
+  SetLoop(12) {
+    if (R(Button Pressed(Attack)) && R(Compare(LA-Float[0x1B] >= 65.0))) {
+      FloatVariableSubtract(65.0, LA-Float[0x1B])
+      SubRoutine(hidden_subroutine_0x24D08)
+      SubRoutine(hidden_subroutine_0x28270)
+      SubRoutine(Subaction_0x3 : MAIN)
+    }
+    SynchronousTimer(1.0)
+  }
+  BodyCollision(0)
+  AsynchronousTimer(29.0)
+  SetLoop(-1) {
+    if (R(On Ground()) || R(Compare(Variable_Float_Motion_Frame >= 43.0))) {
+      AllowInterrupt()
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Subaction 0x1E1: GFX {
+}
+
+Subaction 0x1E1: SOUND {
+  AsynchronousTimer(27.0)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(6)
+    } else {
+      SetAirGround(0)
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Subaction 0x1E1: OTHER {
+  NoEvent()
+  AsynchronousTimer(1.0)
+  RumbleLoop(3, 0)
+}
+

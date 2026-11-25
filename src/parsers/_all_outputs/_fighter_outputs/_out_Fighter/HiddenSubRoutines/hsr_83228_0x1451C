@@ -1,0 +1,9 @@
+[hsr_1451C]
+hidden_subroutine_0x1451C {
+  if (R(Compare(RA-Int[0x00] > 0.0))) {
+    BasicVariableDecrement(RA-Int[0x00])
+  } else {
+    SubRoutine(hsr_DF94)
+    SubRoutine(hsr_DEAC)
+  }
+}

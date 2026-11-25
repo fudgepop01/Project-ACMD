@@ -1,0 +1,9 @@
+// Status_Shield_Break_Fall
+Action 0x57: ENTRY {
+  ChangeAction(88, R(On Ground()))
+  ChangeSubAction(41)
+  RumbleLoop(9, 0)
+}
+
+Action 0x57 : EXIT {
+}

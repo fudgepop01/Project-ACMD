@@ -1,0 +1,7 @@
+[hsr_18B50]
+hidden_subroutine_0x18B50 {
+  AllowInterrupt()
+  InvertActionStatusId(18, 10061)
+  InvertActionStatusId(18, 10062)
+  InvertActionStatusId(11, 10099)
+}

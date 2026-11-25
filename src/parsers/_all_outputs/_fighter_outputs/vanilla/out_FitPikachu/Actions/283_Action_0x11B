@@ -1,0 +1,11 @@
+Action 0x11B: ENTRY {
+  BitVariableClear(RA-Bool[0x14])
+  SetAerialOrOnstage(5)
+  Module0900(2)
+  ChangeSubAction(467)
+  ChangeAction(284, R(Animation End()))
+  ChangeAction(284, R(Bit is Set(RA-Bool[0x14])))
+}
+
+Action 0x11B : EXIT {
+}

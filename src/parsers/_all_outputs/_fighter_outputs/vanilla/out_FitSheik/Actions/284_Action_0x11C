@@ -1,0 +1,24 @@
+Action 0x11C: ENTRY {
+  BasicVariableSet(IC-Int[0x5DC6], RA-Int[0x00])
+  BasicVariableSet(IC-Int[0x5DC7], RA-Int[0x01])
+  ChangeAction(285, R(Compare(RA-Int[0x00] <= 0.0)))
+
+  ChangeAction(285, R(On Ground()))
+  AdditionalRequirement(R(Touching a Floor, Wall, or Ceiling(2)))
+
+  ChangeAction(285, R(On Ground()))
+  AdditionalRequirement(R(Touching a Floor, Wall, or Ceiling(4)))
+
+  GenerateArticle(3)
+  if (R(In Air())) {
+    SetPassableCheck(false)
+  }
+  Visibility(false)
+  UnkRaBit27(false)
+  SetTagDisplay(false)
+  SetAirGround(102)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x17BE0)
+}
+
+Action 0x11C : EXIT {
+}

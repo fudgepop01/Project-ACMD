@@ -1,0 +1,43 @@
+[AttackAirN] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x62: MAIN {
+  AsynchronousTimer(3.0)
+  BitVariableSet(RA-Bool[0x1E])
+  AsynchronousTimer(5.0)
+  OffensiveCollision(Sp(46, 0), 6, 80, Sp(0, 75), Sp(0, 60), 3.0, 0.0, -2.0, 0.0, 0.0, 1.0, 1.0, 956498496)
+  OffensiveCollision(Sp(23, 1), 6, 80, Sp(0, 75), Sp(0, 60), 3.0, 0.0, 2.0, 0.0, 0.0, 1.0, 1.0, 956498496)
+  OffensiveCollision(Sp(13, 2), 6, 80, Sp(0, 75), Sp(0, 60), 3.0, 0.0, 2.0, 0.0, 0.0, 1.0, 1.0, 964887616)
+  OffensiveCollision(Sp(8, 3), 6, 80, Sp(0, 75), Sp(0, 60), 3.0, 0.0, -2.0, 0.0, 0.0, 1.0, 1.0, 964887616)
+  AsynchronousTimer(20.0)
+  TerminateCollisions()
+  AsynchronousTimer(26.0)
+  BitVariableClear(RA-Bool[0x1E])
+}
+
+Subaction 0x62: GFX {
+}
+
+Subaction 0x62: SOUND {
+  AsynchronousTimer(5.0)
+  LowVoiceClip()
+  SoundEffect(5313)
+  SynchronousTimer(6.0)
+  SoundEffect(107)
+  SynchronousTimer(1.0)
+  SoundEffect(114)
+}
+
+Subaction 0x62: OTHER {
+  AsynchronousTimer(6.0)
+  Rumble(17, 0)
+}
+

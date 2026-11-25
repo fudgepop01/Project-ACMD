@@ -1,0 +1,25 @@
+dataCommon {
+  globalIcs: 0x000002B4
+  globalIcsSse: 0x00000D70
+  ics: 0x00000370
+  icsSse: 0x00000E2C
+  entryActionsStart: 0x0001E444
+  exitActionsStart: 0x0001E88C
+  flashOverlayArray: 0x0001EE84
+  unk7: 0x00001758
+  unk8: 0x000000A8
+  itemSwingData: 0x000016CC
+  unk10: 0x0000024C
+  unk11OffsetTable: 0x00001828
+  unk12: 0x00000C0C
+  unk13: 0x00000C8C
+  unk14: 0x00000D0C
+  unk15: 0x00000D4C
+  unk16: 0x0000025C
+  patterPowerMul: 0x00001730
+  rgbaColor: 0x000002A4
+  flashOverlayOffset: 0x0001ECD4
+  screenTints: 0x0001EE1C
+  legBones: 0x00001884
+  unk22TableReference: 0x00001AAC
+}

@@ -1,0 +1,12 @@
+// Status_Walk
+Action 0x1 {
+  SynchronousTimer(1.0)
+  (undef: Sp_base) 65_04_01_00(120)
+  if (R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv < 0.0))) {
+    LeftDirection()
+    DecideDirection()
+    CharacterSpecific01()
+  }
+  ChangeAction(8, R(Button Tap?()))
+}
+

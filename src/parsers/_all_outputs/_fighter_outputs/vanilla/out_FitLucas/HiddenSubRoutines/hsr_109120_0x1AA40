@@ -1,0 +1,23 @@
+[hsr_1AA40]
+hidden_subroutine_0x1AA40 {
+  if (R(Bit is Set(RA-Bool[0x11])) && R(NOT Bit is Set(RA-Bool[0x12]))) {
+    BitVariableClear(RA-Bool[0x11])
+    BitVariableSet(RA-Bool[0x12])
+    GenerateArticle(0)
+  }
+  if (R(Bit is Set(RA-Bool[0x12]))) {
+    if (R(Compare(RA-Int[0x00] > 0.0))) {
+      BasicVariableDecrement(RA-Int[0x00])
+    }
+    if (R(Compare(RA-Int[0x03] > 0.0))) {
+      BasicVariableDecrement(RA-Int[0x03])
+    }
+  }
+  if (R(Bit is Set(RA-Bool[0x12])) && R(Article Exists())) {
+    if (R(Compare(RA-Int[0x03] <= 0.0)) && R(Button Not Pressed(Special))) {
+      ArticleEvent02(0)
+    } elif (R(Compare(RA-Int[0x00] <= 0.0))) {
+      ArticleEvent02(0)
+    }
+  }
+}

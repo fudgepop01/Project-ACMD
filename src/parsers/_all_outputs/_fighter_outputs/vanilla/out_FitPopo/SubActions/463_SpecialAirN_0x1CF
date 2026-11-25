@@ -1,0 +1,32 @@
+[SpecialAirN] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1CF: MAIN {
+  Goto(Subaction_0x1CE : MAIN)
+}
+
+Subaction 0x1CF: GFX {
+}
+
+Subaction 0x1CF: SOUND {
+  AsynchronousTimer(15.0)
+  SoundEffect(1600)
+  SoundEffect(4356)
+  SynchronousTimer(3.0)
+  SoundEffect(4338)
+}
+
+Subaction 0x1CF: OTHER {
+  SlopeContourStand(2)
+  AsynchronousTimer(17.0)
+  Rumble(13, 0)
+}
+

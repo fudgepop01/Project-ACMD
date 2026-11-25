@@ -1,0 +1,24 @@
+[hsr_9E0]
+hidden_subroutine_0x9E0 {
+  SetLoop(-1) {
+    if (R(Successfully tethered ledge())) {
+      if [IF_REQ_UNKNOWN_3ARG] (R(0x12()), 3, Variable_Int_Controller_Flick_No_Reset_Y) {
+        (undef: Sp_Area) 69_00_01_00(Variable_Int_Controller_Flick_No_Reset_Y)
+      }
+      (undef: Sp_Area) 69_08_02_00(Variable_Int_Controller_Flick_No_Reset_Y, LA-Float[0x07])
+      FloatVariableSubtract(Variable_Float_Posture_Pos_X, LA-Float[0x07])
+      if (R(Compare(LA-Float[0x07] <= 8.0)) && R(Compare(LA-Float[0x07] >= -8.0))) {
+        (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+      } else {
+        (undef: Sp_Area) 69_01_05_00(Variable_Int_Controller_Flick_No_Reset_Y, 0.0, IC-Int[0xFA0], LA-Float[0x04], true)
+        if (R(0x2710())) {
+          (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+          (undef: Sp_Kinetic) 66_00_03_00(3, 18, LA-Float[0x04])
+        }
+        (undef: Sp_Kinetic) 66_0C_02_00(3, LA-Float[0x04])
+      }
+    }
+    SynchronousTimer(1.0)
+  }
+  Return()
+}

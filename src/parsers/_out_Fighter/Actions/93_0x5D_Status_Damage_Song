@@ -1,0 +1,18 @@
+// Status_Damage_Song
+Action 0x5D: ENTRY {
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(94, R(Button Mashable Status Expired()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeSubAction(202)
+}
+
+Action 0x5D : EXIT {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(93)
+      Break()
+    DefaultCase()
+      EndFlashingEffect(30)
+  EndSwitch()
+}

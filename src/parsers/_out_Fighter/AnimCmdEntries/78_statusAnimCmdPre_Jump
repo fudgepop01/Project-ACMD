@@ -1,0 +1,8 @@
+// @ 0x23EFC
+Jump {
+  if (R(Bit is Set(LA-Bool[0x0B]))) {
+    ChangeReadingAction(227)
+  } elif (R(Bit is Set(LA-Bool[0x0F])) && R(Compare(LA-Int[0x3B] < 2.0))) {
+    ChangeReadingAction(175)
+  }
+}

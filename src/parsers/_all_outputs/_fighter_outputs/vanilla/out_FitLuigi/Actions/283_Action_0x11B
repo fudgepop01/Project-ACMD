@@ -1,0 +1,10 @@
+Action 0x11B: ENTRY {
+  ChangeActionStatus(10029, 25, R(On Ground()))
+  AllowSpecificInterrupt(AIR_CLIFF)
+  ChangeAction(16, R(Animation End()))
+  ChangeSubAction(476)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0xFFFFFFFF)
+}
+
+Action 0x11B : EXIT {
+}

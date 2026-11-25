@@ -1,0 +1,13 @@
+// Status_Air_Lasso_Rewind
+[statusAnimCmd_AirLassoRewind]
+Action 0x82: ENTRY {
+  AllowSpecificInterrupt(AIR_LANDING)
+  SetArticleAction07(RA-Int[0x00], RA-Int[0x01])
+  ChangeAction(14, R(Bit is Set(RA-Bool[0x15])))
+  ChangeAction(14, R(NOT Hasn't Tethered 3 Times()))
+}
+
+[statusAnimCmdExit_AirLassoRewind]
+Action 0x82 : EXIT {
+  RemoveArticle(RA-Int[0x00])
+}

@@ -1,0 +1,11 @@
+// Status_Jump
+Action 0xB {
+  ChangeAction(4, R(On Ground()))
+  ReverseDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  ChangeSubAction(19)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+}
+

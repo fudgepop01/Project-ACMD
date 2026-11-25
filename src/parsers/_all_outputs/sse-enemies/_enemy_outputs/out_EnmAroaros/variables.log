@@ -1,0 +1,60 @@
+IC-Int[0x08] ("Variable_Float_Posture_Lr") in Action 0xA: INIT @ 5 : 3
+
+IC-Int[0x14] ("Variable_Float_Posture_Scale") in Action 0xA: INIT @ 5 : 4
+
+IC-Int[0xFA1] in Action 0x4: INIT @ 11 : 0
+IC-Int[0xFA1] in Action 0x5: INIT @ 14 : 0
+
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x0: EXIT @ 1 : 1
+
+IC-Int[0x4E36] ("Variable_Int_Task_Id") in hsr_C04 @ 3 : 2
+
+IC-Int[0x5213] ("Variable_Int_Controller_Trigger_2_Count") in Action 0xA: MAIN @ 1 : 1
+
+IC-Int[0xABE3] in Action 0xA: INIT @ 3 : 0
+
+IC-Int[0xABE5] in Action 0xA: INIT @ 5 : 2
+
+LA-Float[0x02] in Action 0xA: INIT @ 3 : 1
+
+LA-Float[0x04] in hsr_C04 @ 2 : 3
+
+LA-Float[0x05] in Action 0x4: INIT @ 11 : 1
+LA-Float[0x05] in Action 0x5: INIT @ 14 : 1
+
+LA-Float[0x0C] in Subaction 0x1: MAIN @ 1 : 46
+LA-Float[0x0C] in Subaction 0x5: MAIN @ 0 : 46
+LA-Float[0x0C] in Subaction 0x9: MAIN @ 1 : 46
+
+LA-Bool[0x04] in Action 0x0: EXIT @ 0 : 1
+
+LA-Bool[0x06] in Action 0x4: EXIT @ 1 : 0
+LA-Bool[0x06] in Action 0x4: INIT @ 6 : 1
+LA-Bool[0x06] in Action 0x4: INIT @ 8 : 0
+LA-Bool[0x06] in Action 0x5: EXIT @ 1 : 0
+LA-Bool[0x06] in Action 0x5: INIT @ 9 : 1
+LA-Bool[0x06] in Action 0x5: INIT @ 11 : 0
+LA-Bool[0x06] in Action 0xA: EXIT @ 0 : 1
+LA-Bool[0x06] in Action 0xA: INIT @ 8 : 0
+LA-Bool[0x06] in Action 0xA: MAIN @ 5 : 0
+
+LA-Bool[0x07] in Action 0x4: INIT @ 10 : 1
+LA-Bool[0x07] in Action 0x4: INIT @ 13 : 0
+LA-Bool[0x07] in Action 0x5: INIT @ 13 : 1
+LA-Bool[0x07] in Action 0x5: INIT @ 16 : 0
+LA-Bool[0x07] in Action 0x9: INIT @ 4 : 0
+
+RA-Int[0x01] in Action 0x5: INIT @ 3 : 1
+RA-Int[0x01] in Action 0x5: MAIN @ 1 : 1
+
+RA-Int[0x02] in Action 0x5: INIT @ 4 : 1
+RA-Int[0x02] in Action 0x5: MAIN @ 2 : 1
+
+RA-Int[0x03] in Action 0x5: INIT @ 5 : 1
+RA-Int[0x03] in Action 0x5: MAIN @ 3 : 1
+
+RA-Int[0x04] in Action 0x5: INIT @ 6 : 1
+RA-Int[0x04] in Action 0x5: MAIN @ 4 : 1
+
+RA-Int[0x05] in Action 0x5: INIT @ 7 : 1
+RA-Int[0x05] in Action 0x5: MAIN @ 5 : 1

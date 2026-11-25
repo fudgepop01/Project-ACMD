@@ -1,0 +1,4 @@
+[hsr_2034]
+hidden_subroutine_0x2034 {
+  GraphicEffectAttached(22, 300, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, true)
+}

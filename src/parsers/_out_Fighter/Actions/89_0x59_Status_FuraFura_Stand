@@ -1,0 +1,16 @@
+// Status_FuraFura_Stand
+Action 0x59: ENTRY {
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(90, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  if (R(Bit is Set(RA-Bool[0x19]))) {
+    ChangeSubAction(198)
+  } else {
+    ChangeSubAction(199)
+  }
+}
+
+Action 0x59 : EXIT {
+}

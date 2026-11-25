@@ -1,0 +1,10 @@
+[hsr_1608]
+hidden_subroutine_0x1608 {
+  FlashOverlayEffect(120, 240, 255, 80)
+  SynchronousTimer(1.0)
+  ChangeFlashOverlayColor(4, 240, 255, 255, 10)
+  SynchronousTimer(4.0)
+  TerminateFlashEffect()
+  SynchronousTimer(1.0)
+  Return()
+}

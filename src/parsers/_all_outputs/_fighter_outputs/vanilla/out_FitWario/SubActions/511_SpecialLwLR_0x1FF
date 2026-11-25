@@ -1,0 +1,45 @@
+[SpecialLwLR] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1FF: MAIN {
+  AsynchronousTimer(4.0)
+  OffensiveCollision(Sp(400, 0), 21, 45, Sp(0, 66), Sp(0, 50), 11.0, 0.0, 4.0, 0.0, 0.0, 1.0, 1.0, 537073280)
+  BitVariableSet(RA-Bool[0x11])
+  AsynchronousTimer(8.0)
+  TerminateCollisions()
+}
+
+Subaction 0x1FF: GFX {
+  AsynchronousTimer(5.0)
+  GraphicEffect(1441795, 400, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(9, 400, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(6.0)
+  GraphicEffectAttached(1441796, 405, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  FlashOverlayEffect(255, 255, 255, 190)
+  AsynchronousTimer(8.0)
+  FlashOverlayEffect(255, 128, 0, 80)
+  AsynchronousTimer(10.0)
+  ChangeFlashOverlayColor(15, 255, 0, 0, 0)
+  AsynchronousTimer(25.0)
+  TerminateFlashEffect()
+}
+
+Subaction 0x1FF: SOUND {
+  AsynchronousTimer(4.0)
+  SoundEffect(4874)
+}
+
+Subaction 0x1FF: OTHER {
+  AsynchronousTimer(5.0)
+  Screenshake(1)
+  Rumble(14, 0)
+}
+

@@ -1,0 +1,12 @@
+// Status_Walk
+Action 0x1 {
+  (undef: Sp_base) 65_05_01_00(800)
+  BasicVariableSet(4, LA-Int[0x00])
+  SubRoutine(hidden_subroutine_0x30)
+  ChangeSubAction(5)
+  ChangeAction(4, R(On Ground()))
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(3, R(In Air()))
+}
+

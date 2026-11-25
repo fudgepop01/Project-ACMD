@@ -1,0 +1,5 @@
+[hsr_18]
+hidden_subroutine_0x18 {
+  ChangeAction(6, R(In walljump situation()), 246)
+  Return()
+}

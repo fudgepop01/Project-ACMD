@@ -1,0 +1,9 @@
+IC-Int[0x3F8] in Action 0x8 (Status_Turn_Run) @ 5 : 2
+
+LA-Int[0x1B] in Subaction 0x0 : SOUND @ 0 : 1
+
+LA-Float[0x00] in Action 0x8 (Status_Turn_Run) @ 1 : 1
+LA-Float[0x00] in Action 0x9 (Status_Turn_Run_Brake) @ 1 : 2
+
+LA-Float[0x01] in Action 0x8 (Status_Turn_Run) @ 1 : 2
+LA-Float[0x01] in Action 0x9 (Status_Turn_Run_Brake) @ 2 : 2

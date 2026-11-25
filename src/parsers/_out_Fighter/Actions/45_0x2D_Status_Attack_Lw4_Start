@@ -1,0 +1,17 @@
+// Status_Attack_Lw4_Start
+[statusAnimCmd_AttackLw4Start]
+Action 0x2D: ENTRY {
+  ChangeAction(14, R(In Air()))
+
+  ChangeActionStatus(10095, 46, R(Animation End()))
+  AdditionalRequirement(R(Button Pressed(Attack)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus(10093, 47, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeSubAction(95)
+}
+
+Action 0x2D : EXIT {
+}

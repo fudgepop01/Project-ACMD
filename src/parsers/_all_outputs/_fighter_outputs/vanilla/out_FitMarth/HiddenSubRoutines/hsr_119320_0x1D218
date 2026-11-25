@@ -1,0 +1,17 @@
+[hsr_1D218]
+hidden_subroutine_0x1D218 {
+  if (R(NOT Bit is Set(RA-Bool[0x13])) && R(NOT Bit is Set(RA-Bool[0x12]))) {
+    if (R(Button Press(Special))) {
+      if (R(Bit is Set(RA-Bool[0x11]))) {
+        BitVariableSet(RA-Bool[0x12])
+        if (R(Compare(Variable_Float_Controller_Stick_Y >= Common_Param_Float_Special_Stick_Y))) {
+          BitVariableSet(RA-Bool[0x15])
+        } elif (R(Compare(Variable_Float_Controller_Stick_Y_Rv >= Common_Param_Float_Special_Stick_Y))) {
+          BitVariableSet(RA-Bool[0x16])
+        }
+      } else {
+        BitVariableSet(RA-Bool[0x13])
+      }
+    }
+  }
+}

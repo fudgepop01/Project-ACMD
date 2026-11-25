@@ -1,0 +1,31 @@
+Action 0x15: MAIN {
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonDamageProcInit [Action 0x14: MAIN])
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 22.0)) || R(Compare(Variable_Int_Status_Prev_Kind == 23.0))) {
+    (undef: Sp_Kinetic) 66_07_01_00(-1)
+  }
+  SetLoop(-1) {
+    SubRoutine(EXTERNAL: statusAnimCmd_CommonDamageProcLoop [Action 0x14: MAIN])
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x15: EXIT {
+}
+
+Action 0x15: INIT {
+  SubRoutine(hidden_subroutine_0x1A58)
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_01_01_00(2)
+  (undef: Sp_AI) 6A_00_01_00(32)
+  (undef: Sp_AI) 6A_00_01_00(29)
+  if (R(Compare(Variable_Int_Status_Prev_Kind != 21.0)) && R(Compare(Variable_Int_Status_Prev_Kind != 20.0))) {
+    SubAction09(10)
+  }
+  BasicVariableSet(23, LA-Int[0x06])
+  ToggleFighterArea(10)
+  if (R(Bit is Set(LA-Bool[0x07]))) {
+    SubRoutine(hidden_subroutine_0x1838)
+    BitVariableClear(LA-Bool[0x07])
+  }
+}
+

@@ -1,0 +1,28 @@
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in Action 0xC (Status_Jump_Aerial) @ 8 : 1
+IC-Int[0x4E20] ("Variable_Int_Motion_Kind") in Action 0xD (Status_Fly) @ 5 : 1
+
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x9 (Status_Turn_Run_Brake) @ 4 : 1
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x9 (Status_Turn_Run_Brake) @ 11 : 1
+
+LA-Int[0x00] in Action 0x10 (Status_Fall_Special) @ 1 : 1
+LA-Int[0x00] in Action 0x3 (Status_Dash) @ 11 : 1
+LA-Int[0x00] in Action 0x4 (Status_Run) @ 3 : 1
+LA-Int[0x00] in Action 0x8 (Status_Turn_Run) @ 2 : 0
+LA-Int[0x00] in Action 0x8 (Status_Turn_Run) @ 12 : 1
+LA-Int[0x00] in Action 0x9 (Status_Turn_Run_Brake) @ 2 : 0
+LA-Int[0x00] in Action 0x9 (Status_Turn_Run_Brake) @ 10 : 1
+LA-Int[0x00] in Action 0xC (Status_Jump_Aerial) @ 1 : 1
+LA-Int[0x00] in Action 0xD (Status_Fly) @ 1 : 1
+LA-Int[0x00] in Action 0xE (Status_Fall) @ 1 : 1
+LA-Int[0x00] in hsr_1B0 @ 4 : 1
+LA-Int[0x00] in hsr_1B0 @ 6 : 1
+LA-Int[0x00] in hsr_2B8 @ 4 : 1
+
+LA-Int[0x0B] in Action 0x4 (Status_Run) @ 4 : 2
+LA-Int[0x0B] in Action 0x4 (Status_Run) @ 13 : 2
+LA-Int[0x0B] in Action 0xC (Status_Jump_Aerial) @ 3 : 2
+LA-Int[0x0B] in Action 0xD (Status_Fly) @ 2 : 2
+
+LA-Int[0x1A] in Subaction 0x0 : SOUND @ 0 : 1
+
+LA-Int[0x1B] in Subaction 0x0 : SOUND @ 1 : 1

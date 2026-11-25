@@ -1,0 +1,30 @@
+[SpecialNStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1CF: MAIN {
+}
+
+Subaction 0x1CF: GFX {
+  GraphicEffect(13, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  FlashOverlayEffect(255, 255, 255, 150)
+  SynchronousTimer(1.0)
+  FlashOverlayEffect(255, 255, 128, 150)
+  ChangeFlashOverlayColor(10, 255, 255, 255, 0)
+  SynchronousTimer(10.0)
+  TerminateFlashEffect()
+}
+
+Subaction 0x1CF: SOUND {
+}
+
+Subaction 0x1CF: OTHER {
+}
+

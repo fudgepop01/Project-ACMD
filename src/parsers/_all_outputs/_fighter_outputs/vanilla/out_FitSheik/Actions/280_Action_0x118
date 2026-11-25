@@ -1,0 +1,41 @@
+Action 0x118: ENTRY {
+  RemoveArticle(1)
+  BitVariableClear(LA-Bool[0x3D])
+  EndFlashingEffect(26)
+  if (R(On Ground())) {
+    SetAerialOrOnstage(1)
+    SetAirGround(6)
+
+    ChangeAction(0, R(Animation End()))
+    AdditionalRequirement(R(On Ground()))
+
+    if (R(Compare(IC-Int[0xFA4] > 0.0))) {
+      ChangeAction(16, R(In Air()))
+    } else {
+      ChangeAction(14, R(In Air()))
+    }
+    ChangeSubAction(464)
+  } else {
+    SetAerialOrOnstage(5)
+    SetAirGround(10)
+
+    if (R(Compare(IC-Int[0xFA4] > 0.0))) {
+      ChangeAction(16, R(Animation End()))
+      AdditionalRequirement(R(In Air()))
+
+    } else {
+
+      ChangeAction(14, R(Animation End()))
+      AdditionalRequirement(R(In Air()))
+
+    }
+    ChangeAction(22, R(On Ground()))
+    ChangeSubAction(468)
+  }
+}
+
+Action 0x118 : EXIT {
+  if (R(Compare(Variable_Int_Status_Kind == 22.0))) {
+    BitVariableSet(LA-Bool[0x03])
+  }
+}

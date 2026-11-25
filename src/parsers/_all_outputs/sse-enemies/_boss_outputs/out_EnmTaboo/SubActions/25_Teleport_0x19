@@ -1,0 +1,47 @@
+[Teleport] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x19: MAIN {
+  AsynchronousTimer(39.0)
+  if (R(Bit is Set(LA-Bool[0x07]))) {
+    (undef: Sp_base) 65_0E_01_00(IC-Int[0xAC1F])
+  }
+}
+
+Subaction 0x19: MAIN EXIT {
+}
+
+Subaction 0x19: MAIN INIT {
+}
+
+Subaction 0x19: GFX {
+  Screenshake(0)
+  AsynchronousTimer(39.0)
+  SubRoutine(hidden_subroutine_0xBAD4)
+}
+
+Subaction 0x19: GFX EXIT {
+}
+
+Subaction 0x19: GFX INIT {
+  SubRoutine(hidden_subroutine_0xBB8C)
+}
+
+Subaction 0x19: SFX {
+  SoundEffect(9860)
+}
+
+Subaction 0x19: SFX EXIT {
+}
+
+Subaction 0x19: SFX INIT {
+}
+

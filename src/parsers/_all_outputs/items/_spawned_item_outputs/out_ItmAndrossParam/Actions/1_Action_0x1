@@ -1,0 +1,17 @@
+// Status_Walk
+Action 0x1 {
+  (undef: Sp_base) 65_06_01_00(2)
+  DisableSpecifiedMovement(2)
+  ChangeSubAction(0)
+  SynchronousTimer(30.0)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, -1.0, 2.5, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, false, false, false)
+  SynchronousTimer(60.0)
+  (undef: Sp_base) 65_0A_04_00(1, 0.0, 0.0, -300.0)
+  (undef: Sp_base) 65_0C_01_00(1.5)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, -1.0, 3.2, 0.0, 0.0, 0.0, -0.2, 0.0, 0.0, false, false, false)
+  SynchronousTimer(60.0)
+  (undef: Sp_Kinetic) 66_00_0D_00(Variable_Float_Kinetic_Energy_Damage_Speed_Y_Rv, IC-Int[0x3F2], -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.2, false, false, false)
+  SynchronousTimer(30.0)
+  ChangeAction(5, R(Button Tap?()))
+}
+

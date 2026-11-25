@@ -1,0 +1,17 @@
+Action 0x25: MAIN {
+}
+
+Action 0x25: EXIT {
+}
+
+Action 0x25: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(11)
+  BasicVariableSet(38, LA-Int[0x06])
+  SetBoneMotionOverride(0, 19, 10)
+  (undef: motion) 04_10_02_00(0, 24)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 34)
+  SubRoutine(hidden_subroutine_0xD44)
+}
+

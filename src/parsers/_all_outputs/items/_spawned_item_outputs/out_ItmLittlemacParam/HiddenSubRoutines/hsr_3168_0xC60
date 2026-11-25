@@ -1,0 +1,6 @@
+[hsr_C60]
+hidden_subroutine_0xC60 {
+  SubRoutine(hsr_978)
+  SubRoutine(hsr_418)
+  Return()
+}

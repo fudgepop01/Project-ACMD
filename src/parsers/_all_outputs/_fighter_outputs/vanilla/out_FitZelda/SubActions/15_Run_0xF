@@ -1,0 +1,47 @@
+[Run] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xF: MAIN {
+}
+
+Subaction 0xF: GFX {
+  GraphicEffectStepping(26, 0, -4.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.85, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  AsynchronousTimer(10.0)
+  GraphicEffectStepping(26, 0, -4.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.85, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0xF : GFX)
+}
+
+Subaction 0xF: SOUND {
+  AsynchronousTimer(5.0)
+  SteppingSoundEffect(4060)
+  SynchronousTimer(1.0)
+  SoundEffect(3958)
+  SynchronousTimer(8.0)
+  SteppingSoundEffect(4058)
+  SynchronousTimer(1.0)
+  SoundEffect(3959)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0xF : SFX)
+}
+
+Subaction 0xF: OTHER {
+  AsynchronousTimer(5.0)
+  Rumble(20, 0)
+  AsynchronousTimer(15.0)
+  Rumble(20, 0)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0xF : OTHER)
+}
+

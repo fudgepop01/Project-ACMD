@@ -1,0 +1,16 @@
+[hsr_AC20]
+hidden_subroutine_0xAC20 {
+  BoneCollision(52, 2)
+  BoneCollision(48, 2)
+  BoneCollision(58, 2)
+  BoneCollision(32, 2)
+  BoneCollision(59, 2)
+  BoneCollision(33, 2)
+  BoneCollision(12, 2)
+  BoneCollision(5, 2)
+  BoneCollision(13, 2)
+  BoneCollision(6, 2)
+  BoneCollision(15, 2)
+  BoneCollision(8, 2)
+  Return()
+}

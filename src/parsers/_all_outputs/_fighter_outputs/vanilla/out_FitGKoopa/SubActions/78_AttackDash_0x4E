@@ -1,0 +1,62 @@
+[AttackDash] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x4E: MAIN {
+  AsynchronousTimer(10.0)
+  OffensiveCollision(Sp(1, 0), 15, 80, Sp(0, 30), Sp(10, 100), 15.0, 0.0, 14.0, 33.0, 0.0, 1.0, 1.0, 939721792)
+  OffensiveCollision(Sp(1, 1), 15, 80, Sp(0, 30), Sp(10, 100), 15.0, 0.0, 14.0, 15.0, 0.0, 1.0, 1.0, 939721792)
+  SynchronousTimer(4.0)
+  OffensiveCollision(Sp(1, 0), 13, 80, Sp(0, 30), Sp(10, 70), 15.0, 0.0, 14.0, 33.0, 0.0, 1.0, 1.0, 939721792)
+  OffensiveCollision(Sp(1, 1), 13, 80, Sp(0, 30), Sp(10, 70), 15.0, 0.0, 14.0, 15.0, 0.0, 1.0, 1.0, 939721792)
+  SynchronousTimer(4.0)
+  TerminateCollisions()
+  AsynchronousTimer(25.0)
+  OffensiveCollision(Sp(1, 0), 9, 74, Sp(0, 80), Sp(3, 40), 21.0, 0.0, 14.0, 30.0, 0.0, 1.0, 1.0, 939721867)
+  OffensiveCollision(Sp(1, 1), 9, 74, Sp(0, 80), Sp(3, 40), 21.0, 0.0, 14.0, 15.0, 0.0, 1.0, 1.0, 939721867)
+  OffensiveCollision(Sp(1, 2), 9, 74, Sp(0, 80), Sp(3, 40), 21.0, 0.0, 14.0, 0.0, 0.0, 1.0, 1.0, 939721867)
+  OffensiveCollision(Sp(1, 3), 9, 74, Sp(0, 80), Sp(3, 40), 21.0, 0.0, 14.0, -15.0, 0.0, 1.0, 1.0, 939721867)
+  AsynchronousTimer(30.0)
+  TerminateCollisions()
+  AsynchronousTimer(55.0)
+  AllowInterrupt()
+}
+
+Subaction 0x4E: GFX {
+  AsynchronousTimer(10.0)
+  GraphicEffect(40, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(25.0)
+  GraphicEffect(10, 0, 0.0, 0.0, -10.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffect(42, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x4E: SOUND {
+  LowVoiceClip()
+  SynchronousTimer(10.0)
+  SoundEffect(55)
+  SynchronousTimer(5.0)
+  SoundEffect(114)
+  SynchronousTimer(1.0)
+  SoundEffect(115)
+  SynchronousTimer(15.0)
+  SoundEffect(6624)
+  SynchronousTimer(25.0)
+  SoundEffect(6661)
+}
+
+Subaction 0x4E: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(10.0)
+  Rumble(17, 0)
+  AsynchronousTimer(27.0)
+  Screenshake(1)
+  Rumble(14, 0)
+}
+

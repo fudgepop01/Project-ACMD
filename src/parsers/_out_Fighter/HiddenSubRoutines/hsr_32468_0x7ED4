@@ -1,0 +1,6 @@
+[hsr_7ED4]
+hidden_subroutine_0x7ED4 {
+  if (R(Button Mashable Status Expired())) {
+    Link03(0, 15)
+  }
+}

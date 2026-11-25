@@ -1,0 +1,4 @@
+[hsr_7794]
+hidden_subroutine_0x7794 {
+  SubRoutine(statusAnimCmd_ItemShootWalkBBrake_Common)
+}

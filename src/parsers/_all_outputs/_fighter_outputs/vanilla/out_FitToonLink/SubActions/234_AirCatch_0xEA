@@ -1,0 +1,60 @@
+[AirCatch] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xEA: MAIN {
+  GenerateArticle(4)
+  ArticleVisibility(4, false)
+  GenerateArticle(5)
+  ArticleVisibility(5, false)
+  BitVariableSet(RA-Bool[0x10])
+  SynchronousTimer(5.0)
+  BitVariableClear(RA-Bool[0x10])
+  AsynchronousTimer(6.0)
+  ArticleVisibility(4, true)
+  ArticleVisibility(5, true)
+  AsynchronousTimer(10.0)
+  OffensiveCollision(Sp(82, 0), 4, 45, Sp(0, 30), Sp(1, 60), 4.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 939721792)
+  SetArticleAction07(4, 1)
+  SetArticleAction(5, 0)
+  AsynchronousTimer(16.0)
+  TerminateCollisions()
+  AsynchronousTimer(34.0)
+  SetRemoteArticleAction(4, 3)
+  SetArticleAction(5, 1)
+  AsynchronousTimer(53.0)
+  RemoveArticle(4)
+  RemoveArticle(5)
+}
+
+Subaction 0xEA: GFX {
+  AsynchronousTimer(9.0)
+  GraphicEffect(17, 70, 0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0xEA: SOUND {
+  AsynchronousTimer(10.0)
+  SoundEffect(6177)
+  SynchronousTimer(10.0)
+  SoundEffect(6178)
+  SynchronousTimer(26.0)
+  SoundEffect(6178)
+}
+
+Subaction 0xEA: OTHER {
+  HeldItemsVisibility(false)
+  AsynchronousTimer(3.0)
+  ModelChanger(2, 1)
+  AsynchronousTimer(10.0)
+  Rumble(16, 0)
+  AsynchronousTimer(55.0)
+  ModelChanger(2, 0)
+}
+

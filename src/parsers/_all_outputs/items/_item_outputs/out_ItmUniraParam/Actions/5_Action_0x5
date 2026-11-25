@@ -1,0 +1,14 @@
+// Status_Run_Brake
+Action 0x5 {
+  RightDirection()
+  (undef: team) 22_02_01_00(20)
+  ChangeAction(8, R(In walljump situation()), 6)
+  ChangeAction(9, R(In walljump situation()), 1)
+  ChangeAction(4, R(On Ground()))
+  if (R(Compare(Variable_Int_Motion_Kind == 0.0))) {
+    ChangeSubAction(0, true)
+  } else {
+    ChangeSubAction(6)
+  }
+}
+

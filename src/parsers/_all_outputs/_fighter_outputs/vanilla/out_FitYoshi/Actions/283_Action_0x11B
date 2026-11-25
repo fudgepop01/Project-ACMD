@@ -1,0 +1,8 @@
+Action 0x11B: ENTRY {
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+  FrameSpeedModifier(0.0)
+}
+
+Action 0x11B : EXIT {
+}

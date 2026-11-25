@@ -1,0 +1,9 @@
+// Status_Jump_Aerial
+Action 0xC {
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, -0.5, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, false)
+  PassThroughFloorIfPossible_UNDOC0ARGS()
+  Module0900(2)
+  SetAerialOrOnstage(5)
+  ChangeAction(4, R(On Ground()))
+}
+

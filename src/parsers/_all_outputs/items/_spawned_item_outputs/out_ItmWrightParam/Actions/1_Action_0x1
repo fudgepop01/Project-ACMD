@@ -1,0 +1,14 @@
+// Status_Walk
+Action 0x1 {
+  ChangeSubAction(0)
+  SubRoutine(hidden_subroutine_0x20)
+  DisableActionStatusId(1)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 2.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+  if (R(Is within footstool range())) {
+    BasicVariableSet(1, LA-Int[0x01])
+  } else {
+    BasicVariableSet(2, LA-Int[0x01])
+  }
+  ChangeAction(3, R(In Air()))
+}
+

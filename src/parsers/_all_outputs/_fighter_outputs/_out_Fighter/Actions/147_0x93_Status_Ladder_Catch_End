@@ -1,0 +1,16 @@
+// Status_Ladder_Catch_End
+Action 0x93: ENTRY {
+  ChangeAction(148, R(Animation End()))
+  ChangeAction(14, R(Touching a Floor, Wall, or Ceiling(6)))
+  ChangeAction(0, R(On Ground()))
+  PassThroughFloorIfPossible_UNDOC0ARGS()
+  SetStateAerial()
+  if (R(Compare(Variable_Float_Posture_Lr == 1.0))) {
+    ChangeSubActionReversePlay(390)
+  } else {
+    ChangeSubActionReversePlay(391)
+  }
+}
+
+Action 0x93 : EXIT {
+}

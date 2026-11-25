@@ -1,0 +1,4 @@
+[hsr_1D848]
+hidden_subroutine_0x1D848 {
+  ThrowAttackCollision(0, 0, 18, 80, 80, 0, 20, 2, 1.0, 2.0, 1.0, 2, 3, 0, true, true, 0)
+}

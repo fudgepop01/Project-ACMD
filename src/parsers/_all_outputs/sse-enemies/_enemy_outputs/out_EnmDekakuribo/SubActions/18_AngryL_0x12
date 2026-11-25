@@ -1,0 +1,55 @@
+[AngryL] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x12: MAIN {
+  SubRoutine(hidden_subroutine_0x2608)
+  AsynchronousTimer(39.0)
+  TerminateCollisions()
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 22, 12, 1.5, 70, 30, 0.0, 0, 0.0, 117, -0.5, 9.0, 0.0, 0.0, 0.0, 0.0, 0, 0.2, 1.0, 1.0, false, true, 20, 2, 2, 3, true, 0, 311, false, 9, false, true, false, false, 120, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 26, 12, 1.5, 70, 30, 0.0, 0, 0.0, 117, -0.5, 9.0, 0.0, 0.0, 0.0, 0.0, 0, 0.2, 1.0, 1.0, false, true, 20, 2, 2, 3, true, 0, 311, false, 9, false, true, false, false, 120, false, false, 1, false, false, false, false, false, 0, LA-Float[0x0C])
+}
+
+Subaction 0x12: MAIN EXIT {
+}
+
+Subaction 0x12: MAIN INIT {
+}
+
+Subaction 0x12: GFX {
+}
+
+Subaction 0x12: GFX EXIT {
+}
+
+Subaction 0x12: GFX INIT {
+}
+
+Subaction 0x12: SFX {
+  SynchronousTimer(10.0)
+  SoundEffect(9293)
+  SynchronousTimer(30.0)
+  LandingSoundEffect(9289)
+  SynchronousTimer(19.0)
+  SteppingSoundEffect(9282)
+  SynchronousTimer(20.0)
+  SteppingSoundEffect(9283)
+  SynchronousTimer(19.0)
+  SteppingSoundEffect(9282)
+  SynchronousTimer(22.0)
+  SteppingSoundEffect(9283)
+}
+
+Subaction 0x12: SFX EXIT {
+}
+
+Subaction 0x12: SFX INIT {
+}
+

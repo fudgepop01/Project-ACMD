@@ -1,0 +1,4 @@
+[hsr_9FC]
+hidden_subroutine_0x9FC {
+  GraphicEffect(16973834, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}

@@ -1,0 +1,7 @@
+IC-Int[0x3EF] ("Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv") in Action 0x1 (Status_Walk) @ 4 : 1
+
+LA-Int[0x0B] in hsr_78 @ 0 : 2
+
+RA-Bool[0x02] in hsr_78 @ 3 : 3
+
+RA-Bool[0x03] in hsr_78 @ 1 : 2

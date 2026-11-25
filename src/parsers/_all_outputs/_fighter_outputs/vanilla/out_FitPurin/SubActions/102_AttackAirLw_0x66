@@ -1,0 +1,53 @@
+[AttackAirLw] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x66: MAIN {
+  AsynchronousTimer(4.0)
+  BitVariableSet(RA-Bool[0x1E])
+  SetLoop(8) {
+    OffensiveCollision(Sp(0, 0), 2, 270, Sp(0, 100), Sp(0, 20), 6.3, 0.0, -2.4, 3.5, 0.0, 0.8, 1.2, 964756544)
+    OffensiveCollision(Sp(0, 1), 2, 270, Sp(0, 100), Sp(0, 20), 5.0, 0.0, 0.0, 2.1, 0.0, 0.8, 1.2, 964756544)
+    OffensiveCollision(Sp(0, 2), 2, 30, Sp(0, 100), Sp(0, 10), 6.3, 0.0, -2.4, 3.5, 0.0, 0.8, 1.2, 964822080)
+    OffensiveCollision(Sp(0, 3), 2, 30, Sp(0, 100), Sp(0, 10), 5.0, 0.0, 0.0, 2.1, 0.0, 0.8, 1.2, 964822080)
+    SynchronousTimer(2.0)
+    TerminateCollisions()
+    SynchronousTimer(1.0)
+  }
+  SynchronousTimer(4.0)
+  TerminateCollisions()
+  SynchronousTimer(6.0)
+  BitVariableClear(RA-Bool[0x1E])
+}
+
+Subaction 0x66: GFX {
+}
+
+Subaction 0x66: SOUND {
+  AsynchronousTimer(4.0)
+  PlayTeeterSfx()
+  SoundEffect(6136)
+  SoundEffect(107)
+  SynchronousTimer(6.0)
+  SoundEffect(6136)
+  SoundEffect(107)
+  SynchronousTimer(6.0)
+  SoundEffect(6136)
+  SoundEffect(107)
+  SynchronousTimer(6.0)
+  SoundEffect(6136)
+  SoundEffect(107)
+}
+
+Subaction 0x66: OTHER {
+  AsynchronousTimer(5.0)
+  RumbleLoop(2, 30)
+}
+

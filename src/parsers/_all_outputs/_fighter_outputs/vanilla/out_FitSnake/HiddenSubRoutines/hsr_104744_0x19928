@@ -1,0 +1,11 @@
+[hsr_19928]
+hidden_subroutine_0x19928 {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(284)
+    Case(283)
+    Case(303)
+      Break()
+    DefaultCase()
+      RemoveArticle(4)
+  EndSwitch()
+}

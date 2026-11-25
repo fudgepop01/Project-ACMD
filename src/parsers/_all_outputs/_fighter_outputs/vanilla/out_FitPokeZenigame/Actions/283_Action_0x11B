@@ -1,0 +1,35 @@
+Action 0x11B: ENTRY {
+
+  ChangeAction(284, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x18090)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      SetAirGround(6)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(475, true)
+      } else {
+        ChangeSubAction(475)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetAirGround(10)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(476, true)
+      } else {
+        ChangeSubAction(476)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    (undef: motion) 04_05_01_00(24)
+    LoadRest()
+  }
+}
+
+Action 0x11B : EXIT {
+}

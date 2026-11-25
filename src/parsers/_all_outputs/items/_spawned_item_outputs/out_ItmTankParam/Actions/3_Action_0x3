@@ -1,0 +1,7 @@
+// Status_Dash
+Action 0x3 {
+  ChangeSubAction(1)
+  (undef: motion) 04_10_02_00(0, 6)
+  ChangeAction(4, R(On Ground()))
+}
+

@@ -1,0 +1,45 @@
+[AttackSquat] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x4B: MAIN {
+  SubRoutine(hidden_subroutine_0x230F4)
+  AsynchronousTimer(12.0)
+  SoundEffect(5832)
+  GraphicEffectAttached(2228226, 29, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, true)
+  GraphicEffectAttached(2228227, 49, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, true)
+  OffensiveCollision(Sp(15, 0), 9, 361, Sp(0, 50), Sp(0, 64), 2.5, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 964897813)
+  OffensiveCollision(Sp(16, 1), 9, 361, Sp(0, 50), Sp(0, 64), 2.5, 0.0, -0.7509333333333333, 0.0, 0.0, 1.0, 1.0, 964897813)
+  OffensiveCollision(Sp(18, 3), 9, 361, Sp(0, 50), Sp(0, 64), 4.25, 0.0, -0.9984, 2.5, 0.0, 1.0, 1.0, 964832277)
+  OffensiveCollision(Sp(18, 2), 10, 32, Sp(149, 60), Sp(0, 0), 4.25, 0.0, -0.9984, 2.5, 0.0, 1.5, 1.0, 964766869)
+  AsynchronousTimer(14.0)
+  GraphicEffect(2228228, 0, 13.75, 3.0, 0.0, 0.0, 0.0, 0.0, 0.825, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GraphicEffectAttached(2228230, 0, 0.0, 3.0, 13.75, -10.0, 0.0, 0.0, 0.35, true)
+  AsynchronousTimer(22.0)
+  TerminateCollisions()
+  AsynchronousTimer(29.0)
+  AllowInterrupt()
+}
+
+Subaction 0x4B: GFX {
+  AsynchronousTimer(12.0)
+  Goto(hidden_subroutine_0x2A08)
+}
+
+Subaction 0x4B: SOUND {
+}
+
+Subaction 0x4B: OTHER {
+  SlopeContourStand02(1, 2)
+  SlopeContourStand03(1, 4, true)
+  AsynchronousTimer(12.0)
+  Rumble(17, 0)
+}
+

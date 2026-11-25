@@ -1,0 +1,18 @@
+Action 0x0: MAIN {
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonDamageProc)
+}
+
+Action 0x0: EXIT {
+  if (R(Bit is Set(LA-Bool[0x04])) && R(Compare(Variable_Int_Status_Kind != 0.0)) && R(Compare(Variable_Int_Status_Kind != 1.0))) {
+    SubRoutine(EXTERNAL: statusAnimCmd_CommonDamageCancel)
+  }
+}
+
+Action 0x0: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_03_00_00()
+  (undef: Sp_AI) 6A_01_01_00(9)
+  (undef: Sp_AI) 6A_00_02_00(11, 8)
+  SubAction09(17)
+}
+

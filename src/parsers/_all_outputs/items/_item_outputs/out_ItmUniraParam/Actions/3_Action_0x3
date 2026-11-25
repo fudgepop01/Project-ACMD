@@ -1,0 +1,6 @@
+// Status_Dash
+Action 0x3 {
+  (undef: team) 22_02_01_00(20)
+  ChangeAction(4, R(On Ground()))
+}
+

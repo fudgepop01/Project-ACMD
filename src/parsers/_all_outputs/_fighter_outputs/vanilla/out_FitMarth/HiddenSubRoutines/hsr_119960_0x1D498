@@ -1,0 +1,12 @@
+[hsr_1D498]
+hidden_subroutine_0x1D498 {
+
+  ChangeAction(RA-Int[0x02], R(Bit is Set(RA-Bool[0x12])))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x14])))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+}

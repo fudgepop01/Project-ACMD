@@ -1,0 +1,8 @@
+[hsr_F90]
+hidden_subroutine_0xF90 {
+  BasicVariableDecrement(LA-Int[0x00])
+  if (R(Compare(LA-Int[0x00] <= 0.0))) {
+    ChangeActionStatus(3, 3, R(In Air()))
+    ChangeActionStatus(4, 4, R(On Ground()))
+  }
+}

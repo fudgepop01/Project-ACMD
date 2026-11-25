@@ -1,0 +1,34 @@
+Action 0x121: ENTRY {
+  ExitFinalSmashState()
+  SetGimmickEffectFlag(false)
+  if (R(Article Exists())) {
+    OnlyArticleEvent(0)
+  }
+  BasicVariableSet(484, LA-Int[0x40])
+  BasicVariableSet(486, LA-Int[0x41])
+  SubRoutine(hidden_subroutine_0x1B250)
+
+  ChangeActionStatus(10146, 0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus(10147, 14, R(Animation End()))
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0x1B2E8)
+    if (R(On Ground())) {
+      SubRoutine(hidden_subroutine_0x1B1E0)
+      SetRequirement(R(In Air()))
+      EnableActionStatusId(10146)
+      DisableActionStatusId(10147)
+    } else {
+      SubRoutine(hidden_subroutine_0x1B230)
+      SetRequirement(R(On Ground()))
+      EnableActionStatusId(10147)
+      DisableActionStatusId(10146)
+    }
+    LoadRest()
+  }
+}
+
+Action 0x121 : EXIT {
+  ExitFinalSmashState()
+}

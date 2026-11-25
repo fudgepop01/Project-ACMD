@@ -1,0 +1,19 @@
+// Status_Walk_Brake
+Action 0x2 {
+  if (R(Compare(LA-Int[0x00] > 0.0))) {
+    if (R(Compare(LA-Int[0x00] == 1.0))) {
+      ChangeSubAction(3, true)
+      (undef: Sp_base) 65_05_02_00(120, 360)
+      BasicVariableSet(2, LA-Int[0x00])
+    } elif (R(Compare(LA-Int[0x00] == 2.0))) {
+      ChangeSubAction(4, true)
+    } elif (R(Compare(LA-Int[0x00] == 3.0))) {
+      ChangeSubAction(5, true)
+      ChangeAction(7, R(Animation End()))
+    }
+  } else {
+    ChangeSubAction(1, true)
+    ChangeAction(7, R(Animation End()))
+  }
+}
+

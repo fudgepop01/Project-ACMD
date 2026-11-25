@@ -1,0 +1,4 @@
+[hsr_1C3F8]
+hidden_subroutine_0x1C3F8 {
+  BitVariableClear(LA-Bool[0x3D])
+}

@@ -1,0 +1,30 @@
+[FinalFall] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1F0: MAIN {
+  BodyCollision(2)
+  SpecialOffensiveCollision(Sp(0, 0), 5, 270, Sp(0, 100), Sp(0, 50), 8.0, 0.0, 10.0, 10.0, 0.0, 0.2, 1.0, 579017794, 0, 1048512)
+  SpecialOffensiveCollision(Sp(0, 1), 5, 270, Sp(0, 100), Sp(0, 50), 8.0, 0.0, 10.0, 22.0, 0.0, 0.2, 1.0, 579017794, 0, 1048512)
+}
+
+Subaction 0x1F0: GFX {
+  GraphicEffectAttached(2293762, 70, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(16580610, 70, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  SwordGlow(127, 10, 70, 0.0, 2.8, 0.0, 70, 0.0, 14.3, 0.0, true, 0, 70, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+}
+
+Subaction 0x1F0: SOUND {
+}
+
+Subaction 0x1F0: OTHER {
+  HeldItemsVisibility(false)
+}
+

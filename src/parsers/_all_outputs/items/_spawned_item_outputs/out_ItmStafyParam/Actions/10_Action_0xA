@@ -1,0 +1,18 @@
+// Status_Jump_Squat
+Action 0xA {
+  SubRoutine(hidden_subroutine_0x2F8)
+  ChangeAction(3, R(In Air()))
+  ChangeAction(12, R(NOT 0x2715()), 3.0)
+
+  ChangeActionStatus(12, 12, R(In walljump situation()), 6)
+  AdditionalRequirement(R(On Ground()))
+  (undef: Sp_Kinetic) 66_00_0D_00(0.3, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+
+  ChangeSubAction(9)
+  (undef: control_flow_loop) 01_04_02_00(30, 120)
+  ChangeAction(12, R(NOT 0x2715()), 20.0)
+  (undef: Sp_base) 65_07_01_00(2)
+  SubRoutine(hidden_subroutine_0xD0)
+  ChangeAction(9, R(Button Tap?()))
+}
+

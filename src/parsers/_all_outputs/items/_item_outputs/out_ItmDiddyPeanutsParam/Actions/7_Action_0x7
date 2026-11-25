@@ -1,0 +1,11 @@
+// Status_Turn_Dash
+Action 0x7 {
+  ChangeSubAction(4)
+  Visibility(false)
+  if (R(NOT Bit is Set(LA-Bool[0x00])) || R(Is within footstool range())) {
+    (undef: Sp_base) 65_01_00_00()
+  }
+  SynchronousTimer(1.0)
+  ChangeAction(6, R(Button Tap?()))
+}
+

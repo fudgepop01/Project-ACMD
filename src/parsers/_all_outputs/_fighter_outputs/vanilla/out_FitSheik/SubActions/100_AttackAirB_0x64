@@ -1,0 +1,45 @@
+[AttackAirB] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x64: MAIN {
+  AsynchronousTimer(3.0)
+  BitVariableSet(RA-Bool[0x1E])
+  SpecialOffensiveCollision(Sp(5, 0), 11, 361, Sp(0, 100), Sp(0, 0), 3.8, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 964887616, 0, 5242820)
+  SpecialOffensiveCollision(Sp(7, 1), 11, 361, Sp(0, 100), Sp(0, 0), 3.0, 0.0, -1.0, 0.0, 0.0, 1.0, 1.0, 964887616, 0, 5242820)
+  SpecialOffensiveCollision(Sp(11, 2), 11, 361, Sp(0, 100), Sp(0, 5), 2.0, 0.0, -0.5, 0.0, 0.0, 1.0, 1.0, 964887616, 0, 5242820)
+  SpecialOffensiveCollision(Sp(11, 3), 12, 361, Sp(0, 98), Sp(0, 14), 4.2, 0.0, 3.8, 0.0, 0.0, 1.0, 1.0, 964887680, 0, 5242820)
+  SynchronousTimer(3.0)
+  SpecialOffensiveCollision(Sp(5, 0), 6, 361, Sp(0, 100), Sp(0, 0), 4.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 964887552, 0, 5242820)
+  SpecialOffensiveCollision(Sp(7, 1), 6, 361, Sp(0, 100), Sp(0, 0), 2.0, 0.0, -1.0, 0.0, 0.0, 1.0, 1.0, 964887552, 0, 5242820)
+  SpecialOffensiveCollision(Sp(11, 2), 6, 361, Sp(0, 100), Sp(0, 4), 3.3, 0.0, -0.5, 0.0, 0.0, 1.0, 1.0, 964887616, 0, 5242820)
+  SpecialOffensiveCollision(Sp(11, 3), 6, 361, Sp(0, 100), Sp(0, 8), 2.8, 0.0, 3.0, 0.0, 0.0, 1.0, 1.0, 964887616, 0, 5242820)
+  AsynchronousTimer(17.0)
+  TerminateCollisions()
+  AsynchronousTimer(30.0)
+  BitVariableClear(RA-Bool[0x1E])
+  AsynchronousTimer(37.0)
+  AllowInterrupt()
+}
+
+Subaction 0x64: GFX {
+}
+
+Subaction 0x64: SOUND {
+  AsynchronousTimer(3.0)
+  LowVoiceClip()
+  SoundEffect(4158)
+}
+
+Subaction 0x64: OTHER {
+  AsynchronousTimer(3.0)
+  Rumble(17, 0)
+}
+

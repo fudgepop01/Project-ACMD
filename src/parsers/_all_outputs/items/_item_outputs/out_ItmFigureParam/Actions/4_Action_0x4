@@ -1,0 +1,8 @@
+// Status_Run
+Action 0x4 {
+  SubRoutine(hidden_subroutine_0x118)
+  DisableActionStatusId(4)
+  ChangeAction(3, R(In Air()))
+  ChangeSubAction(6)
+}
+

@@ -1,0 +1,9 @@
+[hsr_698]
+hidden_subroutine_0x698 {
+  if (R(Bit is Set(LA-Bool[0x07]))) {
+    SubRoutine(hidden_subroutine_0x670)
+    BitVariableSet(LA-Bool[0x06])
+  }
+  BitVariableClear(LA-Bool[0x07])
+  BitVariableClear(LA-Bool[0x08])
+}

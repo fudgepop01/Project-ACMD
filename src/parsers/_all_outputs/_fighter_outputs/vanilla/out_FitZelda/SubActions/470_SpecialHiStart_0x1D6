@@ -1,0 +1,40 @@
+[SpecialHiStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D6: MAIN {
+  AsynchronousTimer(10.0)
+  OffensiveCollision(Sp(9, 0), 6, 80, Sp(0, 100), Sp(0, 40), 10.56, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 734201410)
+  AsynchronousTimer(12.0)
+  TerminateCollisions()
+  AsynchronousTimer(33.0)
+  BodyCollision(2)
+}
+
+Subaction 0x1D6: GFX {
+  GraphicEffectAttached(917510, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  FlashOverlayEffect(0, 160, 0, 0)
+  ChangeFlashOverlayColor(20, 0, 160, 0, 150)
+  SetLoop(4) {
+    FlashOverlayEffect(0, 160, 0, 160)
+    SynchronousTimer(2.0)
+    TerminateFlashEffect()
+    SynchronousTimer(1.0)
+  }
+}
+
+Subaction 0x1D6: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(4037)
+}
+
+Subaction 0x1D6: OTHER {
+}
+

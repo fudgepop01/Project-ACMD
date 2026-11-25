@@ -1,0 +1,18 @@
+animParam {
+  motionDataPtr: 0x000008E8
+  motionNum: 0x00000007
+  statusData: 0x00000920
+  statusNum: 0x00000008
+  visibilityData: 0x00000000
+  physicsIkData: 0x00000A50
+  effectNodeData: 0x00000A48
+  motionAnimCmdGame: 0x000009A0
+  motionAnimCmdEffect: 0x000009BC
+  motionAnimCmdSound: 0x000009D8
+  statusAnimCmd: 0x00000A00
+  eventAnimCmd: 0x00000A38
+  collisionHitDataSet: 0x00000000
+  collisionReflectorDataSet: 0x00000000
+  groundShapeDataSet: 0x00000000
+  modelFlags: 0x00000000
+}

@@ -1,0 +1,52 @@
+RA-Int[0x02] in Subaction 0x72: MAIN @ 4 : 2
+RA-Int[0x02] in Subaction 0x73: MAIN @ 5 : 2
+RA-Int[0x02] in Subaction 0x74: MAIN @ 5 : 2
+RA-Int[0x02] in Subaction 0x75: MAIN @ 12 : 2
+
+RA-Int[0x03] in Subaction 0x72: MAIN @ 4 : 3
+RA-Int[0x03] in Subaction 0x73: MAIN @ 5 : 3
+RA-Int[0x03] in Subaction 0x74: MAIN @ 5 : 3
+RA-Int[0x03] in Subaction 0x75: MAIN @ 12 : 3
+
+RA-Int[0x04] in Subaction 0x72: MAIN @ 4 : 4
+RA-Int[0x04] in Subaction 0x73: MAIN @ 5 : 4
+RA-Int[0x04] in Subaction 0x74: MAIN @ 5 : 4
+RA-Int[0x04] in Subaction 0x75: MAIN @ 12 : 4
+
+RA-Bool[0x10] in Subaction 0x10: MAIN @ 1 : 0
+RA-Bool[0x10] in Subaction 0x12: MAIN @ 1 : 0
+RA-Bool[0x10] in Subaction 0x48: MAIN @ 7 : 0
+RA-Bool[0x10] in Subaction 0x6C: MAIN @ 7 : 0
+RA-Bool[0x10] in Subaction 0x6D: MAIN @ 8 : 0
+RA-Bool[0x10] in Subaction 0x6E: MAIN @ 7 : 0
+RA-Bool[0x10] in Subaction 0x70: MAIN @ 5 : 0
+RA-Bool[0x10] in Subaction 0x74: MAIN @ 3 : 0
+RA-Bool[0x10] in Subaction 0xD3: MAIN @ 1 : 0
+
+RA-Bool[0x11] in Subaction 0x1B: MAIN @ 1 : 0
+RA-Bool[0x11] in Subaction 0x1C: MAIN @ 1 : 0
+RA-Bool[0x11] in Subaction 0x1D: MAIN @ 1 : 0
+RA-Bool[0x11] in Subaction 0x1E: MAIN @ 1 : 0
+RA-Bool[0x11] in Subaction 0x1F: MAIN @ 1 : 0
+
+RA-Bool[0x12] in Subaction 0x10: MAIN @ 2 : 0
+
+RA-Bool[0x14] in Subaction 0x49: MAIN @ 7 : 0
+
+RA-Bool[0x16] in Subaction 0x48: MAIN @ 9 : 0
+RA-Bool[0x16] in Subaction 0x49: MAIN @ 9 : 0
+
+RA-Bool[0x19] in Subaction 0x4C: MAIN @ 4 : 0
+RA-Bool[0x19] in Subaction 0x4C: MAIN @ 9 : 0
+RA-Bool[0x19] in Subaction 0x4C: MAIN @ 12 : 0
+
+RA-Bool[0x1E] in Subaction 0x62: MAIN @ 1 : 0
+RA-Bool[0x1E] in Subaction 0x62: MAIN @ 12 : 0
+RA-Bool[0x1E] in Subaction 0x63: MAIN @ 1 : 0
+RA-Bool[0x1E] in Subaction 0x63: MAIN @ 20 : 0
+RA-Bool[0x1E] in Subaction 0x64: MAIN @ 1 : 0
+RA-Bool[0x1E] in Subaction 0x64: MAIN @ 10 : 0
+RA-Bool[0x1E] in Subaction 0x65: MAIN @ 1 : 0
+RA-Bool[0x1E] in Subaction 0x65: MAIN @ 7 : 0
+RA-Bool[0x1E] in Subaction 0x66: MAIN @ 1 : 0
+RA-Bool[0x1E] in Subaction 0x66: MAIN @ 12 : 0

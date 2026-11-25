@@ -1,0 +1,13 @@
+// Status_Walk
+Action 0x1 {
+  (undef: Sp_base) 65_04_01_00(1400)
+  BasicVariableSet(0, LA-Int[0x00])
+  DisableActionStatusId(1)
+  RightDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  ChangeSubAction(0)
+  ChangeAction(3, R(In Air()))
+  ChangeAction(4, R(On Ground()))
+}
+

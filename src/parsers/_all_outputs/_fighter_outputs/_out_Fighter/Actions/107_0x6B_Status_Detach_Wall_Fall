@@ -1,0 +1,7 @@
+// Status_Detach_Wall_Fall
+Action 0x6B: ENTRY {
+  SubRoutine(Action_0x6A : ENTRY)
+}
+
+Action 0x6B : EXIT {
+}

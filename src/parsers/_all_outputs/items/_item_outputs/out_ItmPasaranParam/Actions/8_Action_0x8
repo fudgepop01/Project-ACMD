@@ -1,0 +1,89 @@
+// Status_Turn_Run
+Action 0x8 {
+  BitVariableSet(LA-Bool[0x0C])
+  (undef: Sp_base) 65_1F_01_00(2)
+  BitVariableClear(LA-Bool[0x08])
+  ResetCertainMomentum(1)
+  ResetCertainMomentum(2)
+  ResetCertainMomentum(7)
+  ResetCertainMomentum(3)
+  BasicVariableSet(1, LA-Int[0x16])
+  (undef: team) 22_02_01_00(-1)
+  ChangeSubAction(3)
+  ChangeHitboxDamage(0, LA-Float[0x01])
+  ChangeHitboxSize(0, LA-Float[0x03])
+  BasicVariableRandom(20, 240, LA-Int[0x0B])
+  DisableSpecifiedMovement(2)
+  BitVariableClear(LA-Bool[0x00])
+  SynchronousTimer(1.0)
+  if [IF_REQ_UNKNOWN_3ARG] (R(0x40()), 15.0, true) {
+    if (R(NOT 0x3F())) {
+      ModuleStartTrace_UNDOC8ARGS(5.0, 15.0, true, Variable_Float_Posture_Lr, LA-Bool[0x00], 0, 0, true)
+      if (R(Bit is Set(LA-Bool[0x00]))) {
+        BitVariableClear(LA-Bool[0x00])
+        if (R(0x3F())) {
+          ModuleEndTrace()
+        }
+        ChangeAction(5, R(Button Tap?()))
+        Return()
+      }
+    }
+    FloatVariableSet(LA-Float[0x00], RA-Float[0x00])
+    FloatVariableMultiply(Variable_Float_Posture_Lr, RA-Float[0x00])
+    (undef: Sp_Kinetic) 66_00_0D_00(RA-Float[0x00], 0.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false, false, false)
+    (undef: Sp_Kinetic) 66_05_01_00(1)
+    while (R(0x3F())) {
+      if (R(0x41())) {
+        if (R(NOT 0x44()) && R(0x45())) {
+          ModuleGetTraceTargetPosturePos_UNDOC3ARGS(5.0, RA-Float[0x00], RA-Float[0x01])
+          TeleportationStageBased2(RA-Float[0x00], RA-Float[0x01], 0.0)
+          CharacterSpecific01()
+          ModuleRenewTarce_UNDOC4ARGS(5.0, 15.0, true, LA-Bool[0x00])
+          GroundModuleUpdate()
+          (undef: ground) 08_12_00_00()
+          CharacterSpecific01()
+        } else {
+          ModuleRenewTarce_UNDOC4ARGS(5.0, 15.0, true, LA-Bool[0x00])
+        }
+      } elif (R(Compare(RA-Int[0x00] <= 0.0))) {
+        if (R(Touching a Floor, Wall, or Ceiling(8)) && R(0x42())) {
+          ModuleRenewTarce_UNDOC5ARGS(5.0, 15.0, true, LA-Bool[0x00], 8)
+          BasicVariableSet(2, RA-Int[0x00])
+          (undef: Sp_Kinetic) 66_05_01_00(1)
+        } elif (R(Touching a Floor, Wall, or Ceiling(4)) && R(0x42())) {
+          ModuleRenewTarce_UNDOC5ARGS(5.0, 15.0, true, LA-Bool[0x00], 4)
+          BasicVariableSet(2, RA-Int[0x00])
+          (undef: Sp_Kinetic) 66_05_01_00(1)
+        } elif (R(Touching a Floor, Wall, or Ceiling(2)) && R(0x42())) {
+          ModuleRenewTarce_UNDOC5ARGS(5.0, 15.0, true, LA-Bool[0x00], 2)
+          BasicVariableSet(2, RA-Int[0x00])
+          (undef: Sp_Kinetic) 66_05_01_00(1)
+        } elif (R(Touching a Floor, Wall, or Ceiling(1)) && R(0x42())) {
+          ModuleRenewTarce_UNDOC5ARGS(5.0, 15.0, true, LA-Bool[0x00], 1)
+          BasicVariableSet(2, RA-Int[0x00])
+          (undef: Sp_Kinetic) 66_05_01_00(1)
+        }
+      }
+      if (R(Bit is Set(LA-Bool[0x00]))) {
+        BitVariableClear(LA-Bool[0x00])
+        if (R(0x3F())) {
+          ModuleEndTrace()
+        }
+        ChangeAction(5, R(Button Tap?()))
+        Return()
+      } else {
+        ModuleGetTraceTargetVec_UNDOC3ARGS(5.0, RA-Float[0x00], RA-Float[0x01])
+        (undef: Sp_base) 65_07_03_00(1, RA-Float[0x00], RA-Float[0x01])
+      }
+      SynchronousTimer(1.0)
+      if (R(Compare(RA-Int[0x00] > 0.0))) {
+        BasicVariableDecrement(RA-Int[0x00])
+      }
+      EndWhile()
+    }
+    if (R(0x3F())) {
+      ModuleEndTrace()
+    }
+    ChangeAction(5, R(Button Tap?()))
+}
+

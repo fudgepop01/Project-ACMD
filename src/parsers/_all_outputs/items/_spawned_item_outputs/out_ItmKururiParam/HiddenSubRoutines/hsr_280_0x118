@@ -1,0 +1,26 @@
+[hsr_118]
+hidden_subroutine_0x118 {
+  BitVariableClear(LA-Bool[0x08])
+  ChangeSubAction(2)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  SynchronousTimer(25.0)
+  BasicVariableRandom(240, 360, LA-Int[0x0C])
+  (undef: Sp_base) 65_07_01_00(2)
+  if (R(2714(1))) {
+    ChangeSubAction(5)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ModifyRhombusX05_UNDOC3ARGS(9.0, 0.0, 10.0)
+    RightDirection()
+  } else {
+    ChangeSubAction(4)
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ModifyRhombusX05_UNDOC3ARGS(9.0, 0.0, 10.0)
+    LeftDirection()
+  }
+  DecideDirection()
+  CharacterSpecific01()
+  Return()
+}

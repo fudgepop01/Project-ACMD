@@ -1,0 +1,27 @@
+// Status_Turn_Dash
+Action 0x7 {
+  if (R(NOT Bit is Set(LA-Bool[0x00])) && R(Is within footstool range())) {
+    ChangeSubAction(7)
+    (undef: team) 22_01_01_00(-1)
+    BitVariableSet(LA-Bool[0x00])
+    (undef: Sp_base) 65_05_02_00(8, 600)
+    SynchronousTimer(1.0)
+    (undef: Sp_base) 65_1E_01_00(2)
+    ChangeAction(4, R(On Ground()))
+    if (R(Compare(Variable_Int_Status_Prev_Kind == 5.0))) {
+      ChangeAction(5, R(In Air()))
+    } else {
+      ChangeAction(3, R(In Air()))
+    }
+    Return()
+  }
+  (undef: team) 22_00_01_00(-1)
+  (undef: team) 22_02_01_00(-1)
+  BodyCollision(3)
+  (undef: Sp_Kinetic) 66_07_00_00()
+  ChangeSubAction(4)
+  Visibility(false)
+  SynchronousTimer(240.0)
+  (undef: Sp_base) 65_00_00_00()
+}
+

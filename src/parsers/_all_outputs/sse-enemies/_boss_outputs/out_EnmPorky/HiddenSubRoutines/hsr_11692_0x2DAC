@@ -1,0 +1,4 @@
+[hsr_2DAC]
+hidden_subroutine_0x2DAC {
+  GraphicEffect(16973838, 7, 0.0, 0.0, 15.0, 0.0, 0.0, 0.0, 0.45, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}

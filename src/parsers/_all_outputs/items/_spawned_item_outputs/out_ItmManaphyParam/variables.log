@@ -1,0 +1,5 @@
+LA-Int[0x1B] in Subaction 0x0 : SOUND @ 1 : 1
+
+LA-Bool[0x00] in Action 0x9 (Status_Turn_Run_Brake) @ 4 : 0
+
+RA-Bool[0x04] in Action 0x8 (Status_Turn_Run) @ 7 : 2

@@ -1,0 +1,9 @@
+// Status_Dash
+Action 0x3 {
+  BitVariableClear(LA-Bool[0x0C])
+  if (R(Compare(Variable_Int_Motion_Kind == 1.0)) || R(Compare(Variable_Int_Motion_Kind == 7.0))) {
+    SubRoutine(hidden_subroutine_0xB0)
+  }
+  ChangeAction(4, R(On Ground()))
+}
+

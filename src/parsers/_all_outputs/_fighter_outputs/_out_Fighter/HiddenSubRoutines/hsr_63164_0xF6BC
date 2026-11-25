@@ -1,0 +1,13 @@
+[hsr_F6BC]
+hidden_subroutine_0xF6BC {
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  BitVariableSet(RA-Bool[0x13])
+
+  ChangeActionStatus(10010, 141, R(2714(4)))
+  AdditionalRequirement(R(On Ground()))
+
+  DisableActionStatusId(10010)
+}

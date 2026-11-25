@@ -1,0 +1,19 @@
+// Status_Cliff_Escape
+Action 0x78: ENTRY {
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(Holding a Ledge()))
+
+  if (R(Compare(Variable_Float_Damage < IC-Int[0xC79]))) {
+    ChangeSubAction(217)
+  } else {
+    ChangeSubAction(222)
+  }
+}
+
+Action 0x78 : EXIT {
+}

@@ -1,0 +1,6 @@
+[hsr_440C]
+hidden_subroutine_0x440C {
+  if (R(Article Exists())) {
+    OnlyArticleEvent(0)
+  }
+}

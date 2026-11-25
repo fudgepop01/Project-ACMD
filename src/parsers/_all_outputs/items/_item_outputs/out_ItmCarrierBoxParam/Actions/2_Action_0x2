@@ -1,0 +1,7 @@
+// Status_Walk_Brake
+Action 0x2 {
+  TerminateCollisions()
+  ChangeSubAction(1)
+  BodyCollision(3)
+}
+

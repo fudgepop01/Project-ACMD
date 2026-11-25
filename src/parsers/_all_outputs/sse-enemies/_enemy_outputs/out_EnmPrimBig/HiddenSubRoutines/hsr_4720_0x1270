@@ -1,0 +1,5 @@
+[hsr_1270]
+hidden_subroutine_0x1270 {
+  SubRoutine(hidden_subroutine_0x1250)
+  Return()
+}

@@ -1,0 +1,5 @@
+[hsr_378]
+hidden_subroutine_0x378 {
+  (undef: Sp_AI) 6A_00_01_00(13)
+  Return()
+}

@@ -1,0 +1,38 @@
+[Final] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1ED: MAIN {
+  BodyCollision(2)
+  SpecialOffensiveCollision(Sp(3, 0), 0, 20, Sp(200, 100), Sp(0, 0), 7.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 591594624, 2, -200278080)
+  SpecialOffensiveCollision(Sp(13, 1), 0, 20, Sp(200, 100), Sp(0, 0), 2.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 591594624, 2, -200278080)
+  SpecialOffensiveCollision(Sp(29, 2), 0, 20, Sp(200, 100), Sp(0, 0), 2.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 591594624, 2, -200278080)
+  AsynchronousTimer(5.0)
+  SpecialOffensiveCollision(Sp(3, 0), 0, 0, Sp(40, 100), Sp(0, 0), 5.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 591594624, 2, -200278080)
+  SpecialOffensiveCollision(Sp(13, 1), 0, 0, Sp(40, 100), Sp(0, 0), 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 591594624, 2, -200278080)
+  SpecialOffensiveCollision(Sp(29, 2), 0, 0, Sp(40, 100), Sp(0, 0), 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 591594624, 2, -200278080)
+}
+
+Subaction 0x1ED: GFX {
+}
+
+Subaction 0x1ED: SOUND {
+  AsynchronousTimer(9.0)
+  VictorySoundEffect(2486)
+}
+
+Subaction 0x1ED: OTHER {
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+  UnkRaBit27(false)
+  SetTagDisplay(false)
+  Rumble(15, 20)
+}
+

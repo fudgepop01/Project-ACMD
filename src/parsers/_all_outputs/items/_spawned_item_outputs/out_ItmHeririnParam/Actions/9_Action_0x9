@@ -1,0 +1,8 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  SubRoutine(hidden_subroutine_0x10)
+  FloatVariableRandom(-50.0, 50.0, LA-Float[0x00])
+  FloatVariableRandom(-50.0, 50.0, LA-Float[0x01])
+  ChangeAction(8, R(Button Tap?()))
+}
+

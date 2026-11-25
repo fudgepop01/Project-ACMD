@@ -1,0 +1,12 @@
+// Status_Turn
+Action 0x6 {
+  Visibility(false)
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 7.0))) {
+    SynchronousTimer(60.0)
+    (undef: Sp_base) 65_09_08_00(160, 0, Variable_Float_Posture_Pos_X, Variable_Float_Posture_Pos_Y, 0.0, 0.0, 0.0, 0.0)
+  } else {
+    SynchronousTimer(1.0)
+  }
+  (undef: Sp_base) 65_00_00_00()
+}
+

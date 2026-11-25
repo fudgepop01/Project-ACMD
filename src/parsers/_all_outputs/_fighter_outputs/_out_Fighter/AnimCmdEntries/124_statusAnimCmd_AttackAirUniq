@@ -1,0 +1,8 @@
+// @ 0x22B70
+AttackAirUniq {
+  BasicVariableIncrement(RA-Int[0x01])
+  if (R(Compare(RA-Int[0x01] <= Common_Param_Int_Item_Air_Catch_Frame))) {
+    SubRoutine(hidden_subroutine_0xDE24)
+  }
+  SubRoutine(statusAnimCmd_FALLCommonUniq)
+}

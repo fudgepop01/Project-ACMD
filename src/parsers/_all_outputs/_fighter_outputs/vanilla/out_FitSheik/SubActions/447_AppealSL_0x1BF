@@ -1,0 +1,38 @@
+[AppealSL] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1BF: MAIN {
+  GenerateArticle(2)
+  SetArticleAction(2, 2)
+  AsynchronousTimer(99.0)
+  AllowInterrupt()
+}
+
+Subaction 0x1BF: GFX {
+}
+
+Subaction 0x1BF: SOUND {
+  AsynchronousTimer(50.0)
+  SoundEffect(4085)
+  SynchronousTimer(40.0)
+  StopSoundEffect(4085)
+}
+
+Subaction 0x1BF: OTHER {
+  SlopeContourStand(6)
+  HeldItemsVisibility(false)
+  RemoveArticle(2)
+  GenerateArticleSubactionExclusive(2, true)
+  SetArticleAction(2, 2)
+  AsynchronousTimer(109.0)
+  RemoveArticle(2)
+}
+

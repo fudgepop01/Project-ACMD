@@ -1,0 +1,41 @@
+Action 0x117: ENTRY {
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  if (R(On Ground())) {
+    SetAerialOrOnstage(2)
+    SetAirGround(6)
+    ChangeSubAction(463)
+    SetRequirement(R(In Air()))
+  } else {
+    SetAerialOrOnstage(5)
+    SetAirGround(10)
+    ChangeSubAction(466)
+    SetRequirement(R(On Ground()))
+  }
+  SetLoop(-1) {
+    LoadRest()
+    if (R(On Ground())) {
+      SetAerialOrOnstage(2)
+      SetAirGround(6)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeAction(281, R(Button Tap?()))
+      } else {
+        ChangeSubAction(463, true)
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      SetAirGround(10)
+      ChangeSubAction(466, true)
+      SetRequirement(R(On Ground()))
+    }
+  }
+}
+
+Action 0x117 : EXIT {
+}

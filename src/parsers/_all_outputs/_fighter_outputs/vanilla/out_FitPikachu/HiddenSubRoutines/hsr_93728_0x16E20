@@ -1,0 +1,11 @@
+[hsr_16E20]
+hidden_subroutine_0x16E20 {
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    if (R(NOT Bit is Set(RA-Bool[0x11]))) {
+      if (R(Article Available())) {
+        GenerateArticle(1)
+      }
+    }
+    BitVariableSet(RA-Bool[0x11])
+  }
+}

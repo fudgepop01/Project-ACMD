@@ -1,0 +1,32 @@
+[Swing3] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x129 : MAIN {
+  AsynchronousTimer(5.0)
+  SubRoutine(EXTERNAL: gameAnimCmd_BatSwing3Common)
+  MoveHitbox(2, 21, 0.0, 0.0, 0.0)
+  MoveHitbox(3, 40, 0.0, 0.0, 0.0)
+  AsynchronousTimer(8.0)
+  TerminateCollisions()
+}
+
+Subaction 0x129 : GFX {
+}
+
+Subaction 0x129 : SOUND {
+}
+
+Subaction 0x129 : OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(6.0)
+  Rumble(17, 0)
+}
+

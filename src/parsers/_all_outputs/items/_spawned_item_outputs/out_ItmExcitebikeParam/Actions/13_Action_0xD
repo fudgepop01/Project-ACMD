@@ -1,0 +1,11 @@
+// Status_Fly
+Action 0xD {
+  ChangeAction(3, R(In Air()))
+  if (R(Is within footstool range())) {
+    ChangeAction(14, R(Button Tap?()))
+  } else {
+    ChangeAction(3, R(In Air()))
+    ChangeAction(12, R(In walljump situation()), 6)
+  }
+}
+

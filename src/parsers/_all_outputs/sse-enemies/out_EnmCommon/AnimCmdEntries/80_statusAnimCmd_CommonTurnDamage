@@ -1,0 +1,13 @@
+// @ 0x35D8
+CommonTurnDamage {
+  (undef: Sp_Kinetic) 66_00_02_00(1, 8)
+  if (R(On Ground())) {
+    (undef: Sp_Kinetic) 66_00_02_00(1, 4)
+  }
+  if (R(In Air())) {
+    (undef: Sp_Kinetic) 66_00_02_00(1, 3)
+  }
+  (undef: Sp_Kinetic) 66_00_04_00(0, 9, 35791.0, 0)
+  SetHitlagForce(LA-Int[0x0C])
+  Return()
+}

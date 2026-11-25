@@ -1,0 +1,12 @@
+Action 0x115: ENTRY {
+  if (R(Compare(LA-Float[0x13] >= 3.0))) {
+    BitVariableClear(LA-Bool[0x3D])
+    EndFlashingEffect(26)
+    ChangeAction(283, R(Button Tap?()))
+  } else {
+    ChangeAction(281, R(Button Tap?()))
+  }
+}
+
+Action 0x115 : EXIT {
+}

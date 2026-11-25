@@ -1,0 +1,12 @@
+// Status_Bind
+Action 0x5F: ENTRY {
+  ChangeAction(14, R(In Air()))
+
+  ChangeAction(91, R(Button Mashable Status Expired()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeSubAction(197)
+}
+
+Action 0x5F : EXIT {
+}

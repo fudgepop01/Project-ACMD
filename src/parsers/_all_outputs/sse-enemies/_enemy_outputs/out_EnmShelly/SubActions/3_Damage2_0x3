@@ -1,0 +1,44 @@
+[Damage2] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x3: MAIN {
+  SpecialOffensiveCollisionEnemyHitbox(1, 1, 38, 0, 0.0, 0, 100, 0.0, 13, 0.0, 0, 0.0, 8.0, 0.0, 0.0, -9.0, -13.5, 0, 0.0, 0.0, 1.0, false, true, 0, 3, 0, 3, true, 0, 1, false, 9, false, false, false, false, 3, true, false, 2, false, false, true, true, true, 1, LA-Float[0x0C])
+  BodyCollision(2)
+  AsynchronousTimer(30.0)
+  BodyCollision(0)
+}
+
+Subaction 0x3: MAIN EXIT {
+}
+
+Subaction 0x3: MAIN INIT {
+}
+
+Subaction 0x3: GFX {
+  GraphicEffect(11075585, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x3: GFX EXIT {
+}
+
+Subaction 0x3: GFX INIT {
+}
+
+Subaction 0x3: SFX {
+  SoundEffect(9419)
+}
+
+Subaction 0x3: SFX EXIT {
+}
+
+Subaction 0x3: SFX INIT {
+}
+

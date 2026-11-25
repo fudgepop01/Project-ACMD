@@ -1,0 +1,31 @@
+Action 0x11A: ENTRY {
+  BitVariableClear(RA-Bool[0x13])
+  BitVariableClear(RA-Bool[0x14])
+  BitVariableClear(RA-Bool[0x16])
+  BitVariableClear(RA-Bool[0x18])
+  BitVariableClear(RA-Bool[0x19])
+  BitVariableClear(RA-Bool[0x1A])
+  BitVariableClear(RA-Bool[0x17])
+  if (R(On Ground())) {
+    ChangeSubAction(480)
+  } else {
+    ChangeSubAction(481)
+  }
+  Module0900(2)
+  SetAerialOrOnstage(5)
+  SetAirGround(17)
+  ChangeAction(286, R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeAction(283, R(Bit is Set(RA-Bool[0x13])))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x19])))
+
+  SetPassableCheck(false)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1999C)
+}
+
+Action 0x11A : EXIT {
+  SetPassableCheck(true)
+}

@@ -1,0 +1,9 @@
+[hsr_118]
+hidden_subroutine_0x118 {
+  InertCollision(0, 0, 0, 1.0, 0.0, 0.0, 0.0, 1, 1023, 3, false, 15, 15, false, 0, false, 0)
+  ChangeActionStatus(7, 7, R(Bit is Set(RA-Bool[0x05])))
+  ChangeAction(6, R(In walljump situation()), 255)
+  ChangeAction(6, R(Bit is Set(RA-Bool[0x03])))
+  ChangeActionStatus(4, 4, R(On Ground()))
+  Return()
+}

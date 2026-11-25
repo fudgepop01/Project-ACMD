@@ -1,0 +1,43 @@
+[HandOpen] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1 : GAME {
+}
+
+Subaction 0x1 : GFX {
+  AsynchronousTimer(10.0)
+  GraphicEffectAttached(11, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.28, true)
+  AsynchronousTimer(24.0)
+  GraphicEffectAttached(11, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.26, true)
+  AsynchronousTimer(37.0)
+  GraphicEffectAttached(11, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.29, true)
+  AsynchronousTimer(49.0)
+  GraphicEffectAttached(11, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.28, true)
+  AsynchronousTimer(61.0)
+  GraphicEffectAttached(11, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.27, true)
+  AsynchronousTimer(74.0)
+  GraphicEffectAttached(11, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.26, true)
+  AsynchronousTimer(75.0)
+  GraphicEffectAttached(13893642, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(76.0)
+  GraphicEffectAttached(53, 0, 0.0, 7.0, 0.0, 0.0, 0.0, 0.0, 5.0, true)
+  GraphicEffectAttached(16, 0, 0.0, 7.0, 0.0, 0.0, 0.0, 0.0, 2.0, true)
+}
+
+Subaction 0x1 : SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(7742)
+  SynchronousTimer(72.0)
+  SoundEffect(7743)
+  SynchronousTimer(1.0)
+  StopSoundEffect(7742)
+}
+

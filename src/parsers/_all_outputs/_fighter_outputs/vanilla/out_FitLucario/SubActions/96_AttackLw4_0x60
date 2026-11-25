@@ -1,0 +1,57 @@
+[AttackLw4] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x60: MAIN {
+  FrameSpeedModifier(1.7)
+  AsynchronousTimer(17.0)
+  FrameSpeedModifier(0.8)
+  OffensiveCollision(Sp(0, 0), 14, 361, Sp(0, 100), Sp(0, 25), 3.75, 0.0, 6.0, 4.0, 0.0, 1.15, 1.0, 956509333)
+  OffensiveCollision(Sp(0, 1), 14, 361, Sp(0, 100), Sp(0, 25), 3.75, 0.0, 6.0, -6.0, 0.0, 1.15, 1.0, 956509333)
+  OffensiveCollision(Sp(0, 2), 14, 361, Sp(0, 100), Sp(0, 25), 5.0, 0.0, 6.0, 11.0, 0.0, 1.15, 1.0, 956509333)
+  OffensiveCollision(Sp(0, 3), 14, 361, Sp(0, 100), Sp(0, 25), 5.0, 0.0, 6.0, -13.0, 0.0, 1.15, 1.0, 956509333)
+  SynchronousTimer(4.0)
+  TerminateCollisions()
+  AsynchronousTimer(48.0)
+  AllowInterrupt()
+}
+
+Subaction 0x60: GFX {
+  AsynchronousTimer(15.5)
+  GraphicEffectLanding(9, 0, 0.0, 0.0, -2.0, 0.0, 0.0, 0.0, 0.7, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GraphicEffect(2228228, 0, 9.0, 6.5, 0.0, 0.0, 0.0, 0.0, 1.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GraphicEffect(2228228, 0, -11.0, 6.5, 0.0, 0.0, 180.0, 0.0, 1.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GraphicEffectAttached(2228226, 29, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, true)
+  GraphicEffectAttached(2228227, 49, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, true)
+  Goto(hidden_subroutine_0xC2B8)
+}
+
+Subaction 0x60: SOUND {
+  AsynchronousTimer(15.5)
+  StopSoundEffect(105)
+  SubRoutine(hidden_subroutine_0x25A28)
+  SynchronousTimer(0.0)
+  SoundEffect(168)
+  SoundEffect(115)
+  SoundEffect(5831)
+}
+
+Subaction 0x60: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(1.0)
+  SlopeContourStand02(2, 2)
+  AsynchronousTimer(10.0)
+  SlopeContourStand02(1, 5)
+  AsynchronousTimer(17.0)
+  Rumble(17, 0)
+  AsynchronousTimer(36.0)
+  SlopeContourStand02(6, 6)
+}
+

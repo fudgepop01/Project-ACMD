@@ -1,0 +1,11 @@
+// @ 0x2336C
+SwordSwing4Common {
+  OffensiveCollision(Sp(305, 0), 12, 361, Sp(0, 80), Sp(6, 50), 4.3, 0.0, 30.0, -2.0, 0.0, 1.0, 1.0, 1044579970)
+  OffensiveCollision(Sp(305, 1), 11, 361, Sp(0, 80), Sp(6, 50), 6.0, 0.0, 21.0, -2.0, 0.0, 1.0, 1.0, 1044579970)
+  OffensiveCollision(Sp(305, 2), 11, 361, Sp(0, 80), Sp(6, 50), 6.0, 0.0, 12.0, -2.0, 0.0, 1.0, 1.0, 641926786)
+  OffensiveCollision(Sp(305, 4), 12, 361, Sp(0, 80), Sp(6, 50), 6.0, 0.0, 4.0, -2.0, 0.0, 1.0, 1.0, 1044579970)
+  OffensiveCollision(Sp(305, 3), 12, 361, Sp(0, 80), Sp(6, 50), 3.0, 0.0, -4.0, -2.0, 0.0, 1.0, 1.0, 1044579970)
+  SoundEffect(8063)
+  WeaponOperation(100)
+  SubRoutine(effectAnimCmd_Swing4Impact)
+}

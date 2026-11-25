@@ -1,0 +1,7 @@
+// Status_Run
+Action 0x4 {
+  SubRoutine(Action_0x0)
+  DisableActionStatusId(4)
+  ChangeAction(6, R(On Ground()))
+}
+

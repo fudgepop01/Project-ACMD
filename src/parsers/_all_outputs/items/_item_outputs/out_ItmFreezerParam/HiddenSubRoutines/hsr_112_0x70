@@ -1,0 +1,7 @@
+[hsr_70]
+hidden_subroutine_0x70 {
+  ChangeAction(7, R(Bit is Set(RA-Bool[0x03])))
+  ChangeAction(7, R(Bit is Set(RA-Bool[0x02])))
+  ChangeActionStatus(4, 4, R(On Ground()))
+  Return()
+}

@@ -1,0 +1,109 @@
+Action 0x113: ENTRY {
+  BitVariableClear(RA-Bool[0x10])
+  BasicVariableSet(-1, RA-Int[0x02])
+  BasicVariableSet(0, RA-Int[0x00])
+  BasicVariableSet(-1, RA-Int[0x01])
+  FloatVariableSet(IC-Int[0x5DC3], LA-Float[0x00])
+  FloatVariableSet(IC-Int[0xFAE], LA-Float[0x01])
+  BitVariableSet(LA-Bool[0x03])
+  SetDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1CC28)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      EnableDisableLedgegrab(0)
+      Switch(10000, RA-Int[0x00])
+        Case(0)
+          SetAirGround(6)
+          SetAerialOrOnstage(1)
+          if (R(Bit is Set(RA-Bool[0x10]))) {
+            ChangeSubAction(468, true)
+          } else {
+            ChangeSubAction(468)
+            BitVariableSet(RA-Bool[0x10])
+          }
+          SetRequirement(R(In Air()))
+          SetRequirement(R(Animation End()))
+        Case(1)
+          SetAirGround(15)
+          (undef: kinetic) 0E_0A_01_00(0)
+          SetAerialOrOnstage(1)
+          if (R(Bit is Set(RA-Bool[0x10]))) {
+            ChangeSubAction(469, true)
+          } else {
+            ChangeSubAction(469)
+            BitVariableSet(RA-Bool[0x10])
+          }
+          SetRequirement(R(Bit is Set(RA-Bool[0x11])))
+          SetRequirement(R(In Air()))
+          SetRequirement(R(Animation End()))
+        Case(2)
+          SetAirGround(6)
+          SetAerialOrOnstage(2)
+          if (R(Bit is Set(RA-Bool[0x10]))) {
+            ChangeSubAction(470, true)
+          } else {
+            ChangeSubAction(470)
+            BitVariableSet(RA-Bool[0x10])
+          }
+          ChangeAction(16, R(In Air()))
+
+          ChangeAction(0, R(Animation End()))
+          AdditionalRequirement(R(On Ground()))
+
+      EndSwitch()
+    } else {
+      SetAerialOrOnstage(5)
+      Switch(10000, RA-Int[0x00])
+        Case(0)
+          SetAirGround(10)
+          if (R(Bit is Set(RA-Bool[0x10]))) {
+            ChangeSubAction(471, true)
+          } else {
+            ChangeSubAction(471)
+            BitVariableSet(RA-Bool[0x10])
+          }
+          SetRequirement(R(On Ground()))
+          SetRequirement(R(Animation End()))
+        Case(1)
+          SetAirGround(17)
+          if (R(Bit is Set(RA-Bool[0x10]))) {
+            ChangeSubAction(472, true)
+          } else {
+            ChangeSubAction(472)
+            BitVariableSet(RA-Bool[0x10])
+          }
+          SetRequirement(R(Bit is Set(RA-Bool[0x11])))
+          SetRequirement(R(On Ground()))
+          SetRequirement(R(Animation End()))
+          SelectCliffHangData(2)
+          EnableDisableLedgegrab(1)
+        Case(2)
+          SetAirGround(10)
+          if (R(Bit is Set(RA-Bool[0x10]))) {
+            ChangeSubAction(473, true)
+          } else {
+            ChangeSubAction(473)
+            BitVariableSet(RA-Bool[0x10])
+          }
+
+          ChangeAction(16, R(Animation End()))
+          AdditionalRequirement(R(In Air()))
+
+          ChangeAction(25, R(On Ground()))
+          EnableDisableLedgegrab(2)
+      EndSwitch()
+    }
+    LoadRest()
+    if (R(NOT Bit is Set(RA-Bool[0x11]))) {
+      if (R(Animation End())) {
+        BasicVariableIncrement(RA-Int[0x00])
+        BitVariableClear(RA-Bool[0x10])
+      }
+    }
+  }
+}
+
+Action 0x113 : EXIT {
+}

@@ -1,0 +1,23 @@
+[hsr_498C]
+hidden_subroutine_0x498C {
+  if (R(Successfully tethered ledge())) {
+    if [IF_REQ_UNKNOWN_3ARG] (R(0x12()), 7, Variable_Int_Controller_Flick_No_Reset_Y) {
+      (undef: Sp_Area) 69_00_01_00(Variable_Int_Controller_Flick_No_Reset_Y)
+    }
+    if (R(0x2710())) {
+      if [IF_REQ_UNKNOWN_3ARG] (R(Can Pick Up Another Item()), Variable_Int_Controller_Flick_No_Reset_Y, 3) {
+        (undef: Sp_Kinetic) 66_00_02_00(5, 27)
+      } ELSEIF_REQ_UNKNOWN_3ARG (R(Can Pick Up Another Item()), Variable_Int_Controller_Flick_No_Reset_Y, 2) {
+        (undef: Sp_Kinetic) 66_00_02_00(5, 26)
+      }
+    } else {
+      if [IF_REQ_UNKNOWN_3ARG] (R(Tap Jump On & C-Stick not Held()), 5, 26 &&[3A] R(Can Pick Up Another Item()), Variable_Int_Controller_Flick_No_Reset_Y, 3) {
+        (undef: Sp_Kinetic) 66_00_02_00(5, 27)
+      }
+      if [IF_REQ_UNKNOWN_3ARG] (R(Tap Jump On & C-Stick not Held()), 5, 27 &&[3A] R(Can Pick Up Another Item()), Variable_Int_Controller_Flick_No_Reset_Y, 2) {
+        (undef: Sp_Kinetic) 66_00_02_00(5, 26)
+      }
+    }
+  }
+  Return()
+}

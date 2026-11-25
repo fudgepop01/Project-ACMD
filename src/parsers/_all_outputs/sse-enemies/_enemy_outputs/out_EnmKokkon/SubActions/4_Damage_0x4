@@ -1,0 +1,60 @@
+[Damage] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x4: MAIN {
+}
+
+Subaction 0x4: MAIN EXIT {
+}
+
+Subaction 0x4: MAIN INIT {
+}
+
+Subaction 0x4: GFX {
+  SetLoop(-1) {
+    GraphicEffectAttached2(10813442, 20, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+    GraphicEffectAttached2(10813443, 20, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+    SynchronousTimer(13.0)
+    GraphicEffectAttached2(10813442, 19, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+    GraphicEffectAttached2(10813443, 19, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+    SynchronousTimer(7.0)
+    GraphicEffectAttached2(10813442, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+    GraphicEffectAttached2(10813443, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+    SynchronousTimer(11.0)
+    GraphicEffectAttached2(10813442, 5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+    GraphicEffectAttached2(10813443, 5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+    SynchronousTimer(14.0)
+    GraphicEffectAttached2(10813442, 20, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+    SynchronousTimer(13.0)
+    GraphicEffectAttached2(10813442, 19, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+    SynchronousTimer(7.0)
+    GraphicEffectAttached2(10813442, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+    SynchronousTimer(11.0)
+    GraphicEffectAttached2(10813442, 5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+    SynchronousTimer(35.0)
+  }
+}
+
+Subaction 0x4: GFX EXIT {
+}
+
+Subaction 0x4: GFX INIT {
+}
+
+Subaction 0x4: SFX {
+}
+
+Subaction 0x4: SFX EXIT {
+}
+
+Subaction 0x4: SFX INIT {
+}
+

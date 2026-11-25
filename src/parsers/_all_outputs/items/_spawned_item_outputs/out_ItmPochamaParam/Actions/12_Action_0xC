@@ -1,0 +1,9 @@
+// Status_Jump_Aerial
+Action 0xC {
+  ChangeAction(3, R(In Air()))
+  ChangeSubAction(2)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeAction(13, R(Button Tap?()))
+}
+

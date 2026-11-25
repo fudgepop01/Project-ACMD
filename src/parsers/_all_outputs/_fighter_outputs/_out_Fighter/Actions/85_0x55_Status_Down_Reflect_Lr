@@ -1,0 +1,9 @@
+// Status_Down_Reflect_Lr
+Action 0x55: ENTRY {
+  ChangeActionStatus(10005, 73, R(Animation End()))
+  ChangeActionStatus(10012, 76, R(On Ground()))
+  ConcurrentInfiniteLoop(I(9), statusAnimCmd_FALLCommonUniq)
+}
+
+Action 0x55 : EXIT {
+}

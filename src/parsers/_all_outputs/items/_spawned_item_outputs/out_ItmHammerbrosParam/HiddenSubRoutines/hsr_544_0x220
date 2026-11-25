@@ -1,0 +1,28 @@
+[hsr_220]
+hidden_subroutine_0x220 {
+  (undef: Sp_base) 65_07_01_00(2)
+  if (R(2714(1))) {
+    if (R(Compare(LA-Int[0x00] == 1.0))) {
+      LeftDirection()
+      ChangeSubAction(2)
+      SetRequirement(R(Animation End()))
+      LoadRest()
+      RightDirection()
+      ChangeSubAction(1)
+      BasicVariableSet(0, LA-Int[0x00])
+    }
+  } else {
+    if (R(Compare(LA-Int[0x00] == 0.0))) {
+      RightDirection()
+      ChangeSubAction(2)
+      SetRequirement(R(Animation End()))
+      LoadRest()
+      LeftDirection()
+      ChangeSubAction(1)
+      BasicVariableSet(1, LA-Int[0x00])
+    }
+  }
+  DecideDirection()
+  CharacterSpecific01()
+  Return()
+}

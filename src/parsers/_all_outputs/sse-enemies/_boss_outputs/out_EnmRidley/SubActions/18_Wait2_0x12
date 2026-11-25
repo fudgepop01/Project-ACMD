@@ -1,0 +1,52 @@
+[Wait2] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x12: MAIN {
+  AsynchronousTimer(1.0)
+  SubRoutine(hidden_subroutine_0x33A8)
+}
+
+Subaction 0x12: MAIN EXIT {
+}
+
+Subaction 0x12: MAIN INIT {
+}
+
+Subaction 0x12: GFX {
+  AsynchronousTimer(60.0)
+  GraphicEffectAttached(12451970, 48, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+}
+
+Subaction 0x12: GFX EXIT {
+}
+
+Subaction 0x12: GFX INIT {
+}
+
+Subaction 0x12: SFX {
+  SynchronousTimer(8.0)
+  SoundEffect(9734)
+  SynchronousTimer(44.0)
+  SoundEffect(9736)
+  SynchronousTimer(10.0)
+  SoundEffect(9734)
+  SynchronousTimer(53.0)
+  SoundEffect(9727)
+  SynchronousTimer(53.0)
+  SoundEffect(9727)
+}
+
+Subaction 0x12: SFX EXIT {
+}
+
+Subaction 0x12: SFX INIT {
+}
+

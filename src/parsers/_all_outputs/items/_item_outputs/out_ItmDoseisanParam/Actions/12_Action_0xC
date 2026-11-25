@@ -1,0 +1,8 @@
+// Status_Jump_Aerial
+Action 0xC {
+  SubRoutine(hidden_subroutine_0x40)
+  DisableActionStatusId(12)
+  (undef: Sp_Kinetic) 66_02_02_00(0.25, 0.0)
+  ChangeAction(4, R(On Ground()))
+}
+

@@ -1,0 +1,40 @@
+IC-Int[0x3F1] ("Variable_Float_Kinetic_Energy_Damage_Speed_Y_Rv") in Action 0x1 (Status_Walk) @ 10 : 0
+
+IC-Int[0x3F2] in Action 0x1 (Status_Walk) @ 10 : 1
+
+LA-Int[0x1B] in Subaction 0x0 : SOUND @ 0 : 1
+
+LA-Float[0x00] in Action 0x5 (Status_Run_Brake) @ 6 : 2
+LA-Float[0x00] in Action 0x5 (Status_Run_Brake) @ 8 : 1
+LA-Float[0x00] in Action 0x5 (Status_Run_Brake) @ 10 : 3
+
+LA-Float[0x01] in Action 0x5 (Status_Run_Brake) @ 7 : 2
+LA-Float[0x01] in Action 0x5 (Status_Run_Brake) @ 9 : 1
+LA-Float[0x01] in Action 0x5 (Status_Run_Brake) @ 10 : 4
+
+LA-Float[0x07] in Action 0x5 (Status_Run_Brake) @ 8 : 0
+
+LA-Float[0x08] in Action 0x5 (Status_Run_Brake) @ 9 : 0
+
+LA-Bool[0x06] in Action 0x5 (Status_Run_Brake) @ 17 : 1
+
+RA-Float[0x00] in Action 0x5 (Status_Run_Brake) @ 4 : 1
+RA-Float[0x00] in Action 0x5 (Status_Run_Brake) @ 10 : 0
+RA-Float[0x00] in Action 0x5 (Status_Run_Brake) @ 11 : 2
+
+RA-Float[0x01] in Action 0x5 (Status_Run_Brake) @ 4 : 2
+RA-Float[0x01] in Action 0x5 (Status_Run_Brake) @ 10 : 1
+RA-Float[0x01] in Action 0x5 (Status_Run_Brake) @ 11 : 3
+
+RA-Float[0x02] in Action 0x5 (Status_Run_Brake) @ 4 : 3
+RA-Float[0x02] in Action 0x5 (Status_Run_Brake) @ 10 : 2
+RA-Float[0x02] in Action 0x5 (Status_Run_Brake) @ 11 : 4
+
+RA-Float[0x03] in Action 0x5 (Status_Run_Brake) @ 10 : 6
+RA-Float[0x03] in Action 0x5 (Status_Run_Brake) @ 11 : 5
+
+RA-Float[0x04] in Action 0x5 (Status_Run_Brake) @ 10 : 7
+RA-Float[0x04] in Action 0x5 (Status_Run_Brake) @ 11 : 6
+
+RA-Float[0x05] in Action 0x5 (Status_Run_Brake) @ 10 : 8
+RA-Float[0x05] in Action 0x5 (Status_Run_Brake) @ 11 : 7

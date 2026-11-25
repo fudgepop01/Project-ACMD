@@ -1,0 +1,5 @@
+[hsr_19B48]
+hidden_subroutine_0x19B48 {
+  BasicVariableDecrement(RA-Int[0x02])
+  BasicVariableDecrement(RA-Int[0x03])
+}

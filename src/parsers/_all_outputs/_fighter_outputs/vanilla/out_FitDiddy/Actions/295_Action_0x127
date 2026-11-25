@@ -1,0 +1,10 @@
+Action 0x127: ENTRY {
+  ChangeAction(16, R(Animation End()))
+  ChangeAction(25, R(On Ground()))
+  EnableDisableLedgegrab(2)
+  ChangeSubAction(493)
+}
+
+Action 0x127 : EXIT {
+  SuperHeavyArmor(0, 0.0)
+}

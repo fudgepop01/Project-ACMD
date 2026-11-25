@@ -1,0 +1,14 @@
+// Status_Damage_Fly_Reflect_Lr
+Action 0x47: ENTRY {
+
+  ChangeActionStatus(10005, 73, R(Animation End()))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x11])))
+
+  BasicVariableIncrement(LA-Int[0x3D])
+  SubRoutine(hidden_subroutine_0x1424C)
+  SubRoutine(hidden_subroutine_0xB37C)
+  SubRoutine(hidden_subroutine_0xB1FC)
+}
+
+Action 0x47 : EXIT {
+}

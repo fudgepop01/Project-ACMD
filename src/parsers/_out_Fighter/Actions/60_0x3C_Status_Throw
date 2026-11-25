@@ -1,0 +1,18 @@
+// Status_Throw
+[statusAnimCmd_Throw]
+Action 0x3C: ENTRY {
+
+  ChangeAction(14, R(In Air()))
+  AdditionalRequirement(R(NOT Is Holding Someone in a Grab()))
+
+  ChangeAction(266, R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeSubAction(RA-Int[0x00], false, RA-Float[0x04])
+  SubRoutine(statusAnimCmd_ThrowLogCommon)
+}
+
+Action 0x3C : EXIT {
+}

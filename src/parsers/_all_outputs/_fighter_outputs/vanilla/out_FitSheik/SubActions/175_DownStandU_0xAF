@@ -1,0 +1,35 @@
+[DownStandU] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xAF: MAIN {
+  BodyCollision(2)
+  AsynchronousTimer(19.0)
+  BodyCollision(0)
+  AsynchronousTimer(29.0)
+  AllowInterrupt()
+}
+
+Subaction 0xAF: GFX {
+}
+
+Subaction 0xAF: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(4074)
+}
+
+Subaction 0xAF: OTHER {
+  SlopeContourStand03(1, 6, true)
+  AsynchronousTimer(8.0)
+  SlopeContourStand02(0, 10)
+  AsynchronousTimer(19.0)
+  SlopeContourStand02(6, 5)
+}
+

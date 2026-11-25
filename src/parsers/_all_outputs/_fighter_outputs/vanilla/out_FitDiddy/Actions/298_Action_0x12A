@@ -1,0 +1,9 @@
+Action 0x12A: ENTRY {
+  BitVariableSet(RA-Bool[0x17])
+  ChangeAction(25, R(On Ground()))
+  AllowSpecificInterrupt(AIR_CLIFF)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1B5A0)
+}
+
+Action 0x12A : EXIT {
+}

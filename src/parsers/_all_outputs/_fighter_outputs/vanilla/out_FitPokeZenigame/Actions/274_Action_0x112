@@ -1,0 +1,34 @@
+Action 0x112: ENTRY {
+
+  ChangeAction(280, R(Animation End()))
+  AdditionalRequirement(R(Compare(LA-Int[0x40] >= IC-Int[0x5DC0])))
+
+  ChangeAction(279, R(Animation End()))
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(6)
+      SetAerialOrOnstage(2)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(463, true)
+      } else {
+        ChangeSubAction(463)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAirGround(0)
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(467, true)
+      } else {
+        ChangeSubAction(467)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x112 : EXIT {
+}

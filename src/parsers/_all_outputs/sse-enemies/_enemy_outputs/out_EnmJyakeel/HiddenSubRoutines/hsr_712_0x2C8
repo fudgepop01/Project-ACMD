@@ -1,0 +1,9 @@
+[hsr_2C8]
+hidden_subroutine_0x2C8 {
+  GraphicEffectAttached(10092556, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(10092557, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(10092558, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(10092559, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(10092560, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached2(10092561, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+}

@@ -1,0 +1,11 @@
+// @ 0xF774
+LandingLight {
+  ChangeAction(14, R(In Air()))
+  ChangeSubAction(49)
+  if (R(NOT Bit is Set(LA-Bool[0x0B])) && R(NOT Compare(Variable_Int_Have_Item_Kind == 0.0))) {
+    SubRoutine(hidden_subroutine_0x43FC)
+    ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x41A4)
+  } else {
+    ChangeAction(0, R(Animation End()))
+  }
+}

@@ -1,0 +1,56 @@
+[JumpAxLoop] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x4: MAIN {
+  (undef: Sp_Link) 6E_02_02_00(0, O(0x000026C8))
+}
+
+Subaction 0x4: MAIN EXIT {
+}
+
+Subaction 0x4: MAIN INIT {
+  SubRoutine(hidden_subroutine_0x2898)
+}
+
+Subaction 0x4: GFX {
+  SwordGlow(36, 5, 19, 0.0, -24.769, 5.571, 19, 0.0, -50.472, 5.571, false, 0, 19, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  SwordGlow(36, 5, 13, 0.0, 24.769, -5.571, 13, 0.0, 50.472, -5.571, false, 0, 13, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+}
+
+Subaction 0x4: GFX EXIT {
+  TerminateSwordGlow(5)
+}
+
+Subaction 0x4: GFX INIT {
+}
+
+Subaction 0x4: SFX {
+  SoundEffect(9330)
+  SynchronousTimer(6.0)
+  SoundEffect(9330)
+  SynchronousTimer(6.0)
+  SoundEffect(9330)
+  SynchronousTimer(6.0)
+  SoundEffect(9330)
+  SynchronousTimer(6.0)
+  SoundEffect(9330)
+  SynchronousTimer(1.0)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0x4 : SFX)
+}
+
+Subaction 0x4: SFX EXIT {
+}
+
+Subaction 0x4: SFX INIT {
+}
+

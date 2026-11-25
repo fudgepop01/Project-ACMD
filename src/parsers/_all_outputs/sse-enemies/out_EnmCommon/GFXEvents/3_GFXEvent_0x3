@@ -1,0 +1,12 @@
+// @ 0x550
+GFXEvent_0x3 {
+  SetLoop(2) {
+    GraphicEffect(18, -1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+    SubRoutine(hidden_subroutine_0x3B8)
+  }
+  SetLoop(1) {
+    SubRoutine(hidden_subroutine_0x470)
+  }
+  TerminateFlashEffect()
+  Return()
+}

@@ -1,0 +1,26 @@
+Action 0xE: MAIN {
+  SetLoop(-1) {
+    if (R(2714(ERRVALUE)) && R(In Air())) {
+      (undef: Sp_Kinetic) 66_09_02_00(3, 24)
+      (undef: Sp_Kinetic) 66_00_02_00(4, 25)
+    }
+    if (R(0x2715()) && R(On Ground())) {
+      (undef: Sp_Kinetic) 66_0A_02_00(3, 19)
+      LoopBreak()
+    }
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0xE: EXIT {
+}
+
+Action 0xE: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(15)
+  SubAction09(11)
+  (undef: Sp_Kinetic) 66_00_02_00(5, 23)
+  (undef: Sp_Kinetic) 66_0B_02_00(3, 24)
+  (undef: Sp_Kinetic) 66_00_02_00(4, 25)
+}
+

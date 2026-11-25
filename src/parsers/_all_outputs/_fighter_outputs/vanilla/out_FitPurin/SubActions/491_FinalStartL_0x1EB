@@ -1,0 +1,44 @@
+[FinalStartL] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1EB: MAIN {
+  BodyCollision(2)
+  CameraCloseup_UNDOC1ARGS(15)
+  SetSlowEffectEnemyFighter(4, 30)
+  SynchronousTimer(40.0)
+  NormalCamera()
+  ModelChangerPermanent(0, -1)
+  BitVariableSet(RA-Bool[0x11])
+  SpecialOffensiveCollision(Sp(3, 0), 0, 0, Sp(40, 100), Sp(0, 0), 5.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 591594624, 2, -166723648)
+  SpecialOffensiveCollision(Sp(13, 1), 0, 0, Sp(40, 100), Sp(0, 0), 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 591594624, 2, -166723648)
+  SpecialOffensiveCollision(Sp(29, 2), 0, 0, Sp(40, 100), Sp(0, 0), 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 591594624, 2, -166723648)
+}
+
+Subaction 0x1EB: GFX {
+  AsynchronousTimer(40.0)
+  GraphicEffectAttached(16711681, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+}
+
+Subaction 0x1EB: SOUND {
+  AsynchronousTimer(33.0)
+  SoundEffectTransient(6053)
+  SoundEffect(6132)
+  SynchronousTimer(67.0)
+}
+
+Subaction 0x1EB: OTHER {
+  UnkRaBit27(false)
+  SetTagDisplay(false)
+  AsynchronousTimer(41.0)
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+}
+

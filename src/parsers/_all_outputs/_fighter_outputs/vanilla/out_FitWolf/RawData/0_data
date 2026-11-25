@@ -1,0 +1,33 @@
+data {
+  subactionFlagsStart: 0x0001FC40
+  modelVisibilityStart: 0x00022AE8
+  attributeStart: 0x00000000
+  sseAttributeStart: 0x000002E4
+  miscSectionOffset: 0x0002373C
+  commonActionFlagsStart: 0x000005C8
+  actionFlagsStart: 0x0001DBF8
+  extraActionFlags: 0x000016E8
+  actionInterrupts: 0x000234CC
+  entryActionsStart: 0x0001DCD8
+  exitActionsStart: 0x0001DD10
+  actionPreStart: 0x0001DD48
+  subactionMainStart: 0x00020BB0
+  subactionGfxStart: 0x00021368
+  subactionSfxStart: 0x00021B20
+  subactionOtherStart: 0x000222D8
+  anchoredItemPositions: 0x000234D4
+  gooeyBombPositions: 0x0002352C
+  boneRef1: 0x0002367C
+  boneRef2HandBones: 0x00022B60
+  entryActionOverridesStart: 0x0002378C
+  exitActionOverridesStart: 0x00000000
+  extraActionInterrupts: 0x00000000
+  samusArmCannonPositions: 0x00000000
+  unknown24: 0x00000000
+  staticArticlesStart: 0x00000000
+  entryArticlesStart: 0x00022E0C
+  flags1: 0x00000000
+  flags2: 0x00000001
+  flags3: 0x0000735F
+  flags4: 0xFFFFFFFF
+}

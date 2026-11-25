@@ -1,0 +1,39 @@
+[FuraSleepLoop] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xCA: MAIN {
+}
+
+Subaction 0xCA: GFX {
+  AsynchronousTimer(25.0)
+  GraphicEffectAttached2(47, 34, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, false)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0xCA : GFX)
+}
+
+Subaction 0xCA: SOUND {
+  SoundEffectTransient(2053)
+  SynchronousTimer(1.0)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0xCA : SFX)
+}
+
+Subaction 0xCA: OTHER {
+  SlopeContourStand03(1, 6, true)
+  RumbleLoop(26, 0)
+  SynchronousTimer(1.0)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0xCA : OTHER)
+}
+

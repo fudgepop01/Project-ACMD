@@ -1,0 +1,8 @@
+[hsr_1B450]
+hidden_subroutine_0x1B450 {
+  if (R(Bit is Set(RA-Bool[0x11]))) {
+    EnableSpecifiedMovement(1)
+  } else {
+    DisableSpecifiedMovement(1)
+  }
+}

@@ -1,0 +1,7 @@
+// @ 0x3B70
+CommonAICheckDeathFigure {
+  if (R(Bit is Set(LA-Bool[0x0F]))) {
+    BitVariableSet(RA-Bool[0x04])
+  }
+  Return()
+}

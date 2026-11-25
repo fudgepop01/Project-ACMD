@@ -1,0 +1,38 @@
+[SpecialAirSStartGround] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x51 : MAIN {
+  SetAnimationFrame(36.0)
+  BitVariableClear(RA-Bool[0x11])
+  BitVariableSet(RA-Bool[0x13])
+  EnableDisableLedgegrab(2)
+  SetAerialOrOnstage(5)
+  TerminateCollisions()
+  TerminateConcurrentInfiniteLoop(9)
+  SynchronousTimer(1.0)
+  SetAirGround(0)
+  FloatVariableSet(Variable_Float_Kinetic_Sum_Speed_X_Lr, RA-Float[0x0A])
+  FloatVariableMultiply(0.4, RA-Float[0x0A])
+  SetAddMomentum(0.0, 0.0, 0.0, 1)
+  AddSubtractMomentum(RA-Float[0x0A], 0.0)
+  NoEvent()
+  NoEvent()
+}
+
+Subaction 0x51 : GFX {
+}
+
+Subaction 0x51 : SOUND {
+}
+
+Subaction 0x51 : OTHER {
+}
+

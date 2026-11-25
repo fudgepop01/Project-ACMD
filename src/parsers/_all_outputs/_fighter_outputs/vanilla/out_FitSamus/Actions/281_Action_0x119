@@ -1,0 +1,17 @@
+Action 0x119: ENTRY {
+  ChangeSubAction(463)
+  SetAirGround(6)
+  ChangeActionStatus(0, 284, R(In Air()))
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  DisableActionStatusId(0)
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+}
+
+Action 0x119 : EXIT {
+}

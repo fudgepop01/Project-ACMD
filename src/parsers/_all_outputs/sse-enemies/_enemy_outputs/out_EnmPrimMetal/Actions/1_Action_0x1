@@ -1,0 +1,37 @@
+Action 0x1: MAIN {
+}
+
+Action 0x1: EXIT {
+}
+
+Action 0x1: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  BitVariableClear(LA-Bool[0x0B])
+  BasicVariableSet(0, LA-Int[0x12])
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 25.0)) || R(Compare(Variable_Int_Status_Prev_Kind == 26.0)) || R(Compare(Variable_Int_Status_Prev_Kind == 22.0)) || R(Compare(Variable_Int_Status_Prev_Kind == 23.0))) {
+    (undef: Sp_AI) 6A_00_01_00(71)
+  } else {
+    if (R(Compare(LA-Int[0x01] >= 1.0))) {
+      BasicVariableSet(0, LA-Int[0x01])
+      (undef: Sp_AI) 6A_00_01_00(20)
+    } else {
+      (undef: Sp_AI) 6A_00_01_00(17)
+    }
+  }
+  if (R(Compare(Variable_Int_Controller_Flick_X_Dir == 31.0))) {
+    SubAction09(62)
+  } else {
+    SubAction09(12)
+  }
+  if (R(0x2715())) {
+    (undef: Sp_Kinetic) 66_0A_02_00(3, 37)
+  } else {
+    (undef: Sp_Kinetic) 66_07_01_00(-1)
+  }
+  if (R(0x11())) {
+    (undef: territory) 15_00_00_00()
+  }
+  BitVariableClear(LA-Bool[0x08])
+  SubRoutine(hidden_subroutine_0x1270)
+}
+

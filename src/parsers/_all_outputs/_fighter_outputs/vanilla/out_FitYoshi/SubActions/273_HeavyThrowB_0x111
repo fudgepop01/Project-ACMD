@@ -1,0 +1,27 @@
+[HeavyThrowB] (flags) {
+  No Out Transition: 1,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x111: MAIN {
+  AsynchronousTimer(20.0)
+  ThrowItem(-10.0, 17.0, Variable_Float_Throw_Item_Angle, Variable_Float_Throw_Item_Speed, Variable_Float_Throw_Item_Power)
+  ReverseDirection()
+}
+
+Subaction 0x111: GFX {
+}
+
+Subaction 0x111: SOUND {
+}
+
+Subaction 0x111: OTHER {
+  AsynchronousTimer(36.0)
+}
+

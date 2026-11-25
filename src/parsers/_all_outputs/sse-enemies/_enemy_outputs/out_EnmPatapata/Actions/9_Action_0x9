@@ -1,0 +1,14 @@
+Action 0x9: MAIN {
+}
+
+Action 0x9: EXIT {
+}
+
+Action 0x9: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(17)
+  (undef: Sp_Kinetic) 66_07_01_00(-1)
+  FloatVariableSet(IC-Int[0xFA4], LA-Float[0x02])
+  BasicVariableSet(7, LA-Int[0x06])
+}
+

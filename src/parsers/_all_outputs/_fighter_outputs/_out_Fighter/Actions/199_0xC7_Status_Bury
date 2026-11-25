@@ -1,0 +1,15 @@
+// Status_Bury
+Action 0xC7: ENTRY {
+  SetGimmickEffectFlag(false)
+  HeldItemsVisibility(false)
+  BasicVariableSet(Common_Param_Int_Bury_Down_Frame, RA-Int[0x00])
+  ChangeAction(201, R(Button Mashable Status Expired()))
+  ChangeAction(201, R(In Air()))
+  ChangeAction(200, R(Compare(RA-Int[0x00] <= 0.0)))
+  SuperHeavyArmor(2, Common_Param_Float_Damage_Bury_Damage_Reaction_Sub)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1CEFC)
+}
+
+Action 0xC7 : EXIT {
+  SuperHeavyArmor(0, 0.0)
+}

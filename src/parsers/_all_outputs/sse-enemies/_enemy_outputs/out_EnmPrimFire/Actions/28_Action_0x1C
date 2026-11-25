@@ -1,0 +1,21 @@
+Action 0x1C: MAIN {
+}
+
+Action 0x1C: EXIT {
+  BitVariableClear(LA-Bool[0x06])
+  BasicVariableSet(0, LA-Int[0x10])
+}
+
+Action 0x1C: INIT {
+  SubRoutine(hidden_subroutine_0x50AC)
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(17)
+  (undef: Sp_AI) 6A_00_01_00(33)
+  SubAction09(15)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 38)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 39)
+  BitVariableClear(LA-Bool[0x06])
+  BasicVariableSet(0, LA-Int[0x10])
+  SubRoutine(hidden_subroutine_0x1270)
+}
+

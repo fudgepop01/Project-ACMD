@@ -1,0 +1,5 @@
+[hsr_1AF44]
+hidden_subroutine_0x1AF44 {
+  ChangeAction(14, R(Animation End()))
+  SubRoutine(statusAnimCmd_ItemShootAir_Common)
+}

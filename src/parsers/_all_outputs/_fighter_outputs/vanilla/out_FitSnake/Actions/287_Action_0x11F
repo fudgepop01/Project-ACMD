@@ -1,0 +1,32 @@
+Action 0x11F: ENTRY {
+  ChangeAction(288, R(Bit is Set(RA-Bool[0x10])))
+  ChangeAction(289, R(Bit is Set(RA-Bool[0x11])))
+  ChangeAction(289, R(Button Press(Shield)))
+  FloatVariableSet(0.0, RA-Float[0x04])
+  FloatVariableSet(0.0, RA-Float[0x05])
+  FloatVariableSet(0.5, RA-Float[0x06])
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SubRoutine(hidden_subroutine_0x19058)
+      ChangeSubAction(496)
+      SetAnimationFrame(Variable_Float_Motion_End_Frame)
+      FrameSpeedModifier(0.0)
+      SubActions0A(495)
+      SubActions0B(0.0)
+      SetRequirement(R(In Air()))
+    } else {
+      SubRoutine(hidden_subroutine_0x190B0)
+      ChangeSubAction(492)
+      SetAnimationFrame(Variable_Float_Motion_End_Frame)
+      FrameSpeedModifier(0.0)
+      SubActions0A(491)
+      SubActions0B(0.0)
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x11F : EXIT {
+  SubRoutine(hidden_subroutine_0x18F70)
+}

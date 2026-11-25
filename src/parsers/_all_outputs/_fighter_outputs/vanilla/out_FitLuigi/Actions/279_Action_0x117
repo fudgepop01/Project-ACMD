@@ -1,0 +1,41 @@
+Action 0x117: ENTRY {
+  ChangeAction(280, R(Button Not Pressed(Special)))
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x17FA0)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(6)
+      SetAerialOrOnstage(1)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(465, true)
+      } else {
+        ChangeSubAction(465)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      if (R(Compare(RA-Int[0x00] >= IC-Int[0x5DC0]))) {
+        FrameSpeedModifier(0.0)
+      }
+      SetRequirement01(0, R(In Air()))
+    } else {
+      SetAirGround(10)
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(472, true)
+      } else {
+        ChangeSubAction(472)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      if (R(Compare(RA-Int[0x00] >= IC-Int[0x5DC0]))) {
+        FrameSpeedModifier(0.0)
+      }
+      SetRequirement01(1, R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x117 : EXIT {
+  if (R(Roll A Die())) {
+    BitVariableSet(RA-Bool[0x12])
+  }
+  EndFlashingEffect(26)
+}

@@ -1,0 +1,22 @@
+Action 0x114: ENTRY {
+  AllowSpecificInterrupt(AIR_CLIFF)
+
+  ChangeActionStatus(10029, 25, R(On Ground()))
+  AdditionalRequirement(R(Bit is Set(RA-Bool[0x10])))
+  AdditionalRequirement(R(Compare(Variable_Float_Motion_Trans_Move_Speed_Y < 0.0)))
+
+  ChangeAction(16, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  if (R(On Ground())) {
+    SetAerialOrOnstage(1)
+    ChangeSubAction(488)
+  } else {
+    SetAerialOrOnstage(5)
+    ChangeSubAction(489)
+  }
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1D9C0)
+}
+
+Action 0x114 : EXIT {
+}

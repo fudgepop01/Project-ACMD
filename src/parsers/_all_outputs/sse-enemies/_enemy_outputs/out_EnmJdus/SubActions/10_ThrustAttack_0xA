@@ -1,0 +1,63 @@
+[ThrustAttack] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xA: MAIN {
+  SlopeContourStand(1)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 30, 15, 2.8, 25, 42, 0.0, 0, 0.0, 80, -2.1, 6.5, 0.0, -5.0, 0.0, 4.5, 2, 0.0, 1.0, 1.0, false, true, 20, 1, 3, 3, true, 0, 311, false, 15, false, true, false, false, 10, false, false, 3, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(1, 0, 30, 15, 2.8, 25, 42, 0.0, 0, 0.0, 80, -2.1, 8.0, 0.0, -9.5, 0.0, -4.0, 2, 0.0, 1.0, 1.0, false, true, 20, 1, 3, 3, true, 0, 311, false, 15, false, true, false, false, 10, false, false, 3, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(2, 0, 23, 15, 2.8, 25, 42, 0.0, 0, 0.0, 80, -2.1, 8.0, 0.0, 6.0, 0.0, 0.0, 2, 0.0, 1.0, 1.0, false, true, 20, 1, 3, 3, true, 0, 311, false, 15, false, true, false, false, 10, false, false, 3, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(3, 0, 23, 15, 2.8, 25, 42, 0.0, 0, 0.0, 80, -2.1, 6.5, 0.0, 1.0, 0.0, -8.0, 2, 0.0, 1.0, 1.0, false, true, 20, 1, 3, 3, true, 0, 311, false, 15, false, true, false, false, 10, false, false, 3, false, false, false, false, false, 0, LA-Float[0x0C])
+  SpecialOffensiveCollisionEnemyHitbox(4, 0, 4, 15, 2.8, 30, 42, 0.0, 0, 0.0, 80, -2.1, 13.5, 0.0, 0.0, 0.0, 0.0, 2, 0.0, 1.0, 1.0, false, true, 20, 1, 3, 3, true, 0, 311, false, 15, false, true, false, false, 10, false, false, 3, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(2.0)
+  DeleteHitbox(4)
+  AsynchronousTimer(3.0)
+  TerminateCollisions()
+  AsynchronousTimer(48.0)
+  InitializeEcb()
+}
+
+Subaction 0xA: MAIN EXIT {
+}
+
+Subaction 0xA: MAIN INIT {
+  (undef: Sp_CollisionHit) 6D_00_01_00(0)
+  ModifyRhombusX17_UNDOC1ARGS(16.0)
+  ModifyRhombusX18_UNDOC1ARGS(0.0)
+  ModifyRhombusX19_UNDOC1ARGS(15.0)
+}
+
+Subaction 0xA: GFX {
+  GraphicEffectAttached(10878978, 17, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(0.0)
+  SwordGlow(7, 3, 23, 8.459, 0.157, 14.158, 23, 3.702, 0.092, -1.305, true, 0, 23, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  SwordGlow(7, 3, 23, 3.702, 0.092, -1.305, 23, -13.928, -0.578, -16.209, true, 0, 23, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  SwordGlow(7, 3, 30, -8.459, -0.157, -14.158, 30, -3.702, -0.092, 1.305, true, 0, 30, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  SwordGlow(7, 3, 30, -3.702, -0.092, 1.305, 30, 13.928, 0.578, 16.209, true, 0, 30, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+}
+
+Subaction 0xA: GFX EXIT {
+}
+
+Subaction 0xA: GFX INIT {
+}
+
+Subaction 0xA: SFX {
+  SoundEffect(9409)
+  SynchronousTimer(62.0)
+  SoundEffect(9405)
+}
+
+Subaction 0xA: SFX EXIT {
+}
+
+Subaction 0xA: SFX INIT {
+}
+

@@ -1,0 +1,8 @@
+Action 0x11A: ENTRY {
+  ChangeSubAction(470)
+  SubRoutine(hidden_subroutine_0x1B230)
+  ChangeAction(283, R(On Ground()))
+}
+
+Action 0x11A : EXIT {
+}

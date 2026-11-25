@@ -1,0 +1,5 @@
+[hsr_228]
+hidden_subroutine_0x228 {
+  SpecialOffensiveCollision(Sp(0, 0), 0, 361, Sp(0, 0), Sp(0, 50), 4.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 66056, 0, 786496)
+  SpecialOffensiveCollision(Sp(0, 1), 0, 361, Sp(0, 0), Sp(0, 50), 4.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 66056, 0, 986496)
+}

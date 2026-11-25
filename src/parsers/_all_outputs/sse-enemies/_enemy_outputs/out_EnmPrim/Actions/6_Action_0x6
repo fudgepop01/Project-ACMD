@@ -1,0 +1,10 @@
+Action 0x6: MAIN {
+}
+
+Action 0x6: EXIT {
+}
+
+Action 0x6: INIT {
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonAreaOutProc)
+}
+

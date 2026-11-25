@@ -1,0 +1,10 @@
+Action 0x0: MAIN {
+}
+
+Action 0x0: EXIT {
+}
+
+Action 0x0: INIT {
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonDyingNoneEffProc)
+}
+

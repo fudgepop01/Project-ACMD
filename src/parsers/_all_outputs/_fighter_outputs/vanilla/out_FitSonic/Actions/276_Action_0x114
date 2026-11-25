@@ -1,0 +1,28 @@
+Action 0x114: ENTRY {
+  BasicVariableSet(IC-Int[0xFCE], RA-Int[0x02])
+  BasicVariableSet(IC-Int[0xFCF], RA-Int[0x03])
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1D0C8)
+  ChangeAction(291, R(Compare(RA-Int[0x02] < 0.0)))
+  ChangeSubAction(486)
+  if (R(In Air())) {
+    BitVariableSet(RA-Bool[0x10])
+    SetStalingIdWith0(2, 59)
+  } else {
+    SetStalingIdWith0(0, 0)
+  }
+  Module0900(2)
+  SetAerialOrOnstage(5)
+  BitVariableSet(LA-Bool[0x3D])
+  SetRemoteArticleAction(0, 2)
+  GenerateArticle(0)
+  ArticleVisibility(0, false)
+}
+
+Action 0x114 : EXIT {
+  Switch(10000, Variable_Int_Status_Kind)
+    Case(291)
+      Break()
+    DefaultCase()
+      RemoveArticle(0)
+  EndSwitch()
+}

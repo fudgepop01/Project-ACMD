@@ -1,0 +1,12 @@
+[hsr_1D14]
+hidden_subroutine_0x1D14 {
+  (undef: collision) 06_07_02_00(0, 0)
+  (undef: collision) 06_07_02_00(2, 0)
+  (undef: collision) 06_07_02_00(3, 0)
+  (undef: collision) 06_07_02_00(4, 0)
+  (undef: collision) 06_07_02_00(5, 0)
+  (undef: collision) 06_07_02_00(6, 0)
+  (undef: collision) 06_07_02_00(7, 0)
+  (undef: collision) 06_07_02_00(8, 0)
+  (undef: collision) 06_07_02_00(9, 0)
+}

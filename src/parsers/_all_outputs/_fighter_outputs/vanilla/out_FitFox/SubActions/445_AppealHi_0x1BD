@@ -1,0 +1,30 @@
+[AppealHi] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1BD: MAIN {
+  AsynchronousTimer(69.0)
+  AllowInterrupt()
+}
+
+Subaction 0x1BD: GFX {
+  Goto(Subaction_0x1BC : GFX)
+}
+
+Subaction 0x1BD: SOUND {
+  SoundEffect(1237)
+  SoundEffect(3205)
+}
+
+Subaction 0x1BD: OTHER {
+  SlopeContourStand(6)
+  RumbleLoop(2, 40)
+}
+

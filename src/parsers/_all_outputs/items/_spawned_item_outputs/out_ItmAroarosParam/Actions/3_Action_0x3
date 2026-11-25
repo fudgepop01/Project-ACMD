@@ -1,0 +1,10 @@
+// Status_Dash
+Action 0x3 {
+  if (R(Bit is Set(LA-Bool[0x00]))) {
+    ChangeAction(8, R(Button Tap?()))
+  } else {
+    SubRoutine(hidden_subroutine_0x18)
+    ChangeSubAction(0)
+  }
+}
+

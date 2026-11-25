@@ -1,0 +1,13 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  if (R(Compare(3.0 == LA-Int[0x00]))) {
+    (undef: Sp_base) 65_11_07_00(-1, 3.4, 9.0, 38.0, 0.0, 50.0, LA-Float[0x01])
+    SynchronousTimer(120.0)
+    ChangeAction(6, R(Button Tap?()))
+  } else {
+    BitVariableSet(LA-Bool[0x02])
+    BasicVariableSet(3, LA-Int[0x00])
+    SubRoutine(hidden_subroutine_0x15DC)
+  }
+}
+

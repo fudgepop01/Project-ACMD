@@ -1,0 +1,6 @@
+// @ 0x21848
+AIRChkCliffForce {
+
+  ChangeActionStatus(10030, 115, R(Hasn't Tethered 3 Times()))
+  AdditionalRequirement(R(In Air()))
+}

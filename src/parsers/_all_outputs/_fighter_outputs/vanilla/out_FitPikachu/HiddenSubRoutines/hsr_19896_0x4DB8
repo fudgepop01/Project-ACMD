@@ -1,0 +1,4 @@
+[hsr_4DB8]
+hidden_subroutine_0x4DB8 {
+  HeldItemsVisibility(false)
+}

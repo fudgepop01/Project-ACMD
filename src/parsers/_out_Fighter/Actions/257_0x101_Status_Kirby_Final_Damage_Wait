@@ -1,0 +1,13 @@
+// Status_Kirby_Final_Damage_Wait
+Action 0x101: ENTRY {
+  Visibility(false)
+  SetGimmickEffectFlag(false)
+  BodyCollision(2)
+  ChangeSubAction(RA-Int[0x00])
+}
+
+Action 0x101 : EXIT {
+  Visibility(true)
+  SetGimmickEffectFlag(true)
+  BodyCollision(0)
+}

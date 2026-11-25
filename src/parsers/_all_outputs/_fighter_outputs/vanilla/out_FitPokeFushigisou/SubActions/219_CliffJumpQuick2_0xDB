@@ -1,0 +1,28 @@
+[CliffJumpQuick2] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xDB: MAIN {
+}
+
+Subaction 0xDB: GFX {
+  GraphicEffect(10, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0xDB: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(5665)
+  SynchronousTimer(11.0)
+  SoundEffect(5633)
+}
+
+Subaction 0xDB: OTHER {
+}
+

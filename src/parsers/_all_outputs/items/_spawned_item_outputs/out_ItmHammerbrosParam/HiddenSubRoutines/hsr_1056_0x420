@@ -1,0 +1,15 @@
+[hsr_420]
+hidden_subroutine_0x420 {
+  SetLoop(2) {
+    ChangeSubAction(6)
+    SynchronousTimer(8.0)
+    SubRoutine(hsr_110)
+    if (R(Is within footstool range())) {
+      LoopBreak()
+    }
+  }
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeSubAction(1)
+  Return()
+}

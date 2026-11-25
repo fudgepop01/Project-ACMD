@@ -1,0 +1,21 @@
+// Status_Jump_Aerial
+Action 0xC {
+  ChangeAction(3, R(In Air()))
+  (undef: Sp_Kinetic) 66_00_0D_00(0.4, 0.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true)
+  SynchronousTimer(10.0)
+  ChangeAction(13, R(In walljump situation()), 6)
+  SetLoop(-1) {
+    (undef: control_flow_loop) 01_04_02_00(5, 10)
+    if (R(Is within footstool range())) {
+      SubRoutine(hidden_subroutine_0xE0)
+      ChangeSubAction(1)
+      (undef: motion) 04_10_02_00(0, 3)
+      SetRequirement(R(0x27()), 0)
+      LoadRest()
+      ChangeSubAction(0)
+      (undef: motion) 04_10_02_00(0, 2)
+      SynchronousTimer(30.0)
+    }
+  }
+}
+

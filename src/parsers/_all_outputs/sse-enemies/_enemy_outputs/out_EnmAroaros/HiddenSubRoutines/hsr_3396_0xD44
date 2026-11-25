@@ -1,0 +1,4 @@
+[hsr_D44]
+hidden_subroutine_0xD44 {
+  GraphicEffect(94, 3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}

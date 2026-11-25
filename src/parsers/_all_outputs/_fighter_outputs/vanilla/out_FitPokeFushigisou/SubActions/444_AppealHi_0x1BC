@@ -1,0 +1,44 @@
+[AppealHi] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1BC: MAIN {
+  AsynchronousTimer(104.0)
+  AllowInterrupt()
+}
+
+Subaction 0x1BC: GFX {
+  AsynchronousTimer(80.0)
+  GraphicEffect(2097156, 0, 0.0, 7.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 360.0, 0.0, true)
+  AsynchronousTimer(90.0)
+  GraphicEffect(2097156, 0, 0.0, 7.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 360.0, 0.0, true)
+}
+
+Subaction 0x1BC: SOUND {
+  AsynchronousTimer(30.0)
+  SoundEffect(5633)
+  SynchronousTimer(15.0)
+  SoundEffect(5633)
+  SynchronousTimer(15.0)
+  SoundEffect(5633)
+  SynchronousTimer(15.0)
+  SoundEffect(5634)
+  SynchronousTimer(15.0)
+  SoundEffect(5634)
+  SynchronousTimer(15.0)
+  SoundEffect(5635)
+  SynchronousTimer(15.0)
+  SoundEffect(5635)
+}
+
+Subaction 0x1BC: OTHER {
+  SlopeContourStand03(1, 6, true)
+}
+

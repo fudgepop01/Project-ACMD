@@ -1,0 +1,7 @@
+[hsr_7C24]
+hidden_subroutine_0x7C24 {
+  ChangeAction(188, R(Bit is Set(LA-Bool[0x18])))
+  BasicVariableSet(Common_Param_Int_Swim_Drown_Frame, RA-Int[0x00])
+  BasicVariableAdd(Owner_Param_Int_Swim_Drown_Frame_Add, RA-Int[0x00])
+  ChangeAction(187, R(Compare(LA-Int[0x14] >= RA-Int[0x00])))
+}

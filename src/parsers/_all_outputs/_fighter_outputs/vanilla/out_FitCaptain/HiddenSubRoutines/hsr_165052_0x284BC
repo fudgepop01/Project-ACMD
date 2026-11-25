@@ -1,0 +1,8 @@
+[hsr_284BC]
+hidden_subroutine_0x284BC {
+  BitVariableClear(LA-Bool[0x3D])
+  BasicVariableSet(27, RA-Int[0x0A])
+  BasicVariableSet(25, RA-Int[0x0B])
+  BasicVariableSet(23, RA-Int[0x0C])
+  BasicVariableSet(0, LA-Int[0x63])
+}

@@ -921,15 +921,15 @@ export const customVisitorFactory = (parser: RivalsAIParser, builtins: IBuiltins
       };
       // console.log("SCOPEDEPTH: ", scope['scopeDepth']);
       const toProcess = [
-        ...(ctx["varDefine"] ? ctx["varDefine"] : []), 
-        ...(ctx["varSet"] ? ctx["varSet"] : []),
-        ...(ctx["callUnk"] ? ctx["callUnk"] : []),
-        ...(ctx["returnStatement"] ? ctx["returnStatement"] : []),
-        ...(ctx["ifStatement"] ? ctx["ifStatement"] : []),
-        ...(ctx["loopStatement"] ? ctx["loopStatement"] : []),
-        ...(ctx["BREAK"] ? ctx["BREAK"] : []),
-        ...(ctx["Identifier"] ? ctx["Identifier"] : [])
-      ].sort((a, b) => ((a.location) ? a.location.startOffset : a.startOffset) - ((b.location) ? b.location.startOffset : b.startOffset));
+        ...(ctx["varDefine"] || []), 
+        ...(ctx["varSet"] || []),
+        ...(ctx["callUnk"] || []),
+        ...(ctx["returnStatement"] || []),
+        ...(ctx["ifStatement"] || []),
+        ...(ctx["loopStatement"] || []),
+        ...(ctx["BREAK"] || []),
+        ...(ctx["Identifier"] || [])
+      ].sort((a, b) => (a.location?.startOffset ?? a.startOffset) - (b.location?.startOffset ?? b.startOffset));
 
       const selection = vscode.window.activeTextEditor?.selection.active;
       for (const [i, item] of toProcess.entries()) {

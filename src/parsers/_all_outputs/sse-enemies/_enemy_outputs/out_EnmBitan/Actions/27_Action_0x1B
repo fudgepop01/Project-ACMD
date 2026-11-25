@@ -1,0 +1,17 @@
+Action 0x1B: MAIN {
+}
+
+Action 0x1B: EXIT {
+}
+
+Action 0x1B: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(24)
+  SubAction09(0)
+  if (R(0x2715())) {
+    (undef: Sp_Kinetic) 66_0A_02_00(3, 39)
+  } else {
+    (undef: Sp_Kinetic) 66_07_01_00(-1)
+  }
+}
+

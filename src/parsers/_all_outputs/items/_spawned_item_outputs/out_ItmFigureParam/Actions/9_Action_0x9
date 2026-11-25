@@ -1,0 +1,18 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  ChangeAction(10, R(In Air()))
+  SetLoop(-1) {
+    if (R(Bit is Set(LA-Bool[0x02]))) {
+      ChangeSubAction(7, true)
+      FrameSpeedModifier(1.0)
+      SetRequirement(R(Animation End()))
+      LoadRest()
+      (undef: Sp_base) 65_1F_01_00(2)
+      SubRoutine(hidden_subroutine_0x118)
+      ChangeAction(3, R(In Air()))
+      LoopBreak()
+    }
+    SynchronousTimer(10.0)
+  }
+}
+

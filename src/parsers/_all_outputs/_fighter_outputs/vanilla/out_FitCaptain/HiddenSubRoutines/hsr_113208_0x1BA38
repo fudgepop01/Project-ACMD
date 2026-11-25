@@ -1,0 +1,9 @@
+[hsr_1BA38]
+hidden_subroutine_0x1BA38 {
+  SubRoutine(hsr_1B030)
+  ChangeAction(14, R(In Air()))
+  ChangeAction(0, R(Animation End()))
+  SetAirGround(6)
+  ChangeSubAction(479)
+  FrameSpeedModifier(IC-Int[0xFB6])
+}

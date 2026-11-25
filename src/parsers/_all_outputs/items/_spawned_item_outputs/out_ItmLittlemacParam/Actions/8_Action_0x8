@@ -1,0 +1,13 @@
+// Status_Turn_Run
+Action 0x8 {
+  SubRoutine(hidden_subroutine_0xB90)
+  ChangeActionStatus(4, 4, R(On Ground()))
+  if (R(NOT 2714(1)) && R(NOT 0x2715())) {
+    SynchronousTimer(5.0)
+    SubRoutine(hidden_subroutine_0xD28)
+  } elif (R(Compare(LA-Float[0x08] <= Variable_Float_Posture_Pos_Y))) {
+    SynchronousTimer(2.0)
+    SubRoutine(hidden_subroutine_0xD28)
+  }
+}
+

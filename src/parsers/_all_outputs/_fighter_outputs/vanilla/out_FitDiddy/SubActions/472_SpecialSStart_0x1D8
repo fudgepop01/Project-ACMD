@@ -1,0 +1,26 @@
+[SpecialSStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D8: MAIN {
+}
+
+Subaction 0x1D8: GFX {
+  AsynchronousTimer(4.0)
+  GraphicEffect(29, 0, 0.0, 8.5, 2.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x1D8: SOUND {
+}
+
+Subaction 0x1D8: OTHER {
+  SlopeContourStand(6)
+}
+

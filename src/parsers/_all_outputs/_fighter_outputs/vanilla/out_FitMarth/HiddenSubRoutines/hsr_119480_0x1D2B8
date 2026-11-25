@@ -1,0 +1,7 @@
+[hsr_1D2B8]
+hidden_subroutine_0x1D2B8 {
+  BitVariableClear(RA-Bool[0x11])
+  BitVariableClear(RA-Bool[0x12])
+  BitVariableClear(RA-Bool[0x13])
+  BitVariableClear(RA-Bool[0x14])
+}

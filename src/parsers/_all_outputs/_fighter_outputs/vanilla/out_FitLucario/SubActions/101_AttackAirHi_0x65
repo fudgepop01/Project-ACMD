@@ -1,0 +1,45 @@
+[AttackAirHi] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x65: MAIN {
+  SubRoutine(hidden_subroutine_0x230F4)
+  AsynchronousTimer(4.0)
+  BitVariableSet(RA-Bool[0x1E])
+  AsynchronousTimer(6.0)
+  OffensiveCollision(Sp(11, 0), 11, 80, Sp(0, 80), Sp(0, 30), 2.5, 0.0, -2.0, 0.0, 0.0, 1.0, 1.0, 964897877)
+  OffensiveCollision(Sp(13, 1), 12, 90, Sp(0, 100), Sp(0, 40), 3.75, 0.0, -4.5, 1.0, 0.0, 1.0, 1.0, 964897941)
+  OffensiveCollision(Sp(13, 2), 11, 80, Sp(0, 80), Sp(0, 30), 2.75, 0.0, -0.25, 0.0, 0.0, 1.0, 1.0, 964897877)
+  AsynchronousTimer(10.0)
+  TerminateCollisions()
+  AsynchronousTimer(22.0)
+  BitVariableClear(RA-Bool[0x1E])
+  AsynchronousTimer(28.0)
+  AllowInterrupt()
+}
+
+Subaction 0x65: GFX {
+  AsynchronousTimer(6.0)
+  GraphicEffect(2228228, 0, 0.5, 16.5, 0.0, -90.0, 0.0, 0.0, 0.9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+  GraphicEffectAttached(2228226, 29, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, true)
+  GraphicEffectAttached(2228227, 49, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, true)
+  Goto(hidden_subroutine_0xC2B8)
+}
+
+Subaction 0x65: SOUND {
+  AsynchronousTimer(6.0)
+  SoundEffect(5831)
+}
+
+Subaction 0x65: OTHER {
+  AsynchronousTimer(6.0)
+  Rumble(17, 0)
+}
+

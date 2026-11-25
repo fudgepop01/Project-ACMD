@@ -1,0 +1,12 @@
+[hsr_240]
+hidden_subroutine_0x240 {
+  if (R(Compare(LA-Int[0x0B] == 0.0))) {
+    if (R(Compare(LA-Int[0x01] == 3.0))) {
+      ChangeAction(6, R(Button Tap?()))
+      SynchronousTimer(10.0)
+    } else {
+      BasicVariableAdd(1, LA-Int[0x01])
+    }
+  }
+  Return()
+}

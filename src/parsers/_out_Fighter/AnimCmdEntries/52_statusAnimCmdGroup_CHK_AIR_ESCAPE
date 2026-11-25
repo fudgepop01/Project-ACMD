@@ -1,0 +1,6 @@
+// @ 0x23874
+CHK_AIR_ESCAPE {
+  ClearPreventInterrupt(AIR_ESCAPE)
+  SubRoutine(statusAnimCmd_AIRChkEscape)
+  ClearPreventInterrupt(ALL?)
+}

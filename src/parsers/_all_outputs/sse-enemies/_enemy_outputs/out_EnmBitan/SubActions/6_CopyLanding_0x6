@@ -1,0 +1,49 @@
+[CopyLanding] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x6: MAIN {
+}
+
+Subaction 0x6: MAIN EXIT {
+}
+
+Subaction 0x6: MAIN INIT {
+  SubRoutine(hidden_subroutine_0x2D14)
+  } else {
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    SubRoutine(hidden_subroutine_0x2CDC)
+  }
+}
+
+Subaction 0x6: GFX {
+  GraphicEffectLanding(7, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, IC-Int[0xFA2], 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x6: GFX EXIT {
+}
+
+Subaction 0x6: GFX INIT {
+}
+
+Subaction 0x6: SFX {
+  if (R(Bit is Set(LA-Bool[0x08]))) {
+    LandingSoundEffect(9310)
+  } else {
+    SoundEffect(159)
+  }
+}
+
+Subaction 0x6: SFX EXIT {
+}
+
+Subaction 0x6: SFX INIT {
+}
+

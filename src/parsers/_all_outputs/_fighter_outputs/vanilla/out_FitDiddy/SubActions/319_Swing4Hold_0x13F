@@ -1,0 +1,28 @@
+[Swing4Hold] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x13F: MAIN {
+}
+
+Subaction 0x13F: GFX {
+  SubRoutine(EXTERNAL: effectAnimCmd_LipStickSwing4HoldCommon)
+}
+
+Subaction 0x13F: SOUND {
+  SoundEffect(191)
+}
+
+Subaction 0x13F: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(5.0)
+  RumbleLoop(37, 0)
+}
+

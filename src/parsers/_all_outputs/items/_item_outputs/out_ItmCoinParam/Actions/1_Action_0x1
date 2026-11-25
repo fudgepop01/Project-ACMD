@@ -1,0 +1,23 @@
+// Status_Walk
+Action 0x1 {
+  (undef: Sp_base) 65_05_01_00(100)
+  BasicVariableSet(28, LA-Int[0x0C])
+  (undef: Sp_base) 65_04_01_00(240)
+  DisableActionStatusId(1)
+  Switch(10000, Variable_Int_Controller_Trigger_2_Count)
+    Case(0)
+      BasicVariableSet(6, LA-Int[0x00])
+    Case(1)
+      BasicVariableSet(3, LA-Int[0x00])
+      ModifyRhombusX05_UNDOC3ARGS(7.0, 0.0, 3.5)
+    Case(2)
+      BasicVariableSet(1, LA-Int[0x00])
+      ModifyRhombusX05_UNDOC3ARGS(5.0, 0.0, 2.5)
+  EndSwitch()
+  FloatVariableRandom(2.0, 16.0, LA-Float[0x00])
+  (undef: Sp_Kinetic) 66_01_03_00(0.0, LA-Float[0x00], 0.0)
+  ChangeSubAction(0)
+  SubRoutine(hidden_subroutine_0x13C)
+  ChangeAction(3, R(In Air()))
+}
+

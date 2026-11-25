@@ -1,0 +1,42 @@
+Action 0x11A: ENTRY {
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+
+  if (R(Compare(IC-Int[0xFC3] == 0.0))) {
+    ChangeAction(14, R(Animation End()))
+    AdditionalRequirement(R(In Air()))
+
+  } else {
+    FloatVariableSet(IC-Int[0xFC3], LA-Float[0x00])
+
+    ChangeAction(16, R(Animation End()))
+    AdditionalRequirement(R(In Air()))
+
+  }
+  if (R(On Ground())) {
+    ChangeSubAction(470)
+    SetRequirement(R(In Air()))
+  } else {
+    ChangeSubAction(473)
+    SetRequirement(R(On Ground()))
+  }
+  SetLoop(-1) {
+    LoadRest()
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      ChangeSubAction(470, true)
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      ChangeSubAction(473, true)
+      SetRequirement(R(On Ground()))
+    }
+  }
+}
+
+Action 0x11A : EXIT {
+}

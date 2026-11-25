@@ -1,0 +1,33 @@
+[hsr_964]
+hidden_subroutine_0x964 {
+  if (R(Compare(LA-Int[0x05] == 2.0))) {
+    if (R(Compare(Variable_Int_Motion_Kind == 12.0))) {
+      FloatVariableSet(Variable_Float_Motion_End_Frame, LA-Float[0x07])
+      FloatVariableSubtract(1.0, LA-Float[0x07])
+      FloatVariableSubtract(Variable_Float_Motion_Frame, LA-Float[0x07])
+      SubAction09_UNDOC2ARGS(11, LA-Float[0x07])
+    } elif (R(Compare(Variable_Int_Motion_Kind == 11.0))) {
+      FloatVariableSet(Variable_Float_Motion_Frame, LA-Float[0x07])
+      SubAction09_UNDOC2ARGS(11, LA-Float[0x07])
+    } else {
+      SubAction09(11)
+    }
+  } elif (R(Compare(LA-Int[0x05] == 3.0))) {
+    if (R(Compare(Variable_Int_Motion_Kind == 11.0))) {
+      FloatVariableSet(Variable_Float_Motion_End_Frame, LA-Float[0x07])
+      FloatVariableSubtract(1.0, LA-Float[0x07])
+      FloatVariableSubtract(Variable_Float_Motion_Frame, LA-Float[0x07])
+      SubAction09_UNDOC2ARGS(12, LA-Float[0x07])
+    } elif (R(Compare(Variable_Int_Motion_Kind == 12.0))) {
+      FloatVariableSet(Variable_Float_Motion_Frame, LA-Float[0x07])
+      SubAction09_UNDOC2ARGS(12, LA-Float[0x07])
+    } else {
+      SubAction09(12)
+    }
+  } elif (R(Compare(LA-Int[0x05] == 1.0))) {
+    FrameSpeedModifier(0.0)
+  } else {
+    FrameSpeedModifier(0.0)
+    SetAnimationTimerFrame(0.0)
+  }
+}

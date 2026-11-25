@@ -1,0 +1,6 @@
+// @ 0x21F40
+FallAerial {
+  SubRoutine(statusAnimCmd_AIRChkFallCommon)
+  ChangeSubAction(35)
+  ConcurrentInfiniteLoop(I(9), statusAnimCmd_FALLCommonUniq)
+}

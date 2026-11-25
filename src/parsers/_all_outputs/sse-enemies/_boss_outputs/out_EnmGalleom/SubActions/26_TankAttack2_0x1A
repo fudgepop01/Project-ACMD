@@ -1,0 +1,66 @@
+[TankAttack2] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1A: MAIN {
+  AsynchronousTimer(12.0)
+  SpecialOffensiveCollisionEnemyHitbox(0, 0, 3, 26, 3.4, 30, 35, 1.5, 0, 0.0, 54, -1.5, 29.5, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 1.0, 1.0, false, true, 15, 2, 2, 3, true, 0, 311, false, 9, false, true, false, false, 300, false, false, 0, false, false, false, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(14.0)
+  DeleteHitbox(0)
+  SpecialOffensiveCollisionEnemyHitbox(2, 0, 3, 2, 1.0, 90, 55, 0.0, 0, 0.0, 130, 0.0, 60.0, 0.0, 0.0, 0.0, 0.0, 0, 1.0, 1.0, 1.0, false, true, 15, 0, 1, 1, true, 0, 311, false, 15, false, true, false, false, 300, false, false, 0, false, false, true, false, false, 0, LA-Float[0x0C])
+  AsynchronousTimer(15.0)
+  TerminateCollisions()
+}
+
+Subaction 0x1A: MAIN EXIT {
+}
+
+Subaction 0x1A: MAIN INIT {
+  FrameSpeedModifier(LA-Float[0x07])
+}
+
+Subaction 0x1A: GFX {
+  GraphicEffectAttached(12386310, 36, 0.0, 0.0, 0.0, 0.0, -90.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12386310, 73, 0.0, 0.0, 0.0, 0.0, 90.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12386310, 8, 0.0, 0.0, 0.0, -90.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12386310, 14, 0.0, 0.0, 0.0, 90.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12386311, 22, 8.0, 0.0, 0.0, 0.0, 0.0, -90.0, 1.0, true)
+  GraphicEffectAttached(12386311, 22, -8.0, 0.0, 0.0, 0.0, 0.0, 90.0, 1.0, true)
+  GraphicEffectAttached(12386312, 30, 0.0, -5.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12386312, 67, 0.0, 5.0, 0.0, 180.0, 0.0, 0.0, 1.0, true)
+  GraphicEffectAttached(12386324, 5, 0.0, -20.0, 0.0, 0.0, 0.0, 0.0, 1.0, true)
+  AsynchronousTimer(9.0)
+  Screenshake(1)
+  GraphicEffect(12386307, 0, 0.0, 3.0, 0.0, 0.0, 0.0, 0.0, 1.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  GraphicEffectAttached2(12386319, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.2, true)
+  GraphicEffectAttached2(12386319, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.2, true)
+  AsynchronousTimer(11.0)
+  GraphicEffect(12386323, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x1A: GFX EXIT {
+}
+
+Subaction 0x1A: GFX INIT {
+}
+
+Subaction 0x1A: SFX {
+  SynchronousTimer(11.0)
+  SoundEffect(9703)
+  SynchronousTimer(47.0)
+  SoundEffect(9705)
+}
+
+Subaction 0x1A: SFX EXIT {
+}
+
+Subaction 0x1A: SFX INIT {
+}
+

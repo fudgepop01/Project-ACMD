@@ -1,0 +1,17 @@
+// Status_Turn_Run
+Action 0x8 {
+  SubRoutine(hidden_subroutine_0x14)
+  FloatVariableSet(Variable_Float_Posture_Pos_X, LA-Float[0x00])
+  (undef: Sp_base) 65_07_01_00(3)
+  if (R(NOT 2714(1))) {
+    FloatVariableAdd(-10.0, LA-Float[0x00])
+  } else {
+    FloatVariableAdd(10.0, LA-Float[0x00])
+  }
+  (undef: Sp_base) 65_07_01_00(16)
+  FloatVariableSet(LA-Float[0x08], LA-Float[0x01])
+  FloatVariableSet(LA-Float[0x00], LA-Float[0x07])
+  FloatVariableSet(LA-Float[0x01], LA-Float[0x08])
+  ChangeAction(9, R(Button Tap?()))
+}
+

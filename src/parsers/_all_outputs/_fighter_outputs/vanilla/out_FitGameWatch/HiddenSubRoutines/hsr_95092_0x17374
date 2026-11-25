@@ -1,0 +1,7 @@
+[hsr_17374]
+hidden_subroutine_0x17374 {
+  if (R(Bit is Set(RA-Bool[0x10]))) {
+    ArticleVisibility(2, true)
+    BitVariableClear(RA-Bool[0x10])
+  }
+}

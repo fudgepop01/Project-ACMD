@@ -1,0 +1,8 @@
+[hsr_F6F0]
+hidden_subroutine_0xF6F0 {
+  AsynchronousTimer(30.0)
+  SubRoutine(hsr_F5F0)
+  AsynchronousTimer(34.0)
+  SubRoutine(hsr_F638)
+  Return()
+}

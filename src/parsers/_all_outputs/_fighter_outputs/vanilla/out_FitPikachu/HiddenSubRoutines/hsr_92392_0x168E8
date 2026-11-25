@@ -1,0 +1,11 @@
+[hsr_168E8]
+hidden_subroutine_0x168E8 {
+  if (R(On Ground()) && R(Compare(RA-Int[0x02] != 0.0))) {
+    SubRoutine(hidden_subroutine_0xAAB0)
+  }
+  if (R(On Ground())) {
+    BasicVariableSet(0, RA-Int[0x02])
+  } else {
+    BasicVariableSet(2, RA-Int[0x02])
+  }
+}

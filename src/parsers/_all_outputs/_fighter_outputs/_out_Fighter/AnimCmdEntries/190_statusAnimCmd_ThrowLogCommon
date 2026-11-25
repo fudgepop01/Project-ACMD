@@ -1,0 +1,13 @@
+// @ 0x22350
+ThrowLogCommon {
+  Switch(10000, RA-Int[0x00])
+    Case(115)
+      SetStalingIdWith0(2, 66)
+    Case(114)
+      SetStalingIdWith0(2, 67)
+    Case(116)
+      SetStalingIdWith0(2, 68)
+    Case(117)
+      SetStalingIdWith0(2, 69)
+  EndSwitch()
+}

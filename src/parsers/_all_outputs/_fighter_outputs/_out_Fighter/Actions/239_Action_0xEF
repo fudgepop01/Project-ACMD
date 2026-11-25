@@ -1,0 +1,28 @@
+Action 0xEF: ENTRY {
+  SetGimmickEffectFlag(false)
+  HeldItemsVisibility(false)
+  BitVariableClear(LA-Bool[0x19])
+  if (R(Compare(Variable_Int_Motion_Kind == -1.0))) {
+    Switch(10001, 5)
+      Case(1)
+        ChangeSubAction(165)
+      Case(2)
+        ChangeSubAction(166)
+      Case(3)
+        ChangeSubAction(167)
+      Case(4)
+        ChangeSubAction(168)
+      DefaultCase()
+        ChangeSubAction(164)
+    EndSwitch()
+  }
+  FrameSpeedModifier(0.0)
+  BodyCollision(2)
+  SetRequirement(R(Bit is Set(RA-Bool[0x10])))
+  LoadRest()
+  SynchronousTimer(3.0)
+  ChangeAction(14, R(Button Tap?()))
+}
+
+Action 0xEF : EXIT {
+}

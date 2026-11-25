@@ -1,0 +1,29 @@
+[ItemShoot] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x161: MAIN {
+  AsynchronousTimer(8.0)
+  WeaponOperation(0)
+  BitVariableSet(RA-Bool[0x13])
+  SynchronousTimer(1.0)
+  WeaponOperation(1)
+}
+
+Subaction 0x161: GFX {
+}
+
+Subaction 0x161: SOUND {
+}
+
+Subaction 0x161: OTHER {
+  ModelChangerPermanent(2, 0)
+}
+

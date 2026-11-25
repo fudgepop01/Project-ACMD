@@ -1,0 +1,6 @@
+[hsr_D808]
+hidden_subroutine_0xD808 {
+  BitVariableClear(LA-Bool[0x46])
+  TerminateGraphicEffect(2228232, true, true)
+  TerminateGraphicEffect(2228233, true, true)
+}

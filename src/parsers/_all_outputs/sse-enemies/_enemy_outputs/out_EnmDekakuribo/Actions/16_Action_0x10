@@ -1,0 +1,29 @@
+Action 0x10: MAIN {
+  SetLoop(-1) {
+    SubRoutine(hidden_subroutine_0x6C0)
+    SynchronousTimer(1.0)
+  }
+}
+
+Action 0x10: EXIT {
+  SubRoutine(hidden_subroutine_0x848)
+}
+
+Action 0x10: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(32)
+  SubRoutine(hidden_subroutine_0x470)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 20)
+  (undef: Sp_Kinetic) 66_00_02_00(3, 14)
+  if (R(Facing Left())) {
+    SubAction09(15)
+  } else {
+    SubAction09(16)
+  }
+  if (R(Compare(Variable_Int_Status_Prev_Kind != 16.0))) {
+    (undef: Sp_base) 65_07_02_00(IC-Int[0xABE4], LA-Float[0x02])
+    (undef: Sp_base) 65_04_01_00(0)
+  }
+  SubRoutine(hidden_subroutine_0x7F8)
+}
+

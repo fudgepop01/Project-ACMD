@@ -1,0 +1,108 @@
+[SpecialHi] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D4: MAIN {
+  BodyCollision(2)
+  AsynchronousTimer(5.0)
+  BitVariableSet(RA-Bool[0x14])
+  BodyCollision(0)
+  OffensiveCollision(Sp(0, 0), 11, 80, Sp(0, 80), Sp(3, 70), 14.0, 0.0, 14.0, -8.0, 0.0, 1.0, 1.0, 994250880)
+  OffensiveCollision(Sp(0, 1), 11, 80, Sp(0, 80), Sp(3, 70), 14.0, 0.0, 14.0, 12.0, 0.0, 1.0, 1.0, 994250880)
+  AsynchronousTimer(6.0)
+  BitVariableSet(RA-Bool[0x13])
+  GraphicModelSpecf(false, 1)
+  AsynchronousTimer(7.0)
+  BitVariableSet(RA-Bool[0x12])
+  GraphicModelSpecf(false, 1)
+  TerminateCollisions()
+  SetLoop(4) {
+    OffensiveCollision(Sp(0, 0), 5, 90, Sp(0, 50), Sp(0, 80), 14.0, 0.0, 14.0, -8.0, 0.0, 1.0, 1.0, 994248322)
+    OffensiveCollision(Sp(0, 1), 5, 90, Sp(0, 50), Sp(0, 80), 14.0, 0.0, 14.0, 12.0, 0.0, 1.0, 1.0, 994248322)
+    SynchronousTimer(4.0)
+  }
+  SetLoop(4) {
+    OffensiveCollision(Sp(0, 0), 3, 70, Sp(0, 50), Sp(0, 50), 14.0, 0.0, 14.0, -8.0, 0.0, 1.0, 1.0, 994117186)
+    OffensiveCollision(Sp(0, 1), 3, 70, Sp(0, 50), Sp(0, 50), 14.0, 0.0, 14.0, 12.0, 0.0, 1.0, 1.0, 994117186)
+    SynchronousTimer(4.0)
+  }
+  TerminateCollisions()
+  AsynchronousTimer(50.0)
+  BitVariableClear(RA-Bool[0x14])
+  BitVariableClear(RA-Bool[0x13])
+  GraphicModelSpecf(true, 1)
+  BitVariableSet(RA-Bool[0x10])
+  AsynchronousTimer(81.0)
+  BitVariableClear(RA-Bool[0x12])
+  GraphicModelSpecf(true, 1)
+}
+
+Subaction 0x1D4: GFX {
+  GraphicEffectAttached(786435, 0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 2.5, true)
+  AsynchronousTimer(6.0)
+  GraphicEffect(14, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  SetLoop(5) {
+    GraphicEffect(38, 48, 0.0, -5.0, 0.0, 0.0, 90.0, 0.0, 2.4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+    SynchronousTimer(2.0)
+  }
+  GraphicEffect(14, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  SetLoop(5) {
+    GraphicEffect(38, 48, 0.0, -5.0, 0.0, 0.0, 90.0, 0.0, 2.4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+    SynchronousTimer(2.0)
+  }
+  GraphicEffect(14, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  SetLoop(5) {
+    GraphicEffect(38, 48, 0.0, -5.0, 0.0, 0.0, 90.0, 0.0, 2.4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+    SynchronousTimer(2.0)
+  }
+  AsynchronousTimer(52.0)
+  GraphicEffect(14, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x1D4: SOUND {
+  AsynchronousTimer(5.0)
+  SoundEffect(6627)
+  SynchronousTimer(5.0)
+  SoundEffect(6628)
+  SynchronousTimer(5.0)
+  SoundEffect(6629)
+  SynchronousTimer(5.0)
+  SoundEffect(6630)
+  SynchronousTimer(5.0)
+  SoundEffect(6631)
+  SynchronousTimer(5.0)
+  SoundEffect(6631)
+  SynchronousTimer(5.0)
+  SoundEffect(6630)
+  SynchronousTimer(5.0)
+  SoundEffect(6629)
+  SynchronousTimer(5.0)
+  SoundEffect(6628)
+  SynchronousTimer(10.0)
+  SoundEffect(6701)
+  SynchronousTimer(5.0)
+  SoundEffect(6699)
+}
+
+Subaction 0x1D4: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(4.0)
+  RumbleLoop(2, 50)
+  AsynchronousTimer(5.0)
+  HeldItemsVisibility(false)
+  AsynchronousTimer(7.0)
+  WearableItemsVisibility(false)
+  AsynchronousTimer(49.0)
+  HeldItemsVisibility(true)
+  AsynchronousTimer(51.0)
+  Rumble(4, 0)
+  WearableItemsVisibility(true)
+}
+

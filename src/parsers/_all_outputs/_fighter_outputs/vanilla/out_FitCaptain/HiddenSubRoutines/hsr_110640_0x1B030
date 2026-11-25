@@ -1,0 +1,5 @@
+[hsr_1B030]
+hidden_subroutine_0x1B030 {
+  Module0900(0)
+  SetAerialOrOnstage(2)
+}

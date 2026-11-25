@@ -1,0 +1,8 @@
+Action 0x12D: ENTRY {
+  Link03(6, 1115)
+  ChangeSubAction(497)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1AC58)
+}
+
+Action 0x12D : EXIT {
+}

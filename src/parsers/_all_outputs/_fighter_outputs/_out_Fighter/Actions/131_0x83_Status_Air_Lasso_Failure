@@ -1,0 +1,16 @@
+// Status_Air_Lasso_Failure
+[statusAnimCmd_AirLassoFailure]
+Action 0x83: ENTRY {
+  ChangeAction(22, R(On Ground()))
+
+  ChangeAction(14, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  SetAnimationFrame(RA-Float[0x04])
+  ChangeSubAction(RA-Int[0x02], true)
+}
+
+[statusAnimCmdExit_AirLassoFailure]
+Action 0x83 : EXIT {
+  RemoveArticle(RA-Int[0x00])
+}

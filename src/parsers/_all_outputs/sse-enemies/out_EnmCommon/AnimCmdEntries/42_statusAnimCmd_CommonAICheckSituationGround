@@ -1,0 +1,7 @@
+// @ 0x3D90
+CommonAICheckSituationGround {
+  if (R(On Ground())) {
+    BitVariableSet(RA-Bool[0x04])
+  }
+  Return()
+}

@@ -1,0 +1,27 @@
+Action 0x13: MAIN {
+}
+
+Action 0x13: EXIT {
+  if (R(Successfully tethered ledge())) {
+    if [IF_REQ_UNKNOWN_3ARG] (R(Can Pick Up Another Item()), Variable_Int_Controller_Flick_No_Reset_Y, 1) {
+      LeftDirection()
+      DecideDirection()
+    } else {
+      RightDirection()
+      DecideDirection()
+    }
+    SubRoutine(hidden_subroutine_0xCAC)
+  }
+  SubRoutine(hidden_subroutine_0xFE4)
+}
+
+Action 0x13: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_03_00_00()
+  (undef: Sp_AI) 6A_00_01_00(18)
+  (undef: Sp_base) 65_09_02_00(IC-Int[0xABE6], LA-Float[0x05])
+  (undef: Sp_base) 65_04_01_00(0)
+  (undef: status) 02_02_03_00(200, 20, R(Button Tap?()))
+  SubRoutine(hidden_subroutine_0xF7C)
+}
+

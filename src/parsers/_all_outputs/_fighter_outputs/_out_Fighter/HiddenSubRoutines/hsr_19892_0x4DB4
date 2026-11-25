@@ -1,0 +1,4 @@
+[hsr_4DB4]
+hidden_subroutine_0x4DB4 {
+  GraphicEffect(33, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}

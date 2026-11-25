@@ -1,0 +1,6 @@
+[hsr_58]
+hidden_subroutine_0x58 {
+  ChangeActionStatus(4, 4, R(On Ground()))
+  (undef: Sp_Kinetic) 66_01_03_00(0.0, 0.0, 0.0)
+  Return()
+}

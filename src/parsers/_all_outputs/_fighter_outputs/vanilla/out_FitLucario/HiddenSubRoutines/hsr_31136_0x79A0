@@ -1,0 +1,10 @@
+[hsr_79A0]
+hidden_subroutine_0x79A0 {
+  SubRoutine(hidden_subroutine_0x239D8)
+  if (R(Compare(Variable_Float_Kinetic_Sum_Speed_Y <= 0.0)) && R(Compare(LA-Int[0x02] <= 1.0)) && R(Compare(Variable_Float_Controller_Stick_Y <= 0.0))) {
+    EnableDisableLedgegrab(2)
+  } else {
+    EnableDisableLedgegrab(0)
+  }
+  NoEvent()
+}

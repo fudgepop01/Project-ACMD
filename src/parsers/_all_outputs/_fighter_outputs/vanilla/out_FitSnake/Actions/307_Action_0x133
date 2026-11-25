@@ -1,0 +1,21 @@
+Action 0x133: ENTRY {
+  ResetButtonPress()
+  ChangeSubAction(504)
+  SetRequirement(R(Button Press(Attack)))
+  ChangeAction(14, R(In Air()))
+  BitVariableClear(RA-Bool[0x10])
+  BasicVariableSet(IC-Int[0x5DC5], RA-Int[0x02])
+  SetRequirement(R(Compare(RA-Int[0x02] <= 0.0)))
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1A620)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeSubAction(505)
+  ChangeAction(0, R(Animation End()))
+}
+
+Action 0x133 : EXIT {
+  if (R(Article Exists()) && R(0x18())) {
+    BitVariableSet(RA-Bool[0x10])
+    ArticleEvent02(14)
+  }
+}

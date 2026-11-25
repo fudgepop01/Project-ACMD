@@ -1,0 +1,9 @@
+[hsr_1BB0C]
+hidden_subroutine_0x1BB0C {
+
+  ChangeAction(14, R(NOT Holding Item()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeAction(0, R(NOT Holding Item()))
+  AdditionalRequirement(R(On Ground()))
+}

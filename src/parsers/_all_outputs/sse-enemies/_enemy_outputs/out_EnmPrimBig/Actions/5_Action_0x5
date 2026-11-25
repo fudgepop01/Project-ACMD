@@ -1,0 +1,12 @@
+Action 0x5: MAIN {
+}
+
+Action 0x5: EXIT {
+}
+
+Action 0x5: INIT {
+  SubRoutine(hidden_subroutine_0x3C94)
+  SubRoutine(hidden_subroutine_0x3CCC)
+  SubRoutine(EXTERNAL: statusAnimCmd_CommonDyingProc)
+}
+

@@ -1,0 +1,53 @@
+[Walk] (flags) {
+  No Out Transition: 0,
+  Loop: 1,
+  Moves Character: 1,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xD: MAIN {
+}
+
+Subaction 0xD: MAIN EXIT {
+}
+
+Subaction 0xD: MAIN INIT {
+}
+
+Subaction 0xD: GFX {
+  SynchronousTimer(22.0)
+  SetLoop(-1) {
+    GraphicEffectLanding(8, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+    SynchronousTimer(40.0)
+    GraphicEffectLanding(8, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+    SynchronousTimer(40.0)
+  }
+}
+
+Subaction 0xD: GFX EXIT {
+}
+
+Subaction 0xD: GFX INIT {
+}
+
+Subaction 0xD: SFX {
+  SynchronousTimer(21.0)
+  SteppingSoundEffect(9480)
+  SynchronousTimer(40.0)
+  SteppingSoundEffect(9481)
+  SynchronousTimer(1.0)
+  GoToLoopRest01()
+  GoToLoopRest02()
+  Goto(Subaction_0xD : SFX)
+}
+
+Subaction 0xD: SFX EXIT {
+}
+
+Subaction 0xD: SFX INIT {
+}
+

@@ -1,0 +1,8 @@
+// Status_Captain_Final_FuraFura
+Action 0xFD: ENTRY {
+  SetGimmickEffectFlag(false)
+  SetAerialOrOnstage(0)
+}
+
+Action 0xFD : EXIT {
+}

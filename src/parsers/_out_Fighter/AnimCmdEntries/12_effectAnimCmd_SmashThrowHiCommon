@@ -1,0 +1,5 @@
+// @ 0x1FFEC
+SmashThrowHiCommon {
+  AsynchronousTimer(25.0)
+  GraphicEffect(14, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}

@@ -1,0 +1,4 @@
+[hsr_16B78]
+hidden_subroutine_0x16B78 {
+  Goto(hsr_16B60)
+}

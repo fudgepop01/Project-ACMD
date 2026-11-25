@@ -1,0 +1,4 @@
+[hsr_65C]
+hidden_subroutine_0x65C {
+  Return()
+}

@@ -1,0 +1,54 @@
+// Status_Run
+Action 0x4 {
+  SubRoutine(hidden_subroutine_0x48)
+  DisableActionStatusId(4)
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 5.0))) {
+    FloatVariableSet(Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv, LA-Float[0x00])
+    FloatVariableSetAbsolute(Variable_Float_Kinetic_Energy_Damage_Speed_Y, LA-Float[0x01])
+  } elif (R(Compare(Variable_Int_Status_Prev_Kind == 3.0))) {
+    ChangeSubAction(6)
+  }
+  if (R(Compare(LA-Float[0x01] >= 1.5))) {
+    if (R(Bit is Set(LA-Bool[0x00]))) {
+      (undef: Sp_base) 65_0E_03_00(4, RA-Float[0x00], RA-Float[0x01])
+      FloatVariableSubtract(Variable_Float_Posture_Pos_X, RA-Float[0x00])
+      FloatVariableSetAbsolute(RA-Float[0x00], RA-Float[0x02])
+      (undef: Sp_Kinetic) 66_01_03_00(0.0, 0.0, 0.0)
+      (undef: Sp_base) 65_03_03_00(0.0, 0.0, Variable_Float_Controller_Stick_Prev_X_Lr_Rv)
+      BitVariableClear(LA-Bool[0x00])
+      if (R(Compare(RA-Float[0x02] > 0.5))) {
+        BitVariableSet(LA-Bool[0x01])
+        SubRoutine(hidden_subroutine_0xE8)
+        FloatVariableSet(0.0, LA-Float[0x00])
+        FloatVariableSetAbsolute(0.0, LA-Float[0x01])
+        (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false, false, true)
+        (undef: Sp_Kinetic) 66_0B_03_00(0.0, 0.0, 90.0)
+        LeftDirection()
+        DecideDirection()
+        CharacterSpecific01()
+        SynchronousTimer(1.0)
+        Return()
+      }
+    } else {
+      if (R(Is within footstool range())) {
+        BitVariableSet(LA-Bool[0x00])
+        (undef: Sp_Kinetic) 66_01_03_00(0.0, 0.0, 11.0)
+      }
+    }
+    ChangeAction(10, R(Button Tap?()))
+  } else {
+    (undef: Sp_Kinetic) 66_01_03_00(0.0, 0.0, 0.0)
+    if (R(NOT Bit is Set(LA-Bool[0x01]))) {
+      (undef: Sp_base) 65_03_03_00(0.0, 0.0, Variable_Float_Controller_Stick_Prev_X_Lr_Rv)
+    }
+    BitVariableClear(LA-Bool[0x00])
+    (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.0, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false, false, true)
+  }
+  if (R(Bit is Set(LA-Bool[0x01]))) {
+    SubRoutine(hidden_subroutine_0xE8)
+  } else {
+    (undef: Sp_Kinetic) 66_0B_03_00(0.0, 0.0, 0.0)
+  }
+  ChangeAction(3, R(In Air()))
+}
+

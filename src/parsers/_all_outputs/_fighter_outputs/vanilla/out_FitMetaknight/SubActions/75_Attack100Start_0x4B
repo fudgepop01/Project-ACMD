@@ -1,0 +1,26 @@
+[Attack100Start] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x4B: MAIN {
+}
+
+Subaction 0x4B: GFX {
+}
+
+Subaction 0x4B: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffectTransient(843)
+}
+
+Subaction 0x4B: OTHER {
+  ModelChangerPermanent(2, 0)
+}
+

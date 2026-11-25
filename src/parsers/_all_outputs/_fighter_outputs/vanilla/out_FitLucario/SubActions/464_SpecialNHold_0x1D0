@@ -1,0 +1,45 @@
+[SpecialNHold] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D0: MAIN {
+  SetLoop(-1) {
+    if (R(Compare(LA-Int[0x41] < 4.0))) {
+      SetArticleAction07(0, 1)
+      SynchronousTimer(4.0)
+    }
+    SetArticleAction07(0, 0)
+    SynchronousTimer(5.0)
+  }
+}
+
+Subaction 0x1D0: GFX {
+  SetLoop(-1) {
+    GraphicEffectStepping(10, 0, -8.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6, 10.0, 0.0, 4.0, 0.0, 0.0, 0.0, false)
+    FlashLightEffect(128, 230, 255, 200, -135.0, -10.0)
+    SynchronousTimer(1.0)
+    ChangeFlashLightColor(10, 128, 230, 255, 100)
+    SynchronousTimer(10.0)
+    TerminateFlashEffect()
+    SynchronousTimer(1.0)
+  }
+}
+
+Subaction 0x1D0: SOUND {
+  SoundEffectTransient(5818)
+}
+
+Subaction 0x1D0: OTHER {
+  HeldItemsVisibility(false)
+  SlopeContourStand(6)
+  AsynchronousTimer(20.0)
+  RumbleLoop(9, 55)
+}
+

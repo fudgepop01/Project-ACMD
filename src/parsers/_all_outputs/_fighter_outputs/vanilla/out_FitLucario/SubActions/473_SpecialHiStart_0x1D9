@@ -1,0 +1,34 @@
+[SpecialHiStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D9: MAIN {
+  SubRoutine(hidden_subroutine_0x230F4)
+  FrameSpeedModifier(1.25)
+}
+
+Subaction 0x1D9: GFX {
+  AsynchronousTimer(5.0)
+  GraphicEffectAttached(2228226, 29, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, true)
+  GraphicEffectAttached(2228227, 49, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, true)
+  AsynchronousTimer(27.0)
+  GraphicEffectLanding(41, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x1D9: SOUND {
+}
+
+Subaction 0x1D9: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(26.0)
+  Rumble(13, 0)
+  SlopeContourStand(0)
+}
+

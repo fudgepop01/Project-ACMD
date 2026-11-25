@@ -1,0 +1,10 @@
+// Status_Run
+Action 0x4 {
+  SubRoutine(hidden_subroutine_0x78)
+  DisableActionStatusId(4)
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 5.0))) {
+    SubRoutine(hidden_subroutine_0xF8)
+  }
+  ChangeAction(3, R(In Air()))
+}
+

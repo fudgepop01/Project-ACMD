@@ -1,0 +1,66 @@
+[AttackAirN] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x62: MAIN {
+  AsynchronousTimer(3.0)
+  BitVariableSet(RA-Bool[0x1E])
+  OffensiveCollision(Sp(6, 0), 9, 361, Sp(0, 100), Sp(0, 20), 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1031995968)
+  SynchronousTimer(4.0)
+  OffensiveCollision(Sp(6, 0), 6, 361, Sp(0, 100), Sp(0, 15), 3.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1031995904)
+  AsynchronousTimer(32.0)
+  TerminateCollisions()
+  AsynchronousTimer(35.0)
+  BitVariableClear(RA-Bool[0x1E])
+  AsynchronousTimer(48.0)
+  AllowInterrupt()
+}
+
+Subaction 0x62: GFX {
+  AsynchronousTimer(2.0)
+  GraphicEffectAttached(2031618, 0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.8, true)
+}
+
+Subaction 0x62: SOUND {
+  AsynchronousTimer(2.0)
+  LowVoiceClip()
+  SoundEffect(5521)
+  SynchronousTimer(1.0)
+  SoundEffect(109)
+  SoundEffect(5520)
+  SynchronousTimer(6.0)
+  SoundEffect(5590)
+  SynchronousTimer(6.0)
+  SoundEffect(109)
+  SynchronousTimer(6.0)
+  SoundEffect(5590)
+  SynchronousTimer(6.0)
+  SoundEffect(109)
+  SynchronousTimer(6.0)
+  SoundEffect(5590)
+}
+
+Subaction 0x62: OTHER {
+  AsynchronousTimer(2.0)
+  HeldItemsVisibility(false)
+  (undef: item_manage) 1F_10_02_00(false, 1)
+  (undef: item_manage) 1F_10_02_00(false, 2)
+  AsynchronousTimer(6.0)
+  Rumble(12, 0)
+  AsynchronousTimer(20.0)
+  Rumble(12, 0)
+  AsynchronousTimer(28.0)
+  Rumble(12, 0)
+  AsynchronousTimer(35.0)
+  HeldItemsVisibility(true)
+  (undef: item_manage) 1F_10_02_00(true, 1)
+  (undef: item_manage) 1F_10_02_00(true, 2)
+}
+

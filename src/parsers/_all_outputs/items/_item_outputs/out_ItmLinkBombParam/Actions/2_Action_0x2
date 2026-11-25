@@ -1,0 +1,12 @@
+// Status_Walk_Brake
+Action 0x2 {
+  BodyCollision(3)
+  ChangeActionStatus(7, 7, R(Compare(LA-Int[0x0B] == 0.0)))
+  if (R(Compare(LA-Int[0x0B] < 96.0))) {
+    ChangeSubAction(6, false)
+    FrameSpeedModifier(2.0)
+  } else {
+    ChangeAction(2, R(Compare(LA-Int[0x0B] < 96.0)))
+  }
+}
+

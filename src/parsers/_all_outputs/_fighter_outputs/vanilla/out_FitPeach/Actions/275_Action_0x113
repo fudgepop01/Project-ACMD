@@ -1,0 +1,20 @@
+Action 0x113: ENTRY {
+  ChangeAction(279, R(Animation End()))
+  SetDirection()
+  DecideDirection()
+  CharacterSpecific01()
+  ResetCertainMomentum(2)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x16E30)
+  if (R(On Ground())) {
+    SubRoutine(hidden_subroutine_0x16E78)
+    SetAirGround(103)
+    ChangeSubAction(462)
+  } else {
+    SubRoutine(hidden_subroutine_0x16E78)
+    SetAirGround(104)
+    ChangeSubAction(465)
+  }
+}
+
+Action 0x113 : EXIT {
+}

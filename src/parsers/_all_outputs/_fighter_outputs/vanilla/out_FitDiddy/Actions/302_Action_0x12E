@@ -1,0 +1,12 @@
+Action 0x12E: ENTRY {
+  ChangeAction(16, R(Animation End()))
+  if (R(Bit is Set(RA-Bool[0x13]))) {
+    ChangeSubAction(505)
+  } else {
+    ChangeSubAction(506)
+  }
+}
+
+Action 0x12E : EXIT {
+  SubRoutine(hidden_subroutine_0x1BA20)
+}

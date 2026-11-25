@@ -1,0 +1,15 @@
+Action 0x120: ENTRY {
+  SetGimmickEffectFlag(false)
+  HeldItemsVisibility(false)
+  WearableItemsVisibility(false)
+  UnkRaBit27(false)
+  SetTagDisplay(false)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1C2A8)
+  ChangeSubAction(487)
+}
+
+Action 0x120 : EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 289.0))) {
+    ExitFinalSmashState()
+  }
+}

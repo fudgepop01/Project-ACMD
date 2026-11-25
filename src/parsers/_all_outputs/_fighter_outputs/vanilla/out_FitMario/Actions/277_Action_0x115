@@ -1,0 +1,45 @@
+Action 0x115: ENTRY {
+
+  ChangeAction(280, R(Animation End()))
+  AdditionalRequirement(R(Compare(LA-Int[0x40] >= IC-Int[0x5DC0])))
+
+  ChangeAction(279, R(Animation End()))
+  if (R(NOT Article Exists())) {
+    GenerateArticle(2)
+  }
+  SetArticleAction07(2, 0)
+  BasicVariableSet(-1, LA-Int[0x41])
+  SetAnchoredArticleAction(2, 0, false)
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAirGround(6)
+      SetAerialOrOnstage(2)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(468, true)
+      } else {
+        ChangeSubAction(468)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement01(0, R(In Air()))
+    } else {
+      SetAirGround(10)
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x10]))) {
+        ChangeSubAction(472, true)
+      } else {
+        ChangeSubAction(472)
+        BitVariableSet(RA-Bool[0x10])
+      }
+      SetRequirement01(1, R(On Ground()))
+    }
+    LoadRest()
+  }
+}
+
+Action 0x115 : EXIT {
+  if (R(Compare(Variable_Int_Status_Kind != 279.0))) {
+    SetArticleAction07(2, 0)
+    BasicVariableSet(IC-Int[0x5DC2], LA-Int[0x41])
+    EndFlashingEffect(26)
+  }
+}

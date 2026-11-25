@@ -1,0 +1,31 @@
+// Status_Dash
+Action 0x3 {
+  SubRoutine(hidden_subroutine_0x554)
+  DisableActionStatusId(3)
+  if (R(Compare(Variable_Int_Motion_Kind == 8.0))) {
+    SetRequirement(R(Animation End()))
+    LoadRest()
+  } elif (R(Compare(Variable_Int_Motion_Kind == 9.0))) {
+    SetRequirement(R(Animation End()))
+    LoadRest()
+  } elif (R(Compare(Variable_Int_Motion_Kind == 10.0))) {
+    SetRequirement(R(Animation End()))
+    LoadRest()
+  }
+  if (R(Compare(Variable_Int_Motion_Kind >= 12.0)) && R(Compare(Variable_Int_Motion_Kind <= 14.0))) {
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ChangeSubAction(11)
+  } elif (R(Compare(Variable_Int_Motion_Kind == 16.0))) {
+    SetRequirement(R(Animation End()))
+    LoadRest()
+    ChangeSubAction(11)
+  } elif (R(Compare(Variable_Int_Motion_Kind == 15.0))) {
+    SetRequirement(R(Compare(LA-Int[0x0B] <= 0.0)))
+    LoadRest()
+    ChangeSubAction(11)
+  } else {
+    ChangeSubAction(34)
+  }
+}
+

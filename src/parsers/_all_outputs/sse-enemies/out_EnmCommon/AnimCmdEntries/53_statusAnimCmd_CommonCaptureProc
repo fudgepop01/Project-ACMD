@@ -1,0 +1,5 @@
+// @ 0x3918
+CommonCaptureProc {
+  (undef: Sp_Kinetic) 66_07_01_00(-1)
+  Return()
+}

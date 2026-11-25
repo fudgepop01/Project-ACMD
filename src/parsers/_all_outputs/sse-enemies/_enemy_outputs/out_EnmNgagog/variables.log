@@ -1,0 +1,187 @@
+IC-Int[0xFA2] in Action 0x11: EXIT @ 4 : 0
+IC-Int[0xFA2] in Action 0x11: EXIT @ 15 : 0
+
+IC-Int[0xFA3] in Action 0x11: EXIT @ 9 : 0
+
+IC-Int[0xFA4] in Action 0x11: EXIT @ 3 : 3
+IC-Int[0xFA4] in Action 0x11: INIT @ 4 : 3
+
+IC-Int[0xFA5] in Action 0x11: EXIT @ 6 : 0
+IC-Int[0xFA5] in Action 0x11: EXIT @ 8 : 3
+IC-Int[0xFA5] in Action 0x11: EXIT @ 17 : 0
+IC-Int[0xFA5] in Action 0x11: INIT @ 6 : 3
+
+IC-Int[0xFA6] in Action 0x11: EXIT @ 11 : 0
+
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x0: EXIT @ 1 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x0: EXIT @ 2 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x1: EXIT @ 1 : 1
+IC-Int[0x4E21] ("Variable_Int_Status_Kind") in Action 0x1: EXIT @ 2 : 1
+
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x5: INIT @ 5 : 1
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x6: INIT @ 12 : 1
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x6: INIT @ 13 : 1
+
+IC-Int[0x520C] ("Variable_Int_Controller_Flick_No_Reset_Y") in hsr_4B0 @ 1 : 2
+IC-Int[0x520C] ("Variable_Int_Controller_Flick_No_Reset_Y") in hsr_4B0 @ 2 : 0
+
+IC-Int[0xABE4] in Action 0x10: INIT @ 4 : 0
+
+LA-Int[0x05] in Action 0xB: INIT @ 3 : 1
+LA-Int[0x05] in Action 0xB: INIT @ 5 : 1
+LA-Int[0x05] in Action 0xB: INIT @ 7 : 1
+
+LA-Int[0x06] in Action 0x10: INIT @ 6 : 1
+LA-Int[0x06] in Action 0x11: INIT @ 13 : 1
+LA-Int[0x06] in Action 0x12: INIT @ 4 : 1
+LA-Int[0x06] in Action 0x14: INIT @ 11 : 1
+LA-Int[0x06] in Action 0x15: INIT @ 4 : 1
+LA-Int[0x06] in Action 0x6: INIT @ 14 : 1
+LA-Int[0x06] in Action 0x6: INIT @ 16 : 1
+LA-Int[0x06] in Action 0x7: INIT @ 6 : 1
+LA-Int[0x06] in Action 0x7: INIT @ 8 : 1
+LA-Int[0x06] in Action 0xC: INIT @ 10 : 1
+LA-Int[0x06] in Action 0xD: INIT @ 4 : 1
+
+LA-Float[0x02] in Action 0x10: INIT @ 4 : 1
+
+LA-Float[0x04] in Action 0x11: EXIT @ 3 : 1
+LA-Float[0x04] in Action 0x11: EXIT @ 6 : 1
+LA-Float[0x04] in Action 0x11: EXIT @ 8 : 1
+LA-Float[0x04] in Action 0x11: EXIT @ 11 : 1
+LA-Float[0x04] in Action 0x11: EXIT @ 17 : 1
+LA-Float[0x04] in Action 0x11: INIT @ 4 : 1
+LA-Float[0x04] in Action 0x11: INIT @ 6 : 1
+LA-Float[0x04] in Subaction 0x0: MAIN @ 0 : 0
+LA-Float[0x04] in Subaction 0x1: MAIN @ 0 : 0
+LA-Float[0x04] in Subaction 0x10: MAIN @ 0 : 0
+LA-Float[0x04] in Subaction 0x11: MAIN @ 0 : 0
+LA-Float[0x04] in Subaction 0x2: MAIN @ 0 : 0
+LA-Float[0x04] in Subaction 0x3: MAIN @ 0 : 0
+LA-Float[0x04] in Subaction 0x4: MAIN @ 0 : 0
+LA-Float[0x04] in Subaction 0x5: MAIN @ 0 : 0
+LA-Float[0x04] in Subaction 0x6: MAIN @ 0 : 0
+LA-Float[0x04] in Subaction 0x7: MAIN @ 1 : 0
+LA-Float[0x04] in Subaction 0x8: MAIN @ 0 : 0
+LA-Float[0x04] in Subaction 0x9: MAIN @ 0 : 0
+LA-Float[0x04] in Subaction 0xA: MAIN @ 0 : 0
+LA-Float[0x04] in Subaction 0xB: MAIN @ 0 : 0
+LA-Float[0x04] in Subaction 0xC: MAIN @ 0 : 0
+LA-Float[0x04] in Subaction 0xD: MAIN @ 0 : 0
+LA-Float[0x04] in Subaction 0xE: MAIN @ 0 : 0
+LA-Float[0x04] in Subaction 0xF: MAIN @ 0 : 0
+
+LA-Float[0x0C] in hsr_2C6C @ 0 : 46
+LA-Float[0x0C] in Subaction 0x1: MAIN @ 3 : 46
+LA-Float[0x0C] in Subaction 0x1: MAIN @ 4 : 46
+LA-Float[0x0C] in Subaction 0x1: MAIN @ 7 : 46
+LA-Float[0x0C] in Subaction 0x1: MAIN @ 8 : 46
+LA-Float[0x0C] in Subaction 0x1: MAIN @ 11 : 46
+LA-Float[0x0C] in Subaction 0x1: MAIN @ 12 : 46
+LA-Float[0x0C] in Subaction 0x2: MAIN @ 3 : 46
+LA-Float[0x0C] in Subaction 0x2: MAIN @ 5 : 46
+LA-Float[0x0C] in Subaction 0x2: MAIN @ 7 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 6 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 8 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 10 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 12 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 14 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 16 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 22 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 24 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 26 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 28 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 30 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 32 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 38 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 40 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 42 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 44 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 46 : 46
+LA-Float[0x0C] in Subaction 0x7: MAIN @ 48 : 46
+LA-Float[0x0C] in Subaction 0xB: MAIN @ 4 : 46
+LA-Float[0x0C] in Subaction 0xB: MAIN @ 10 : 46
+LA-Float[0x0C] in Subaction 0xB: MAIN @ 16 : 46
+
+LA-Bool[0x04] in Action 0x0: EXIT @ 0 : 1
+LA-Bool[0x04] in Action 0x1: EXIT @ 0 : 1
+
+LA-Bool[0x06] in Action 0x5: INIT @ 6 : 0
+LA-Bool[0x06] in Action 0x5: INIT @ 8 : 0
+LA-Bool[0x06] in Action 0x6: INIT @ 11 : 1
+LA-Bool[0x06] in Action 0x6: INIT @ 18 : 0
+LA-Bool[0x06] in Action 0x7: INIT @ 5 : 1
+LA-Bool[0x06] in Action 0x8: INIT @ 2 : 1
+LA-Bool[0x06] in Action 0x8: INIT @ 9 : 0
+
+LA-Bool[0x07] in Action 0x11: EXIT @ 14 : 1
+LA-Bool[0x07] in Action 0x11: INIT @ 9 : 1
+LA-Bool[0x07] in Action 0x13: INIT @ 5 : 1
+LA-Bool[0x07] in Action 0x14: INIT @ 5 : 1
+LA-Bool[0x07] in Action 0xA: INIT @ 6 : 1
+LA-Bool[0x07] in Action 0xB: INIT @ 13 : 1
+LA-Bool[0x07] in Action 0xC: INIT @ 5 : 1
+LA-Bool[0x07] in Action 0xE: INIT @ 6 : 1
+LA-Bool[0x07] in Action 0xE: INIT @ 15 : 1
+LA-Bool[0x07] in Action 0xF: INIT @ 7 : 1
+LA-Bool[0x07] in Subaction 0x0: GFX @ 3 : 1
+LA-Bool[0x07] in Subaction 0x0: SFX @ 3 : 1
+LA-Bool[0x07] in Subaction 0x0: SFX @ 11 : 1
+LA-Bool[0x07] in Subaction 0x1: MAIN @ 5 : 1
+LA-Bool[0x07] in Subaction 0x1: SFX @ 2 : 1
+LA-Bool[0x07] in Subaction 0x11: SFX @ 3 : 1
+LA-Bool[0x07] in Subaction 0x11: SFX @ 11 : 1
+LA-Bool[0x07] in Subaction 0x2: MAIN @ 4 : 1
+LA-Bool[0x07] in Subaction 0x4: SFX @ 2 : 1
+LA-Bool[0x07] in Subaction 0x4: SFX @ 10 : 1
+LA-Bool[0x07] in Subaction 0x5: SFX @ 2 : 1
+LA-Bool[0x07] in Subaction 0x5: SFX @ 10 : 1
+LA-Bool[0x07] in Subaction 0x7: MAIN @ 9 : 1
+LA-Bool[0x07] in Subaction 0x7: MAIN @ 25 : 1
+LA-Bool[0x07] in Subaction 0x7: MAIN @ 41 : 1
+LA-Bool[0x07] in Subaction 0x7: SFX @ 3 : 1
+LA-Bool[0x07] in Subaction 0x7: SFX @ 11 : 1
+LA-Bool[0x07] in Subaction 0x7: SFX @ 19 : 1
+LA-Bool[0x07] in Subaction 0x9: SFX @ 3 : 1
+LA-Bool[0x07] in Subaction 0xA: SFX @ 2 : 1
+LA-Bool[0x07] in Subaction 0xB: MAIN @ 8 : 1
+LA-Bool[0x07] in Subaction 0xC: SFX @ 3 : 1
+LA-Bool[0x07] in Subaction 0xD: SFX @ 3 : 1
+LA-Bool[0x07] in Subaction 0xD: SFX @ 11 : 1
+LA-Bool[0x07] in Subaction 0xE: SFX @ 2 : 1
+
+LA-Bool[0x08] in Action 0x11: EXIT @ 2 : 1
+LA-Bool[0x08] in Action 0x11: INIT @ 3 : 1
+LA-Bool[0x08] in Action 0x13: INIT @ 3 : 1
+LA-Bool[0x08] in Action 0x14: INIT @ 3 : 1
+LA-Bool[0x08] in Action 0xA: INIT @ 4 : 1
+LA-Bool[0x08] in Action 0xB: INIT @ 11 : 1
+LA-Bool[0x08] in Action 0xC: INIT @ 3 : 1
+LA-Bool[0x08] in Action 0xE: INIT @ 4 : 1
+LA-Bool[0x08] in Action 0xE: INIT @ 13 : 1
+LA-Bool[0x08] in Action 0xF: INIT @ 5 : 1
+LA-Bool[0x08] in Subaction 0x0: GFX @ 1 : 1
+LA-Bool[0x08] in Subaction 0x0: SFX @ 1 : 1
+LA-Bool[0x08] in Subaction 0x0: SFX @ 9 : 1
+LA-Bool[0x08] in Subaction 0x1: MAIN @ 1 : 1
+LA-Bool[0x08] in Subaction 0x1: SFX @ 0 : 1
+LA-Bool[0x08] in Subaction 0x11: SFX @ 1 : 1
+LA-Bool[0x08] in Subaction 0x11: SFX @ 9 : 1
+LA-Bool[0x08] in Subaction 0x2: MAIN @ 2 : 1
+LA-Bool[0x08] in Subaction 0x4: SFX @ 0 : 1
+LA-Bool[0x08] in Subaction 0x4: SFX @ 8 : 1
+LA-Bool[0x08] in Subaction 0x5: SFX @ 0 : 1
+LA-Bool[0x08] in Subaction 0x5: SFX @ 8 : 1
+LA-Bool[0x08] in Subaction 0x7: MAIN @ 5 : 1
+LA-Bool[0x08] in Subaction 0x7: MAIN @ 21 : 1
+LA-Bool[0x08] in Subaction 0x7: MAIN @ 37 : 1
+LA-Bool[0x08] in Subaction 0x7: SFX @ 1 : 1
+LA-Bool[0x08] in Subaction 0x7: SFX @ 9 : 1
+LA-Bool[0x08] in Subaction 0x7: SFX @ 17 : 1
+LA-Bool[0x08] in Subaction 0x9: SFX @ 1 : 1
+LA-Bool[0x08] in Subaction 0xA: SFX @ 0 : 1
+LA-Bool[0x08] in Subaction 0xB: MAIN @ 2 : 1
+LA-Bool[0x08] in Subaction 0xC: SFX @ 1 : 1
+LA-Bool[0x08] in Subaction 0xD: SFX @ 1 : 1
+LA-Bool[0x08] in Subaction 0xD: SFX @ 9 : 1
+LA-Bool[0x08] in Subaction 0xE: SFX @ 0 : 1

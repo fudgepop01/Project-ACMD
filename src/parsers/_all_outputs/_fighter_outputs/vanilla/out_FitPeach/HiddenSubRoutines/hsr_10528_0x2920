@@ -1,0 +1,19 @@
+[hsr_2920]
+hidden_subroutine_0x2920 {
+  Switch(10000, LA-Int[0x40])
+    Case(0)
+      ModelChanger(1, 1)
+      AsynchronousTimer(15.0)
+      Rumble(13, 0)
+    Case(1)
+      ModelChanger(1, 2)
+      AsynchronousTimer(15.0)
+      Rumble(13, 0)
+    Case(2)
+      ModelChanger(1, 3)
+      AsynchronousTimer(15.0)
+      Rumble(13, 0)
+  EndSwitch()
+  AsynchronousTimer(35.0)
+  SlopeContourStand02(6, 2)
+}

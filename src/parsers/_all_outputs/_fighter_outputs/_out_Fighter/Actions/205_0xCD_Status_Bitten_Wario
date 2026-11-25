@@ -1,0 +1,9 @@
+// Status_Bitten_Wario
+Action 0xCD: ENTRY {
+  (undef: StageObject) 0C_29_00_00()
+  WearableItemsVisibility(false)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1D5E4)
+}
+
+Action 0xCD : EXIT {
+}

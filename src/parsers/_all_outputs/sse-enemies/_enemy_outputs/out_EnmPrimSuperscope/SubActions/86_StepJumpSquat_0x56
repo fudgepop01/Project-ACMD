@@ -1,0 +1,42 @@
+[StepJumpSquat] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x56: MAIN {
+}
+
+Subaction 0x56: MAIN EXIT {
+}
+
+Subaction 0x56: MAIN INIT {
+  if (R(Compare(Variable_Int_Controller_Flick_X_Dir == 31.0))) {
+    SubRoutine(hidden_subroutine_0xB788)
+  } else {
+  }
+}
+
+Subaction 0x56: GFX {
+}
+
+Subaction 0x56: GFX EXIT {
+}
+
+Subaction 0x56: GFX INIT {
+}
+
+Subaction 0x56: SFX {
+}
+
+Subaction 0x56: SFX EXIT {
+}
+
+Subaction 0x56: SFX INIT {
+}
+

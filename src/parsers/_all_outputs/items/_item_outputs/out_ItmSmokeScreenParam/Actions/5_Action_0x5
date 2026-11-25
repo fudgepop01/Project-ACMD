@@ -1,0 +1,12 @@
+// Status_Run_Brake
+Action 0x5 {
+  ChangeSubAction(3)
+  if (R(Compare(Variable_Int_Status_Prev_Kind == 2.0))) {
+    if (R(Is within footstool range())) {
+      InertCollision(0, 0, 0, 5.0, 0.0, 0.0, 0.0, 2, 1, 3, false, 9, 1, false, 1, true, 0)
+    }
+    ChangeAction(2, R(Bit is Set(RA-Bool[0x05])))
+  }
+  SubRoutine(hidden_subroutine_0x78)
+}
+

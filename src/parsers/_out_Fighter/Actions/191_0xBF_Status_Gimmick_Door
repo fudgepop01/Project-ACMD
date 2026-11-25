@@ -1,0 +1,13 @@
+// Status_Gimmick_Door
+Action 0xBF: ENTRY {
+  if (R(Bit is Set(LA-Bool[0x0B]))) {
+    DropItem()
+  }
+  BodyCollision(2)
+  NothingDueToBug(false)
+  SetGimmickEffectFlag(false)
+  (undef: ft_cancel) 64_02_00_00()
+}
+
+Action 0xBF : EXIT {
+}

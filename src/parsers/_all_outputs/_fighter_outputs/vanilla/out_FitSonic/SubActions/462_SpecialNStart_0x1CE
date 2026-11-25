@@ -1,0 +1,32 @@
+[SpecialNStart] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1CE: MAIN {
+}
+
+Subaction 0x1CE: GFX {
+  GraphicEffectLanding(37, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+}
+
+Subaction 0x1CE: SOUND {
+  AsynchronousTimer(2.0)
+  SoundEffect(6478)
+}
+
+Subaction 0x1CE: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(2.0)
+  SlopeContourStand(0)
+  HeldItemsVisibility(false)
+  AsynchronousTimer(3.0)
+  HavokPhysicsDisable()
+}
+

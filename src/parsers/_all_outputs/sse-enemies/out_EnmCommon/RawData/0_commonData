@@ -1,0 +1,9 @@
+commonData {
+  params0: 0x00002958
+  data1: 0x00003180
+  data2: 0x00003198
+  params3: 0x00002DF8
+  gfxEventsStart: 0x00001A18
+  params5: 0x00002F24
+  params6: 0x00003050
+}

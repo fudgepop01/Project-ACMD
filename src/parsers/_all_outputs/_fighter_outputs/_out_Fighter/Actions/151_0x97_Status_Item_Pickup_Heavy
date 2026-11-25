@@ -1,0 +1,19 @@
+// Status_Item_Pickup_Heavy
+Action 0x97: ENTRY {
+  ChangeAction(73, R(In Air()))
+
+  ChangeAction(157, R(Animation End()))
+  AdditionalRequirement(R(Holding Item()))
+  AdditionalRequirement(R(Compare(Variable_Int_Have_Item_Kind == 83.0)))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(152, R(Animation End()))
+  AdditionalRequirement(R(Holding Item()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeAction(0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+}
+
+Action 0x97 : EXIT {
+}

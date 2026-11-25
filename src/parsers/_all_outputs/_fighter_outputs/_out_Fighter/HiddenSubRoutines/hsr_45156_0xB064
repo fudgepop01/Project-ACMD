@@ -1,0 +1,13 @@
+[hsr_B064]
+hidden_subroutine_0xB064 {
+
+  ChangeActionStatus(10006, 71, R(In Air()))
+  AdditionalRequirement(R(Touching a Floor, Wall, or Ceiling(2)))
+  AdditionalRequirement(R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv > Common_Param_Float_Damage_Fly_Reflect_Speed)))
+  AdditionalRequirement(R(Compare(LA-Int[0x3D] <= IC-Int[0x5A35])))
+
+  ChangeActionStatus(10007, 71, R(In Air()))
+  AdditionalRequirement(R(Touching a Floor, Wall, or Ceiling(4)))
+  AdditionalRequirement(R(Compare(Variable_Float_Kinetic_Energy_Damage_Speed_X > Common_Param_Float_Damage_Fly_Reflect_Speed)))
+  AdditionalRequirement(R(Compare(LA-Int[0x3D] <= IC-Int[0x5A35])))
+}

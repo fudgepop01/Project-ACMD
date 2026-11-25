@@ -1,0 +1,9 @@
+// @ 0x21578
+StarRodSwingDashCommon {
+  OffensiveCollision(Sp(305, 0), 15, 361, Sp(0, 70), Sp(0, 50), 5.76, 0.0, 7.4, 0.0, 0.0, 1.0, 1.0, 977470080)
+  OffensiveCollision(Sp(305, 1), 14, 361, Sp(0, 70), Sp(0, 50), 3.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 977470080)
+  OffensiveCollision(Sp(305, 2), 13, 361, Sp(0, 70), Sp(0, 50), 2.4, 0.0, -3.0, 0.0, 0.0, 1.0, 1.0, 977470080)
+  OffensiveCollision(Sp(305, 3), 12, 361, Sp(0, 70), Sp(0, 50), 2.4, 0.0, -6.0, 0.0, 0.0, 1.0, 1.0, 977470080)
+  PlaySoundFromProjectileItem(8078, 8080)
+  WeaponOperation(100)
+}

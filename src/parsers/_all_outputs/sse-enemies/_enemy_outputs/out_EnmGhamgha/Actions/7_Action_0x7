@@ -1,0 +1,19 @@
+Action 0x7: MAIN {
+}
+
+Action 0x7: EXIT {
+}
+
+Action 0x7: INIT {
+  SubRoutine(hidden_subroutine_0x3C8)
+  if (R(Bit is Set(LA-Bool[0x06]))) {
+    BasicVariableSet(10, LA-Int[0x06])
+    FloatVariableSet(0.0, LA-Float[0x02])
+  } else {
+    (undef: Sp_base) 65_07_02_00(IC-Int[0xABE4], LA-Float[0x02])
+  }
+  BitVariableClear(LA-Bool[0x06])
+  (undef: Sp_Kinetic) 66_07_01_00(-1)
+  (undef: Sp_Kinetic) 66_0B_02_00(4, 14)
+}
+

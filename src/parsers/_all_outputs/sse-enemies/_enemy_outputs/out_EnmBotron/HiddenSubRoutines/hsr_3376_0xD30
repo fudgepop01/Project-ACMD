@@ -1,0 +1,18 @@
+[hsr_D30]
+hidden_subroutine_0xD30 {
+  SWITCH_3ARG(1000, IC-Int[0xABE9], 4)
+    Case(0)
+      BasicVariableSet(44010, LA-Int[0x01])
+      Break()
+    Case(1)
+      BasicVariableSet(44011, LA-Int[0x01])
+      BasicVariableAdd(1, LA-Int[0x05])
+      Break()
+    Case(2)
+      BasicVariableSet(44012, LA-Int[0x01])
+      Break()
+    Case(3)
+      BasicVariableSet(44013, LA-Int[0x01])
+      Break()
+  EndSwitch()
+}

@@ -1,0 +1,14 @@
+IC-Int[0x4E23] ("Variable_Int_Status_Prev_Kind") in Action 0x7 (Status_Turn_Dash) @ 9 : 1
+
+LA-Int[0x0B] in hsr_B0 @ 6 : 2
+
+LA-Bool[0x00] in Action 0x5 (Status_Run_Brake) @ 4 : 1
+LA-Bool[0x00] in Action 0x7 (Status_Turn_Dash) @ 0 : 1
+LA-Bool[0x00] in Action 0x7 (Status_Turn_Dash) @ 4 : 0
+LA-Bool[0x00] in hsr_B0 @ 3 : 1
+
+RA-Bool[0x01] in hsr_B0 @ 1 : 2
+
+RA-Bool[0x02] in hsr_B0 @ 2 : 2
+
+RA-Bool[0x03] in hsr_B0 @ 4 : 2

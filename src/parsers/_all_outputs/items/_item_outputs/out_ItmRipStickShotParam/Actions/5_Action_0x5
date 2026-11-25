@@ -1,0 +1,9 @@
+// Status_Run_Brake
+Action 0x5 {
+  ChangeSubAction(0)
+  FloatVariableSetAbsolute(Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv, RA-Float[0x00])
+  FloatVariableDivide(10.0, RA-Float[0x00])
+  (undef: Sp_Kinetic) 66_00_0D_00(Variable_Float_Kinetic_Energy_Damage_Speed_X_Rv, Variable_Float_Kinetic_Energy_Damage_Speed_Y, -1.0, -1.0, 0.0, 0.0, 0.0, 0.0, RA-Float[0x00], 0.0, false, false, true)
+  ResetCertainMomentum(1)
+}
+

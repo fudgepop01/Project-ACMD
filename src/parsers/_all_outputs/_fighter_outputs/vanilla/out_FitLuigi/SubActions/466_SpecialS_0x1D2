@@ -1,0 +1,47 @@
+[SpecialS] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x1D2: MAIN {
+  BodyCollision(2)
+  AsynchronousTimer(3.0)
+  Module0900(2)
+  SetAirGround(102)
+  SetAerialOrOnstage(5)
+  AsynchronousTimer(4.0)
+  SpecialOffensiveCollision(Sp(38, 0), 10, 361, Sp(0, 80), Sp(4, 20), 4.32, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 943919173, 0, 5210049)
+  AsynchronousTimer(5.0)
+  BodyCollision(0)
+  AsynchronousTimer(13.0)
+  (undef: collision) 06_2F_02_00(0, 1023)
+  EnableActionStatusId(10146)
+  AsynchronousTimer(20.0)
+  EnableDisableLedgegrab(2)
+  AsynchronousTimer(24.0)
+  BitVariableSet(RA-Bool[0x14])
+}
+
+Subaction 0x1D2: GFX {
+  AsynchronousTimer(4.0)
+  GraphicEffectAttached(589828, 0, 0.0, 4.0, 0.0, 90.0, 0.0, 0.0, 1.0, true)
+}
+
+Subaction 0x1D2: SOUND {
+  AsynchronousTimer(1.0)
+  SoundEffect(1269)
+  SoundEffectTransient(3466)
+}
+
+Subaction 0x1D2: OTHER {
+  SlopeContourStand(6)
+  Rumble(13, 0)
+  SlopeContourStand(0)
+}
+

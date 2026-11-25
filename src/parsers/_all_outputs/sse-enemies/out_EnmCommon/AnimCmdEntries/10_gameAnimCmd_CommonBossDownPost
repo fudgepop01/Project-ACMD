@@ -1,0 +1,9 @@
+// @ 0x4190
+CommonBossDownPost {
+  (undef: Sp_base) 65_05_01_00(6)
+  AsynchronousTimer(180.0)
+  (undef: Sp_base) 65_05_01_00(7)
+  AsynchronousTimer(420.0)
+  (undef: Sp_base) 65_05_01_00(8)
+  Return()
+}

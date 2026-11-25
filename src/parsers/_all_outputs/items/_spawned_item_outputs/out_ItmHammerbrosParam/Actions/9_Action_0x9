@@ -1,0 +1,16 @@
+// Status_Turn_Run_Brake
+Action 0x9 {
+  SetLoop(2) {
+    ChangeSubAction(7)
+    SynchronousTimer(7.0)
+    SubRoutine(hidden_subroutine_0x110)
+    if (R(Is within footstool range())) {
+      LoopBreak()
+    }
+  }
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeSubAction(4)
+  ChangeAction(3, R(In Air()))
+}
+

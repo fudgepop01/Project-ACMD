@@ -1,0 +1,10 @@
+// Status_Down
+Action 0x4A: ENTRY {
+  SubRoutine(hidden_subroutine_0x14904)
+  if (R(Touching a Floor, Wall, or Ceiling(8))) {
+    SetAirGround(6)
+  }
+}
+
+Action 0x4A : EXIT {
+}

@@ -1,0 +1,406 @@
+81 results - 81 files
+
+src\parsers\_all_outputs\sse-enemies\_boss_outputs\out_EnmMasterhand\Actions\27_Action_0x1B:
+  8    (undef: Sp_AI) 6A_02_00_00()
+  9:   (undef: Sp_AI) 6A_00_02_00(8, 19)
+  10    (undef: targetSearch) 16_00_00_00()
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmArman\Actions\2_Action_0x2:
+  14    (undef: Sp_AI) 6A_01_01_00(8)
+  15:   (undef: Sp_AI) 6A_00_02_00(11, 7)
+  16    SubAction09(17)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmArman\Actions\3_Action_0x3:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(12, 7)
+  15    SubAction09(17)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmArman\Actions\9_Action_0x9:
+   9    (undef: Sp_AI) 6A_02_00_00()
+  10:   (undef: Sp_AI) 6A_00_02_00(13, 14)
+  11    (undef: Sp_AI) 6A_00_01_00(31)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmArman\Actions\12_Action_0xC:
+  8    (undef: Sp_AI) 6A_02_00_00()
+  9:   (undef: Sp_AI) 6A_00_02_00(13, 14)
+  10    (undef: Sp_AI) 6A_00_01_00(32)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmArman\Actions\15_Action_0xF:
+   9    (undef: Sp_AI) 6A_02_00_00()
+  10:   (undef: Sp_AI) 6A_00_02_00(15, 16)
+  11    (undef: Sp_AI) 6A_00_01_00(33)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmAroaros\Actions\9_Action_0x9:
+  8    (undef: Sp_AI) 6A_02_00_00()
+  9:   (undef: Sp_AI) 6A_00_02_00(13, 15)
+  10    SubAction09(6)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmBitan\Actions\2_Action_0x2:
+  14    (undef: Sp_AI) 6A_01_01_00(8)
+  15:   (undef: Sp_AI) 6A_00_02_00(10, 7)
+  16    SubAction09(7)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmBitan\Actions\3_Action_0x3:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(11, 7)
+  15    SubAction09(7)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmBitan\Actions\13_Action_0xD:
+  8    (undef: Sp_AI) 6A_02_00_00()
+  9:   (undef: Sp_AI) 6A_00_02_00(34, 35)
+  10    SubAction09(4)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmBitan\Actions\17_Action_0x11:
+   9    (undef: Sp_AI) 6A_02_00_00()
+  10:   (undef: Sp_AI) 6A_00_02_00(22, 16)
+  11    SubAction09(14)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmBitan\Actions\22_Action_0x16:
+  16    (undef: Sp_AI) 6A_02_00_00()
+  17:   (undef: Sp_AI) 6A_00_02_00(17, 18)
+  18    SubAction09(1)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmBitan\Actions\24_Action_0x18:
+  15    (undef: Sp_AI) 6A_02_00_00()
+  16:   (undef: Sp_AI) 6A_00_02_00(19, 20)
+  17    SubAction09(2)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmBitan\Actions\26_Action_0x1A:
+  8    (undef: Sp_AI) 6A_02_00_00()
+  9:   (undef: Sp_AI) 6A_00_02_00(24, 21)
+  10    SubAction09(0)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmBitan\Actions\30_Action_0x1E:
+  8    (undef: Sp_AI) 6A_02_00_00()
+  9:   (undef: Sp_AI) 6A_00_02_00(24, 21)
+  10    SubAction09(0)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmBombhead\Actions\0_Action_0x0:
+  14    (undef: Sp_AI) 6A_01_01_00(8)
+  15:   (undef: Sp_AI) 6A_00_02_00(10, 7)
+  16    (undef: Sp_AI) 6A_01_01_00(24)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmBombhead\Actions\1_Action_0x1:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(11, 7)
+  15    (undef: Sp_AI) 6A_01_01_00(24)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmBoobas\Actions\2_Action_0x2:
+  14    (undef: Sp_AI) 6A_01_01_00(8)
+  15:   (undef: Sp_AI) 6A_00_02_00(10, 7)
+  16    SubAction09(1)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmBoobas\Actions\3_Action_0x3:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(11, 7)
+  15    SubAction09(1)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmBucyulus\Actions\2_Action_0x2:
+  14    (undef: Sp_AI) 6A_01_01_00(8)
+  15:   (undef: Sp_AI) 6A_00_02_00(10, 7)
+  16    SubAction09(4)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmBucyulus\Actions\3_Action_0x3:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(11, 7)
+  15    SubAction09(4)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmCataguard\Actions\2_Action_0x2:
+  14    (undef: Sp_AI) 6A_01_01_00(8)
+  15:   (undef: Sp_AI) 6A_00_02_00(10, 7)
+  16    if (R(Bit is Set(LA-Bool[0x06]))) {
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmCataguard\Actions\3_Action_0x3:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(11, 7)
+  15    if (R(Bit is Set(LA-Bool[0x06]))) {
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmCataguard\Actions\8_Action_0x8:
+  8    (undef: Sp_AI) 6A_02_00_00()
+  9:   (undef: Sp_AI) 6A_00_02_00(12, 13)
+  10    SubRoutine(hidden_subroutine_0x600)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmDekakuribo\Actions\2_Action_0x2:
+  14    (undef: Sp_AI) 6A_01_01_00(9)
+  15:   (undef: Sp_AI) 6A_00_02_00(11, 7)
+  16    SubAction09(3)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmDekakuribo\Actions\3_Action_0x3:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(12, 7)
+  15    SubAction09(3)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmDekakuribo\Actions\14_Action_0xE:
+  12    (undef: Sp_AI) 6A_01_01_00(-1)
+  13:   (undef: Sp_AI) 6A_00_02_00(14, 13)
+  14    SubAction09(14)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmDekakuribo\Actions\15_Action_0xF:
+  16    (undef: Sp_AI) 6A_01_01_00(-1)
+  17:   (undef: Sp_AI) 6A_00_02_00(15, 13)
+  18    SubAction09(14)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmFaulong\Actions\0_Action_0x0:
+  12    (undef: Sp_AI) 6A_01_01_00(9)
+  13:   (undef: Sp_AI) 6A_00_02_00(11, 8)
+  14    if (R(Compare(Variable_Int_Motion_Kind != 1.0)) && R(Compare(Variable_Int_Motion_Kind != 4.0))) {
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmFaulong\Actions\1_Action_0x1:
+  11    (undef: Sp_AI) 6A_03_00_00()
+  12:   (undef: Sp_AI) 6A_00_02_00(12, 8)
+  13    SubAction09(1)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmFaulong\Actions\18_Action_0x12:
+  14    (undef: Sp_AI) 6A_01_01_00(9)
+  15:   (undef: Sp_AI) 6A_00_02_00(11, 8)
+  16    SubAction09(4)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmFaulong\Actions\19_Action_0x13:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(12, 8)
+  15    SubAction09(4)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmFaulong\Actions\20_Action_0x14:
+  14    (undef: Sp_AI) 6A_01_01_00(9)
+  15:   (undef: Sp_AI) 6A_00_02_00(11, 8)
+  16    SubAction09(1)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmFaulong\Actions\21_Action_0x15:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(12, 8)
+  15    SubAction09(1)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmGalice\Actions\2_Action_0x2:
+  14    (undef: Sp_AI) 6A_01_01_00(8)
+  15:   (undef: Sp_AI) 6A_00_02_00(10, 7)
+  16    SubAction09(1)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmGalice\Actions\3_Action_0x3:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(11, 7)
+  15    SubAction09(1)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmGalthunder\Actions\2_Action_0x2:
+  14    (undef: Sp_AI) 6A_01_01_00(8)
+  15:   (undef: Sp_AI) 6A_00_02_00(10, 7)
+  16    SubAction09(1)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmGalthunder\Actions\3_Action_0x3:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(11, 7)
+  15    SubAction09(1)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmGhamgha\Actions\0_Action_0x0:
+  13    (undef: Sp_AI) 6A_01_01_00(8)
+  14:   (undef: Sp_AI) 6A_00_02_00(10, 7)
+  15    SubAction09(2)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmGhamgha\Actions\1_Action_0x1:
+  12    (undef: Sp_AI) 6A_03_00_00()
+  13:   (undef: Sp_AI) 6A_00_02_00(11, 7)
+  14    SubAction09(2)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmGhamghabase\Actions\0_Action_0x0:
+  14    (undef: Sp_AI) 6A_01_01_00(8)
+  15:   (undef: Sp_AI) 6A_00_02_00(10, 7)
+  16    SubAction09(1)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmGhamghabase\Actions\1_Action_0x1:
+  14    (undef: Sp_AI) 6A_03_00_00()
+  15:   (undef: Sp_AI) 6A_00_02_00(11, 7)
+  16    SubAction09(1)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmGyraan\Actions\2_Action_0x2:
+  14    (undef: Sp_AI) 6A_01_01_00(8)
+  15:   (undef: Sp_AI) 6A_00_02_00(10, 7)
+  16    BitVariableClear(LA-Bool[0x07])
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmGyraan\Actions\3_Action_0x3:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(11, 7)
+  15    BitVariableClear(LA-Bool[0x07])
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmGyraan\Actions\7_Action_0x7:
+  8    (undef: Sp_AI) 6A_02_00_00()
+  9:   (undef: Sp_AI) 6A_00_02_00(12, 13)
+  10    (undef: Sp_AI) 6A_00_03_00(18, 19, 21)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmGyraan\Actions\8_Action_0x8:
+  8    (undef: Sp_AI) 6A_02_00_00()
+  9:   (undef: Sp_AI) 6A_00_02_00(12, 13)
+  10    (undef: Sp_AI) 6A_00_03_00(18, 19, 21)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmHammerbros\Actions\2_Action_0x2:
+  15    (undef: Sp_AI) 6A_01_01_00(10)
+  16:   (undef: Sp_AI) 6A_00_02_00(8, 7)
+  17    SubAction09(1)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmHammerbros\Actions\3_Action_0x3:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(9, 7)
+  15    SubAction09(1)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmJdus\Actions\2_Action_0x2:
+  13    (undef: Sp_AI) 6A_01_01_00(12)
+  14:   (undef: Sp_AI) 6A_00_02_00(10, 9)
+  15    SubAction09(2)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmJdus\Actions\3_Action_0x3:
+  12    (undef: Sp_AI) 6A_02_00_00()
+  13:   (undef: Sp_AI) 6A_00_02_00(11, 9)
+  14    SubAction09(2)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmKuribo\Actions\0_Action_0x0:
+  14    (undef: Sp_AI) 6A_01_01_00(9)
+  15:   (undef: Sp_AI) 6A_00_02_00(11, 7)
+  16    SubAction09(1)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmKuribo\Actions\1_Action_0x1:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(12, 7)
+  15    SubAction09(1)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmMite\Actions\2_Action_0x2:
+  14    (undef: Sp_AI) 6A_01_01_00(8)
+  15:   (undef: Sp_AI) 6A_00_02_00(10, 7)
+  16    SubAction09(1)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmMite\Actions\3_Action_0x3:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(11, 7)
+  15    SubAction09(1)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmNgagog\Actions\0_Action_0x0:
+  14    (undef: Sp_AI) 6A_01_01_00(8)
+  15:   (undef: Sp_AI) 6A_00_02_00(10, 7)
+  16    SubAction09(3)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmNgagog\Actions\1_Action_0x1:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(11, 7)
+  15    SubAction09(3)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmPatapata\Actions\0_Action_0x0:
+  14    (undef: Sp_AI) 6A_01_01_00(9)
+  15:   (undef: Sp_AI) 6A_00_02_00(11, 8)
+  16    SubAction09(2)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmPatapata\Actions\1_Action_0x1:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(12, 8)
+  15    SubAction09(2)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmPopperam\Actions\2_Action_0x2:
+  14    (undef: Sp_AI) 6A_01_01_00(8)
+  15:   (undef: Sp_AI) 6A_00_02_00(10, 7)
+  16    SubAction09(0)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmPopperam\Actions\3_Action_0x3:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(11, 7)
+  15    SubAction09(0)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmRoada\Actions\2_Action_0x2:
+  14    (undef: Sp_AI) 6A_01_01_00(10)
+  15:   (undef: Sp_AI) 6A_00_02_00(8, 7)
+  16    SubAction09(8)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmRoada\Actions\3_Action_0x3:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(9, 7)
+  15    SubAction09(8)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmRobobeam\Actions\2_Action_0x2:
+  14    (undef: Sp_AI) 6A_01_01_00(9)
+  15:   (undef: Sp_AI) 6A_00_02_00(11, 8)
+  16    SubAction09(17)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmRobobeam\Actions\3_Action_0x3:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(12, 8)
+  15    SubAction09(17)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmRobodistance\Actions\0_Action_0x0:
+  14    (undef: Sp_AI) 6A_01_01_00(9)
+  15:   (undef: Sp_AI) 6A_00_02_00(11, 8)
+  16    SubAction09(17)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmRobodistance\Actions\1_Action_0x1:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(12, 8)
+  15    SubAction09(17)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmRobohoming\Actions\2_Action_0x2:
+  14    (undef: Sp_AI) 6A_01_01_00(9)
+  15:   (undef: Sp_AI) 6A_00_02_00(11, 8)
+  16    SubAction09(17)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmRobohoming\Actions\3_Action_0x3:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(12, 8)
+  15    SubAction09(17)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmRobopunch\Actions\2_Action_0x2:
+  14    (undef: Sp_AI) 6A_01_01_00(9)
+  15:   (undef: Sp_AI) 6A_00_02_00(11, 8)
+  16    SubAction09(17)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmRobopunch\Actions\3_Action_0x3:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(12, 8)
+  15    SubAction09(17)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmShelly\Actions\2_Action_0x2:
+  14    (undef: Sp_AI) 6A_01_01_00(8)
+  15:   (undef: Sp_AI) 6A_00_02_00(10, 7)
+  16    SubAction09(2)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmShelly\Actions\3_Action_0x3:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(11, 7)
+  15    SubAction09(2)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmShelly\Actions\8_Action_0x8:
+   9    (undef: Sp_AI) 6A_00_03_00(12, 13, 14)
+  10:   (undef: Sp_AI) 6A_00_02_00(20, 22)
+  11    SubAction09(9)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmTautau\Actions\2_Action_0x2:
+  14    (undef: Sp_AI) 6A_01_01_00(8)
+  15:   (undef: Sp_AI) 6A_00_02_00(10, 7)
+  16    SubAction09(4)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmTautau\Actions\3_Action_0x3:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(11, 7)
+  15    SubAction09(4)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmTeckin\Actions\0_Action_0x0:
+  15    (undef: Sp_AI) 6A_02_00_00()
+  16:   (undef: Sp_AI) 6A_00_02_00(9, 22)
+  17    SubAction09(4)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmTeckin\Actions\2_Action_0x2:
+  14    (undef: Sp_AI) 6A_01_01_00(8)
+  15:   (undef: Sp_AI) 6A_00_02_00(10, 7)
+  16    SubAction09(3)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmTeckin\Actions\3_Action_0x3:
+  13    (undef: Sp_AI) 6A_03_00_00()
+  14:   (undef: Sp_AI) 6A_00_02_00(11, 7)
+  15    SubAction09(3)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmTeckin\Actions\12_Action_0xC:
+  14    (undef: Sp_AI) 6A_02_00_00()
+  15:   (undef: Sp_AI) 6A_00_02_00(9, 23)
+  16    SubAction09(6)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmTeckin\Actions\17_Action_0x11:
+  8    (undef: Sp_AI) 6A_02_00_00()
+  9:   (undef: Sp_AI) 6A_00_02_00(24, 26)
+  10    SubAction09(1)
+
+src\parsers\_all_outputs\sse-enemies\_enemy_outputs\out_EnmTeckin\Actions\18_Action_0x12:
+  8    (undef: Sp_AI) 6A_02_00_00()
+  9:   (undef: Sp_AI) 6A_00_02_00(24, 27)
+  10    (undef: Sp_AI) 6A_01_01_00(8)

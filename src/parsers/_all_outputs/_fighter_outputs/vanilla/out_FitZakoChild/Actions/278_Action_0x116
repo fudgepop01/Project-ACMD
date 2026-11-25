@@ -1,0 +1,6 @@
+Action 0x116: ENTRY {
+}
+
+Action 0x116 : EXIT {
+  ExitFinalSmashState()
+}

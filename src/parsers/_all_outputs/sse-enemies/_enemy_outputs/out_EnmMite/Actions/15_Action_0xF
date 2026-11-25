@@ -1,0 +1,20 @@
+Action 0xF: MAIN {
+}
+
+Action 0xF: EXIT {
+}
+
+Action 0xF: INIT {
+  (undef: Sp_AI) 6A_02_00_00()
+  (undef: Sp_AI) 6A_00_01_00(28)
+  SubAction09(10)
+  (undef: Sp_Kinetic) 66_0B_02_00(3, 32)
+  (undef: Sp_base) 65_09_02_00(IC-Int[0xABED], LA-Float[0x02])
+  if (R(Successfully tethered ledge())) {
+    if [IF_REQ_UNKNOWN_3ARG] (R(0x12()), 0, Variable_Int_Controller_Flick_No_Reset_Y) {
+      (undef: Sp_Area) 69_00_01_00(Variable_Int_Controller_Flick_No_Reset_Y)
+    }
+    (undef: Sp_Area) 69_01_05_00(Variable_Int_Controller_Flick_No_Reset_Y, 0.0, IC-Int[0xFA2], LA-Float[0x04], true)
+  }
+}
+

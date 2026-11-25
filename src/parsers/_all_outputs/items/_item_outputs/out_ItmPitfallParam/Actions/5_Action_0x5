@@ -1,0 +1,8 @@
+// Status_Run_Brake
+Action 0x5 {
+  SubRoutine(hidden_subroutine_0x78)
+  DisableActionStatusId(4)
+  ChangeAction(9, R(In walljump situation()), 8)
+  ChangeSubAction(3)
+}
+

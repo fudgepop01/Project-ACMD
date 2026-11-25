@@ -1,0 +1,53 @@
+// Status_Down_Damage
+Action 0x54: ENTRY {
+  if (R(NOT Bit is Set(RA-Bool[0x1C]))) {
+    ChangeActionStatus(10005, 73, R(In Air()))
+  }
+
+  ChangeActionStatus(10002, 73, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeActionStatus(10014, 81, R(On Ground()))
+  AdditionalRequirement(R(Animation End()))
+  AdditionalRequirement(R(NOT Bit is Set(LA-Bool[0x18])))
+  AdditionalRequirement(R(Compare(RA-Float[0x09] <= 0.0)))
+
+  ChangeActionStatus(10013, 78, R(On Ground()))
+  AdditionalRequirement(R(Animation End()))
+
+  SubRoutine(hidden_subroutine_0x5664)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x5A9C)
+  if (R(Bit is Set(RA-Bool[0x1B]))) {
+    if (R(Bit is Set(RA-Bool[0x19]))) {
+      ChangeSubAction(173)
+    } else {
+      ChangeSubAction(182)
+    }
+  } else {
+    if (R(Bit is Set(RA-Bool[0x19]))) {
+      ChangeSubAction(172)
+    } else {
+      ChangeSubAction(181)
+    }
+  }
+  SetLoop(-1) {
+    if (R(On Ground())) {
+      SetAerialOrOnstage(1)
+      if (R(Bit is Set(RA-Bool[0x1D]))) {
+        SetAirGround(6)
+      }
+      SetRequirement(R(In Air()))
+    } else {
+      SetAerialOrOnstage(5)
+      if (R(Bit is Set(RA-Bool[0x1D]))) {
+        SetAirGround(10)
+      }
+      SetRequirement(R(On Ground()))
+    }
+    LoadRest()
+    BitVariableSet(RA-Bool[0x1D])
+  }
+}
+
+Action 0x54 : EXIT {
+}

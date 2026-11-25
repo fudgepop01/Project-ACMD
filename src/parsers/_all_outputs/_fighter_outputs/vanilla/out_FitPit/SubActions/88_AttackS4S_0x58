@@ -1,0 +1,68 @@
+[AttackS4S] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x58: MAIN {
+  ModelChangerPermanent(1, 0)
+  AsynchronousTimer(4.0)
+  OffensiveCollision(Sp(72, 0), 7, 110, Sp(40, 100), Sp(0, 0), 4.0, 0.0, 6.0, 0.0, 0.0, 1.0, 1.0, 1011025474)
+  OffensiveCollision(Sp(72, 1), 7, 110, Sp(40, 100), Sp(0, 0), 4.3, 0.0, 2.0, 0.0, 0.0, 1.0, 1.0, 1011025474)
+  OffensiveCollision(Sp(62, 2), 7, 90, Sp(40, 100), Sp(0, 0), 3.3, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1011025474)
+  OffensiveCollision(Sp(30, 3), 7, 90, Sp(40, 100), Sp(0, 0), 2.8, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1011025474)
+  SynchronousTimer(3.0)
+  TerminateCollisions()
+  AsynchronousTimer(8.0)
+  ModelChangerPermanent(1, 2)
+  AsynchronousTimer(16.0)
+  OffensiveCollision(Sp(77, 256), 12, 361, Sp(0, 108), Sp(0, 30), 4.099983333333333, 0.0, -6.0, -2.0, 0.0, 1.0, 1.0, 1011025538)
+  OffensiveCollision(Sp(77, 257), 12, 361, Sp(0, 108), Sp(0, 30), 4.5, 0.0, -2.0, -2.0, 0.0, 1.0, 1.0, 1011025538)
+  OffensiveCollision(Sp(33, 258), 12, 361, Sp(0, 108), Sp(0, 30), 3.5, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1011025538)
+  OffensiveCollision(Sp(58, 259), 12, 361, Sp(0, 108), Sp(0, 30), 3.1, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1011025538)
+  SynchronousTimer(3.0)
+  TerminateCollisions()
+}
+
+Subaction 0x58: GFX {
+  AsynchronousTimer(4.0)
+  SwordGlow(3, 3, 74, -0.8, 0.0, 0.75, 74, 1.85, 0.0, 8.199983333333334, true, 1572865, 74, 0.0, 0.0, 0.0, 90.0, 0.0, 0.0, 1.0)
+  AsynchronousTimer(5.0)
+  GraphicEffect(17, 0, 0.0, 8.0, 16.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(7.0)
+  GraphicEffect(33, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  TerminateSwordGlow(1)
+  AsynchronousTimer(15.0)
+  SwordGlow(3, 4, 78, -0.8, 0.0, -1.5, 78, 1.85, 0.0, -8.95, true, 1572865, 78, 0.0, 0.0, -0.75, -90.0, 0.0, 0.0, 1.0)
+  AsynchronousTimer(16.0)
+  GraphicEffect(17, 0, 0.0, 9.0, 15.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(20.0)
+  TerminateSwordGlow(1)
+}
+
+Subaction 0x58: SOUND {
+  StopSoundEffect(105)
+  AsynchronousTimer(2.0)
+  SoundEffect(686)
+  SynchronousTimer(2.0)
+  SoundEffect(169)
+  SoundEffect(652)
+  SynchronousTimer(2.0)
+  SynchronousTimer(10.0)
+  SoundEffect(169)
+  SoundEffect(652)
+}
+
+Subaction 0x58: OTHER {
+  SlopeContourStand(6)
+  AsynchronousTimer(4.0)
+  Rumble(17, 0)
+  AsynchronousTimer(15.0)
+  Rumble(17, 0)
+}
+

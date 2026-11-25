@@ -1,0 +1,13 @@
+// Status_Glide_Start
+Action 0x84: ENTRY {
+  ResetButtonPress()
+
+  ChangeActionStatus(10031, 133, R(Animation End()))
+  AdditionalRequirement(R(In Air()))
+
+  ChangeActionStatus(10032, 134, R(On Ground()))
+  ChangeSubAction(57)
+}
+
+Action 0x84 : EXIT {
+}

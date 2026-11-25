@@ -1,0 +1,31 @@
+// Status_Item_Swing_S3
+Action 0x9F: ENTRY {
+  SubRoutine(hidden_subroutine_0x1836C)
+  ChangeSubAction(Variable_Int_Item_Swing_3_Motion_Kind, false, Variable_Float_Item_Swing_Motion_Rate)
+  Switch(10000, Variable_Int_Item_Swing_3_Motion_Kind)
+    Case(290)
+      SetStalingId(2, 79, true)
+      SubRoutine(hidden_subroutine_0x450C)
+    Case(297)
+      SetStalingId(2, 83, true)
+      SubRoutine(hidden_subroutine_0x47DC)
+    Case(308)
+      SetStalingId(2, 91, true)
+      SubRoutine(hidden_subroutine_0x4FF4)
+    Case(315)
+      SetStalingId(2, 95, true)
+      SubRoutine(hidden_subroutine_0x52C4)
+    Case(301)
+      SetStalingId(2, 87, true)
+      SubRoutine(hidden_subroutine_0x4D24)
+  EndSwitch()
+}
+
+Action 0x9F : EXIT {
+  if (R(Holding Item())) {
+    WeaponOperation(101)
+    if (R(Compare(Variable_Int_Have_Item_Kind == 4.0))) {
+      ChangeBeamSwordSize(0, 1.0)
+    }
+  }
+}

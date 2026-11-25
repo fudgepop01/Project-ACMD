@@ -1,0 +1,39 @@
+[AttackS3S] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x50: MAIN {
+  AsynchronousTimer(9.0)
+  OffensiveCollision(Sp(0, 0), 11, 361, Sp(0, 100), Sp(0, 10), 5.0, 0.0, 6.0, 19.0, 0.0, 1.0, 1.0, 956498496)
+  OffensiveCollision(Sp(0, 1), 9, 361, Sp(0, 100), Sp(0, 10), 4.0, 0.0, 6.0, 11.0, 0.0, 1.0, 1.0, 956498496)
+  OffensiveCollision(Sp(0, 2), 8, 361, Sp(0, 100), Sp(0, 10), 3.0, 0.0, 6.0, 5.0, 0.0, 1.0, 1.0, 956498496)
+  SynchronousTimer(4.0)
+  TerminateCollisions()
+}
+
+Subaction 0x50: GFX {
+  AsynchronousTimer(9.0)
+  GraphicEffectStepping(28, 0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false)
+}
+
+Subaction 0x50: SOUND {
+  AsynchronousTimer(9.0)
+  LowVoiceClip()
+  SoundEffect(5315)
+}
+
+Subaction 0x50: OTHER {
+  SlopeContourStand02(1, 2)
+  AsynchronousTimer(9.0)
+  Rumble(17, 0)
+  AsynchronousTimer(22.0)
+  SlopeContourStand02(6, 4)
+}
+

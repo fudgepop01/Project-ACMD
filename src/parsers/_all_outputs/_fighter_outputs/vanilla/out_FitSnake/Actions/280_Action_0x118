@@ -1,0 +1,9 @@
+Action 0x118: ENTRY {
+  ChangeAction(15, R(Animation End()))
+  ChangeSubAction(465)
+  SetAirGround(0)
+}
+
+Action 0x118 : EXIT {
+  SubRoutine(hidden_subroutine_0x19508)
+}

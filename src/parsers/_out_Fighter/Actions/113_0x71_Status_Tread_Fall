@@ -1,0 +1,9 @@
+// Status_Tread_Fall
+Action 0x71: ENTRY {
+  ChangeAction(74, R(On Ground()))
+  ChangeSubAction(56)
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x5F84)
+}
+
+Action 0x71 : EXIT {
+}

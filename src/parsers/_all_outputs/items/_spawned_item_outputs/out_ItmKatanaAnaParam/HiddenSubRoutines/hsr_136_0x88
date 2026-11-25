@@ -1,0 +1,12 @@
+[hsr_88]
+hidden_subroutine_0x88 {
+  if (R(Compare(Variable_Float_Posture_Pos_X < LA-Float[0x07]))) {
+    LeftDirection()
+  } else {
+    RightDirection()
+  }
+  DecideDirection()
+  CharacterSpecific01()
+  (undef: Sp_Kinetic) 66_00_0D_00(7.0, 0.0, 7.0, 7.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, false, false, false)
+  Return()
+}

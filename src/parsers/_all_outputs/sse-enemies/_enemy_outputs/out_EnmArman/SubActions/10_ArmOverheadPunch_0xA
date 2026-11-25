@@ -1,0 +1,52 @@
+[ArmOverheadPunch] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0xA: MAIN {
+  SlopeContourStand(1)
+  AsynchronousTimer(58.0)
+  (undef: Sp_Link) 6E_02_02_00(0, O(0x000039E0))
+  AsynchronousTimer(68.0)
+  (undef: Sp_Link) 6E_02_02_00(0, O(0x00004190))
+}
+
+Subaction 0xA: MAIN EXIT {
+}
+
+Subaction 0xA: MAIN INIT {
+  SubRoutine(hidden_subroutine_0x4348)
+}
+
+Subaction 0xA: GFX {
+  SynchronousTimer(68.0)
+  GraphicEffectAttached(11599876, 0, 0.0, 139.37798333333333, -0.104, -90.0, 0.0, 0.0, 1.0, true)
+}
+
+Subaction 0xA: GFX EXIT {
+}
+
+Subaction 0xA: GFX INIT {
+}
+
+Subaction 0xA: SFX {
+  SynchronousTimer(20.0)
+  SoundEffect(9525)
+  SynchronousTimer(10.0)
+  SoundEffect(9517)
+  SynchronousTimer(30.0)
+  SoundEffect(9527)
+}
+
+Subaction 0xA: SFX EXIT {
+}
+
+Subaction 0xA: SFX INIT {
+}
+

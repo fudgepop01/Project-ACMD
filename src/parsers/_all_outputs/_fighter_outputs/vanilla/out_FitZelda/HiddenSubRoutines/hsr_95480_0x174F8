@@ -1,0 +1,17 @@
+[hsr_174F8]
+hidden_subroutine_0x174F8 {
+  BasicVariableDecrement(RA-Int[0x02])
+  if (R(Article Exists())) {
+    BasicVariableDecrement(RA-Int[0x00])
+    BasicVariableDecrement(RA-Int[0x03])
+  }
+  if (R(Compare(RA-Int[0x02] >= 0.0))) {
+    DisableSpecifiedMovement(1)
+  } else {
+    EnableSpecifiedMovement(1)
+  }
+  if (R(Bit is Set(RA-Bool[0x11]))) {
+    GenerateArticle(0)
+    BitVariableClear(RA-Bool[0x11])
+  }
+}

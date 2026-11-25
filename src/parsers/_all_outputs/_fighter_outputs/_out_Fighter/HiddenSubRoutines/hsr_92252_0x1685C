@@ -1,0 +1,10 @@
+[hsr_1685C]
+hidden_subroutine_0x1685C {
+  if (R(NOT Bit is Set(RA-Bool[0x12]))) {
+    if (R(Compare(RA-Int[0x01] <= 0.0))) {
+      SubRoutine(statusAnimCmd_AIRChkFallCommon)
+      BitVariableSet(RA-Bool[0x12])
+      EnableDisableLedgegrab(4)
+    }
+  }
+}

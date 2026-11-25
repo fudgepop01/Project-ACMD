@@ -1,0 +1,15 @@
+Action 0x117: ENTRY {
+  BasicVariableSet(463, LA-Int[0x40])
+  BasicVariableSet(465, LA-Int[0x41])
+  BitVariableClear(LA-Bool[0x3D])
+
+  ChangeActionStatus(0, 0, R(Animation End()))
+  AdditionalRequirement(R(On Ground()))
+
+  ChangeActionStatus(1, 14, R(Animation End()))
+  ConcurrentInfiniteLoop(I(9), hidden_subroutine_0x1C8D8)
+  Goto(hidden_subroutine_0x1CA20)
+}
+
+Action 0x117 : EXIT {
+}

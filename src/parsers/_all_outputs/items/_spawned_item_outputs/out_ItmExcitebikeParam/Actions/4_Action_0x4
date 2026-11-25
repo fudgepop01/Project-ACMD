@@ -1,0 +1,35 @@
+// Status_Run
+Action 0x4 {
+  if (R(Compare(LA-Int[0x0B] == 0.0))) {
+    ChangeAction(6, R(Button Tap?()))
+  }
+  SubRoutine(hidden_subroutine_0x38)
+  DisableActionStatusId(4)
+  ChangeAction(3, R(In Air()))
+  ChangeAction(3, R(Bit is Set(LA-Bool[0x05])))
+  if (R(Compare(LA-Int[0x00] == 0.0))) {
+    if (R(Is within footstool range())) {
+      LeftDirection()
+      DecideDirection()
+      CharacterSpecific01()
+    }
+    BasicVariableSet(1, LA-Int[0x00])
+  }
+  (undef: Sp_Kinetic) 66_00_0D_00(0.25, 0.0, 2.0, 2.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, true, false, true)
+  ChangeSubAction(3)
+  (undef: motion) 04_10_02_00(0, 9)
+  SynchronousTimer(10.0)
+  ChangeAction(12, R(In walljump situation()), 6)
+  ChangeAction(13, R(NOT 0x2715()), 8.0)
+  SetLoop(-1) {
+    SynchronousTimer(60.0)
+    if (R(Is within footstool range())) {
+      ChangeSubAction(2)
+      (undef: motion) 04_10_02_00(0, 8)
+      SynchronousTimer(60.0)
+      ChangeSubAction(3)
+      (undef: motion) 04_10_02_00(0, 9)
+    }
+  }
+}
+

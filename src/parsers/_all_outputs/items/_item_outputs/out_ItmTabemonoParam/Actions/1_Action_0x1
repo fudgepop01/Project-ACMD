@@ -1,0 +1,12 @@
+// Status_Walk
+Action 0x1 {
+  (undef: Sp_base) 65_04_01_00(1400)
+  (undef: motion) 04_10_02_00(0, 7)
+  (undef: motion) 04_13_02_00(0, 0.0)
+  (undef: motion) 04_12_02_00(0, Variable_Int_Controller_Trigger_2_Count)
+  ChangeSubAction(0)
+  SubRoutine(hidden_subroutine_0x60)
+  DisableActionStatusId(1)
+  ChangeAction(3, R(In Air()))
+}
+

@@ -1,0 +1,7 @@
+[hsr_16DB0]
+hidden_subroutine_0x16DB0 {
+  if (R(Compare(Variable_Float_Controller_Stick_X_Lr_Rv > IC-Int[0xFBE]))) {
+    SetDirection()
+    DecideDirection()
+  }
+}

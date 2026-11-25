@@ -1,0 +1,5 @@
+[hsr_290C4]
+hidden_subroutine_0x290C4 {
+  CharacterSpecific01()
+  FloatVariableSet(Variable_Float_Posture_Lr, RA-Float[0x3D7])
+}

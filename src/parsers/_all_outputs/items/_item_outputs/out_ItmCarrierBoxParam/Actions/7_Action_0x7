@@ -1,0 +1,13 @@
+// Status_Turn_Dash
+Action 0x7 {
+  TerminateCollisions()
+  (undef: team) 22_00_01_00(-1)
+  BodyCollision(3)
+  (undef: Sp_base) 65_01_00_00()
+  ChangeSubAction(4)
+  Visibility(false)
+  SetGrCollisionMode(false)
+  SynchronousTimer(1.0)
+  ChangeAction(6, R(Button Tap?()))
+}
+

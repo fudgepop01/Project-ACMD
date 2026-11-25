@@ -1,0 +1,71 @@
+[AttackAirN] (flags) {
+  No Out Transition: 0,
+  Loop: 0,
+  Moves Character: 0,
+  Ignore Transition: 0,
+  Ignore Rotation: 0,
+  Ignore Scale: 0,
+  Transition Out From Start: 0,
+  Unknown 7: 0
+}
+
+Subaction 0x62: MAIN {
+  AsynchronousTimer(2.0)
+  BitVariableSet(RA-Bool[0x1E])
+  OffensiveCollision(Sp(40, 0), 12, 361, Sp(0, 100), Sp(0, 30), 4.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 579012162)
+  OffensiveCollision(Sp(40, 1), 12, 361, Sp(0, 100), Sp(0, 30), 4.0, 0.0, 5.2, 0.0, 0.0, 1.0, 1.0, 579012162)
+  OffensiveCollision(Sp(0, 2), 12, 361, Sp(0, 100), Sp(0, 30), 8.0, 0.0, 7.2, 0.0, 0.0, 1.0, 1.0, 579012162)
+  SynchronousTimer(2.0)
+  TerminateCollisions()
+  OffensiveCollision(Sp(40, 0), 7, 361, Sp(0, 100), Sp(0, 20), 3.8, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 579012162)
+  OffensiveCollision(Sp(40, 1), 6, 361, Sp(0, 100), Sp(0, 20), 3.8, 0.0, 4.0, 0.0, 0.0, 1.0, 1.0, 579012162)
+  OffensiveCollision(Sp(40, 2), 5, 361, Sp(0, 100), Sp(0, 20), 3.8, 0.0, 7.2, 0.0, 0.0, 1.0, 1.0, 579012098)
+  AsynchronousTimer(24.0)
+  TerminateCollisions()
+  BitVariableClear(RA-Bool[0x1E])
+  AsynchronousTimer(31.0)
+  AllowInterrupt()
+}
+
+Subaction 0x62: GFX {
+  GraphicEffect(16, 40, 15.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, true)
+  AsynchronousTimer(1.0)
+  SwordGlow(0, 0, 40, 0.0, 0.0, 0.0, 40, 0.0, 0.0, 0.0, true, 1507341, 40, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
+  AsynchronousTimer(4.0)
+  GraphicEffectAttached(36, 6, 0.0, 0.0, 0.0, 0.0, 0.0, -90.0, 0.8, true)
+  AsynchronousTimer(12.0)
+  GraphicEffectAttached(36, 6, 0.0, 0.0, 0.0, 0.0, 0.0, -90.0, 1.2, true)
+  AsynchronousTimer(25.0)
+  TerminateSwordGlow(1)
+}
+
+Subaction 0x62: SOUND {
+  AsynchronousTimer(0.0)
+  LowVoiceClip()
+  SynchronousTimer(2.0)
+  SoundEffect(786)
+  SynchronousTimer(1.0)
+  SoundEffect(109)
+  SynchronousTimer(4.0)
+  SoundEffect(786)
+  SynchronousTimer(1.0)
+  SoundEffect(109)
+  SynchronousTimer(4.0)
+  SoundEffect(786)
+  SynchronousTimer(1.0)
+  SoundEffect(109)
+  SynchronousTimer(1.0)
+  SoundEffect(109)
+}
+
+Subaction 0x62: OTHER {
+  AsynchronousTimer(4.0)
+  Rumble(22, 0)
+  AsynchronousTimer(9.0)
+  Rumble(22, 0)
+  AsynchronousTimer(14.0)
+  Rumble(22, 0)
+  AsynchronousTimer(4.0)
+  Rumble(22, 0)
+}
+

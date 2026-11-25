@@ -1,0 +1,13 @@
+// Status_Jump_Aerial
+Action 0xC {
+  SubRoutine(hidden_subroutine_0x88)
+  DisableActionStatusId(12)
+  DisableActionStatusId(4)
+  if (R(Is within footstool range())) {
+    ChangeActionStatus(107, 7, R(On Ground()))
+  } else {
+    ChangeActionStatus(4, 4, R(On Ground()))
+  }
+  ChangeSubAction(6)
+}
+

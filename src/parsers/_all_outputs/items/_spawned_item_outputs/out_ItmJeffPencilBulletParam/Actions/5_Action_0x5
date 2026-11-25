@@ -1,0 +1,54 @@
+// Status_Run_Brake
+Action 0x5 {
+  (undef: Sp_base) 65_04_01_00(300)
+  DisableSpecifiedMovement(2)
+  (undef: Sp_Kinetic) 66_05_01_00(1)
+  (undef: Sp_Kinetic) 66_09_01_00(true)
+  ChangeSubAction(1)
+  (undef: Sp_Kinetic) 66_00_0D_00(0.0, 0.5, 3.45, 3.45, 0.0, 0.0, 0.0, 0.015, 0.0, 0.0, false, false, false)
+  ChangeAction(7, R(Bit is Set(RA-Bool[0x05])))
+  FloatVariableRandom(-400.0, 400.0, RA-Float[0x00])
+  (undef: Sp_base) 65_07_03_00(1, RA-Float[0x00], 1000.0)
+  SynchronousTimer(45.0)
+  ChangeAction(7, R(In walljump situation()), 255)
+  (undef: Sp_base) 65_07_01_00(3)
+  while (R(Button Tap?())) {
+    if (R(Is within footstool range()) && R(Compare(IC-Int[0x3F8] > 5.0)) && R(Compare(IC-Int[0x3F8] < 15.0))) {
+      BasicVariableRandom(1, 5, RA-Int[0x00])
+      while (R(Compare(RA-Int[0x00] > 0.0))) {
+        if (R(Is within footstool range())) {
+          FloatVariableRandom(-20.0, 20.0, RA-Float[0x00])
+          FloatVariableRandom(-20.0, 20.0, RA-Float[0x01])
+          (undef: Sp_base) 65_07_03_00(3, RA-Float[0x00], RA-Float[0x01])
+          FloatVariableRandom(0.1, 0.5, RA-Float[0x00])
+          (undef: Sp_Kinetic) 66_08_01_00(RA-Float[0x00])
+          SynchronousTimer(3.0)
+        }
+        (undef: control_flow_loop) 01_04_02_00(3, 6)
+        EndWhile()
+      }
+      if (R(Is within footstool range())) {
+        (undef: Sp_Kinetic) 66_08_01_00(0.0)
+      } else {
+        FloatVariableRandom(0.02, 0.2, RA-Float[0x00])
+        (undef: Sp_Kinetic) 66_08_01_00(RA-Float[0x00])
+      }
+      if (R(Is within footstool range())) {
+        SynchronousTimer(10.0)
+      } elif (R(Is within footstool range())) {
+        SynchronousTimer(30.0)
+      } else {
+        SynchronousTimer(60.0)
+      }
+      if (R(Is within footstool range())) {
+        if (R(Is within footstool range())) {
+          (undef: Sp_base) 65_07_01_00(4)
+        } else {
+          (undef: Sp_base) 65_07_01_00(3)
+        }
+      } else {
+        (undef: Sp_base) 65_07_01_00(9)
+      }
+      EndWhile()
+}
+

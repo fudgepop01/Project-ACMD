@@ -1,0 +1,7 @@
+[hsr_4E54]
+hidden_subroutine_0x4E54 {
+  if (R(Button Pressed(Attack)) && R(Bit is Set(RA-Bool[0x16]))) {
+    BitVariableSet(RA-Bool[0x1D])
+  }
+  SubRoutine(hidden_subroutine_0xAA64)
+}

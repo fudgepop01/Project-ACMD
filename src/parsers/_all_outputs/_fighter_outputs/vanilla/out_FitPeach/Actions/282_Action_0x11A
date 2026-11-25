@@ -1,0 +1,13 @@
+Action 0x11A: ENTRY {
+  ChangeAction(284, R(On Ground()))
+  ChangeAction(283, R(Compare(Variable_Float_Controller_Stick_Y <= Common_Param_Float_Squat_Stick_Y)))
+  ChangeSubAction(470)
+  SetRequirement(R(Animation End()))
+  LoadRest()
+  ChangeSubAction(471)
+  AllowSpecificInterrupt(AIR_CLIFF)
+}
+
+Action 0x11A : EXIT {
+  SubRoutine(hidden_subroutine_0x172F8)
+}
